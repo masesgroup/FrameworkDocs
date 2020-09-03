@@ -76,12 +76,8 @@ var activeTableTab = "activeTableTab";
 <dd><code><a href="ICollection.html" title="interface in system.collections">ICollection</a></code>, <code><a href="../../org/mases/jcobridge/netreflection/IEnumerable.html" title="interface in org.mases.jcobridge.netreflection">IEnumerable</a></code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code>java.lang.Iterable&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;</code></dd>
 </dl>
 <dl>
-<dt>All Known Subinterfaces:</dt>
-<dd><code><a href="../componentmodel/IBindingList.html" title="interface in system.componentmodel">IBindingList</a></code>, <code><a href="../componentmodel/IBindingListView.html" title="interface in system.componentmodel">IBindingListView</a></code>, <code><a href="../data/IColumnMappingCollection.html" title="interface in system.data">IColumnMappingCollection</a></code>, <code><a href="../data/IDataParameterCollection.html" title="interface in system.data">IDataParameterCollection</a></code>, <code><a href="../data/ITableMappingCollection.html" title="interface in system.data">ITableMappingCollection</a></code></dd>
-</dl>
-<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="../componentmodel/IBindingListImplementation.html" title="class in system.componentmodel">IBindingListImplementation</a></code>, <code><a href="../componentmodel/IBindingListViewImplementation.html" title="class in system.componentmodel">IBindingListViewImplementation</a></code>, <code><a href="../data/IColumnMappingCollectionImplementation.html" title="class in system.data">IColumnMappingCollectionImplementation</a></code>, <code><a href="../data/IDataParameterCollectionImplementation.html" title="class in system.data">IDataParameterCollectionImplementation</a></code>, <code><a href="IListImplementation.html" title="class in system.collections">IListImplementation</a></code>, <code><a href="../data/ITableMappingCollectionImplementation.html" title="class in system.data">ITableMappingCollectionImplementation</a></code></dd>
+<dd><code><a href="IListImplementation.html" title="class in system.collections">IListImplementation</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">IList</span>
@@ -324,8 +320,12 @@ extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.htm
               throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="IList.html" title="interface in system.collections"><code>IList</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="IList.html" title="interface in system.collections"><code>IList</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

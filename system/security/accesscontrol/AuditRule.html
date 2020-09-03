@@ -84,7 +84,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="CryptoKeyAuditRule.html" title="class in system.security.accesscontrol">CryptoKeyAuditRule</a></code>, <code><a href="EventWaitHandleAuditRule.html" title="class in system.security.accesscontrol">EventWaitHandleAuditRule</a></code>, <code><a href="FileSystemAuditRule.html" title="class in system.security.accesscontrol">FileSystemAuditRule</a></code>, <code><a href="MutexAuditRule.html" title="class in system.security.accesscontrol">MutexAuditRule</a></code>, <code><a href="ObjectAuditRule.html" title="class in system.security.accesscontrol">ObjectAuditRule</a></code>, <code><a href="../../io/pipes/PipeAuditRule.html" title="class in system.io.pipes">PipeAuditRule</a></code>, <code><a href="RegistryAuditRule.html" title="class in system.security.accesscontrol">RegistryAuditRule</a></code>, <code><a href="SemaphoreAuditRule.html" title="class in system.security.accesscontrol">SemaphoreAuditRule</a></code></dd>
+<dd><code><a href="CryptoKeyAuditRule.html" title="class in system.security.accesscontrol">CryptoKeyAuditRule</a></code>, <code><a href="EventWaitHandleAuditRule.html" title="class in system.security.accesscontrol">EventWaitHandleAuditRule</a></code>, <code><a href="FileSystemAuditRule.html" title="class in system.security.accesscontrol">FileSystemAuditRule</a></code>, <code><a href="MutexAuditRule.html" title="class in system.security.accesscontrol">MutexAuditRule</a></code>, <code><a href="ObjectAuditRule.html" title="class in system.security.accesscontrol">ObjectAuditRule</a></code>, <code><a href="RegistryAuditRule.html" title="class in system.security.accesscontrol">RegistryAuditRule</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">AuditRule</span>
@@ -462,8 +462,12 @@ extends <a href="AuthorizationRule.html" title="class in system.security.accessc
                       throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="AuditRule.html" title="class in system.security.accesscontrol"><code>AuditRule</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="AuditRule.html" title="class in system.security.accesscontrol"><code>AuditRule</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

@@ -76,12 +76,8 @@ var activeTableTab = "activeTableTab";
 <dd><code><a href="ICollection.html" title="interface in system.collections">ICollection</a></code>, <code><a href="../../org/mases/jcobridge/netreflection/IEnumerable.html" title="interface in org.mases.jcobridge.netreflection">IEnumerable</a></code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code>java.lang.Iterable&lt;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;</code></dd>
 </dl>
 <dl>
-<dt>All Known Subinterfaces:</dt>
-<dd><code><a href="specialized/IOrderedDictionary.html" title="interface in system.collections.specialized">IOrderedDictionary</a></code></dd>
-</dl>
-<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><code><a href="IDictionaryImplementation.html" title="class in system.collections">IDictionaryImplementation</a></code>, <code><a href="specialized/IOrderedDictionaryImplementation.html" title="class in system.collections.specialized">IOrderedDictionaryImplementation</a></code></dd>
+<dd><code><a href="IDictionaryImplementation.html" title="class in system.collections">IDictionaryImplementation</a></code></dd>
 </dl>
 <hr>
 <pre>public interface <span class="typeNameLabel">IDictionary</span>
@@ -319,8 +315,12 @@ extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.htm
                           throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="IDictionary.html" title="interface in system.collections"><code>IDictionary</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="IDictionary.html" title="interface in system.collections"><code>IDictionary</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

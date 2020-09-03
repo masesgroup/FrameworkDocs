@@ -82,7 +82,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../principal/GenericPrincipal.html" title="class in system.security.principal">GenericPrincipal</a></code>, <code><a href="../../web/security/RolePrincipal.html" title="class in system.web.security">RolePrincipal</a></code>, <code><a href="../principal/WindowsPrincipal.html" title="class in system.security.principal">WindowsPrincipal</a></code></dd>
+<dd><code><a href="../principal/GenericPrincipal.html" title="class in system.security.principal">GenericPrincipal</a></code>, <code><a href="../principal/WindowsPrincipal.html" title="class in system.security.principal">WindowsPrincipal</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ClaimsPrincipal</span>
@@ -572,8 +572,12 @@ java.lang.String&nbsp;value)</code></th>
                             throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="ClaimsPrincipal.html" title="class in system.security.claims"><code>ClaimsPrincipal</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="ClaimsPrincipal.html" title="class in system.security.claims"><code>ClaimsPrincipal</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

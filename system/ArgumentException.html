@@ -86,7 +86,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code>, <code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code>, <code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code>, <code><a href="text/DecoderFallbackException.html" title="class in system.text">DecoderFallbackException</a></code>, <code><a href="DuplicateWaitObjectException.html" title="class in system">DuplicateWaitObjectException</a></code>, <code><a href="text/EncoderFallbackException.html" title="class in system.text">EncoderFallbackException</a></code>, <code><a href="componentmodel/InvalidAsynchronousStateException.html" title="class in system.componentmodel">InvalidAsynchronousStateException</a></code>, <code><a href="componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="ArgumentNullException.html" title="class in system">ArgumentNullException</a></code>, <code><a href="ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code>, <code><a href="globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code>, <code><a href="text/DecoderFallbackException.html" title="class in system.text">DecoderFallbackException</a></code>, <code><a href="DuplicateWaitObjectException.html" title="class in system">DuplicateWaitObjectException</a></code>, <code><a href="text/EncoderFallbackException.html" title="class in system.text">EncoderFallbackException</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">ArgumentException</span>
@@ -527,8 +527,12 @@ java.lang.String&nbsp;paramName,
                               throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="ArgumentException.html" title="class in system"><code>ArgumentException</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="ArgumentException.html" title="class in system"><code>ArgumentException</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

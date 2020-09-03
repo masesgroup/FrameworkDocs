@@ -72,6 +72,7 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
+<div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="HashAlgorithm.html" title="class in system.security.cryptography">system.security.cryptography.HashAlgorithm</a>
 <div class="inheritance"><a href="SHA1.html" title="class in system.security.cryptography">system.security.cryptography.SHA1</a>
 <div class="inheritance">system.security.cryptography.SHA1Managed</div>
@@ -79,10 +80,11 @@ var activeTableTab = "activeTableTab";
 </div>
 </div>
 </div>
+</div>
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">SHA1Managed</span>
@@ -262,6 +264,11 @@ extends <a href="SHA1.html" title="class in system.security.cryptography">SHA1</
 <a id="methods.inherited.from.class.system.security.cryptography.HashAlgorithm">
 <!--   -->
 </a><code><a href="HashAlgorithm.html#Clear()">Clear</a>, <a href="HashAlgorithm.html#ComputeHash(byte%5B%5D)">ComputeHash</a>, <a href="HashAlgorithm.html#ComputeHash(byte%5B%5D,int,int)">ComputeHash</a>, <a href="HashAlgorithm.html#ComputeHash(org.mases.jcobridge.JCRefOut)">ComputeHash</a>, <a href="HashAlgorithm.html#ComputeHash(org.mases.jcobridge.JCRefOut,int,int)">ComputeHash</a>, <a href="HashAlgorithm.html#ComputeHash(system.io.Stream)">ComputeHash</a>, <a href="HashAlgorithm.html#Create()">Create</a>, <a href="HashAlgorithm.html#Create(java.lang.String)">Create</a>, <a href="HashAlgorithm.html#Dispose()">Dispose</a>, <a href="HashAlgorithm.html#getCanReuseTransform()">getCanReuseTransform</a>, <a href="HashAlgorithm.html#getCanTransformMultipleBlocks()">getCanTransformMultipleBlocks</a>, <a href="HashAlgorithm.html#getHash()">getHash</a>, <a href="HashAlgorithm.html#getHashSize()">getHashSize</a>, <a href="HashAlgorithm.html#getInputBlockSize()">getInputBlockSize</a>, <a href="HashAlgorithm.html#getOutputBlockSize()">getOutputBlockSize</a>, <a href="HashAlgorithm.html#TransformBlock(byte%5B%5D,int,int,byte%5B%5D,int)">TransformBlock</a>, <a href="HashAlgorithm.html#TransformBlock(org.mases.jcobridge.JCRefOut,int,int,org.mases.jcobridge.JCRefOut,int)">TransformBlock</a>, <a href="HashAlgorithm.html#TransformFinalBlock(byte%5B%5D,int,int)">TransformFinalBlock</a>, <a href="HashAlgorithm.html#TransformFinalBlock(org.mases.jcobridge.JCRefOut,int,int)">TransformFinalBlock</a></code></div>
+<div class="inheritedList">
+<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
+<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
+<!--   -->
+</a><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -489,8 +496,12 @@ extends <a href="SHA1.html" title="class in system.security.cryptography">SHA1</
                         throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="SHA1Managed.html" title="class in system.security.cryptography"><code>SHA1Managed</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="SHA1Managed.html" title="class in system.security.cryptography"><code>SHA1Managed</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

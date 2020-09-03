@@ -84,7 +84,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="../net/security/AuthenticatedStream.html" title="class in system.net.security">AuthenticatedStream</a></code>, <code><a href="BufferedStream.html" title="class in system.io">BufferedStream</a></code>, <code><a href="../../microsoft/jscript/COMCharStream.html" title="class in microsoft.jscript">COMCharStream</a></code>, <code><a href="../security/cryptography/CryptoStream.html" title="class in system.security.cryptography">CryptoStream</a></code>, <code><a href="compression/DeflateStream.html" title="class in system.io.compression">DeflateStream</a></code>, <code><a href="FileStream.html" title="class in system.io">FileStream</a></code>, <code><a href="compression/GZipStream.html" title="class in system.io.compression">GZipStream</a></code>, <code><a href="MemoryStream.html" title="class in system.io">MemoryStream</a></code>, <code><a href="../net/sockets/NetworkStream.html" title="class in system.net.sockets">NetworkStream</a></code>, <code><a href="../data/oracleclient/OracleBFile.html" title="class in system.data.oracleclient">OracleBFile</a></code>, <code><a href="../data/oracleclient/OracleLob.html" title="class in system.data.oracleclient">OracleLob</a></code>, <code><a href="pipes/PipeStream.html" title="class in system.io.pipes">PipeStream</a></code>, <code><a href="../printing/PrintQueueStream.html" title="class in system.printing">PrintQueueStream</a></code>, <code><a href="../data/sqltypes/SqlFileStream.html" title="class in system.data.sqltypes">SqlFileStream</a></code>, <code><a href="UnmanagedMemoryStream.html" title="class in system.io">UnmanagedMemoryStream</a></code></dd>
+<dd><code><a href="BufferedStream.html" title="class in system.io">BufferedStream</a></code>, <code><a href="../security/cryptography/CryptoStream.html" title="class in system.security.cryptography">CryptoStream</a></code>, <code><a href="FileStream.html" title="class in system.io">FileStream</a></code>, <code><a href="MemoryStream.html" title="class in system.io">MemoryStream</a></code>, <code><a href="UnmanagedMemoryStream.html" title="class in system.io">UnmanagedMemoryStream</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Stream</span>
@@ -682,8 +682,12 @@ int&nbsp;dupParam2,
                    throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="Stream.html" title="class in system.io"><code>Stream</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="Stream.html" title="class in system.io"><code>Stream</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

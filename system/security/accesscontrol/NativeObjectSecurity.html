@@ -86,7 +86,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
-<dd><code><a href="CryptoKeySecurity.html" title="class in system.security.accesscontrol">CryptoKeySecurity</a></code>, <code><a href="EventWaitHandleSecurity.html" title="class in system.security.accesscontrol">EventWaitHandleSecurity</a></code>, <code><a href="FileSystemSecurity.html" title="class in system.security.accesscontrol">FileSystemSecurity</a></code>, <code><a href="MutexSecurity.html" title="class in system.security.accesscontrol">MutexSecurity</a></code>, <code><a href="../../io/pipes/PipeSecurity.html" title="class in system.io.pipes">PipeSecurity</a></code>, <code><a href="RegistrySecurity.html" title="class in system.security.accesscontrol">RegistrySecurity</a></code>, <code><a href="SemaphoreSecurity.html" title="class in system.security.accesscontrol">SemaphoreSecurity</a></code></dd>
+<dd><code><a href="CryptoKeySecurity.html" title="class in system.security.accesscontrol">CryptoKeySecurity</a></code>, <code><a href="EventWaitHandleSecurity.html" title="class in system.security.accesscontrol">EventWaitHandleSecurity</a></code>, <code><a href="FileSystemSecurity.html" title="class in system.security.accesscontrol">FileSystemSecurity</a></code>, <code><a href="MutexSecurity.html" title="class in system.security.accesscontrol">MutexSecurity</a></code>, <code><a href="RegistrySecurity.html" title="class in system.security.accesscontrol">RegistrySecurity</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">NativeObjectSecurity</span>
@@ -464,8 +464,12 @@ extends <a href="CommonObjectSecurity.html" title="class in system.security.acce
                                  throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="NativeObjectSecurity.html" title="class in system.security.accesscontrol"><code>NativeObjectSecurity</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="NativeObjectSecurity.html" title="class in system.security.accesscontrol"><code>NativeObjectSecurity</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

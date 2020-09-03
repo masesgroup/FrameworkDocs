@@ -72,15 +72,17 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
+<div class="inheritance"><a href="../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="Transaction.html" title="class in system.transactions">system.transactions.Transaction</a>
 <div class="inheritance">system.transactions.SubordinateTransaction</div>
+</div>
 </div>
 </div>
 </div>
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">SubordinateTransaction</span>
@@ -255,6 +257,11 @@ extends <a href="Transaction.html" title="class in system.transactions">Transact
 <a id="methods.inherited.from.class.system.transactions.Transaction">
 <!--   -->
 </a><code><a href="Transaction.html#addTransactionCompleted(system.transactions.TransactionCompletedEventHandler)">addTransactionCompleted</a>, <a href="Transaction.html#Clone()">Clone</a>, <a href="Transaction.html#DependentClone(system.transactions.DependentCloneOption)">DependentClone</a>, <a href="Transaction.html#Dispose()">Dispose</a>, <a href="Transaction.html#EnlistDurable(system.Guid,system.transactions.IEnlistmentNotification,system.transactions.EnlistmentOptions)">EnlistDurable</a>, <a href="Transaction.html#EnlistDurable(system.Guid,system.transactions.ISinglePhaseNotification,system.transactions.EnlistmentOptions)">EnlistDurable</a>, <a href="Transaction.html#EnlistPromotableSinglePhase(system.transactions.IPromotableSinglePhaseNotification)">EnlistPromotableSinglePhase</a>, <a href="Transaction.html#EnlistPromotableSinglePhase(system.transactions.IPromotableSinglePhaseNotification,system.Guid)">EnlistPromotableSinglePhase</a>, <a href="Transaction.html#EnlistVolatile(system.transactions.IEnlistmentNotification,system.transactions.EnlistmentOptions)">EnlistVolatile</a>, <a href="Transaction.html#EnlistVolatile(system.transactions.ISinglePhaseNotification,system.transactions.EnlistmentOptions)">EnlistVolatile</a>, <a href="Transaction.html#getCurrent()">getCurrent</a>, <a href="Transaction.html#getIsolationLevel()">getIsolationLevel</a>, <a href="Transaction.html#GetPromotedToken()">GetPromotedToken</a>, <a href="Transaction.html#getPromoterType()">getPromoterType</a>, <a href="Transaction.html#getTransactionInformation()">getTransactionInformation</a>, <a href="Transaction.html#PromoteAndEnlistDurable(system.Guid,system.transactions.IPromotableSinglePhaseNotification,system.transactions.ISinglePhaseNotification,system.transactions.EnlistmentOptions)">PromoteAndEnlistDurable</a>, <a href="Transaction.html#removeTransactionCompleted(system.transactions.TransactionCompletedEventHandler)">removeTransactionCompleted</a>, <a href="Transaction.html#Rollback()">Rollback</a>, <a href="Transaction.html#Rollback(org.mases.jcobridge.netreflection.NetException)">Rollback</a>, <a href="Transaction.html#setCurrent(system.transactions.Transaction)">setCurrent</a>, <a href="Transaction.html#SetDistributedTransactionIdentifier(system.transactions.IPromotableSinglePhaseNotification,system.Guid)">SetDistributedTransactionIdentifier</a></code></div>
+<div class="inheritedList">
+<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
+<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
+<!--   -->
+</a><code><a href="../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
