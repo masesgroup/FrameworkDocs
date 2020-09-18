@@ -72,10 +72,8 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="EventRecord.html" title="class in system.diagnostics.eventing.reader">system.diagnostics.eventing.reader.EventRecord</a>
 <div class="inheritance">system.diagnostics.eventing.reader.EventLogRecord</div>
-</div>
 </div>
 </div>
 </div>
@@ -266,12 +264,7 @@ extends <a href="EventRecord.html" title="class in system.diagnostics.eventing.r
 <h3>Methods inherited from class&nbsp;system.diagnostics.eventing.reader.<a href="EventRecord.html" title="class in system.diagnostics.eventing.reader">EventRecord</a></h3>
 <a id="methods.inherited.from.class.system.diagnostics.eventing.reader.EventRecord">
 <!--   -->
-</a><code><a href="EventRecord.html#Dispose()">Dispose</a>, <a href="EventRecord.html#getBookmark()">getBookmark</a>, <a href="EventRecord.html#getId()">getId</a>, <a href="EventRecord.html#getLevelDisplayName()">getLevelDisplayName</a>, <a href="EventRecord.html#getLogName()">getLogName</a>, <a href="EventRecord.html#getMachineName()">getMachineName</a>, <a href="EventRecord.html#getOpcodeDisplayName()">getOpcodeDisplayName</a>, <a href="EventRecord.html#getProviderName()">getProviderName</a>, <a href="EventRecord.html#getTaskDisplayName()">getTaskDisplayName</a>, <a href="EventRecord.html#getUserId()">getUserId</a></code></div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
+</a><code><a href="EventRecord.html#close()">close</a>, <a href="EventRecord.html#Dispose()">Dispose</a>, <a href="EventRecord.html#getBookmark()">getBookmark</a>, <a href="EventRecord.html#getId()">getId</a>, <a href="EventRecord.html#getLevelDisplayName()">getLevelDisplayName</a>, <a href="EventRecord.html#getLogName()">getLogName</a>, <a href="EventRecord.html#getMachineName()">getMachineName</a>, <a href="EventRecord.html#getOpcodeDisplayName()">getOpcodeDisplayName</a>, <a href="EventRecord.html#getProviderName()">getProviderName</a>, <a href="EventRecord.html#getTaskDisplayName()">getTaskDisplayName</a>, <a href="EventRecord.html#getUserId()">getUserId</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -475,8 +468,12 @@ extends <a href="EventRecord.html" title="class in system.diagnostics.eventing.r
                            throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="EventLogRecord.html" title="class in system.diagnostics.eventing.reader"><code>EventLogRecord</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="EventLogRecord.html" title="class in system.diagnostics.eventing.reader"><code>EventLogRecord</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

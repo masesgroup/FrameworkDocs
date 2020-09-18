@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":9,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":9,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -80,11 +80,12 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">GraphicsPath</span>
-extends <a href="../../MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></pre>
+extends <a href="../../MarshalByRefObject.html" title="class in system">MarshalByRefObject</a>
+implements java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.Drawing.Drawing2D.GraphicsPath, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a. Extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection"><code>NetObject</code></a>.
  <p>
  
@@ -550,124 +551,129 @@ int&nbsp;style,
 </tr>
 <tr class="rowColor" id="i47">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CloseAllFigures()">CloseAllFigures</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close()">close</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i48">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CloseFigure()">CloseFigure</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CloseAllFigures()">CloseAllFigures</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i49">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dispose()">Dispose</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CloseFigure()">CloseFigure</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i50">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Flatten()">Flatten</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dispose()">Dispose</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i51">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Flatten(system.drawing.drawing2d.Matrix)">Flatten</a></span>&#8203;(<a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Flatten()">Flatten</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i52">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Flatten(system.drawing.drawing2d.Matrix)">Flatten</a></span>&#8203;(<a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i53">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Flatten(system.drawing.drawing2d.Matrix,system.Single)">Flatten</a></span>&#8203;(<a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix,
 <a href="../../Single.html" title="class in system">Single</a>&nbsp;flatness)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i53">
+<tr class="altColor" id="i54">
 <td class="colFirst"><code><a href="../RectangleF.html" title="class in system.drawing">RectangleF</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetBounds()">GetBounds</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i54">
+<tr class="rowColor" id="i55">
 <td class="colFirst"><code><a href="../RectangleF.html" title="class in system.drawing">RectangleF</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetBounds(system.drawing.drawing2d.Matrix)">GetBounds</a></span>&#8203;(<a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i55">
+<tr class="altColor" id="i56">
 <td class="colFirst"><code><a href="../RectangleF.html" title="class in system.drawing">RectangleF</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetBounds(system.drawing.drawing2d.Matrix,system.drawing.Pen)">GetBounds</a></span>&#8203;(<a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i56">
+<tr class="rowColor" id="i57">
 <td class="colFirst"><code><a href="FillMode.html" title="class in system.drawing.drawing2d">FillMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getFillMode()">getFillMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i57">
+<tr class="altColor" id="i58">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="altColor" id="i58">
+<tr class="rowColor" id="i59">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i59">
+<tr class="altColor" id="i60">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="altColor" id="i60">
+<tr class="rowColor" id="i61">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="rowColor" id="i61">
+<tr class="altColor" id="i62">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="altColor" id="i62">
+<tr class="rowColor" id="i63">
 <td class="colFirst"><code><a href="../PointF.html" title="class in system.drawing">PointF</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetLastPoint()">GetLastPoint</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i63">
+<tr class="altColor" id="i64">
 <td class="colFirst"><code><a href="PathData.html" title="class in system.drawing.drawing2d">PathData</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPathData()">getPathData</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i64">
+<tr class="rowColor" id="i65">
 <td class="colFirst"><code><a href="../PointF.html" title="class in system.drawing">PointF</a>[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPathPoints()">getPathPoints</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i65">
+<tr class="altColor" id="i66">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPathTypes()">getPathTypes</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i66">
+<tr class="rowColor" id="i67">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPointCount()">getPointCount</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i67">
+<tr class="altColor" id="i68">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(int,int,system.drawing.Pen)">IsOutlineVisible</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i68">
+<tr class="rowColor" id="i69">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(int,int,system.drawing.Pen,system.drawing.Graphics)">IsOutlineVisible</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y,
@@ -675,40 +681,40 @@ int&nbsp;y,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i69">
+<tr class="altColor" id="i70">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(system.drawing.PointF,system.drawing.Pen)">IsOutlineVisible</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>&nbsp;point,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i70">
+<tr class="rowColor" id="i71">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(system.drawing.PointF,system.drawing.Pen,system.drawing.Graphics)">IsOutlineVisible</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>&nbsp;pt,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i71">
+<tr class="altColor" id="i72">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(system.drawing.Point,system.drawing.Pen)">IsOutlineVisible</a></span>&#8203;(<a href="../Point.html" title="class in system.drawing">Point</a>&nbsp;point,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i72">
+<tr class="rowColor" id="i73">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(system.drawing.Point,system.drawing.Pen,system.drawing.Graphics)">IsOutlineVisible</a></span>&#8203;(<a href="../Point.html" title="class in system.drawing">Point</a>&nbsp;pt,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i73">
+<tr class="altColor" id="i74">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(system.Single,system.Single,system.drawing.Pen)">IsOutlineVisible</a></span>&#8203;(<a href="../../Single.html" title="class in system">Single</a>&nbsp;x,
 <a href="../../Single.html" title="class in system">Single</a>&nbsp;y,
 <a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i74">
+<tr class="rowColor" id="i75">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsOutlineVisible(system.Single,system.Single,system.drawing.Pen,system.drawing.Graphics)">IsOutlineVisible</a></span>&#8203;(<a href="../../Single.html" title="class in system">Single</a>&nbsp;x,
 <a href="../../Single.html" title="class in system">Single</a>&nbsp;y,
@@ -716,103 +722,103 @@ int&nbsp;y,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i75">
+<tr class="altColor" id="i76">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(int,int)">IsVisible</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i76">
+<tr class="rowColor" id="i77">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(int,int,system.drawing.Graphics)">IsVisible</a></span>&#8203;(int&nbsp;x,
 int&nbsp;y,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i77">
+<tr class="altColor" id="i78">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(system.drawing.Point)">IsVisible</a></span>&#8203;(<a href="../Point.html" title="class in system.drawing">Point</a>&nbsp;point)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i78">
+<tr class="rowColor" id="i79">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(system.drawing.PointF)">IsVisible</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>&nbsp;point)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i79">
+<tr class="altColor" id="i80">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(system.drawing.PointF,system.drawing.Graphics)">IsVisible</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>&nbsp;pt,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i80">
+<tr class="rowColor" id="i81">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(system.drawing.Point,system.drawing.Graphics)">IsVisible</a></span>&#8203;(<a href="../Point.html" title="class in system.drawing">Point</a>&nbsp;pt,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i81">
+<tr class="altColor" id="i82">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(system.Single,system.Single)">IsVisible</a></span>&#8203;(<a href="../../Single.html" title="class in system">Single</a>&nbsp;x,
 <a href="../../Single.html" title="class in system">Single</a>&nbsp;y)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i82">
+<tr class="rowColor" id="i83">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsVisible(system.Single,system.Single,system.drawing.Graphics)">IsVisible</a></span>&#8203;(<a href="../../Single.html" title="class in system">Single</a>&nbsp;x,
 <a href="../../Single.html" title="class in system">Single</a>&nbsp;y,
 <a href="../Graphics.html" title="class in system.drawing">Graphics</a>&nbsp;graphics)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i83">
+<tr class="altColor" id="i84">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reset()">Reset</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i84">
+<tr class="rowColor" id="i85">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Reverse()">Reverse</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i85">
+<tr class="altColor" id="i86">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setFillMode(system.drawing.drawing2d.FillMode)">setFillMode</a></span>&#8203;(<a href="FillMode.html" title="class in system.drawing.drawing2d">FillMode</a>&nbsp;FillMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i86">
+<tr class="rowColor" id="i87">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i87">
+<tr class="altColor" id="i88">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetMarkers()">SetMarkers</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i88">
+<tr class="rowColor" id="i89">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#StartFigure()">StartFigure</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i89">
+<tr class="altColor" id="i90">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Transform(system.drawing.drawing2d.Matrix)">Transform</a></span>&#8203;(<a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i90">
+<tr class="rowColor" id="i91">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Warp(system.drawing.PointF%5B%5D,system.drawing.RectangleF)">Warp</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>[]&nbsp;destPoints,
 <a href="../RectangleF.html" title="class in system.drawing">RectangleF</a>&nbsp;srcRect)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i91">
+<tr class="altColor" id="i92">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Warp(system.drawing.PointF%5B%5D,system.drawing.RectangleF,system.drawing.drawing2d.Matrix)">Warp</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>[]&nbsp;destPoints,
 <a href="../RectangleF.html" title="class in system.drawing">RectangleF</a>&nbsp;srcRect,
 <a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i92">
+<tr class="rowColor" id="i93">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Warp(system.drawing.PointF%5B%5D,system.drawing.RectangleF,system.drawing.drawing2d.Matrix,system.drawing.drawing2d.WarpMode)">Warp</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>[]&nbsp;destPoints,
 <a href="../RectangleF.html" title="class in system.drawing">RectangleF</a>&nbsp;srcRect,
@@ -820,7 +826,7 @@ int&nbsp;y,
 <a href="WarpMode.html" title="class in system.drawing.drawing2d">WarpMode</a>&nbsp;warpMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i93">
+<tr class="altColor" id="i94">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Warp(system.drawing.PointF%5B%5D,system.drawing.RectangleF,system.drawing.drawing2d.Matrix,system.drawing.drawing2d.WarpMode,system.Single)">Warp</a></span>&#8203;(<a href="../PointF.html" title="class in system.drawing">PointF</a>[]&nbsp;destPoints,
 <a href="../RectangleF.html" title="class in system.drawing">RectangleF</a>&nbsp;srcRect,
@@ -829,18 +835,18 @@ int&nbsp;y,
 <a href="../../Single.html" title="class in system">Single</a>&nbsp;flatness)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i94">
+<tr class="rowColor" id="i95">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Widen(system.drawing.Pen)">Widen</a></span>&#8203;(<a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i95">
+<tr class="altColor" id="i96">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Widen(system.drawing.Pen,system.drawing.drawing2d.Matrix)">Widen</a></span>&#8203;(<a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen,
 <a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i96">
+<tr class="rowColor" id="i97">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Widen(system.drawing.Pen,system.drawing.drawing2d.Matrix,system.Single)">Widen</a></span>&#8203;(<a href="../Pen.html" title="class in system.drawing">Pen</a>&nbsp;pen,
 <a href="Matrix.html" title="class in system.drawing.drawing2d">Matrix</a>&nbsp;matrix,
@@ -1248,8 +1254,12 @@ byte[]&nbsp;types,
                          throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="GraphicsPath.html" title="class in system.drawing.drawing2d"><code>GraphicsPath</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="GraphicsPath.html" title="class in system.drawing.drawing2d"><code>GraphicsPath</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>
@@ -4048,6 +4058,19 @@ int&nbsp;style,
 <dd><code><a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
 <dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="close()">close</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">close</span>()
+           throws <span class="exceptions">java.lang.Exception</span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Exception</code></dd>
 </dl>
 </section>
 </li>

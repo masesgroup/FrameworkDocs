@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -72,9 +72,7 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance">system.web.ui.Control</div>
-</div>
 </div>
 </div>
 <section class="description">
@@ -88,7 +86,8 @@ var activeTableTab = "activeTableTab";
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">Control</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></pre>
+extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
+implements java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.Web.UI.Control, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a. Extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection"><code>NetObject</code></a>.
  <p>
  
@@ -242,330 +241,335 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 </tr>
 <tr class="altColor" id="i8">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DataBind()">DataBind</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#close()">close</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i9">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dispose()">Dispose</a></span>()</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DataBind()">DataBind</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i10">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Dispose()">Dispose</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code><a href="Control.html" title="class in system.web.ui">Control</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FindControl(java.lang.String)">FindControl</a></span>&#8203;(java.lang.String&nbsp;id)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i11">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Focus()">Focus</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getAppRelativeTemplateSourceDirectory()">getAppRelativeTemplateSourceDirectory</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code><a href="Control.html" title="class in system.web.ui">Control</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getBindingContainer()">getBindingContainer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getClientID()">getClientID</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="altColor" id="i16">
 <td class="colFirst"><code><a href="ClientIDMode.html" title="class in system.web.ui">ClientIDMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getClientIDMode()">getClientIDMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code><a href="ControlCollection.html" title="class in system.web.ui">ControlCollection</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getControls()">getControls</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code><a href="Control.html" title="class in system.web.ui">Control</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDataItemContainer()">getDataItemContainer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code><a href="Control.html" title="class in system.web.ui">Control</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getDataKeysContainer()">getDataKeysContainer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i19">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEnableTheming()">getEnableTheming</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i20">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEnableViewState()">getEnableViewState</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i21">
+<tr class="altColor" id="i22">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getID()">getID</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i22">
+<tr class="rowColor" id="i23">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i23">
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="altColor" id="i24">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="rowColor" id="i25">
+<tr class="altColor" id="i26">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="altColor" id="i26">
+<tr class="rowColor" id="i27">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="rowColor" id="i27">
+<tr class="altColor" id="i28">
 <td class="colFirst"><code><a href="Control.html" title="class in system.web.ui">Control</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getNamingContainer()">getNamingContainer</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i28">
+<tr class="rowColor" id="i29">
 <td class="colFirst"><code><a href="Page.html" title="class in system.web.ui">Page</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPage()">getPage</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i29">
+<tr class="altColor" id="i30">
 <td class="colFirst"><code><a href="Control.html" title="class in system.web.ui">Control</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getParent()">getParent</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i30">
+<tr class="rowColor" id="i31">
 <td class="colFirst"><code><a href="../../Version.html" title="class in system">Version</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getRenderingCompatibility()">getRenderingCompatibility</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i31">
+<tr class="altColor" id="i32">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRouteUrl(java.lang.String,org.mases.jcobridge.netreflection.NetObject)">GetRouteUrl</a></span>&#8203;(java.lang.String&nbsp;routeName,
 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;routeParameters)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i32">
+<tr class="rowColor" id="i33">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRouteUrl(java.lang.String,system.web.routing.RouteValueDictionary)">GetRouteUrl</a></span>&#8203;(java.lang.String&nbsp;routeName,
 <a href="../routing/RouteValueDictionary.html" title="class in system.web.routing">RouteValueDictionary</a>&nbsp;routeParameters)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i33">
+<tr class="altColor" id="i34">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRouteUrl(org.mases.jcobridge.netreflection.NetObject)">GetRouteUrl</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;routeParameters)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i34">
+<tr class="rowColor" id="i35">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetRouteUrl(system.web.routing.RouteValueDictionary)">GetRouteUrl</a></span>&#8203;(<a href="../routing/RouteValueDictionary.html" title="class in system.web.routing">RouteValueDictionary</a>&nbsp;routeParameters)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i35">
+<tr class="altColor" id="i36">
 <td class="colFirst"><code><a href="../../componentmodel/ISite.html" title="interface in system.componentmodel">ISite</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSite()">getSite</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i36">
+<tr class="rowColor" id="i37">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSkinID()">getSkinID</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i37">
+<tr class="altColor" id="i38">
 <td class="colFirst"><code><a href="TemplateControl.html" title="class in system.web.ui">TemplateControl</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTemplateControl()">getTemplateControl</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i38">
+<tr class="rowColor" id="i39">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getTemplateSourceDirectory()">getTemplateSourceDirectory</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i39">
+<tr class="altColor" id="i40">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getUniqueID()">getUniqueID</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i40">
+<tr class="rowColor" id="i41">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetUniqueIDRelativeTo(system.web.ui.Control)">GetUniqueIDRelativeTo</a></span>&#8203;(<a href="Control.html" title="class in system.web.ui">Control</a>&nbsp;control)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i41">
+<tr class="altColor" id="i42">
 <td class="colFirst"><code><a href="ValidateRequestMode.html" title="class in system.web.ui">ValidateRequestMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getValidateRequestMode()">getValidateRequestMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i42">
+<tr class="rowColor" id="i43">
 <td class="colFirst"><code><a href="ViewStateMode.html" title="class in system.web.ui">ViewStateMode</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getViewStateMode()">getViewStateMode</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i43">
+<tr class="altColor" id="i44">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getVisible()">getVisible</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i44">
+<tr class="rowColor" id="i45">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#HasControls()">HasControls</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i45">
+<tr class="altColor" id="i46">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeDataBinding(system.EventHandler)">removeDataBinding</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i46">
+<tr class="rowColor" id="i47">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeDisposed(system.EventHandler)">removeDisposed</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i47">
+<tr class="altColor" id="i48">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeInit(system.EventHandler)">removeInit</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i48">
+<tr class="rowColor" id="i49">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeLoad(system.EventHandler)">removeLoad</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i49">
+<tr class="altColor" id="i50">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removePreRender(system.EventHandler)">removePreRender</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i50">
+<tr class="rowColor" id="i51">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeUnload(system.EventHandler)">removeUnload</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i51">
+<tr class="altColor" id="i52">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#RenderControl(system.web.ui.HtmlTextWriter)">RenderControl</a></span>&#8203;(<a href="HtmlTextWriter.html" title="class in system.web.ui">HtmlTextWriter</a>&nbsp;writer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i52">
+<tr class="rowColor" id="i53">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ResolveClientUrl(java.lang.String)">ResolveClientUrl</a></span>&#8203;(java.lang.String&nbsp;relativeUrl)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i53">
+<tr class="altColor" id="i54">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ResolveUrl(java.lang.String)">ResolveUrl</a></span>&#8203;(java.lang.String&nbsp;relativeUrl)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i54">
+<tr class="rowColor" id="i55">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setAppRelativeTemplateSourceDirectory(java.lang.String)">setAppRelativeTemplateSourceDirectory</a></span>&#8203;(java.lang.String&nbsp;AppRelativeTemplateSourceDirectory)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i55">
+<tr class="altColor" id="i56">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setClientIDMode(system.web.ui.ClientIDMode)">setClientIDMode</a></span>&#8203;(<a href="ClientIDMode.html" title="class in system.web.ui">ClientIDMode</a>&nbsp;ClientIDMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i56">
+<tr class="rowColor" id="i57">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnableTheming(boolean)">setEnableTheming</a></span>&#8203;(boolean&nbsp;EnableTheming)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i57">
+<tr class="altColor" id="i58">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setEnableViewState(boolean)">setEnableViewState</a></span>&#8203;(boolean&nbsp;EnableViewState)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i58">
+<tr class="rowColor" id="i59">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setID(java.lang.String)">setID</a></span>&#8203;(java.lang.String&nbsp;ID)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i59">
+<tr class="altColor" id="i60">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i60">
+<tr class="rowColor" id="i61">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setPage(system.web.ui.Page)">setPage</a></span>&#8203;(<a href="Page.html" title="class in system.web.ui">Page</a>&nbsp;Page)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i61">
+<tr class="altColor" id="i62">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setRenderingCompatibility(system.Version)">setRenderingCompatibility</a></span>&#8203;(<a href="../../Version.html" title="class in system">Version</a>&nbsp;RenderingCompatibility)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i62">
+<tr class="rowColor" id="i63">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetRenderMethodDelegate(system.web.ui.RenderMethod)">SetRenderMethodDelegate</a></span>&#8203;(<a href="RenderMethod.html" title="class in system.web.ui">RenderMethod</a>&nbsp;renderMethod)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i63">
+<tr class="altColor" id="i64">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSite(system.componentmodel.ISite)">setSite</a></span>&#8203;(<a href="../../componentmodel/ISite.html" title="interface in system.componentmodel">ISite</a>&nbsp;Site)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i64">
+<tr class="rowColor" id="i65">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setSkinID(java.lang.String)">setSkinID</a></span>&#8203;(java.lang.String&nbsp;SkinID)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i65">
+<tr class="altColor" id="i66">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setTemplateControl(system.web.ui.TemplateControl)">setTemplateControl</a></span>&#8203;(<a href="TemplateControl.html" title="class in system.web.ui">TemplateControl</a>&nbsp;TemplateControl)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i66">
+<tr class="rowColor" id="i67">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetTraceData(org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.NetObject)">SetTraceData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;traceDataKey,
 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;traceDataValue)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i67">
+<tr class="altColor" id="i68">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetTraceData(org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.NetObject)">SetTraceData</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;tracedObject,
 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;traceDataKey,
 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;traceDataValue)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i68">
+<tr class="rowColor" id="i69">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setValidateRequestMode(system.web.ui.ValidateRequestMode)">setValidateRequestMode</a></span>&#8203;(<a href="ValidateRequestMode.html" title="class in system.web.ui">ValidateRequestMode</a>&nbsp;ValidateRequestMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i69">
+<tr class="altColor" id="i70">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setViewStateMode(system.web.ui.ViewStateMode)">setViewStateMode</a></span>&#8203;(<a href="ViewStateMode.html" title="class in system.web.ui">ViewStateMode</a>&nbsp;ViewStateMode)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i70">
+<tr class="rowColor" id="i71">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setVisible(boolean)">setVisible</a></span>&#8203;(boolean&nbsp;Visible)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -574,11 +578,6 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 </table>
 </div>
 </div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -694,7 +693,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -710,7 +709,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -726,7 +725,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -743,7 +742,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the instance of the instantiated Class</dd>
 </dl>
@@ -755,7 +754,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">setJCOInstance</span>&#8203;(<span class="arguments"><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 </dl>
 </section>
 </li>
@@ -769,7 +768,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></code></dd>
+<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the Type of the instantiated Class</dd>
 </dl>
@@ -782,8 +781,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
                     throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="Control.html" title="class in system.web.ui"><code>Control</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="Control.html" title="class in system.web.ui"><code>Control</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>
@@ -1302,6 +1305,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseab
 <dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
 <dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 <dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="close()">close</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">close</span>()
+           throws <span class="exceptions">java.lang.Exception</span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>close</code>&nbsp;in interface&nbsp;<code>java.lang.AutoCloseable</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Exception</code></dd>
 </dl>
 </section>
 </li>

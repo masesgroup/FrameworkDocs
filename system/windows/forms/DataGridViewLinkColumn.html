@@ -84,7 +84,7 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DataGridViewLinkColumn</span>
@@ -333,7 +333,7 @@ extends <a href="DataGridViewColumn.html" title="class in system.windows.forms">
 <h3>Methods inherited from class&nbsp;system.windows.forms.<a href="DataGridViewBand.html" title="class in system.windows.forms">DataGridViewBand</a></h3>
 <a id="methods.inherited.from.class.system.windows.forms.DataGridViewBand">
 <!--   -->
-</a><code><a href="DataGridViewBand.html#Dispose()">Dispose</a>, <a href="DataGridViewBand.html#getContextMenuStrip()">getContextMenuStrip</a>, <a href="DataGridViewBand.html#getDefaultCellStyle()">getDefaultCellStyle</a>, <a href="DataGridViewBand.html#getDefaultHeaderCellType()">getDefaultHeaderCellType</a>, <a href="DataGridViewBand.html#getDisplayed()">getDisplayed</a>, <a href="DataGridViewBand.html#getFrozen()">getFrozen</a>, <a href="DataGridViewBand.html#getHasDefaultCellStyle()">getHasDefaultCellStyle</a>, <a href="DataGridViewBand.html#getIndex()">getIndex</a>, <a href="DataGridViewBand.html#getInheritedStyle()">getInheritedStyle</a>, <a href="DataGridViewBand.html#getReadOnly()">getReadOnly</a>, <a href="DataGridViewBand.html#getResizable()">getResizable</a>, <a href="DataGridViewBand.html#getSelected()">getSelected</a>, <a href="DataGridViewBand.html#getTag()">getTag</a>, <a href="DataGridViewBand.html#getVisible()">getVisible</a>, <a href="DataGridViewBand.html#setContextMenuStrip(system.windows.forms.ContextMenuStrip)">setContextMenuStrip</a>, <a href="DataGridViewBand.html#setDefaultCellStyle(system.windows.forms.DataGridViewCellStyle)">setDefaultCellStyle</a>, <a href="DataGridViewBand.html#setDefaultHeaderCellType(org.mases.jcobridge.netreflection.NetType)">setDefaultHeaderCellType</a>, <a href="DataGridViewBand.html#setFrozen(boolean)">setFrozen</a>, <a href="DataGridViewBand.html#setReadOnly(boolean)">setReadOnly</a>, <a href="DataGridViewBand.html#setResizable(system.windows.forms.DataGridViewTriState)">setResizable</a>, <a href="DataGridViewBand.html#setSelected(boolean)">setSelected</a>, <a href="DataGridViewBand.html#setTag(org.mases.jcobridge.netreflection.NetObject)">setTag</a>, <a href="DataGridViewBand.html#setVisible(boolean)">setVisible</a></code></div>
+</a><code><a href="DataGridViewBand.html#close()">close</a>, <a href="DataGridViewBand.html#Dispose()">Dispose</a>, <a href="DataGridViewBand.html#getContextMenuStrip()">getContextMenuStrip</a>, <a href="DataGridViewBand.html#getDefaultCellStyle()">getDefaultCellStyle</a>, <a href="DataGridViewBand.html#getDefaultHeaderCellType()">getDefaultHeaderCellType</a>, <a href="DataGridViewBand.html#getDisplayed()">getDisplayed</a>, <a href="DataGridViewBand.html#getFrozen()">getFrozen</a>, <a href="DataGridViewBand.html#getHasDefaultCellStyle()">getHasDefaultCellStyle</a>, <a href="DataGridViewBand.html#getIndex()">getIndex</a>, <a href="DataGridViewBand.html#getInheritedStyle()">getInheritedStyle</a>, <a href="DataGridViewBand.html#getReadOnly()">getReadOnly</a>, <a href="DataGridViewBand.html#getResizable()">getResizable</a>, <a href="DataGridViewBand.html#getSelected()">getSelected</a>, <a href="DataGridViewBand.html#getTag()">getTag</a>, <a href="DataGridViewBand.html#getVisible()">getVisible</a>, <a href="DataGridViewBand.html#setContextMenuStrip(system.windows.forms.ContextMenuStrip)">setContextMenuStrip</a>, <a href="DataGridViewBand.html#setDefaultCellStyle(system.windows.forms.DataGridViewCellStyle)">setDefaultCellStyle</a>, <a href="DataGridViewBand.html#setDefaultHeaderCellType(org.mases.jcobridge.netreflection.NetType)">setDefaultHeaderCellType</a>, <a href="DataGridViewBand.html#setFrozen(boolean)">setFrozen</a>, <a href="DataGridViewBand.html#setReadOnly(boolean)">setReadOnly</a>, <a href="DataGridViewBand.html#setResizable(system.windows.forms.DataGridViewTriState)">setResizable</a>, <a href="DataGridViewBand.html#setSelected(boolean)">setSelected</a>, <a href="DataGridViewBand.html#setTag(org.mases.jcobridge.netreflection.NetObject)">setTag</a>, <a href="DataGridViewBand.html#setVisible(boolean)">setVisible</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;system.windows.forms.<a href="DataGridViewElement.html" title="class in system.windows.forms">DataGridViewElement</a></h3>
 <a id="methods.inherited.from.class.system.windows.forms.DataGridViewElement">
@@ -570,8 +570,12 @@ extends <a href="DataGridViewColumn.html" title="class in system.windows.forms">
                                    throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="DataGridViewLinkColumn.html" title="class in system.windows.forms"><code>DataGridViewLinkColumn</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="DataGridViewLinkColumn.html" title="class in system.windows.forms"><code>DataGridViewLinkColumn</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

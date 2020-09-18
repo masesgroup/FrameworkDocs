@@ -72,10 +72,8 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="AnnotationStore.html" title="class in system.windows.annotations.storage">system.windows.annotations.storage.AnnotationStore</a>
 <div class="inheritance">system.windows.annotations.storage.XmlStreamStore</div>
-</div>
 </div>
 </div>
 </div>
@@ -275,12 +273,7 @@ extends <a href="AnnotationStore.html" title="class in system.windows.annotation
 <h3>Methods inherited from class&nbsp;system.windows.annotations.storage.<a href="AnnotationStore.html" title="class in system.windows.annotations.storage">AnnotationStore</a></h3>
 <a id="methods.inherited.from.class.system.windows.annotations.storage.AnnotationStore">
 <!--   -->
-</a><code><a href="AnnotationStore.html#addAnchorChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">addAnchorChanged</a>, <a href="AnnotationStore.html#addAuthorChanged(system.windows.annotations.AnnotationAuthorChangedEventHandler)">addAuthorChanged</a>, <a href="AnnotationStore.html#addCargoChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">addCargoChanged</a>, <a href="AnnotationStore.html#addStoreContentChanged(system.windows.annotations.storage.StoreContentChangedEventHandler)">addStoreContentChanged</a>, <a href="AnnotationStore.html#Dispose()">Dispose</a>, <a href="AnnotationStore.html#getAutoFlush()">getAutoFlush</a>, <a href="AnnotationStore.html#removeAnchorChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">removeAnchorChanged</a>, <a href="AnnotationStore.html#removeAuthorChanged(system.windows.annotations.AnnotationAuthorChangedEventHandler)">removeAuthorChanged</a>, <a href="AnnotationStore.html#removeCargoChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">removeCargoChanged</a>, <a href="AnnotationStore.html#removeStoreContentChanged(system.windows.annotations.storage.StoreContentChangedEventHandler)">removeStoreContentChanged</a>, <a href="AnnotationStore.html#setAutoFlush(boolean)">setAutoFlush</a></code></div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
+</a><code><a href="AnnotationStore.html#addAnchorChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">addAnchorChanged</a>, <a href="AnnotationStore.html#addAuthorChanged(system.windows.annotations.AnnotationAuthorChangedEventHandler)">addAuthorChanged</a>, <a href="AnnotationStore.html#addCargoChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">addCargoChanged</a>, <a href="AnnotationStore.html#addStoreContentChanged(system.windows.annotations.storage.StoreContentChangedEventHandler)">addStoreContentChanged</a>, <a href="AnnotationStore.html#close()">close</a>, <a href="AnnotationStore.html#Dispose()">Dispose</a>, <a href="AnnotationStore.html#getAutoFlush()">getAutoFlush</a>, <a href="AnnotationStore.html#removeAnchorChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">removeAnchorChanged</a>, <a href="AnnotationStore.html#removeAuthorChanged(system.windows.annotations.AnnotationAuthorChangedEventHandler)">removeAuthorChanged</a>, <a href="AnnotationStore.html#removeCargoChanged(system.windows.annotations.AnnotationResourceChangedEventHandler)">removeCargoChanged</a>, <a href="AnnotationStore.html#removeStoreContentChanged(system.windows.annotations.storage.StoreContentChangedEventHandler)">removeStoreContentChanged</a>, <a href="AnnotationStore.html#setAutoFlush(boolean)">setAutoFlush</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -531,8 +524,12 @@ extends <a href="AnnotationStore.html" title="class in system.windows.annotation
                            throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="XmlStreamStore.html" title="class in system.windows.annotations.storage"><code>XmlStreamStore</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="XmlStreamStore.html" title="class in system.windows.annotations.storage"><code>XmlStreamStore</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

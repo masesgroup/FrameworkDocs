@@ -82,7 +82,7 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">KerberosReceiverSecurityToken</span>
@@ -286,7 +286,7 @@ java.lang.String&nbsp;valueTypeUri)</code></th>
 <h3>Methods inherited from class&nbsp;system.identitymodel.tokens.<a href="WindowsSecurityToken.html" title="class in system.identitymodel.tokens">WindowsSecurityToken</a></h3>
 <a id="methods.inherited.from.class.system.identitymodel.tokens.WindowsSecurityToken">
 <!--   -->
-</a><code><a href="WindowsSecurityToken.html#Dispose()">Dispose</a>, <a href="WindowsSecurityToken.html#getAuthenticationType()">getAuthenticationType</a>, <a href="WindowsSecurityToken.html#getWindowsIdentity()">getWindowsIdentity</a></code></div>
+</a><code><a href="WindowsSecurityToken.html#close()">close</a>, <a href="WindowsSecurityToken.html#Dispose()">Dispose</a>, <a href="WindowsSecurityToken.html#getAuthenticationType()">getAuthenticationType</a>, <a href="WindowsSecurityToken.html#getWindowsIdentity()">getWindowsIdentity</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;system.identitymodel.tokens.<a href="SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a></h3>
 <a id="methods.inherited.from.class.system.identitymodel.tokens.SecurityToken">
@@ -625,8 +625,12 @@ java.lang.String&nbsp;valueTypeUri)</span>
                                           throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="KerberosReceiverSecurityToken.html" title="class in system.identitymodel.tokens"><code>KerberosReceiverSecurityToken</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="KerberosReceiverSecurityToken.html" title="class in system.identitymodel.tokens"><code>KerberosReceiverSecurityToken</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

@@ -72,10 +72,8 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="DependencyObject.html" title="class in system.workflow.componentmodel">system.workflow.componentmodel.DependencyObject</a>
 <div class="inheritance">system.workflow.componentmodel.WorkflowParameterBinding</div>
-</div>
 </div>
 </div>
 </div>
@@ -275,12 +273,7 @@ extends <a href="DependencyObject.html" title="class in system.workflow.componen
 <h3>Methods inherited from class&nbsp;system.workflow.componentmodel.<a href="DependencyObject.html" title="class in system.workflow.componentmodel">DependencyObject</a></h3>
 <a id="methods.inherited.from.class.system.workflow.componentmodel.DependencyObject">
 <!--   -->
-</a><code><a href="DependencyObject.html#AddHandler(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">AddHandler</a>, <a href="DependencyObject.html#Dispose()">Dispose</a>, <a href="DependencyObject.html#GetBinding(system.workflow.componentmodel.DependencyProperty)">GetBinding</a>, <a href="DependencyObject.html#getSite()">getSite</a>, <a href="DependencyObject.html#getUserData()">getUserData</a>, <a href="DependencyObject.html#GetValue(system.workflow.componentmodel.DependencyProperty)">GetValue</a>, <a href="DependencyObject.html#GetValueBase(system.workflow.componentmodel.DependencyProperty)">GetValueBase</a>, <a href="DependencyObject.html#IsBindingSet(system.workflow.componentmodel.DependencyProperty)">IsBindingSet</a>, <a href="DependencyObject.html#MetaEquals(system.workflow.componentmodel.DependencyObject)">MetaEquals</a>, <a href="DependencyObject.html#RemoveHandler(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">RemoveHandler</a>, <a href="DependencyObject.html#RemoveProperty(system.workflow.componentmodel.DependencyProperty)">RemoveProperty</a>, <a href="DependencyObject.html#SetBinding(system.workflow.componentmodel.DependencyProperty,system.workflow.componentmodel.ActivityBind)">SetBinding</a>, <a href="DependencyObject.html#setSite(system.componentmodel.ISite)">setSite</a>, <a href="DependencyObject.html#SetValue(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">SetValue</a>, <a href="DependencyObject.html#SetValueBase(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">SetValueBase</a></code></div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
+</a><code><a href="DependencyObject.html#AddHandler(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">AddHandler</a>, <a href="DependencyObject.html#close()">close</a>, <a href="DependencyObject.html#Dispose()">Dispose</a>, <a href="DependencyObject.html#GetBinding(system.workflow.componentmodel.DependencyProperty)">GetBinding</a>, <a href="DependencyObject.html#getSite()">getSite</a>, <a href="DependencyObject.html#getUserData()">getUserData</a>, <a href="DependencyObject.html#GetValue(system.workflow.componentmodel.DependencyProperty)">GetValue</a>, <a href="DependencyObject.html#GetValueBase(system.workflow.componentmodel.DependencyProperty)">GetValueBase</a>, <a href="DependencyObject.html#IsBindingSet(system.workflow.componentmodel.DependencyProperty)">IsBindingSet</a>, <a href="DependencyObject.html#MetaEquals(system.workflow.componentmodel.DependencyObject)">MetaEquals</a>, <a href="DependencyObject.html#RemoveHandler(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">RemoveHandler</a>, <a href="DependencyObject.html#RemoveProperty(system.workflow.componentmodel.DependencyProperty)">RemoveProperty</a>, <a href="DependencyObject.html#SetBinding(system.workflow.componentmodel.DependencyProperty,system.workflow.componentmodel.ActivityBind)">SetBinding</a>, <a href="DependencyObject.html#setSite(system.componentmodel.ISite)">setSite</a>, <a href="DependencyObject.html#SetValue(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">SetValue</a>, <a href="DependencyObject.html#SetValueBase(system.workflow.componentmodel.DependencyProperty,org.mases.jcobridge.netreflection.NetObject)">SetValueBase</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -535,8 +528,12 @@ extends <a href="DependencyObject.html" title="class in system.workflow.componen
                                      throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="WorkflowParameterBinding.html" title="class in system.workflow.componentmodel"><code>WorkflowParameterBinding</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="WorkflowParameterBinding.html" title="class in system.workflow.componentmodel"><code>WorkflowParameterBinding</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

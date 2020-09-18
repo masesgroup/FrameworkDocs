@@ -72,11 +72,9 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="HttpContent.html" title="class in system.net.http">system.net.http.HttpContent</a>
 <div class="inheritance"><a href="ByteArrayContent.html" title="class in system.net.http">system.net.http.ByteArrayContent</a>
 <div class="inheritance">system.net.http.StringContent</div>
-</div>
 </div>
 </div>
 </div>
@@ -268,12 +266,7 @@ java.lang.String&nbsp;mediaType)</code></th>
 <h3>Methods inherited from class&nbsp;system.net.http.<a href="HttpContent.html" title="class in system.net.http">HttpContent</a></h3>
 <a id="methods.inherited.from.class.system.net.http.HttpContent">
 <!--   -->
-</a><code><a href="HttpContent.html#CopyToAsync(system.io.Stream)">CopyToAsync</a>, <a href="HttpContent.html#CopyToAsync(system.io.Stream,system.net.TransportContext)">CopyToAsync</a>, <a href="HttpContent.html#Dispose()">Dispose</a>, <a href="HttpContent.html#getHeaders()">getHeaders</a>, <a href="HttpContent.html#LoadIntoBufferAsync()">LoadIntoBufferAsync</a>, <a href="HttpContent.html#LoadIntoBufferAsync(long)">LoadIntoBufferAsync</a></code></div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
+</a><code><a href="HttpContent.html#close()">close</a>, <a href="HttpContent.html#CopyToAsync(system.io.Stream)">CopyToAsync</a>, <a href="HttpContent.html#CopyToAsync(system.io.Stream,system.net.TransportContext)">CopyToAsync</a>, <a href="HttpContent.html#Dispose()">Dispose</a>, <a href="HttpContent.html#getHeaders()">getHeaders</a>, <a href="HttpContent.html#LoadIntoBufferAsync()">LoadIntoBufferAsync</a>, <a href="HttpContent.html#LoadIntoBufferAsync(long)">LoadIntoBufferAsync</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -597,8 +590,12 @@ java.lang.String&nbsp;mediaType)</span>
                           throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="StringContent.html" title="class in system.net.http"><code>StringContent</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="StringContent.html" title="class in system.net.http"><code>StringContent</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

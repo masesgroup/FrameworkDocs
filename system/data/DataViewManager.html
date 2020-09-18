@@ -72,10 +72,8 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="../componentmodel/MarshalByValueComponent.html" title="class in system.componentmodel">system.componentmodel.MarshalByValueComponent</a>
 <div class="inheritance">system.data.DataViewManager</div>
-</div>
 </div>
 </div>
 </div>
@@ -295,12 +293,7 @@ extends <a href="../componentmodel/MarshalByValueComponent.html" title="class in
 <h3>Methods inherited from class&nbsp;system.componentmodel.<a href="../componentmodel/MarshalByValueComponent.html" title="class in system.componentmodel">MarshalByValueComponent</a></h3>
 <a id="methods.inherited.from.class.system.componentmodel.MarshalByValueComponent">
 <!--   -->
-</a><code><a href="../componentmodel/MarshalByValueComponent.html#addDisposed(system.EventHandler)">addDisposed</a>, <a href="../componentmodel/MarshalByValueComponent.html#Dispose()">Dispose</a>, <a href="../componentmodel/MarshalByValueComponent.html#getContainer()">getContainer</a>, <a href="../componentmodel/MarshalByValueComponent.html#getDesignMode()">getDesignMode</a>, <a href="../componentmodel/MarshalByValueComponent.html#GetService(org.mases.jcobridge.netreflection.NetType)">GetService</a>, <a href="../componentmodel/MarshalByValueComponent.html#getSite()">getSite</a>, <a href="../componentmodel/MarshalByValueComponent.html#removeDisposed(system.EventHandler)">removeDisposed</a>, <a href="../componentmodel/MarshalByValueComponent.html#setSite(system.componentmodel.ISite)">setSite</a></code></div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
+</a><code><a href="../componentmodel/MarshalByValueComponent.html#addDisposed(system.EventHandler)">addDisposed</a>, <a href="../componentmodel/MarshalByValueComponent.html#close()">close</a>, <a href="../componentmodel/MarshalByValueComponent.html#Dispose()">Dispose</a>, <a href="../componentmodel/MarshalByValueComponent.html#getContainer()">getContainer</a>, <a href="../componentmodel/MarshalByValueComponent.html#getDesignMode()">getDesignMode</a>, <a href="../componentmodel/MarshalByValueComponent.html#GetService(org.mases.jcobridge.netreflection.NetType)">GetService</a>, <a href="../componentmodel/MarshalByValueComponent.html#getSite()">getSite</a>, <a href="../componentmodel/MarshalByValueComponent.html#removeDisposed(system.EventHandler)">removeDisposed</a>, <a href="../componentmodel/MarshalByValueComponent.html#setSite(system.componentmodel.ISite)">setSite</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -547,8 +540,12 @@ extends <a href="../componentmodel/MarshalByValueComponent.html" title="class in
                             throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="DataViewManager.html" title="class in system.data"><code>DataViewManager</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="DataViewManager.html" title="class in system.data"><code>DataViewManager</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

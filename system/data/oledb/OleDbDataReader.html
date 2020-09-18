@@ -82,7 +82,7 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">OleDbDataReader</span>
@@ -412,7 +412,7 @@ int&nbsp;dupParam4)</code></th>
 <h3>Methods inherited from class&nbsp;system.data.common.<a href="../common/DbDataReader.html" title="class in system.data.common">DbDataReader</a></h3>
 <a id="methods.inherited.from.class.system.data.common.DbDataReader">
 <!--   -->
-</a><code><a href="../common/DbDataReader.html#Dispose()">Dispose</a>, <a href="../common/DbDataReader.html#GetData(int)">GetData</a>, <a href="../common/DbDataReader.html#getDepth()">getDepth</a>, <a href="../common/DbDataReader.html#getFieldCount()">getFieldCount</a>, <a href="../common/DbDataReader.html#getHasRows()">getHasRows</a>, <a href="../common/DbDataReader.html#getIsClosed()">getIsClosed</a>, <a href="../common/DbDataReader.html#GetProviderSpecificFieldType(int)">GetProviderSpecificFieldType</a>, <a href="../common/DbDataReader.html#GetProviderSpecificValue(int)">GetProviderSpecificValue</a>, <a href="../common/DbDataReader.html#GetProviderSpecificValues(org.mases.jcobridge.netreflection.NetObject%5B%5D)">GetProviderSpecificValues</a>, <a href="../common/DbDataReader.html#getRecordsAffected()">getRecordsAffected</a>, <a href="../common/DbDataReader.html#GetStream(int)">GetStream</a>, <a href="../common/DbDataReader.html#GetTextReader(int)">GetTextReader</a>, <a href="../common/DbDataReader.html#getVisibleFieldCount()">getVisibleFieldCount</a></code></div>
+</a><code><a href="../common/DbDataReader.html#close()">close</a>, <a href="../common/DbDataReader.html#Dispose()">Dispose</a>, <a href="../common/DbDataReader.html#GetData(int)">GetData</a>, <a href="../common/DbDataReader.html#getDepth()">getDepth</a>, <a href="../common/DbDataReader.html#getFieldCount()">getFieldCount</a>, <a href="../common/DbDataReader.html#getHasRows()">getHasRows</a>, <a href="../common/DbDataReader.html#getIsClosed()">getIsClosed</a>, <a href="../common/DbDataReader.html#GetProviderSpecificFieldType(int)">GetProviderSpecificFieldType</a>, <a href="../common/DbDataReader.html#GetProviderSpecificValue(int)">GetProviderSpecificValue</a>, <a href="../common/DbDataReader.html#GetProviderSpecificValues(org.mases.jcobridge.netreflection.NetObject%5B%5D)">GetProviderSpecificValues</a>, <a href="../common/DbDataReader.html#getRecordsAffected()">getRecordsAffected</a>, <a href="../common/DbDataReader.html#GetStream(int)">GetStream</a>, <a href="../common/DbDataReader.html#GetTextReader(int)">GetTextReader</a>, <a href="../common/DbDataReader.html#getVisibleFieldCount()">getVisibleFieldCount</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;system.<a href="../../MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></h3>
 <a id="methods.inherited.from.class.system.MarshalByRefObject">
@@ -621,8 +621,12 @@ int&nbsp;dupParam4)</code></th>
                             throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="OleDbDataReader.html" title="class in system.data.oledb"><code>OleDbDataReader</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="OleDbDataReader.html" title="class in system.data.oledb"><code>OleDbDataReader</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

@@ -84,7 +84,7 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">NamedPipeClientStream</span>
@@ -349,7 +349,7 @@ boolean&nbsp;isConnected,
 <h3>Methods inherited from class&nbsp;system.io.<a href="../Stream.html" title="class in system.io">Stream</a></h3>
 <a id="methods.inherited.from.class.system.io.Stream">
 <!--   -->
-</a><code><a href="../Stream.html#Close()">Close</a>, <a href="../Stream.html#CopyTo(system.io.Stream)">CopyTo</a>, <a href="../Stream.html#CopyTo(system.io.Stream,int)">CopyTo</a>, <a href="../Stream.html#CopyToAsync(system.io.Stream)">CopyToAsync</a>, <a href="../Stream.html#CopyToAsync(system.io.Stream,int)">CopyToAsync</a>, <a href="../Stream.html#CopyToAsync(system.io.Stream,int,system.threading.CancellationToken)">CopyToAsync</a>, <a href="../Stream.html#Dispose()">Dispose</a>, <a href="../Stream.html#FlushAsync()">FlushAsync</a>, <a href="../Stream.html#FlushAsync(system.threading.CancellationToken)">FlushAsync</a>, <a href="../Stream.html#getCanRead()">getCanRead</a>, <a href="../Stream.html#getCanSeek()">getCanSeek</a>, <a href="../Stream.html#getCanTimeout()">getCanTimeout</a>, <a href="../Stream.html#getCanWrite()">getCanWrite</a>, <a href="../Stream.html#getLength()">getLength</a>, <a href="../Stream.html#getPosition()">getPosition</a>, <a href="../Stream.html#getReadTimeout()">getReadTimeout</a>, <a href="../Stream.html#getWriteTimeout()">getWriteTimeout</a>, <a href="../Stream.html#setPosition(long)">setPosition</a>, <a href="../Stream.html#setReadTimeout(int)">setReadTimeout</a>, <a href="../Stream.html#setWriteTimeout(int)">setWriteTimeout</a>, <a href="../Stream.html#Synchronized(system.io.Stream)">Synchronized</a>, <a href="../Stream.html#WriteAsync(byte%5B%5D,int,int)">WriteAsync</a>, <a href="../Stream.html#WriteAsync(byte%5B%5D,int,int,system.threading.CancellationToken)">WriteAsync</a>, <a href="../Stream.html#WriteAsync(org.mases.jcobridge.JCRefOut,int,int)">WriteAsync</a>, <a href="../Stream.html#WriteAsync(org.mases.jcobridge.JCRefOut,int,int,system.threading.CancellationToken)">WriteAsync</a></code></div>
+</a><code><a href="../Stream.html#close()">close</a>, <a href="../Stream.html#Close()">Close</a>, <a href="../Stream.html#CopyTo(system.io.Stream)">CopyTo</a>, <a href="../Stream.html#CopyTo(system.io.Stream,int)">CopyTo</a>, <a href="../Stream.html#CopyToAsync(system.io.Stream)">CopyToAsync</a>, <a href="../Stream.html#CopyToAsync(system.io.Stream,int)">CopyToAsync</a>, <a href="../Stream.html#CopyToAsync(system.io.Stream,int,system.threading.CancellationToken)">CopyToAsync</a>, <a href="../Stream.html#Dispose()">Dispose</a>, <a href="../Stream.html#FlushAsync()">FlushAsync</a>, <a href="../Stream.html#FlushAsync(system.threading.CancellationToken)">FlushAsync</a>, <a href="../Stream.html#getCanRead()">getCanRead</a>, <a href="../Stream.html#getCanSeek()">getCanSeek</a>, <a href="../Stream.html#getCanTimeout()">getCanTimeout</a>, <a href="../Stream.html#getCanWrite()">getCanWrite</a>, <a href="../Stream.html#getLength()">getLength</a>, <a href="../Stream.html#getPosition()">getPosition</a>, <a href="../Stream.html#getReadTimeout()">getReadTimeout</a>, <a href="../Stream.html#getWriteTimeout()">getWriteTimeout</a>, <a href="../Stream.html#setPosition(long)">setPosition</a>, <a href="../Stream.html#setReadTimeout(int)">setReadTimeout</a>, <a href="../Stream.html#setWriteTimeout(int)">setWriteTimeout</a>, <a href="../Stream.html#Synchronized(system.io.Stream)">Synchronized</a>, <a href="../Stream.html#WriteAsync(byte%5B%5D,int,int)">WriteAsync</a>, <a href="../Stream.html#WriteAsync(byte%5B%5D,int,int,system.threading.CancellationToken)">WriteAsync</a>, <a href="../Stream.html#WriteAsync(org.mases.jcobridge.JCRefOut,int,int)">WriteAsync</a>, <a href="../Stream.html#WriteAsync(org.mases.jcobridge.JCRefOut,int,int,system.threading.CancellationToken)">WriteAsync</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;system.<a href="../../MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></h3>
 <a id="methods.inherited.from.class.system.MarshalByRefObject">
@@ -881,8 +881,12 @@ java.lang.String&nbsp;pipeName,
                                   throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="NamedPipeClientStream.html" title="class in system.io.pipes"><code>NamedPipeClientStream</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="NamedPipeClientStream.html" title="class in system.io.pipes"><code>NamedPipeClientStream</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

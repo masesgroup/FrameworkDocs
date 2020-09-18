@@ -82,7 +82,7 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">OleDbTransaction</span>
@@ -276,7 +276,7 @@ extends <a href="../common/DbTransaction.html" title="class in system.data.commo
 <h3>Methods inherited from class&nbsp;system.data.common.<a href="../common/DbTransaction.html" title="class in system.data.common">DbTransaction</a></h3>
 <a id="methods.inherited.from.class.system.data.common.DbTransaction">
 <!--   -->
-</a><code><a href="../common/DbTransaction.html#Dispose()">Dispose</a>, <a href="../common/DbTransaction.html#getConnection()">getConnection</a>, <a href="../common/DbTransaction.html#getIsolationLevel()">getIsolationLevel</a></code></div>
+</a><code><a href="../common/DbTransaction.html#close()">close</a>, <a href="../common/DbTransaction.html#Dispose()">Dispose</a>, <a href="../common/DbTransaction.html#getConnection()">getConnection</a>, <a href="../common/DbTransaction.html#getIsolationLevel()">getIsolationLevel</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;system.<a href="../../MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></h3>
 <a id="methods.inherited.from.class.system.MarshalByRefObject">
@@ -485,8 +485,12 @@ extends <a href="../common/DbTransaction.html" title="class in system.data.commo
                              throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="OleDbTransaction.html" title="class in system.data.oledb"><code>OleDbTransaction</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="OleDbTransaction.html" title="class in system.data.oledb"><code>OleDbTransaction</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

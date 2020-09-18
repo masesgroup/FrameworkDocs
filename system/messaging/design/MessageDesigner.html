@@ -72,10 +72,8 @@ var activeTableTab = "activeTableTab";
 <div class="contentContainer">
 <div class="inheritance" title="Inheritance Tree">java.lang.Object
 <div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a>
-<div class="inheritance"><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectAutoCloseable</a>
 <div class="inheritance"><a href="../../componentmodel/design/ComponentDesigner.html" title="class in system.componentmodel.design">system.componentmodel.design.ComponentDesigner</a>
 <div class="inheritance">system.messaging.design.MessageDesigner</div>
-</div>
 </div>
 </div>
 </div>
@@ -251,12 +249,7 @@ extends <a href="../../componentmodel/design/ComponentDesigner.html" title="clas
 <h3>Methods inherited from class&nbsp;system.componentmodel.design.<a href="../../componentmodel/design/ComponentDesigner.html" title="class in system.componentmodel.design">ComponentDesigner</a></h3>
 <a id="methods.inherited.from.class.system.componentmodel.design.ComponentDesigner">
 <!--   -->
-</a><code><a href="../../componentmodel/design/ComponentDesigner.html#Dispose()">Dispose</a>, <a href="../../componentmodel/design/ComponentDesigner.html#DoDefaultAction()">DoDefaultAction</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getActionLists()">getActionLists</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getAssociatedComponents()">getAssociatedComponents</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getComponent()">getComponent</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getVerbs()">getVerbs</a>, <a href="../../componentmodel/design/ComponentDesigner.html#Initialize(system.componentmodel.IComponent)">Initialize</a>, <a href="../../componentmodel/design/ComponentDesigner.html#InitializeExistingComponent(system.collections.IDictionary)">InitializeExistingComponent</a>, <a href="../../componentmodel/design/ComponentDesigner.html#InitializeNewComponent(system.collections.IDictionary)">InitializeNewComponent</a>, <a href="../../componentmodel/design/ComponentDesigner.html#InitializeNonDefault()">InitializeNonDefault</a>, <a href="../../componentmodel/design/ComponentDesigner.html#OnSetComponentDefaults()">OnSetComponentDefaults</a></code></div>
-<div class="inheritedList">
-<h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html" title="class in org.mases.jcobridge.netreflection">NetObjectAutoCloseable</a></h3>
-<a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectAutoCloseable">
-<!--   -->
-</a><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectAutoCloseable.html#close()">close</a></code></div>
+</a><code><a href="../../componentmodel/design/ComponentDesigner.html#close()">close</a>, <a href="../../componentmodel/design/ComponentDesigner.html#Dispose()">Dispose</a>, <a href="../../componentmodel/design/ComponentDesigner.html#DoDefaultAction()">DoDefaultAction</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getActionLists()">getActionLists</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getAssociatedComponents()">getAssociatedComponents</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getComponent()">getComponent</a>, <a href="../../componentmodel/design/ComponentDesigner.html#getVerbs()">getVerbs</a>, <a href="../../componentmodel/design/ComponentDesigner.html#Initialize(system.componentmodel.IComponent)">Initialize</a>, <a href="../../componentmodel/design/ComponentDesigner.html#InitializeExistingComponent(system.collections.IDictionary)">InitializeExistingComponent</a>, <a href="../../componentmodel/design/ComponentDesigner.html#InitializeNewComponent(system.collections.IDictionary)">InitializeNewComponent</a>, <a href="../../componentmodel/design/ComponentDesigner.html#InitializeNonDefault()">InitializeNonDefault</a>, <a href="../../componentmodel/design/ComponentDesigner.html#OnSetComponentDefaults()">OnSetComponentDefaults</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;org.mases.jcobridge.netreflection.<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></h3>
 <a id="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -460,8 +453,12 @@ extends <a href="../../componentmodel/design/ComponentDesigner.html" title="clas
                             throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="MessageDesigner.html" title="class in system.messaging.design"><code>MessageDesigner</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="MessageDesigner.html" title="class in system.messaging.design"><code>MessageDesigner</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>

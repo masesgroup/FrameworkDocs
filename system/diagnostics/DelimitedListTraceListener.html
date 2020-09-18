@@ -84,7 +84,7 @@ var activeTableTab = "activeTableTab";
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">DelimitedListTraceListener</span>
@@ -332,7 +332,7 @@ java.lang.String&nbsp;format,
 <h3>Methods inherited from class&nbsp;system.diagnostics.<a href="TraceListener.html" title="class in system.diagnostics">TraceListener</a></h3>
 <a id="methods.inherited.from.class.system.diagnostics.TraceListener">
 <!--   -->
-</a><code><a href="TraceListener.html#Dispose()">Dispose</a>, <a href="TraceListener.html#Fail(java.lang.String)">Fail</a>, <a href="TraceListener.html#Fail(java.lang.String,java.lang.String)">Fail</a>, <a href="TraceListener.html#getAttributes()">getAttributes</a>, <a href="TraceListener.html#getFilter()">getFilter</a>, <a href="TraceListener.html#getIndentLevel()">getIndentLevel</a>, <a href="TraceListener.html#getIndentSize()">getIndentSize</a>, <a href="TraceListener.html#getIsThreadSafe()">getIsThreadSafe</a>, <a href="TraceListener.html#getName()">getName</a>, <a href="TraceListener.html#getTraceOutputOptions()">getTraceOutputOptions</a>, <a href="TraceListener.html#setFilter(system.diagnostics.TraceFilter)">setFilter</a>, <a href="TraceListener.html#setIndentLevel(int)">setIndentLevel</a>, <a href="TraceListener.html#setIndentSize(int)">setIndentSize</a>, <a href="TraceListener.html#setName(java.lang.String)">setName</a>, <a href="TraceListener.html#setTraceOutputOptions(system.diagnostics.TraceOptions)">setTraceOutputOptions</a>, <a href="TraceListener.html#TraceEvent(system.diagnostics.TraceEventCache,java.lang.String,system.diagnostics.TraceEventType,int)">TraceEvent</a>, <a href="TraceListener.html#TraceTransfer(system.diagnostics.TraceEventCache,java.lang.String,int,java.lang.String,system.Guid)">TraceTransfer</a>, <a href="TraceListener.html#Write(java.lang.String,java.lang.String)">Write</a>, <a href="TraceListener.html#Write(org.mases.jcobridge.netreflection.NetObject)">Write</a>, <a href="TraceListener.html#Write(org.mases.jcobridge.netreflection.NetObject,java.lang.String)">Write</a>, <a href="TraceListener.html#WriteLine(java.lang.String,java.lang.String)">WriteLine</a>, <a href="TraceListener.html#WriteLine(org.mases.jcobridge.netreflection.NetObject)">WriteLine</a>, <a href="TraceListener.html#WriteLine(org.mases.jcobridge.netreflection.NetObject,java.lang.String)">WriteLine</a></code></div>
+</a><code><a href="TraceListener.html#close()">close</a>, <a href="TraceListener.html#Dispose()">Dispose</a>, <a href="TraceListener.html#Fail(java.lang.String)">Fail</a>, <a href="TraceListener.html#Fail(java.lang.String,java.lang.String)">Fail</a>, <a href="TraceListener.html#getAttributes()">getAttributes</a>, <a href="TraceListener.html#getFilter()">getFilter</a>, <a href="TraceListener.html#getIndentLevel()">getIndentLevel</a>, <a href="TraceListener.html#getIndentSize()">getIndentSize</a>, <a href="TraceListener.html#getIsThreadSafe()">getIsThreadSafe</a>, <a href="TraceListener.html#getName()">getName</a>, <a href="TraceListener.html#getTraceOutputOptions()">getTraceOutputOptions</a>, <a href="TraceListener.html#setFilter(system.diagnostics.TraceFilter)">setFilter</a>, <a href="TraceListener.html#setIndentLevel(int)">setIndentLevel</a>, <a href="TraceListener.html#setIndentSize(int)">setIndentSize</a>, <a href="TraceListener.html#setName(java.lang.String)">setName</a>, <a href="TraceListener.html#setTraceOutputOptions(system.diagnostics.TraceOptions)">setTraceOutputOptions</a>, <a href="TraceListener.html#TraceEvent(system.diagnostics.TraceEventCache,java.lang.String,system.diagnostics.TraceEventType,int)">TraceEvent</a>, <a href="TraceListener.html#TraceTransfer(system.diagnostics.TraceEventCache,java.lang.String,int,java.lang.String,system.Guid)">TraceTransfer</a>, <a href="TraceListener.html#Write(java.lang.String,java.lang.String)">Write</a>, <a href="TraceListener.html#Write(org.mases.jcobridge.netreflection.NetObject)">Write</a>, <a href="TraceListener.html#Write(org.mases.jcobridge.netreflection.NetObject,java.lang.String)">Write</a>, <a href="TraceListener.html#WriteLine(java.lang.String,java.lang.String)">WriteLine</a>, <a href="TraceListener.html#WriteLine(org.mases.jcobridge.netreflection.NetObject)">WriteLine</a>, <a href="TraceListener.html#WriteLine(org.mases.jcobridge.netreflection.NetObject,java.lang.String)">WriteLine</a></code></div>
 <div class="inheritedList">
 <h3>Methods inherited from class&nbsp;system.<a href="../MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></h3>
 <a id="methods.inherited.from.class.system.MarshalByRefObject">
@@ -638,8 +638,12 @@ java.lang.String&nbsp;name)</span>
                                        throws <span class="exceptions">java.lang.Throwable</span></div>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="DelimitedListTraceListener.html" title="class in system.diagnostics"><code>DelimitedListTraceListener</code></a>, a cast assert is made to check if types are compatible.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>from</code> - <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance to be casted</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd><a href="DelimitedListTraceListener.html" title="class in system.diagnostics"><code>DelimitedListTraceListener</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
 </dl>
 </section>
 </li>
