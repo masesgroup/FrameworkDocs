@@ -238,8 +238,8 @@ java.lang.String[]&nbsp;assemblyNames)</code></th>
 </tr>
 <tr class="altColor" id="i6">
 <td class="colFirst"><code>static <a href="../GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateEngineAndGetGlobalScope(boolean,org.mases.jcobridge.JCRefOut)">CreateEngineAndGetGlobalScope</a></span>&#8203;(boolean&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateEngineAndGetGlobalScope(boolean,org.mases.jcobridge.netreflection.JCORefOut)">CreateEngineAndGetGlobalScope</a></span>&#8203;(boolean&nbsp;dupParam0,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i7">
@@ -251,8 +251,8 @@ java.lang.String[]&nbsp;assemblyNames,
 </tr>
 <tr class="altColor" id="i8">
 <td class="colFirst"><code>static <a href="../GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateEngineAndGetGlobalScopeWithType(boolean,org.mases.jcobridge.JCRefOut,system.RuntimeTypeHandle)">CreateEngineAndGetGlobalScopeWithType</a></span>&#8203;(boolean&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateEngineAndGetGlobalScopeWithType(boolean,org.mases.jcobridge.netreflection.JCORefOut,system.RuntimeTypeHandle)">CreateEngineAndGetGlobalScopeWithType</a></span>&#8203;(boolean&nbsp;dupParam0,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
 <a href="../../../system/RuntimeTypeHandle.html" title="class in system">RuntimeTypeHandle</a>&nbsp;dupParam2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -266,8 +266,8 @@ java.lang.String&nbsp;rootNamespace)</code></th>
 </tr>
 <tr class="altColor" id="i10">
 <td class="colFirst"><code>static <a href="../GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(boolean,org.mases.jcobridge.JCRefOut,system.RuntimeTypeHandle,java.lang.String)">CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace</a></span>&#8203;(boolean&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(boolean,org.mases.jcobridge.netreflection.JCORefOut,system.RuntimeTypeHandle,java.lang.String)">CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace</a></span>&#8203;(boolean&nbsp;dupParam0,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
 <a href="../../../system/RuntimeTypeHandle.html" title="class in system">RuntimeTypeHandle</a>&nbsp;dupParam2,
 java.lang.String&nbsp;dupParam3)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -652,7 +652,7 @@ java.lang.String&nbsp;dupParam3)</code></th>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="BaseVsaEngine.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="BaseVsaEngine.html" title="class in microsoft.jscript.vsa">BaseVsaEngine</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>An <code>Object</code> representing the instance of the instantiated Class</dd>
+<dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
 </section>
 </li>
@@ -678,7 +678,7 @@ java.lang.String&nbsp;dupParam3)</code></th>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="BaseVsaEngine.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="BaseVsaEngine.html" title="class in microsoft.jscript.vsa">BaseVsaEngine</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the Type of the instantiated Class</dd>
+<dd>A <a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink"><code>JCType</code></a> representing the CLR Type of the instantiated Class</dd>
 </dl>
 </section>
 </li>
@@ -832,9 +832,9 @@ java.lang.String[]&nbsp;assemblyNames)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="CreateEngineAndGetGlobalScope(boolean,org.mases.jcobridge.JCRefOut)">CreateEngineAndGetGlobalScope</a></h3>
+<h3><a id="CreateEngineAndGetGlobalScope(boolean,org.mases.jcobridge.netreflection.JCORefOut)">CreateEngineAndGetGlobalScope</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType"><a href="../GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></span>&nbsp;<span class="memberName">CreateEngineAndGetGlobalScope</span>&#8203;(<span class="arguments">boolean&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1)</span>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</span>
                                                  throws <span class="exceptions">java.lang.Throwable,
 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -919,9 +919,9 @@ java.lang.String[]&nbsp;assemblyNames,
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="CreateEngineAndGetGlobalScopeWithType(boolean,org.mases.jcobridge.JCRefOut,system.RuntimeTypeHandle)">CreateEngineAndGetGlobalScopeWithType</a></h3>
+<h3><a id="CreateEngineAndGetGlobalScopeWithType(boolean,org.mases.jcobridge.netreflection.JCORefOut,system.RuntimeTypeHandle)">CreateEngineAndGetGlobalScopeWithType</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType"><a href="../GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></span>&nbsp;<span class="memberName">CreateEngineAndGetGlobalScopeWithType</span>&#8203;(<span class="arguments">boolean&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
 <a href="../../../system/RuntimeTypeHandle.html" title="class in system">RuntimeTypeHandle</a>&nbsp;dupParam2)</span>
                                                          throws <span class="exceptions">java.lang.Throwable,
 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1012,9 +1012,9 @@ java.lang.String&nbsp;rootNamespace)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(boolean,org.mases.jcobridge.JCRefOut,system.RuntimeTypeHandle,java.lang.String)">CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace</a></h3>
+<h3><a id="CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace(boolean,org.mases.jcobridge.netreflection.JCORefOut,system.RuntimeTypeHandle,java.lang.String)">CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType"><a href="../GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></span>&nbsp;<span class="memberName">CreateEngineAndGetGlobalScopeWithTypeAndRootNamespace</span>&#8203;(<span class="arguments">boolean&nbsp;dupParam0,
-<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCRefOut.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCRefOut</a>&nbsp;dupParam1,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
 <a href="../../../system/RuntimeTypeHandle.html" title="class in system">RuntimeTypeHandle</a>&nbsp;dupParam2,
 java.lang.String&nbsp;dupParam3)</span>
                                                                          throws <span class="exceptions">java.lang.Throwable,
