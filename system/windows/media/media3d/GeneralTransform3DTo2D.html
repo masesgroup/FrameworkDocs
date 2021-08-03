@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -258,6 +258,12 @@ extends <a href="../../Freezable.html" title="class in system.windows">Freezable
 <tr class="altColor" id="i8">
 <td class="colFirst"><code><a href="../../Rect.html" title="class in system.windows">Rect</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TransformBounds(system.windows.media.media3d.Rect3D)">TransformBounds</a></span>&#8203;(<a href="Rect3D.html" title="class in system.windows.media.media3d">Rect3D</a>&nbsp;rect3D)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i9">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryTransform(system.windows.media.media3d.Point3D,org.mases.jcobridge.netreflection.JCORefOut)">TryTransform</a></span>&#8203;(<a href="Point3D.html" title="class in system.windows.media.media3d">Point3D</a>&nbsp;inPoint,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../Point.html" title="class in system.windows">Point</a>&gt;&nbsp;result)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -493,6 +499,34 @@ extends <a href="../../Freezable.html" title="class in system.windows">Freezable
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="TryTransform(system.windows.media.media3d.Point3D,org.mases.jcobridge.netreflection.JCORefOut)">TryTransform</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryTransform</span>&#8203;(<span class="arguments"><a href="Point3D.html" title="class in system.windows.media.media3d">Point3D</a>&nbsp;inPoint,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../Point.html" title="class in system.windows">Point</a>&gt;&nbsp;result)</span>
+                     throws <span class="exceptions">java.lang.Throwable,
+<a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../../FormatException.html" title="class in system">FormatException</a>,
+<a href="../../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../../../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="Transform(system.windows.media.media3d.Point3D)">Transform</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="../../Point.html" title="class in system.windows">Point</a></span>&nbsp;<span class="memberName">Transform</span>&#8203;(<span class="arguments"><a href="Point3D.html" title="class in system.windows.media.media3d">Point3D</a>&nbsp;point)</span>
                 throws <span class="exceptions">java.lang.Throwable,
@@ -562,7 +596,7 @@ extends <a href="../../Freezable.html" title="class in system.windows">Freezable
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

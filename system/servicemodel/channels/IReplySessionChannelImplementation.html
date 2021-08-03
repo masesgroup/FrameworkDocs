@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":9,"i37":10};
+<script type="text/javascript">var data = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":9,"i38":10,"i39":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -304,107 +304,119 @@ implements <a href="IReplySessionChannel.html" title="interface in system.servic
 </tr>
 <tr class="rowColor" id="i19">
 <td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndWaitForRequest(system.IAsyncResult)">EndWaitForRequest</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndTryReceiveRequest(system.IAsyncResult,org.mases.jcobridge.netreflection.JCORefOut)">EndTryReceiveRequest</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="RequestContext.html" title="class in system.servicemodel.channels">RequestContext</a>&gt;&nbsp;context)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i20">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#EndWaitForRequest(system.IAsyncResult)">EndWaitForRequest</a></span>&#8203;(<a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i21">
+<tr class="altColor" id="i22">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="altColor" id="i22">
+<tr class="rowColor" id="i23">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="rowColor" id="i23">
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="altColor" id="i24">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="rowColor" id="i25">
+<tr class="altColor" id="i26">
 <td class="colFirst"><code><a href="../EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getLocalAddress()">getLocalAddress</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i26">
+<tr class="rowColor" id="i27">
 <td class="colFirst"><code><a href="../CommunicationState.html" title="class in system.servicemodel">CommunicationState</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getState()">getState</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i27">
+<tr class="altColor" id="i28">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Open()">Open</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i28">
+<tr class="rowColor" id="i29">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Open(system.TimeSpan)">Open</a></span>&#8203;(<a href="../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i29">
+<tr class="altColor" id="i30">
 <td class="colFirst"><code><a href="RequestContext.html" title="class in system.servicemodel.channels">RequestContext</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ReceiveRequest()">ReceiveRequest</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i30">
+<tr class="rowColor" id="i31">
 <td class="colFirst"><code><a href="RequestContext.html" title="class in system.servicemodel.channels">RequestContext</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ReceiveRequest(system.TimeSpan)">ReceiveRequest</a></span>&#8203;(<a href="../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i31">
+<tr class="altColor" id="i32">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeClosed(system.EventHandler)">removeClosed</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i32">
+<tr class="rowColor" id="i33">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeClosing(system.EventHandler)">removeClosing</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i33">
+<tr class="altColor" id="i34">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeFaulted(system.EventHandler)">removeFaulted</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i34">
+<tr class="rowColor" id="i35">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeOpened(system.EventHandler)">removeOpened</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i35">
+<tr class="altColor" id="i36">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#removeOpening(system.EventHandler)">removeOpening</a></span>&#8203;(<a href="../../EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i36">
+<tr class="rowColor" id="i37">
 <td class="colFirst"><code>static <a href="IReplySessionChannel.html" title="interface in system.servicemodel.channels">IReplySessionChannel</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToIReplySessionChannel(org.mases.jcobridge.netreflection.IJCOBridgeReflected)">ToIReplySessionChannel</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code></th>
 <td class="colLast">
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="IReplySessionChannel.html" title="interface in system.servicemodel.channels"><code>IReplySessionChannel</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr class="rowColor" id="i37">
+<tr class="altColor" id="i38">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#TryReceiveRequest(system.TimeSpan,org.mases.jcobridge.netreflection.JCORefOut)">TryReceiveRequest</a></span>&#8203;(<a href="../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="RequestContext.html" title="class in system.servicemodel.channels">RequestContext</a>&gt;&nbsp;context)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i39">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WaitForRequest(system.TimeSpan)">WaitForRequest</a></span>&#8203;(<a href="../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code></th>
 <td class="colLast">&nbsp;</td>
@@ -646,12 +658,40 @@ implements <a href="IReplySessionChannel.html" title="interface in system.servic
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="EndTryReceiveRequest(system.IAsyncResult,org.mases.jcobridge.netreflection.JCORefOut)">EndTryReceiveRequest</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">EndTryReceiveRequest</span>&#8203;(<span class="arguments"><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="RequestContext.html" title="class in system.servicemodel.channels">RequestContext</a>&gt;&nbsp;context)</span>
+                             throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IReplyChannel.html#EndTryReceiveRequest(system.IAsyncResult,org.mases.jcobridge.netreflection.JCORefOut)">EndTryReceiveRequest</a></code>&nbsp;in interface&nbsp;<code><a href="IReplyChannel.html" title="interface in system.servicemodel.channels">IReplyChannel</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="EndWaitForRequest(system.IAsyncResult)">EndWaitForRequest</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">EndWaitForRequest</span>&#8203;(<span class="arguments"><a href="../../IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)</span>
                           throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IReplyChannel.html#EndWaitForRequest(system.IAsyncResult)">EndWaitForRequest</a></code>&nbsp;in interface&nbsp;<code><a href="IReplyChannel.html" title="interface in system.servicemodel.channels">IReplyChannel</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="TryReceiveRequest(system.TimeSpan,org.mases.jcobridge.netreflection.JCORefOut)">TryReceiveRequest</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">TryReceiveRequest</span>&#8203;(<span class="arguments"><a href="../../TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="RequestContext.html" title="class in system.servicemodel.channels">RequestContext</a>&gt;&nbsp;context)</span>
+                          throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IReplyChannel.html#TryReceiveRequest(system.TimeSpan,org.mases.jcobridge.netreflection.JCORefOut)">TryReceiveRequest</a></code>&nbsp;in interface&nbsp;<code><a href="IReplyChannel.html" title="interface in system.servicemodel.channels">IReplyChannel</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 </dl>
@@ -1096,7 +1136,7 @@ implements <a href="IReplySessionChannel.html" title="interface in system.servic
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

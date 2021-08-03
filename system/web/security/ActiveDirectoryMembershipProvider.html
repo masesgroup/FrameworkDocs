@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -224,122 +224,157 @@ java.lang.String&nbsp;newPasswordAnswer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i3">
+<td class="colFirst"><code><a href="MembershipUser.html" title="class in system.web.security">MembershipUser</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CreateUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut)">CreateUser</a></span>&#8203;(java.lang.String&nbsp;username,
+java.lang.String&nbsp;password,
+java.lang.String&nbsp;email,
+java.lang.String&nbsp;passwordQuestion,
+java.lang.String&nbsp;passwordAnswer,
+boolean&nbsp;isApproved,
+<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;providerUserKey,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="MembershipCreateStatus.html" title="class in system.web.security">MembershipCreateStatus</a>&gt;&nbsp;status)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i4">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#DeleteUser(java.lang.String,boolean)">DeleteUser</a></span>&#8203;(java.lang.String&nbsp;username,
 boolean&nbsp;deleteAllRelatedData)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i4">
+<tr class="rowColor" id="i5">
+<td class="colFirst"><code><a href="MembershipUserCollection.html" title="class in system.web.security">MembershipUserCollection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FindUsersByEmail(java.lang.String,int,int,org.mases.jcobridge.netreflection.JCORefOut)">FindUsersByEmail</a></span>&#8203;(java.lang.String&nbsp;emailToMatch,
+int&nbsp;pageIndex,
+int&nbsp;pageSize,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;totalRecords)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i6">
+<td class="colFirst"><code><a href="MembershipUserCollection.html" title="class in system.web.security">MembershipUserCollection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#FindUsersByName(java.lang.String,int,int,org.mases.jcobridge.netreflection.JCORefOut)">FindUsersByName</a></span>&#8203;(java.lang.String&nbsp;usernameToMatch,
+int&nbsp;pageIndex,
+int&nbsp;pageSize,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;totalRecords)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i7">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GeneratePassword()">GeneratePassword</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i5">
+<tr class="altColor" id="i8">
+<td class="colFirst"><code><a href="MembershipUserCollection.html" title="class in system.web.security">MembershipUserCollection</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetAllUsers(int,int,org.mases.jcobridge.netreflection.JCORefOut)">GetAllUsers</a></span>&#8203;(int&nbsp;pageIndex,
+int&nbsp;pageSize,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;totalRecords)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i9">
 <td class="colFirst"><code><a href="ActiveDirectoryConnectionProtection.html" title="class in system.web.security">ActiveDirectoryConnectionProtection</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getCurrentConnectionProtection()">getCurrentConnectionProtection</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i6">
+<tr class="altColor" id="i10">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getEnableSearchMethods()">getEnableSearchMethods</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i7">
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOAssemblyName()">getJCOAssemblyName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr class="altColor" id="i8">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOClassName()">getJCOClassName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOInstance()">getJCOInstance</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr class="altColor" id="i10">
+<tr class="altColor" id="i14">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOObjectName()">getJCOObjectName</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr class="rowColor" id="i11">
+<tr class="rowColor" id="i15">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getJCOType()">getJCOType</a></span>()</code></th>
 <td class="colLast">
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr class="altColor" id="i12">
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetNumberOfUsersOnline()">GetNumberOfUsersOnline</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetPassword(java.lang.String,java.lang.String)">GetPassword</a></span>&#8203;(java.lang.String&nbsp;username,
 java.lang.String&nbsp;passwordAnswer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="altColor" id="i18">
 <td class="colFirst"><code>int</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPasswordAnswerAttemptLockoutDuration()">getPasswordAnswerAttemptLockoutDuration</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i15">
+<tr class="rowColor" id="i19">
 <td class="colFirst"><code><a href="MembershipUser.html" title="class in system.web.security">MembershipUser</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetUser(java.lang.String,boolean)">GetUser</a></span>&#8203;(java.lang.String&nbsp;username,
 boolean&nbsp;userIsOnline)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i16">
+<tr class="altColor" id="i20">
 <td class="colFirst"><code><a href="MembershipUser.html" title="class in system.web.security">MembershipUser</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetUser(org.mases.jcobridge.netreflection.NetObject,boolean)">GetUser</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;providerUserKey,
 boolean&nbsp;userIsOnline)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i17">
+<tr class="rowColor" id="i21">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetUserNameByEmail(java.lang.String)">GetUserNameByEmail</a></span>&#8203;(java.lang.String&nbsp;email)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i18">
+<tr class="altColor" id="i22">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Initialize(java.lang.String,system.collections.specialized.NameValueCollection)">Initialize</a></span>&#8203;(java.lang.String&nbsp;name,
 <a href="../../collections/specialized/NameValueCollection.html" title="class in system.collections.specialized">NameValueCollection</a>&nbsp;config)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i19">
+<tr class="rowColor" id="i23">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ResetPassword(java.lang.String,java.lang.String)">ResetPassword</a></span>&#8203;(java.lang.String&nbsp;username,
 java.lang.String&nbsp;passwordAnswer)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i20">
+<tr class="altColor" id="i24">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i21">
+<tr class="rowColor" id="i25">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UnlockUser(java.lang.String)">UnlockUser</a></span>&#8203;(java.lang.String&nbsp;username)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i22">
+<tr class="altColor" id="i26">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UpdateUser(system.web.security.MembershipUser)">UpdateUser</a></span>&#8203;(<a href="MembershipUser.html" title="class in system.web.security">MembershipUser</a>&nbsp;user)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i23">
+<tr class="rowColor" id="i27">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ValidateUser(java.lang.String,java.lang.String)">ValidateUser</a></span>&#8203;(java.lang.String&nbsp;username,
 java.lang.String&nbsp;password)</code></th>
@@ -1092,6 +1127,76 @@ java.lang.String&nbsp;passwordAnswer)</span>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="CreateUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut)">CreateUser</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="MembershipUser.html" title="class in system.web.security">MembershipUser</a></span>&nbsp;<span class="memberName">CreateUser</span>&#8203;(<span class="arguments">java.lang.String&nbsp;username,
+java.lang.String&nbsp;password,
+java.lang.String&nbsp;email,
+java.lang.String&nbsp;passwordQuestion,
+java.lang.String&nbsp;passwordAnswer,
+boolean&nbsp;isApproved,
+<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;providerUserKey,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="MembershipCreateStatus.html" title="class in system.web.security">MembershipCreateStatus</a>&gt;&nbsp;status)</span>
+                          throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+<a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a>,
+<a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+<a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a>,
+<a href="../../MemberAccessException.html" title="class in system">MemberAccessException</a>,
+<a href="../../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+<a href="../../OverflowException.html" title="class in system">OverflowException</a>,
+<a href="../../RankException.html" title="class in system">RankException</a>,
+<a href="../../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+<a href="../../text/regularexpressions/RegexMatchTimeoutException.html" title="class in system.text.regularexpressions">RegexMatchTimeoutException</a>,
+<a href="../../security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+<a href="../HttpException.html" title="class in system.web">HttpException</a>,
+<a href="../../FormatException.html" title="class in system">FormatException</a>,
+<a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
+<a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a></span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="MembershipProvider.html#CreateUser(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,boolean,org.mases.jcobridge.netreflection.NetObject,org.mases.jcobridge.netreflection.JCORefOut)">CreateUser</a></code>&nbsp;in class&nbsp;<code><a href="MembershipProvider.html" title="class in system.web.security">MembershipProvider</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
+<dd><code><a href="../../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../text/regularexpressions/RegexMatchTimeoutException.html" title="class in system.text.regularexpressions">RegexMatchTimeoutException</a></code></dd>
+<dd><code><a href="../../security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../HttpException.html" title="class in system.web">HttpException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="GetUser(org.mases.jcobridge.netreflection.NetObject,boolean)">GetUser</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="MembershipUser.html" title="class in system.web.security">MembershipUser</a></span>&nbsp;<span class="memberName">GetUser</span>&#8203;(<span class="arguments"><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;providerUserKey,
 boolean&nbsp;userIsOnline)</span>
@@ -1189,6 +1294,129 @@ boolean&nbsp;userIsOnline)</span>
 <dd><code><a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
 <dd><code><a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a></code></dd>
 <dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="FindUsersByEmail(java.lang.String,int,int,org.mases.jcobridge.netreflection.JCORefOut)">FindUsersByEmail</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="MembershipUserCollection.html" title="class in system.web.security">MembershipUserCollection</a></span>&nbsp;<span class="memberName">FindUsersByEmail</span>&#8203;(<span class="arguments">java.lang.String&nbsp;emailToMatch,
+int&nbsp;pageIndex,
+int&nbsp;pageSize,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;totalRecords)</span>
+                                          throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+<a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../FormatException.html" title="class in system">FormatException</a>,
+<a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+<a href="../../security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+<a href="../HttpException.html" title="class in system.web">HttpException</a>,
+<a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
+<a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+<a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a>,
+<a href="../../OverflowException.html" title="class in system">OverflowException</a></span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="MembershipProvider.html#FindUsersByEmail(java.lang.String,int,int,org.mases.jcobridge.netreflection.JCORefOut)">FindUsersByEmail</a></code>&nbsp;in class&nbsp;<code><a href="MembershipProvider.html" title="class in system.web.security">MembershipProvider</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../HttpException.html" title="class in system.web">HttpException</a></code></dd>
+<dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a></code></dd>
+<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="FindUsersByName(java.lang.String,int,int,org.mases.jcobridge.netreflection.JCORefOut)">FindUsersByName</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="MembershipUserCollection.html" title="class in system.web.security">MembershipUserCollection</a></span>&nbsp;<span class="memberName">FindUsersByName</span>&#8203;(<span class="arguments">java.lang.String&nbsp;usernameToMatch,
+int&nbsp;pageIndex,
+int&nbsp;pageSize,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;totalRecords)</span>
+                                         throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+<a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../FormatException.html" title="class in system">FormatException</a>,
+<a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+<a href="../../security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+<a href="../HttpException.html" title="class in system.web">HttpException</a>,
+<a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a>,
+<a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a>,
+<a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a>,
+<a href="../../OverflowException.html" title="class in system">OverflowException</a></span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="MembershipProvider.html#FindUsersByName(java.lang.String,int,int,org.mases.jcobridge.netreflection.JCORefOut)">FindUsersByName</a></code>&nbsp;in class&nbsp;<code><a href="MembershipProvider.html" title="class in system.web.security">MembershipProvider</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../HttpException.html" title="class in system.web">HttpException</a></code></dd>
+<dd><code><a href="../../componentmodel/InvalidEnumArgumentException.html" title="class in system.componentmodel">InvalidEnumArgumentException</a></code></dd>
+<dd><code><a href="../../AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../configuration/provider/ProviderException.html" title="class in system.configuration.provider">ProviderException</a></code></dd>
+<dd><code><a href="../../OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="GetAllUsers(int,int,org.mases.jcobridge.netreflection.JCORefOut)">GetAllUsers</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType"><a href="MembershipUserCollection.html" title="class in system.web.security">MembershipUserCollection</a></span>&nbsp;<span class="memberName">GetAllUsers</span>&#8203;(<span class="arguments">int&nbsp;pageIndex,
+int&nbsp;pageSize,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;totalRecords)</span>
+                                     throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="MembershipProvider.html#GetAllUsers(int,int,org.mases.jcobridge.netreflection.JCORefOut)">GetAllUsers</a></code>&nbsp;in class&nbsp;<code><a href="MembershipProvider.html" title="class in system.web.security">MembershipProvider</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </section>
 </li>
@@ -1473,7 +1701,7 @@ boolean&nbsp;userIsOnline)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

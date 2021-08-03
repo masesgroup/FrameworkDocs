@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":1};
+<script type="text/javascript">var data = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":1};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -213,6 +213,17 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i8">
+<td class="colFirst"><code><a href="ServerProcessing.html" title="class in system.runtime.remoting.channels">ServerProcessing</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ProcessMessage(system.runtime.remoting.channels.IServerChannelSinkStack,system.runtime.remoting.messaging.IMessage,system.runtime.remoting.channels.ITransportHeaders,system.io.Stream,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">ProcessMessage</a></span>&#8203;(<a href="IServerChannelSinkStack.html" title="interface in system.runtime.remoting.channels">IServerChannelSinkStack</a>&nbsp;sinkStack,
+<a href="../messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&nbsp;requestMsg,
+<a href="ITransportHeaders.html" title="interface in system.runtime.remoting.channels">ITransportHeaders</a>&nbsp;requestHeaders,
+<a href="../../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;requestStream,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&gt;&nbsp;responseMsg,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="ITransportHeaders.html" title="interface in system.runtime.remoting.channels">ITransportHeaders</a>&gt;&nbsp;responseHeaders,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../io/Stream.html" title="class in system.io">Stream</a>&gt;&nbsp;responseStream)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i9">
 <td class="colFirst"><code>static <a href="IServerChannelSink.html" title="interface in system.runtime.remoting.channels">IServerChannelSink</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#ToIServerChannelSink(org.mases.jcobridge.netreflection.IJCOBridgeReflected)">ToIServerChannelSink</a></span>&#8203;(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code></th>
 <td class="colLast">
@@ -392,6 +403,23 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="ProcessMessage(system.runtime.remoting.channels.IServerChannelSinkStack,system.runtime.remoting.messaging.IMessage,system.runtime.remoting.channels.ITransportHeaders,system.io.Stream,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">ProcessMessage</a></h3>
+<div class="memberSignature"><span class="returnType"><a href="ServerProcessing.html" title="class in system.runtime.remoting.channels">ServerProcessing</a></span>&nbsp;<span class="memberName">ProcessMessage</span>&#8203;(<span class="arguments"><a href="IServerChannelSinkStack.html" title="interface in system.runtime.remoting.channels">IServerChannelSinkStack</a>&nbsp;sinkStack,
+<a href="../messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&nbsp;requestMsg,
+<a href="ITransportHeaders.html" title="interface in system.runtime.remoting.channels">ITransportHeaders</a>&nbsp;requestHeaders,
+<a href="../../../io/Stream.html" title="class in system.io">Stream</a>&nbsp;requestStream,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&gt;&nbsp;responseMsg,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="ITransportHeaders.html" title="interface in system.runtime.remoting.channels">ITransportHeaders</a>&gt;&nbsp;responseHeaders,
+<a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../io/Stream.html" title="class in system.io">Stream</a>&gt;&nbsp;responseStream)</span>
+                         throws <span class="exceptions">java.lang.Throwable</span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="AsyncProcessResponse(system.runtime.remoting.channels.IServerResponseChannelSinkStack,org.mases.jcobridge.netreflection.NetObject,system.runtime.remoting.messaging.IMessage,system.runtime.remoting.channels.ITransportHeaders,system.io.Stream)">AsyncProcessResponse</a></h3>
 <div class="memberSignature"><span class="returnType">void</span>&nbsp;<span class="memberName">AsyncProcessResponse</span>&#8203;(<span class="arguments"><a href="IServerResponseChannelSinkStack.html" title="interface in system.runtime.remoting.channels">IServerResponseChannelSinkStack</a>&nbsp;sinkStack,
 <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state,
@@ -439,7 +467,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

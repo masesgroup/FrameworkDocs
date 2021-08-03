@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -276,20 +276,44 @@ long&nbsp;keywords)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i12">
+<td class="colFirst"><code>static void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#SetActivityId(system.Guid)">SetActivityId</a></span>&#8203;(<a href="../../Guid.html" title="class in system">Guid</a>&nbsp;id)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i13">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i13">
+<tr class="altColor" id="i14">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteEvent(system.diagnostics.eventing.EventDescriptor,java.lang.String)">WriteEvent</a></span>&#8203;(<a href="EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&nbsp;eventDescriptor,
+java.lang.String&nbsp;data)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i15">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteEvent(system.diagnostics.eventing.EventDescriptor,org.mases.jcobridge.netreflection.NetObject...)">WriteEvent</a></span>&#8203;(<a href="EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&nbsp;eventDescriptor,
+<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i16">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteMessageEvent(java.lang.String)">WriteMessageEvent</a></span>&#8203;(java.lang.String&nbsp;eventMessage)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor" id="i14">
+<tr class="rowColor" id="i17">
 <td class="colFirst"><code>boolean</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteMessageEvent(java.lang.String,byte,long)">WriteMessageEvent</a></span>&#8203;(java.lang.String&nbsp;eventMessage,
 byte&nbsp;eventLevel,
 long&nbsp;eventKeywords)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i18">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#WriteTransferEvent(system.diagnostics.eventing.EventDescriptor,system.Guid,org.mases.jcobridge.netreflection.NetObject...)">WriteTransferEvent</a></span>&#8203;(<a href="EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&nbsp;eventDescriptor,
+<a href="../../Guid.html" title="class in system">Guid</a>&nbsp;relatedActivityId,
+<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 </tbody>
@@ -570,6 +594,64 @@ long&nbsp;keywords)</span>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="WriteEvent(system.diagnostics.eventing.EventDescriptor,org.mases.jcobridge.netreflection.NetObject...)">WriteEvent</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">WriteEvent</span>&#8203;(<span class="arguments"><a href="EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&nbsp;eventDescriptor,
+<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</span>
+                   throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+<a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+<a href="../../FormatException.html" title="class in system">FormatException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="WriteEvent(system.diagnostics.eventing.EventDescriptor,java.lang.String)">WriteEvent</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">WriteEvent</span>&#8203;(<span class="arguments"><a href="EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&nbsp;eventDescriptor,
+java.lang.String&nbsp;data)</span>
+                   throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="WriteMessageEvent(java.lang.String)">WriteMessageEvent</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">WriteMessageEvent</span>&#8203;(<span class="arguments">java.lang.String&nbsp;eventMessage)</span>
                           throws <span class="exceptions">java.lang.Throwable,
@@ -593,6 +675,43 @@ long&nbsp;eventKeywords)</span>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="WriteTransferEvent(system.diagnostics.eventing.EventDescriptor,system.Guid,org.mases.jcobridge.netreflection.NetObject...)">WriteTransferEvent</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">boolean</span>&nbsp;<span class="memberName">WriteTransferEvent</span>&#8203;(<span class="arguments"><a href="EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&nbsp;eventDescriptor,
+<a href="../../Guid.html" title="class in system">Guid</a>&nbsp;relatedActivityId,
+<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</span>
+                           throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+<a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+<a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
 </dl>
 </section>
 </li>
@@ -635,6 +754,29 @@ long&nbsp;eventKeywords)</span>
 </li>
 <li class="blockList">
 <section class="detail">
+<h3><a id="SetActivityId(system.Guid)">SetActivityId</a></h3>
+<div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">SetActivityId</span>&#8203;(<span class="arguments"><a href="../../Guid.html" title="class in system">Guid</a>&nbsp;id)</span>
+                          throws <span class="exceptions">java.lang.Throwable,
+<a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+<a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
 <h3><a id="close()">close</a></h3>
 <div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">close</span>()
            throws <span class="exceptions">java.lang.Exception</span></div>
@@ -669,7 +811,7 @@ long&nbsp;eventKeywords)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>

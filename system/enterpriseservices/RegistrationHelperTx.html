@@ -11,7 +11,7 @@
 <script type="text/javascript" src="../../script.js"></script>
 </head>
 <body class="class-declaration">
-<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+<script type="text/javascript">var data = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -89,7 +89,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section class="description">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code></dd>
+<dd><code>java.lang.AutoCloseable</code>, <code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code>, <code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code>, <code><a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></code></dd>
 </dl>
 <hr>
 <pre>public class <span class="typeNameLabel">RegistrationHelperTx</span>
@@ -246,16 +246,41 @@ extends <a href="ServicedComponent.html" title="class in system.enterpriseservic
 </td>
 </tr>
 <tr class="altColor" id="i6">
-<td class="colFirst"><code>boolean</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsInTransaction()">IsInTransaction</a></span>()</code></th>
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#InstallAssembly(java.lang.String,java.lang.String,java.lang.String,java.lang.String,system.enterpriseservices.InstallationFlags,org.mases.jcobridge.netreflection.NetObject)">InstallAssembly</a></span>&#8203;(java.lang.String&nbsp;assembly,
+java.lang.String&nbsp;application,
+java.lang.String&nbsp;partition,
+java.lang.String&nbsp;tlb,
+<a href="InstallationFlags.html" title="class in system.enterpriseservices">InstallationFlags</a>&nbsp;installFlags,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i7">
 <td class="colFirst"><code>void</code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#InstallAssembly(java.lang.String,java.lang.String,java.lang.String,system.enterpriseservices.InstallationFlags,org.mases.jcobridge.netreflection.NetObject)">InstallAssembly</a></span>&#8203;(java.lang.String&nbsp;assembly,
+java.lang.String&nbsp;application,
+java.lang.String&nbsp;tlb,
+<a href="InstallationFlags.html" title="class in system.enterpriseservices">InstallationFlags</a>&nbsp;installFlags,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i8">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#InstallAssemblyFromConfig(system.enterpriseservices.RegistrationConfig,org.mases.jcobridge.netreflection.NetObject)">InstallAssemblyFromConfig</a></span>&#8203;(<a href="RegistrationConfig.html" title="class in system.enterpriseservices">RegistrationConfig</a>&nbsp;regConfig,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i9">
+<td class="colFirst"><code>boolean</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#IsInTransaction()">IsInTransaction</a></span>()</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor" id="i10">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#setJCOInstance(org.mases.jcobridge.JCObject)">setJCOInstance</a></span>&#8203;(<a href="https://www.jcobridge.com/api-java/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge" class="externalLink">JCObject</a>&nbsp;instance)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i11">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UninstallAssembly(java.lang.String,java.lang.String,java.lang.String,org.mases.jcobridge.netreflection.NetObject)">UninstallAssembly</a></span>&#8203;(java.lang.String&nbsp;assembly,
 java.lang.String&nbsp;application,
@@ -263,10 +288,16 @@ java.lang.String&nbsp;partition,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor" id="i9">
+<tr class="altColor" id="i12">
 <td class="colFirst"><code>void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UninstallAssembly(java.lang.String,java.lang.String,org.mases.jcobridge.netreflection.NetObject)">UninstallAssembly</a></span>&#8203;(java.lang.String&nbsp;assembly,
 java.lang.String&nbsp;application,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor" id="i13">
+<td class="colFirst"><code>void</code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#UninstallAssemblyFromConfig(system.enterpriseservices.RegistrationConfig,org.mases.jcobridge.netreflection.NetObject)">UninstallAssemblyFromConfig</a></span>&#8203;(<a href="RegistrationConfig.html" title="class in system.enterpriseservices">RegistrationConfig</a>&nbsp;regConfig,
 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -299,6 +330,11 @@ java.lang.String&nbsp;application,
 <a id="methods.inherited.from.class.system.enterpriseservices.IRemoteDispatch">
 <!--   -->
 </a><code><a href="IRemoteDispatch.html#RemoteDispatchAutoDone(java.lang.String)">RemoteDispatchAutoDone</a>, <a href="IRemoteDispatch.html#RemoteDispatchNotAutoDone(java.lang.String)">RemoteDispatchNotAutoDone</a></code></div>
+<div class="inheritedList">
+<h3>Methods inherited from interface&nbsp;system.enterpriseservices.<a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></h3>
+<a id="methods.inherited.from.class.system.enterpriseservices.IServicedComponentInfo">
+<!--   -->
+</a><code><a href="IServicedComponentInfo.html#GetComponentInfo(int,org.mases.jcobridge.netreflection.JCORefOut)">GetComponentInfo</a></code></div>
 </section>
 </li>
 </ul>
@@ -417,6 +453,8 @@ java.lang.String&nbsp;application,
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IRemoteDispatch.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IServicedComponentInfo.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="ServicedComponent.html#getJCOAssemblyName()">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -435,6 +473,8 @@ java.lang.String&nbsp;application,
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IRemoteDispatch.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IServicedComponentInfo.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="ServicedComponent.html#getJCOClassName()">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -453,6 +493,8 @@ java.lang.String&nbsp;application,
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IRemoteDispatch.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IServicedComponentInfo.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="ServicedComponent.html#getJCOObjectName()">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -472,6 +514,8 @@ java.lang.String&nbsp;application,
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IRemoteDispatch.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IServicedComponentInfo.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="ServicedComponent.html#getJCOInstance()">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -500,6 +544,8 @@ java.lang.String&nbsp;application,
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="IRemoteDispatch.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="IRemoteDispatch.html" title="interface in system.enterpriseservices">IRemoteDispatch</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="IServicedComponentInfo.html#getJCOType()">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="IServicedComponentInfo.html" title="interface in system.enterpriseservices">IServicedComponentInfo</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="ServicedComponent.html#getJCOType()">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -531,6 +577,159 @@ java.lang.String&nbsp;application,
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="InstallAssembly(java.lang.String,java.lang.String,java.lang.String,system.enterpriseservices.InstallationFlags,org.mases.jcobridge.netreflection.NetObject)">InstallAssembly</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">InstallAssembly</span>&#8203;(<span class="arguments">java.lang.String&nbsp;assembly,
+java.lang.String&nbsp;application,
+java.lang.String&nbsp;tlb,
+<a href="InstallationFlags.html" title="class in system.enterpriseservices">InstallationFlags</a>&nbsp;installFlags,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</span>
+                     throws <span class="exceptions">java.lang.Throwable,
+<a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../FormatException.html" title="class in system">FormatException</a>,
+<a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+<a href="../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a>,
+<a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+<a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+<a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+<a href="../io/IOException.html" title="class in system.io">IOException</a>,
+<a href="../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="InstallAssembly(java.lang.String,java.lang.String,java.lang.String,java.lang.String,system.enterpriseservices.InstallationFlags,org.mases.jcobridge.netreflection.NetObject)">InstallAssembly</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">InstallAssembly</span>&#8203;(<span class="arguments">java.lang.String&nbsp;assembly,
+java.lang.String&nbsp;application,
+java.lang.String&nbsp;partition,
+java.lang.String&nbsp;tlb,
+<a href="InstallationFlags.html" title="class in system.enterpriseservices">InstallationFlags</a>&nbsp;installFlags,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</span>
+                     throws <span class="exceptions">java.lang.Throwable,
+<a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../FormatException.html" title="class in system">FormatException</a>,
+<a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+<a href="../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a>,
+<a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+<a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+<a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+<a href="../io/IOException.html" title="class in system.io">IOException</a>,
+<a href="../MissingMethodException.html" title="class in system">MissingMethodException</a>,
+<a href="../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</section>
+</li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="InstallAssemblyFromConfig(system.enterpriseservices.RegistrationConfig,org.mases.jcobridge.netreflection.NetObject)">InstallAssemblyFromConfig</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">InstallAssemblyFromConfig</span>&#8203;(<span class="arguments"><a href="RegistrationConfig.html" title="class in system.enterpriseservices">RegistrationConfig</a>&nbsp;regConfig,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</span>
+                               throws <span class="exceptions">java.lang.Throwable,
+<a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../FormatException.html" title="class in system">FormatException</a>,
+<a href="../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+<a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+<a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a>,
+<a href="../io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+<a href="../io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a>,
+<a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+<a href="../io/IOException.html" title="class in system.io">IOException</a>,
+<a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+<a href="../io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a>,
+<a href="../OperationCanceledException.html" title="class in system">OperationCanceledException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a></code></dd>
+<dd><code><a href="../io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code></dd>
+<dd><code><a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
+<dd><code><a href="../OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
 </dl>
 </section>
 </li>
@@ -639,6 +838,50 @@ java.lang.String&nbsp;partition,
 </dl>
 </section>
 </li>
+<li class="blockList">
+<section class="detail">
+<h3><a id="UninstallAssemblyFromConfig(system.enterpriseservices.RegistrationConfig,org.mases.jcobridge.netreflection.NetObject)">UninstallAssemblyFromConfig</a></h3>
+<div class="memberSignature"><span class="modifiers">public</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">UninstallAssemblyFromConfig</span>&#8203;(<span class="arguments"><a href="RegistrationConfig.html" title="class in system.enterpriseservices">RegistrationConfig</a>&nbsp;regConfig,
+<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;sync)</span>
+                                 throws <span class="exceptions">java.lang.Throwable,
+<a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+<a href="../ArgumentException.html" title="class in system">ArgumentException</a>,
+<a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+<a href="../FormatException.html" title="class in system">FormatException</a>,
+<a href="../security/SecurityException.html" title="class in system.security">SecurityException</a>,
+<a href="../NotSupportedException.html" title="class in system">NotSupportedException</a>,
+<a href="../NotImplementedException.html" title="class in system">NotImplementedException</a>,
+<a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+<a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+<a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+<a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+<a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+<a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+<a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a>,
+<a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+<a href="../io/IOException.html" title="class in system.io">IOException</a></span></div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="RegistrationException.html" title="class in system.enterpriseservices">RegistrationException</a></code></dd>
+<dd><code><a href="../UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../io/IOException.html" title="class in system.io">IOException</a></code></dd>
+</dl>
+</section>
+</li>
 </ul>
 </section>
 </li>
@@ -662,7 +905,7 @@ java.lang.String&nbsp;partition,
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.5.0.0-a59741c2aa4a6d46568a8081a2cd5b82c3fd282e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.0.0-81d9ba9895e32a9eddf40186c24e81bfc32ec555 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
