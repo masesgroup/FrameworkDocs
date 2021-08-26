@@ -37,7 +37,7 @@ var activeTableTab = "activeTableTab";
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
@@ -329,9 +329,9 @@ boolean&nbsp;fIsWeak)</code></th>
 </tr>
 <tr class="rowColor" id="i23">
 <td class="colFirst"><code>static <a href="../../reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a></code></td>
-<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetMethodInfoForComSlot(org.mases.jcobridge.netreflection.NetType,int,system.runtime.interopservices.ComMemberType)">GetMethodInfoForComSlot</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;t,
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetMethodInfoForComSlot(org.mases.jcobridge.netreflection.NetType,int,org.mases.jcobridge.netreflection.JCORefOut)">GetMethodInfoForComSlot</a></span>&#8203;(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;t,
 int&nbsp;slot,
-<a href="ComMemberType.html" title="class in system.runtime.interopservices">ComMemberType</a>&nbsp;memberType)</code></th>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="ComMemberType.html" title="class in system.runtime.interopservices">ComMemberType</a>&gt;&nbsp;memberType)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor" id="i24">
@@ -397,8 +397,8 @@ int&nbsp;slot,
 <tr class="altColor" id="i36">
 <td class="colFirst"><code>static void</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#GetTypeLibVersionForAssembly(system.reflection.Assembly,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">GetTypeLibVersionForAssembly</a></span>&#8203;(<a href="../../reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;inputAssembly,
-<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;majorVersion,
-<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;minorVersion)</code></th>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;majorVersion,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;minorVersion)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor" id="i37">
@@ -1153,10 +1153,10 @@ int&nbsp;ofs)</span>
 </li>
 <li class="blockList">
 <section class="detail">
-<h3><a id="GetMethodInfoForComSlot(org.mases.jcobridge.netreflection.NetType,int,system.runtime.interopservices.ComMemberType)">GetMethodInfoForComSlot</a></h3>
+<h3><a id="GetMethodInfoForComSlot(org.mases.jcobridge.netreflection.NetType,int,org.mases.jcobridge.netreflection.JCORefOut)">GetMethodInfoForComSlot</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType"><a href="../../reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a></span>&nbsp;<span class="memberName">GetMethodInfoForComSlot</span>&#8203;(<span class="arguments"><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;t,
 int&nbsp;slot,
-<a href="ComMemberType.html" title="class in system.runtime.interopservices">ComMemberType</a>&nbsp;memberType)</span>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="ComMemberType.html" title="class in system.runtime.interopservices">ComMemberType</a>&gt;&nbsp;memberType)</span>
                                           throws <span class="exceptions">java.lang.Throwable</span></div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1296,8 +1296,8 @@ boolean&nbsp;fIsWeak)</span>
 <section class="detail">
 <h3><a id="GetTypeLibVersionForAssembly(system.reflection.Assembly,org.mases.jcobridge.netreflection.JCORefOut,org.mases.jcobridge.netreflection.JCORefOut)">GetTypeLibVersionForAssembly</a></h3>
 <div class="memberSignature"><span class="modifiers">public static</span>&nbsp;<span class="returnType">void</span>&nbsp;<span class="memberName">GetTypeLibVersionForAssembly</span>&#8203;(<span class="arguments"><a href="../../reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;inputAssembly,
-<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;majorVersion,
-<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;minorVersion)</span>
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;majorVersion,
+<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;minorVersion)</span>
                                          throws <span class="exceptions">java.lang.Throwable,
 <a href="../../ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
 <a href="../../ArgumentException.html" title="class in system">ArgumentException</a></span></div>
@@ -1449,7 +1449,7 @@ long&nbsp;val)</span>
 <li><a href="package-summary.html">Package</a></li>
 <li class="navBarCell1Rev">Class</li>
 </ul>
-<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-40e3b3a5f101ec0b142c8f5007b91de1f5e3fc6e powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
+<div class="aboutLanguage"><a href="https://masesgroup.github.io/JCOReflector" style="text-decoration: none;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><b>JCOReflector</b></a> v1.6.1.0-1bc0c264177a3260ead7c9e4a781cebbaa5b16a9 powered by </large><a href="https://www.jcobridge.com/" style="text-decoration: none;overflow: hidden;margin-left: 0;padding: 1px 20px 0 0;font-size: 30px;font-weight: 200;color: #777777;text-shadow: 0 1px 0 #ffffff;"><span style="color: #5090FF;"> <img src="https://www.jcobridge.com/LogoSquare.png" width="25">J<small>VM CLR Objects Bridge</small></span></a></div>
 </div>
 <div class="subNav">
 <div>
