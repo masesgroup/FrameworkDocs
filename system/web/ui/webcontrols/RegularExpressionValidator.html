@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getMatchTimeout()">
+<meta name="keywords" content="setMatchTimeout()">
 <meta name="keywords" content="getValidationExpression()">
 <meta name="keywords" content="setValidationExpression()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -31,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,7 +145,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a>, <a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
@@ -283,14 +285,22 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/webcontrols/RegularExpressionValidator.html#getMatchTimeout--">getMatchTimeout</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/webcontrols/RegularExpressionValidator.html#getValidationExpression--">getValidationExpression</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/webcontrols/RegularExpressionValidator.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/webcontrols/RegularExpressionValidator.html#setMatchTimeout-system.Nullable_1-">setMatchTimeout</a></span>(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;MatchTimeout)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/webcontrols/RegularExpressionValidator.html#setValidationExpression-java.lang.String-">setValidationExpression</a></span>(java.lang.String&nbsp;ValidationExpression)</code>&nbsp;</td>
 </tr>
@@ -336,20 +346,6 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.web.ui.IAttributeAccessor">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.web.ui.<a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a></h3>
-<code><a href="../../../../system/web/ui/IAttributeAccessor.html#GetAttribute-java.lang.String-">GetAttribute</a>, <a href="../../../../system/web/ui/IAttributeAccessor.html#SetAttribute-java.lang.String-java.lang.String-">SetAttribute</a>, <a href="../../../../system/web/ui/IAttributeAccessor.html#ToIAttributeAccessor-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIAttributeAccessor</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.web.ui.IParserAccessor">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.web.ui.<a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></h3>
-<code><a href="../../../../system/web/ui/IParserAccessor.html#AddParsedSubObject-org.mases.jcobridge.netreflection.NetObject-">AddParsedSubObject</a>, <a href="../../../../system/web/ui/IParserAccessor.html#ToIParserAccessor-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIParserAccessor</a></code></li>
 </ul>
 </li>
 </ul>
@@ -493,10 +489,6 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IAttributeAccessor.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IParserAccessor.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title="class in system.web.ui.webcontrols">BaseValidator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -516,10 +508,6 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IAttributeAccessor.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IParserAccessor.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title="class in system.web.ui.webcontrols">BaseValidator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -539,10 +527,6 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IAttributeAccessor.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IParserAccessor.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title="class in system.web.ui.webcontrols">BaseValidator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -562,10 +546,6 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IAttributeAccessor.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IParserAccessor.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title="class in system.web.ui.webcontrols">BaseValidator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -586,14 +566,24 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IAttributeAccessor.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IAttributeAccessor.html" title="interface in system.web.ui">IAttributeAccessor</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/web/ui/IParserAccessor.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title="class in system.web.ui.webcontrols">BaseValidator</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getMatchTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMatchTimeout</h4>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getMatchTimeout()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -639,6 +629,20 @@ extends <a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/ui/webcontrols/BaseValidator.html" title="class in system.web.ui.webcontrols">BaseValidator</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setMatchTimeout-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMatchTimeout</h4>
+<pre>public&nbsp;void&nbsp;setMatchTimeout(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;MatchTimeout)
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

@@ -16,7 +16,11 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Initialize()">
+<meta name="keywords" content="SubscribeForCorrelationTokenInitializedEvent()">
+<meta name="keywords" content="UnsubscribeFromCorrelationTokenInitializedEvent()">
 <meta name="keywords" content="getInitialized()">
+<meta name="keywords" content="getProperties()">
 <meta name="keywords" content="getName()">
 <meta name="keywords" content="setName()">
 <meta name="keywords" content="getOwnerActivityName()">
@@ -34,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -286,16 +290,35 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#getOwnerActivityName--">getOwnerActivityName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#Initialize-system.workflow.componentmodel.Activity-system.collections.generic.ICollection_1-">Initialize</a></span>(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
+          <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;propertyValues)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#setOwnerActivityName-java.lang.String-">setOwnerActivityName</a></span>(java.lang.String&nbsp;OwnerActivityName)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#SubscribeForCorrelationTokenInitializedEvent-system.workflow.componentmodel.Activity-system.workflow.componentmodel.IActivityEventListener_1-">SubscribeForCorrelationTokenInitializedEvent</a></span>(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
+                                            <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#UnsubscribeFromCorrelationTokenInitializedEvent-system.workflow.componentmodel.Activity-system.workflow.componentmodel.IActivityEventListener_1-">UnsubscribeFromCorrelationTokenInitializedEvent</a></span>(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
+                                               <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -703,6 +726,97 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 </dl>
 </li>
 </ul>
+<a name="getProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getProperties()
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Initialize-system.workflow.componentmodel.Activity-system.collections.generic.ICollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Initialize</h4>
+<pre>public&nbsp;void&nbsp;Initialize(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
+                       <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;propertyValues)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                       <a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                       <a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                       <a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+                       <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                       <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                       <a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
+                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
@@ -755,7 +869,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <a name="setOwnerActivityName-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setOwnerActivityName</h4>
 <pre>public&nbsp;void&nbsp;setOwnerActivityName(java.lang.String&nbsp;OwnerActivityName)
@@ -785,6 +899,64 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SubscribeForCorrelationTokenInitializedEvent-system.workflow.componentmodel.Activity-system.workflow.componentmodel.IActivityEventListener_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SubscribeForCorrelationTokenInitializedEvent</h4>
+<pre>public&nbsp;void&nbsp;SubscribeForCorrelationTokenInitializedEvent(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
+                                                         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)
+                                                  throws java.lang.Throwable,
+                                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                         <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                         <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="UnsubscribeFromCorrelationTokenInitializedEvent-system.workflow.componentmodel.Activity-system.workflow.componentmodel.IActivityEventListener_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UnsubscribeFromCorrelationTokenInitializedEvent</h4>
+<pre>public&nbsp;void&nbsp;UnsubscribeFromCorrelationTokenInitializedEvent(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
+                                                            <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)
+                                                     throws java.lang.Throwable,
+                                                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>

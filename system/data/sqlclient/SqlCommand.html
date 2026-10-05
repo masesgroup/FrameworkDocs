@@ -26,6 +26,10 @@
 <meta name="keywords" content="BeginExecuteReader()">
 <meta name="keywords" content="BeginExecuteXmlReader()">
 <meta name="keywords" content="ExecuteScalar()">
+<meta name="keywords" content="ExecuteReaderAsyncNewSqlCommand()">
+<meta name="keywords" content="ExecuteNonQueryAsync()">
+<meta name="keywords" content="ExecuteScalarAsync()">
+<meta name="keywords" content="ExecuteXmlReaderAsync()">
 <meta name="keywords" content="EndExecuteXmlReader()">
 <meta name="keywords" content="ExecuteXmlReader()">
 <meta name="keywords" content="Cancel()">
@@ -56,7 +60,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -360,104 +364,137 @@ extends <a href="../../../system/data/common/DbCommand.html" title="class in sys
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteNonQuery--">ExecuteNonQuery</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteNonQueryAsync-system.threading.CancellationToken-">ExecuteNonQueryAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteReaderAsyncNewSqlCommand--">ExecuteReaderAsyncNewSqlCommand</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteReaderAsyncNewSqlCommand-system.threading.CancellationToken-">ExecuteReaderAsyncNewSqlCommand</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteReaderAsyncNewSqlCommand-system.data.CommandBehavior-">ExecuteReaderAsyncNewSqlCommand</a></span>(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteReaderAsyncNewSqlCommand-system.data.CommandBehavior-system.threading.CancellationToken-">ExecuteReaderAsyncNewSqlCommand</a></span>(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior,
+                               <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlDataReader.html" title="class in system.data.sqlclient">SqlDataReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteReaderNewSqlCommand--">ExecuteReaderNewSqlCommand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlDataReader.html" title="class in system.data.sqlclient">SqlDataReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteReaderNewSqlCommand-system.data.CommandBehavior-">ExecuteReaderNewSqlCommand</a></span>(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteScalar--">ExecuteScalar</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteScalarAsync-system.threading.CancellationToken-">ExecuteScalarAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteXmlReader--">ExecuteXmlReader</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteXmlReaderAsync--">ExecuteXmlReaderAsync</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ExecuteXmlReaderAsync-system.threading.CancellationToken-">ExecuteXmlReaderAsync</a></span>(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlCommandColumnEncryptionSetting.html" title="class in system.data.sqlclient">SqlCommandColumnEncryptionSetting</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getColumnEncryptionSetting--">getColumnEncryptionSetting</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlConnection.html" title="class in system.data.sqlclient">SqlConnection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getConnectionNewSqlCommand--">getConnectionNewSqlCommand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/sql/SqlNotificationRequest.html" title="class in system.data.sql">SqlNotificationRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getNotification--">getNotification</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getNotificationAutoEnlist--">getNotificationAutoEnlist</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlParameterCollection.html" title="class in system.data.sqlclient">SqlParameterCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getParametersNewSqlCommand--">getParametersNewSqlCommand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlTransaction.html" title="class in system.data.sqlclient">SqlTransaction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#getTransactionNewSqlCommand--">getTransactionNewSqlCommand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#Prepare--">Prepare</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#removeStatementCompleted-system.data.StatementCompletedEventHandler-">removeStatementCompleted</a></span>(<a href="../../../system/data/StatementCompletedEventHandler.html" title="class in system.data">StatementCompletedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#ResetCommandTimeout--">ResetCommandTimeout</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#setConnection-system.data.sqlclient.SqlConnection-">setConnection</a></span>(<a href="../../../system/data/sqlclient/SqlConnection.html" title="class in system.data.sqlclient">SqlConnection</a>&nbsp;Connection)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#setNotification-system.data.sql.SqlNotificationRequest-">setNotification</a></span>(<a href="../../../system/data/sql/SqlNotificationRequest.html" title="class in system.data.sql">SqlNotificationRequest</a>&nbsp;Notification)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#setNotificationAutoEnlist-boolean-">setNotificationAutoEnlist</a></span>(boolean&nbsp;NotificationAutoEnlist)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlCommand.html#setTransaction-system.data.sqlclient.SqlTransaction-">setTransaction</a></span>(<a href="../../../system/data/sqlclient/SqlTransaction.html" title="class in system.data.sqlclient">SqlTransaction</a>&nbsp;Transaction)</code>&nbsp;</td>
 </tr>
@@ -467,7 +504,7 @@ extends <a href="../../../system/data/common/DbCommand.html" title="class in sys
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.data.common.<a href="../../../system/data/common/DbCommand.html" title="class in system.data.common">DbCommand</a></h3>
-<code><a href="../../../system/data/common/DbCommand.html#CreateParameter--">CreateParameter</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReader--">ExecuteReader</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReader-system.data.CommandBehavior-">ExecuteReader</a>, <a href="../../../system/data/common/DbCommand.html#getCommandText--">getCommandText</a>, <a href="../../../system/data/common/DbCommand.html#getCommandTimeout--">getCommandTimeout</a>, <a href="../../../system/data/common/DbCommand.html#getCommandType--">getCommandType</a>, <a href="../../../system/data/common/DbCommand.html#getConnection--">getConnection</a>, <a href="../../../system/data/common/DbCommand.html#getDesignTimeVisible--">getDesignTimeVisible</a>, <a href="../../../system/data/common/DbCommand.html#getParameters--">getParameters</a>, <a href="../../../system/data/common/DbCommand.html#getTransaction--">getTransaction</a>, <a href="../../../system/data/common/DbCommand.html#getUpdatedRowSource--">getUpdatedRowSource</a>, <a href="../../../system/data/common/DbCommand.html#setCommandText-java.lang.String-">setCommandText</a>, <a href="../../../system/data/common/DbCommand.html#setCommandTimeout-int-">setCommandTimeout</a>, <a href="../../../system/data/common/DbCommand.html#setCommandType-system.data.CommandType-">setCommandType</a>, <a href="../../../system/data/common/DbCommand.html#setConnection-system.data.common.DbConnection-">setConnection</a>, <a href="../../../system/data/common/DbCommand.html#setDesignTimeVisible-boolean-">setDesignTimeVisible</a>, <a href="../../../system/data/common/DbCommand.html#setTransaction-system.data.common.DbTransaction-">setTransaction</a>, <a href="../../../system/data/common/DbCommand.html#setUpdatedRowSource-system.data.UpdateRowSource-">setUpdatedRowSource</a></code></li>
+<code><a href="../../../system/data/common/DbCommand.html#CreateParameter--">CreateParameter</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteNonQueryAsync--">ExecuteNonQueryAsync</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReader--">ExecuteReader</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReader-system.data.CommandBehavior-">ExecuteReader</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReaderAsync--">ExecuteReaderAsync</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReaderAsync-system.threading.CancellationToken-">ExecuteReaderAsync</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReaderAsync-system.data.CommandBehavior-">ExecuteReaderAsync</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteReaderAsync-system.data.CommandBehavior-system.threading.CancellationToken-">ExecuteReaderAsync</a>, <a href="../../../system/data/common/DbCommand.html#ExecuteScalarAsync--">ExecuteScalarAsync</a>, <a href="../../../system/data/common/DbCommand.html#getCommandText--">getCommandText</a>, <a href="../../../system/data/common/DbCommand.html#getCommandTimeout--">getCommandTimeout</a>, <a href="../../../system/data/common/DbCommand.html#getCommandType--">getCommandType</a>, <a href="../../../system/data/common/DbCommand.html#getConnection--">getConnection</a>, <a href="../../../system/data/common/DbCommand.html#getDesignTimeVisible--">getDesignTimeVisible</a>, <a href="../../../system/data/common/DbCommand.html#getParameters--">getParameters</a>, <a href="../../../system/data/common/DbCommand.html#getTransaction--">getTransaction</a>, <a href="../../../system/data/common/DbCommand.html#getUpdatedRowSource--">getUpdatedRowSource</a>, <a href="../../../system/data/common/DbCommand.html#setCommandText-java.lang.String-">setCommandText</a>, <a href="../../../system/data/common/DbCommand.html#setCommandTimeout-int-">setCommandTimeout</a>, <a href="../../../system/data/common/DbCommand.html#setCommandType-system.data.CommandType-">setCommandType</a>, <a href="../../../system/data/common/DbCommand.html#setConnection-system.data.common.DbConnection-">setConnection</a>, <a href="../../../system/data/common/DbCommand.html#setDesignTimeVisible-boolean-">setDesignTimeVisible</a>, <a href="../../../system/data/common/DbCommand.html#setTransaction-system.data.common.DbTransaction-">setTransaction</a>, <a href="../../../system/data/common/DbCommand.html#setUpdatedRowSource-system.data.UpdateRowSource-">setUpdatedRowSource</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.componentmodel.Component">
@@ -1634,6 +1671,335 @@ extends <a href="../../../system/data/common/DbCommand.html" title="class in sys
 </dl>
 </li>
 </ul>
+<a name="ExecuteNonQueryAsync-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteNonQueryAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteNonQueryAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                   <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                   <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                   <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                   <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                   <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                   <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                   <a href="../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a>,
+                                   <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                   <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                   <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                   <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a>,
+                                   <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                   <a href="../../../system/threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a>,
+                                   <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/data/common/DbCommand.html#ExecuteNonQueryAsync-system.threading.CancellationToken-">ExecuteNonQueryAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/data/common/DbCommand.html" title="class in system.data.common">DbCommand</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/AggregateException.html" title="class in system">AggregateException</a></code></dd>
+<dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../../system/threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteReaderAsyncNewSqlCommand--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteReaderAsyncNewSqlCommand</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteReaderAsyncNewSqlCommand()
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                              <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
+                                              <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteReaderAsyncNewSqlCommand-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteReaderAsyncNewSqlCommand</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteReaderAsyncNewSqlCommand(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                              <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
+                                              <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteReaderAsyncNewSqlCommand-system.data.CommandBehavior-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteReaderAsyncNewSqlCommand</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteReaderAsyncNewSqlCommand(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                              <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
+                                              <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteReaderAsyncNewSqlCommand-system.data.CommandBehavior-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteReaderAsyncNewSqlCommand</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteReaderAsyncNewSqlCommand(<a href="../../../system/data/CommandBehavior.html" title="class in system.data">CommandBehavior</a>&nbsp;behavior,
+                                              <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                              <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a>,
+                                              <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                              <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                              <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                              <a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
+                                              <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                                              <a href="../../../system/security/cryptography/CryptographicUnexpectedOperationException.html" title="class in system.security.cryptography">CryptographicUnexpectedOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicUnexpectedOperationException.html" title="class in system.security.cryptography">CryptographicUnexpectedOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ExecuteReaderNewSqlCommand--">
 <!--   -->
 </a>
@@ -1820,6 +2186,54 @@ extends <a href="../../../system/data/common/DbCommand.html" title="class in sys
 </dl>
 </li>
 </ul>
+<a name="ExecuteScalarAsync-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteScalarAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteScalarAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                 <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                                 <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                 <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                 <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/AggregateException.html" title="class in system">AggregateException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/data/common/DbCommand.html#ExecuteScalarAsync-system.threading.CancellationToken-">ExecuteScalarAsync</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/data/common/DbCommand.html" title="class in system.data.common">DbCommand</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/AggregateException.html" title="class in system">AggregateException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ExecuteXmlReader--">
 <!--   -->
 </a>
@@ -1883,6 +2297,138 @@ extends <a href="../../../system/data/common/DbCommand.html" title="class in sys
 <dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/AggregateException.html" title="class in system">AggregateException</a></code></dd>
 <dd><code><a href="../../../system/threading/SemaphoreFullException.html" title="class in system.threading">SemaphoreFullException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicUnexpectedOperationException.html" title="class in system.security.cryptography">CryptographicUnexpectedOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteXmlReaderAsync--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteXmlReaderAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteXmlReaderAsync()
+                             throws java.lang.Throwable,
+                                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                    <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                    <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                    <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                    <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                    <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                    <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                    <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                    <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                    <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                    <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
+                                    <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
+<dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteXmlReaderAsync-system.threading.CancellationToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteXmlReaderAsync</h4>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ExecuteXmlReaderAsync(<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                             throws java.lang.Throwable,
+                                    <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                    <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                    <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                    <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                    <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                    <a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a>,
+                                    <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                    <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                    <a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a>,
+                                    <a href="../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a>,
+                                    <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                    <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a>,
+                                    <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                    <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                    <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                    <a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
+                                    <a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a>,
+                                    <a href="../../../system/security/cryptography/CryptographicUnexpectedOperationException.html" title="class in system.security.cryptography">CryptographicUnexpectedOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/diagnostics/tracing/EventSourceException.html" title="class in system.diagnostics.tracing">EventSourceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
 <dd><code><a href="../../../system/threading/tasks/TaskSchedulerException.html" title="class in system.threading.tasks">TaskSchedulerException</a></code></dd>
 <dd><code><a href="../../../system/security/cryptography/CryptographicUnexpectedOperationException.html" title="class in system.security.cryptography">CryptographicUnexpectedOperationException</a></code></dd>
 </dl>

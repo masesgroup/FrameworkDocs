@@ -22,6 +22,13 @@
 <meta name="keywords" content="Load()">
 <meta name="keywords" content="SaveAsAtom10()">
 <meta name="keywords" content="SaveAsRss20()">
+<meta name="keywords" content="getAttributeExtensions()">
+<meta name="keywords" content="getItems()">
+<meta name="keywords" content="setItems()">
+<meta name="keywords" content="getCategories()">
+<meta name="keywords" content="getLinks()">
+<meta name="keywords" content="getAuthors()">
+<meta name="keywords" content="getContributors()">
 <meta name="keywords" content="getLastUpdatedTime()">
 <meta name="keywords" content="setLastUpdatedTime()">
 <meta name="keywords" content="getElementExtensions()">
@@ -54,7 +61,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":9,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":9,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,14 +237,23 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed--">SyndicationFeed</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed-system.collections.generic.IEnumerable_1-">SyndicationFeed</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed-java.lang.Object-">SyndicationFeed</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed-java.lang.String-java.lang.String-system.Uri-">SyndicationFeed</a></span>(java.lang.String&nbsp;title,
                java.lang.String&nbsp;description,
                <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;feedAlternateLink)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed-java.lang.String-java.lang.String-system.Uri-system.collections.generic.IEnumerable_1-">SyndicationFeed</a></span>(java.lang.String&nbsp;title,
+               java.lang.String&nbsp;description,
+               <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;feedAlternateLink,
+               <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed-java.lang.String-java.lang.String-system.Uri-java.lang.String-system.DateTimeOffset-">SyndicationFeed</a></span>(java.lang.String&nbsp;title,
@@ -245,6 +261,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;feedAlternateLink,
                java.lang.String&nbsp;id,
                <a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;lastUpdatedTime)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SyndicationFeed-java.lang.String-java.lang.String-system.Uri-java.lang.String-system.DateTimeOffset-system.collections.generic.IEnumerable_1-">SyndicationFeed</a></span>(java.lang.String&nbsp;title,
+               java.lang.String&nbsp;description,
+               <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;feedAlternateLink,
+               java.lang.String&nbsp;id,
+               <a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;lastUpdatedTime,
+               <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -276,132 +300,160 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#GetAtom10Formatter--">GetAtom10Formatter</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getAttributeExtensions--">getAttributeExtensions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getAuthors--">getAuthors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/Uri.html" title="class in system">Uri</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getBaseUri--">getBaseUri</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getCategories--">getCategories</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getContributors--">getContributors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/TextSyndicationContent.html" title="class in system.servicemodel.syndication">TextSyndicationContent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getCopyright--">getCopyright</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/TextSyndicationContent.html" title="class in system.servicemodel.syndication">TextSyndicationContent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getDescription--">getDescription</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/SyndicationElementExtensionCollection.html" title="class in system.servicemodel.syndication">SyndicationElementExtensionCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getElementExtensions--">getElementExtensions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getGenerator--">getGenerator</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getId--">getId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/Uri.html" title="class in system">Uri</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getImageUrl--">getImageUrl</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getItems--">getItems</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getLanguage--">getLanguage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getLastUpdatedTime--">getLastUpdatedTime</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getLinks--">getLinks</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/Rss20FeedFormatter.html" title="class in system.servicemodel.syndication">Rss20FeedFormatter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#GetRss20Formatter--">GetRss20Formatter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/Rss20FeedFormatter.html" title="class in system.servicemodel.syndication">Rss20FeedFormatter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#GetRss20Formatter-boolean-">GetRss20Formatter</a></span>(boolean&nbsp;serializeExtensionsAsAtom)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/TextSyndicationContent.html" title="class in system.servicemodel.syndication">TextSyndicationContent</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#getTitle--">getTitle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/syndication/SyndicationFeed.html" title="class in system.servicemodel.syndication">SyndicationFeed</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#Load-system.xml.XmlReader-">Load</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;reader)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SaveAsAtom10-system.xml.XmlWriter-">SaveAsAtom10</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#SaveAsRss20-system.xml.XmlWriter-">SaveAsRss20</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setBaseUri-system.Uri-">setBaseUri</a></span>(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;BaseUri)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setCopyright-system.servicemodel.syndication.TextSyndicationContent-">setCopyright</a></span>(<a href="../../../system/servicemodel/syndication/TextSyndicationContent.html" title="class in system.servicemodel.syndication">TextSyndicationContent</a>&nbsp;Copyright)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setDescription-system.servicemodel.syndication.TextSyndicationContent-">setDescription</a></span>(<a href="../../../system/servicemodel/syndication/TextSyndicationContent.html" title="class in system.servicemodel.syndication">TextSyndicationContent</a>&nbsp;Description)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setGenerator-java.lang.String-">setGenerator</a></span>(java.lang.String&nbsp;Generator)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setId-java.lang.String-">setId</a></span>(java.lang.String&nbsp;Id)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setImageUrl-system.Uri-">setImageUrl</a></span>(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;ImageUrl)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setItems-system.collections.generic.IEnumerable_1-">setItems</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Items)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setLanguage-java.lang.String-">setLanguage</a></span>(java.lang.String&nbsp;Language)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setLastUpdatedTime-system.DateTimeOffset-">setLastUpdatedTime</a></span>(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;LastUpdatedTime)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/SyndicationFeed.html#setTitle-system.servicemodel.syndication.TextSyndicationContent-">setTitle</a></span>(<a href="../../../system/servicemodel/syndication/TextSyndicationContent.html" title="class in system.servicemodel.syndication">TextSyndicationContent</a>&nbsp;Title)</code>&nbsp;</td>
 </tr>
@@ -518,6 +570,32 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="SyndicationFeed-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SyndicationFeed</h4>
+<pre>public&nbsp;SyndicationFeed(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="SyndicationFeed-java.lang.Object-">
 <!--   -->
 </a>
@@ -561,10 +639,43 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="SyndicationFeed-java.lang.String-java.lang.String-system.Uri-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SyndicationFeed</h4>
+<pre>public&nbsp;SyndicationFeed(java.lang.String&nbsp;title,
+                       java.lang.String&nbsp;description,
+                       <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;feedAlternateLink,
+                       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="SyndicationFeed-java.lang.String-java.lang.String-system.Uri-java.lang.String-system.DateTimeOffset-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>SyndicationFeed</h4>
 <pre>public&nbsp;SyndicationFeed(java.lang.String&nbsp;title,
@@ -591,6 +702,47 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SyndicationFeed-java.lang.String-java.lang.String-system.Uri-java.lang.String-system.DateTimeOffset-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SyndicationFeed</h4>
+<pre>public&nbsp;SyndicationFeed(java.lang.String&nbsp;title,
+                       java.lang.String&nbsp;description,
+                       <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;feedAlternateLink,
+                       java.lang.String&nbsp;id,
+                       <a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;lastUpdatedTime,
+                       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;items)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
@@ -690,6 +842,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getAttributeExtensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeExtensions</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getAttributeExtensions()
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAuthors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAuthors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getAuthors()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getBaseUri--">
 <!--   -->
 </a>
@@ -698,6 +882,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getBaseUri</h4>
 <pre>public&nbsp;<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;getBaseUri()
                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCategories--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCategories</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getCategories()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getContributors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getContributors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getContributors()
+                             throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -798,6 +1010,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getImageUrl</h4>
 <pre>public&nbsp;<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;getImageUrl()
                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getItems--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getItems</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getItems()
+                       throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -922,6 +1148,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getLastUpdatedTime</h4>
 <pre>public&nbsp;<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;getLastUpdatedTime()
                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getLinks--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLinks</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getLinks()
+                      throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1155,6 +1395,42 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setItems-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setItems</h4>
+<pre>public&nbsp;void&nbsp;setItems(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Items)
+              throws java.lang.Throwable,
+                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                     <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                     <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                     <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                     <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                     <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                     <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                     <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

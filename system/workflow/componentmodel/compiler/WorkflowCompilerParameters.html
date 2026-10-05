@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getGenerateCodeCompileUnitOnly()">
 <meta name="keywords" content="setGenerateCodeCompileUnitOnly()">
+<meta name="keywords" content="getUserCodeCompileUnits()">
 <meta name="keywords" content="getLibraryPaths()">
 <meta name="keywords" content="getCompilerOptions()">
 <meta name="keywords" content="setCompilerOptions()">
@@ -36,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -304,18 +305,22 @@ extends <a href="../../../../system/codedom/compiler/CompilerParameters.html" ti
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#getLibraryPaths--">getLibraryPaths</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setCompilerOptions-java.lang.String-">setCompilerOptions</a></span>(java.lang.String&nbsp;CompilerOptions)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#getUserCodeCompileUnits--">getUserCodeCompileUnits</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setGenerateCodeCompileUnitOnly-boolean-">setGenerateCodeCompileUnitOnly</a></span>(boolean&nbsp;GenerateCodeCompileUnitOnly)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setCompilerOptions-java.lang.String-">setCompilerOptions</a></span>(java.lang.String&nbsp;CompilerOptions)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setGenerateCodeCompileUnitOnly-boolean-">setGenerateCodeCompileUnitOnly</a></span>(boolean&nbsp;GenerateCodeCompileUnitOnly)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/WorkflowCompilerParameters.html#setLanguageToUse-java.lang.String-">setLanguageToUse</a></span>(java.lang.String&nbsp;LanguageToUse)</code>&nbsp;</td>
 </tr>
@@ -710,6 +715,20 @@ extends <a href="../../../../system/codedom/compiler/CompilerParameters.html" ti
 <h4>getLibraryPaths</h4>
 <pre>public&nbsp;<a href="../../../../system/collections/specialized/StringCollection.html" title="class in system.collections.specialized">StringCollection</a>&nbsp;getLibraryPaths()
                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getUserCodeCompileUnits--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUserCodeCompileUnits</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getUserCodeCompileUnits()
+                                throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

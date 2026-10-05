@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getPassiveRequestorEndpoints()">
+<meta name="keywords" content="getSecurityTokenServiceEndpoints()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -29,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -271,6 +273,14 @@ extends <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.htm
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/SecurityTokenServiceDescriptor.html#getPassiveRequestorEndpoints--">getPassiveRequestorEndpoints</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/SecurityTokenServiceDescriptor.html#getSecurityTokenServiceEndpoints--">getSecurityTokenServiceEndpoints</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/SecurityTokenServiceDescriptor.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -280,14 +290,14 @@ extends <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.htm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.metadata.<a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html" title="class in system.identitymodel.metadata">WebServiceDescriptor</a></h3>
-<code><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getServiceDescription--">getServiceDescription</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getServiceDisplayName--">getServiceDisplayName</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setServiceDescription-java.lang.String-">setServiceDescription</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setServiceDisplayName-java.lang.String-">setServiceDisplayName</a></code></li>
+<code><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getClaimTypesOffered--">getClaimTypesOffered</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getClaimTypesRequested--">getClaimTypesRequested</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getServiceDescription--">getServiceDescription</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getServiceDisplayName--">getServiceDisplayName</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getTargetScopes--">getTargetScopes</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getTokenTypesOffered--">getTokenTypesOffered</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setServiceDescription-java.lang.String-">setServiceDescription</a>, <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setServiceDisplayName-java.lang.String-">setServiceDisplayName</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.identitymodel.metadata.RoleDescriptor">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.metadata.<a href="../../../system/identitymodel/metadata/RoleDescriptor.html" title="class in system.identitymodel.metadata">RoleDescriptor</a></h3>
-<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
+<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getContacts--">getContacts</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getKeys--">getKeys</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getProtocolsSupported--">getProtocolsSupported</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -526,6 +536,34 @@ extends <a href="../../../system/identitymodel/metadata/WebServiceDescriptor.htm
 <dd><code><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html" title="class in system.identitymodel.metadata">WebServiceDescriptor</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getPassiveRequestorEndpoints--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPassiveRequestorEndpoints</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getPassiveRequestorEndpoints()
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSecurityTokenServiceEndpoints--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSecurityTokenServiceEndpoints</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getSecurityTokenServiceEndpoints()
+                                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

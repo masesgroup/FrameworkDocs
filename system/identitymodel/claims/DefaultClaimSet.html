@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="ContainsClaim()">
+<meta name="keywords" content="FindClaims()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -30,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -223,6 +224,13 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
                <a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>...&nbsp;claims)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#DefaultClaimSet-system.identitymodel.claims.ClaimSet-system.collections.generic.IList_1-">DefaultClaimSet</a></span>(<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a>&nbsp;issuer,
+               <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#DefaultClaimSet-system.collections.generic.IList_1-">DefaultClaimSet</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#DefaultClaimSet-java.lang.Object-">DefaultClaimSet</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -253,36 +261,41 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#ContainsClaim-system.identitymodel.claims.Claim-">ContainsClaim</a></span>(<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&nbsp;claim)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#FindClaims-java.lang.String-java.lang.String-">FindClaims</a></span>(java.lang.String&nbsp;claimType,
+          java.lang.String&nbsp;right)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -292,7 +305,7 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.claims.<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a></h3>
-<code><a href="../../../system/identitymodel/claims/ClaimSet.html#getCount--">getCount</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getIssuer--">getIssuer</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getSystem--">getSystem</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getWindows--">getWindows</a></code></li>
+<code><a href="../../../system/identitymodel/claims/ClaimSet.html#ContainsClaim-system.identitymodel.claims.Claim-system.collections.generic.IEqualityComparer_1-">ContainsClaim</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getCount--">getCount</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getIssuer--">getIssuer</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getSystem--">getSystem</a>, <a href="../../../system/identitymodel/claims/ClaimSet.html#getWindows--">getWindows</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
@@ -494,6 +507,83 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 </dl>
 </li>
 </ul>
+<a name="DefaultClaimSet-system.identitymodel.claims.ClaimSet-system.collections.generic.IList_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DefaultClaimSet</h4>
+<pre>public&nbsp;DefaultClaimSet(<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a>&nbsp;issuer,
+                       <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="DefaultClaimSet-system.collections.generic.IList_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DefaultClaimSet</h4>
+<pre>public&nbsp;DefaultClaimSet(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)
+                throws java.lang.Throwable,
+                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="DefaultClaimSet-java.lang.Object-">
 <!--   -->
 </a>
@@ -571,6 +661,23 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="FindClaims-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FindClaims</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;FindClaims(java.lang.String&nbsp;claimType,
+                                java.lang.String&nbsp;right)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/identitymodel/claims/ClaimSet.html#FindClaims-java.lang.String-java.lang.String-">FindClaims</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

@@ -22,6 +22,8 @@
 <meta name="keywords" content="setAbortInstanceOnTransactionFailure()">
 <meta name="keywords" content="getBody()">
 <meta name="keywords" content="setBody()">
+<meta name="keywords" content="getTimeout()">
+<meta name="keywords" content="setTimeout()">
 <meta name="keywords" content="getIsolationLevel()">
 <meta name="keywords" content="setIsolationLevel()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -37,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -291,26 +293,34 @@ extends <a href="../../../system/activities/NativeActivity.html" title="class in
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setAbortInstanceOnTransactionFailure-boolean-">setAbortInstanceOnTransactionFailure</a></span>(boolean&nbsp;AbortInstanceOnTransactionFailure)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/activities/InArgument_1.html" title="class in system.activities">InArgument_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#getTimeout--">getTimeout</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setBody-system.activities.Activity-">setBody</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;Body)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setAbortInstanceOnTransactionFailure-boolean-">setAbortInstanceOnTransactionFailure</a></span>(boolean&nbsp;AbortInstanceOnTransactionFailure)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setIsolationLevel-system.transactions.IsolationLevel-">setIsolationLevel</a></span>(<a href="../../../system/transactions/IsolationLevel.html" title="class in system.transactions">IsolationLevel</a>&nbsp;IsolationLevel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setBody-system.activities.Activity-">setBody</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;Body)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setIsolationLevel-system.transactions.IsolationLevel-">setIsolationLevel</a></span>(<a href="../../../system/transactions/IsolationLevel.html" title="class in system.transactions">IsolationLevel</a>&nbsp;IsolationLevel)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#setTimeout-system.activities.InArgument_1-">setTimeout</a></span>(<a href="../../../system/activities/InArgument_1.html" title="class in system.activities">InArgument_1</a>&nbsp;Timeout)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#ShouldSerializeIsolationLevel--">ShouldSerializeIsolationLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/TransactionScope.html#ShouldSerializeTimeout--">ShouldSerializeTimeout</a></span>()</code>&nbsp;</td>
 </tr>
@@ -622,6 +632,20 @@ extends <a href="../../../system/activities/NativeActivity.html" title="class in
 </dl>
 </li>
 </ul>
+<a name="getTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTimeout</h4>
+<pre>public&nbsp;<a href="../../../system/activities/InArgument_1.html" title="class in system.activities">InArgument_1</a>&nbsp;getTimeout()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setAbortInstanceOnTransactionFailure-boolean-">
 <!--   -->
 </a>
@@ -674,6 +698,20 @@ extends <a href="../../../system/activities/NativeActivity.html" title="class in
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/activities/NativeActivity.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setTimeout-system.activities.InArgument_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setTimeout</h4>
+<pre>public&nbsp;void&nbsp;setTimeout(<a href="../../../system/activities/InArgument_1.html" title="class in system.activities">InArgument_1</a>&nbsp;Timeout)
+                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

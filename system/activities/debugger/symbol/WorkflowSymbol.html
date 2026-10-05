@@ -20,6 +20,8 @@
 <meta name="keywords" content="GetChecksum()">
 <meta name="keywords" content="Decode()">
 <meta name="keywords" content="Encode()">
+<meta name="keywords" content="getSymbols()">
+<meta name="keywords" content="setSymbols()">
 <meta name="keywords" content="getFileName()">
 <meta name="keywords" content="setFileName()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -35,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -287,12 +289,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/debugger/symbol/WorkflowSymbol.html#setFileName-java.lang.String-">setFileName</a></span>(java.lang.String&nbsp;FileName)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/debugger/symbol/WorkflowSymbol.html#getSymbols--">getSymbols</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/debugger/symbol/WorkflowSymbol.html#setFileName-java.lang.String-">setFileName</a></span>(java.lang.String&nbsp;FileName)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/debugger/symbol/WorkflowSymbol.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/debugger/symbol/WorkflowSymbol.html#setSymbols-system.collections.generic.ICollection_1-">setSymbols</a></span>(<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;Symbols)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -683,6 +693,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="getSymbols--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSymbols</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getSymbols()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setFileName-java.lang.String-">
 <!--   -->
 </a>
@@ -700,13 +724,27 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setSymbols-system.collections.generic.ICollection_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSymbols</h4>
+<pre>public&nbsp;void&nbsp;setSymbols(<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;Symbols)
+                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

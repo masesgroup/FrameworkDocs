@@ -22,6 +22,7 @@
 <meta name="keywords" content="Dispose()">
 <meta name="keywords" content="ItemRemoved()">
 <meta name="keywords" content="KeepDependenciesAlive()">
+<meta name="keywords" content="SetCacheDependencyChanged()">
 <meta name="keywords" content="close()">
 <meta name="keywords" content="getHasChanged()">
 <meta name="keywords" content="getUtcLastModified()">
@@ -38,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -342,9 +343,13 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/caching/CacheDependency.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/caching/CacheDependency.html#SetCacheDependencyChanged-system.Action_2-">SetCacheDependencyChanged</a></span>(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;dependencyChangedAction)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/caching/CacheDependency.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/caching/CacheDependency.html#TakeOwnership--">TakeOwnership</a></span>()</code>&nbsp;</td>
 </tr>
@@ -1215,6 +1220,20 @@ implements java.lang.AutoCloseable</pre>
 <h4>KeepDependenciesAlive</h4>
 <pre>public&nbsp;void&nbsp;KeepDependenciesAlive()
                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetCacheDependencyChanged-system.Action_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetCacheDependencyChanged</h4>
+<pre>public&nbsp;void&nbsp;SetCacheDependencyChanged(<a href="../../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;dependencyChangedAction)
+                               throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

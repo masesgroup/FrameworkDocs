@@ -33,6 +33,8 @@
 <meta name="keywords" content="getIsPrecompiledApp()">
 <meta name="keywords" content="getIsUpdatablePrecompiledApp()">
 <meta name="keywords" content="getCodeAssemblies()">
+<meta name="keywords" content="getBatchCompilationEnabled()">
+<meta name="keywords" content="setBatchCompilationEnabled()">
 <meta name="keywords" content="getTargetFramework()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
@@ -47,7 +49,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -266,107 +268,115 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                              <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;requiredBaseType)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getBatchCompilationEnabled--">getBatchCompilationEnabled</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/web/compilation/BuildDependencySet.html" title="class in system.web.compilation">BuildDependencySet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetCachedBuildDependencySet-system.web.HttpContext-java.lang.String-">GetCachedBuildDependencySet</a></span>(<a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;context,
                            java.lang.String&nbsp;virtualPath)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/web/compilation/BuildDependencySet.html" title="class in system.web.compilation">BuildDependencySet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetCachedBuildDependencySet-system.web.HttpContext-java.lang.String-boolean-">GetCachedBuildDependencySet</a></span>(<a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;context,
                            java.lang.String&nbsp;virtualPath,
                            boolean&nbsp;ensureIsUpToDate)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/collections/IList.html" title="interface in system.collections">IList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getCodeAssemblies--">getCodeAssemblies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetCompiledAssembly-java.lang.String-">GetCompiledAssembly</a></span>(java.lang.String&nbsp;virtualPath)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetCompiledCustomString-java.lang.String-">GetCompiledCustomString</a></span>(java.lang.String&nbsp;virtualPath)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetCompiledType-java.lang.String-">GetCompiledType</a></span>(java.lang.String&nbsp;virtualPath)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetGlobalAsaxType--">GetGlobalAsaxType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getIsPrecompiledApp--">getIsPrecompiledApp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getIsUpdatablePrecompiledApp--">getIsUpdatablePrecompiledApp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/web/util/IWebObjectFactory.html" title="interface in system.web.util">IWebObjectFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetObjectFactory-java.lang.String-boolean-">GetObjectFactory</a></span>(java.lang.String&nbsp;virtualPath,
                 boolean&nbsp;throwIfNotFound)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetReferencedAssemblies--">GetReferencedAssemblies</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/runtime/versioning/FrameworkName.html" title="class in system.runtime.versioning">FrameworkName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#getTargetFramework--">getTargetFramework</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetType-java.lang.String-boolean-">GetType</a></span>(java.lang.String&nbsp;typeName,
        boolean&nbsp;throwOnError)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetType-java.lang.String-boolean-boolean-">GetType</a></span>(java.lang.String&nbsp;typeName,
        boolean&nbsp;throwOnError,
        boolean&nbsp;ignoreCase)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#GetVirtualPathDependencies-java.lang.String-">GetVirtualPathDependencies</a></span>(java.lang.String&nbsp;virtualPath)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/io/Stream.html" title="class in system.io">Stream</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#ReadCachedFile-java.lang.String-">ReadCachedFile</a></span>(java.lang.String&nbsp;fileName)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#setBatchCompilationEnabled-system.Nullable_1-">setBatchCompilationEnabled</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;BatchCompilationEnabled)</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/BuildManager.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -679,6 +689,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/web/HttpParseException.html" title="class in system.web">HttpParseException</a></code></dd>
 <dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getBatchCompilationEnabled--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBatchCompilationEnabled</h4>
+<pre>public static&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getBatchCompilationEnabled()
+                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -1558,6 +1582,40 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
 <dd><code><a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
 <dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setBatchCompilationEnabled-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setBatchCompilationEnabled</h4>
+<pre>public static&nbsp;void&nbsp;setBatchCompilationEnabled(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;BatchCompilationEnabled)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>

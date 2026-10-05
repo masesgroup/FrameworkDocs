@@ -19,6 +19,7 @@
 <meta name="keywords" content="CreateSigningRequest()">
 <meta name="keywords" content="Create()">
 <meta name="keywords" content="CreateSelfSigned()">
+<meta name="keywords" content="getCertificateExtensions()">
 <meta name="keywords" content="getHashAlgorithm()">
 <meta name="keywords" content="getPublicKey()">
 <meta name="keywords" content="getSubjectName()">
@@ -35,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -307,48 +308,52 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#CreateSigningRequest-system.security.cryptography.x509certificates.X509SignatureGenerator-">CreateSigningRequest</a></span>(<a href="../../../../system/security/cryptography/x509certificates/X509SignatureGenerator.html" title="class in system.security.cryptography.x509certificates">X509SignatureGenerator</a>&nbsp;signatureGenerator)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getCertificateExtensions--">getCertificateExtensions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/HashAlgorithmName.html" title="class in system.security.cryptography">HashAlgorithmName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getHashAlgorithm--">getHashAlgorithm</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html" title="class in system.security.cryptography.x509certificates">PublicKey</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getPublicKey--">getPublicKey</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/x509certificates/X500DistinguishedName.html" title="class in system.security.cryptography.x509certificates">X500DistinguishedName</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#getSubjectName--">getSubjectName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/CertificateRequest.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -1053,6 +1058,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCertificateExtensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCertificateExtensions</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getCertificateExtensions()
+                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

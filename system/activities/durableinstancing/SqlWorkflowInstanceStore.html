@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Promote()">
 <meta name="keywords" content="getEnqueueRunCommands()">
 <meta name="keywords" content="setEnqueueRunCommands()">
 <meta name="keywords" content="getMaxConnectionRetries()">
@@ -45,7 +46,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -318,37 +319,43 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStore.html" t
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setConnectionString-java.lang.String-">setConnectionString</a></span>(java.lang.String&nbsp;ConnectionString)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#Promote-java.lang.String-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">Promote</a></span>(java.lang.String&nbsp;name,
+       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsVariant,
+       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsBinary)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setEnqueueRunCommands-boolean-">setEnqueueRunCommands</a></span>(boolean&nbsp;EnqueueRunCommands)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setConnectionString-java.lang.String-">setConnectionString</a></span>(java.lang.String&nbsp;ConnectionString)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setHostLockRenewalPeriod-system.TimeSpan-">setHostLockRenewalPeriod</a></span>(<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;HostLockRenewalPeriod)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setEnqueueRunCommands-boolean-">setEnqueueRunCommands</a></span>(boolean&nbsp;EnqueueRunCommands)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setInstanceCompletionAction-system.activities.durableinstancing.InstanceCompletionAction-">setInstanceCompletionAction</a></span>(<a href="../../../system/activities/durableinstancing/InstanceCompletionAction.html" title="class in system.activities.durableinstancing">InstanceCompletionAction</a>&nbsp;InstanceCompletionAction)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setHostLockRenewalPeriod-system.TimeSpan-">setHostLockRenewalPeriod</a></span>(<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;HostLockRenewalPeriod)</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setInstanceEncodingOption-system.activities.durableinstancing.InstanceEncodingOption-">setInstanceEncodingOption</a></span>(<a href="../../../system/activities/durableinstancing/InstanceEncodingOption.html" title="class in system.activities.durableinstancing">InstanceEncodingOption</a>&nbsp;InstanceEncodingOption)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setInstanceCompletionAction-system.activities.durableinstancing.InstanceCompletionAction-">setInstanceCompletionAction</a></span>(<a href="../../../system/activities/durableinstancing/InstanceCompletionAction.html" title="class in system.activities.durableinstancing">InstanceCompletionAction</a>&nbsp;InstanceCompletionAction)</code>&nbsp;</td>
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setInstanceLockedExceptionAction-system.activities.durableinstancing.InstanceLockedExceptionAction-">setInstanceLockedExceptionAction</a></span>(<a href="../../../system/activities/durableinstancing/InstanceLockedExceptionAction.html" title="class in system.activities.durableinstancing">InstanceLockedExceptionAction</a>&nbsp;InstanceLockedExceptionAction)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setInstanceEncodingOption-system.activities.durableinstancing.InstanceEncodingOption-">setInstanceEncodingOption</a></span>(<a href="../../../system/activities/durableinstancing/InstanceEncodingOption.html" title="class in system.activities.durableinstancing">InstanceEncodingOption</a>&nbsp;InstanceEncodingOption)</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setInstanceLockedExceptionAction-system.activities.durableinstancing.InstanceLockedExceptionAction-">setInstanceLockedExceptionAction</a></span>(<a href="../../../system/activities/durableinstancing/InstanceLockedExceptionAction.html" title="class in system.activities.durableinstancing">InstanceLockedExceptionAction</a>&nbsp;InstanceLockedExceptionAction)</code>&nbsp;</td>
 </tr>
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setMaxConnectionRetries-int-">setMaxConnectionRetries</a></span>(int&nbsp;MaxConnectionRetries)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setMaxConnectionRetries-int-">setMaxConnectionRetries</a></span>(int&nbsp;MaxConnectionRetries)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/durableinstancing/SqlWorkflowInstanceStore.html#setRunnableInstancesDetectionPeriod-system.TimeSpan-">setRunnableInstancesDetectionPeriod</a></span>(<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;RunnableInstancesDetectionPeriod)</code>&nbsp;</td>
 </tr>
@@ -358,7 +365,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStore.html" t
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.runtime.durableinstancing.<a href="../../../system/runtime/durableinstancing/InstanceStore.html" title="class in system.runtime.durableinstancing">InstanceStore</a></h3>
-<code><a href="../../../system/runtime/durableinstancing/InstanceStore.html#BeginExecute-system.runtime.durableinstancing.InstanceHandle-system.runtime.durableinstancing.InstancePersistenceCommand-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginExecute</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#BeginWaitForEvents-system.runtime.durableinstancing.InstanceHandle-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginWaitForEvents</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle--">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle-system.Guid-">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle-system.runtime.durableinstancing.InstanceOwner-">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle-system.runtime.durableinstancing.InstanceOwner-system.Guid-">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#EndExecute-system.IAsyncResult-">EndExecute</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#Execute-system.runtime.durableinstancing.InstanceHandle-system.runtime.durableinstancing.InstancePersistenceCommand-system.TimeSpan-">Execute</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#getDefaultInstanceOwner--">getDefaultInstanceOwner</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#setDefaultInstanceOwner-system.runtime.durableinstancing.InstanceOwner-">setDefaultInstanceOwner</a></code></li>
+<code><a href="../../../system/runtime/durableinstancing/InstanceStore.html#BeginExecute-system.runtime.durableinstancing.InstanceHandle-system.runtime.durableinstancing.InstancePersistenceCommand-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginExecute</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#BeginWaitForEvents-system.runtime.durableinstancing.InstanceHandle-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginWaitForEvents</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle--">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle-system.Guid-">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle-system.runtime.durableinstancing.InstanceOwner-">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#CreateInstanceHandle-system.runtime.durableinstancing.InstanceOwner-system.Guid-">CreateInstanceHandle</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#EndExecute-system.IAsyncResult-">EndExecute</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#EndWaitForEvents-system.IAsyncResult-">EndWaitForEvents</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#Execute-system.runtime.durableinstancing.InstanceHandle-system.runtime.durableinstancing.InstancePersistenceCommand-system.TimeSpan-">Execute</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#getDefaultInstanceOwner--">getDefaultInstanceOwner</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#setDefaultInstanceOwner-system.runtime.durableinstancing.InstanceOwner-">setDefaultInstanceOwner</a>, <a href="../../../system/runtime/durableinstancing/InstanceStore.html#WaitForEvents-system.runtime.durableinstancing.InstanceHandle-system.TimeSpan-">WaitForEvents</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -791,6 +798,42 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStore.html" t
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Promote-java.lang.String-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Promote</h4>
+<pre>public&nbsp;void&nbsp;Promote(java.lang.String&nbsp;name,
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsVariant,
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsBinary)
+             throws java.lang.Throwable,
+                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                    <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                    <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                    <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                    <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>

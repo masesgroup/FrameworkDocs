@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getErrors()">
+<meta name="keywords" content="getWarnings()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -29,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -205,6 +207,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#ValidationResults--">ValidationResults</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#ValidationResults-system.collections.generic.IList_1-">ValidationResults</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;allValidationErrors)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#ValidationResults-java.lang.Object-">ValidationResults</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -231,36 +236,44 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getErrors--">getErrors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#getWarnings--">getWarnings</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/validation/ValidationResults.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -367,6 +380,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="ValidationResults-system.collections.generic.IList_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ValidationResults</h4>
+<pre>public&nbsp;ValidationResults(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;allValidationErrors)
+                  throws java.lang.Throwable,
+                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ValidationResults-java.lang.Object-">
 <!--   -->
 </a>
@@ -406,6 +435,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><a href="../../../system/activities/validation/ValidationResults.html" title="class in system.activities.validation"><code>ValidationResults</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getErrors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getErrors()
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -502,6 +547,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getWarnings--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWarnings</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getWarnings()
+                                 throws java.lang.Throwable,
+                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

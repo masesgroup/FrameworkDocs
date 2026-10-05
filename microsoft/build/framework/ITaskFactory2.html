@@ -14,6 +14,8 @@
 <meta name="keywords" content="getJCOObjectName()">
 <meta name="keywords" content="getJCOInstance()">
 <meta name="keywords" content="getJCOType()">
+<meta name="keywords" content="Initialize()">
+<meta name="keywords" content="CreateTask()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -27,7 +29,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":17};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":17};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,36 +181,49 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../microsoft/build/framework/ITask.html" title="interface in microsoft.build.framework">ITask</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#CreateTask-microsoft.build.framework.IBuildEngine-system.collections.generic.IDictionary_2-">CreateTask</a></span>(<a href="../../../microsoft/build/framework/IBuildEngine.html" title="interface in microsoft.build.framework">IBuildEngine</a>&nbsp;taskFactoryLoggingHost,
+          <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;taskIdentityParameters)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#Initialize-java.lang.String-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-java.lang.String-microsoft.build.framework.IBuildEngine-">Initialize</a></span>(java.lang.String&nbsp;taskName,
+          <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;factoryIdentityParameters,
+          <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;parameterGroup,
+          java.lang.String&nbsp;taskBody,
+          <a href="../../../microsoft/build/framework/IBuildEngine.html" title="interface in microsoft.build.framework">IBuildEngine</a>&nbsp;taskFactoryLoggingHost)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../microsoft/build/framework/ITaskFactory2.html" title="interface in microsoft.build.framework">ITaskFactory2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory2.html#ToITaskFactory2-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToITaskFactory2</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../microsoft/build/framework/ITaskFactory2.html" title="interface in microsoft.build.framework"><code>ITaskFactory2</code></a>, a cast assert is made to check if types are compatible.</div>
@@ -220,7 +235,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;microsoft.build.framework.<a href="../../../microsoft/build/framework/ITaskFactory.html" title="interface in microsoft.build.framework">ITaskFactory</a></h3>
-<code><a href="../../../microsoft/build/framework/ITaskFactory.html#CleanupTask-microsoft.build.framework.ITask-">CleanupTask</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#CreateTask-microsoft.build.framework.IBuildEngine-">CreateTask</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#getFactoryName--">getFactoryName</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#GetTaskParameters--">GetTaskParameters</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#getTaskType--">getTaskType</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#ToITaskFactory-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToITaskFactory</a></code></li>
+<code><a href="../../../microsoft/build/framework/ITaskFactory.html#CleanupTask-microsoft.build.framework.ITask-">CleanupTask</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#CreateTask-microsoft.build.framework.IBuildEngine-">CreateTask</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#getFactoryName--">getFactoryName</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#GetTaskParameters--">GetTaskParameters</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#getTaskType--">getTaskType</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#Initialize-java.lang.String-system.collections.generic.IDictionary_2-java.lang.String-microsoft.build.framework.IBuildEngine-">Initialize</a>, <a href="../../../microsoft/build/framework/ITaskFactory.html#ToITaskFactory-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToITaskFactory</a></code></li>
 </ul>
 </li>
 </ul>
@@ -286,6 +301,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="CreateTask-microsoft.build.framework.IBuildEngine-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateTask</h4>
+<pre><a href="../../../microsoft/build/framework/ITask.html" title="interface in microsoft.build.framework">ITask</a>&nbsp;CreateTask(<a href="../../../microsoft/build/framework/IBuildEngine.html" title="interface in microsoft.build.framework">IBuildEngine</a>&nbsp;taskFactoryLoggingHost,
+                 <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;taskIdentityParameters)
+          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getJCOAssemblyName--">
 <!--   -->
 </a>
@@ -374,6 +404,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <dd><code><a href="../../../microsoft/build/framework/ITaskFactory.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/build/framework/ITaskFactory.html" title="interface in microsoft.build.framework">ITaskFactory</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="Initialize-java.lang.String-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-java.lang.String-microsoft.build.framework.IBuildEngine-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Initialize</h4>
+<pre>boolean&nbsp;Initialize(java.lang.String&nbsp;taskName,
+                   <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;factoryIdentityParameters,
+                   <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;parameterGroup,
+                   java.lang.String&nbsp;taskBody,
+                   <a href="../../../microsoft/build/framework/IBuildEngine.html" title="interface in microsoft.build.framework">IBuildEngine</a>&nbsp;taskFactoryLoggingHost)
+            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

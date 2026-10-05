@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetMessageQueryTable()">
 <meta name="keywords" content="getName()">
 <meta name="keywords" content="setName()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
@@ -31,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -115,7 +116,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectEnumerable</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">system.collections.generic.Dictionary_2</a></li>
+<li>
+<ul class="inheritance">
 <li>system.servicemodel.MessageQuerySet</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -133,7 +139,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MessageQuerySet</span>
-extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></pre>
+extends <a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></pre>
 <div class="block">The base .NET class managing System.ServiceModel.MessageQuerySet, System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -212,6 +218,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#MessageQuerySet--">MessageQuerySet</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#MessageQuerySet-system.servicemodel.dispatcher.MessageQueryTable_1-">MessageQuerySet</a></span>(<a href="../../system/servicemodel/dispatcher/MessageQueryTable_1.html" title="class in system.servicemodel.dispatcher">MessageQueryTable_1</a>&nbsp;queryTable)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#MessageQuerySet-java.lang.Object-">MessageQuerySet</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -268,18 +277,29 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../system/servicemodel/dispatcher/MessageQueryTable_1.html" title="class in system.servicemodel.dispatcher">MessageQueryTable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#GetMessageQueryTable--">GetMessageQueryTable</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/MessageQuerySet.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.collections.generic.Dictionary_2">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.collections.generic.<a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></h3>
+<code><a href="../../system/collections/generic/Dictionary_2.html#Add-TKey-TValue-">Add</a>, <a href="../../system/collections/generic/Dictionary_2.html#Clear--">Clear</a>, <a href="../../system/collections/generic/Dictionary_2.html#ContainsKey-TKey-">ContainsKey</a>, <a href="../../system/collections/generic/Dictionary_2.html#ContainsValue-TValue-">ContainsValue</a>, <a href="../../system/collections/generic/Dictionary_2.html#getComparer--">getComparer</a>, <a href="../../system/collections/generic/Dictionary_2.html#getCount--">getCount</a>, <a href="../../system/collections/generic/Dictionary_2.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a>, <a href="../../system/collections/generic/Dictionary_2.html#OnDeserialization-org.mases.jcobridge.netreflection.NetObject-">OnDeserialization</a>, <a href="../../system/collections/generic/Dictionary_2.html#Remove-TKey-">Remove</a>, <a href="../../system/collections/generic/Dictionary_2.html#TryGetValue-TKey-org.mases.jcobridge.netreflection.JCORefOut-">TryGetValue</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
 <!--   -->
@@ -407,6 +427,34 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 </dl>
 </li>
 </ul>
+<a name="MessageQuerySet-system.servicemodel.dispatcher.MessageQueryTable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MessageQuerySet</h4>
+<pre>public&nbsp;MessageQuerySet(<a href="../../system/servicemodel/dispatcher/MessageQueryTable_1.html" title="class in system.servicemodel.dispatcher">MessageQueryTable_1</a>&nbsp;queryTable)
+                throws java.lang.Throwable,
+                       <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                       <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                       <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                       <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                       <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                       <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                       <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="MessageQuerySet-java.lang.Object-">
 <!--   -->
 </a>
@@ -462,7 +510,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../system/collections/generic/Dictionary_2.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -481,7 +529,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../system/collections/generic/Dictionary_2.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -500,7 +548,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../system/collections/generic/Dictionary_2.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
@@ -519,7 +567,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../system/collections/generic/Dictionary_2.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -539,9 +587,27 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../system/collections/generic/Dictionary_2.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetMessageQueryTable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetMessageQueryTable</h4>
+<pre>public&nbsp;<a href="../../system/servicemodel/dispatcher/MessageQueryTable_1.html" title="class in system.servicemodel.dispatcher">MessageQueryTable_1</a>&nbsp;GetMessageQueryTable()
+                                         throws java.lang.Throwable,
+                                                <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -568,7 +634,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.htm
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../system/collections/generic/Dictionary_2.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></dd>
 </dl>
 </li>
 </ul>

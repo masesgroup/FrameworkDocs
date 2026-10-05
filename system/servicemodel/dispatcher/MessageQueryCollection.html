@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Evaluate()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -29,7 +30,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -57,7 +58,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../system/servicemodel/dispatcher/MultipleFilterMatchesException.html" title="class in system.servicemodel.dispatcher"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../system/servicemodel/dispatcher/MessageQueryTable_1.html" title="class in system.servicemodel.dispatcher"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?system/servicemodel/dispatcher/MessageQueryCollection.html" target="_top">Frames</a></li>
@@ -113,7 +114,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObjectEnumerable</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">system.collections.objectmodel.Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</li>
+<li>
+<ul class="inheritance">
 <li>system.servicemodel.dispatcher.MessageQueryCollection</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -135,7 +141,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">MessageQueryCollection</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></pre>
+extends <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</pre>
 <div class="block">The base .NET class managing System.ServiceModel.Dispatcher.MessageQueryCollection, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -240,40 +246,55 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>&lt;TResult extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#Evaluate-system.servicemodel.channels.Message-">Evaluate</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>&lt;TResult extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#Evaluate-system.servicemodel.channels.MessageBuffer-">Evaluate</a></span>(<a href="../../../system/servicemodel/channels/MessageBuffer.html" title="class in system.servicemodel.channels">MessageBuffer</a>&nbsp;buffer)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/MessageQueryCollection.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.collections.objectmodel.Collection_1">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.collections.objectmodel.<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></h3>
+<code><a href="../../../system/collections/objectmodel/Collection_1.html#Add-T-">Add</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#Clear--">Clear</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#Contains-T-">Contains</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#CopyTo-T:A-int-">CopyTo</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#getCount--">getCount</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#IndexOf-T-">IndexOf</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#Insert-int-T-">Insert</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#Remove-T-">Remove</a>, <a href="../../../system/collections/objectmodel/Collection_1.html#RemoveAt-int-">RemoveAt</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
 <!--   -->
@@ -439,6 +460,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 </dl>
 </li>
 </ul>
+<a name="Evaluate-system.servicemodel.channels.Message-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Evaluate</h4>
+<pre>public&nbsp;&lt;TResult extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Evaluate(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)
+                                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Evaluate-system.servicemodel.channels.MessageBuffer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Evaluate</h4>
+<pre>public&nbsp;&lt;TResult extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Evaluate(<a href="../../../system/servicemodel/channels/MessageBuffer.html" title="class in system.servicemodel.channels">MessageBuffer</a>&nbsp;buffer)
+                                                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getJCOAssemblyName--">
 <!--   -->
 </a>
@@ -452,7 +501,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../system/collections/objectmodel/Collection_1.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -471,7 +520,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../system/collections/objectmodel/Collection_1.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -490,7 +539,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../system/collections/objectmodel/Collection_1.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
@@ -509,7 +558,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../system/collections/objectmodel/Collection_1.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -529,7 +578,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../system/collections/objectmodel/Collection_1.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
 </dl>
@@ -544,7 +593,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.html" title="class in org.mases.jcobridge.netreflection">NetObjectEnumerable</a></code></dd>
+<dd><code><a href="../../../system/collections/objectmodel/Collection_1.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher">MessageQuery</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>
@@ -573,7 +622,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../system/servicemodel/dispatcher/MessageQuery.html" title="class in system.servicemodel.dispatcher"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../system/servicemodel/dispatcher/MultipleFilterMatchesException.html" title="class in system.servicemodel.dispatcher"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../system/servicemodel/dispatcher/MessageQueryTable_1.html" title="class in system.servicemodel.dispatcher"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../index.html?system/servicemodel/dispatcher/MessageQueryCollection.html" target="_top">Frames</a></li>

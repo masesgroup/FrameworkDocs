@@ -19,6 +19,7 @@
 <meta name="keywords" content="CanReadKeyIdentifierClause()">
 <meta name="keywords" content="CanReadToken()">
 <meta name="keywords" content="CanWriteKeyIdentifierClause()">
+<meta name="keywords" content="ValidateToken()">
 <meta name="keywords" content="CreateSecurityTokenReference()">
 <meta name="keywords" content="ReadKeyIdentifierClause()">
 <meta name="keywords" content="CreateToken()">
@@ -46,7 +47,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -351,11 +352,15 @@ extends <a href="../../../system/identitymodel/tokens/SecurityTokenHandler.html"
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2SecurityTokenHandler.html#setSamlSecurityTokenRequirement-system.identitymodel.tokens.SamlSecurityTokenRequirement-">setSamlSecurityTokenRequirement</a></span>(<a href="../../../system/identitymodel/tokens/SamlSecurityTokenRequirement.html" title="class in system.identitymodel.tokens">SamlSecurityTokenRequirement</a>&nbsp;SamlSecurityTokenRequirement)</code>&nbsp;</td>
 </tr>
 <tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2SecurityTokenHandler.html#ValidateToken-system.identitymodel.tokens.SecurityToken-">ValidateToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2SecurityTokenHandler.html#WriteKeyIdentifierClause-system.xml.XmlWriter-system.identitymodel.tokens.SecurityKeyIdentifierClause-">WriteKeyIdentifierClause</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer,
                         <a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;securityKeyIdentifierClause)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2SecurityTokenHandler.html#WriteToken-system.xml.XmlWriter-system.identitymodel.tokens.SecurityToken-">WriteToken</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer,
           <a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)</code>&nbsp;</td>
@@ -1143,6 +1148,60 @@ extends <a href="../../../system/identitymodel/tokens/SecurityTokenHandler.html"
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ValidateToken-system.identitymodel.tokens.SecurityToken-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ValidateToken</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ValidateToken(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)
+                                   throws java.lang.Throwable,
+                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                          <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                          <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                          <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                          <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                          <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                          <a href="../../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                          <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                          <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                          <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                          <a href="../../../system/security/accesscontrol/PrivilegeNotHeldException.html" title="class in system.security.accesscontrol">PrivilegeNotHeldException</a>,
+                                          <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/identitymodel/tokens/SecurityTokenHandler.html#ValidateToken-system.identitymodel.tokens.SecurityToken-">ValidateToken</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/identitymodel/tokens/SecurityTokenHandler.html" title="class in system.identitymodel.tokens">SecurityTokenHandler</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/security/accesscontrol/PrivilegeNotHeldException.html" title="class in system.security.accesscontrol">PrivilegeNotHeldException</a></code></dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
 </dl>
 </li>
 </ul>

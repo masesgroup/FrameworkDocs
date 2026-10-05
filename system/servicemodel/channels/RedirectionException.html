@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetObjectData()">
+<meta name="keywords" content="getLocations()">
+<meta name="keywords" content="setLocations()">
 <meta name="keywords" content="getDuration()">
 <meta name="keywords" content="setDuration()">
 <meta name="keywords" content="getScope()">
@@ -36,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -320,31 +322,39 @@ extends <a href="../../../system/servicemodel/CommunicationException.html" title
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#getLocations--">getLocations</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a></span>(<a href="../../../system/runtime/serialization/SerializationInfo.html" title="class in system.runtime.serialization">SerializationInfo</a>&nbsp;info,
              <a href="../../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/RedirectionScope.html" title="class in system.servicemodel.channels">RedirectionScope</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#getScope--">getScope</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/RedirectionType.html" title="class in system.servicemodel.channels">RedirectionType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#setDuration-system.servicemodel.channels.RedirectionDuration-">setDuration</a></span>(<a href="../../../system/servicemodel/channels/RedirectionDuration.html" title="class in system.servicemodel.channels">RedirectionDuration</a>&nbsp;Duration)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#setLocations-system.collections.generic.IEnumerable_1-">setLocations</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Locations)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#setScope-system.servicemodel.channels.RedirectionScope-">setScope</a></span>(<a href="../../../system/servicemodel/channels/RedirectionScope.html" title="class in system.servicemodel.channels">RedirectionScope</a>&nbsp;Scope)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/RedirectionException.html#setType-system.servicemodel.channels.RedirectionType-">setType</a></span>(<a href="../../../system/servicemodel/channels/RedirectionType.html" title="class in system.servicemodel.channels">RedirectionType</a>&nbsp;Type)</code>&nbsp;</td>
 </tr>
@@ -828,6 +838,20 @@ extends <a href="../../../system/servicemodel/CommunicationException.html" title
 </dl>
 </li>
 </ul>
+<a name="getLocations--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLocations</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getLocations()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">
 <!--   -->
 </a>
@@ -925,6 +949,20 @@ extends <a href="../../../system/servicemodel/CommunicationException.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/servicemodel/CommunicationException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/CommunicationException.html" title="class in system.servicemodel">CommunicationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setLocations-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLocations</h4>
+<pre>public&nbsp;void&nbsp;setLocations(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;Locations)
+                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

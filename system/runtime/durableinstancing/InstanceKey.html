@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getIsValid()">
+<meta name="keywords" content="getMetadata()">
+<meta name="keywords" content="setMetadata()">
 <meta name="keywords" content="getValue()">
 <meta name="keywords" content="setValue()">
 <meta name="keywords" content="getInvalidKey()">
@@ -33,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -216,6 +218,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#InstanceKey-system.Guid-">InstanceKey</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#InstanceKey-system.Guid-system.collections.generic.IDictionary_2-">InstanceKey</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;value,
+           <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#InstanceKey-java.lang.Object-">InstanceKey</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -280,14 +286,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#getMetadata--">getMetadata</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/Guid.html" title="class in system">Guid</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#getValue--">getValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#setMetadata-system.collections.generic.IDictionary_2-">setMetadata</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;Metadata)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceKey.html#setValue-system.Guid-">setValue</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;Value)</code>&nbsp;</td>
 </tr>
@@ -421,6 +435,45 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
 <dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 <dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="InstanceKey-system.Guid-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InstanceKey</h4>
+<pre>public&nbsp;InstanceKey(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;value,
+                   <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata)
+            throws java.lang.Throwable,
+                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                   <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                   <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                   <a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                   <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                   <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -590,6 +643,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getMetadata()
+                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getValue--">
 <!--   -->
 </a>
@@ -614,6 +681,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setMetadata-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMetadata</h4>
+<pre>public&nbsp;void&nbsp;setMetadata(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;Metadata)
+                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

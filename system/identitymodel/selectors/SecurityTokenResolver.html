@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="TryResolveSecurityKey()">
 <meta name="keywords" content="TryResolveToken()">
+<meta name="keywords" content="CreateDefaultSecurityTokenResolver()">
 <meta name="keywords" content="ResolveSecurityKey()">
 <meta name="keywords" content="ResolveToken()">
 <meta name="keywords" content="LoadCustomConfiguration()">
@@ -34,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -240,66 +241,71 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html" title="class in system.identitymodel.selectors">SecurityTokenResolver</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#CreateDefaultSecurityTokenResolver-system.collections.objectmodel.ReadOnlyCollection_1-boolean-">CreateDefaultSecurityTokenResolver</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokens,
+                                  boolean&nbsp;canMatchLocalId)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#LoadCustomConfiguration-system.xml.XmlNodeList-">LoadCustomConfiguration</a></span>(<a href="../../../system/xml/XmlNodeList.html" title="class in system.xml">XmlNodeList</a>&nbsp;nodelist)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/identitymodel/tokens/SecurityKey.html" title="class in system.identitymodel.tokens">SecurityKey</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#ResolveSecurityKey-system.identitymodel.tokens.SecurityKeyIdentifierClause-">ResolveSecurityKey</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;keyIdentifierClause)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#ResolveToken-system.identitymodel.tokens.SecurityKeyIdentifier-">ResolveToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifier.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifier</a>&nbsp;keyIdentifier)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#ResolveToken-system.identitymodel.tokens.SecurityKeyIdentifierClause-">ResolveToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;keyIdentifierClause)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#TryResolveSecurityKey-system.identitymodel.tokens.SecurityKeyIdentifierClause-org.mases.jcobridge.netreflection.JCORefOut-">TryResolveSecurityKey</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;keyIdentifierClause,
                      <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/identitymodel/tokens/SecurityKey.html" title="class in system.identitymodel.tokens">SecurityKey</a>&gt;&nbsp;key)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#TryResolveToken-system.identitymodel.tokens.SecurityKeyIdentifierClause-org.mases.jcobridge.netreflection.JCORefOut-">TryResolveToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;keyIdentifierClause,
                <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&gt;&nbsp;token)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html#TryResolveToken-system.identitymodel.tokens.SecurityKeyIdentifier-org.mases.jcobridge.netreflection.JCORefOut-">TryResolveToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifier.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifier</a>&nbsp;keyIdentifier,
                <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&gt;&nbsp;token)</code>&nbsp;</td>
@@ -446,6 +452,45 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html" title="class in system.identitymodel.selectors"><code>SecurityTokenResolver</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="CreateDefaultSecurityTokenResolver-system.collections.objectmodel.ReadOnlyCollection_1-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateDefaultSecurityTokenResolver</h4>
+<pre>public static&nbsp;<a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html" title="class in system.identitymodel.selectors">SecurityTokenResolver</a>&nbsp;CreateDefaultSecurityTokenResolver(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokens,
+                                                                       boolean&nbsp;canMatchLocalId)
+                                                                throws java.lang.Throwable,
+                                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getIsFixed()">
 <meta name="keywords" content="setIsFixed()">
+<meta name="keywords" content="getCategories()">
 <meta name="keywords" content="getScheme()">
 <meta name="keywords" content="setScheme()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -33,7 +34,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -214,6 +215,14 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument--">InlineCategoriesDocument</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-system.collections.generic.IEnumerable_1-">InlineCategoriesDocument</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-system.collections.generic.IEnumerable_1-boolean-java.lang.String-">InlineCategoriesDocument</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories,
+                        boolean&nbsp;isFixed,
+                        java.lang.String&nbsp;scheme)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-java.lang.Object-">InlineCategoriesDocument</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -240,52 +249,56 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getCategories--">getCategories</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getIsFixed--">getIsFixed</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getScheme--">getScheme</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#setIsFixed-boolean-">setIsFixed</a></span>(boolean&nbsp;IsFixed)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#setScheme-java.lang.String-">setScheme</a></span>(java.lang.String&nbsp;Scheme)</code>&nbsp;</td>
 </tr>
@@ -295,7 +308,7 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.servicemodel.syndication.<a href="../../../system/servicemodel/syndication/CategoriesDocument.html" title="class in system.servicemodel.syndication">CategoriesDocument</a></h3>
-<code><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.Uri-">Create</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getBaseUri--">getBaseUri</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getElementExtensions--">getElementExtensions</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#GetFormatter--">GetFormatter</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getLanguage--">getLanguage</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Load-system.xml.XmlReader-">Load</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Save-system.xml.XmlWriter-">Save</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setBaseUri-system.Uri-">setBaseUri</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setLanguage-java.lang.String-">setLanguage</a></code></li>
+<code><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.collections.objectmodel.Collection_1-">Create</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.collections.objectmodel.Collection_1-boolean-java.lang.String-">Create</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.Uri-">Create</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getAttributeExtensions--">getAttributeExtensions</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getBaseUri--">getBaseUri</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getElementExtensions--">getElementExtensions</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#GetFormatter--">GetFormatter</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getLanguage--">getLanguage</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Load-system.xml.XmlReader-">Load</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Save-system.xml.XmlWriter-">Save</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setBaseUri-system.Uri-">setBaseUri</a>, <a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setLanguage-java.lang.String-">setLanguage</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -399,6 +412,40 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 </dl>
 </li>
 </ul>
+<a name="InlineCategoriesDocument-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InlineCategoriesDocument</h4>
+<pre>public&nbsp;InlineCategoriesDocument(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories)
+                         throws java.lang.Throwable,
+                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="InlineCategoriesDocument-system.collections.generic.IEnumerable_1-boolean-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InlineCategoriesDocument</h4>
+<pre>public&nbsp;InlineCategoriesDocument(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories,
+                                boolean&nbsp;isFixed,
+                                java.lang.String&nbsp;scheme)
+                         throws java.lang.Throwable,
+                                <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="InlineCategoriesDocument-java.lang.Object-">
 <!--   -->
 </a>
@@ -438,6 +485,20 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <dd><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html" title="class in system.servicemodel.syndication"><code>InlineCategoriesDocument</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getCategories--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCategories</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getCategories()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

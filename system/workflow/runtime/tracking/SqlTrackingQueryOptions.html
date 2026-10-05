@@ -17,10 +17,13 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Clear()">
+<meta name="keywords" content="getTrackingDataItems()">
 <meta name="keywords" content="getStatusMaxDateTime()">
 <meta name="keywords" content="setStatusMaxDateTime()">
 <meta name="keywords" content="getStatusMinDateTime()">
 <meta name="keywords" content="setStatusMinDateTime()">
+<meta name="keywords" content="getWorkflowStatus()">
+<meta name="keywords" content="setWorkflowStatus()">
 <meta name="keywords" content="getWorkflowType()">
 <meta name="keywords" content="setWorkflowType()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -36,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -280,22 +283,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#getStatusMinDateTime--">getStatusMinDateTime</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#getTrackingDataItems--">getTrackingDataItems</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#getWorkflowStatus--">getWorkflowStatus</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#getWorkflowType--">getWorkflowType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#setStatusMaxDateTime-system.DateTime-">setStatusMaxDateTime</a></span>(<a href="../../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;StatusMaxDateTime)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#setStatusMinDateTime-system.DateTime-">setStatusMinDateTime</a></span>(<a href="../../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;StatusMinDateTime)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#setWorkflowStatus-system.Nullable_1-">setWorkflowStatus</a></span>(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;WorkflowStatus)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/SqlTrackingQueryOptions.html#setWorkflowType-org.mases.jcobridge.netreflection.NetType-">setWorkflowType</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;WorkflowType)</code>&nbsp;</td>
 </tr>
@@ -582,6 +597,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="getTrackingDataItems--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTrackingDataItems</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getTrackingDataItems()
+                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getWorkflowStatus--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWorkflowStatus</h4>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getWorkflowStatus()
+                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getWorkflowType--">
 <!--   -->
 </a>
@@ -631,6 +674,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setStatusMinDateTime</h4>
 <pre>public&nbsp;void&nbsp;setStatusMinDateTime(<a href="../../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;StatusMinDateTime)
                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setWorkflowStatus-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setWorkflowStatus</h4>
+<pre>public&nbsp;void&nbsp;setWorkflowStatus(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;WorkflowStatus)
+                       throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetXmlMappings()">
 <meta name="keywords" content="AddBindingParameters()">
 <meta name="keywords" content="ApplyClientBehavior()">
 <meta name="keywords" content="ApplyDispatchBehavior()">
@@ -36,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -128,13 +129,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a>, <a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">XmlSerializerOperationBehavior</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
-implements <a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a>, <a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></pre>
+extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
 <div class="block">The base .NET class managing System.ServiceModel.Description.XmlSerializerOperationBehavior, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -276,10 +276,14 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/XmlSerializerOperationBehavior.html#GetXmlMappings--">GetXmlMappings</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/XmlSerializerFormatAttribute.html" title="class in system.servicemodel">XmlSerializerFormatAttribute</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/XmlSerializerOperationBehavior.html#getXmlSerializerFormatAttribute--">getXmlSerializerFormatAttribute</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/XmlSerializerOperationBehavior.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -297,20 +301,6 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.description.IOperationBehavior">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.servicemodel.description.<a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></h3>
-<code><a href="../../../system/servicemodel/description/IOperationBehavior.html#AddBindingParameters-system.servicemodel.description.OperationDescription-system.servicemodel.channels.BindingParameterCollection-">AddBindingParameters</a>, <a href="../../../system/servicemodel/description/IOperationBehavior.html#ApplyClientBehavior-system.servicemodel.description.OperationDescription-system.servicemodel.dispatcher.ClientOperation-">ApplyClientBehavior</a>, <a href="../../../system/servicemodel/description/IOperationBehavior.html#ApplyDispatchBehavior-system.servicemodel.description.OperationDescription-system.servicemodel.dispatcher.DispatchOperation-">ApplyDispatchBehavior</a>, <a href="../../../system/servicemodel/description/IOperationBehavior.html#ToIOperationBehavior-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIOperationBehavior</a>, <a href="../../../system/servicemodel/description/IOperationBehavior.html#Validate-system.servicemodel.description.OperationDescription-">Validate</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.description.IWsdlExportExtension">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.servicemodel.description.<a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></h3>
-<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#ExportContract-system.servicemodel.description.WsdlExporter-system.servicemodel.description.WsdlContractConversionContext-">ExportContract</a>, <a href="../../../system/servicemodel/description/IWsdlExportExtension.html#ExportEndpoint-system.servicemodel.description.WsdlExporter-system.servicemodel.description.WsdlEndpointConversionContext-">ExportEndpoint</a>, <a href="../../../system/servicemodel/description/IWsdlExportExtension.html#ToIWsdlExportExtension-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIWsdlExportExtension</a></code></li>
 </ul>
 </li>
 </ul>
@@ -537,10 +527,6 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -560,10 +546,6 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -583,10 +565,6 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -606,10 +584,6 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -630,14 +604,46 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetXmlMappings--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetXmlMappings</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GetXmlMappings()
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                   <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

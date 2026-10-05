@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getMatchDerivedTypes()">
 <meta name="keywords" content="setMatchDerivedTypes()">
+<meta name="keywords" content="getExecutionStatusEvents()">
 <meta name="keywords" content="getActivityTypeName()">
 <meta name="keywords" content="setActivityTypeName()">
 <meta name="keywords" content="getActivityType()">
@@ -36,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -215,12 +216,30 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-org.mases.jcobridge.netreflection.NetType-">ActivityTrackingLocation</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;activityType)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-org.mases.jcobridge.netreflection.NetType-boolean-system.collections.generic.IEnumerable_1-">ActivityTrackingLocation</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;activityType,
+                        boolean&nbsp;matchDerivedTypes,
+                        <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-">ActivityTrackingLocation</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;activityType,
+                        <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-java.lang.Object-">ActivityTrackingLocation</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-java.lang.String-">ActivityTrackingLocation</a></span>(java.lang.String&nbsp;activityTypeName)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-java.lang.String-boolean-system.collections.generic.IEnumerable_1-">ActivityTrackingLocation</a></span>(java.lang.String&nbsp;activityTypeName,
+                        boolean&nbsp;matchDerivedTypes,
+                        <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#ActivityTrackingLocation-java.lang.String-system.collections.generic.IEnumerable_1-">ActivityTrackingLocation</a></span>(java.lang.String&nbsp;activityTypeName,
+                        <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -256,52 +275,56 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getConditions--">getConditions</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getExecutionStatusEvents--">getExecutionStatusEvents</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#getMatchDerivedTypes--">getMatchDerivedTypes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#setActivityType-org.mases.jcobridge.netreflection.NetType-">setActivityType</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ActivityType)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#setActivityTypeName-java.lang.String-">setActivityTypeName</a></span>(java.lang.String&nbsp;ActivityTypeName)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/ActivityTrackingLocation.html#setMatchDerivedTypes-boolean-">setMatchDerivedTypes</a></span>(boolean&nbsp;MatchDerivedTypes)</code>&nbsp;</td>
 </tr>
@@ -424,6 +447,49 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="ActivityTrackingLocation-org.mases.jcobridge.netreflection.NetType-boolean-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ActivityTrackingLocation</h4>
+<pre>public&nbsp;ActivityTrackingLocation(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;activityType,
+                                boolean&nbsp;matchDerivedTypes,
+                                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)
+                         throws java.lang.Throwable,
+                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ActivityTrackingLocation-org.mases.jcobridge.netreflection.NetType-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ActivityTrackingLocation</h4>
+<pre>public&nbsp;ActivityTrackingLocation(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;activityType,
+                                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)
+                         throws java.lang.Throwable,
+                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ActivityTrackingLocation-java.lang.Object-">
 <!--   -->
 </a>
@@ -442,7 +508,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <a name="ActivityTrackingLocation-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ActivityTrackingLocation</h4>
 <pre>public&nbsp;ActivityTrackingLocation(java.lang.String&nbsp;activityTypeName)
@@ -452,6 +518,49 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ActivityTrackingLocation-java.lang.String-boolean-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ActivityTrackingLocation</h4>
+<pre>public&nbsp;ActivityTrackingLocation(java.lang.String&nbsp;activityTypeName,
+                                boolean&nbsp;matchDerivedTypes,
+                                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)
+                         throws java.lang.Throwable,
+                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ActivityTrackingLocation-java.lang.String-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ActivityTrackingLocation</h4>
+<pre>public&nbsp;ActivityTrackingLocation(java.lang.String&nbsp;activityTypeName,
+                                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;executionStatusEvents)
+                         throws java.lang.Throwable,
+                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -518,6 +627,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getConditions</h4>
 <pre>public&nbsp;<a href="../../../../system/workflow/runtime/tracking/TrackingConditionCollection.html" title="class in system.workflow.runtime.tracking">TrackingConditionCollection</a>&nbsp;getConditions()
                                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getExecutionStatusEvents--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExecutionStatusEvents</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getExecutionStatusEvents()
+                                 throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

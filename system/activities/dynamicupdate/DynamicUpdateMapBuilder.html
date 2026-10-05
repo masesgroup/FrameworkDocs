@@ -27,6 +27,11 @@
 <meta name="keywords" content="setOriginalEnvironment()">
 <meta name="keywords" content="getUpdatedEnvironment()">
 <meta name="keywords" content="setUpdatedEnvironment()">
+<meta name="keywords" content="getDisallowUpdateInside()">
+<meta name="keywords" content="getLookupImplementationMap()">
+<meta name="keywords" content="setLookupImplementationMap()">
+<meta name="keywords" content="getLookupMapItem()">
+<meta name="keywords" content="setLookupMapItem()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -40,7 +45,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -246,76 +251,100 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#CreateMap--">CreateMap</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/activities/dynamicupdate/DynamicUpdateMap.html" title="class in system.activities.dynamicupdate">DynamicUpdateMap</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#CreateMap-org.mases.jcobridge.netreflection.JCORefOut-">CreateMap</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&gt;&nbsp;activitiesBlockingUpdate)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ISet_1.html" title="interface in system.collections.generic">ISet_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getDisallowUpdateInside--">getDisallowUpdateInside</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getForImplementation--">getForImplementation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Func_2.html" title="class in system">Func_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getLookupImplementationMap--">getLookupImplementationMap</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Func_2.html" title="class in system">Func_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getLookupMapItem--">getLookupMapItem</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/activities/LocationReferenceEnvironment.html" title="class in system.activities">LocationReferenceEnvironment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getOriginalEnvironment--">getOriginalEnvironment</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getOriginalWorkflowDefinition--">getOriginalWorkflowDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/activities/LocationReferenceEnvironment.html" title="class in system.activities">LocationReferenceEnvironment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getUpdatedEnvironment--">getUpdatedEnvironment</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#getUpdatedWorkflowDefinition--">getUpdatedWorkflowDefinition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setForImplementation-boolean-">setForImplementation</a></span>(boolean&nbsp;ForImplementation)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setLookupImplementationMap-system.Func_2-">setLookupImplementationMap</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;LookupImplementationMap)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setLookupMapItem-system.Func_2-">setLookupMapItem</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;LookupMapItem)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setOriginalEnvironment-system.activities.LocationReferenceEnvironment-">setOriginalEnvironment</a></span>(<a href="../../../system/activities/LocationReferenceEnvironment.html" title="class in system.activities">LocationReferenceEnvironment</a>&nbsp;OriginalEnvironment)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setOriginalWorkflowDefinition-system.activities.Activity-">setOriginalWorkflowDefinition</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;OriginalWorkflowDefinition)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setUpdatedEnvironment-system.activities.LocationReferenceEnvironment-">setUpdatedEnvironment</a></span>(<a href="../../../system/activities/LocationReferenceEnvironment.html" title="class in system.activities">LocationReferenceEnvironment</a>&nbsp;UpdatedEnvironment)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/dynamicupdate/DynamicUpdateMapBuilder.html#setUpdatedWorkflowDefinition-system.activities.Activity-">setUpdatedWorkflowDefinition</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;UpdatedWorkflowDefinition)</code>&nbsp;</td>
 </tr>
@@ -508,6 +537,58 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="CreateMap-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateMap</h4>
+<pre>public&nbsp;<a href="../../../system/activities/dynamicupdate/DynamicUpdateMap.html" title="class in system.activities.dynamicupdate">DynamicUpdateMap</a>&nbsp;CreateMap(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&gt;&nbsp;activitiesBlockingUpdate)
+                           throws java.lang.Throwable,
+                                  <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                  <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                  <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                  <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                  <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                  <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                  <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                  <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getDisallowUpdateInside--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDisallowUpdateInside</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ISet_1.html" title="interface in system.collections.generic">ISet_1</a>&nbsp;getDisallowUpdateInside()
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getForImplementation--">
 <!--   -->
 </a>
@@ -618,6 +699,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getLookupImplementationMap--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLookupImplementationMap</h4>
+<pre>public&nbsp;<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;getLookupImplementationMap()
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getLookupMapItem--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLookupMapItem</h4>
+<pre>public&nbsp;<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;getLookupMapItem()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getOriginalEnvironment--">
 <!--   -->
 </a>
@@ -698,6 +807,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setLookupImplementationMap-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLookupImplementationMap</h4>
+<pre>public&nbsp;void&nbsp;setLookupImplementationMap(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;LookupImplementationMap)
+                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setLookupMapItem-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setLookupMapItem</h4>
+<pre>public&nbsp;void&nbsp;setLookupMapItem(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;LookupMapItem)
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

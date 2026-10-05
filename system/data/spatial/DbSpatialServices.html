@@ -85,6 +85,19 @@
 <meta name="keywords" content="GetExteriorRing()">
 <meta name="keywords" content="GetPointOnSurface()">
 <meta name="keywords" content="InteriorRingAt()">
+<meta name="keywords" content="GetIsClosed()">
+<meta name="keywords" content="GetIsRing()">
+<meta name="keywords" content="GetArea()">
+<meta name="keywords" content="GetElevation()">
+<meta name="keywords" content="GetLatitude()">
+<meta name="keywords" content="GetLength()">
+<meta name="keywords" content="GetLongitude()">
+<meta name="keywords" content="GetMeasure()">
+<meta name="keywords" content="GetXCoordinate()">
+<meta name="keywords" content="GetYCoordinate()">
+<meta name="keywords" content="GetElementCount()">
+<meta name="keywords" content="GetInteriorRingCount()">
+<meta name="keywords" content="GetPointCount()">
 <meta name="keywords" content="CreateProviderValue()">
 <meta name="keywords" content="AsGml()">
 <meta name="keywords" content="AsText()">
@@ -104,7 +117,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":9,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":9,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10,"i142":10,"i143":10,"i144":10,"i145":10,"i146":10,"i147":10,"i148":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -704,205 +717,285 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                        int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
 <tr id="i85" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetBoundary-system.data.spatial.DbGeometry-">GetBoundary</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetArea-system.data.spatial.DbGeography-">GetArea</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
 <tr id="i86" class="altColor">
-<td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetCentroid-system.data.spatial.DbGeometry-">GetCentroid</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetArea-system.data.spatial.DbGeometry-">GetArea</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
 <tr id="i87" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetConvexHull-system.data.spatial.DbGeometry-">GetConvexHull</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetBoundary-system.data.spatial.DbGeometry-">GetBoundary</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
 <tr id="i88" class="altColor">
+<td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetCentroid-system.data.spatial.DbGeometry-">GetCentroid</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i89" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetConvexHull-system.data.spatial.DbGeometry-">GetConvexHull</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i90" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetCoordinateSystemId-system.data.spatial.DbGeography-">GetCoordinateSystemId</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
-<tr id="i89" class="rowColor">
+<tr id="i91" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetCoordinateSystemId-system.data.spatial.DbGeometry-">GetCoordinateSystemId</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i90" class="altColor">
+<tr id="i92" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbSpatialServices.html" title="class in system.data.spatial">DbSpatialServices</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#getDefault--">getDefault</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i91" class="rowColor">
+<tr id="i93" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetDimension-system.data.spatial.DbGeography-">GetDimension</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
-<tr id="i92" class="altColor">
+<tr id="i94" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetDimension-system.data.spatial.DbGeometry-">GetDimension</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i93" class="rowColor">
+<tr id="i95" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetElementCount-system.data.spatial.DbGeography-">GetElementCount</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i96" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetElementCount-system.data.spatial.DbGeometry-">GetElementCount</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i97" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetElevation-system.data.spatial.DbGeography-">GetElevation</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i98" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetElevation-system.data.spatial.DbGeometry-">GetElevation</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i99" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetEndPoint-system.data.spatial.DbGeography-">GetEndPoint</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
-<tr id="i94" class="altColor">
+<tr id="i100" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetEndPoint-system.data.spatial.DbGeometry-">GetEndPoint</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i95" class="rowColor">
+<tr id="i101" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetEnvelope-system.data.spatial.DbGeometry-">GetEnvelope</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i96" class="altColor">
+<tr id="i102" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetExteriorRing-system.data.spatial.DbGeometry-">GetExteriorRing</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i97" class="rowColor">
+<tr id="i103" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetInteriorRingCount-system.data.spatial.DbGeometry-">GetInteriorRingCount</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i104" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsClosed-system.data.spatial.DbGeography-">GetIsClosed</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i105" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsClosed-system.data.spatial.DbGeometry-">GetIsClosed</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i106" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsEmpty-system.data.spatial.DbGeography-">GetIsEmpty</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
-<tr id="i98" class="altColor">
+<tr id="i107" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsEmpty-system.data.spatial.DbGeometry-">GetIsEmpty</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i99" class="rowColor">
+<tr id="i108" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsRing-system.data.spatial.DbGeometry-">GetIsRing</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i109" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsSimple-system.data.spatial.DbGeometry-">GetIsSimple</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i100" class="altColor">
+<tr id="i110" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetIsValid-system.data.spatial.DbGeometry-">GetIsValid</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i101" class="rowColor">
+<tr id="i111" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i102" class="altColor">
+<tr id="i112" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i103" class="rowColor">
+<tr id="i113" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i104" class="altColor">
+<tr id="i114" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i105" class="rowColor">
+<tr id="i115" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i106" class="altColor">
+<tr id="i116" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetLatitude-system.data.spatial.DbGeography-">GetLatitude</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i117" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetLength-system.data.spatial.DbGeography-">GetLength</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i118" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetLength-system.data.spatial.DbGeometry-">GetLength</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i119" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetLongitude-system.data.spatial.DbGeography-">GetLongitude</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i120" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetMeasure-system.data.spatial.DbGeography-">GetMeasure</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i121" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetMeasure-system.data.spatial.DbGeometry-">GetMeasure</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i122" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetPointCount-system.data.spatial.DbGeography-">GetPointCount</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
+</tr>
+<tr id="i123" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetPointCount-system.data.spatial.DbGeometry-">GetPointCount</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i124" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetPointOnSurface-system.data.spatial.DbGeometry-">GetPointOnSurface</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i107" class="rowColor">
+<tr id="i125" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetSpatialTypeName-system.data.spatial.DbGeography-">GetSpatialTypeName</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
-<tr id="i108" class="altColor">
+<tr id="i126" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetSpatialTypeName-system.data.spatial.DbGeometry-">GetSpatialTypeName</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i109" class="rowColor">
+<tr id="i127" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetStartPoint-system.data.spatial.DbGeography-">GetStartPoint</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)</code>&nbsp;</td>
 </tr>
-<tr id="i110" class="altColor">
+<tr id="i128" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetStartPoint-system.data.spatial.DbGeometry-">GetStartPoint</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
 </tr>
-<tr id="i111" class="rowColor">
+<tr id="i129" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetXCoordinate-system.data.spatial.DbGeometry-">GetXCoordinate</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i130" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#GetYCoordinate-system.data.spatial.DbGeometry-">GetYCoordinate</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)</code>&nbsp;</td>
+</tr>
+<tr id="i131" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#InteriorRingAt-system.data.spatial.DbGeometry-int-">InteriorRingAt</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
               int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i112" class="altColor">
+<tr id="i132" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Intersection-system.data.spatial.DbGeography-system.data.spatial.DbGeography-">Intersection</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue,
             <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;otherGeography)</code>&nbsp;</td>
 </tr>
-<tr id="i113" class="rowColor">
+<tr id="i133" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Intersection-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">Intersection</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
             <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i114" class="altColor">
+<tr id="i134" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Intersects-system.data.spatial.DbGeography-system.data.spatial.DbGeography-">Intersects</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue,
           <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;otherGeography)</code>&nbsp;</td>
 </tr>
-<tr id="i115" class="rowColor">
+<tr id="i135" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Intersects-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">Intersects</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
           <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i116" class="altColor">
+<tr id="i136" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Overlaps-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">Overlaps</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
         <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i117" class="rowColor">
+<tr id="i137" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#PointAt-system.data.spatial.DbGeography-int-">PointAt</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue,
        int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i118" class="altColor">
+<tr id="i138" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#PointAt-system.data.spatial.DbGeometry-int-">PointAt</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
        int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i119" class="rowColor">
+<tr id="i139" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Relate-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-java.lang.String-">Relate</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
       <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry,
       java.lang.String&nbsp;matrix)</code>&nbsp;</td>
 </tr>
-<tr id="i120" class="altColor">
+<tr id="i140" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i121" class="rowColor">
+<tr id="i141" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#SpatialEquals-system.data.spatial.DbGeography-system.data.spatial.DbGeography-">SpatialEquals</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue,
              <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;otherGeography)</code>&nbsp;</td>
 </tr>
-<tr id="i122" class="altColor">
+<tr id="i142" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#SpatialEquals-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">SpatialEquals</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
              <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i123" class="rowColor">
+<tr id="i143" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#SymmetricDifference-system.data.spatial.DbGeography-system.data.spatial.DbGeography-">SymmetricDifference</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue,
                    <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;otherGeography)</code>&nbsp;</td>
 </tr>
-<tr id="i124" class="altColor">
+<tr id="i144" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#SymmetricDifference-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">SymmetricDifference</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
                    <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i125" class="rowColor">
+<tr id="i145" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Touches-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">Touches</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
        <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i126" class="altColor">
+<tr id="i146" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Union-system.data.spatial.DbGeography-system.data.spatial.DbGeography-">Union</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue,
      <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;otherGeography)</code>&nbsp;</td>
 </tr>
-<tr id="i127" class="rowColor">
+<tr id="i147" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Union-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">Union</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
      <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
 </tr>
-<tr id="i128" class="altColor">
+<tr id="i148" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbSpatialServices.html#Within-system.data.spatial.DbGeometry-system.data.spatial.DbGeometry-">Within</a></span>(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue,
       <a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;otherGeometry)</code>&nbsp;</td>
@@ -2290,6 +2383,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetArea-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetArea</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetArea(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetArea-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetArea</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetArea(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetBoundary-system.data.spatial.DbGeometry-">
 <!--   -->
 </a>
@@ -2402,6 +2523,62 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetElementCount-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetElementCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetElementCount(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetElementCount-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetElementCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetElementCount(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetElevation-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetElevation</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetElevation(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetElevation-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetElevation</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetElevation(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetEndPoint-system.data.spatial.DbGeography-">
 <!--   -->
 </a>
@@ -2458,6 +2635,48 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetInteriorRingCount-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetInteriorRingCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetInteriorRingCount(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetIsClosed-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetIsClosed</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetIsClosed(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetIsClosed-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetIsClosed</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetIsClosed(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetIsEmpty-system.data.spatial.DbGeography-">
 <!--   -->
 </a>
@@ -2480,6 +2699,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetIsEmpty</h4>
 <pre>public&nbsp;boolean&nbsp;GetIsEmpty(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetIsRing-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetIsRing</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetIsRing(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -2610,6 +2843,118 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetLatitude-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLatitude</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetLatitude(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetLength-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLength</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetLength(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetLength-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLength</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetLength(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetLongitude-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLongitude</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetLongitude(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetMeasure-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetMeasure</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetMeasure(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetMeasure-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetMeasure</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetMeasure(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetPointCount-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetPointCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetPointCount(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;geographyValue)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetPointCount-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetPointCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetPointCount(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetPointOnSurface-system.data.spatial.DbGeometry-">
 <!--   -->
 </a>
@@ -2674,6 +3019,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetStartPoint</h4>
 <pre>public&nbsp;<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;GetStartPoint(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetXCoordinate-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetXCoordinate</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetXCoordinate(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetYCoordinate-system.data.spatial.DbGeometry-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetYCoordinate</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;GetYCoordinate(<a href="../../../system/data/spatial/DbGeometry.html" title="class in system.data.spatial">DbGeometry</a>&nbsp;geometryValue)
+                          throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

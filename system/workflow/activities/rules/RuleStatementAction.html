@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Validate()">
+<meta name="keywords" content="GetSideEffects()">
 <meta name="keywords" content="Clone()">
 <meta name="keywords" content="Execute()">
 <meta name="keywords" content="getCodeDomStatement()">
@@ -34,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -289,14 +290,18 @@ extends <a href="../../../../system/workflow/activities/rules/RuleAction.html" t
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleStatementAction.html#setCodeDomStatement-system.codedom.CodeStatement-">setCodeDomStatement</a></span>(<a href="../../../../system/codedom/CodeStatement.html" title="class in system.codedom">CodeStatement</a>&nbsp;CodeDomStatement)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleStatementAction.html#GetSideEffects-system.workflow.activities.rules.RuleValidation-">GetSideEffects</a></span>(<a href="../../../../system/workflow/activities/rules/RuleValidation.html" title="class in system.workflow.activities.rules">RuleValidation</a>&nbsp;validation)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleStatementAction.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleStatementAction.html#setCodeDomStatement-system.codedom.CodeStatement-">setCodeDomStatement</a></span>(<a href="../../../../system/codedom/CodeStatement.html" title="class in system.codedom">CodeStatement</a>&nbsp;CodeDomStatement)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleStatementAction.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleStatementAction.html#Validate-system.workflow.activities.rules.RuleValidation-">Validate</a></span>(<a href="../../../../system/workflow/activities/rules/RuleValidation.html" title="class in system.workflow.activities.rules">RuleValidation</a>&nbsp;validator)</code>&nbsp;</td>
 </tr>
@@ -668,6 +673,48 @@ extends <a href="../../../../system/workflow/activities/rules/RuleAction.html" t
 <dd><code><a href="../../../../system/workflow/activities/rules/RuleAction.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/activities/rules/RuleAction.html" title="class in system.workflow.activities.rules">RuleAction</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetSideEffects-system.workflow.activities.rules.RuleValidation-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetSideEffects</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;GetSideEffects(<a href="../../../../system/workflow/activities/rules/RuleValidation.html" title="class in system.workflow.activities.rules">RuleValidation</a>&nbsp;validation)
+                             throws java.lang.Throwable,
+                                    <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                    <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                    <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                    <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                    <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../system/workflow/activities/rules/RuleAction.html#GetSideEffects-system.workflow.activities.rules.RuleValidation-">GetSideEffects</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/activities/rules/RuleAction.html" title="class in system.workflow.activities.rules">RuleAction</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

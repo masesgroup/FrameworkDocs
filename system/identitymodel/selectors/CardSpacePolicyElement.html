@@ -20,6 +20,7 @@
 <meta name="keywords" content="setIsManagedIssuer()">
 <meta name="keywords" content="getPolicyNoticeVersion()">
 <meta name="keywords" content="setPolicyNoticeVersion()">
+<meta name="keywords" content="getParameters()">
 <meta name="keywords" content="getPolicyNoticeLink()">
 <meta name="keywords" content="setPolicyNoticeLink()">
 <meta name="keywords" content="getIssuer()">
@@ -39,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,6 +220,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#CardSpacePolicyElement-system.xml.XmlElement-system.xml.XmlElement-system.collections.objectmodel.Collection_1-system.Uri-int-boolean-">CardSpacePolicyElement</a></span>(<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&nbsp;target,
+                      <a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&nbsp;issuer,
+                      <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;parameters,
+                      <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;privacyNoticeLink,
+                      int&nbsp;privacyNoticeVersion,
+                      boolean&nbsp;isManagedIssuer)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -279,38 +288,42 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#getParameters--">getParameters</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/Uri.html" title="class in system">Uri</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#getPolicyNoticeLink--">getPolicyNoticeLink</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#getPolicyNoticeVersion--">getPolicyNoticeVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#getTarget--">getTarget</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#setIsManagedIssuer-boolean-">setIsManagedIssuer</a></span>(boolean&nbsp;IsManagedIssuer)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#setIssuer-system.xml.XmlElement-">setIssuer</a></span>(<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&nbsp;Issuer)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#setPolicyNoticeLink-system.Uri-">setPolicyNoticeLink</a></span>(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;PolicyNoticeLink)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#setPolicyNoticeVersion-int-">setPolicyNoticeVersion</a></span>(int&nbsp;PolicyNoticeVersion)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/CardSpacePolicyElement.html#setTarget-system.xml.XmlElement-">setTarget</a></span>(<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&nbsp;Target)</code>&nbsp;</td>
 </tr>
@@ -420,7 +433,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a name="CardSpacePolicyElement-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>CardSpacePolicyElement</h4>
 <pre>public&nbsp;CardSpacePolicyElement(java.lang.Object&nbsp;instance)
@@ -429,6 +442,67 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="CardSpacePolicyElement-system.xml.XmlElement-system.xml.XmlElement-system.collections.objectmodel.Collection_1-system.Uri-int-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>CardSpacePolicyElement</h4>
+<pre>public&nbsp;CardSpacePolicyElement(<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&nbsp;target,
+                              <a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&nbsp;issuer,
+                              <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;parameters,
+                              <a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;privacyNoticeLink,
+                              int&nbsp;privacyNoticeVersion,
+                              boolean&nbsp;isManagedIssuer)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                              <a href="../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a>,
+                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                              <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                              <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/AccessViolationException.html" title="class in system">AccessViolationException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -580,6 +654,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getParameters--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getParameters</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getParameters()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

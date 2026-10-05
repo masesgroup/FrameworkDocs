@@ -20,6 +20,7 @@
 <meta name="keywords" content="GetFormatter()">
 <meta name="keywords" content="Create()">
 <meta name="keywords" content="Save()">
+<meta name="keywords" content="getAttributeExtensions()">
 <meta name="keywords" content="getElementExtensions()">
 <meta name="keywords" content="getLanguage()">
 <meta name="keywords" content="setLanguage()">
@@ -38,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":10,"i16":10,"i17":10,"i18":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -65,7 +66,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../system/servicemodel/syndication/AtomPub10ServiceDocumentFormatter.html" title="class in system.servicemodel.syndication"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../system/servicemodel/syndication/AtomPub10ServiceDocumentFormatter_1.html" title="class in system.servicemodel.syndication"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../system/servicemodel/syndication/CategoriesDocumentFormatter.html" title="class in system.servicemodel.syndication"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -244,72 +245,86 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html" title="class in system.servicemodel.syndication">InlineCategoriesDocument</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.collections.objectmodel.Collection_1-">Create</a></span>(<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;categories)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html" title="class in system.servicemodel.syndication">InlineCategoriesDocument</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.collections.objectmodel.Collection_1-boolean-java.lang.String-">Create</a></span>(<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;categories,
+      boolean&nbsp;isFixed,
+      java.lang.String&nbsp;scheme)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/syndication/ReferencedCategoriesDocument.html" title="class in system.servicemodel.syndication">ReferencedCategoriesDocument</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Create-system.Uri-">Create</a></span>(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;linkToCategoriesDocument)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getAttributeExtensions--">getAttributeExtensions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/Uri.html" title="class in system">Uri</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getBaseUri--">getBaseUri</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/SyndicationElementExtensionCollection.html" title="class in system.servicemodel.syndication">SyndicationElementExtensionCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getElementExtensions--">getElementExtensions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/syndication/CategoriesDocumentFormatter.html" title="class in system.servicemodel.syndication">CategoriesDocumentFormatter</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#GetFormatter--">GetFormatter</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#getLanguage--">getLanguage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/syndication/CategoriesDocument.html" title="class in system.servicemodel.syndication">CategoriesDocument</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Load-system.xml.XmlReader-">Load</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;reader)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#Save-system.xml.XmlWriter-">Save</a></span>(<a href="../../../system/xml/XmlWriter.html" title="class in system.xml">XmlWriter</a>&nbsp;writer)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setBaseUri-system.Uri-">setBaseUri</a></span>(<a href="../../../system/Uri.html" title="class in system">Uri</a>&nbsp;BaseUri)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/CategoriesDocument.html#setLanguage-java.lang.String-">setLanguage</a></span>(java.lang.String&nbsp;Language)</code>&nbsp;</td>
 </tr>
@@ -458,6 +473,40 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="Create-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Create</h4>
+<pre>public static&nbsp;<a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html" title="class in system.servicemodel.syndication">InlineCategoriesDocument</a>&nbsp;Create(<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;categories)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Create-system.collections.objectmodel.Collection_1-boolean-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Create</h4>
+<pre>public static&nbsp;<a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html" title="class in system.servicemodel.syndication">InlineCategoriesDocument</a>&nbsp;Create(<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;categories,
+                                              boolean&nbsp;isFixed,
+                                              java.lang.String&nbsp;scheme)
+                                       throws java.lang.Throwable,
+                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="Create-system.Uri-">
 <!--   -->
 </a>
@@ -493,6 +542,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAttributeExtensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributeExtensions</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getAttributeExtensions()
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -791,7 +858,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../system/servicemodel/syndication/AtomPub10ServiceDocumentFormatter.html" title="class in system.servicemodel.syndication"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../system/servicemodel/syndication/AtomPub10ServiceDocumentFormatter_1.html" title="class in system.servicemodel.syndication"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../system/servicemodel/syndication/CategoriesDocumentFormatter.html" title="class in system.servicemodel.syndication"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

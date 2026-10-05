@@ -16,6 +16,10 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getResults()">
+<meta name="keywords" content="setResults()">
+<meta name="keywords" content="getPropertyMetadata()">
+<meta name="keywords" content="setPropertyMetadata()">
 <meta name="keywords" content="getModelMetadata()">
 <meta name="keywords" content="setModelMetadata()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -31,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -207,6 +211,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#ComplexModel--">ComplexModel</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#ComplexModel-system.web.modelbinding.ModelMetadata-system.collections.generic.IEnumerable_1-">ComplexModel</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;modelMetadata,
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;propertyMetadata)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#ComplexModel-java.lang.Object-">ComplexModel</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -267,12 +275,28 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#getModelMetadata--">getModelMetadata</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#getPropertyMetadata--">getPropertyMetadata</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#getResults--">getResults</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#setModelMetadata-system.web.modelbinding.ModelMetadata-">setModelMetadata</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;ModelMetadata)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#setPropertyMetadata-system.collections.objectmodel.ReadOnlyCollection_1-">setPropertyMetadata</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;PropertyMetadata)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ComplexModel.html#setResults-system.collections.generic.IDictionary_2-">setResults</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;Results)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -374,6 +398,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="ComplexModel-system.web.modelbinding.ModelMetadata-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ComplexModel</h4>
+<pre>public&nbsp;ComplexModel(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;modelMetadata,
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;propertyMetadata)
+             throws java.lang.Throwable,
+                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -529,6 +574,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getPropertyMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPropertyMetadata</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getPropertyMetadata()
+                                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getResults--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResults</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getResults()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
@@ -545,11 +618,39 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <a name="setModelMetadata-system.web.modelbinding.ModelMetadata-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setModelMetadata</h4>
 <pre>public&nbsp;void&nbsp;setModelMetadata(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;ModelMetadata)
                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setPropertyMetadata-system.collections.objectmodel.ReadOnlyCollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setPropertyMetadata</h4>
+<pre>public&nbsp;void&nbsp;setPropertyMetadata(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;PropertyMetadata)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setResults-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setResults</h4>
+<pre>public&nbsp;void&nbsp;setResults(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;Results)
+                throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

@@ -20,6 +20,8 @@
 <meta name="keywords" content="AddConnector()">
 <meta name="keywords" content="HitTest()">
 <meta name="keywords" content="BringToFront()">
+<meta name="keywords" content="InsertActivities()">
+<meta name="keywords" content="MoveActivities()">
 <meta name="keywords" content="MoveContainedDesigner()">
 <meta name="keywords" content="RemoveConnector()">
 <meta name="keywords" content="ResizeContainedDesigner()">
@@ -28,6 +30,7 @@
 <meta name="keywords" content="setAutoSize()">
 <meta name="keywords" content="getEnableUserDrawnConnectors()">
 <meta name="keywords" content="setEnableUserDrawnConnectors()">
+<meta name="keywords" content="getConnectors()">
 <meta name="keywords" content="getAutoSizeMargin()">
 <meta name="keywords" content="setAutoSizeMargin()">
 <meta name="keywords" content="getAutoSizeMode()">
@@ -51,7 +54,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -153,7 +156,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a>, <a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a>, <a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
@@ -296,95 +299,109 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getAutoSizeMode--">getAutoSizeMode</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getConnectors--">getConnectors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getEnableUserDrawnConnectors--">getEnableUserDrawnConnectors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#GetNextSelectableObject-org.mases.jcobridge.netreflection.NetObject-system.workflow.componentmodel.design.DesignerNavigationDirection-">GetNextSelectableObject</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;current,
                        <a href="../../../../system/workflow/componentmodel/design/DesignerNavigationDirection.html" title="class in system.workflow.componentmodel.design">DesignerNavigationDirection</a>&nbsp;navigate)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#HitTest-system.drawing.Point-">HitTest</a></span>(<a href="../../../../system/drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;point)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#InsertActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">InsertActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
+                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#MoveActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">MoveActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;moveLocation,
+              <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToMove)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#MoveContainedDesigner-system.workflow.componentmodel.design.ActivityDesigner-system.drawing.Point-">MoveContainedDesigner</a></span>(<a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html" title="class in system.workflow.componentmodel.design">ActivityDesigner</a>&nbsp;containedDesigner,
                      <a href="../../../../system/drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;newLocation)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#RemoveConnector-system.workflow.componentmodel.design.Connector-">RemoveConnector</a></span>(<a href="../../../../system/workflow/componentmodel/design/Connector.html" title="class in system.workflow.componentmodel.design">Connector</a>&nbsp;connector)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#removeConnectorAdded-system.workflow.componentmodel.design.ConnectorEventHandler-">removeConnectorAdded</a></span>(<a href="../../../../system/workflow/componentmodel/design/ConnectorEventHandler.html" title="class in system.workflow.componentmodel.design">ConnectorEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#removeConnectorChanged-system.workflow.componentmodel.design.ConnectorEventHandler-">removeConnectorChanged</a></span>(<a href="../../../../system/workflow/componentmodel/design/ConnectorEventHandler.html" title="class in system.workflow.componentmodel.design">ConnectorEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#removeConnectorRemoved-system.workflow.componentmodel.design.ConnectorEventHandler-">removeConnectorRemoved</a></span>(<a href="../../../../system/workflow/componentmodel/design/ConnectorEventHandler.html" title="class in system.workflow.componentmodel.design">ConnectorEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#ResizeContainedDesigner-system.workflow.componentmodel.design.ActivityDesigner-system.drawing.Size-">ResizeContainedDesigner</a></span>(<a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html" title="class in system.workflow.componentmodel.design">ActivityDesigner</a>&nbsp;containedDesigner,
                        <a href="../../../../system/drawing/Size.html" title="class in system.drawing">Size</a>&nbsp;newSize)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#SendToBack-system.workflow.componentmodel.design.ActivityDesigner-">SendToBack</a></span>(<a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html" title="class in system.workflow.componentmodel.design">ActivityDesigner</a>&nbsp;containedDesigner)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#setAutoSize-boolean-">setAutoSize</a></span>(boolean&nbsp;AutoSize)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#setAutoSizeMargin-system.drawing.Size-">setAutoSizeMargin</a></span>(<a href="../../../../system/drawing/Size.html" title="class in system.drawing">Size</a>&nbsp;AutoSizeMargin)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#setAutoSizeMode-system.windows.forms.AutoSizeMode-">setAutoSizeMode</a></span>(<a href="../../../../system/windows/forms/AutoSizeMode.html" title="class in system.windows.forms">AutoSizeMode</a>&nbsp;AutoSizeMode)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#setEnableUserDrawnConnectors-boolean-">setEnableUserDrawnConnectors</a></span>(boolean&nbsp;EnableUserDrawnConnectors)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/FreeformActivityDesigner.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -394,14 +411,14 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.workflow.componentmodel.design.<a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></h3>
-<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#DeserializeActivitiesFromDataObject-system.IServiceProvider-system.windows.forms.IDataObject-">DeserializeActivitiesFromDataObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#EnsureVisibleContainedDesigner-system.workflow.componentmodel.design.ActivityDesigner-">EnsureVisibleContainedDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getCanExpandCollapse--">getCanExpandCollapse</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getExpanded--">getExpanded</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getFirstSelectableObject--">getFirstSelectableObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#GetIntersectingDesigners-system.workflow.componentmodel.design.ActivityDesigner-system.drawing.Rectangle-">GetIntersectingDesigners</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getIsEditable--">getIsEditable</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getLastSelectableObject--">getLastSelectableObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#IsContainedDesignerVisible-system.workflow.componentmodel.design.ActivityDesigner-">IsContainedDesignerVisible</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#MoveDesigners-system.workflow.componentmodel.design.ActivityDesigner-boolean-">MoveDesigners</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#SerializeActivitiesToDataObject-system.IServiceProvider-system.workflow.componentmodel.Activity:A-">SerializeActivitiesToDataObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#setExpanded-boolean-">setExpanded</a></code></li>
+<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanInsertActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">CanInsertActivities</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanMoveActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">CanMoveActivities</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanRemoveActivities-system.collections.objectmodel.ReadOnlyCollection_1-">CanRemoveActivities</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#DeserializeActivitiesFromDataObject-system.IServiceProvider-system.windows.forms.IDataObject-">DeserializeActivitiesFromDataObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#EnsureVisibleContainedDesigner-system.workflow.componentmodel.design.ActivityDesigner-">EnsureVisibleContainedDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getCanExpandCollapse--">getCanExpandCollapse</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getContainedDesigners--">getContainedDesigners</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getExpanded--">getExpanded</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getFirstSelectableObject--">getFirstSelectableObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#GetIntersectingDesigners-system.workflow.componentmodel.design.ActivityDesigner-system.drawing.Rectangle-">GetIntersectingDesigners</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getIsEditable--">getIsEditable</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getLastSelectableObject--">getLastSelectableObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#InsertActivities-system.workflow.componentmodel.design.CompositeActivityDesigner-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-java.lang.String-">InsertActivities</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#IsContainedDesignerVisible-system.workflow.componentmodel.design.ActivityDesigner-">IsContainedDesignerVisible</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#MoveDesigners-system.workflow.componentmodel.design.ActivityDesigner-boolean-">MoveDesigners</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#RemoveActivities-system.IServiceProvider-system.collections.objectmodel.ReadOnlyCollection_1-java.lang.String-">RemoveActivities</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#RemoveActivities-system.collections.objectmodel.ReadOnlyCollection_1-">RemoveActivities</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#SerializeActivitiesToDataObject-system.IServiceProvider-system.workflow.componentmodel.Activity:A-">SerializeActivitiesToDataObject</a>, <a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#setExpanded-boolean-">setExpanded</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.workflow.componentmodel.design.ActivityDesigner">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.workflow.componentmodel.design.<a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html" title="class in system.workflow.componentmodel.design">ActivityDesigner</a></h3>
-<code><a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#CanBeParentedTo-system.workflow.componentmodel.design.CompositeActivityDesigner-">CanBeParentedTo</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#close--">close</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#Dispose--">Dispose</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#EnsureVisible--">EnsureVisible</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getAccessibilityObject--">getAccessibilityObject</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getActivity--">getActivity</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getBounds--">getBounds</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getDesignerTheme--">getDesignerTheme</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getImage--">getImage</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsLocked--">getIsLocked</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsPrimarySelection--">getIsPrimarySelection</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsRootDesigner--">getIsRootDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsSelected--">getIsSelected</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsVisible--">getIsVisible</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getLocation--">getLocation</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getMinimumSize--">getMinimumSize</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getParentDesigner--">getParentDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#GetPreviewImage-system.drawing.Graphics-">GetPreviewImage</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#GetRootDesigner-system.IServiceProvider-">GetRootDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getSize--">getSize</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getText--">getText</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#Invalidate--">Invalidate</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#Invalidate-system.drawing.Rectangle-">Invalidate</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#IsCommentedActivity-system.workflow.componentmodel.Activity-">IsCommentedActivity</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setImage-system.drawing.Image-">setImage</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setLocation-system.drawing.Point-">setLocation</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setSize-system.drawing.Size-">setSize</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setText-java.lang.String-">setText</a></code></li>
+<code><a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#CanBeParentedTo-system.workflow.componentmodel.design.CompositeActivityDesigner-">CanBeParentedTo</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#close--">close</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#Dispose--">Dispose</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#EnsureVisible--">EnsureVisible</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getAccessibilityObject--">getAccessibilityObject</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getActivity--">getActivity</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getBounds--">getBounds</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#GetConnectionPoints-system.workflow.componentmodel.design.DesignerEdges-">GetConnectionPoints</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getDesignerTheme--">getDesignerTheme</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getImage--">getImage</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsLocked--">getIsLocked</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsPrimarySelection--">getIsPrimarySelection</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsRootDesigner--">getIsRootDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsSelected--">getIsSelected</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getIsVisible--">getIsVisible</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getLocation--">getLocation</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getMinimumSize--">getMinimumSize</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getParentDesigner--">getParentDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#GetPreviewImage-system.drawing.Graphics-">GetPreviewImage</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#GetRootDesigner-system.IServiceProvider-">GetRootDesigner</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getSize--">getSize</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#getText--">getText</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#Invalidate--">Invalidate</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#Invalidate-system.drawing.Rectangle-">Invalidate</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#IsCommentedActivity-system.workflow.componentmodel.Activity-">IsCommentedActivity</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setImage-system.drawing.Image-">setImage</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setLocation-system.drawing.Point-">setLocation</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setSize-system.drawing.Size-">setSize</a>, <a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html#setText-java.lang.String-">setText</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -416,27 +433,6 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.componentmodel.design.IDesignerFilter">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.componentmodel.design.<a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a></h3>
-<code><a href="../../../../system/componentmodel/design/IDesignerFilter.html#PostFilterAttributes-system.collections.IDictionary-">PostFilterAttributes</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html#PostFilterEvents-system.collections.IDictionary-">PostFilterEvents</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html#PostFilterProperties-system.collections.IDictionary-">PostFilterProperties</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html#PreFilterAttributes-system.collections.IDictionary-">PreFilterAttributes</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html#PreFilterEvents-system.collections.IDictionary-">PreFilterEvents</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html#PreFilterProperties-system.collections.IDictionary-">PreFilterProperties</a>, <a href="../../../../system/componentmodel/design/IDesignerFilter.html#ToIDesignerFilter-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIDesignerFilter</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.drawing.design.IToolboxUser">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.drawing.design.<a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a></h3>
-<code><a href="../../../../system/drawing/design/IToolboxUser.html#GetToolSupported-system.drawing.design.ToolboxItem-">GetToolSupported</a>, <a href="../../../../system/drawing/design/IToolboxUser.html#ToIToolboxUser-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIToolboxUser</a>, <a href="../../../../system/drawing/design/IToolboxUser.html#ToolPicked-system.drawing.design.ToolboxItem-">ToolPicked</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.workflow.componentmodel.design.IPersistUIState">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.workflow.componentmodel.design.<a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></h3>
-<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#LoadViewState-system.io.BinaryReader-">LoadViewState</a>, <a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#SaveViewState-system.io.BinaryWriter-">SaveViewState</a>, <a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#ToIPersistUIState-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIPersistUIState</a></code></li>
 </ul>
 </li>
 </ul>
@@ -769,6 +765,22 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 </dl>
 </li>
 </ul>
+<a name="getConnectors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConnectors</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getConnectors()
+                                   throws java.lang.Throwable,
+                                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getEnableUserDrawnConnectors--">
 <!--   -->
 </a>
@@ -809,12 +821,6 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/componentmodel/design/IDesignerFilter.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/drawing/design/IToolboxUser.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -834,12 +840,6 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/componentmodel/design/IDesignerFilter.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/drawing/design/IToolboxUser.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -859,12 +859,6 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/componentmodel/design/IDesignerFilter.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/drawing/design/IToolboxUser.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -884,12 +878,6 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/componentmodel/design/IDesignerFilter.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/drawing/design/IToolboxUser.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -910,12 +898,6 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/componentmodel/design/IDesignerFilter.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/componentmodel/design/IDesignerFilter.html" title="interface in system.componentmodel.design">IDesignerFilter</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/drawing/design/IToolboxUser.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/drawing/design/IToolboxUser.html" title="interface in system.drawing.design">IToolboxUser</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -985,6 +967,100 @@ extends <a href="../../../../system/workflow/componentmodel/design/CompositeActi
 <dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
 <dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="InsertActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InsertActivities</h4>
+<pre>public&nbsp;void&nbsp;InsertActivities(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
+                             <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert)
+                      throws java.lang.Throwable,
+                             <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                             <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                             <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                             <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                             <a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                             <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                             <a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a>,
+                             <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                             <a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#InsertActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">InsertActivities</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a></code></dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="MoveActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MoveActivities</h4>
+<pre>public&nbsp;void&nbsp;MoveActivities(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;moveLocation,
+                           <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToMove)
+                    throws java.lang.Throwable,
+                           <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                           <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                           <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                           <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                           <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                           <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                           <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#MoveActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">MoveActivities</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getSetClauses()">
 <meta name="keywords" content="getReturning()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
@@ -30,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -276,6 +277,10 @@ extends <a href="../../../../system/data/common/commandtrees/DbModificationComma
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbInsertCommandTree.html#getReturning--">getReturning</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbInsertCommandTree.html#getSetClauses--">getSetClauses</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbInsertCommandTree.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -286,6 +291,13 @@ extends <a href="../../../../system/data/common/commandtrees/DbModificationComma
 </a>
 <h3>Methods inherited from class&nbsp;system.data.common.commandtrees.<a href="../../../../system/data/common/commandtrees/DbModificationCommandTree.html" title="class in system.data.common.commandtrees">DbModificationCommandTree</a></h3>
 <code><a href="../../../../system/data/common/commandtrees/DbModificationCommandTree.html#getTarget--">getTarget</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.data.common.commandtrees.DbCommandTree">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.data.common.commandtrees.<a href="../../../../system/data/common/commandtrees/DbCommandTree.html" title="class in system.data.common.commandtrees">DbCommandTree</a></h3>
+<code><a href="../../../../system/data/common/commandtrees/DbCommandTree.html#getParameters--">getParameters</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -535,6 +547,20 @@ extends <a href="../../../../system/data/common/commandtrees/DbModificationComma
 <h4>getReturning</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;getReturning()
                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSetClauses--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSetClauses</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getSetClauses()
+                      throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

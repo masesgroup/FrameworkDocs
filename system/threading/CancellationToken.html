@@ -36,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -297,18 +297,29 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../system/threading/CancellationTokenRegistration.html" title="class in system.threading">CancellationTokenRegistration</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#Register-system.Action-">Register</a></span>(<a href="../../system/Action.html" title="class in system">Action</a>&nbsp;callback)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#Register-system.Action_1-org.mases.jcobridge.netreflection.NetObject-">Register</a></span>(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback,
+        <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../system/threading/CancellationTokenRegistration.html" title="class in system.threading">CancellationTokenRegistration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#Register-system.Action_1-org.mases.jcobridge.netreflection.NetObject-boolean-">Register</a></span>(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback,
+        <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state,
+        boolean&nbsp;useSynchronizationContext)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../system/threading/CancellationTokenRegistration.html" title="class in system.threading">CancellationTokenRegistration</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#Register-system.Action-">Register</a></span>(<a href="../../system/Action.html" title="class in system">Action</a>&nbsp;callback)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../system/threading/CancellationTokenRegistration.html" title="class in system.threading">CancellationTokenRegistration</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#Register-system.Action-boolean-">Register</a></span>(<a href="../../system/Action.html" title="class in system">Action</a>&nbsp;callback,
         boolean&nbsp;useSynchronizationContext)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/threading/CancellationToken.html#ThrowIfCancellationRequested--">ThrowIfCancellationRequested</a></span>()</code>&nbsp;</td>
 </tr>
@@ -662,6 +673,81 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 <dd><code><a href="../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
 <dd><code><a href="../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
 <dd><code><a href="../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Register-system.Action_1-org.mases.jcobridge.netreflection.NetObject-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Register</h4>
+<pre>public&nbsp;<a href="../../system/threading/CancellationTokenRegistration.html" title="class in system.threading">CancellationTokenRegistration</a>&nbsp;Register(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback,
+                                              <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Register-system.Action_1-org.mases.jcobridge.netreflection.NetObject-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Register</h4>
+<pre>public&nbsp;<a href="../../system/threading/CancellationTokenRegistration.html" title="class in system.threading">CancellationTokenRegistration</a>&nbsp;Register(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback,
+                                              <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state,
+                                              boolean&nbsp;useSynchronizationContext)
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>

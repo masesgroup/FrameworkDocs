@@ -43,6 +43,10 @@
 <meta name="keywords" content="setRenewTarget()">
 <meta name="keywords" content="getValidateTarget()">
 <meta name="keywords" content="setValidateTarget()">
+<meta name="keywords" content="getDelegatable()">
+<meta name="keywords" content="setDelegatable()">
+<meta name="keywords" content="getForwardable()">
+<meta name="keywords" content="setForwardable()">
 <meta name="keywords" content="getComputedKeyAlgorithm()">
 <meta name="keywords" content="setComputedKeyAlgorithm()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -58,7 +62,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -297,132 +301,148 @@ extends <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessa
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getComputedKeyAlgorithm--">getComputedKeyAlgorithm</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getDelegateTo--">getDelegateTo</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getDelegatable--">getDelegatable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getEncryption--">getEncryption</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getDelegateTo--">getDelegateTo</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getEncryption--">getEncryption</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getForwardable--">getForwardable</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/protocols/wstrust/EndpointReference.html" title="class in system.identitymodel.protocols.wstrust">EndpointReference</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getIssuer--">getIssuer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getOnBehalfOf--">getOnBehalfOf</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/protocols/wstrust/Participants.html" title="class in system.identitymodel.protocols.wstrust">Participants</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getParticipants--">getParticipants</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getProofEncryption--">getProofEncryption</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/protocols/wstrust/Renewing.html" title="class in system.identitymodel.protocols.wstrust">Renewing</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getRenewing--">getRenewing</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getRenewTarget--">getRenewTarget</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html" title="class in system.identitymodel.protocols.wstrust">RequestSecurityToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getSecondaryParameters--">getSecondaryParameters</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#getValidateTarget--">getValidateTarget</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setActAs-system.identitymodel.tokens.SecurityTokenElement-">setActAs</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;ActAs)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setAdditionalContext-system.identitymodel.protocols.wstrust.AdditionalContext-">setAdditionalContext</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/AdditionalContext.html" title="class in system.identitymodel.protocols.wstrust">AdditionalContext</a>&nbsp;AdditionalContext)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setCancelTarget-system.identitymodel.tokens.SecurityTokenElement-">setCancelTarget</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;CancelTarget)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setComputedKeyAlgorithm-java.lang.String-">setComputedKeyAlgorithm</a></span>(java.lang.String&nbsp;ComputedKeyAlgorithm)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setDelegateTo-system.identitymodel.tokens.SecurityTokenElement-">setDelegateTo</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;DelegateTo)</code>&nbsp;</td>
-</tr>
-<tr id="i26" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setEncryption-system.identitymodel.tokens.SecurityTokenElement-">setEncryption</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;Encryption)</code>&nbsp;</td>
-</tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setIssuer-system.identitymodel.protocols.wstrust.EndpointReference-">setIssuer</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/EndpointReference.html" title="class in system.identitymodel.protocols.wstrust">EndpointReference</a>&nbsp;Issuer)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setDelegatable-system.Nullable_1-">setDelegatable</a></span>(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;Delegatable)</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setDelegateTo-system.identitymodel.tokens.SecurityTokenElement-">setDelegateTo</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;DelegateTo)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setOnBehalfOf-system.identitymodel.tokens.SecurityTokenElement-">setOnBehalfOf</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;OnBehalfOf)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setEncryption-system.identitymodel.tokens.SecurityTokenElement-">setEncryption</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;Encryption)</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setParticipants-system.identitymodel.protocols.wstrust.Participants-">setParticipants</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/Participants.html" title="class in system.identitymodel.protocols.wstrust">Participants</a>&nbsp;Participants)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setForwardable-system.Nullable_1-">setForwardable</a></span>(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;Forwardable)</code>&nbsp;</td>
 </tr>
 <tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setProofEncryption-system.identitymodel.tokens.SecurityTokenElement-">setProofEncryption</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;ProofEncryption)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setIssuer-system.identitymodel.protocols.wstrust.EndpointReference-">setIssuer</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/EndpointReference.html" title="class in system.identitymodel.protocols.wstrust">EndpointReference</a>&nbsp;Issuer)</code>&nbsp;</td>
 </tr>
 <tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setRenewing-system.identitymodel.protocols.wstrust.Renewing-">setRenewing</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/Renewing.html" title="class in system.identitymodel.protocols.wstrust">Renewing</a>&nbsp;Renewing)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setRenewTarget-system.identitymodel.tokens.SecurityTokenElement-">setRenewTarget</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;RenewTarget)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setOnBehalfOf-system.identitymodel.tokens.SecurityTokenElement-">setOnBehalfOf</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;OnBehalfOf)</code>&nbsp;</td>
 </tr>
 <tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setSecondaryParameters-system.identitymodel.protocols.wstrust.RequestSecurityToken-">setSecondaryParameters</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html" title="class in system.identitymodel.protocols.wstrust">RequestSecurityToken</a>&nbsp;SecondaryParameters)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setParticipants-system.identitymodel.protocols.wstrust.Participants-">setParticipants</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/Participants.html" title="class in system.identitymodel.protocols.wstrust">Participants</a>&nbsp;Participants)</code>&nbsp;</td>
 </tr>
 <tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setProofEncryption-system.identitymodel.tokens.SecurityTokenElement-">setProofEncryption</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;ProofEncryption)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setRenewing-system.identitymodel.protocols.wstrust.Renewing-">setRenewing</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/Renewing.html" title="class in system.identitymodel.protocols.wstrust">Renewing</a>&nbsp;Renewing)</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setRenewTarget-system.identitymodel.tokens.SecurityTokenElement-">setRenewTarget</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;RenewTarget)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setSecondaryParameters-system.identitymodel.protocols.wstrust.RequestSecurityToken-">setSecondaryParameters</a></span>(<a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html" title="class in system.identitymodel.protocols.wstrust">RequestSecurityToken</a>&nbsp;SecondaryParameters)</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/identitymodel/protocols/wstrust/RequestSecurityToken.html#setValidateTarget-system.identitymodel.tokens.SecurityTokenElement-">setValidateTarget</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;ValidateTarget)</code>&nbsp;</td>
 </tr>
@@ -432,7 +452,14 @@ extends <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessa
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.protocols.wstrust.<a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html" title="class in system.identitymodel.protocols.wstrust">WSTrustMessage</a></h3>
-<code><a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getAllowPostdating--">getAllowPostdating</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getAppliesTo--">getAppliesTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getAuthenticationType--">getAuthenticationType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getBinaryExchange--">getBinaryExchange</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getCanonicalizationAlgorithm--">getCanonicalizationAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getContext--">getContext</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getEncryptionAlgorithm--">getEncryptionAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getEncryptWith--">getEncryptWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getEntropy--">getEntropy</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getKeyType--">getKeyType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getKeyWrapAlgorithm--">getKeyWrapAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getLifetime--">getLifetime</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getReplyTo--">getReplyTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getRequestType--">getRequestType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getSignatureAlgorithm--">getSignatureAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getSignWith--">getSignWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getTokenType--">getTokenType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getUseKey--">getUseKey</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setAllowPostdating-boolean-">setAllowPostdating</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setAppliesTo-system.identitymodel.protocols.wstrust.EndpointReference-">setAppliesTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setAuthenticationType-java.lang.String-">setAuthenticationType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setBinaryExchange-system.identitymodel.protocols.wstrust.BinaryExchange-">setBinaryExchange</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setCanonicalizationAlgorithm-java.lang.String-">setCanonicalizationAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setContext-java.lang.String-">setContext</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setEncryptionAlgorithm-java.lang.String-">setEncryptionAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setEncryptWith-java.lang.String-">setEncryptWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setEntropy-system.identitymodel.protocols.wstrust.Entropy-">setEntropy</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setKeyType-java.lang.String-">setKeyType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setKeyWrapAlgorithm-java.lang.String-">setKeyWrapAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setLifetime-system.identitymodel.protocols.wstrust.Lifetime-">setLifetime</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setReplyTo-java.lang.String-">setReplyTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setRequestType-java.lang.String-">setRequestType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setSignatureAlgorithm-java.lang.String-">setSignatureAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setSignWith-java.lang.String-">setSignWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setTokenType-java.lang.String-">setTokenType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setUseKey-system.identitymodel.protocols.wstrust.UseKey-">setUseKey</a></code></li>
+<code><a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getAllowPostdating--">getAllowPostdating</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getAppliesTo--">getAppliesTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getAuthenticationType--">getAuthenticationType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getBinaryExchange--">getBinaryExchange</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getCanonicalizationAlgorithm--">getCanonicalizationAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getContext--">getContext</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getEncryptionAlgorithm--">getEncryptionAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getEncryptWith--">getEncryptWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getEntropy--">getEntropy</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getKeySizeInBits--">getKeySizeInBits</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getKeyType--">getKeyType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getKeyWrapAlgorithm--">getKeyWrapAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getLifetime--">getLifetime</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getReplyTo--">getReplyTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getRequestType--">getRequestType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getSignatureAlgorithm--">getSignatureAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getSignWith--">getSignWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getTokenType--">getTokenType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#getUseKey--">getUseKey</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setAllowPostdating-boolean-">setAllowPostdating</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setAppliesTo-system.identitymodel.protocols.wstrust.EndpointReference-">setAppliesTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setAuthenticationType-java.lang.String-">setAuthenticationType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setBinaryExchange-system.identitymodel.protocols.wstrust.BinaryExchange-">setBinaryExchange</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setCanonicalizationAlgorithm-java.lang.String-">setCanonicalizationAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setContext-java.lang.String-">setContext</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setEncryptionAlgorithm-java.lang.String-">setEncryptionAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setEncryptWith-java.lang.String-">setEncryptWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setEntropy-system.identitymodel.protocols.wstrust.Entropy-">setEntropy</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setKeySizeInBits-system.Nullable_1-">setKeySizeInBits</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setKeyType-java.lang.String-">setKeyType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setKeyWrapAlgorithm-java.lang.String-">setKeyWrapAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setLifetime-system.identitymodel.protocols.wstrust.Lifetime-">setLifetime</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setReplyTo-java.lang.String-">setReplyTo</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setRequestType-java.lang.String-">setRequestType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setSignatureAlgorithm-java.lang.String-">setSignatureAlgorithm</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setSignWith-java.lang.String-">setSignWith</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setTokenType-java.lang.String-">setTokenType</a>, <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessage.html#setUseKey-system.identitymodel.protocols.wstrust.UseKey-">setUseKey</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.identitymodel.OpenObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.identitymodel.<a href="../../../../system/identitymodel/OpenObject.html" title="class in system.identitymodel">OpenObject</a></h3>
+<code><a href="../../../../system/identitymodel/OpenObject.html#getProperties--">getProperties</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -739,6 +766,20 @@ extends <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessa
 </dl>
 </li>
 </ul>
+<a name="getDelegatable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getDelegatable</h4>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getDelegatable()
+                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getDelegateTo--">
 <!--   -->
 </a>
@@ -761,6 +802,20 @@ extends <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessa
 <h4>getEncryption</h4>
 <pre>public&nbsp;<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;getEncryption()
                                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getForwardable--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getForwardable</h4>
+<pre>public&nbsp;<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getForwardable()
+                          throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1031,6 +1086,20 @@ extends <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessa
 </dl>
 </li>
 </ul>
+<a name="setDelegatable-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setDelegatable</h4>
+<pre>public&nbsp;void&nbsp;setDelegatable(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;Delegatable)
+                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setDelegateTo-system.identitymodel.tokens.SecurityTokenElement-">
 <!--   -->
 </a>
@@ -1053,6 +1122,20 @@ extends <a href="../../../../system/identitymodel/protocols/wstrust/WSTrustMessa
 <h4>setEncryption</h4>
 <pre>public&nbsp;void&nbsp;setEncryption(<a href="../../../../system/identitymodel/tokens/SecurityTokenElement.html" title="class in system.identitymodel.tokens">SecurityTokenElement</a>&nbsp;Encryption)
                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setForwardable-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setForwardable</h4>
+<pre>public&nbsp;void&nbsp;setForwardable(<a href="../../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;Forwardable)
+                    throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

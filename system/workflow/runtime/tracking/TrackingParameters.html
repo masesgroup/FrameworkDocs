@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getCallPath()">
 <meta name="keywords" content="getCallerContextGuid()">
 <meta name="keywords" content="getCallerInstanceId()">
 <meta name="keywords" content="getCallerParentContextGuid()">
@@ -36,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -212,6 +213,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#TrackingParameters--">TrackingParameters</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#TrackingParameters-system.Guid-org.mases.jcobridge.netreflection.NetType-system.workflow.componentmodel.Activity-system.collections.generic.IList_1-system.Guid-system.Guid-system.Guid-system.Guid-">TrackingParameters</a></span>(<a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                  <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
+                  <a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;rootActivity,
+                  <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;callPath,
+                  <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;callerInstanceId,
+                  <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;contextGuid,
+                  <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;callerContextGuid,
+                  <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;callerParentContextGuid)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#TrackingParameters-java.lang.Object-">TrackingParameters</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -250,52 +261,56 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getCallerParentContextGuid--">getCallerParentContextGuid</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/Guid.html" title="class in system">Guid</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getContextGuid--">getContextGuid</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getCallPath--">getCallPath</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/Guid.html" title="class in system">Guid</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getInstanceId--">getInstanceId</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getContextGuid--">getContextGuid</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/Guid.html" title="class in system">Guid</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getInstanceId--">getInstanceId</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getRootActivity--">getRootActivity</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#getWorkflowType--">getWorkflowType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/TrackingParameters.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -402,6 +417,27 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </dl>
 </li>
 </ul>
+<a name="TrackingParameters-system.Guid-org.mases.jcobridge.netreflection.NetType-system.workflow.componentmodel.Activity-system.collections.generic.IList_1-system.Guid-system.Guid-system.Guid-system.Guid-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TrackingParameters</h4>
+<pre>public&nbsp;TrackingParameters(<a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                          <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
+                          <a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;rootActivity,
+                          <a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;callPath,
+                          <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;callerInstanceId,
+                          <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;contextGuid,
+                          <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;callerContextGuid,
+                          <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;callerParentContextGuid)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="TrackingParameters-java.lang.Object-">
 <!--   -->
 </a>
@@ -480,6 +516,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getCallerParentContextGuid</h4>
 <pre>public&nbsp;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;getCallerParentContextGuid()
                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCallPath--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCallPath</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getCallPath()
+                    throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

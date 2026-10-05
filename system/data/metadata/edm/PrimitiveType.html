@@ -16,7 +16,9 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetEdmPrimitiveTypes()">
 <meta name="keywords" content="GetEdmPrimitiveType()">
+<meta name="keywords" content="getFacetDescriptions()">
 <meta name="keywords" content="getPrimitiveTypeKind()">
 <meta name="keywords" content="setPrimitiveTypeKind()">
 <meta name="keywords" content="getClrEquivalentType()">
@@ -33,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -267,44 +269,52 @@ extends <a href="../../../../system/data/metadata/edm/SimpleType.html" title="cl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#GetEdmPrimitiveType-system.data.metadata.edm.PrimitiveTypeKind-">GetEdmPrimitiveType</a></span>(<a href="../../../../system/data/metadata/edm/PrimitiveTypeKind.html" title="class in system.data.metadata.edm">PrimitiveTypeKind</a>&nbsp;primitiveTypeKind)</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#GetEdmPrimitiveTypes--">GetEdmPrimitiveTypes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getFacetDescriptions--">getFacetDescriptions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/metadata/edm/PrimitiveTypeKind.html" title="class in system.data.metadata.edm">PrimitiveTypeKind</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#getPrimitiveTypeKind--">getPrimitiveTypeKind</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/PrimitiveType.html#setPrimitiveTypeKind-system.data.metadata.edm.PrimitiveTypeKind-">setPrimitiveTypeKind</a></span>(<a href="../../../../system/data/metadata/edm/PrimitiveTypeKind.html" title="class in system.data.metadata.edm">PrimitiveTypeKind</a>&nbsp;PrimitiveTypeKind)</code>&nbsp;</td>
 </tr>
@@ -321,7 +331,7 @@ extends <a href="../../../../system/data/metadata/edm/SimpleType.html" title="cl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.data.metadata.edm.<a href="../../../../system/data/metadata/edm/MetadataItem.html" title="class in system.data.metadata.edm">MetadataItem</a></h3>
-<code><a href="../../../../system/data/metadata/edm/MetadataItem.html#GetBuiltInType-system.data.metadata.edm.BuiltInTypeKind-">GetBuiltInType</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#getBuiltInTypeKind--">getBuiltInTypeKind</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#getDocumentation--">getDocumentation</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#setDocumentation-system.data.metadata.edm.Documentation-">setDocumentation</a></code></li>
+<code><a href="../../../../system/data/metadata/edm/MetadataItem.html#GetBuiltInType-system.data.metadata.edm.BuiltInTypeKind-">GetBuiltInType</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#getBuiltInTypeKind--">getBuiltInTypeKind</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#getDocumentation--">getDocumentation</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#GetGeneralFacetDescriptions--">GetGeneralFacetDescriptions</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#getMetadataProperties--">getMetadataProperties</a>, <a href="../../../../system/data/metadata/edm/MetadataItem.html#setDocumentation-system.data.metadata.edm.Documentation-">setDocumentation</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -522,6 +532,34 @@ extends <a href="../../../../system/data/metadata/edm/SimpleType.html" title="cl
 <dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetEdmPrimitiveTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetEdmPrimitiveTypes</h4>
+<pre>public static&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetEdmPrimitiveTypes()
+                                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getFacetDescriptions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFacetDescriptions</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getFacetDescriptions()
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

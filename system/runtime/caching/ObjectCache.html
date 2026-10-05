@@ -19,9 +19,11 @@
 <meta name="keywords" content="Add()">
 <meta name="keywords" content="Contains()">
 <meta name="keywords" content="GetCount()">
+<meta name="keywords" content="GetValues()">
 <meta name="keywords" content="AddOrGetExisting()">
 <meta name="keywords" content="Get()">
 <meta name="keywords" content="Remove()">
+<meta name="keywords" content="CreateCacheEntryChangeMonitor()">
 <meta name="keywords" content="GetCacheItem()">
 <meta name="keywords" content="Set()">
 <meta name="keywords" content="getHost()">
@@ -41,7 +43,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":9,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":9,"i28":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -295,90 +297,110 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
         java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/runtime/caching/CacheEntryChangeMonitor.html" title="class in system.runtime.caching">CacheEntryChangeMonitor</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#CreateCacheEntryChangeMonitor-system.collections.generic.IEnumerable_1-java.lang.String-">CreateCacheEntryChangeMonitor</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keys,
+                             java.lang.String&nbsp;regionName)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#Get-java.lang.String-java.lang.String-">Get</a></span>(java.lang.String&nbsp;key,
    java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/runtime/caching/CacheItem.html" title="class in system.runtime.caching">CacheItem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#GetCacheItem-java.lang.String-java.lang.String-">GetCacheItem</a></span>(java.lang.String&nbsp;key,
             java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#GetCount-java.lang.String-">GetCount</a></span>(java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/runtime/caching/DefaultCacheCapabilities.html" title="class in system.runtime.caching">DefaultCacheCapabilities</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getDefaultCacheCapabilities--">getDefaultCacheCapabilities</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getHost--">getHost</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#GetValues-system.collections.generic.IEnumerable_1-java.lang.String-">GetValues</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keys,
+         java.lang.String&nbsp;regionName)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#GetValues-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">GetValues</a></span>(java.lang.String&nbsp;dupParam0,
+         <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#GetValues-java.lang.String-java.lang.String...-">GetValues</a></span>(java.lang.String&nbsp;regionName,
+         java.lang.String...&nbsp;keys)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#Remove-java.lang.String-java.lang.String-">Remove</a></span>(java.lang.String&nbsp;key,
       java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#Set-system.runtime.caching.CacheItem-system.runtime.caching.CacheItemPolicy-">Set</a></span>(<a href="../../../system/runtime/caching/CacheItem.html" title="class in system.runtime.caching">CacheItem</a>&nbsp;item,
    <a href="../../../system/runtime/caching/CacheItemPolicy.html" title="class in system.runtime.caching">CacheItemPolicy</a>&nbsp;policy)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#Set-java.lang.String-org.mases.jcobridge.netreflection.NetObject-system.runtime.caching.CacheItemPolicy-java.lang.String-">Set</a></span>(java.lang.String&nbsp;key,
    <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
    <a href="../../../system/runtime/caching/CacheItemPolicy.html" title="class in system.runtime.caching">CacheItemPolicy</a>&nbsp;policy,
    java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#Set-java.lang.String-org.mases.jcobridge.netreflection.NetObject-system.DateTimeOffset-java.lang.String-">Set</a></span>(java.lang.String&nbsp;key,
    <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
    <a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;absoluteExpiration,
    java.lang.String&nbsp;regionName)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#setHost-system.IServiceProvider-">setHost</a></span>(<a href="../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;Host)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/ObjectCache.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -661,6 +683,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 </dl>
 </li>
 </ul>
+<a name="CreateCacheEntryChangeMonitor-system.collections.generic.IEnumerable_1-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateCacheEntryChangeMonitor</h4>
+<pre>public&nbsp;<a href="../../../system/runtime/caching/CacheEntryChangeMonitor.html" title="class in system.runtime.caching">CacheEntryChangeMonitor</a>&nbsp;CreateCacheEntryChangeMonitor(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keys,
+                                                             java.lang.String&nbsp;regionName)
+                                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="Get-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
@@ -837,6 +874,51 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetValues-system.collections.generic.IEnumerable_1-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetValues</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;GetValues(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keys,
+                               java.lang.String&nbsp;regionName)
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetValues-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetValues</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;GetValues(java.lang.String&nbsp;dupParam0,
+                               <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetValues-java.lang.String-java.lang.String...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetValues</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;GetValues(java.lang.String&nbsp;regionName,
+                               java.lang.String...&nbsp;keys)
+                        throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

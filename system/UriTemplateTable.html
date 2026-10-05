@@ -16,9 +16,11 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Match()">
 <meta name="keywords" content="MatchSingle()">
 <meta name="keywords" content="MakeReadOnly()">
 <meta name="keywords" content="getIsReadOnly()">
+<meta name="keywords" content="getKeyValuePairs()">
 <meta name="keywords" content="getBaseAddress()">
 <meta name="keywords" content="setBaseAddress()">
 <meta name="keywords" content="getOriginalBaseAddress()">
@@ -35,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -211,12 +213,19 @@ extends <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="cla
 <td class="colOne"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#UriTemplateTable--">UriTemplateTable</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#UriTemplateTable-system.collections.generic.IEnumerable_1-">UriTemplateTable</a></span>(<a href="../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValuePairs)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#UriTemplateTable-java.lang.Object-">UriTemplateTable</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#UriTemplateTable-system.Uri-">UriTemplateTable</a></span>(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;baseAddress)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#UriTemplateTable-system.Uri-system.collections.generic.IEnumerable_1-">UriTemplateTable</a></span>(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;baseAddress,
+                <a href="../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValuePairs)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -278,22 +287,30 @@ extends <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="cla
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#getKeyValuePairs--">getKeyValuePairs</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../system/Uri.html" title="class in system">Uri</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#getOriginalBaseAddress--">getOriginalBaseAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#MakeReadOnly-boolean-">MakeReadOnly</a></span>(boolean&nbsp;allowDuplicateEquivalentUriTemplates)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#Match-system.Uri-">Match</a></span>(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;uri)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../system/UriTemplateMatch.html" title="class in system">UriTemplateMatch</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#MatchSingle-system.Uri-">MatchSingle</a></span>(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;uri)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#setBaseAddress-system.Uri-">setBaseAddress</a></span>(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;BaseAddress)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../system/UriTemplateTable.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -434,6 +451,54 @@ extends <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="cla
 </dl>
 </li>
 </ul>
+<a name="UriTemplateTable-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UriTemplateTable</h4>
+<pre>public&nbsp;UriTemplateTable(<a href="../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValuePairs)
+                 throws java.lang.Throwable,
+                        <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                        <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                        <a href="../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                        <a href="../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                        <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                        <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                        <a href="../system/OverflowException.html" title="class in system">OverflowException</a>,
+                        <a href="../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../system/UriFormatException.html" title="class in system">UriFormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="UriTemplateTable-java.lang.Object-">
 <!--   -->
 </a>
@@ -452,10 +517,59 @@ extends <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="cla
 <a name="UriTemplateTable-system.Uri-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>UriTemplateTable</h4>
 <pre>public&nbsp;UriTemplateTable(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;baseAddress)
+                 throws java.lang.Throwable,
+                        <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                        <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                        <a href="../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                        <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                        <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                        <a href="../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                        <a href="../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                        <a href="../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                        <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                        <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                        <a href="../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                        <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                        <a href="../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                        <a href="../system/OverflowException.html" title="class in system">OverflowException</a>,
+                        <a href="../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                        <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                        <a href="../system/UriFormatException.html" title="class in system">UriFormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="UriTemplateTable-system.Uri-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UriTemplateTable</h4>
+<pre>public&nbsp;UriTemplateTable(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;baseAddress,
+                        <a href="../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValuePairs)
                  throws java.lang.Throwable,
                         <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                         <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -648,6 +762,20 @@ extends <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="cla
 </dl>
 </li>
 </ul>
+<a name="getKeyValuePairs--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKeyValuePairs</h4>
+<pre>public&nbsp;<a href="../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getKeyValuePairs()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getOriginalBaseAddress--">
 <!--   -->
 </a>
@@ -713,6 +841,50 @@ extends <a href="../org/mases/jcobridge/netreflection/NetObject.html" title="cla
 <dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
 <dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Match-system.Uri-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Match</h4>
+<pre>public&nbsp;<a href="../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;Match(<a href="../system/Uri.html" title="class in system">Uri</a>&nbsp;uri)
+                   throws java.lang.Throwable,
+                          <a href="../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                          <a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../system/FormatException.html" title="class in system">FormatException</a>,
+                          <a href="../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                          <a href="../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                          <a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                          <a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../system/OverflowException.html" title="class in system">OverflowException</a>,
+                          <a href="../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                          <a href="../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                          <a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                          <a href="../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                          <a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>

@@ -14,6 +14,7 @@
 <meta name="keywords" content="getJCOObjectName()">
 <meta name="keywords" content="getJCOInstance()">
 <meta name="keywords" content="getJCOType()">
+<meta name="keywords" content="Initialize()">
 <meta name="keywords" content="CreateTask()">
 <meta name="keywords" content="GetTaskParameters()">
 <meta name="keywords" content="CleanupTask()">
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":17};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":17};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -238,6 +239,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory.html#getTaskType--">getTaskType</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory.html#Initialize-java.lang.String-system.collections.generic.IDictionary_2-java.lang.String-microsoft.build.framework.IBuildEngine-">Initialize</a></span>(java.lang.String&nbsp;taskName,
+          <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;parameterGroup,
+          java.lang.String&nbsp;taskBody,
+          <a href="../../../microsoft/build/framework/IBuildEngine.html" title="interface in microsoft.build.framework">IBuildEngine</a>&nbsp;taskFactoryLoggingHost)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../microsoft/build/framework/ITaskFactory.html" title="interface in microsoft.build.framework">ITaskFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/ITaskFactory.html#ToITaskFactory-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToITaskFactory</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../microsoft/build/framework/ITaskFactory.html" title="interface in microsoft.build.framework"><code>ITaskFactory</code></a>, a cast assert is made to check if types are compatible.</div>
@@ -453,6 +461,23 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <h4>getTaskType</h4>
 <pre><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;getTaskType()
              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Initialize-java.lang.String-system.collections.generic.IDictionary_2-java.lang.String-microsoft.build.framework.IBuildEngine-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Initialize</h4>
+<pre>boolean&nbsp;Initialize(java.lang.String&nbsp;taskName,
+                   <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;parameterGroup,
+                   java.lang.String&nbsp;taskBody,
+                   <a href="../../../microsoft/build/framework/IBuildEngine.html" title="interface in microsoft.build.framework">IBuildEngine</a>&nbsp;taskFactoryLoggingHost)
+            throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

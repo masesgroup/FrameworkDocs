@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getNameIdentifierFormats()">
+<meta name="keywords" content="getSingleLogoutServices()">
 <meta name="keywords" content="getArtifactResolutionServices()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
@@ -30,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -275,6 +277,14 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getNameIdentifierFormats--">getNameIdentifierFormats</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getSingleLogoutServices--">getSingleLogoutServices</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -284,7 +294,7 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.metadata.<a href="../../../system/identitymodel/metadata/RoleDescriptor.html" title="class in system.identitymodel.metadata">RoleDescriptor</a></h3>
-<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
+<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getContacts--">getContacts</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getKeys--">getKeys</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getProtocolsSupported--">getProtocolsSupported</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -537,6 +547,34 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 <dd><code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html" title="class in system.identitymodel.metadata">RoleDescriptor</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getNameIdentifierFormats--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNameIdentifierFormats</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getNameIdentifierFormats()
+                                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSingleLogoutServices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSingleLogoutServices</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getSingleLogoutServices()
+                                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

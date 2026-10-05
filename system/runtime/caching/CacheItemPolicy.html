@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getChangeMonitors()">
 <meta name="keywords" content="getAbsoluteExpiration()">
 <meta name="keywords" content="setAbsoluteExpiration()">
 <meta name="keywords" content="getRemovedCallback()">
@@ -39,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -245,72 +246,76 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getAbsoluteExpiration--">getAbsoluteExpiration</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getChangeMonitors--">getChangeMonitors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/runtime/caching/CacheItemPriority.html" title="class in system.runtime.caching">CacheItemPriority</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getPriority--">getPriority</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/runtime/caching/CacheEntryRemovedCallback.html" title="class in system.runtime.caching">CacheEntryRemovedCallback</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getRemovedCallback--">getRemovedCallback</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getSlidingExpiration--">getSlidingExpiration</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/runtime/caching/CacheEntryUpdateCallback.html" title="class in system.runtime.caching">CacheEntryUpdateCallback</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#getUpdateCallback--">getUpdateCallback</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#setAbsoluteExpiration-system.DateTimeOffset-">setAbsoluteExpiration</a></span>(<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;AbsoluteExpiration)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#setPriority-system.runtime.caching.CacheItemPriority-">setPriority</a></span>(<a href="../../../system/runtime/caching/CacheItemPriority.html" title="class in system.runtime.caching">CacheItemPriority</a>&nbsp;Priority)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#setRemovedCallback-system.runtime.caching.CacheEntryRemovedCallback-">setRemovedCallback</a></span>(<a href="../../../system/runtime/caching/CacheEntryRemovedCallback.html" title="class in system.runtime.caching">CacheEntryRemovedCallback</a>&nbsp;RemovedCallback)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#setSlidingExpiration-system.TimeSpan-">setSlidingExpiration</a></span>(<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;SlidingExpiration)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/caching/CacheItemPolicy.html#setUpdateCallback-system.runtime.caching.CacheEntryUpdateCallback-">setUpdateCallback</a></span>(<a href="../../../system/runtime/caching/CacheEntryUpdateCallback.html" title="class in system.runtime.caching">CacheEntryUpdateCallback</a>&nbsp;UpdateCallback)</code>&nbsp;</td>
 </tr>
@@ -467,6 +472,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getAbsoluteExpiration</h4>
 <pre>public&nbsp;<a href="../../../system/DateTimeOffset.html" title="class in system">DateTimeOffset</a>&nbsp;getAbsoluteExpiration()
                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getChangeMonitors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChangeMonitors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getChangeMonitors()
+                               throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

@@ -16,6 +16,10 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getClaimTypesOffered()">
+<meta name="keywords" content="getClaimTypesRequested()">
+<meta name="keywords" content="getTargetScopes()">
+<meta name="keywords" content="getTokenTypesOffered()">
 <meta name="keywords" content="getServiceDescription()">
 <meta name="keywords" content="setServiceDescription()">
 <meta name="keywords" content="getServiceDisplayName()">
@@ -33,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -244,52 +248,68 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getClaimTypesOffered--">getClaimTypesOffered</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getClaimTypesRequested--">getClaimTypesRequested</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getServiceDescription--">getServiceDescription</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getServiceDisplayName--">getServiceDisplayName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getTargetScopes--">getTargetScopes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#getTokenTypesOffered--">getTokenTypesOffered</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setServiceDescription-java.lang.String-">setServiceDescription</a></span>(java.lang.String&nbsp;ServiceDescription)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/WebServiceDescriptor.html#setServiceDisplayName-java.lang.String-">setServiceDisplayName</a></span>(java.lang.String&nbsp;ServiceDisplayName)</code>&nbsp;</td>
 </tr>
@@ -299,7 +319,7 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.metadata.<a href="../../../system/identitymodel/metadata/RoleDescriptor.html" title="class in system.identitymodel.metadata">RoleDescriptor</a></h3>
-<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
+<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getContacts--">getContacts</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getKeys--">getKeys</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getProtocolsSupported--">getProtocolsSupported</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -445,6 +465,34 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 </dl>
 </li>
 </ul>
+<a name="getClaimTypesOffered--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClaimTypesOffered</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getClaimTypesOffered()
+                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getClaimTypesRequested--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClaimTypesRequested</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getClaimTypesRequested()
+                                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getJCOAssemblyName--">
 <!--   -->
 </a>
@@ -563,6 +611,34 @@ extends <a href="../../../system/identitymodel/metadata/RoleDescriptor.html" tit
 <h4>getServiceDisplayName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getServiceDisplayName()
                                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTargetScopes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTargetScopes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getTargetScopes()
+                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTokenTypesOffered--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTokenTypesOffered</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getTokenTypesOffered()
+                                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

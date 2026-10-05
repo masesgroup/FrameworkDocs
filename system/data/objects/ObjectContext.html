@@ -21,7 +21,12 @@
 <meta name="keywords" content="ExecuteFunction()">
 <meta name="keywords" content="ExecuteStoreCommand()">
 <meta name="keywords" content="SaveChanges()">
+<meta name="keywords" content="GetKnownProxyTypes()">
 <meta name="keywords" content="CreateEntityKey()">
+<meta name="keywords" content="CreateQuery()">
+<meta name="keywords" content="ExecuteStoreQuery()">
+<meta name="keywords" content="Translate()">
+<meta name="keywords" content="CreateObjectSet()">
 <meta name="keywords" content="GetObjectByKey()">
 <meta name="keywords" content="CreateDatabaseScript()">
 <meta name="keywords" content="GetObjectType()">
@@ -31,6 +36,7 @@
 <meta name="keywords" content="Attach()">
 <meta name="keywords" content="AttachTo()">
 <meta name="keywords" content="CreateDatabase()">
+<meta name="keywords" content="CreateProxyTypes()">
 <meta name="keywords" content="DeleteDatabase()">
 <meta name="keywords" content="DeleteObject()">
 <meta name="keywords" content="Detach()">
@@ -43,6 +49,8 @@
 <meta name="keywords" content="getMetadataWorkspace()">
 <meta name="keywords" content="getContextOptions()">
 <meta name="keywords" content="getObjectStateManager()">
+<meta name="keywords" content="getCommandTimeout()">
+<meta name="keywords" content="setCommandTimeout()">
 <meta name="keywords" content="getDefaultContainerName()">
 <meta name="keywords" content="setDefaultContainerName()">
 <meta name="keywords" content="addObjectMaterialized()">
@@ -62,7 +70,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":9,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":9,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":9,"i37":10,"i38":10,"i39":10,"i40":9,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -319,147 +327,215 @@ implements java.lang.AutoCloseable</pre>
                <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DatabaseExists--">DatabaseExists</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectSet_1.html" title="class in system.data.objects">ObjectSet_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#CreateObjectSet--">CreateObjectSet</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DeleteDatabase--">DeleteDatabase</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectSet_1.html" title="class in system.data.objects">ObjectSet_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#CreateObjectSet-java.lang.String-">CreateObjectSet</a></span>(java.lang.String&nbsp;entitySetName)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DeleteObject-org.mases.jcobridge.netreflection.NetObject-">DeleteObject</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#CreateProxyTypes-system.collections.generic.IEnumerable_1-">CreateProxyTypes</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Detach-org.mases.jcobridge.netreflection.NetObject-">Detach</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectQuery_1.html" title="class in system.data.objects">ObjectQuery_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#CreateQuery-java.lang.String-system.data.objects.ObjectParameter...-">CreateQuery</a></span>(java.lang.String&nbsp;queryString,
+           <a href="../../../system/data/objects/ObjectParameter.html" title="class in system.data.objects">ObjectParameter</a>...&nbsp;parameters)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DetectChanges--">DetectChanges</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DatabaseExists--">DatabaseExists</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DeleteDatabase--">DeleteDatabase</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DeleteObject-org.mases.jcobridge.netreflection.NetObject-">DeleteObject</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Detach-org.mases.jcobridge.netreflection.NetObject-">Detach</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#DetectChanges--">DetectChanges</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>&lt;TElement extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#ExecuteFunction-java.lang.String-system.data.objects.MergeOption-system.data.objects.ObjectParameter...-">ExecuteFunction</a></span>(java.lang.String&nbsp;functionName,
+               <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption,
+               <a href="../../../system/data/objects/ObjectParameter.html" title="class in system.data.objects">ObjectParameter</a>...&nbsp;parameters)</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#ExecuteFunction-java.lang.String-system.data.objects.ObjectParameter...-">ExecuteFunction</a></span>(java.lang.String&nbsp;functionName,
                <a href="../../../system/data/objects/ObjectParameter.html" title="class in system.data.objects">ObjectParameter</a>...&nbsp;parameters)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#ExecuteStoreCommand-java.lang.String-org.mases.jcobridge.netreflection.NetObject...-">ExecuteStoreCommand</a></span>(java.lang.String&nbsp;commandText,
                    <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;parameters)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code>&lt;TElement extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#ExecuteStoreQuery-java.lang.String-org.mases.jcobridge.netreflection.NetObject...-">ExecuteStoreQuery</a></span>(java.lang.String&nbsp;commandText,
+                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;parameters)</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#ExecuteStoreQuery-java.lang.String-java.lang.String-system.data.objects.MergeOption-org.mases.jcobridge.netreflection.NetObject...-">ExecuteStoreQuery</a></span>(java.lang.String&nbsp;commandText,
+                 java.lang.String&nbsp;entitySetName,
+                 <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption,
+                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;parameters)</code>&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getCommandTimeout--">getCommandTimeout</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/common/DbConnection.html" title="class in system.data.common">DbConnection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getConnection--">getConnection</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/objects/ObjectContextOptions.html" title="class in system.data.objects">ObjectContextOptions</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getContextOptions--">getContextOptions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getDefaultContainerName--">getDefaultContainerName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#GetKnownProxyTypes--">GetKnownProxyTypes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/metadata/edm/MetadataWorkspace.html" title="class in system.data.metadata.edm">MetadataWorkspace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getMetadataWorkspace--">getMetadataWorkspace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#GetObjectByKey-system.data.EntityKey-">GetObjectByKey</a></span>(<a href="../../../system/data/EntityKey.html" title="class in system.data">EntityKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/objects/ObjectStateManager.html" title="class in system.data.objects">ObjectStateManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#getObjectStateManager--">getObjectStateManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#GetObjectType-org.mases.jcobridge.netreflection.NetType-">GetObjectType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#LoadProperty-org.mases.jcobridge.netreflection.NetObject-java.lang.String-">LoadProperty</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity,
             java.lang.String&nbsp;navigationProperty)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#LoadProperty-org.mases.jcobridge.netreflection.NetObject-java.lang.String-system.data.objects.MergeOption-">LoadProperty</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity,
             java.lang.String&nbsp;navigationProperty,
             <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#LoadProperty-TEntity-system.linq.expressions.Expression_1-">LoadProperty</a></span>(TEntity&nbsp;entity,
+            <a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;selector)</code>&nbsp;</td>
+</tr>
+<tr id="i44" class="altColor">
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#LoadProperty-TEntity-system.linq.expressions.Expression_1-system.data.objects.MergeOption-">LoadProperty</a></span>(TEntity&nbsp;entity,
+            <a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;selector,
+            <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption)</code>&nbsp;</td>
+</tr>
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Refresh-system.data.objects.RefreshMode-org.mases.jcobridge.netreflection.IEnumerable-">Refresh</a></span>(<a href="../../../system/data/objects/RefreshMode.html" title="class in system.data.objects">RefreshMode</a>&nbsp;refreshMode,
        <a href="../../../org/mases/jcobridge/netreflection/IEnumerable.html" title="interface in org.mases.jcobridge.netreflection">IEnumerable</a>&nbsp;collection)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Refresh-system.data.objects.RefreshMode-org.mases.jcobridge.netreflection.NetObject-">Refresh</a></span>(<a href="../../../system/data/objects/RefreshMode.html" title="class in system.data.objects">RefreshMode</a>&nbsp;refreshMode,
        <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#removeObjectMaterialized-system.data.objects.ObjectMaterializedEventHandler-">removeObjectMaterialized</a></span>(<a href="../../../system/data/objects/ObjectMaterializedEventHandler.html" title="class in system.data.objects">ObjectMaterializedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#removeSavingChanges-system.EventHandler-">removeSavingChanges</a></span>(<a href="../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#SaveChanges--">SaveChanges</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#SaveChanges-boolean-">SaveChanges</a></span>(boolean&nbsp;acceptChangesDuringSave)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#SaveChanges-system.data.objects.SaveOptions-">SaveChanges</a></span>(<a href="../../../system/data/objects/SaveOptions.html" title="class in system.data.objects">SaveOptions</a>&nbsp;options)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i52" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#setCommandTimeout-system.Nullable_1-">setCommandTimeout</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;CommandTimeout)</code>&nbsp;</td>
+</tr>
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#setDefaultContainerName-java.lang.String-">setDefaultContainerName</a></span>(java.lang.String&nbsp;DefaultContainerName)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i55" class="rowColor">
+<td class="colFirst"><code>&lt;TElement extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Translate-system.data.common.DbDataReader-">Translate</a></span>(<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&nbsp;reader)</code>&nbsp;</td>
+</tr>
+<tr id="i56" class="altColor">
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#Translate-system.data.common.DbDataReader-java.lang.String-system.data.objects.MergeOption-">Translate</a></span>(<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&nbsp;reader,
+         java.lang.String&nbsp;entitySetName,
+         <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption)</code>&nbsp;</td>
+</tr>
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectContext.html#TryGetObjectByKey-system.data.EntityKey-org.mases.jcobridge.netreflection.JCORefOut-">TryGetObjectByKey</a></span>(<a href="../../../system/data/EntityKey.html" title="class in system.data">EntityKey</a>&nbsp;key,
                  <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;value)</code>&nbsp;</td>
@@ -1077,6 +1153,179 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="CreateObjectSet--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateObjectSet</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectSet_1.html" title="class in system.data.objects">ObjectSet_1</a>&nbsp;CreateObjectSet()
+                                                                  throws java.lang.Throwable,
+                                                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                         <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                         <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                         <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                         <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                         <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateObjectSet-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateObjectSet</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectSet_1.html" title="class in system.data.objects">ObjectSet_1</a>&nbsp;CreateObjectSet(java.lang.String&nbsp;entitySetName)
+                                                                  throws java.lang.Throwable,
+                                                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                         <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                         <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                         <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                         <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                         <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                         <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                         <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateProxyTypes-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateProxyTypes</h4>
+<pre>public&nbsp;void&nbsp;CreateProxyTypes(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types)
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                             <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                             <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                             <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                             <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                             <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                             <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                             <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                             <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                             <a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                             <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                             <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                             <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                             <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                             <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateQuery-java.lang.String-system.data.objects.ObjectParameter...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateQuery</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectQuery_1.html" title="class in system.data.objects">ObjectQuery_1</a>&nbsp;CreateQuery(java.lang.String&nbsp;queryString,
+                                                                 <a href="../../../system/data/objects/ObjectParameter.html" title="class in system.data.objects">ObjectParameter</a>...&nbsp;parameters)
+                                                          throws java.lang.Throwable,
+                                                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                 <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                 <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                 <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                 <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                 <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="DatabaseExists--">
 <!--   -->
 </a>
@@ -1281,6 +1530,62 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="ExecuteFunction-java.lang.String-system.data.objects.MergeOption-system.data.objects.ObjectParameter...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteFunction</h4>
+<pre>public&nbsp;&lt;TElement extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a>&nbsp;ExecuteFunction(java.lang.String&nbsp;functionName,
+                                                                             <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption,
+                                                                             <a href="../../../system/data/objects/ObjectParameter.html" title="class in system.data.objects">ObjectParameter</a>...&nbsp;parameters)
+                                                                      throws java.lang.Throwable,
+                                                                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                             <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                             <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                             <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                             <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                             <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                                             <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                                             <a href="../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a>,
+                                                                             <a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a>,
+                                                                             <a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a>,
+                                                                             <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                             <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></code></dd>
+<dd><code><a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></code></dd>
+<dd><code><a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ExecuteFunction-java.lang.String-system.data.objects.ObjectParameter...-">
 <!--   -->
 </a>
@@ -1376,6 +1681,136 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/transactions/TransactionException.html" title="class in system.transactions">TransactionException</a></code></dd>
 <dd><code><a href="../../../system/transactions/TransactionManagerCommunicationException.html" title="class in system.transactions">TransactionManagerCommunicationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteStoreQuery-java.lang.String-org.mases.jcobridge.netreflection.NetObject...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteStoreQuery</h4>
+<pre>public&nbsp;&lt;TElement extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a>&nbsp;ExecuteStoreQuery(java.lang.String&nbsp;commandText,
+                                                                               <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;parameters)
+                                                                        throws java.lang.Throwable,
+                                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                               <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                               <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                               <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                               <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                               <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                               <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                                               <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                                               <a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a>,
+                                                                               <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                               <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                               <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                               <a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ExecuteStoreQuery-java.lang.String-java.lang.String-system.data.objects.MergeOption-org.mases.jcobridge.netreflection.NetObject...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExecuteStoreQuery</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a>&nbsp;ExecuteStoreQuery(java.lang.String&nbsp;commandText,
+                                                                              java.lang.String&nbsp;entitySetName,
+                                                                              <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption,
+                                                                              <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;parameters)
+                                                                       throws java.lang.Throwable,
+                                                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                              <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                              <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                              <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                              <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                              <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                                              <a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a>,
+                                                                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                              <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                              <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                              <a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getCommandTimeout--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCommandTimeout</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getCommandTimeout()
+                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -1534,6 +1969,52 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetKnownProxyTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetKnownProxyTypes</h4>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetKnownProxyTypes()
+                                        throws java.lang.Throwable,
+                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                               <a href="../../../system/threading/WaitHandleCannotBeOpenedException.html" title="class in system.threading">WaitHandleCannotBeOpenedException</a>,
+                                               <a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                               <a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a>,
+                                               <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                               <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                               <a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+                                               <a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a>,
+                                               <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                               <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/threading/WaitHandleCannotBeOpenedException.html" title="class in system.threading">WaitHandleCannotBeOpenedException</a></code></dd>
+<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1706,6 +2187,89 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
 <dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="LoadProperty-org.mases.jcobridge.netreflection.IJCOBridgeReflected-system.linq.expressions.Expression_1-">
+<!--   -->
+</a><a name="LoadProperty-TEntity-system.linq.expressions.Expression_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoadProperty</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;LoadProperty(TEntity&nbsp;entity,
+                                                               <a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;selector)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                               <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                               <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="LoadProperty-org.mases.jcobridge.netreflection.IJCOBridgeReflected-system.linq.expressions.Expression_1-system.data.objects.MergeOption-">
+<!--   -->
+</a><a name="LoadProperty-TEntity-system.linq.expressions.Expression_1-system.data.objects.MergeOption-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoadProperty</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;LoadProperty(TEntity&nbsp;entity,
+                                                               <a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;selector,
+                                                               <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                               <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                               <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
 <dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
 <dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
@@ -1962,6 +2526,38 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="setCommandTimeout-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCommandTimeout</h4>
+<pre>public&nbsp;void&nbsp;setCommandTimeout(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;CommandTimeout)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                              <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="setDefaultContainerName-java.lang.String-">
 <!--   -->
 </a>
@@ -2000,6 +2596,118 @@ implements java.lang.AutoCloseable</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Translate-system.data.common.DbDataReader-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Translate</h4>
+<pre>public&nbsp;&lt;TElement extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a>&nbsp;Translate(<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&nbsp;reader)
+                                                                throws java.lang.Throwable,
+                                                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                       <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                       <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                       <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                       <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                       <a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                                                                       <a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                                       <a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a>,
+                                                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                       <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                       <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                       <a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Translate-system.data.common.DbDataReader-java.lang.String-system.data.objects.MergeOption-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Translate</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectResult_1.html" title="class in system.data.objects">ObjectResult_1</a>&nbsp;Translate(<a href="../../../system/data/common/DbDataReader.html" title="class in system.data.common">DbDataReader</a>&nbsp;reader,
+                                                                      java.lang.String&nbsp;entitySetName,
+                                                                      <a href="../../../system/data/objects/MergeOption.html" title="class in system.data.objects">MergeOption</a>&nbsp;mergeOption)
+                                                               throws java.lang.Throwable,
+                                                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                      <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                      <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                      <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                      <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                      <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                      <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                      <a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                                                      <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                                      <a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a>,
+                                                                      <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                      <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                      <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                      <a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/data/EntityCommandExecutionException.html" title="class in system.data">EntityCommandExecutionException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></code></dd>
 </dl>
 </li>
 </ul>

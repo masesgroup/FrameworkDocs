@@ -106,7 +106,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>, <a href="../../../system/servicemodel/ICommunicationObject.html" title="interface in system.servicemodel">ICommunicationObject</a>, <a href="../../../system/servicemodel/channels/IDuplexChannel.html" title="interface in system.servicemodel.channels">IDuplexChannel</a>, <a href="../../../system/servicemodel/channels/IInputChannel.html" title="interface in system.servicemodel.channels">IInputChannel</a>, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></dd>
+<dd><a href="../../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>, <a href="../../../system/servicemodel/ICommunicationObject.html" title="interface in system.servicemodel">ICommunicationObject</a>, <a href="../../../system/servicemodel/channels/IDuplexChannel.html" title="interface in system.servicemodel.channels">IDuplexChannel</a>, <a href="../../../system/servicemodel/channels/IInputChannel.html" title="interface in system.servicemodel.channels">IInputChannel</a>, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a>, <a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
@@ -115,7 +115,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">IDuplexSessionChannel</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/servicemodel/channels/IDuplexChannel.html" title="interface in system.servicemodel.channels">IDuplexChannel</a>, <a href="../../../system/servicemodel/channels/IInputChannel.html" title="interface in system.servicemodel.channels">IInputChannel</a>, <a href="../../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>, <a href="../../../system/servicemodel/ICommunicationObject.html" title="interface in system.servicemodel">ICommunicationObject</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></pre>
+extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/servicemodel/channels/IDuplexChannel.html" title="interface in system.servicemodel.channels">IDuplexChannel</a>, <a href="../../../system/servicemodel/channels/IInputChannel.html" title="interface in system.servicemodel.channels">IInputChannel</a>, <a href="../../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>, <a href="../../../system/servicemodel/ICommunicationObject.html" title="interface in system.servicemodel">ICommunicationObject</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a>, <a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</pre>
 <div class="block">The base .NET class managing System.ServiceModel.Channels.IDuplexSessionChannel, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -236,6 +236,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <h3>Methods inherited from interface&nbsp;system.servicemodel.channels.<a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></h3>
 <code><a href="../../../system/servicemodel/channels/IOutputChannel.html#BeginSend-system.servicemodel.channels.Message-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginSend</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#BeginSend-system.servicemodel.channels.Message-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginSend</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#EndSend-system.IAsyncResult-">EndSend</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#getRemoteAddress--">getRemoteAddress</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#getVia--">getVia</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#Send-system.servicemodel.channels.Message-">Send</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#Send-system.servicemodel.channels.Message-system.TimeSpan-">Send</a>, <a href="../../../system/servicemodel/channels/IOutputChannel.html#ToIOutputChannel-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIOutputChannel</a></code></li>
 </ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.channels.ISessionChannel_1">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;system.servicemodel.channels.<a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a></h3>
+<code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html#getSession--">getSession</a>, <a href="../../../system/servicemodel/channels/ISessionChannel_1.html#ToISessionChannel_1-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISessionChannel_1</a></code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -321,6 +328,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/channels/IOutputChannel.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -347,6 +356,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/channels/IOutputChannel.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -373,6 +384,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/channels/IOutputChannel.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the instance of the instantiated Class</dd>
 </dl>
@@ -399,6 +412,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/channels/IOutputChannel.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -426,6 +441,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/channels/IOutputChannel.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/IOutputChannel.html" title="interface in system.servicemodel.channels">IOutputChannel</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/ISessionChannel_1.html" title="interface in system.servicemodel.channels">ISessionChannel_1</a>&lt;<a href="../../../system/servicemodel/channels/IDuplexSession.html" title="interface in system.servicemodel.channels">IDuplexSession</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the Type of the instantiated Class</dd>
 </dl>

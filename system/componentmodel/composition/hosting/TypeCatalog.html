@@ -215,6 +215,22 @@ extends <a href="../../../../system/componentmodel/composition/primitives/Compos
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/TypeCatalog.html#TypeCatalog--">TypeCatalog</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/TypeCatalog.html#TypeCatalog-system.collections.generic.IEnumerable_1-">TypeCatalog</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/TypeCatalog.html#TypeCatalog-system.collections.generic.IEnumerable_1-system.componentmodel.composition.primitives.ICompositionElement-">TypeCatalog</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types,
+           <a href="../../../../system/componentmodel/composition/primitives/ICompositionElement.html" title="interface in system.componentmodel.composition.primitives">ICompositionElement</a>&nbsp;definitionOrigin)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/TypeCatalog.html#TypeCatalog-system.collections.generic.IEnumerable_1-system.reflection.ReflectionContext-">TypeCatalog</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types,
+           <a href="../../../../system/reflection/ReflectionContext.html" title="class in system.reflection">ReflectionContext</a>&nbsp;reflectionContext)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/TypeCatalog.html#TypeCatalog-system.collections.generic.IEnumerable_1-system.reflection.ReflectionContext-system.componentmodel.composition.primitives.ICompositionElement-">TypeCatalog</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types,
+           <a href="../../../../system/reflection/ReflectionContext.html" title="class in system.reflection">ReflectionContext</a>&nbsp;reflectionContext,
+           <a href="../../../../system/componentmodel/composition/primitives/ICompositionElement.html" title="interface in system.componentmodel.composition.primitives">ICompositionElement</a>&nbsp;definitionOrigin)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/TypeCatalog.html#TypeCatalog-org.mases.jcobridge.netreflection.NetType...-">TypeCatalog</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>...&nbsp;types)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -283,7 +299,7 @@ extends <a href="../../../../system/componentmodel/composition/primitives/Compos
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.componentmodel.composition.primitives.<a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html" title="class in system.componentmodel.composition.primitives">ComposablePartCatalog</a></h3>
-<code><a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#close--">close</a>, <a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#Dispose--">Dispose</a></code></li>
+<code><a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#close--">close</a>, <a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#Dispose--">Dispose</a>, <a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-">GetExports</a>, <a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#getParts--">getParts</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObjectEnumerable">
@@ -405,6 +421,130 @@ extends <a href="../../../../system/componentmodel/composition/primitives/Compos
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="TypeCatalog-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TypeCatalog</h4>
+<pre>public&nbsp;TypeCatalog(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types)
+            throws java.lang.Throwable,
+                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                   <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                   <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                   <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                   <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TypeCatalog-system.collections.generic.IEnumerable_1-system.componentmodel.composition.primitives.ICompositionElement-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TypeCatalog</h4>
+<pre>public&nbsp;TypeCatalog(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types,
+                   <a href="../../../../system/componentmodel/composition/primitives/ICompositionElement.html" title="interface in system.componentmodel.composition.primitives">ICompositionElement</a>&nbsp;definitionOrigin)
+            throws java.lang.Throwable,
+                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                   <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                   <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                   <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                   <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TypeCatalog-system.collections.generic.IEnumerable_1-system.reflection.ReflectionContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TypeCatalog</h4>
+<pre>public&nbsp;TypeCatalog(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types,
+                   <a href="../../../../system/reflection/ReflectionContext.html" title="class in system.reflection">ReflectionContext</a>&nbsp;reflectionContext)
+            throws java.lang.Throwable,
+                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                   <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                   <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                   <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                   <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TypeCatalog-system.collections.generic.IEnumerable_1-system.reflection.ReflectionContext-system.componentmodel.composition.primitives.ICompositionElement-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TypeCatalog</h4>
+<pre>public&nbsp;TypeCatalog(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;types,
+                   <a href="../../../../system/reflection/ReflectionContext.html" title="class in system.reflection">ReflectionContext</a>&nbsp;reflectionContext,
+                   <a href="../../../../system/componentmodel/composition/primitives/ICompositionElement.html" title="interface in system.componentmodel.composition.primitives">ICompositionElement</a>&nbsp;definitionOrigin)
+            throws java.lang.Throwable,
+                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                   <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                   <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                   <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                   <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                   <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                   <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

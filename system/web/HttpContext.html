@@ -21,7 +21,9 @@
 <meta name="keywords" content="GetGlobalResourceObject()">
 <meta name="keywords" content="GetLocalResourceObject()">
 <meta name="keywords" content="GetSection()">
+<meta name="keywords" content="AddOnRequestCompleted()">
 <meta name="keywords" content="DisposeOnPipelineCompleted()">
+<meta name="keywords" content="AcceptWebSocketRequest()">
 <meta name="keywords" content="AddError()">
 <meta name="keywords" content="ClearError()">
 <meta name="keywords" content="RemapHandler()">
@@ -40,6 +42,7 @@
 <meta name="keywords" content="setSkipAuthorization()">
 <meta name="keywords" content="getThreadAbortOnTimeout()">
 <meta name="keywords" content="setThreadAbortOnTimeout()">
+<meta name="keywords" content="getWebSocketRequestedProtocols()">
 <meta name="keywords" content="getItems()">
 <meta name="keywords" content="getTimestamp()">
 <meta name="keywords" content="getError()">
@@ -81,7 +84,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":9,"i13":10,"i14":10,"i15":10,"i16":9,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":9,"i31":9,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":9,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":9,"i20":9,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":9,"i34":9,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":9,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -173,13 +176,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></dd>
+<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">HttpContext</span>
-extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>
-implements <a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></pre>
+extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
 <div class="block">The base .NET class managing System.Web.HttpContext, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
@@ -286,277 +288,294 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AddError-org.mases.jcobridge.netreflection.NetException-">AddError</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;errorInfo)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AcceptWebSocketRequest-system.Func_2-">AcceptWebSocketRequest</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AcceptWebSocketRequest-system.Func_2-system.web.websockets.AspNetWebSocketOptions-">AcceptWebSocketRequest</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc,
+                      <a href="../../system/web/websockets/AspNetWebSocketOptions.html" title="class in system.web.websockets">AspNetWebSocketOptions</a>&nbsp;options)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AddError-org.mases.jcobridge.netreflection.NetException-">AddError</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;errorInfo)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../system/web/ISubscriptionToken.html" title="interface in system.web">ISubscriptionToken</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AddOnRequestCompleted-system.Action_1-">AddOnRequestCompleted</a></span>(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/web/HttpContext.html" title="class in system.web">HttpContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../system/web/HttpContext.html" title="class in system.web"><code>HttpContext</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#ClearError--">ClearError</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/ISubscriptionToken.html" title="interface in system.web">ISubscriptionToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#DisposeOnPipelineCompleted-system.IDisposable-">DisposeOnPipelineCompleted</a></span>(<a href="../../system/IDisposable.html" title="interface in system">IDisposable</a>&nbsp;target)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getAllErrors--">getAllErrors</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getAllowAsyncDuringSyncStages--">getAllowAsyncDuringSyncStages</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetAppConfig-java.lang.String-">GetAppConfig</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/HttpApplicationState.html" title="class in system.web">HttpApplicationState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getApplication--">getApplication</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/HttpApplication.html" title="class in system.web">HttpApplication</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getApplicationInstance--">getApplicationInstance</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/configuration/AsyncPreloadModeFlags.html" title="class in system.web.configuration">AsyncPreloadModeFlags</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getAsyncPreloadMode--">getAsyncPreloadMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/caching/Cache.html" title="class in system.web.caching">Cache</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getCache--">getCache</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetConfig-java.lang.String-">GetConfig</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/web/HttpContext.html" title="class in system.web">HttpContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getCurrent--">getCurrent</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/IHttpHandler.html" title="interface in system.web">IHttpHandler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getCurrentHandler--">getCurrentHandler</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/RequestNotification.html" title="class in system.web">RequestNotification</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getCurrentNotification--">getCurrentNotification</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getError--">getError</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetGlobalResourceObject-java.lang.String-java.lang.String-">GetGlobalResourceObject</a></span>(java.lang.String&nbsp;classKey,
                        java.lang.String&nbsp;resourceKey)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetGlobalResourceObject-java.lang.String-java.lang.String-system.globalization.CultureInfo-">GetGlobalResourceObject</a></span>(java.lang.String&nbsp;classKey,
                        java.lang.String&nbsp;resourceKey,
                        <a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/IHttpHandler.html" title="interface in system.web">IHttpHandler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getHandler--">getHandler</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getIsCustomErrorEnabled--">getIsCustomErrorEnabled</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getIsDebuggingEnabled--">getIsDebuggingEnabled</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getIsPostNotification--">getIsPostNotification</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getIsWebSocketRequest--">getIsWebSocketRequest</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getIsWebSocketRequestUpgrading--">getIsWebSocketRequestUpgrading</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getItems--">getItems</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>static <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetLocalResourceObject-java.lang.String-java.lang.String-">GetLocalResourceObject</a></span>(java.lang.String&nbsp;virtualPath,
                       java.lang.String&nbsp;resourceKey)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>static <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetLocalResourceObject-java.lang.String-java.lang.String-system.globalization.CultureInfo-">GetLocalResourceObject</a></span>(java.lang.String&nbsp;virtualPath,
                       java.lang.String&nbsp;resourceKey,
                       <a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/instrumentation/PageInstrumentationService.html" title="class in system.web.instrumentation">PageInstrumentationService</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getPageInstrumentation--">getPageInstrumentation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/IHttpHandler.html" title="interface in system.web">IHttpHandler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getPreviousHandler--">getPreviousHandler</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/profile/ProfileBase.html" title="class in system.web.profile">ProfileBase</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getProfile--">getProfile</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/HttpRequest.html" title="class in system.web">HttpRequest</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getRequest--">getRequest</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/HttpResponse.html" title="class in system.web">HttpResponse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getResponse--">getResponse</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#GetSection-java.lang.String-">GetSection</a></span>(java.lang.String&nbsp;sectionName)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/HttpServerUtility.html" title="class in system.web">HttpServerUtility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getServer--">getServer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/sessionstate/HttpSessionState.html" title="class in system.web.sessionstate">HttpSessionState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getSession--">getSession</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getSkipAuthorization--">getSkipAuthorization</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getThreadAbortOnTimeout--">getThreadAbortOnTimeout</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../system/DateTime.html" title="class in system">DateTime</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getTimestamp--">getTimestamp</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../system/web/TraceContext.html" title="class in system.web">TraceContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getTrace--">getTrace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code><a href="../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getUser--">getUser</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getWebSocketNegotiatedProtocol--">getWebSocketNegotiatedProtocol</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#getWebSocketRequestedProtocols--">getWebSocketRequestedProtocols</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#RemapHandler-system.web.IHttpHandler-">RemapHandler</a></span>(<a href="../../system/web/IHttpHandler.html" title="interface in system.web">IHttpHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#RewritePath-java.lang.String-">RewritePath</a></span>(java.lang.String&nbsp;path)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#RewritePath-java.lang.String-boolean-">RewritePath</a></span>(java.lang.String&nbsp;path,
            boolean&nbsp;rebaseClientPath)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#RewritePath-java.lang.String-java.lang.String-java.lang.String-">RewritePath</a></span>(java.lang.String&nbsp;filePath,
            java.lang.String&nbsp;pathInfo,
            java.lang.String&nbsp;queryString)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#RewritePath-java.lang.String-java.lang.String-java.lang.String-boolean-">RewritePath</a></span>(java.lang.String&nbsp;filePath,
            java.lang.String&nbsp;pathInfo,
            java.lang.String&nbsp;queryString,
            boolean&nbsp;setClientFilePath)</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setAllowAsyncDuringSyncStages-boolean-">setAllowAsyncDuringSyncStages</a></span>(boolean&nbsp;AllowAsyncDuringSyncStages)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setApplicationInstance-system.web.HttpApplication-">setApplicationInstance</a></span>(<a href="../../system/web/HttpApplication.html" title="class in system.web">HttpApplication</a>&nbsp;ApplicationInstance)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setAsyncPreloadMode-system.web.configuration.AsyncPreloadModeFlags-">setAsyncPreloadMode</a></span>(<a href="../../system/web/configuration/AsyncPreloadModeFlags.html" title="class in system.web.configuration">AsyncPreloadModeFlags</a>&nbsp;AsyncPreloadMode)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setCurrent-system.web.HttpContext-">setCurrent</a></span>(<a href="../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;Current)</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setCurrentNotification-system.web.RequestNotification-">setCurrentNotification</a></span>(<a href="../../system/web/RequestNotification.html" title="class in system.web">RequestNotification</a>&nbsp;CurrentNotification)</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setHandler-system.web.IHttpHandler-">setHandler</a></span>(<a href="../../system/web/IHttpHandler.html" title="interface in system.web">IHttpHandler</a>&nbsp;Handler)</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setIsPostNotification-boolean-">setIsPostNotification</a></span>(boolean&nbsp;IsPostNotification)</code>&nbsp;</td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#SetSessionStateBehavior-system.web.sessionstate.SessionStateBehavior-">SetSessionStateBehavior</a></span>(<a href="../../system/web/sessionstate/SessionStateBehavior.html" title="class in system.web.sessionstate">SessionStateBehavior</a>&nbsp;sessionStateBehavior)</code>&nbsp;</td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setSkipAuthorization-boolean-">setSkipAuthorization</a></span>(boolean&nbsp;SkipAuthorization)</code>&nbsp;</td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setThreadAbortOnTimeout-boolean-">setThreadAbortOnTimeout</a></span>(boolean&nbsp;ThreadAbortOnTimeout)</code>&nbsp;</td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#setUser-system.security.principal.IPrincipal-">setUser</a></span>(<a href="../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;User)</code>&nbsp;</td>
 </tr>
@@ -574,13 +593,6 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.IServiceProvider">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.<a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></h3>
-<code><a href="../../system/IServiceProvider.html#GetService-org.mases.jcobridge.netreflection.NetType-">GetService</a>, <a href="../../system/IServiceProvider.html#ToIServiceProvider-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIServiceProvider</a></code></li>
 </ul>
 </li>
 </ul>
@@ -774,6 +786,115 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="AcceptWebSocketRequest-system.Func_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AcceptWebSocketRequest</h4>
+<pre>public&nbsp;void&nbsp;AcceptWebSocketRequest(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc)
+                            throws java.lang.Throwable,
+                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                   <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                   <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                   <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                   <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                   <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                   <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a>,
+                                   <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                   <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                   <a href="../../system/threading/ThreadAbortException.html" title="class in system.threading">ThreadAbortException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../../system/threading/ThreadAbortException.html" title="class in system.threading">ThreadAbortException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="AcceptWebSocketRequest-system.Func_2-system.web.websockets.AspNetWebSocketOptions-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AcceptWebSocketRequest</h4>
+<pre>public&nbsp;void&nbsp;AcceptWebSocketRequest(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc,
+                                   <a href="../../system/web/websockets/AspNetWebSocketOptions.html" title="class in system.web.websockets">AspNetWebSocketOptions</a>&nbsp;options)
+                            throws java.lang.Throwable,
+                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                   <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                   <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                   <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                   <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                   <a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a>,
+                                   <a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                   <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                   <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                   <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                   <a href="../../system/MemberAccessException.html" title="class in system">MemberAccessException</a>,
+                                   <a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a>,
+                                   <a href="../../system/threading/ThreadAbortException.html" title="class in system.threading">ThreadAbortException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/MemberAccessException.html" title="class in system">MemberAccessException</a></code></dd>
+<dd><code><a href="../../system/UriFormatException.html" title="class in system">UriFormatException</a></code></dd>
+<dd><code><a href="../../system/threading/ThreadAbortException.html" title="class in system.threading">ThreadAbortException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="AddError-org.mases.jcobridge.netreflection.NetException-">
 <!--   -->
 </a>
@@ -787,6 +908,22 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="AddOnRequestCompleted-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AddOnRequestCompleted</h4>
+<pre>public&nbsp;<a href="../../system/web/ISubscriptionToken.html" title="interface in system.web">ISubscriptionToken</a>&nbsp;AddOnRequestCompleted(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback)
+                                         throws java.lang.Throwable,
+                                                <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1450,8 +1587,6 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IServiceProvider.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1471,8 +1606,6 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IServiceProvider.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1492,8 +1625,6 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IServiceProvider.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1513,8 +1644,6 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IServiceProvider.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1535,8 +1664,6 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IServiceProvider.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2014,6 +2141,40 @@ implements <a href="../../system/IServiceProvider.html" title="interface in syst
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getWebSocketRequestedProtocols--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWebSocketRequestedProtocols</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getWebSocketRequestedProtocols()
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                              <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                              <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>

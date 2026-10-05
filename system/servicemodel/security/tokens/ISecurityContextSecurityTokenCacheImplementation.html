@@ -16,6 +16,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="ToISecurityContextSecurityTokenCache()">
 <meta name="keywords" content="TryAddContext()">
+<meta name="keywords" content="GetAllContexts()">
 <meta name="keywords" content="GetContext()">
 <meta name="keywords" content="AddContext()">
 <meta name="keywords" content="ClearContexts()">
@@ -35,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":9,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":9,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -237,60 +238,64 @@ implements <a href="../../../../system/servicemodel/security/tokens/ISecurityCon
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#ClearContexts--">ClearContexts</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#GetAllContexts-system.xml.UniqueId-">GetAllContexts</a></span>(<a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/servicemodel/security/tokens/SecurityContextSecurityToken.html" title="class in system.servicemodel.security.tokens">SecurityContextSecurityToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#GetContext-system.xml.UniqueId-system.xml.UniqueId-">GetContext</a></span>(<a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
           <a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;generation)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#RemoveAllContexts-system.xml.UniqueId-">RemoveAllContexts</a></span>(<a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#RemoveContext-system.xml.UniqueId-system.xml.UniqueId-">RemoveContext</a></span>(<a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
              <a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;generation)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCache.html" title="interface in system.servicemodel.security.tokens">ISecurityContextSecurityTokenCache</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#ToISecurityContextSecurityTokenCache-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISecurityContextSecurityTokenCache</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCache.html" title="interface in system.servicemodel.security.tokens"><code>ISecurityContextSecurityTokenCache</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#TryAddContext-system.servicemodel.security.tokens.SecurityContextSecurityToken-">TryAddContext</a></span>(<a href="../../../../system/servicemodel/security/tokens/SecurityContextSecurityToken.html" title="class in system.servicemodel.security.tokens">SecurityContextSecurityToken</a>&nbsp;token)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCacheImplementation.html#UpdateContextCachingTime-system.servicemodel.security.tokens.SecurityContextSecurityToken-system.DateTime-">UpdateContextCachingTime</a></span>(<a href="../../../../system/servicemodel/security/tokens/SecurityContextSecurityToken.html" title="class in system.servicemodel.security.tokens">SecurityContextSecurityToken</a>&nbsp;context,
                         <a href="../../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;expirationTime)</code>&nbsp;</td>
@@ -434,6 +439,22 @@ implements <a href="../../../../system/servicemodel/security/tokens/ISecurityCon
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCache.html#ClearContexts--">ClearContexts</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCache.html" title="interface in system.servicemodel.security.tokens">ISecurityContextSecurityTokenCache</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetAllContexts-system.xml.UniqueId-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetAllContexts</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GetAllContexts(<a href="../../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId)
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCache.html#GetAllContexts-system.xml.UniqueId-">GetAllContexts</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/servicemodel/security/tokens/ISecurityContextSecurityTokenCache.html" title="interface in system.servicemodel.security.tokens">ISecurityContextSecurityTokenCache</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 </dl>

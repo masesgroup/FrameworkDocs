@@ -16,6 +16,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="GetType()">
 <meta name="keywords" content="GetTypes()">
+<meta name="keywords" content="getReferencedAssemblies()">
+<meta name="keywords" content="getTypeLoadErrors()">
 <meta name="keywords" content="getLocalAssembly()">
 <meta name="keywords" content="addTypeLoadErrorsChanged()">
 <meta name="keywords" content="removeTypeLoadErrorsChanged()">
@@ -34,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":17};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":17};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -228,27 +230,35 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#getLocalAssembly--">getLocalAssembly</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#getReferencedAssemblies--">getReferencedAssemblies</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#GetType-java.lang.String-">GetType</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#GetType-java.lang.String-boolean-">GetType</a></span>(java.lang.String&nbsp;name,
        boolean&nbsp;throwOnError)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#getTypeLoadErrors--">getTypeLoadErrors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#GetTypes--">GetTypes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#removeTypeLoadErrorsChanged-system.EventHandler-">removeTypeLoadErrorsChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#removeTypesChanged-system.EventHandler-">removeTypesChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html" title="interface in system.workflow.componentmodel.compiler">ITypeProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html#ToITypeProvider-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToITypeProvider</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/workflow/componentmodel/compiler/ITypeProvider.html" title="interface in system.workflow.componentmodel.compiler"><code>ITypeProvider</code></a>, a cast assert is made to check if types are compatible.</div>
@@ -442,6 +452,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 </dl>
 </li>
 </ul>
+<a name="getReferencedAssemblies--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReferencedAssemblies</h4>
+<pre><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getReferencedAssemblies()
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetType-java.lang.String-">
 <!--   -->
 </a>
@@ -465,6 +489,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <pre><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;GetType(java.lang.String&nbsp;name,
                 boolean&nbsp;throwOnError)
          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTypeLoadErrors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTypeLoadErrors</h4>
+<pre><a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getTypeLoadErrors()
+                         throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

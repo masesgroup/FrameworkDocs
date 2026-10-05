@@ -24,6 +24,7 @@
 <meta name="keywords" content="InstanceDynamicallyUpdated()">
 <meta name="keywords" content="ScheduleTypeLoaded()">
 <meta name="keywords" content="SetInitialActivityStatus()">
+<meta name="keywords" content="UpdateHandlerMethodsForActivity()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -37,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":17};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":17,"i16":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -302,6 +303,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/debugengine/IWorkflowDebugger.html#ToIWorkflowDebugger-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIWorkflowDebugger</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/workflow/runtime/debugengine/IWorkflowDebugger.html" title="interface in system.workflow.runtime.debugengine"><code>IWorkflowDebugger</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/debugengine/IWorkflowDebugger.html#UpdateHandlerMethodsForActivity-system.Guid-system.Guid-java.lang.String-system.collections.generic.List_1-">UpdateHandlerMethodsForActivity</a></span>(<a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;programId,
+                               <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;scheduleTypeId,
+                               java.lang.String&nbsp;activityQualifiedName,
+                               <a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;handlerMethods)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -631,7 +639,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <a name="ToIWorkflowDebugger-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>ToIWorkflowDebugger</h4>
 <pre>static&nbsp;<a href="../../../../system/workflow/runtime/debugengine/IWorkflowDebugger.html" title="interface in system.workflow.runtime.debugengine">IWorkflowDebugger</a>&nbsp;ToIWorkflowDebugger(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)
@@ -644,6 +652,23 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <dd><a href="../../../../system/workflow/runtime/debugengine/IWorkflowDebugger.html" title="interface in system.workflow.runtime.debugengine"><code>IWorkflowDebugger</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="UpdateHandlerMethodsForActivity-system.Guid-system.Guid-java.lang.String-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UpdateHandlerMethodsForActivity</h4>
+<pre>void&nbsp;UpdateHandlerMethodsForActivity(<a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;programId,
+                                     <a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;scheduleTypeId,
+                                     java.lang.String&nbsp;activityQualifiedName,
+                                     <a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;handlerMethods)
+                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

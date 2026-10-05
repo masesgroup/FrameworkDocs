@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetAllServices()">
+<meta name="keywords" content="GetLoadedWorkflows()">
 <meta name="keywords" content="GetService()">
 <meta name="keywords" content="CreateWorkflow()">
 <meta name="keywords" content="GetWorkflow()">
@@ -41,7 +43,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -263,75 +265,111 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-org.mases.jcobridge.netreflection.NetType-system.collections.generic.Dictionary_2-">CreateWorkflow</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
+              <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-org.mases.jcobridge.netreflection.NetType-system.collections.generic.Dictionary_2-system.Guid-">CreateWorkflow</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
+              <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues,
+              <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-system.xml.XmlReader-system.collections.generic.Dictionary_2-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader,
+              <a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;rulesReader,
+              <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-system.xml.XmlReader-system.collections.generic.Dictionary_2-system.Guid-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader,
+              <a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;rulesReader,
+              <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues,
+              <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetAllServices--">GetAllServices</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetAllServices-org.mases.jcobridge.netreflection.NetType-">GetAllServices</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getIsStarted--">getIsStarted</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetLoadedWorkflows--">GetLoadedWorkflows</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetService-org.mases.jcobridge.netreflection.NetType-">GetService</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetWorkflow-system.Guid-">GetWorkflow</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#RemoveService-org.mases.jcobridge.netreflection.NetObject-">RemoveService</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;service)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#StartRuntime--">StartRuntime</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#StopRuntime--">StopRuntime</a></span>()</code>&nbsp;</td>
 </tr>
@@ -842,6 +880,159 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="CreateWorkflow-org.mases.jcobridge.netreflection.NetType-system.collections.generic.Dictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateWorkflow</h4>
+<pre>public&nbsp;<a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a>&nbsp;CreateWorkflow(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
+                                       <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues)
+                                throws java.lang.Throwable,
+                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                       <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                       <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                       <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                       <a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a>,
+                                       <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                       <a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a>,
+                                       <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                       <a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
+                                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                       <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                       <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                       <a href="../../../system/workflow/componentmodel/compiler/WorkflowValidationFailedException.html" title="class in system.workflow.componentmodel.compiler">WorkflowValidationFailedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/workflow/componentmodel/compiler/WorkflowValidationFailedException.html" title="class in system.workflow.componentmodel.compiler">WorkflowValidationFailedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateWorkflow-org.mases.jcobridge.netreflection.NetType-system.collections.generic.Dictionary_2-system.Guid-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateWorkflow</h4>
+<pre>public&nbsp;<a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a>&nbsp;CreateWorkflow(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
+                                       <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues,
+                                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)
+                                throws java.lang.Throwable,
+                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                       <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                       <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                       <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                       <a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a>,
+                                       <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                       <a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a>,
+                                       <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
+                                       <a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                       <a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a>,
+                                       <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                       <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                       <a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+                                       <a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a>,
+                                       <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                       <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
+<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="CreateWorkflow-system.xml.XmlReader-">
 <!--   -->
 </a>
@@ -894,6 +1085,141 @@ implements java.lang.AutoCloseable</pre>
 </dl>
 </li>
 </ul>
+<a name="CreateWorkflow-system.xml.XmlReader-system.xml.XmlReader-system.collections.generic.Dictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateWorkflow</h4>
+<pre>public&nbsp;<a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a>&nbsp;CreateWorkflow(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader,
+                                       <a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;rulesReader,
+                                       <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues)
+                                throws java.lang.Throwable,
+                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                       <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                       <a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a>,
+                                       <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                       <a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a>,
+                                       <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                       <a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
+                                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                       <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                       <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                       <a href="../../../system/workflow/componentmodel/compiler/WorkflowValidationFailedException.html" title="class in system.workflow.componentmodel.compiler">WorkflowValidationFailedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/workflow/componentmodel/compiler/WorkflowValidationFailedException.html" title="class in system.workflow.componentmodel.compiler">WorkflowValidationFailedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="CreateWorkflow-system.xml.XmlReader-system.xml.XmlReader-system.collections.generic.Dictionary_2-system.Guid-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateWorkflow</h4>
+<pre>public&nbsp;<a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a>&nbsp;CreateWorkflow(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader,
+                                       <a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;rulesReader,
+                                       <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues,
+                                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)
+                                throws java.lang.Throwable,
+                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                       <a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                       <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                       <a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a>,
+                                       <a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a>,
+                                       <a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a>,
+                                       <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                       <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                       <a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
+                                       <a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a>,
+                                       <a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a>,
+                                       <a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
+                                       <a href="../../../system/io/IOException.html" title="class in system.io">IOException</a>,
+                                       <a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a>,
+                                       <a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a>,
+                                       <a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a>,
+                                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                       <a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/workflow/runtime/tracking/TrackingProfileDeserializationException.html" title="class in system.workflow.runtime.tracking">TrackingProfileDeserializationException</a></code></dd>
+<dd><code><a href="../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
+<dd><code><a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
+<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
+<dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
+<dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
+<dd><code><a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="Dispose--">
 <!--   -->
 </a>
@@ -943,6 +1269,54 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
 <dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetAllServices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetAllServices</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetAllServices()
+                                                                    throws java.lang.Throwable,
+                                                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                           <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetAllServices-org.mases.jcobridge.netreflection.NetType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetAllServices</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetAllServices(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -1053,6 +1427,30 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetLoadedWorkflows--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLoadedWorkflows</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetLoadedWorkflows()
+                                        throws java.lang.Throwable,
+                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

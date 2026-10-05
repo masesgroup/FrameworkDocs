@@ -18,6 +18,8 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getWantAuthenticationRequestsSigned()">
 <meta name="keywords" content="setWantAuthenticationRequestsSigned()">
+<meta name="keywords" content="getSingleSignOnServices()">
+<meta name="keywords" content="getSupportedAttributes()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -31,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -273,14 +275,22 @@ extends <a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.h
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/IdentityProviderSingleSignOnDescriptor.html#getSingleSignOnServices--">getSingleSignOnServices</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/IdentityProviderSingleSignOnDescriptor.html#getSupportedAttributes--">getSupportedAttributes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/IdentityProviderSingleSignOnDescriptor.html#getWantAuthenticationRequestsSigned--">getWantAuthenticationRequestsSigned</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/IdentityProviderSingleSignOnDescriptor.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/metadata/IdentityProviderSingleSignOnDescriptor.html#setWantAuthenticationRequestsSigned-boolean-">setWantAuthenticationRequestsSigned</a></span>(boolean&nbsp;WantAuthenticationRequestsSigned)</code>&nbsp;</td>
 </tr>
@@ -290,14 +300,14 @@ extends <a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.h
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.metadata.<a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html" title="class in system.identitymodel.metadata">SingleSignOnDescriptor</a></h3>
-<code><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getArtifactResolutionServices--">getArtifactResolutionServices</a></code></li>
+<code><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getArtifactResolutionServices--">getArtifactResolutionServices</a>, <a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getNameIdentifierFormats--">getNameIdentifierFormats</a>, <a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getSingleLogoutServices--">getSingleLogoutServices</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.identitymodel.metadata.RoleDescriptor">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.metadata.<a href="../../../system/identitymodel/metadata/RoleDescriptor.html" title="class in system.identitymodel.metadata">RoleDescriptor</a></h3>
-<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
+<code><a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getContacts--">getContacts</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getErrorUrl--">getErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getKeys--">getKeys</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getOrganization--">getOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getProtocolsSupported--">getProtocolsSupported</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#getValidUntil--">getValidUntil</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setErrorUrl-system.Uri-">setErrorUrl</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setOrganization-system.identitymodel.metadata.Organization-">setOrganization</a>, <a href="../../../system/identitymodel/metadata/RoleDescriptor.html#setValidUntil-system.DateTime-">setValidUntil</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -536,6 +546,34 @@ extends <a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.h
 <dd><code><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/identitymodel/metadata/SingleSignOnDescriptor.html" title="class in system.identitymodel.metadata">SingleSignOnDescriptor</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getSingleSignOnServices--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSingleSignOnServices</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getSingleSignOnServices()
+                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getSupportedAttributes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSupportedAttributes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getSupportedAttributes()
+                                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

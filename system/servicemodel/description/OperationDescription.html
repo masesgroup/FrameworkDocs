@@ -23,6 +23,9 @@
 <meta name="keywords" content="getIsOneWay()">
 <meta name="keywords" content="getIsTerminating()">
 <meta name="keywords" content="setIsTerminating()">
+<meta name="keywords" content="getBehaviors()">
+<meta name="keywords" content="getKnownTypes()">
+<meta name="keywords" content="getOperationBehaviors()">
 <meta name="keywords" content="getProtectionLevel()">
 <meta name="keywords" content="setProtectionLevel()">
 <meta name="keywords" content="getBeginMethod()">
@@ -51,7 +54,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -261,120 +264,132 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getBeginMethod--">getBeginMethod</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/KeyedByTypeCollection_1.html" title="class in system.collections.generic">KeyedByTypeCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getBehaviors--">getBehaviors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/description/ContractDescription.html" title="class in system.servicemodel.description">ContractDescription</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getDeclaringContract--">getDeclaringContract</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getEndMethod--">getEndMethod</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/description/FaultDescriptionCollection.html" title="class in system.servicemodel.description">FaultDescriptionCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getFaults--">getFaults</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getHasProtectionLevel--">getHasProtectionLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getIsInitiating--">getIsInitiating</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getIsOneWay--">getIsOneWay</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getIsTerminating--">getIsTerminating</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getKnownTypes--">getKnownTypes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/description/MessageDescriptionCollection.html" title="class in system.servicemodel.description">MessageDescriptionCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getMessages--">getMessages</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/KeyedCollection_2.html" title="class in system.collections.objectmodel">KeyedCollection_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getOperationBehaviors--">getOperationBehaviors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/security/ProtectionLevel.html" title="class in system.net.security">ProtectionLevel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getProtectionLevel--">getProtectionLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getSyncMethod--">getSyncMethod</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#getTaskMethod--">getTaskMethod</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setBeginMethod-system.reflection.MethodInfo-">setBeginMethod</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;BeginMethod)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setDeclaringContract-system.servicemodel.description.ContractDescription-">setDeclaringContract</a></span>(<a href="../../../system/servicemodel/description/ContractDescription.html" title="class in system.servicemodel.description">ContractDescription</a>&nbsp;DeclaringContract)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setEndMethod-system.reflection.MethodInfo-">setEndMethod</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;EndMethod)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setIsInitiating-boolean-">setIsInitiating</a></span>(boolean&nbsp;IsInitiating)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setIsTerminating-boolean-">setIsTerminating</a></span>(boolean&nbsp;IsTerminating)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setProtectionLevel-system.net.security.ProtectionLevel-">setProtectionLevel</a></span>(<a href="../../../system/net/security/ProtectionLevel.html" title="class in system.net.security">ProtectionLevel</a>&nbsp;ProtectionLevel)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setSyncMethod-system.reflection.MethodInfo-">setSyncMethod</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;SyncMethod)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#setTaskMethod-system.reflection.MethodInfo-">setTaskMethod</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;TaskMethod)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/OperationDescription.html#ShouldSerializeProtectionLevel--">ShouldSerializeProtectionLevel</a></span>()</code>&nbsp;</td>
 </tr>
@@ -568,6 +583,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getBeginMethod</h4>
 <pre>public&nbsp;<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;getBeginMethod()
                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getBehaviors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getBehaviors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/KeyedByTypeCollection_1.html" title="class in system.collections.generic">KeyedByTypeCollection_1</a>&nbsp;getBehaviors()
+                                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -768,6 +797,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getKnownTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getKnownTypes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getKnownTypes()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getMessages--">
 <!--   -->
 </a>
@@ -809,6 +852,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOperationBehaviors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOperationBehaviors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/KeyedCollection_2.html" title="class in system.collections.objectmodel">KeyedCollection_2</a>&nbsp;getOperationBehaviors()
+                                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

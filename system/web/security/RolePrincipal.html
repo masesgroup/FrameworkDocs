@@ -139,13 +139,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">RolePrincipal</span>
-extends <a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>
-implements <a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></pre>
+extends <a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></pre>
 <div class="block">The base .NET class managing System.Web.Security.RolePrincipal, System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a.
  <p>
  
@@ -353,7 +352,7 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.security.claims.<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></h3>
-<code><a href="../../../system/security/claims/ClaimsPrincipal.html#AddIdentity-system.security.claims.ClaimsIdentity-">AddIdentity</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#Clone--">Clone</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#FindFirst-java.lang.String-">FindFirst</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getCurrent--">getCurrent</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getIdentity--">getIdentity</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#HasClaim-java.lang.String-java.lang.String-">HasClaim</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#WriteTo-system.io.BinaryWriter-">WriteTo</a></code></li>
+<code><a href="../../../system/security/claims/ClaimsPrincipal.html#AddIdentities-system.collections.generic.IEnumerable_1-">AddIdentities</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#AddIdentity-system.security.claims.ClaimsIdentity-">AddIdentity</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#Clone--">Clone</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#FindAll-system.Predicate_1-">FindAll</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#FindAll-java.lang.String-">FindAll</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#FindFirst-system.Predicate_1-">FindFirst</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#FindFirst-java.lang.String-">FindFirst</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getClaims--">getClaims</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getClaimsPrincipalSelector--">getClaimsPrincipalSelector</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getCurrent--">getCurrent</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getIdentities--">getIdentities</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getIdentity--">getIdentity</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#getPrimaryIdentitySelector--">getPrimaryIdentitySelector</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#HasClaim-system.Predicate_1-">HasClaim</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#HasClaim-java.lang.String-java.lang.String-">HasClaim</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#setClaimsPrincipalSelector-system.Func_1-">setClaimsPrincipalSelector</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#setPrimaryIdentitySelector-system.Func_2-">setPrimaryIdentitySelector</a>, <a href="../../../system/security/claims/ClaimsPrincipal.html#WriteTo-system.io.BinaryWriter-">WriteTo</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -368,13 +367,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.runtime.serialization.ISerializable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.runtime.serialization.<a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></h3>
-<code><a href="../../../system/runtime/serialization/ISerializable.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a>, <a href="../../../system/runtime/serialization/ISerializable.html#ToISerializable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToISerializable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -844,8 +836,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -865,8 +855,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -886,8 +874,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -907,8 +893,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -929,8 +913,6 @@ implements <a href="../../../system/runtime/serialization/ISerializable.html" ti
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/runtime/serialization/ISerializable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/runtime/serialization/ISerializable.html" title="interface in system.runtime.serialization">ISerializable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/claims/ClaimsPrincipal.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

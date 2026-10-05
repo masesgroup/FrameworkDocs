@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetLocation()">
 <meta name="keywords" content="GetValue()">
 <meta name="keywords" content="SetValue()">
 <meta name="keywords" content="getDataContext()">
@@ -34,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -61,7 +62,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../system/activities/ActivityBuilder.html" title="class in system.activities"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../system/activities/ActivityBuilder_1.html" title="class in system.activities"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../system/activities/ActivityDelegate.html" title="class in system.activities"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -278,25 +279,49 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#GetValue-system.activities.Argument-">GetValue</a></span>(<a href="../../system/activities/Argument.html" title="class in system.activities">Argument</a>&nbsp;argument)</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../system/activities/Location_1.html" title="class in system.activities">Location_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#GetLocation-system.activities.LocationReference-">GetLocation</a></span>(<a href="../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&nbsp;locationReference)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#GetValue-system.activities.RuntimeArgument-">GetValue</a></span>(<a href="../../system/activities/RuntimeArgument.html" title="class in system.activities">RuntimeArgument</a>&nbsp;runtimeArgument)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#GetValue-system.activities.Argument-">GetValue</a></span>(<a href="../../system/activities/Argument.html" title="class in system.activities">Argument</a>&nbsp;argument)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#GetValue-system.activities.RuntimeArgument-">GetValue</a></span>(<a href="../../system/activities/RuntimeArgument.html" title="class in system.activities">RuntimeArgument</a>&nbsp;runtimeArgument)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../system/Guid.html" title="class in system">Guid</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#getWorkflowInstanceId--">getWorkflowInstanceId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#SetValue-system.activities.Argument-org.mases.jcobridge.netreflection.NetObject-">SetValue</a></span>(<a href="../../system/activities/Argument.html" title="class in system.activities">Argument</a>&nbsp;argument,
         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#SetValue-system.activities.InArgument_1-T-">SetValue</a></span>(<a href="../../system/activities/InArgument_1.html" title="class in system.activities">InArgument_1</a>&nbsp;argument,
+        T&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#SetValue-system.activities.InOutArgument_1-T-">SetValue</a></span>(<a href="../../system/activities/InOutArgument_1.html" title="class in system.activities">InOutArgument_1</a>&nbsp;argument,
+        T&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#SetValue-system.activities.LocationReference-T-">SetValue</a></span>(<a href="../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&nbsp;locationReference,
+        T&nbsp;value)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityContext.html#SetValue-system.activities.OutArgument_1-T-">SetValue</a></span>(<a href="../../system/activities/OutArgument_1.html" title="class in system.activities">OutArgument_1</a>&nbsp;argument,
+        T&nbsp;value)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -607,6 +632,40 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </dl>
 </li>
 </ul>
+<a name="GetLocation-system.activities.LocationReference-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetLocation</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../system/activities/Location_1.html" title="class in system.activities">Location_1</a>&nbsp;GetLocation(<a href="../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&nbsp;locationReference)
+                                                       throws java.lang.Throwable,
+                                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                              <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                              <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                              <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                              <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetValue-system.activities.Argument-">
 <!--   -->
 </a>
@@ -725,7 +784,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <a name="SetValue-system.activities.Argument-org.mases.jcobridge.netreflection.NetObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>SetValue</h4>
 <pre>public&nbsp;void&nbsp;SetValue(<a href="../../system/activities/Argument.html" title="class in system.activities">Argument</a>&nbsp;argument,
@@ -741,6 +800,154 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                      <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                      <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetValue-system.activities.InArgument_1-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="SetValue-system.activities.InArgument_1-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetValue</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;SetValue(<a href="../../system/activities/InArgument_1.html" title="class in system.activities">InArgument_1</a>&nbsp;argument,
+                                                     T&nbsp;value)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                     <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                     <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetValue-system.activities.InOutArgument_1-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="SetValue-system.activities.InOutArgument_1-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetValue</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;SetValue(<a href="../../system/activities/InOutArgument_1.html" title="class in system.activities">InOutArgument_1</a>&nbsp;argument,
+                                                     T&nbsp;value)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                     <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                     <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetValue-system.activities.LocationReference-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="SetValue-system.activities.LocationReference-T-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetValue</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;SetValue(<a href="../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&nbsp;locationReference,
+                                                     T&nbsp;value)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                     <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                     <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetValue-system.activities.OutArgument_1-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="SetValue-system.activities.OutArgument_1-T-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SetValue</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;SetValue(<a href="../../system/activities/OutArgument_1.html" title="class in system.activities">OutArgument_1</a>&nbsp;argument,
+                                                     T&nbsp;value)
+                                              throws java.lang.Throwable,
+                                                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                     <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                     <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                     <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                     <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                     <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                     <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                     <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -781,7 +988,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../system/activities/ActivityBuilder.html" title="class in system.activities"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../system/activities/ActivityBuilder_1.html" title="class in system.activities"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../system/activities/ActivityDelegate.html" title="class in system.activities"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

@@ -19,6 +19,7 @@
 <meta name="keywords" content="GetIssuerName()">
 <meta name="keywords" content="AddTrustedIssuer()">
 <meta name="keywords" content="LoadCustomConfiguration()">
+<meta name="keywords" content="getConfiguredTrustedIssuers()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -244,44 +245,48 @@ extends <a href="../../../system/identitymodel/tokens/IssuerNameRegistry.html" t
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#getConfiguredTrustedIssuers--">getConfiguredTrustedIssuers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#GetIssuerName-system.identitymodel.tokens.SecurityToken-">GetIssuerName</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;securityToken)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#LoadCustomConfiguration-system.xml.XmlNodeList-">LoadCustomConfiguration</a></span>(<a href="../../../system/xml/XmlNodeList.html" title="class in system.xml">XmlNodeList</a>&nbsp;customConfiguration)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -485,6 +490,20 @@ extends <a href="../../../system/identitymodel/tokens/IssuerNameRegistry.html" t
 <dd><a href="../../../system/identitymodel/tokens/ConfigurationBasedIssuerNameRegistry.html" title="class in system.identitymodel.tokens"><code>ConfigurationBasedIssuerNameRegistry</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getConfiguredTrustedIssuers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getConfiguredTrustedIssuers</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getConfiguredTrustedIssuers()
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

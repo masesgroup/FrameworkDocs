@@ -230,6 +230,19 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                     java.lang.String&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-java.lang.String-system.Nullable_1-system.Nullable_1-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
+                    java.lang.String&nbsp;context,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
+                    java.lang.String&nbsp;context,
+                    java.lang.String&nbsp;endpointId,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-system.TimeSpan-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
                     <a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;lifetime)</code>&nbsp;</td>
 </tr>
@@ -243,6 +256,15 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                     <a href="../../../system/identitymodel/tokens/SymmetricSecurityKey.html" title="class in system.identitymodel.tokens">SymmetricSecurityKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-system.xml.UniqueId-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-system.identitymodel.tokens.SymmetricSecurityKey-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
+                    <a href="../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
+                    java.lang.String&nbsp;context,
+                    java.lang.String&nbsp;endpointId,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo,
+                    <a href="../../../system/identitymodel/tokens/SymmetricSecurityKey.html" title="class in system.identitymodel.tokens">SymmetricSecurityKey</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-system.xml.UniqueId-java.lang.String-java.lang.String-system.TimeSpan-system.identitymodel.tokens.SymmetricSecurityKey-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
                     <a href="../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
                     java.lang.String&nbsp;context,
@@ -250,7 +272,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                     <a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;lifetime,
                     <a href="../../../system/identitymodel/tokens/SymmetricSecurityKey.html" title="class in system.identitymodel.tokens">SymmetricSecurityKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-java.lang.Object-">SessionSecurityToken</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -369,7 +391,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.tokens.<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a></h3>
-<code><a href="../../../system/identitymodel/tokens/SecurityToken.html#getId--">getId</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#getValidFrom--">getValidFrom</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#getValidTo--">getValidTo</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#MatchesKeyIdentifierClause-system.identitymodel.tokens.SecurityKeyIdentifierClause-">MatchesKeyIdentifierClause</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#ResolveKeyIdentifierClause-system.identitymodel.tokens.SecurityKeyIdentifierClause-">ResolveKeyIdentifierClause</a></code></li>
+<code><a href="../../../system/identitymodel/tokens/SecurityToken.html#CanCreateKeyIdentifierClause--">CanCreateKeyIdentifierClause</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#getId--">getId</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#getSecurityKeys--">getSecurityKeys</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#getValidFrom--">getValidFrom</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#getValidTo--">getValidTo</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#MatchesKeyIdentifierClause-system.identitymodel.tokens.SecurityKeyIdentifierClause-">MatchesKeyIdentifierClause</a>, <a href="../../../system/identitymodel/tokens/SecurityToken.html#ResolveKeyIdentifierClause-system.identitymodel.tokens.SecurityKeyIdentifierClause-">ResolveKeyIdentifierClause</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -560,6 +582,81 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 </dl>
 </li>
 </ul>
+<a name="SessionSecurityToken-system.security.claims.ClaimsPrincipal-java.lang.String-system.Nullable_1-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SessionSecurityToken</h4>
+<pre>public&nbsp;SessionSecurityToken(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
+                            java.lang.String&nbsp;context,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)
+                     throws java.lang.Throwable,
+                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                            <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                            <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SessionSecurityToken-system.security.claims.ClaimsPrincipal-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SessionSecurityToken</h4>
+<pre>public&nbsp;SessionSecurityToken(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
+                            java.lang.String&nbsp;context,
+                            java.lang.String&nbsp;endpointId,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)
+                     throws java.lang.Throwable,
+                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                            <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                            <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="SessionSecurityToken-system.security.claims.ClaimsPrincipal-system.TimeSpan-">
 <!--   -->
 </a>
@@ -662,6 +759,52 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SessionSecurityToken-system.security.claims.ClaimsPrincipal-system.xml.UniqueId-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-system.identitymodel.tokens.SymmetricSecurityKey-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SessionSecurityToken</h4>
+<pre>public&nbsp;SessionSecurityToken(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
+                            <a href="../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
+                            java.lang.String&nbsp;context,
+                            java.lang.String&nbsp;endpointId,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo,
+                            <a href="../../../system/identitymodel/tokens/SymmetricSecurityKey.html" title="class in system.identitymodel.tokens">SymmetricSecurityKey</a>&nbsp;key)
+                     throws java.lang.Throwable,
+                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                            <a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a>,
+                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                            <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                            <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                            <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                            <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ApplicationException.html" title="class in system">ApplicationException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
 </dl>
 </li>
 </ul>

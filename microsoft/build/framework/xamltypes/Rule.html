@@ -17,6 +17,9 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetProperty()">
+<meta name="keywords" content="GetSchemaObjects()">
+<meta name="keywords" content="GetSchemaObjectTypes()">
+<meta name="keywords" content="GetPropertiesInCategory()">
 <meta name="keywords" content="GetPropertiesByCategory()">
 <meta name="keywords" content="BeginInit()">
 <meta name="keywords" content="EndInit()">
@@ -32,6 +35,13 @@
 <meta name="keywords" content="setDataSource()">
 <meta name="keywords" content="getOverrideMode()">
 <meta name="keywords" content="setOverrideMode()">
+<meta name="keywords" content="getMetadata()">
+<meta name="keywords" content="setMetadata()">
+<meta name="keywords" content="getProperties()">
+<meta name="keywords" content="setProperties()">
+<meta name="keywords" content="getCategories()">
+<meta name="keywords" content="setCategories()">
+<meta name="keywords" content="getEvaluatedCategories()">
 <meta name="keywords" content="getAdditionalInputs()">
 <meta name="keywords" content="setAdditionalInputs()">
 <meta name="keywords" content="getCommandLine()">
@@ -71,7 +81,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -290,192 +300,232 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getAdditionalInputs--">getAdditionalInputs</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getCategories--">getCategories</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getCommandLine--">getCommandLine</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../microsoft/build/framework/xamltypes/DataSource.html" title="class in microsoft.build.framework.xamltypes">DataSource</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getDataSource--">getDataSource</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getDescription--">getDescription</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getDisplayName--">getDisplayName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getExecutionDescription--">getExecutionDescription</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getFileExtension--">getFileExtension</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getEvaluatedCategories--">getEvaluatedCategories</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getHelpString--">getHelpString</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getExecutionDescription--">getExecutionDescription</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getFileExtension--">getFileExtension</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getHelpString--">getHelpString</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getMetadata--">getMetadata</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getOrder--">getOrder</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getOutputs--">getOutputs</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../microsoft/build/framework/xamltypes/RuleOverrideMode.html" title="class in microsoft.build.framework.xamltypes">RuleOverrideMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getOverrideMode--">getOverrideMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getPageTemplate--">getPageTemplate</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/collections/specialized/OrderedDictionary.html" title="class in system.collections.specialized">OrderedDictionary</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#GetPropertiesByCategory--">GetPropertiesByCategory</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#GetPropertiesInCategory-java.lang.String-">GetPropertiesInCategory</a></span>(java.lang.String&nbsp;categoryName)</code>&nbsp;</td>
+</tr>
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html" title="class in microsoft.build.framework.xamltypes">BaseProperty</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#GetProperty-java.lang.String-">GetProperty</a></span>(java.lang.String&nbsp;propertyName)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getPropertyPagesHidden--">getPropertyPagesHidden</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#GetSchemaObjects-org.mases.jcobridge.netreflection.NetType-">GetSchemaObjects</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#GetSchemaObjectTypes--">GetSchemaObjectTypes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getSeparator--">getSeparator</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getShowOnlyRuleProperties--">getShowOnlyRuleProperties</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getSupportsFileBatching--">getSupportsFileBatching</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getSwitchPrefix--">getSwitchPrefix</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#getToolName--">getToolName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setAdditionalInputs-java.lang.String-">setAdditionalInputs</a></span>(java.lang.String&nbsp;AdditionalInputs)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setCommandLine-java.lang.String-">setCommandLine</a></span>(java.lang.String&nbsp;CommandLine)</code>&nbsp;</td>
-</tr>
-<tr id="i31" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setDataSource-microsoft.build.framework.xamltypes.DataSource-">setDataSource</a></span>(<a href="../../../../microsoft/build/framework/xamltypes/DataSource.html" title="class in microsoft.build.framework.xamltypes">DataSource</a>&nbsp;DataSource)</code>&nbsp;</td>
-</tr>
-<tr id="i32" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>&nbsp;</td>
-</tr>
-<tr id="i33" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setDisplayName-java.lang.String-">setDisplayName</a></span>(java.lang.String&nbsp;DisplayName)</code>&nbsp;</td>
-</tr>
-<tr id="i34" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setExecutionDescription-java.lang.String-">setExecutionDescription</a></span>(java.lang.String&nbsp;ExecutionDescription)</code>&nbsp;</td>
-</tr>
-<tr id="i35" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setFileExtension-java.lang.String-">setFileExtension</a></span>(java.lang.String&nbsp;FileExtension)</code>&nbsp;</td>
-</tr>
-<tr id="i36" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setHelpString-java.lang.String-">setHelpString</a></span>(java.lang.String&nbsp;HelpString)</code>&nbsp;</td>
-</tr>
 <tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setCategories-system.collections.generic.List_1-">setCategories</a></span>(<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;Categories)</code>&nbsp;</td>
 </tr>
 <tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setCommandLine-java.lang.String-">setCommandLine</a></span>(java.lang.String&nbsp;CommandLine)</code>&nbsp;</td>
 </tr>
 <tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setOrder-int-">setOrder</a></span>(int&nbsp;Order)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setDataSource-microsoft.build.framework.xamltypes.DataSource-">setDataSource</a></span>(<a href="../../../../microsoft/build/framework/xamltypes/DataSource.html" title="class in microsoft.build.framework.xamltypes">DataSource</a>&nbsp;DataSource)</code>&nbsp;</td>
 </tr>
 <tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setOutputs-java.lang.String-">setOutputs</a></span>(java.lang.String&nbsp;Outputs)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>&nbsp;</td>
 </tr>
 <tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setOverrideMode-microsoft.build.framework.xamltypes.RuleOverrideMode-">setOverrideMode</a></span>(<a href="../../../../microsoft/build/framework/xamltypes/RuleOverrideMode.html" title="class in microsoft.build.framework.xamltypes">RuleOverrideMode</a>&nbsp;OverrideMode)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setDisplayName-java.lang.String-">setDisplayName</a></span>(java.lang.String&nbsp;DisplayName)</code>&nbsp;</td>
 </tr>
 <tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setPageTemplate-java.lang.String-">setPageTemplate</a></span>(java.lang.String&nbsp;PageTemplate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setExecutionDescription-java.lang.String-">setExecutionDescription</a></span>(java.lang.String&nbsp;ExecutionDescription)</code>&nbsp;</td>
 </tr>
 <tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setPropertyPagesHidden-boolean-">setPropertyPagesHidden</a></span>(boolean&nbsp;PropertyPagesHidden)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setFileExtension-java.lang.String-">setFileExtension</a></span>(java.lang.String&nbsp;FileExtension)</code>&nbsp;</td>
 </tr>
 <tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setSeparator-java.lang.String-">setSeparator</a></span>(java.lang.String&nbsp;Separator)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setHelpString-java.lang.String-">setHelpString</a></span>(java.lang.String&nbsp;HelpString)</code>&nbsp;</td>
 </tr>
 <tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setShowOnlyRuleProperties-boolean-">setShowOnlyRuleProperties</a></span>(boolean&nbsp;ShowOnlyRuleProperties)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setSupportsFileBatching-boolean-">setSupportsFileBatching</a></span>(boolean&nbsp;SupportsFileBatching)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setMetadata-system.collections.generic.Dictionary_2-">setMetadata</a></span>(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;Metadata)</code>&nbsp;</td>
 </tr>
 <tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setSwitchPrefix-java.lang.String-">setSwitchPrefix</a></span>(java.lang.String&nbsp;SwitchPrefix)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
 </tr>
 <tr id="i48" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setOrder-int-">setOrder</a></span>(int&nbsp;Order)</code>&nbsp;</td>
+</tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setOutputs-java.lang.String-">setOutputs</a></span>(java.lang.String&nbsp;Outputs)</code>&nbsp;</td>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setOverrideMode-microsoft.build.framework.xamltypes.RuleOverrideMode-">setOverrideMode</a></span>(<a href="../../../../microsoft/build/framework/xamltypes/RuleOverrideMode.html" title="class in microsoft.build.framework.xamltypes">RuleOverrideMode</a>&nbsp;OverrideMode)</code>&nbsp;</td>
+</tr>
+<tr id="i51" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setPageTemplate-java.lang.String-">setPageTemplate</a></span>(java.lang.String&nbsp;PageTemplate)</code>&nbsp;</td>
+</tr>
+<tr id="i52" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setProperties-system.collections.generic.List_1-">setProperties</a></span>(<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;Properties)</code>&nbsp;</td>
+</tr>
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setPropertyPagesHidden-boolean-">setPropertyPagesHidden</a></span>(boolean&nbsp;PropertyPagesHidden)</code>&nbsp;</td>
+</tr>
+<tr id="i54" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setSeparator-java.lang.String-">setSeparator</a></span>(java.lang.String&nbsp;Separator)</code>&nbsp;</td>
+</tr>
+<tr id="i55" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setShowOnlyRuleProperties-boolean-">setShowOnlyRuleProperties</a></span>(boolean&nbsp;ShowOnlyRuleProperties)</code>&nbsp;</td>
+</tr>
+<tr id="i56" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setSupportsFileBatching-boolean-">setSupportsFileBatching</a></span>(boolean&nbsp;SupportsFileBatching)</code>&nbsp;</td>
+</tr>
+<tr id="i57" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setSwitchPrefix-java.lang.String-">setSwitchPrefix</a></span>(java.lang.String&nbsp;SwitchPrefix)</code>&nbsp;</td>
+</tr>
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/Rule.html#setToolName-java.lang.String-">setToolName</a></span>(java.lang.String&nbsp;ToolName)</code>&nbsp;</td>
 </tr>
@@ -672,6 +722,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 </dl>
 </li>
 </ul>
+<a name="getCategories--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getCategories</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;getCategories()
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getCommandLine--">
 <!--   -->
 </a>
@@ -725,6 +789,40 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getEvaluatedCategories--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEvaluatedCategories</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;getEvaluatedCategories()
+                              throws java.lang.Throwable,
+                                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                     <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                     <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                     <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                     <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                     <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                     <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                     <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                     <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -866,6 +964,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 </dl>
 </li>
 </ul>
+<a name="getMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMetadata</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getMetadata()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getName--">
 <!--   -->
 </a>
@@ -936,6 +1048,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 </dl>
 </li>
 </ul>
+<a name="getProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;getProperties()
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetPropertiesByCategory--">
 <!--   -->
 </a>
@@ -954,6 +1080,40 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
                                                  <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                  <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                  <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetPropertiesInCategory-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetPropertiesInCategory</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetPropertiesInCategory(java.lang.String&nbsp;categoryName)
+                                throws java.lang.Throwable,
+                                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                       <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                       <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                       <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                       <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                       <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                       <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1000,6 +1160,34 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 <h4>getPropertyPagesHidden</h4>
 <pre>public&nbsp;boolean&nbsp;getPropertyPagesHidden()
                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetSchemaObjects-org.mases.jcobridge.netreflection.NetType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetSchemaObjects</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetSchemaObjects(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetSchemaObjectTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetSchemaObjectTypes</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetSchemaObjectTypes()
+                                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1084,6 +1272,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 <h4>setAdditionalInputs</h4>
 <pre>public&nbsp;void&nbsp;setAdditionalInputs(java.lang.String&nbsp;AdditionalInputs)
                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setCategories-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setCategories</h4>
+<pre>public&nbsp;void&nbsp;setCategories(<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;Categories)
+                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1201,6 +1403,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 </dl>
 </li>
 </ul>
+<a name="setMetadata-system.collections.generic.Dictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setMetadata</h4>
+<pre>public&nbsp;void&nbsp;setMetadata(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;Metadata)
+                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setName-java.lang.String-">
 <!--   -->
 </a>
@@ -1265,6 +1481,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/RuleSchema.html
 <h4>setPageTemplate</h4>
 <pre>public&nbsp;void&nbsp;setPageTemplate(java.lang.String&nbsp;PageTemplate)
                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setProperties-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setProperties</h4>
+<pre>public&nbsp;void&nbsp;setProperties(<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;Properties)
+                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

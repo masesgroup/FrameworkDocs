@@ -20,6 +20,7 @@
 <meta name="keywords" content="Intersects()">
 <meta name="keywords" content="SpatialEquals()">
 <meta name="keywords" content="AsBinary()">
+<meta name="keywords" content="Buffer()">
 <meta name="keywords" content="Difference()">
 <meta name="keywords" content="ElementAt()">
 <meta name="keywords" content="FromBinary()">
@@ -43,6 +44,7 @@
 <meta name="keywords" content="PolygonFromText()">
 <meta name="keywords" content="SymmetricDifference()">
 <meta name="keywords" content="Union()">
+<meta name="keywords" content="Distance()">
 <meta name="keywords" content="AsGml()">
 <meta name="keywords" content="AsText()">
 <meta name="keywords" content="getIsEmpty()">
@@ -53,6 +55,15 @@
 <meta name="keywords" content="getStartPoint()">
 <meta name="keywords" content="getWellKnownValue()">
 <meta name="keywords" content="setWellKnownValue()">
+<meta name="keywords" content="getIsClosed()">
+<meta name="keywords" content="getArea()">
+<meta name="keywords" content="getElevation()">
+<meta name="keywords" content="getLatitude()">
+<meta name="keywords" content="getLength()">
+<meta name="keywords" content="getLongitude()">
+<meta name="keywords" content="getMeasure()">
+<meta name="keywords" content="getElementCount()">
+<meta name="keywords" content="getPointCount()">
 <meta name="keywords" content="getProviderValue()">
 <meta name="keywords" content="getSpatialTypeName()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -68,7 +79,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":10,"i19":9,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":9,"i35":9,"i36":9,"i37":9,"i38":9,"i39":9,"i40":9,"i41":9,"i42":9,"i43":9,"i44":9,"i45":9,"i46":10,"i47":9,"i48":9,"i49":9,"i50":9,"i51":9,"i52":9,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":10,"i21":10,"i22":9,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":9,"i46":9,"i47":9,"i48":9,"i49":9,"i50":9,"i51":9,"i52":9,"i53":9,"i54":9,"i55":9,"i56":9,"i57":10,"i58":9,"i59":9,"i60":9,"i61":9,"i62":9,"i63":9,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -276,259 +287,303 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#AsText--">AsText</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Buffer-system.Nullable_1-">Buffer</a></span>(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;distance)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial"><code>DbGeography</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Difference-system.data.spatial.DbGeography-">Difference</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Disjoint-system.data.spatial.DbGeography-">Disjoint</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Distance-system.data.spatial.DbGeography-">Distance</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#ElementAt-int-">ElementAt</a></span>(int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromBinary-byte:A-">FromBinary</a></span>(byte[]&nbsp;wellKnownBinary)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromBinary-byte:A-int-">FromBinary</a></span>(byte[]&nbsp;wellKnownBinary,
           int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromBinary-org.mases.jcobridge.netreflection.JCORefOut-">FromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">FromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
           int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromGml-java.lang.String-">FromGml</a></span>(java.lang.String&nbsp;geographyMarkup)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromGml-java.lang.String-int-">FromGml</a></span>(java.lang.String&nbsp;geographyMarkup,
        int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromText-java.lang.String-">FromText</a></span>(java.lang.String&nbsp;wellKnownText)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#FromText-java.lang.String-int-">FromText</a></span>(java.lang.String&nbsp;wellKnownText,
         int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#GeographyCollectionFromBinary-byte:A-int-">GeographyCollectionFromBinary</a></span>(byte[]&nbsp;geographyCollectionWellKnownBinary,
                              int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#GeographyCollectionFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">GeographyCollectionFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
                              int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#GeographyCollectionFromText-java.lang.String-int-">GeographyCollectionFromText</a></span>(java.lang.String&nbsp;geographyCollectionWellKnownText,
                            int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getArea--">getArea</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getCoordinateSystemId--">getCoordinateSystemId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getDefaultCoordinateSystemId--">getDefaultCoordinateSystemId</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getDimension--">getDimension</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getElementCount--">getElementCount</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getElevation--">getElevation</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getEndPoint--">getEndPoint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getIsClosed--">getIsClosed</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getIsEmpty--">getIsEmpty</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i34" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getLatitude--">getLatitude</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getLength--">getLength</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getLongitude--">getLongitude</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getMeasure--">getMeasure</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getPointCount--">getPointCount</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getProviderValue--">getProviderValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getSpatialTypeName--">getSpatialTypeName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getStartPoint--">getStartPoint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeographyWellKnownValue.html" title="class in system.data.spatial">DbGeographyWellKnownValue</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#getWellKnownValue--">getWellKnownValue</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Intersection-system.data.spatial.DbGeography-">Intersection</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Intersects-system.data.spatial.DbGeography-">Intersects</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#LineFromBinary-byte:A-int-">LineFromBinary</a></span>(byte[]&nbsp;lineWellKnownBinary,
               int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#LineFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">LineFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
               int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#LineFromText-java.lang.String-int-">LineFromText</a></span>(java.lang.String&nbsp;lineWellKnownText,
             int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiLineFromBinary-byte:A-int-">MultiLineFromBinary</a></span>(byte[]&nbsp;multiLineWellKnownBinary,
                    int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiLineFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">MultiLineFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
                    int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiLineFromText-java.lang.String-int-">MultiLineFromText</a></span>(java.lang.String&nbsp;multiLineWellKnownText,
                  int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiPointFromBinary-byte:A-int-">MultiPointFromBinary</a></span>(byte[]&nbsp;multiPointWellKnownBinary,
                     int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiPointFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">MultiPointFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
                     int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiPointFromText-java.lang.String-int-">MultiPointFromText</a></span>(java.lang.String&nbsp;multiPointWellKnownText,
                   int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiPolygonFromBinary-byte:A-int-">MultiPolygonFromBinary</a></span>(byte[]&nbsp;multiPolygonWellKnownBinary,
                       int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiPolygonFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">MultiPolygonFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
                       int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#MultiPolygonFromText-java.lang.String-int-">MultiPolygonFromText</a></span>(java.lang.String&nbsp;multiPolygonWellKnownText,
                     int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PointAt-int-">PointAt</a></span>(int&nbsp;index)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PointFromBinary-byte:A-int-">PointFromBinary</a></span>(byte[]&nbsp;pointWellKnownBinary,
                int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PointFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">PointFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
                int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PointFromText-java.lang.String-int-">PointFromText</a></span>(java.lang.String&nbsp;pointWellKnownText,
              int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PolygonFromBinary-byte:A-int-">PolygonFromBinary</a></span>(byte[]&nbsp;polygonWellKnownBinary,
                  int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PolygonFromBinary-org.mases.jcobridge.netreflection.JCORefOut-int-">PolygonFromBinary</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
                  int&nbsp;dupParam1)</code>&nbsp;</td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#PolygonFromText-java.lang.String-int-">PolygonFromText</a></span>(java.lang.String&nbsp;polygonWellKnownText,
                int&nbsp;coordinateSystemId)</code>&nbsp;</td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#setWellKnownValue-system.data.spatial.DbGeographyWellKnownValue-">setWellKnownValue</a></span>(<a href="../../../system/data/spatial/DbGeographyWellKnownValue.html" title="class in system.data.spatial">DbGeographyWellKnownValue</a>&nbsp;WellKnownValue)</code>&nbsp;</td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#SpatialEquals-system.data.spatial.DbGeography-">SpatialEquals</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#SymmetricDifference-system.data.spatial.DbGeography-">SymmetricDifference</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/spatial/DbGeography.html#Union-system.data.spatial.DbGeography-">Union</a></span>(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)</code>&nbsp;</td>
 </tr>
@@ -700,6 +755,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="Buffer-system.Nullable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Buffer</h4>
+<pre>public&nbsp;<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;Buffer(<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;distance)
+                   throws java.lang.Throwable,
+                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -744,6 +817,22 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public&nbsp;boolean&nbsp;Disjoint(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)
                  throws java.lang.Throwable,
                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="Distance-system.data.spatial.DbGeography-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Distance</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;Distance(<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;other)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -948,6 +1037,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getArea--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getArea</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getArea()
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getCoordinateSystemId--">
 <!--   -->
 </a>
@@ -990,6 +1093,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getElementCount--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getElementCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getElementCount()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getElevation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getElevation</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getElevation()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getEndPoint--">
 <!--   -->
 </a>
@@ -998,6 +1129,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getEndPoint</h4>
 <pre>public&nbsp;<a href="../../../system/data/spatial/DbGeography.html" title="class in system.data.spatial">DbGeography</a>&nbsp;getEndPoint()
                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getIsClosed--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getIsClosed</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getIsClosed()
+                       throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1111,6 +1256,76 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getLatitude--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLatitude</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getLatitude()
+                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getLength--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLength</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getLength()
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getLongitude--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getLongitude</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getLongitude()
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMeasure--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMeasure</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getMeasure()
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getPointCount--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPointCount</h4>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getPointCount()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

@@ -17,6 +17,9 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="SupportsEscapingLikeArgument()">
+<meta name="keywords" content="GetStoreFunctions()">
+<meta name="keywords" content="GetFacetDescriptions()">
+<meta name="keywords" content="GetStoreTypes()">
 <meta name="keywords" content="GetEdmType()">
 <meta name="keywords" content="GetStoreType()">
 <meta name="keywords" content="EscapeLikeArgument()">
@@ -35,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -249,52 +252,64 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#GetEdmType-system.data.metadata.edm.TypeUsage-">GetEdmType</a></span>(<a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;storeType)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#GetFacetDescriptions-system.data.metadata.edm.EdmType-">GetFacetDescriptions</a></span>(<a href="../../../system/data/metadata/edm/EdmType.html" title="class in system.data.metadata.edm">EdmType</a>&nbsp;edmType)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#GetInformation-java.lang.String-">GetInformation</a></span>(java.lang.String&nbsp;informationType)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#getNamespaceName--">getNamespaceName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#GetStoreFunctions--">GetStoreFunctions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#GetStoreType-system.data.metadata.edm.TypeUsage-">GetStoreType</a></span>(<a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;edmType)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#GetStoreTypes--">GetStoreTypes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbProviderManifest.html#SupportsEscapingLikeArgument-org.mases.jcobridge.netreflection.JCORefOut-">SupportsEscapingLikeArgument</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;escapeCharacter)</code>&nbsp;</td>
 </tr>
@@ -493,6 +508,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetFacetDescriptions-system.data.metadata.edm.EdmType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetFacetDescriptions</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetFacetDescriptions(<a href="../../../system/data/metadata/edm/EdmType.html" title="class in system.data.metadata.edm">EdmType</a>&nbsp;edmType)
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetInformation-java.lang.String-">
 <!--   -->
 </a>
@@ -647,6 +676,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="GetStoreFunctions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetStoreFunctions</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetStoreFunctions()
+                                       throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="GetStoreType-system.data.metadata.edm.TypeUsage-">
 <!--   -->
 </a>
@@ -655,6 +698,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetStoreType</h4>
 <pre>public&nbsp;<a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;GetStoreType(<a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;edmType)
                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetStoreTypes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetStoreTypes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetStoreTypes()
+                                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

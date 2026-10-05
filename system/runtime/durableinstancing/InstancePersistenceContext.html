@@ -30,7 +30,13 @@
 <meta name="keywords" content="EndBindReclaimedLock()">
 <meta name="keywords" content="EndExecute()">
 <meta name="keywords" content="Execute()">
+<meta name="keywords" content="LoadedInstance()">
+<meta name="keywords" content="PersistedInstance()">
 <meta name="keywords" content="QueriedInstanceStore()">
+<meta name="keywords" content="ReadInstanceKeyMetadata()">
+<meta name="keywords" content="ReadInstanceMetadata()">
+<meta name="keywords" content="ReadInstanceOwnerMetadata()">
+<meta name="keywords" content="SetCancellationHandler()">
 <meta name="keywords" content="UnassociatedInstanceKey()">
 <meta name="keywords" content="WroteInstanceKeyMetadataValue()">
 <meta name="keywords" content="WroteInstanceMetadataValue()">
@@ -55,7 +61,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -373,36 +379,68 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#QueriedInstanceStore-system.runtime.durableinstancing.InstanceStoreQueryResult-">QueriedInstanceStore</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceStoreQueryResult.html" title="class in system.runtime.durableinstancing">InstanceStoreQueryResult</a>&nbsp;queryResult)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#LoadedInstance-system.runtime.durableinstancing.InstanceState-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-">LoadedInstance</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceState.html" title="class in system.runtime.durableinstancing">InstanceState</a>&nbsp;state,
+              <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceData,
+              <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceMetadata,
+              <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;associatedInstanceKeyMetadata,
+              <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;completedInstanceKeyMetadata)</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#setInstanceHandle-system.runtime.durableinstancing.InstanceHandle-">setInstanceHandle</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceHandle.html" title="class in system.runtime.durableinstancing">InstanceHandle</a>&nbsp;InstanceHandle)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#PersistedInstance-system.collections.generic.IDictionary_2-">PersistedInstance</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;data)</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#setInstanceView-system.runtime.durableinstancing.InstanceView-">setInstanceView</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceView.html" title="class in system.runtime.durableinstancing">InstanceView</a>&nbsp;InstanceView)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#QueriedInstanceStore-system.runtime.durableinstancing.InstanceStoreQueryResult-">QueriedInstanceStore</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceStoreQueryResult.html" title="class in system.runtime.durableinstancing">InstanceStoreQueryResult</a>&nbsp;queryResult)</code>&nbsp;</td>
 </tr>
 <tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#ReadInstanceKeyMetadata-system.Guid-system.collections.generic.IDictionary_2-boolean-">ReadInstanceKeyMetadata</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;key,
+                       <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata,
+                       boolean&nbsp;complete)</code>&nbsp;</td>
 </tr>
 <tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#UnassociatedInstanceKey-system.Guid-">UnassociatedInstanceKey</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#ReadInstanceMetadata-system.collections.generic.IDictionary_2-boolean-">ReadInstanceMetadata</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata,
+                    boolean&nbsp;complete)</code>&nbsp;</td>
 </tr>
 <tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#ReadInstanceOwnerMetadata-system.collections.generic.IDictionary_2-boolean-">ReadInstanceOwnerMetadata</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata,
+                         boolean&nbsp;complete)</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#SetCancellationHandler-system.Action_1-">SetCancellationHandler</a></span>(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;cancellationHandler)</code>&nbsp;</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#setInstanceHandle-system.runtime.durableinstancing.InstanceHandle-">setInstanceHandle</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceHandle.html" title="class in system.runtime.durableinstancing">InstanceHandle</a>&nbsp;InstanceHandle)</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#setInstanceView-system.runtime.durableinstancing.InstanceView-">setInstanceView</a></span>(<a href="../../../system/runtime/durableinstancing/InstanceView.html" title="class in system.runtime.durableinstancing">InstanceView</a>&nbsp;InstanceView)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#UnassociatedInstanceKey-system.Guid-">UnassociatedInstanceKey</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;key)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#WroteInstanceKeyMetadataValue-system.Guid-system.xml.linq.XName-system.runtime.durableinstancing.InstanceValue-">WroteInstanceKeyMetadataValue</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;key,
                              <a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name,
                              <a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#WroteInstanceMetadataValue-system.xml.linq.XName-system.runtime.durableinstancing.InstanceValue-">WroteInstanceMetadataValue</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name,
                           <a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstancePersistenceContext.html#WroteInstanceOwnerMetadataValue-system.xml.linq.XName-system.runtime.durableinstancing.InstanceValue-">WroteInstanceOwnerMetadataValue</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;name,
                                <a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&nbsp;value)</code>&nbsp;</td>
@@ -1351,6 +1389,78 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="LoadedInstance-system.runtime.durableinstancing.InstanceState-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>LoadedInstance</h4>
+<pre>public&nbsp;void&nbsp;LoadedInstance(<a href="../../../system/runtime/durableinstancing/InstanceState.html" title="class in system.runtime.durableinstancing">InstanceState</a>&nbsp;state,
+                           <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceData,
+                           <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceMetadata,
+                           <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;associatedInstanceKeyMetadata,
+                           <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;completedInstanceKeyMetadata)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                           <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                           <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                           <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                           <a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                           <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                           <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="PersistedInstance-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PersistedInstance</h4>
+<pre>public&nbsp;void&nbsp;PersistedInstance(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;data)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="QueriedInstanceStore-system.runtime.durableinstancing.InstanceStoreQueryResult-">
 <!--   -->
 </a>
@@ -1388,6 +1498,138 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadInstanceKeyMetadata-system.Guid-system.collections.generic.IDictionary_2-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadInstanceKeyMetadata</h4>
+<pre>public&nbsp;void&nbsp;ReadInstanceKeyMetadata(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;key,
+                                    <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata,
+                                    boolean&nbsp;complete)
+                             throws java.lang.Throwable,
+                                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                    <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                                    <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                    <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadInstanceMetadata-system.collections.generic.IDictionary_2-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadInstanceMetadata</h4>
+<pre>public&nbsp;void&nbsp;ReadInstanceMetadata(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata,
+                                 boolean&nbsp;complete)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadInstanceOwnerMetadata-system.collections.generic.IDictionary_2-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadInstanceOwnerMetadata</h4>
+<pre>public&nbsp;void&nbsp;ReadInstanceOwnerMetadata(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata,
+                                      boolean&nbsp;complete)
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetCancellationHandler-system.Action_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetCancellationHandler</h4>
+<pre>public&nbsp;void&nbsp;SetCancellationHandler(<a href="../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;cancellationHandler)
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                   <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>

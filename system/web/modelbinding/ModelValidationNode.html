@@ -22,6 +22,8 @@
 <meta name="keywords" content="setSuppressValidation()">
 <meta name="keywords" content="getValidateAllProperties()">
 <meta name="keywords" content="setValidateAllProperties()">
+<meta name="keywords" content="getChildNodes()">
+<meta name="keywords" content="setChildNodes()">
 <meta name="keywords" content="getModelStateKey()">
 <meta name="keywords" content="setModelStateKey()">
 <meta name="keywords" content="getModelMetadata()">
@@ -39,7 +41,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -219,6 +221,11 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                    java.lang.String&nbsp;modelStateKey)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#ModelValidationNode-system.web.modelbinding.ModelMetadata-java.lang.String-system.collections.generic.IEnumerable_1-">ModelValidationNode</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;modelMetadata,
+                   java.lang.String&nbsp;modelStateKey,
+                   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;childNodes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#ModelValidationNode-java.lang.Object-">ModelValidationNode</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -249,76 +256,84 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#CombineWith-system.web.modelbinding.ModelValidationNode-">CombineWith</a></span>(<a href="../../../system/web/modelbinding/ModelValidationNode.html" title="class in system.web.modelbinding">ModelValidationNode</a>&nbsp;otherNode)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getChildNodes--">getChildNodes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getModelMetadata--">getModelMetadata</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getModelStateKey--">getModelStateKey</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getSuppressValidation--">getSuppressValidation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#getValidateAllProperties--">getValidateAllProperties</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
-</tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setModelMetadata-system.web.modelbinding.ModelMetadata-">setModelMetadata</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;ModelMetadata)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setChildNodes-system.collections.generic.ICollection_1-">setChildNodes</a></span>(<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;ChildNodes)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setModelStateKey-java.lang.String-">setModelStateKey</a></span>(java.lang.String&nbsp;ModelStateKey)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setSuppressValidation-boolean-">setSuppressValidation</a></span>(boolean&nbsp;SuppressValidation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setModelMetadata-system.web.modelbinding.ModelMetadata-">setModelMetadata</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;ModelMetadata)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setValidateAllProperties-boolean-">setValidateAllProperties</a></span>(boolean&nbsp;ValidateAllProperties)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setModelStateKey-java.lang.String-">setModelStateKey</a></span>(java.lang.String&nbsp;ModelStateKey)</code>&nbsp;</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#Validate-system.web.modelbinding.ModelBindingExecutionContext-">Validate</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;modelBindingExecutionContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setSuppressValidation-boolean-">setSuppressValidation</a></span>(boolean&nbsp;SuppressValidation)</code>&nbsp;</td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#setValidateAllProperties-boolean-">setValidateAllProperties</a></span>(boolean&nbsp;ValidateAllProperties)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#Validate-system.web.modelbinding.ModelBindingExecutionContext-">Validate</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;modelBindingExecutionContext)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidationNode.html#Validate-system.web.modelbinding.ModelBindingExecutionContext-system.web.modelbinding.ModelValidationNode-">Validate</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;modelBindingExecutionContext,
         <a href="../../../system/web/modelbinding/ModelValidationNode.html" title="class in system.web.modelbinding">ModelValidationNode</a>&nbsp;parentNode)</code>&nbsp;</td>
@@ -445,6 +460,26 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="ModelValidationNode-system.web.modelbinding.ModelMetadata-java.lang.String-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ModelValidationNode</h4>
+<pre>public&nbsp;ModelValidationNode(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;modelMetadata,
+                           java.lang.String&nbsp;modelStateKey,
+                           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;childNodes)
+                    throws java.lang.Throwable,
+                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ModelValidationNode-java.lang.Object-">
 <!--   -->
 </a>
@@ -500,6 +535,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getChildNodes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChildNodes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getChildNodes()
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -649,6 +698,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getValidateAllProperties</h4>
 <pre>public&nbsp;boolean&nbsp;getValidateAllProperties()
                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="setChildNodes-system.collections.generic.ICollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setChildNodes</h4>
+<pre>public&nbsp;void&nbsp;setChildNodes(<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;ChildNodes)
+                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

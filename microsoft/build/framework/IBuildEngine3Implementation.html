@@ -41,7 +41,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":9,"i22":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -275,6 +275,15 @@ implements <a href="../../../microsoft/build/framework/IBuildEngine3.html" title
                            boolean&nbsp;dupParam6)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../microsoft/build/framework/BuildEngineResult.html" title="class in microsoft.build.framework">BuildEngineResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#BuildProjectFilesInParallel-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-system.collections.IDictionary:A-system.collections.generic.IList_1:A-org.mases.jcobridge.netreflection.JCORefOut-boolean-">BuildProjectFilesInParallel</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
+                           <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>[]&nbsp;dupParam2,
+                           <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>[]&nbsp;dupParam3,
+                           <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam4,
+                           boolean&nbsp;dupParam5)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#BuildProjectFilesInParallel-java.lang.String:A-java.lang.String:A-system.collections.IDictionary:A-system.collections.IDictionary:A-java.lang.String:A-boolean-boolean-">BuildProjectFilesInParallel</a></span>(java.lang.String[]&nbsp;projectFileNames,
                            java.lang.String[]&nbsp;targetNames,
@@ -284,83 +293,92 @@ implements <a href="../../../microsoft/build/framework/IBuildEngine3.html" title
                            boolean&nbsp;useResultsCache,
                            boolean&nbsp;unloadProjectsOnCompletion)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../microsoft/build/framework/BuildEngineResult.html" title="class in microsoft.build.framework">BuildEngineResult</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#BuildProjectFilesInParallel-java.lang.String:A-java.lang.String:A-system.collections.IDictionary:A-system.collections.generic.IList_1:A-java.lang.String:A-boolean-">BuildProjectFilesInParallel</a></span>(java.lang.String[]&nbsp;projectFileNames,
+                           java.lang.String[]&nbsp;targetNames,
+                           <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>[]&nbsp;globalProperties,
+                           <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>[]&nbsp;removeGlobalProperties,
+                           java.lang.String[]&nbsp;toolsVersion,
+                           boolean&nbsp;returnTargetOutputs)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getColumnNumberOfTaskNode--">getColumnNumberOfTaskNode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getContinueOnError--">getContinueOnError</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getIsRunningMultipleNodes--">getIsRunningMultipleNodes</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getLineNumberOfTaskNode--">getLineNumberOfTaskNode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#getProjectFileOfTaskNode--">getProjectFileOfTaskNode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#LogCustomEvent-microsoft.build.framework.CustomBuildEventArgs-">LogCustomEvent</a></span>(<a href="../../../microsoft/build/framework/CustomBuildEventArgs.html" title="class in microsoft.build.framework">CustomBuildEventArgs</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#LogErrorEvent-microsoft.build.framework.BuildErrorEventArgs-">LogErrorEvent</a></span>(<a href="../../../microsoft/build/framework/BuildErrorEventArgs.html" title="class in microsoft.build.framework">BuildErrorEventArgs</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#LogMessageEvent-microsoft.build.framework.BuildMessageEventArgs-">LogMessageEvent</a></span>(<a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" title="class in microsoft.build.framework">BuildMessageEventArgs</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#LogWarningEvent-microsoft.build.framework.BuildWarningEventArgs-">LogWarningEvent</a></span>(<a href="../../../microsoft/build/framework/BuildWarningEventArgs.html" title="class in microsoft.build.framework">BuildWarningEventArgs</a>&nbsp;e)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#Reacquire--">Reacquire</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../microsoft/build/framework/IBuildEngine3.html" title="interface in microsoft.build.framework">IBuildEngine3</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#ToIBuildEngine3-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIBuildEngine3</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../microsoft/build/framework/IBuildEngine3.html" title="interface in microsoft.build.framework"><code>IBuildEngine3</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IBuildEngine3Implementation.html#Yield--">Yield</a></span>()</code>&nbsp;</td>
 </tr>
@@ -590,6 +608,27 @@ implements <a href="../../../microsoft/build/framework/IBuildEngine3.html" title
 </dl>
 </li>
 </ul>
+<a name="BuildProjectFilesInParallel-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-system.collections.IDictionary:A-system.collections.generic.IList_1:A-org.mases.jcobridge.netreflection.JCORefOut-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BuildProjectFilesInParallel</h4>
+<pre>public&nbsp;<a href="../../../microsoft/build/framework/BuildEngineResult.html" title="class in microsoft.build.framework">BuildEngineResult</a>&nbsp;BuildProjectFilesInParallel(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                                                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1,
+                                                     <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>[]&nbsp;dupParam2,
+                                                     <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>[]&nbsp;dupParam3,
+                                                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam4,
+                                                     boolean&nbsp;dupParam5)
+                                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../microsoft/build/framework/IBuildEngine3.html#BuildProjectFilesInParallel-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-system.collections.IDictionary:A-system.collections.generic.IList_1:A-org.mases.jcobridge.netreflection.JCORefOut-boolean-">BuildProjectFilesInParallel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/build/framework/IBuildEngine3.html" title="interface in microsoft.build.framework">IBuildEngine3</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="BuildProjectFilesInParallel-java.lang.String:A-java.lang.String:A-system.collections.IDictionary:A-system.collections.IDictionary:A-java.lang.String:A-boolean-boolean-">
 <!--   -->
 </a>
@@ -607,6 +646,27 @@ implements <a href="../../../microsoft/build/framework/IBuildEngine3.html" title
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../microsoft/build/framework/IBuildEngine2.html#BuildProjectFilesInParallel-java.lang.String:A-java.lang.String:A-system.collections.IDictionary:A-system.collections.IDictionary:A-java.lang.String:A-boolean-boolean-">BuildProjectFilesInParallel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/build/framework/IBuildEngine2.html" title="interface in microsoft.build.framework">IBuildEngine2</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="BuildProjectFilesInParallel-java.lang.String:A-java.lang.String:A-system.collections.IDictionary:A-system.collections.generic.IList_1:A-java.lang.String:A-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BuildProjectFilesInParallel</h4>
+<pre>public&nbsp;<a href="../../../microsoft/build/framework/BuildEngineResult.html" title="class in microsoft.build.framework">BuildEngineResult</a>&nbsp;BuildProjectFilesInParallel(java.lang.String[]&nbsp;projectFileNames,
+                                                     java.lang.String[]&nbsp;targetNames,
+                                                     <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>[]&nbsp;globalProperties,
+                                                     <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>[]&nbsp;removeGlobalProperties,
+                                                     java.lang.String[]&nbsp;toolsVersion,
+                                                     boolean&nbsp;returnTargetOutputs)
+                                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../microsoft/build/framework/IBuildEngine3.html#BuildProjectFilesInParallel-java.lang.String:A-java.lang.String:A-system.collections.IDictionary:A-system.collections.generic.IList_1:A-java.lang.String:A-boolean-">BuildProjectFilesInParallel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/build/framework/IBuildEngine3.html" title="interface in microsoft.build.framework">IBuildEngine3</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 </dl>

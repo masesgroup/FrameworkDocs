@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="Resolve()">
 <meta name="keywords" content="Register()">
 <meta name="keywords" content="Initialize()">
 <meta name="keywords" content="Unregister()">
@@ -34,7 +35,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -283,15 +284,21 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
         <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/PeerResolver.html#Resolve-java.lang.String-int-system.TimeSpan-">Resolve</a></span>(java.lang.String&nbsp;meshId,
+       int&nbsp;maxAddresses,
+       <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/PeerResolver.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/PeerResolver.html#Unregister-org.mases.jcobridge.netreflection.NetObject-system.TimeSpan-">Unregister</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;registrationId,
           <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/PeerResolver.html#Update-org.mases.jcobridge.netreflection.NetObject-system.servicemodel.PeerNodeAddress-system.TimeSpan-">Update</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;registrationId,
       <a href="../../system/servicemodel/PeerNodeAddress.html" title="class in system.servicemodel">PeerNodeAddress</a>&nbsp;updatedNodeAddress,
@@ -579,6 +586,22 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                           <a href="../../system/servicemodel/PeerNodeAddress.html" title="class in system.servicemodel">PeerNodeAddress</a>&nbsp;nodeAddress,
                           <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)
                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Resolve-java.lang.String-int-system.TimeSpan-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Resolve</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;Resolve(java.lang.String&nbsp;meshId,
+                                    int&nbsp;maxAddresses,
+                                    <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)
+                             throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

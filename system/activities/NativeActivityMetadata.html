@@ -16,8 +16,13 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetChildrenWithReflection()">
+<meta name="keywords" content="GetDelegatesWithReflection()">
+<meta name="keywords" content="GetArgumentsWithReflection()">
+<meta name="keywords" content="GetVariablesWithReflection()">
 <meta name="keywords" content="AddArgument()">
 <meta name="keywords" content="AddChild()">
+<meta name="keywords" content="AddDefaultExtensionProvider()">
 <meta name="keywords" content="AddDelegate()">
 <meta name="keywords" content="AddImplementationChild()">
 <meta name="keywords" content="AddImplementationDelegate()">
@@ -28,6 +33,16 @@
 <meta name="keywords" content="AddVariable()">
 <meta name="keywords" content="Bind()">
 <meta name="keywords" content="RequireExtension()">
+<meta name="keywords" content="SetArgumentsCollection()">
+<meta name="keywords" content="SetChildrenCollection()">
+<meta name="keywords" content="SetDelegatesCollection()">
+<meta name="keywords" content="SetImplementationChildrenCollection()">
+<meta name="keywords" content="SetImplementationDelegatesCollection()">
+<meta name="keywords" content="SetImplementationVariablesCollection()">
+<meta name="keywords" content="SetImportedChildrenCollection()">
+<meta name="keywords" content="SetImportedDelegatesCollection()">
+<meta name="keywords" content="SetValidationErrorsCollection()">
+<meta name="keywords" content="SetVariablesCollection()">
 <meta name="keywords" content="getHasViolations()">
 <meta name="keywords" content="getEnvironment()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
@@ -43,7 +58,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -257,117 +272,181 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;origin)</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddDefaultExtensionProvider-system.Func_1-">AddDefaultExtensionProvider</a></span>(<a href="../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;extensionProvider)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddDelegate-system.activities.ActivityDelegate-">AddDelegate</a></span>(<a href="../../system/activities/ActivityDelegate.html" title="class in system.activities">ActivityDelegate</a>&nbsp;activityDelegate)</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddDelegate-system.activities.ActivityDelegate-org.mases.jcobridge.netreflection.NetObject-">AddDelegate</a></span>(<a href="../../system/activities/ActivityDelegate.html" title="class in system.activities">ActivityDelegate</a>&nbsp;activityDelegate,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;origin)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImplementationChild-system.activities.Activity-">AddImplementationChild</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;implementationChild)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImplementationDelegate-system.activities.ActivityDelegate-">AddImplementationDelegate</a></span>(<a href="../../system/activities/ActivityDelegate.html" title="class in system.activities">ActivityDelegate</a>&nbsp;implementationDelegate)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImplementationVariable-system.activities.Variable-">AddImplementationVariable</a></span>(<a href="../../system/activities/Variable.html" title="class in system.activities">Variable</a>&nbsp;implementationVariable)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImportedChild-system.activities.Activity-">AddImportedChild</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;importedChild)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImportedChild-system.activities.Activity-org.mases.jcobridge.netreflection.NetObject-">AddImportedChild</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;importedChild,
                 <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;origin)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImportedDelegate-system.activities.ActivityDelegate-">AddImportedDelegate</a></span>(<a href="../../system/activities/ActivityDelegate.html" title="class in system.activities">ActivityDelegate</a>&nbsp;importedDelegate)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddImportedDelegate-system.activities.ActivityDelegate-org.mases.jcobridge.netreflection.NetObject-">AddImportedDelegate</a></span>(<a href="../../system/activities/ActivityDelegate.html" title="class in system.activities">ActivityDelegate</a>&nbsp;importedDelegate,
                    <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;origin)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddValidationError-java.lang.String-">AddValidationError</a></span>(java.lang.String&nbsp;validationErrorMessage)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddValidationError-system.activities.validation.ValidationError-">AddValidationError</a></span>(<a href="../../system/activities/validation/ValidationError.html" title="class in system.activities.validation">ValidationError</a>&nbsp;validationError)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddVariable-system.activities.Variable-">AddVariable</a></span>(<a href="../../system/activities/Variable.html" title="class in system.activities">Variable</a>&nbsp;variable)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#AddVariable-system.activities.Variable-org.mases.jcobridge.netreflection.NetObject-">AddVariable</a></span>(<a href="../../system/activities/Variable.html" title="class in system.activities">Variable</a>&nbsp;variable,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;origin)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#Bind-system.activities.Argument-system.activities.RuntimeArgument-">Bind</a></span>(<a href="../../system/activities/Argument.html" title="class in system.activities">Argument</a>&nbsp;binding,
     <a href="../../system/activities/RuntimeArgument.html" title="class in system.activities">RuntimeArgument</a>&nbsp;argument)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/activities/NativeActivityMetadata.html" title="class in system.activities">NativeActivityMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../system/activities/NativeActivityMetadata.html" title="class in system.activities"><code>NativeActivityMetadata</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#GetArgumentsWithReflection--">GetArgumentsWithReflection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#GetChildrenWithReflection--">GetChildrenWithReflection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#GetDelegatesWithReflection--">GetDelegatesWithReflection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../system/activities/LocationReferenceEnvironment.html" title="class in system.activities">LocationReferenceEnvironment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getEnvironment--">getEnvironment</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getHasViolations--">getHasViolations</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#GetVariablesWithReflection--">GetVariablesWithReflection</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#RequireExtension--">RequireExtension</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#RequireExtension-org.mases.jcobridge.netreflection.NetType-">RequireExtension</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;extensionType)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetArgumentsCollection-system.collections.objectmodel.Collection_1-">SetArgumentsCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;arguments)</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetChildrenCollection-system.collections.objectmodel.Collection_1-">SetChildrenCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;children)</code>&nbsp;</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetDelegatesCollection-system.collections.objectmodel.Collection_1-">SetDelegatesCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;delegates)</code>&nbsp;</td>
+</tr>
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetImplementationChildrenCollection-system.collections.objectmodel.Collection_1-">SetImplementationChildrenCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;implementationChildren)</code>&nbsp;</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetImplementationDelegatesCollection-system.collections.objectmodel.Collection_1-">SetImplementationDelegatesCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;implementationDelegates)</code>&nbsp;</td>
+</tr>
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetImplementationVariablesCollection-system.collections.objectmodel.Collection_1-">SetImplementationVariablesCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;implementationVariables)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetImportedChildrenCollection-system.collections.objectmodel.Collection_1-">SetImportedChildrenCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;importedChildren)</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetImportedDelegatesCollection-system.collections.objectmodel.Collection_1-">SetImportedDelegatesCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;importedDelegates)</code>&nbsp;</td>
+</tr>
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetValidationErrorsCollection-system.collections.objectmodel.Collection_1-">SetValidationErrorsCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;validationErrors)</code>&nbsp;</td>
+</tr>
+<tr id="i42" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityMetadata.html#SetVariablesCollection-system.collections.objectmodel.Collection_1-">SetVariablesCollection</a></span>(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;variables)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -587,6 +666,34 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 <dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
 <dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="AddDefaultExtensionProvider-system.Func_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AddDefaultExtensionProvider</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;AddDefaultExtensionProvider(<a href="../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;extensionProvider)
+                                                                 throws java.lang.Throwable,
+                                                                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                        <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                        <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                        <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -998,6 +1105,114 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 </dl>
 </li>
 </ul>
+<a name="GetArgumentsWithReflection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetArgumentsWithReflection</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GetArgumentsWithReflection()
+                                        throws java.lang.Throwable,
+                                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                               <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetChildrenWithReflection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetChildrenWithReflection</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GetChildrenWithReflection()
+                                       throws java.lang.Throwable,
+                                              <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                              <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                              <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                              <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                              <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                              <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                              <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                              <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                              <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                              <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                              <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetDelegatesWithReflection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetDelegatesWithReflection</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GetDelegatesWithReflection()
+                                        throws java.lang.Throwable,
+                                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                               <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getEnvironment--">
 <!--   -->
 </a>
@@ -1122,6 +1337,68 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 </dl>
 </li>
 </ul>
+<a name="GetVariablesWithReflection--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetVariablesWithReflection</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;GetVariablesWithReflection()
+                                        throws java.lang.Throwable,
+                                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                               <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                               <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                               <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="RequireExtension--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RequireExtension</h4>
+<pre>public&nbsp;&lt;T extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;RequireExtension()
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                             <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                             <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                             <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                             <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                             <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="RequireExtension-org.mases.jcobridge.netreflection.NetType-">
 <!--   -->
 </a>
@@ -1150,16 +1427,268 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 </dl>
 </li>
 </ul>
+<a name="SetArgumentsCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetArgumentsCollection</h4>
+<pre>public&nbsp;void&nbsp;SetArgumentsCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;arguments)
+                            throws java.lang.Throwable,
+                                   <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                   <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                   <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                   <a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../system/RankException.html" title="class in system">RankException</a>,
+                                   <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetChildrenCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetChildrenCollection</h4>
+<pre>public&nbsp;void&nbsp;SetChildrenCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;children)
+                           throws java.lang.Throwable,
+                                  <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                  <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                  <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                  <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                  <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetDelegatesCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetDelegatesCollection</h4>
+<pre>public&nbsp;void&nbsp;SetDelegatesCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;delegates)
+                            throws java.lang.Throwable,
+                                   <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetImplementationChildrenCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetImplementationChildrenCollection</h4>
+<pre>public&nbsp;void&nbsp;SetImplementationChildrenCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;implementationChildren)
+                                         throws java.lang.Throwable,
+                                                <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetImplementationDelegatesCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetImplementationDelegatesCollection</h4>
+<pre>public&nbsp;void&nbsp;SetImplementationDelegatesCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;implementationDelegates)
+                                          throws java.lang.Throwable,
+                                                 <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                 <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                 <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                 <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetImplementationVariablesCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetImplementationVariablesCollection</h4>
+<pre>public&nbsp;void&nbsp;SetImplementationVariablesCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;implementationVariables)
+                                          throws java.lang.Throwable,
+                                                 <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                 <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                 <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                 <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetImportedChildrenCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetImportedChildrenCollection</h4>
+<pre>public&nbsp;void&nbsp;SetImportedChildrenCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;importedChildren)
+                                   throws java.lang.Throwable,
+                                          <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetImportedDelegatesCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetImportedDelegatesCollection</h4>
+<pre>public&nbsp;void&nbsp;SetImportedDelegatesCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;importedDelegates)
+                                    throws java.lang.Throwable,
+                                           <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                           <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                           <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/ValueType.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/ValueType.html" title="class in system">ValueType</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetValidationErrorsCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetValidationErrorsCollection</h4>
+<pre>public&nbsp;void&nbsp;SetValidationErrorsCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;validationErrors)
+                                   throws java.lang.Throwable,
+                                          <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetVariablesCollection-system.collections.objectmodel.Collection_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SetVariablesCollection</h4>
+<pre>public&nbsp;void&nbsp;SetVariablesCollection(<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;variables)
+                            throws java.lang.Throwable,
+                                   <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>

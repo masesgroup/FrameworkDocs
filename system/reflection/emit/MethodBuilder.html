@@ -35,6 +35,7 @@
 <meta name="keywords" content="SetCustomAttribute()">
 <meta name="keywords" content="SetImplementationFlags()">
 <meta name="keywords" content="SetMarshal()">
+<meta name="keywords" content="SetMethodBody()">
 <meta name="keywords" content="SetParameters()">
 <meta name="keywords" content="SetReturnType()">
 <meta name="keywords" content="SetSymCustomAttribute()">
@@ -55,7 +56,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -432,18 +433,34 @@ extends <a href="../../../system/reflection/MethodInfo.html" title="class in sys
 </tr>
 <tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetParameters-org.mases.jcobridge.netreflection.NetType...-">SetParameters</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>...&nbsp;parameterTypes)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetMethodBody-byte:A-int-byte:A-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">SetMethodBody</a></span>(byte[]&nbsp;il,
+             int&nbsp;maxStack,
+             byte[]&nbsp;localSignature,
+             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;exceptionHandlers,
+             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;tokenFixups)</code>&nbsp;</td>
 </tr>
 <tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetReturnType-org.mases.jcobridge.netreflection.NetType-">SetReturnType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;returnType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetMethodBody-org.mases.jcobridge.netreflection.JCORefOut-int-org.mases.jcobridge.netreflection.JCORefOut-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">SetMethodBody</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+             int&nbsp;dupParam1,
+             <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam2,
+             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;dupParam3,
+             <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;dupParam4)</code>&nbsp;</td>
 </tr>
 <tr id="i37" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetParameters-org.mases.jcobridge.netreflection.NetType...-">SetParameters</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>...&nbsp;parameterTypes)</code>&nbsp;</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetReturnType-org.mases.jcobridge.netreflection.NetType-">SetReturnType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;returnType)</code>&nbsp;</td>
+</tr>
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetSymCustomAttribute-java.lang.String-byte:A-">SetSymCustomAttribute</a></span>(java.lang.String&nbsp;name,
                      byte[]&nbsp;data)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/MethodBuilder.html#SetSymCustomAttribute-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">SetSymCustomAttribute</a></span>(java.lang.String&nbsp;dupParam0,
                      <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam1)</code>&nbsp;</td>
@@ -468,7 +485,7 @@ extends <a href="../../../system/reflection/MethodInfo.html" title="class in sys
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.reflection.<a href="../../../system/reflection/MemberInfo.html" title="class in system.reflection">MemberInfo</a></h3>
-<code><a href="../../../system/reflection/MemberInfo.html#getDeclaringType--">getDeclaringType</a>, <a href="../../../system/reflection/MemberInfo.html#getMemberType--">getMemberType</a>, <a href="../../../system/reflection/MemberInfo.html#getMetadataToken--">getMetadataToken</a>, <a href="../../../system/reflection/MemberInfo.html#getModule--">getModule</a>, <a href="../../../system/reflection/MemberInfo.html#getName--">getName</a>, <a href="../../../system/reflection/MemberInfo.html#getReflectedType--">getReflectedType</a></code></li>
+<code><a href="../../../system/reflection/MemberInfo.html#getCustomAttributes--">getCustomAttributes</a>, <a href="../../../system/reflection/MemberInfo.html#GetCustomAttributesData--">GetCustomAttributesData</a>, <a href="../../../system/reflection/MemberInfo.html#getDeclaringType--">getDeclaringType</a>, <a href="../../../system/reflection/MemberInfo.html#getMemberType--">getMemberType</a>, <a href="../../../system/reflection/MemberInfo.html#getMetadataToken--">getMetadataToken</a>, <a href="../../../system/reflection/MemberInfo.html#getModule--">getModule</a>, <a href="../../../system/reflection/MemberInfo.html#getName--">getName</a>, <a href="../../../system/reflection/MemberInfo.html#getReflectedType--">getReflectedType</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -1313,6 +1330,74 @@ extends <a href="../../../system/reflection/MethodInfo.html" title="class in sys
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetMethodBody-byte:A-int-byte:A-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetMethodBody</h4>
+<pre>public&nbsp;void&nbsp;SetMethodBody(byte[]&nbsp;il,
+                          int&nbsp;maxStack,
+                          byte[]&nbsp;localSignature,
+                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;exceptionHandlers,
+                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;tokenFixups)
+                   throws java.lang.Throwable,
+                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                          <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                          <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SetMethodBody-org.mases.jcobridge.netreflection.JCORefOut-int-org.mases.jcobridge.netreflection.JCORefOut-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SetMethodBody</h4>
+<pre>public&nbsp;void&nbsp;SetMethodBody(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam0,
+                          int&nbsp;dupParam1,
+                          <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;dupParam2,
+                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;dupParam3,
+                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;dupParam4)
+                   throws java.lang.Throwable,
+                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                          <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                          <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                          <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>

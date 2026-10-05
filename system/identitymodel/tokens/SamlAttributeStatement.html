@@ -19,6 +19,7 @@
 <meta name="keywords" content="MakeReadOnly()">
 <meta name="keywords" content="ReadXml()">
 <meta name="keywords" content="WriteXml()">
+<meta name="keywords" content="getAttributes()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -222,6 +223,10 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#SamlAttributeStatement-system.identitymodel.tokens.SamlSubject-system.collections.generic.IEnumerable_1-">SamlAttributeStatement</a></span>(<a href="../../../system/identitymodel/tokens/SamlSubject.html" title="class in system.identitymodel.tokens">SamlSubject</a>&nbsp;samlSubject,
+                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;attributes)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -244,51 +249,55 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#getAttributes--">getAttributes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#MakeReadOnly--">MakeReadOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#ReadXml-system.xml.XmlDictionaryReader-system.identitymodel.tokens.SamlSerializer-system.identitymodel.selectors.SecurityTokenSerializer-system.identitymodel.selectors.SecurityTokenResolver-">ReadXml</a></span>(<a href="../../../system/xml/XmlDictionaryReader.html" title="class in system.xml">XmlDictionaryReader</a>&nbsp;reader,
        <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
        <a href="../../../system/identitymodel/selectors/SecurityTokenSerializer.html" title="class in system.identitymodel.selectors">SecurityTokenSerializer</a>&nbsp;keyInfoSerializer,
        <a href="../../../system/identitymodel/selectors/SecurityTokenResolver.html" title="class in system.identitymodel.selectors">SecurityTokenResolver</a>&nbsp;outOfBandTokenResolver)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html#WriteXml-system.xml.XmlDictionaryWriter-system.identitymodel.tokens.SamlSerializer-system.identitymodel.selectors.SecurityTokenSerializer-">WriteXml</a></span>(<a href="../../../system/xml/XmlDictionaryWriter.html" title="class in system.xml">XmlDictionaryWriter</a>&nbsp;writer,
         <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
@@ -414,7 +423,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <a name="SamlAttributeStatement-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>SamlAttributeStatement</h4>
 <pre>public&nbsp;SamlAttributeStatement(java.lang.Object&nbsp;instance)
@@ -423,6 +432,51 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="SamlAttributeStatement-system.identitymodel.tokens.SamlSubject-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SamlAttributeStatement</h4>
+<pre>public&nbsp;SamlAttributeStatement(<a href="../../../system/identitymodel/tokens/SamlSubject.html" title="class in system.identitymodel.tokens">SamlSubject</a>&nbsp;samlSubject,
+                              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;attributes)
+                       throws java.lang.Throwable,
+                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                              <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                              <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -450,6 +504,20 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <dd><a href="../../../system/identitymodel/tokens/SamlAttributeStatement.html" title="class in system.identitymodel.tokens"><code>SamlAttributeStatement</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getAttributes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAttributes</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAttributes()
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

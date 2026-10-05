@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getResult()">
+<meta name="keywords" content="getTargetOutputsPerProject()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -30,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -211,6 +212,10 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/BuildEngineResult.html#BuildEngineResult--">BuildEngineResult</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/BuildEngineResult.html#BuildEngineResult-boolean-system.collections.generic.List_1-">BuildEngineResult</a></span>(boolean&nbsp;result,
+                 <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;targetOutputsPerProject)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/BuildEngineResult.html#BuildEngineResult-java.lang.Object-">BuildEngineResult</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -271,6 +276,10 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/BuildEngineResult.html#getResult--">getResult</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/BuildEngineResult.html#getTargetOutputsPerProject--">getTargetOutputsPerProject</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/BuildEngineResult.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -370,6 +379,21 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <li class="blockList">
 <h4>BuildEngineResult</h4>
 <pre>public&nbsp;BuildEngineResult()
+                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="BuildEngineResult-boolean-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BuildEngineResult</h4>
+<pre>public&nbsp;BuildEngineResult(boolean&nbsp;result,
+                         <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;targetOutputsPerProject)
                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -523,6 +547,20 @@ extends <a href="../../../system/ValueType.html" title="class in system">ValueTy
 <h4>getResult</h4>
 <pre>public&nbsp;boolean&nbsp;getResult()
                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getTargetOutputsPerProject--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getTargetOutputsPerProject</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getTargetOutputsPerProject()
+                                   throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

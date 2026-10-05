@@ -26,6 +26,8 @@
 <meta name="keywords" content="GetPropertyOwner()">
 <meta name="keywords" content="GetClassName()">
 <meta name="keywords" content="GetComponentName()">
+<meta name="keywords" content="getActivityProperties()">
+<meta name="keywords" content="getActivityMetaProperties()">
 <meta name="keywords" content="getActivityType()">
 <meta name="keywords" content="setActivityType()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -41,7 +43,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -143,13 +145,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></dd>
+<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">Interop</span>
-extends <a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a>
-implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></pre>
+extends <a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></pre>
 <div class="block">The base .NET class managing System.Activities.Statements.Interop, System.Workflow.Runtime, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -254,44 +255,52 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getActivityMetaProperties--">getActivityMetaProperties</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getActivityProperties--">getActivityProperties</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getActivityType--">getActivityType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#setActivityType-org.mases.jcobridge.netreflection.NetType-">setActivityType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ActivityType)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/statements/Interop.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -316,13 +325,6 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.componentmodel.ICustomTypeDescriptor">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.componentmodel.<a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></h3>
-<code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetAttributes--">GetAttributes</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetClassName--">GetClassName</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetComponentName--">GetComponentName</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetConverter--">GetConverter</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetDefaultEvent--">GetDefaultEvent</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetDefaultProperty--">GetDefaultProperty</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetEditor-org.mases.jcobridge.netreflection.NetType-">GetEditor</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetEvents--">GetEvents</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetEvents-system.Attribute:A-">GetEvents</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetProperties--">GetProperties</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetProperties-system.Attribute:A-">GetProperties</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#GetPropertyOwner-system.componentmodel.PropertyDescriptor-">GetPropertyOwner</a>, <a href="../../../system/componentmodel/ICustomTypeDescriptor.html#ToICustomTypeDescriptor-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToICustomTypeDescriptor</a></code></li>
 </ul>
 </li>
 </ul>
@@ -484,6 +486,42 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 </dl>
 </li>
 </ul>
+<a name="getActivityMetaProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getActivityMetaProperties</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getActivityMetaProperties()
+                                        throws java.lang.Throwable,
+                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getActivityProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getActivityProperties</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getActivityProperties()
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getActivityType--">
 <!--   -->
 </a>
@@ -510,8 +548,6 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/activities/NativeActivity.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -531,8 +567,6 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/activities/NativeActivity.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -552,8 +586,6 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/activities/NativeActivity.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -573,8 +605,6 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/activities/NativeActivity.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -595,8 +625,6 @@ implements <a href="../../../system/componentmodel/ICustomTypeDescriptor.html" t
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/ICustomTypeDescriptor.html" title="interface in system.componentmodel">ICustomTypeDescriptor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/activities/NativeActivity.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/activities/NativeActivity.html" title="class in system.activities">NativeActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

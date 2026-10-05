@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="ResolveClaimSet()">
 <meta name="keywords" content="ResolveIdentity()">
+<meta name="keywords" content="getAllowedAudienceUris()">
 <meta name="keywords" content="getAudienceUriMode()">
 <meta name="keywords" content="setAudienceUriMode()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -33,7 +34,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -214,6 +215,13 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenAuthentica
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#SamlSecurityTokenAuthenticator--">SamlSecurityTokenAuthenticator</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#SamlSecurityTokenAuthenticator-system.collections.generic.IList_1-">SamlSecurityTokenAuthenticator</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;supportingAuthenticators)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#SamlSecurityTokenAuthenticator-system.collections.generic.IList_1-system.TimeSpan-">SamlSecurityTokenAuthenticator</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;supportingAuthenticators,
+                              <a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;maxClockSkew)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#SamlSecurityTokenAuthenticator-java.lang.Object-">SamlSecurityTokenAuthenticator</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -240,60 +248,64 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenAuthentica
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getAllowedAudienceUris--">getAllowedAudienceUris</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/identitymodel/selectors/AudienceUriMode.html" title="class in system.identitymodel.selectors">AudienceUriMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getAudienceUriMode--">getAudienceUriMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#ResolveClaimSet-system.identitymodel.tokens.SecurityKeyIdentifier-">ResolveClaimSet</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifier.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifier</a>&nbsp;keyIdentifier)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#ResolveClaimSet-system.identitymodel.tokens.SecurityToken-">ResolveClaimSet</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/IIdentity.html" title="interface in system.security.principal">IIdentity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#ResolveIdentity-system.identitymodel.tokens.SecurityKeyIdentifier-">ResolveIdentity</a></span>(<a href="../../../system/identitymodel/tokens/SecurityKeyIdentifier.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifier</a>&nbsp;keyIdentifier)</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/IIdentity.html" title="interface in system.security.principal">IIdentity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#ResolveIdentity-system.identitymodel.tokens.SecurityToken-">ResolveIdentity</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#setAudienceUriMode-system.identitymodel.selectors.AudienceUriMode-">setAudienceUriMode</a></span>(<a href="../../../system/identitymodel/selectors/AudienceUriMode.html" title="class in system.identitymodel.selectors">AudienceUriMode</a>&nbsp;AudienceUriMode)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -303,7 +315,7 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenAuthentica
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.identitymodel.selectors.<a href="../../../system/identitymodel/selectors/SecurityTokenAuthenticator.html" title="class in system.identitymodel.selectors">SecurityTokenAuthenticator</a></h3>
-<code><a href="../../../system/identitymodel/selectors/SecurityTokenAuthenticator.html#CanValidateToken-system.identitymodel.tokens.SecurityToken-">CanValidateToken</a></code></li>
+<code><a href="../../../system/identitymodel/selectors/SecurityTokenAuthenticator.html#CanValidateToken-system.identitymodel.tokens.SecurityToken-">CanValidateToken</a>, <a href="../../../system/identitymodel/selectors/SecurityTokenAuthenticator.html#ValidateToken-system.identitymodel.tokens.SecurityToken-">ValidateToken</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -407,6 +419,81 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenAuthentica
 </dl>
 </li>
 </ul>
+<a name="SamlSecurityTokenAuthenticator-system.collections.generic.IList_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SamlSecurityTokenAuthenticator</h4>
+<pre>public&nbsp;SamlSecurityTokenAuthenticator(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;supportingAuthenticators)
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                      <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                      <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SamlSecurityTokenAuthenticator-system.collections.generic.IList_1-system.TimeSpan-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SamlSecurityTokenAuthenticator</h4>
+<pre>public&nbsp;SamlSecurityTokenAuthenticator(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;supportingAuthenticators,
+                                      <a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;maxClockSkew)
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                      <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                      <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="SamlSecurityTokenAuthenticator-java.lang.Object-">
 <!--   -->
 </a>
@@ -446,6 +533,20 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenAuthentica
 <dd><a href="../../../system/identitymodel/selectors/SamlSecurityTokenAuthenticator.html" title="class in system.identitymodel.selectors"><code>SamlSecurityTokenAuthenticator</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getAllowedAudienceUris--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAllowedAudienceUris</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAllowedAudienceUris()
+                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

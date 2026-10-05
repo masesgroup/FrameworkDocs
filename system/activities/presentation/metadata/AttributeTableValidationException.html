@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetObjectData()">
+<meta name="keywords" content="getValidationErrors()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -30,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -217,8 +218,17 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetException.html
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/metadata/AttributeTableValidationException.html#AttributeTableValidationException-java.lang.String-">AttributeTableValidationException</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/metadata/AttributeTableValidationException.html#AttributeTableValidationException-java.lang.String-system.collections.generic.IEnumerable_1-">AttributeTableValidationException</a></span>(java.lang.String&nbsp;message,
+                                 <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;validationErrors)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/metadata/AttributeTableValidationException.html#AttributeTableValidationException-java.lang.String-org.mases.jcobridge.netreflection.NetException-">AttributeTableValidationException</a></span>(java.lang.String&nbsp;message,
                                  <a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/metadata/AttributeTableValidationException.html#AttributeTableValidationException-java.lang.String-org.mases.jcobridge.netreflection.NetException-system.collections.generic.IEnumerable_1-">AttributeTableValidationException</a></span>(java.lang.String&nbsp;message,
+                                 <a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;inner,
+                                 <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;validationErrors)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -277,6 +287,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetException.html
              <a href="../../../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/metadata/AttributeTableValidationException.html#getValidationErrors--">getValidationErrors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/metadata/AttributeTableValidationException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -413,14 +427,45 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetException.html
 <pre>public&nbsp;AttributeTableValidationException(java.lang.String&nbsp;message)</pre>
 </li>
 </ul>
+<a name="AttributeTableValidationException-java.lang.String-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AttributeTableValidationException</h4>
+<pre>public&nbsp;AttributeTableValidationException(java.lang.String&nbsp;message,
+                                         <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;validationErrors)
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="AttributeTableValidationException-java.lang.String-org.mases.jcobridge.netreflection.NetException-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>AttributeTableValidationException</h4>
+<pre>public&nbsp;AttributeTableValidationException(java.lang.String&nbsp;message,
+                                         <a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</pre>
+</li>
+</ul>
+<a name="AttributeTableValidationException-java.lang.String-org.mases.jcobridge.netreflection.NetException-system.collections.generic.IEnumerable_1-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>AttributeTableValidationException</h4>
 <pre>public&nbsp;AttributeTableValidationException(java.lang.String&nbsp;message,
-                                         <a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</pre>
+                                         <a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;inner,
+                                         <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;validationErrors)
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
 </li>
 </ul>
 </li>
@@ -594,6 +639,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetException.html
 <dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
 <dd><code><a href="../../../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
 <dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getValidationErrors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getValidationErrors</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getValidationErrors()
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

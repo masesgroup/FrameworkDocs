@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="EndInit()">
+<meta name="keywords" content="getAdmissibleValues()">
+<meta name="keywords" content="setAdmissibleValues()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -30,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -241,36 +243,44 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.ht
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#EndInit--">EndInit</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#getAdmissibleValues--">getAdmissibleValues</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#setAdmissibleValues-system.collections.generic.List_1-">setAdmissibleValues</a></span>(<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;AdmissibleValues)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../microsoft/build/framework/xamltypes/EnumProperty.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -280,7 +290,7 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.ht
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;microsoft.build.framework.xamltypes.<a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html" title="class in microsoft.build.framework.xamltypes">BaseProperty</a></h3>
-<code><a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#BeginInit--">BeginInit</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getCategory--">getCategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getContainingRule--">getContainingRule</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDataSource--">getDataSource</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDefault--">getDefault</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDescription--">getDescription</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDisplayName--">getDisplayName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getF1Keyword--">getF1Keyword</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getHelpContext--">getHelpContext</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getHelpFile--">getHelpFile</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getHelpUrl--">getHelpUrl</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getIncludeInCommandLine--">getIncludeInCommandLine</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getIsRequired--">getIsRequired</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getMultipleValuesAllowed--">getMultipleValuesAllowed</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getName--">getName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getReadOnly--">getReadOnly</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSeparator--">getSeparator</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSubcategory--">getSubcategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSwitch--">getSwitch</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSwitchPrefix--">getSwitchPrefix</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getVisible--">getVisible</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setCategory-java.lang.String-">setCategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setContainingRule-microsoft.build.framework.xamltypes.Rule-">setContainingRule</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDataSource-microsoft.build.framework.xamltypes.DataSource-">setDataSource</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDefault-java.lang.String-">setDefault</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDescription-java.lang.String-">setDescription</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDisplayName-java.lang.String-">setDisplayName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setF1Keyword-java.lang.String-">setF1Keyword</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setHelpContext-int-">setHelpContext</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setHelpFile-java.lang.String-">setHelpFile</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setHelpUrl-java.lang.String-">setHelpUrl</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setIncludeInCommandLine-boolean-">setIncludeInCommandLine</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setIsRequired-boolean-">setIsRequired</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setMultipleValuesAllowed-boolean-">setMultipleValuesAllowed</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setName-java.lang.String-">setName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setReadOnly-boolean-">setReadOnly</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSeparator-java.lang.String-">setSeparator</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSubcategory-java.lang.String-">setSubcategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSwitch-java.lang.String-">setSwitch</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSwitchPrefix-java.lang.String-">setSwitchPrefix</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setVisible-boolean-">setVisible</a></code></li>
+<code><a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#BeginInit--">BeginInit</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getArguments--">getArguments</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getCategory--">getCategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getContainingRule--">getContainingRule</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDataSource--">getDataSource</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDefault--">getDefault</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDescription--">getDescription</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getDisplayName--">getDisplayName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getF1Keyword--">getF1Keyword</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getHelpContext--">getHelpContext</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getHelpFile--">getHelpFile</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getHelpUrl--">getHelpUrl</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getIncludeInCommandLine--">getIncludeInCommandLine</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getIsRequired--">getIsRequired</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getMetadata--">getMetadata</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getMultipleValuesAllowed--">getMultipleValuesAllowed</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getName--">getName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getReadOnly--">getReadOnly</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSeparator--">getSeparator</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSubcategory--">getSubcategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSwitch--">getSwitch</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getSwitchPrefix--">getSwitchPrefix</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getValueEditors--">getValueEditors</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getVisible--">getVisible</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setArguments-system.collections.generic.List_1-">setArguments</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setCategory-java.lang.String-">setCategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setContainingRule-microsoft.build.framework.xamltypes.Rule-">setContainingRule</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDataSource-microsoft.build.framework.xamltypes.DataSource-">setDataSource</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDefault-java.lang.String-">setDefault</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDescription-java.lang.String-">setDescription</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setDisplayName-java.lang.String-">setDisplayName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setF1Keyword-java.lang.String-">setF1Keyword</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setHelpContext-int-">setHelpContext</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setHelpFile-java.lang.String-">setHelpFile</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setHelpUrl-java.lang.String-">setHelpUrl</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setIncludeInCommandLine-boolean-">setIncludeInCommandLine</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setIsRequired-boolean-">setIsRequired</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setMetadata-system.collections.generic.List_1-">setMetadata</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setMultipleValuesAllowed-boolean-">setMultipleValuesAllowed</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setName-java.lang.String-">setName</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setReadOnly-boolean-">setReadOnly</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSeparator-java.lang.String-">setSeparator</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSubcategory-java.lang.String-">setSubcategory</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSwitch-java.lang.String-">setSwitch</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setSwitchPrefix-java.lang.String-">setSwitchPrefix</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setValueEditors-system.collections.generic.List_1-">setValueEditors</a>, <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#setVisible-boolean-">setVisible</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -442,6 +452,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.ht
 </dl>
 </li>
 </ul>
+<a name="getAdmissibleValues--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAdmissibleValues</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;getAdmissibleValues()
+                           throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getJCOAssemblyName--">
 <!--   -->
 </a>
@@ -535,6 +559,20 @@ extends <a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.ht
 <dd><code><a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../microsoft/build/framework/xamltypes/BaseProperty.html" title="class in microsoft.build.framework.xamltypes">BaseProperty</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="setAdmissibleValues-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setAdmissibleValues</h4>
+<pre>public&nbsp;void&nbsp;setAdmissibleValues(<a href="../../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;AdmissibleValues)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

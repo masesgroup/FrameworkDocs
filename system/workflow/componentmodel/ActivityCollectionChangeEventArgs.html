@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getIndex()">
+<meta name="keywords" content="getAddedItems()">
+<meta name="keywords" content="getRemovedItems()">
 <meta name="keywords" content="getOwner()">
 <meta name="keywords" content="getAction()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -32,7 +34,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -220,6 +222,13 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
                                  <a href="../../../system/workflow/componentmodel/ActivityCollectionChangeAction.html" title="class in system.workflow.componentmodel">ActivityCollectionChangeAction</a>&nbsp;action)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#ActivityCollectionChangeEventArgs-int-system.collections.generic.ICollection_1-system.collections.generic.ICollection_1-org.mases.jcobridge.netreflection.NetObject-system.workflow.componentmodel.ActivityCollectionChangeAction-">ActivityCollectionChangeEventArgs</a></span>(int&nbsp;index,
+                                 <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;removedItems,
+                                 <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;addedItems,
+                                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;owner,
+                                 <a href="../../../system/workflow/componentmodel/ActivityCollectionChangeAction.html" title="class in system.workflow.componentmodel">ActivityCollectionChangeAction</a>&nbsp;action)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#ActivityCollectionChangeEventArgs-java.lang.Object-">ActivityCollectionChangeEventArgs</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -250,44 +259,52 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getAction--">getAction</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getAddedItems--">getAddedItems</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getIndex--">getIndex</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getOwner--">getOwner</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getRemovedItems--">getRemovedItems</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -414,6 +431,24 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </dl>
 </li>
 </ul>
+<a name="ActivityCollectionChangeEventArgs-int-system.collections.generic.ICollection_1-system.collections.generic.ICollection_1-org.mases.jcobridge.netreflection.NetObject-system.workflow.componentmodel.ActivityCollectionChangeAction-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ActivityCollectionChangeEventArgs</h4>
+<pre>public&nbsp;ActivityCollectionChangeEventArgs(int&nbsp;index,
+                                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;removedItems,
+                                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;addedItems,
+                                         <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;owner,
+                                         <a href="../../../system/workflow/componentmodel/ActivityCollectionChangeAction.html" title="class in system.workflow.componentmodel">ActivityCollectionChangeAction</a>&nbsp;action)
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="ActivityCollectionChangeEventArgs-java.lang.Object-">
 <!--   -->
 </a>
@@ -467,6 +502,24 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAddedItems--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAddedItems</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAddedItems()
+                      throws java.lang.Throwable,
+                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -591,6 +644,24 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getRemovedItems--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemovedItems</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getRemovedItems()
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>

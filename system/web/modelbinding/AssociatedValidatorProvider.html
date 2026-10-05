@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetValidators()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -29,7 +30,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -270,6 +271,11 @@ extends <a href="../../../system/web/modelbinding/ModelValidatorProvider.html" t
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/AssociatedValidatorProvider.html#GetValidators-system.web.modelbinding.ModelMetadata-system.web.modelbinding.ModelBindingExecutionContext-">GetValidators</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;metadata,
+             <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/AssociatedValidatorProvider.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -511,6 +517,43 @@ extends <a href="../../../system/web/modelbinding/ModelValidatorProvider.html" t
 <dd><code><a href="../../../system/web/modelbinding/ModelValidatorProvider.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelValidatorProvider.html" title="class in system.web.modelbinding">ModelValidatorProvider</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="GetValidators-system.web.modelbinding.ModelMetadata-system.web.modelbinding.ModelBindingExecutionContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetValidators</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetValidators(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;metadata,
+                                   <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                   <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/web/modelbinding/ModelValidatorProvider.html#GetValidators-system.web.modelbinding.ModelMetadata-system.web.modelbinding.ModelBindingExecutionContext-">GetValidators</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelValidatorProvider.html" title="class in system.web.modelbinding">ModelValidatorProvider</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
 </dl>
 </li>
 </ul>

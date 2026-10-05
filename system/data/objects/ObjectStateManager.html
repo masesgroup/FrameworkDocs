@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="TryGetObjectStateEntry()">
 <meta name="keywords" content="TryGetRelationshipManager()">
+<meta name="keywords" content="GetObjectStateEntries()">
 <meta name="keywords" content="GetRelationshipManager()">
 <meta name="keywords" content="ChangeObjectState()">
 <meta name="keywords" content="ChangeRelationshipState()">
@@ -38,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -267,70 +268,81 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                        <a href="../../../system/data/EntityState.html" title="class in system.data">EntityState</a>&nbsp;relationshipState)</code>&nbsp;</td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/data/objects/ObjectStateEntry.html" title="class in system.data.objects">ObjectStateEntry</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#ChangeRelationshipState-TEntity-org.mases.jcobridge.netreflection.NetObject-system.linq.expressions.Expression_1-system.data.EntityState-">ChangeRelationshipState</a></span>(TEntity&nbsp;sourceEntity,
+                       <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;targetEntity,
+                       <a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;navigationPropertySelector,
+                       <a href="../../../system/data/EntityState.html" title="class in system.data">EntityState</a>&nbsp;relationshipState)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/metadata/edm/MetadataWorkspace.html" title="class in system.data.metadata.edm">MetadataWorkspace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#getMetadataWorkspace--">getMetadataWorkspace</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#GetObjectStateEntries-system.data.EntityState-">GetObjectStateEntries</a></span>(<a href="../../../system/data/EntityState.html" title="class in system.data">EntityState</a>&nbsp;state)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/objects/ObjectStateEntry.html" title="class in system.data.objects">ObjectStateEntry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#GetObjectStateEntry-system.data.EntityKey-">GetObjectStateEntry</a></span>(<a href="../../../system/data/EntityKey.html" title="class in system.data">EntityKey</a>&nbsp;key)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/objects/ObjectStateEntry.html" title="class in system.data.objects">ObjectStateEntry</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#GetObjectStateEntry-org.mases.jcobridge.netreflection.NetObject-">GetObjectStateEntry</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/objects/dataclasses/RelationshipManager.html" title="class in system.data.objects.dataclasses">RelationshipManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#GetRelationshipManager-org.mases.jcobridge.netreflection.NetObject-">GetRelationshipManager</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#removeObjectStateManagerChanged-system.componentmodel.CollectionChangeEventHandler-">removeObjectStateManagerChanged</a></span>(<a href="../../../system/componentmodel/CollectionChangeEventHandler.html" title="class in system.componentmodel">CollectionChangeEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#TryGetObjectStateEntry-system.data.EntityKey-org.mases.jcobridge.netreflection.JCORefOut-">TryGetObjectStateEntry</a></span>(<a href="../../../system/data/EntityKey.html" title="class in system.data">EntityKey</a>&nbsp;key,
                       <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/data/objects/ObjectStateEntry.html" title="class in system.data.objects">ObjectStateEntry</a>&gt;&nbsp;entry)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#TryGetObjectStateEntry-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.JCORefOut-">TryGetObjectStateEntry</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity,
                       <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/data/objects/ObjectStateEntry.html" title="class in system.data.objects">ObjectStateEntry</a>&gt;&nbsp;entry)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ObjectStateManager.html#TryGetRelationshipManager-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.JCORefOut-">TryGetRelationshipManager</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;entity,
                          <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/data/objects/dataclasses/RelationshipManager.html" title="class in system.data.objects.dataclasses">RelationshipManager</a>&gt;&nbsp;relationshipManager)</code>&nbsp;</td>
@@ -642,6 +654,53 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="ChangeRelationshipState-org.mases.jcobridge.netreflection.IJCOBridgeReflected-org.mases.jcobridge.netreflection.NetObject-system.linq.expressions.Expression_1-system.data.EntityState-">
+<!--   -->
+</a><a name="ChangeRelationshipState-TEntity-org.mases.jcobridge.netreflection.NetObject-system.linq.expressions.Expression_1-system.data.EntityState-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ChangeRelationshipState</h4>
+<pre>public&nbsp;&lt;TEntity extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../system/data/objects/ObjectStateEntry.html" title="class in system.data.objects">ObjectStateEntry</a>&nbsp;ChangeRelationshipState(TEntity&nbsp;sourceEntity,
+                                                                                      <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;targetEntity,
+                                                                                      <a href="../../../system/linq/expressions/Expression_1.html" title="class in system.linq.expressions">Expression_1</a>&nbsp;navigationPropertySelector,
+                                                                                      <a href="../../../system/data/EntityState.html" title="class in system.data">EntityState</a>&nbsp;relationshipState)
+                                                                               throws java.lang.Throwable,
+                                                                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                                      <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                                      <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                                      <a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a>,
+                                                                                      <a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                                                      <a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                                                      <a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                                                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/threading/LockRecursionException.html" title="class in system.threading">LockRecursionException</a></code></dd>
+<dd><code><a href="../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a></code></dd>
+<dd><code><a href="../../../system/data/MappingException.html" title="class in system.data">MappingException</a></code></dd>
+<dd><code><a href="../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getJCOAssemblyName--">
 <!--   -->
 </a>
@@ -749,6 +808,38 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetObjectStateEntries-system.data.EntityState-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetObjectStateEntries</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetObjectStateEntries(<a href="../../../system/data/EntityState.html" title="class in system.data">EntityState</a>&nbsp;state)
+                                    throws java.lang.Throwable,
+                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                           <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                           <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                           <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

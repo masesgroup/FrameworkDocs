@@ -19,6 +19,7 @@
 <meta name="keywords" content="IsClientScriptBlockRegistered()">
 <meta name="keywords" content="IsStartupScriptRegistered()">
 <meta name="keywords" content="RequiresControlState()">
+<meta name="keywords" content="TryUpdateModel()">
 <meta name="keywords" content="GetTypeHashCode()">
 <meta name="keywords" content="GetDataItem()">
 <meta name="keywords" content="GetPostBackClientEvent()">
@@ -45,6 +46,7 @@
 <meta name="keywords" content="RegisterViewStateHandler()">
 <meta name="keywords" content="SetFocus()">
 <meta name="keywords" content="UnregisterRequiresControlState()">
+<meta name="keywords" content="UpdateModel()">
 <meta name="keywords" content="Validate()">
 <meta name="keywords" content="VerifyRenderingInServerForm()">
 <meta name="keywords" content="getBuffer()">
@@ -156,7 +158,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":9,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10,"i100":10,"i101":10,"i102":10,"i103":10,"i104":10,"i105":10,"i106":10,"i107":10,"i108":10,"i109":10,"i110":10,"i111":10,"i112":10,"i113":10,"i114":10,"i115":10,"i116":10,"i117":10,"i118":10,"i119":10,"i120":10,"i121":10,"i122":10,"i123":10,"i124":10,"i125":10,"i126":10,"i127":10,"i128":10,"i129":10,"i130":10,"i131":10,"i132":10,"i133":10,"i134":10,"i135":10,"i136":10,"i137":10,"i138":10,"i139":10,"i140":10,"i141":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -258,7 +260,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a>, <a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a>, <a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></dd>
 </dl>
 <hr>
 <br>
@@ -922,18 +924,36 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#setViewStateUserKey-java.lang.String-">setViewStateUserKey</a></span>(java.lang.String&nbsp;ViewStateUserKey)</code>&nbsp;</td>
 </tr>
 <tr id="i134" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#UnregisterRequiresControlState-system.web.ui.Control-">UnregisterRequiresControlState</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;control)</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#TryUpdateModel-TModel-">TryUpdateModel</a></span>(TModel&nbsp;model)</code>&nbsp;</td>
 </tr>
 <tr id="i135" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#Validate--">Validate</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#TryUpdateModel-TModel-system.web.modelbinding.IValueProvider-">TryUpdateModel</a></span>(TModel&nbsp;model,
+              <a href="../../../system/web/modelbinding/IValueProvider.html" title="interface in system.web.modelbinding">IValueProvider</a>&nbsp;valueProvider)</code>&nbsp;</td>
 </tr>
 <tr id="i136" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#Validate-java.lang.String-">Validate</a></span>(java.lang.String&nbsp;validationGroup)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#UnregisterRequiresControlState-system.web.ui.Control-">UnregisterRequiresControlState</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;control)</code>&nbsp;</td>
 </tr>
 <tr id="i137" class="rowColor">
+<td class="colFirst"><code>&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#UpdateModel-TModel-">UpdateModel</a></span>(TModel&nbsp;model)</code>&nbsp;</td>
+</tr>
+<tr id="i138" class="altColor">
+<td class="colFirst"><code>&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#UpdateModel-TModel-system.web.modelbinding.IValueProvider-">UpdateModel</a></span>(TModel&nbsp;model,
+           <a href="../../../system/web/modelbinding/IValueProvider.html" title="interface in system.web.modelbinding">IValueProvider</a>&nbsp;valueProvider)</code>&nbsp;</td>
+</tr>
+<tr id="i139" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#Validate--">Validate</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i140" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#Validate-java.lang.String-">Validate</a></span>(java.lang.String&nbsp;validationGroup)</code>&nbsp;</td>
+</tr>
+<tr id="i141" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/Page.html#VerifyRenderingInServerForm-system.web.ui.Control-">VerifyRenderingInServerForm</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;control)</code>&nbsp;</td>
 </tr>
@@ -972,20 +992,6 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 </a>
 <h3>Methods inherited from interface&nbsp;system.web.ui.<a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></h3>
 <code><a href="../../../system/web/ui/INamingContainer.html#ToINamingContainer-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToINamingContainer</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.web.ui.IFilterResolutionService">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.web.ui.<a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a></h3>
-<code><a href="../../../system/web/ui/IFilterResolutionService.html#CompareFilters-java.lang.String-java.lang.String-">CompareFilters</a>, <a href="../../../system/web/ui/IFilterResolutionService.html#EvaluateFilter-java.lang.String-">EvaluateFilter</a>, <a href="../../../system/web/ui/IFilterResolutionService.html#ToIFilterResolutionService-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIFilterResolutionService</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.web.ui.IParserAccessor">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.web.ui.<a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></h3>
-<code><a href="../../../system/web/ui/IParserAccessor.html#AddParsedSubObject-org.mases.jcobridge.netreflection.NetObject-">AddParsedSubObject</a>, <a href="../../../system/web/ui/IParserAccessor.html#ToIParserAccessor-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIParserAccessor</a></code></li>
 </ul>
 </li>
 </ul>
@@ -2120,11 +2126,7 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IFilterResolutionService.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/INamingContainer.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IParserAccessor.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/ui/TemplateControl.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/ui/TemplateControl.html" title="class in system.web.ui">TemplateControl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2145,11 +2147,7 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IFilterResolutionService.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/INamingContainer.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IParserAccessor.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/ui/TemplateControl.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/ui/TemplateControl.html" title="class in system.web.ui">TemplateControl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2170,11 +2168,7 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IFilterResolutionService.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/INamingContainer.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IParserAccessor.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/ui/TemplateControl.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/ui/TemplateControl.html" title="class in system.web.ui">TemplateControl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2195,11 +2189,7 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IFilterResolutionService.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/INamingContainer.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IParserAccessor.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/ui/TemplateControl.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/ui/TemplateControl.html" title="class in system.web.ui">TemplateControl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -2221,11 +2211,7 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IFilterResolutionService.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IFilterResolutionService.html" title="interface in system.web.ui">IFilterResolutionService</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/INamingContainer.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/INamingContainer.html" title="interface in system.web.ui">INamingContainer</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/web/ui/IParserAccessor.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IParserAccessor.html" title="interface in system.web.ui">IParserAccessor</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/ui/TemplateControl.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/ui/TemplateControl.html" title="class in system.web.ui">TemplateControl</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -4982,6 +4968,81 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 </dl>
 </li>
 </ul>
+<a name="TryUpdateModel-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="TryUpdateModel-TModel-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryUpdateModel</h4>
+<pre>public&nbsp;&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryUpdateModel(TModel&nbsp;model)
+                                                            throws java.lang.Throwable,
+                                                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                   <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                   <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                   <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                   <a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="TryUpdateModel-org.mases.jcobridge.netreflection.IJCOBridgeReflected-system.web.modelbinding.IValueProvider-">
+<!--   -->
+</a><a name="TryUpdateModel-TModel-system.web.modelbinding.IValueProvider-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>TryUpdateModel</h4>
+<pre>public&nbsp;&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;boolean&nbsp;TryUpdateModel(TModel&nbsp;model,
+                                                                   <a href="../../../system/web/modelbinding/IValueProvider.html" title="interface in system.web.modelbinding">IValueProvider</a>&nbsp;valueProvider)
+                                                            throws java.lang.Throwable,
+                                                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                   <a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="UnregisterRequiresControlState-system.web.ui.Control-">
 <!--   -->
 </a>
@@ -5015,6 +5076,83 @@ extends <a href="../../../system/web/ui/TemplateControl.html" title="class in sy
 <dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
 <dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="UpdateModel-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
+<!--   -->
+</a><a name="UpdateModel-TModel-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UpdateModel</h4>
+<pre>public&nbsp;&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;UpdateModel(TModel&nbsp;model)
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                             <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                             <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                             <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                             <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                             <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                             <a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="UpdateModel-org.mases.jcobridge.netreflection.IJCOBridgeReflected-system.web.modelbinding.IValueProvider-">
+<!--   -->
+</a><a name="UpdateModel-TModel-system.web.modelbinding.IValueProvider-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UpdateModel</h4>
+<pre>public&nbsp;&lt;TModel extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;UpdateModel(TModel&nbsp;model,
+                                                             <a href="../../../system/web/modelbinding/IValueProvider.html" title="interface in system.web.modelbinding">IValueProvider</a>&nbsp;valueProvider)
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                             <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                             <a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a>,
+                                                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
 </dl>
 </li>
 </ul>

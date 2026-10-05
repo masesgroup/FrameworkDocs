@@ -215,6 +215,17 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <div class="block">Internal constructor.</div>
 </td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SupportingTokenSpecification.html#SupportingTokenSpecification-system.identitymodel.tokens.SecurityToken-system.collections.objectmodel.ReadOnlyCollection_1-system.servicemodel.security.SecurityTokenAttachmentMode-">SupportingTokenSpecification</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
+                            <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                            <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SupportingTokenSpecification.html#SupportingTokenSpecification-system.identitymodel.tokens.SecurityToken-system.collections.objectmodel.ReadOnlyCollection_1-system.servicemodel.security.SecurityTokenAttachmentMode-system.servicemodel.security.tokens.SecurityTokenParameters-">SupportingTokenSpecification</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
+                            <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                            <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode,
+                            <a href="../../../system/servicemodel/security/tokens/SecurityTokenParameters.html" title="class in system.servicemodel.security.tokens">SecurityTokenParameters</a>&nbsp;tokenParameters)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -280,7 +291,7 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.servicemodel.security.<a href="../../../system/servicemodel/security/SecurityTokenSpecification.html" title="class in system.servicemodel.security">SecurityTokenSpecification</a></h3>
-<code><a href="../../../system/servicemodel/security/SecurityTokenSpecification.html#getSecurityToken--">getSecurityToken</a></code></li>
+<code><a href="../../../system/servicemodel/security/SecurityTokenSpecification.html#getSecurityToken--">getSecurityToken</a>, <a href="../../../system/servicemodel/security/SecurityTokenSpecification.html#getSecurityTokenPolicies--">getSecurityTokenPolicies</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -387,7 +398,7 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <a name="SupportingTokenSpecification-java.lang.Object-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>SupportingTokenSpecification</h4>
 <pre>public&nbsp;SupportingTokenSpecification(java.lang.Object&nbsp;instance)
@@ -396,6 +407,75 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="SupportingTokenSpecification-system.identitymodel.tokens.SecurityToken-system.collections.objectmodel.ReadOnlyCollection_1-system.servicemodel.security.SecurityTokenAttachmentMode-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SupportingTokenSpecification</h4>
+<pre>public&nbsp;SupportingTokenSpecification(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
+                                    <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                                    <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode)
+                             throws java.lang.Throwable,
+                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="SupportingTokenSpecification-system.identitymodel.tokens.SecurityToken-system.collections.objectmodel.ReadOnlyCollection_1-system.servicemodel.security.SecurityTokenAttachmentMode-system.servicemodel.security.tokens.SecurityTokenParameters-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>SupportingTokenSpecification</h4>
+<pre>public&nbsp;SupportingTokenSpecification(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
+                                    <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                                    <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode,
+                                    <a href="../../../system/servicemodel/security/tokens/SecurityTokenParameters.html" title="class in system.servicemodel.security.tokens">SecurityTokenParameters</a>&nbsp;tokenParameters)
+                             throws java.lang.Throwable,
+                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                    <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                    <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                    <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                    <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 </dl>
 </li>
 </ul>

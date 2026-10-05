@@ -237,6 +237,44 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenSerializer
                          boolean&nbsp;emitBspRequiredAttributes,
                          <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/WSSecurityTokenSerializer.html#WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-">WSSecurityTokenSerializer</a></span>(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                         boolean&nbsp;emitBspRequiredAttributes,
+                         <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                         <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/WSSecurityTokenSerializer.html#WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-int-int-int-">WSSecurityTokenSerializer</a></span>(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                         boolean&nbsp;emitBspRequiredAttributes,
+                         <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                         <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes,
+                         int&nbsp;maximumKeyDerivationOffset,
+                         int&nbsp;maximumKeyDerivationLabelLength,
+                         int&nbsp;maximumKeyDerivationNonceLength)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/WSSecurityTokenSerializer.html#WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-system.servicemodel.security.TrustVersion-system.servicemodel.security.SecureConversationVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-">WSSecurityTokenSerializer</a></span>(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                         <a href="../../../system/servicemodel/security/TrustVersion.html" title="class in system.servicemodel.security">TrustVersion</a>&nbsp;trustVersion,
+                         <a href="../../../system/servicemodel/security/SecureConversationVersion.html" title="class in system.servicemodel.security">SecureConversationVersion</a>&nbsp;secureConversationVersion,
+                         boolean&nbsp;emitBspRequiredAttributes,
+                         <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                         <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/WSSecurityTokenSerializer.html#WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-system.servicemodel.security.TrustVersion-system.servicemodel.security.SecureConversationVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-int-int-int-">WSSecurityTokenSerializer</a></span>(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                         <a href="../../../system/servicemodel/security/TrustVersion.html" title="class in system.servicemodel.security">TrustVersion</a>&nbsp;trustVersion,
+                         <a href="../../../system/servicemodel/security/SecureConversationVersion.html" title="class in system.servicemodel.security">SecureConversationVersion</a>&nbsp;secureConversationVersion,
+                         boolean&nbsp;emitBspRequiredAttributes,
+                         <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                         <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes,
+                         int&nbsp;maximumKeyDerivationOffset,
+                         int&nbsp;maximumKeyDerivationLabelLength,
+                         int&nbsp;maximumKeyDerivationNonceLength)</code>&nbsp;</td>
+</tr>
 </table>
 </li>
 </ul>
@@ -544,7 +582,7 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenSerializer
 <a name="WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-boolean-system.identitymodel.tokens.SamlSerializer-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>WSSecurityTokenSerializer</h4>
 <pre>public&nbsp;WSSecurityTokenSerializer(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
@@ -569,6 +607,194 @@ extends <a href="../../../system/identitymodel/selectors/SecurityTokenSerializer
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 <dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WSSecurityTokenSerializer</h4>
+<pre>public&nbsp;WSSecurityTokenSerializer(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                                 boolean&nbsp;emitBspRequiredAttributes,
+                                 <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                                 <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                                 <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-int-int-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WSSecurityTokenSerializer</h4>
+<pre>public&nbsp;WSSecurityTokenSerializer(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                                 boolean&nbsp;emitBspRequiredAttributes,
+                                 <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                                 <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                                 <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes,
+                                 int&nbsp;maximumKeyDerivationOffset,
+                                 int&nbsp;maximumKeyDerivationLabelLength,
+                                 int&nbsp;maximumKeyDerivationNonceLength)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                 <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                 <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-system.servicemodel.security.TrustVersion-system.servicemodel.security.SecureConversationVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WSSecurityTokenSerializer</h4>
+<pre>public&nbsp;WSSecurityTokenSerializer(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                                 <a href="../../../system/servicemodel/security/TrustVersion.html" title="class in system.servicemodel.security">TrustVersion</a>&nbsp;trustVersion,
+                                 <a href="../../../system/servicemodel/security/SecureConversationVersion.html" title="class in system.servicemodel.security">SecureConversationVersion</a>&nbsp;secureConversationVersion,
+                                 boolean&nbsp;emitBspRequiredAttributes,
+                                 <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                                 <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                                 <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                 <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                 <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WSSecurityTokenSerializer-system.servicemodel.security.SecurityVersion-system.servicemodel.security.TrustVersion-system.servicemodel.security.SecureConversationVersion-boolean-system.identitymodel.tokens.SamlSerializer-system.servicemodel.security.SecurityStateEncoder-system.collections.generic.IEnumerable_1-int-int-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>WSSecurityTokenSerializer</h4>
+<pre>public&nbsp;WSSecurityTokenSerializer(<a href="../../../system/servicemodel/security/SecurityVersion.html" title="class in system.servicemodel.security">SecurityVersion</a>&nbsp;securityVersion,
+                                 <a href="../../../system/servicemodel/security/TrustVersion.html" title="class in system.servicemodel.security">TrustVersion</a>&nbsp;trustVersion,
+                                 <a href="../../../system/servicemodel/security/SecureConversationVersion.html" title="class in system.servicemodel.security">SecureConversationVersion</a>&nbsp;secureConversationVersion,
+                                 boolean&nbsp;emitBspRequiredAttributes,
+                                 <a href="../../../system/identitymodel/tokens/SamlSerializer.html" title="class in system.identitymodel.tokens">SamlSerializer</a>&nbsp;samlSerializer,
+                                 <a href="../../../system/servicemodel/security/SecurityStateEncoder.html" title="class in system.servicemodel.security">SecurityStateEncoder</a>&nbsp;securityStateEncoder,
+                                 <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;knownTypes,
+                                 int&nbsp;maximumKeyDerivationOffset,
+                                 int&nbsp;maximumKeyDerivationLabelLength,
+                                 int&nbsp;maximumKeyDerivationNonceLength)
+                          throws java.lang.Throwable,
+                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                 <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                 <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                 <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                 <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                 <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                 <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 </dl>
 </li>

@@ -16,10 +16,13 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="CreateRequestParameters()">
 <meta name="keywords" content="getUseStrTransform()">
 <meta name="keywords" content="setUseStrTransform()">
 <meta name="keywords" content="getKeySize()">
 <meta name="keywords" content="setKeySize()">
+<meta name="keywords" content="getClaimTypeRequirements()">
+<meta name="keywords" content="getAdditionalRequestParameters()">
 <meta name="keywords" content="getKeyType()">
 <meta name="keywords" content="setKeyType()">
 <meta name="keywords" content="getIssuerBinding()">
@@ -45,7 +48,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -264,100 +267,113 @@ extends <a href="../../../../system/servicemodel/security/tokens/SecurityTokenPa
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#CreateRequestParameters-system.servicemodel.MessageSecurityVersion-system.identitymodel.selectors.SecurityTokenSerializer-">CreateRequestParameters</a></span>(<a href="../../../../system/servicemodel/MessageSecurityVersion.html" title="class in system.servicemodel">MessageSecurityVersion</a>&nbsp;messageSecurityVersion,
+                       <a href="../../../../system/identitymodel/selectors/SecurityTokenSerializer.html" title="class in system.identitymodel.selectors">SecurityTokenSerializer</a>&nbsp;securityTokenSerializer)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getAdditionalRequestParameters--">getAdditionalRequestParameters</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getClaimTypeRequirements--">getClaimTypeRequirements</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/servicemodel/MessageSecurityVersion.html" title="class in system.servicemodel">MessageSecurityVersion</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getDefaultMessageSecurityVersion--">getDefaultMessageSecurityVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getIssuerAddress--">getIssuerAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getIssuerBinding--">getIssuerBinding</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getIssuerMetadataAddress--">getIssuerMetadataAddress</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getKeySize--">getKeySize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/identitymodel/tokens/SecurityKeyType.html" title="class in system.identitymodel.tokens">SecurityKeyType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getKeyType--">getKeyType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getTokenType--">getTokenType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#getUseStrTransform--">getUseStrTransform</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setDefaultMessageSecurityVersion-system.servicemodel.MessageSecurityVersion-">setDefaultMessageSecurityVersion</a></span>(<a href="../../../../system/servicemodel/MessageSecurityVersion.html" title="class in system.servicemodel">MessageSecurityVersion</a>&nbsp;DefaultMessageSecurityVersion)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setIssuerAddress-system.servicemodel.EndpointAddress-">setIssuerAddress</a></span>(<a href="../../../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;IssuerAddress)</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setIssuerBinding-system.servicemodel.channels.Binding-">setIssuerBinding</a></span>(<a href="../../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a>&nbsp;IssuerBinding)</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setIssuerMetadataAddress-system.servicemodel.EndpointAddress-">setIssuerMetadataAddress</a></span>(<a href="../../../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;IssuerMetadataAddress)</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setKeySize-int-">setKeySize</a></span>(int&nbsp;KeySize)</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setKeyType-system.identitymodel.tokens.SecurityKeyType-">setKeyType</a></span>(<a href="../../../../system/identitymodel/tokens/SecurityKeyType.html" title="class in system.identitymodel.tokens">SecurityKeyType</a>&nbsp;KeyType)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setTokenType-java.lang.String-">setTokenType</a></span>(java.lang.String&nbsp;TokenType)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html#setUseStrTransform-boolean-">setUseStrTransform</a></span>(boolean&nbsp;UseStrTransform)</code>&nbsp;</td>
 </tr>
@@ -555,6 +571,85 @@ extends <a href="../../../../system/servicemodel/security/tokens/SecurityTokenPa
 <dd><a href="../../../../system/servicemodel/security/tokens/IssuedSecurityTokenParameters.html" title="class in system.servicemodel.security.tokens"><code>IssuedSecurityTokenParameters</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="CreateRequestParameters-system.servicemodel.MessageSecurityVersion-system.identitymodel.selectors.SecurityTokenSerializer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CreateRequestParameters</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;CreateRequestParameters(<a href="../../../../system/servicemodel/MessageSecurityVersion.html" title="class in system.servicemodel">MessageSecurityVersion</a>&nbsp;messageSecurityVersion,
+                                            <a href="../../../../system/identitymodel/selectors/SecurityTokenSerializer.html" title="class in system.identitymodel.selectors">SecurityTokenSerializer</a>&nbsp;securityTokenSerializer)
+                                     throws java.lang.Throwable,
+                                            <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                            <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                            <a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                            <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                            <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                            <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                            <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                            <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                            <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                            <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                            <a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                            <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                            <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                            <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                            <a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
+                                            <a href="../../../../system/RankException.html" title="class in system">RankException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code><a href="../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="getAdditionalRequestParameters--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAdditionalRequestParameters</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getAdditionalRequestParameters()
+                                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getClaimTypeRequirements--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getClaimTypeRequirements</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getClaimTypeRequirements()
+                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

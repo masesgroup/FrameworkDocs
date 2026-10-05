@@ -123,7 +123,22 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">org.mases.jcobridge.netreflection.NetObject</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">system.servicemodel.channels.CommunicationObject</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../system/servicemodel/ChannelFactory.html" title="class in system.servicemodel">system.servicemodel.ChannelFactory</a></li>
+<li>
+<ul class="inheritance">
+<li><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">system.servicemodel.ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</li>
+<li>
+<ul class="inheritance">
 <li>system.servicemodel.security.WSTrustChannelFactory</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -134,12 +149,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">WSTrustChannelFactory</span>
-extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></pre>
+extends <a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</pre>
 <div class="block">The base .NET class managing System.ServiceModel.Security.WSTrustChannelFactory, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -352,6 +367,27 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/WSTrustChannelFactory.html#setWSTrustResponseSerializer-system.identitymodel.protocols.wstrust.WSTrustResponseSerializer-">setWSTrustResponseSerializer</a></span>(<a href="../../../system/identitymodel/protocols/wstrust/WSTrustResponseSerializer.html" title="class in system.identitymodel.protocols.wstrust">WSTrustResponseSerializer</a>&nbsp;WSTrustResponseSerializer)</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.ChannelFactory_1">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.servicemodel.<a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a></h3>
+<code><a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannel--">CreateChannel</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannel-system.servicemodel.EndpointAddress-">CreateChannel</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithActAsToken-system.identitymodel.tokens.SecurityToken-">CreateChannelWithActAsToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithActAsToken-system.identitymodel.tokens.SecurityToken-system.servicemodel.EndpointAddress-">CreateChannelWithActAsToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithActAsToken-system.identitymodel.tokens.SecurityToken-system.servicemodel.EndpointAddress-system.Uri-">CreateChannelWithActAsToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithIssuedToken-system.identitymodel.tokens.SecurityToken-">CreateChannelWithIssuedToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithIssuedToken-system.identitymodel.tokens.SecurityToken-system.servicemodel.EndpointAddress-">CreateChannelWithIssuedToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithIssuedToken-system.identitymodel.tokens.SecurityToken-system.servicemodel.EndpointAddress-system.Uri-">CreateChannelWithIssuedToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithOnBehalfOfToken-system.identitymodel.tokens.SecurityToken-">CreateChannelWithOnBehalfOfToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithOnBehalfOfToken-system.identitymodel.tokens.SecurityToken-system.servicemodel.EndpointAddress-">CreateChannelWithOnBehalfOfToken</a>, <a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannelWithOnBehalfOfToken-system.identitymodel.tokens.SecurityToken-system.servicemodel.EndpointAddress-system.Uri-">CreateChannelWithOnBehalfOfToken</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.ChannelFactory">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.servicemodel.<a href="../../../system/servicemodel/ChannelFactory.html" title="class in system.servicemodel">ChannelFactory</a></h3>
+<code><a href="../../../system/servicemodel/ChannelFactory.html#close--">close</a>, <a href="../../../system/servicemodel/ChannelFactory.html#getCredentials--">getCredentials</a>, <a href="../../../system/servicemodel/ChannelFactory.html#getEndpoint--">getEndpoint</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.channels.CommunicationObject">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;system.servicemodel.channels.<a href="../../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a></h3>
+<code><a href="../../../system/servicemodel/channels/CommunicationObject.html#Abort--">Abort</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#addClosed-system.EventHandler-">addClosed</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#addClosing-system.EventHandler-">addClosing</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#addFaulted-system.EventHandler-">addFaulted</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#addOpened-system.EventHandler-">addOpened</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#addOpening-system.EventHandler-">addOpening</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#BeginClose-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginClose</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#BeginClose-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginClose</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#BeginOpen-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginOpen</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#BeginOpen-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginOpen</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#Close--">Close</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#Close-system.TimeSpan-">Close</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#EndClose-system.IAsyncResult-">EndClose</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#EndOpen-system.IAsyncResult-">EndOpen</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#getState--">getState</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#Open--">Open</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#Open-system.TimeSpan-">Open</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#removeClosed-system.EventHandler-">removeClosed</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#removeClosing-system.EventHandler-">removeClosing</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#removeFaulted-system.EventHandler-">removeFaulted</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#removeOpened-system.EventHandler-">removeOpened</a>, <a href="../../../system/servicemodel/channels/CommunicationObject.html#removeOpening-system.EventHandler-">removeOpening</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
 <!--   -->
@@ -754,6 +790,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                              <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <dl>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#CreateChannel-system.servicemodel.EndpointAddress-system.Uri-">CreateChannel</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
@@ -783,7 +821,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Assembly</dd>
 </dl>
@@ -802,7 +840,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the Fullname of reflected Class</dd>
 </dl>
@@ -821,7 +859,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>An <code>Object</code> representing the CLR instance of the instantiated Class</dd>
 </dl>
@@ -840,7 +878,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>String</code> representing the name used to allocated the object
          in CLR context</dd>
@@ -860,7 +898,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
 </dl>
@@ -959,7 +997,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
-<dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+<dd><code><a href="../../../system/servicemodel/ChannelFactory_1.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a>&lt;<a href="../../../system/servicemodel/security/IWSTrustChannelContract.html" title="interface in system.servicemodel.security">IWSTrustChannelContract</a>&gt;</code></dd>
 </dl>
 </li>
 </ul>

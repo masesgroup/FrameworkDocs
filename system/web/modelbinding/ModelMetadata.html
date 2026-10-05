@@ -16,6 +16,7 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="GetValidators()">
 <meta name="keywords" content="GetDisplayName()">
 <meta name="keywords" content="getConvertEmptyStringToNull()">
 <meta name="keywords" content="setConvertEmptyStringToNull()">
@@ -35,6 +36,8 @@
 <meta name="keywords" content="setShowForEdit()">
 <meta name="keywords" content="getOrder()">
 <meta name="keywords" content="setOrder()">
+<meta name="keywords" content="getAdditionalValues()">
+<meta name="keywords" content="getProperties()">
 <meta name="keywords" content="getModel()">
 <meta name="keywords" content="setModel()">
 <meta name="keywords" content="getDataTypeName()">
@@ -73,7 +76,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -253,6 +256,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#ModelMetadata--">ModelMetadata</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#ModelMetadata-system.web.modelbinding.ModelMetadataProvider-org.mases.jcobridge.netreflection.NetType-system.Func_1-org.mases.jcobridge.netreflection.NetType-java.lang.String-">ModelMetadata</a></span>(<a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a>&nbsp;provider,
+             <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
+             <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
+             <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
+             java.lang.String&nbsp;propertyName)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#ModelMetadata-java.lang.Object-">ModelMetadata</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -279,212 +289,224 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getAdditionalValues--">getAdditionalValues</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getContainerType--">getContainerType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getConvertEmptyStringToNull--">getConvertEmptyStringToNull</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getDataTypeName--">getDataTypeName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getDescription--">getDescription</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getDisplayFormatString--">getDisplayFormatString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getDisplayName--">getDisplayName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#GetDisplayName--">GetDisplayName</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getEditFormatString--">getEditFormatString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getHideSurroundingHtml--">getHideSurroundingHtml</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getIsComplexType--">getIsComplexType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getIsNullableValueType--">getIsNullableValueType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getIsReadOnly--">getIsReadOnly</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getIsRequired--">getIsRequired</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getModel--">getModel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getModelType--">getModelType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getNullDisplayText--">getNullDisplayText</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getOrder--">getOrder</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getPropertyName--">getPropertyName</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getRequestValidationEnabled--">getRequestValidationEnabled</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getProperties--">getProperties</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getShortDisplayName--">getShortDisplayName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getPropertyName--">getPropertyName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getShowForDisplay--">getShowForDisplay</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getRequestValidationEnabled--">getRequestValidationEnabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i27" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getShortDisplayName--">getShortDisplayName</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getShowForDisplay--">getShowForDisplay</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getShowForEdit--">getShowForEdit</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getSimpleDisplayText--">getSimpleDisplayText</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getTemplateHint--">getTemplateHint</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#GetValidators-system.web.modelbinding.ModelBindingExecutionContext-">GetValidators</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getWatermark--">getWatermark</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setConvertEmptyStringToNull-boolean-">setConvertEmptyStringToNull</a></span>(boolean&nbsp;ConvertEmptyStringToNull)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setDataTypeName-java.lang.String-">setDataTypeName</a></span>(java.lang.String&nbsp;DataTypeName)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setDisplayFormatString-java.lang.String-">setDisplayFormatString</a></span>(java.lang.String&nbsp;DisplayFormatString)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setDisplayName-java.lang.String-">setDisplayName</a></span>(java.lang.String&nbsp;DisplayName)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setEditFormatString-java.lang.String-">setEditFormatString</a></span>(java.lang.String&nbsp;EditFormatString)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setHideSurroundingHtml-boolean-">setHideSurroundingHtml</a></span>(boolean&nbsp;HideSurroundingHtml)</code>&nbsp;</td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setIsReadOnly-boolean-">setIsReadOnly</a></span>(boolean&nbsp;IsReadOnly)</code>&nbsp;</td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setIsRequired-boolean-">setIsRequired</a></span>(boolean&nbsp;IsRequired)</code>&nbsp;</td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setModel-org.mases.jcobridge.netreflection.NetObject-">setModel</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;Model)</code>&nbsp;</td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setNullDisplayText-java.lang.String-">setNullDisplayText</a></span>(java.lang.String&nbsp;NullDisplayText)</code>&nbsp;</td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setOrder-int-">setOrder</a></span>(int&nbsp;Order)</code>&nbsp;</td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setRequestValidationEnabled-boolean-">setRequestValidationEnabled</a></span>(boolean&nbsp;RequestValidationEnabled)</code>&nbsp;</td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setShortDisplayName-java.lang.String-">setShortDisplayName</a></span>(java.lang.String&nbsp;ShortDisplayName)</code>&nbsp;</td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setShowForDisplay-boolean-">setShowForDisplay</a></span>(boolean&nbsp;ShowForDisplay)</code>&nbsp;</td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setShowForEdit-boolean-">setShowForEdit</a></span>(boolean&nbsp;ShowForEdit)</code>&nbsp;</td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setSimpleDisplayText-java.lang.String-">setSimpleDisplayText</a></span>(java.lang.String&nbsp;SimpleDisplayText)</code>&nbsp;</td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setTemplateHint-java.lang.String-">setTemplateHint</a></span>(java.lang.String&nbsp;TemplateHint)</code>&nbsp;</td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#setWatermark-java.lang.String-">setWatermark</a></span>(java.lang.String&nbsp;Watermark)</code>&nbsp;</td>
 </tr>
@@ -591,6 +613,32 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="ModelMetadata-system.web.modelbinding.ModelMetadataProvider-org.mases.jcobridge.netreflection.NetType-system.Func_1-org.mases.jcobridge.netreflection.NetType-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ModelMetadata</h4>
+<pre>public&nbsp;ModelMetadata(<a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a>&nbsp;provider,
+                     <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
+                     <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
+                     <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
+                     java.lang.String&nbsp;propertyName)
+              throws java.lang.Throwable,
+                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ModelMetadata-java.lang.Object-">
 <!--   -->
 </a>
@@ -630,6 +678,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding"><code>ModelMetadata</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getAdditionalValues--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAdditionalValues</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;getAdditionalValues()
+                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -987,6 +1049,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getProperties--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getProperties</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getProperties()
+                            throws java.lang.Throwable,
+                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getPropertyName--">
 <!--   -->
 </a>
@@ -1095,6 +1175,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getTemplateHint</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getTemplateHint()
                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="GetValidators-system.web.modelbinding.ModelBindingExecutionContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>GetValidators</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetValidators(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
+                            throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

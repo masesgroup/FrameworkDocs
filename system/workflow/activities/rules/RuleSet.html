@@ -19,6 +19,7 @@
 <meta name="keywords" content="Validate()">
 <meta name="keywords" content="Clone()">
 <meta name="keywords" content="Execute()">
+<meta name="keywords" content="getRules()">
 <meta name="keywords" content="getDescription()">
 <meta name="keywords" content="setDescription()">
 <meta name="keywords" content="getName()">
@@ -38,7 +39,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -297,22 +298,26 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#getName--">getName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setChainingBehavior-system.workflow.activities.rules.RuleChainingBehavior-">setChainingBehavior</a></span>(<a href="../../../../system/workflow/activities/rules/RuleChainingBehavior.html" title="class in system.workflow.activities.rules">RuleChainingBehavior</a>&nbsp;ChainingBehavior)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#getRules--">getRules</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setChainingBehavior-system.workflow.activities.rules.RuleChainingBehavior-">setChainingBehavior</a></span>(<a href="../../../../system/workflow/activities/rules/RuleChainingBehavior.html" title="class in system.workflow.activities.rules">RuleChainingBehavior</a>&nbsp;ChainingBehavior)</code>&nbsp;</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/activities/rules/RuleSet.html#Validate-system.workflow.activities.rules.RuleValidation-">Validate</a></span>(<a href="../../../../system/workflow/activities/rules/RuleValidation.html" title="class in system.workflow.activities.rules">RuleValidation</a>&nbsp;validation)</code>&nbsp;</td>
 </tr>
@@ -692,6 +697,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getRules--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRules</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getRules()
+                       throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

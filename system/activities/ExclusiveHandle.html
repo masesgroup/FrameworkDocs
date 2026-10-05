@@ -18,6 +18,7 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="RegisterBookmarkScope()">
 <meta name="keywords" content="Reinitialize()">
+<meta name="keywords" content="getRegisteredBookmarkScopes()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../script.js"></script>
 </head>
@@ -31,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -268,15 +269,19 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ExclusiveHandle.html#getRegisteredBookmarkScopes--">getRegisteredBookmarkScopes</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ExclusiveHandle.html#RegisterBookmarkScope-system.activities.NativeActivityContext-system.activities.BookmarkScopeHandle-">RegisterBookmarkScope</a></span>(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
                      <a href="../../system/activities/BookmarkScopeHandle.html" title="class in system.activities">BookmarkScopeHandle</a>&nbsp;bookmarkScopeHandle)</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ExclusiveHandle.html#Reinitialize-system.activities.NativeActivityContext-">Reinitialize</a></span>(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ExclusiveHandle.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -525,6 +530,22 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <dd><code><a href="../../system/activities/Handle.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getRegisteredBookmarkScopes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRegisteredBookmarkScopes</h4>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getRegisteredBookmarkScopes()
+                                                 throws java.lang.Throwable,
+                                                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>

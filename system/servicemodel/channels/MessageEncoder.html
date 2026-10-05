@@ -17,10 +17,10 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="IsContentTypeSupported()">
+<meta name="keywords" content="WriteMessage()">
 <meta name="keywords" content="BeginWriteMessage()">
 <meta name="keywords" content="ReadMessage()">
 <meta name="keywords" content="EndWriteMessage()">
-<meta name="keywords" content="WriteMessage()">
 <meta name="keywords" content="getMessageVersion()">
 <meta name="keywords" content="getContentType()">
 <meta name="keywords" content="getMediaType()">
@@ -37,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -297,20 +297,44 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#ReadMessage-system.ArraySegment_1-system.servicemodel.channels.BufferManager-">ReadMessage</a></span>(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+           <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#ReadMessage-system.ArraySegment_1-system.servicemodel.channels.BufferManager-java.lang.String-">ReadMessage</a></span>(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+           <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager,
+           java.lang.String&nbsp;contentType)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#ReadMessage-system.io.Stream-int-">ReadMessage</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
            int&nbsp;maxSizeOfHeaders)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#ReadMessage-system.io.Stream-int-java.lang.String-">ReadMessage</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
            int&nbsp;maxSizeOfHeaders,
            java.lang.String&nbsp;contentType)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#WriteMessage-system.servicemodel.channels.Message-int-system.servicemodel.channels.BufferManager-">WriteMessage</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
+            int&nbsp;maxMessageSize,
+            <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager)</code>&nbsp;</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code><a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#WriteMessage-system.servicemodel.channels.Message-int-system.servicemodel.channels.BufferManager-int-">WriteMessage</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
+            int&nbsp;maxMessageSize,
+            <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager,
+            int&nbsp;messageOffset)</code>&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/MessageEncoder.html#WriteMessage-system.servicemodel.channels.Message-system.io.Stream-">WriteMessage</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
             <a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>&nbsp;</td>
@@ -715,6 +739,37 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="ReadMessage-system.ArraySegment_1-system.servicemodel.channels.BufferManager-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadMessage</h4>
+<pre>public&nbsp;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;ReadMessage(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+                           <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager)
+                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="ReadMessage-system.ArraySegment_1-system.servicemodel.channels.BufferManager-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ReadMessage</h4>
+<pre>public&nbsp;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;ReadMessage(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+                           <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager,
+                           java.lang.String&nbsp;contentType)
+                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="ReadMessage-system.io.Stream-int-">
 <!--   -->
 </a>
@@ -756,6 +811,39 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteMessage-system.servicemodel.channels.Message-int-system.servicemodel.channels.BufferManager-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteMessage</h4>
+<pre>public&nbsp;<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;WriteMessage(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
+                                   int&nbsp;maxMessageSize,
+                                   <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager)
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="WriteMessage-system.servicemodel.channels.Message-int-system.servicemodel.channels.BufferManager-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>WriteMessage</h4>
+<pre>public&nbsp;<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;WriteMessage(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
+                                   int&nbsp;maxMessageSize,
+                                   <a href="../../../system/servicemodel/channels/BufferManager.html" title="class in system.servicemodel.channels">BufferManager</a>&nbsp;bufferManager,
+                                   int&nbsp;messageOffset)
+                            throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

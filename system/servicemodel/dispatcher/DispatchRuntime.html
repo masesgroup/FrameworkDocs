@@ -36,6 +36,12 @@
 <meta name="keywords" content="setTransactionAutoCompleteOnSessionClose()">
 <meta name="keywords" content="getValidateMustUnderstand()">
 <meta name="keywords" content="setValidateMustUnderstand()">
+<meta name="keywords" content="getMessageInspectors()">
+<meta name="keywords" content="getInputSessionShutdownHandlers()">
+<meta name="keywords" content="getInstanceContextInitializers()">
+<meta name="keywords" content="getOperations()">
+<meta name="keywords" content="getExternalAuthorizationPolicies()">
+<meta name="keywords" content="setExternalAuthorizationPolicies()">
 <meta name="keywords" content="getMessageAuthenticationAuditLevel()">
 <meta name="keywords" content="setMessageAuthenticationAuditLevel()">
 <meta name="keywords" content="getServiceAuthorizationAuditLevel()">
@@ -82,7 +88,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -308,224 +314,248 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getEnsureOrderedDispatch--">getEnsureOrderedDispatch</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getIgnoreTransactionMessageProperty--">getIgnoreTransactionMessageProperty</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getExternalAuthorizationPolicies--">getExternalAuthorizationPolicies</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getImpersonateCallerForAllOperations--">getImpersonateCallerForAllOperations</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getIgnoreTransactionMessageProperty--">getIgnoreTransactionMessageProperty</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getImpersonateOnSerializingReply--">getImpersonateOnSerializingReply</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getImpersonateCallerForAllOperations--">getImpersonateCallerForAllOperations</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getImpersonateOnSerializingReply--">getImpersonateOnSerializingReply</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getInputSessionShutdownHandlers--">getInputSessionShutdownHandlers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getInstanceContextInitializers--">getInstanceContextInitializers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getInstanceContextProvider--">getInstanceContextProvider</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/dispatcher/IInstanceProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getInstanceProvider--">getInstanceProvider</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getMessageAuthenticationAuditLevel--">getMessageAuthenticationAuditLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getMessageInspectors--">getMessageInspectors</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedKeyedCollection_2.html" title="class in system.collections.generic">SynchronizedKeyedCollection_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getOperations--">getOperations</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/dispatcher/IDispatchOperationSelector.html" title="interface in system.servicemodel.dispatcher">IDispatchOperationSelector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getOperationSelector--">getOperationSelector</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getPreserveMessage--">getPreserveMessage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/description/PrincipalPermissionMode.html" title="class in system.servicemodel.description">PrincipalPermissionMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getPrincipalPermissionMode--">getPrincipalPermissionMode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getReleaseServiceInstanceOnTransactionComplete--">getReleaseServiceInstanceOnTransactionComplete</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/security/RoleProvider.html" title="class in system.web.security">RoleProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getRoleProvider--">getRoleProvider</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/AuditLogLocation.html" title="class in system.servicemodel">AuditLogLocation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getSecurityAuditLogLocation--">getSecurityAuditLogLocation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/ServiceAuthenticationManager.html" title="class in system.servicemodel">ServiceAuthenticationManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getServiceAuthenticationManager--">getServiceAuthenticationManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getServiceAuthorizationAuditLevel--">getServiceAuthorizationAuditLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/ServiceAuthorizationManager.html" title="class in system.servicemodel">ServiceAuthorizationManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getServiceAuthorizationManager--">getServiceAuthorizationManager</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getSingletonInstanceContext--">getSingletonInstanceContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getSuppressAuditFailure--">getSuppressAuditFailure</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../system/threading/SynchronizationContext.html" title="class in system.threading">SynchronizationContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getSynchronizationContext--">getSynchronizationContext</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getTransactionAutoCompleteOnSessionClose--">getTransactionAutoCompleteOnSessionClose</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getType--">getType</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/dispatcher/DispatchOperation.html" title="class in system.servicemodel.dispatcher">DispatchOperation</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getUnhandledDispatchOperation--">getUnhandledDispatchOperation</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#getValidateMustUnderstand--">getValidateMustUnderstand</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setAutomaticInputSessionShutdown-boolean-">setAutomaticInputSessionShutdown</a></span>(boolean&nbsp;AutomaticInputSessionShutdown)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setConcurrencyMode-system.servicemodel.ConcurrencyMode-">setConcurrencyMode</a></span>(<a href="../../../system/servicemodel/ConcurrencyMode.html" title="class in system.servicemodel">ConcurrencyMode</a>&nbsp;ConcurrencyMode)</code>&nbsp;</td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setEnsureOrderedDispatch-boolean-">setEnsureOrderedDispatch</a></span>(boolean&nbsp;EnsureOrderedDispatch)</code>&nbsp;</td>
 </tr>
-<tr id="i37" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setIgnoreTransactionMessageProperty-boolean-">setIgnoreTransactionMessageProperty</a></span>(boolean&nbsp;IgnoreTransactionMessageProperty)</code>&nbsp;</td>
-</tr>
-<tr id="i38" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setImpersonateCallerForAllOperations-boolean-">setImpersonateCallerForAllOperations</a></span>(boolean&nbsp;ImpersonateCallerForAllOperations)</code>&nbsp;</td>
-</tr>
-<tr id="i39" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setImpersonateOnSerializingReply-boolean-">setImpersonateOnSerializingReply</a></span>(boolean&nbsp;ImpersonateOnSerializingReply)</code>&nbsp;</td>
-</tr>
-<tr id="i40" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setInstanceContextProvider-system.servicemodel.dispatcher.IInstanceContextProvider-">setInstanceContextProvider</a></span>(<a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a>&nbsp;InstanceContextProvider)</code>&nbsp;</td>
-</tr>
-<tr id="i41" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setInstanceProvider-system.servicemodel.dispatcher.IInstanceProvider-">setInstanceProvider</a></span>(<a href="../../../system/servicemodel/dispatcher/IInstanceProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceProvider</a>&nbsp;InstanceProvider)</code>&nbsp;</td>
-</tr>
 <tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setExternalAuthorizationPolicies-system.collections.objectmodel.ReadOnlyCollection_1-">setExternalAuthorizationPolicies</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ExternalAuthorizationPolicies)</code>&nbsp;</td>
 </tr>
 <tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setMessageAuthenticationAuditLevel-system.servicemodel.AuditLevel-">setMessageAuthenticationAuditLevel</a></span>(<a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a>&nbsp;MessageAuthenticationAuditLevel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setIgnoreTransactionMessageProperty-boolean-">setIgnoreTransactionMessageProperty</a></span>(boolean&nbsp;IgnoreTransactionMessageProperty)</code>&nbsp;</td>
 </tr>
 <tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setOperationSelector-system.servicemodel.dispatcher.IDispatchOperationSelector-">setOperationSelector</a></span>(<a href="../../../system/servicemodel/dispatcher/IDispatchOperationSelector.html" title="interface in system.servicemodel.dispatcher">IDispatchOperationSelector</a>&nbsp;OperationSelector)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setImpersonateCallerForAllOperations-boolean-">setImpersonateCallerForAllOperations</a></span>(boolean&nbsp;ImpersonateCallerForAllOperations)</code>&nbsp;</td>
 </tr>
 <tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setPreserveMessage-boolean-">setPreserveMessage</a></span>(boolean&nbsp;PreserveMessage)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setImpersonateOnSerializingReply-boolean-">setImpersonateOnSerializingReply</a></span>(boolean&nbsp;ImpersonateOnSerializingReply)</code>&nbsp;</td>
 </tr>
 <tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setPrincipalPermissionMode-system.servicemodel.description.PrincipalPermissionMode-">setPrincipalPermissionMode</a></span>(<a href="../../../system/servicemodel/description/PrincipalPermissionMode.html" title="class in system.servicemodel.description">PrincipalPermissionMode</a>&nbsp;PrincipalPermissionMode)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setInstanceContextProvider-system.servicemodel.dispatcher.IInstanceContextProvider-">setInstanceContextProvider</a></span>(<a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a>&nbsp;InstanceContextProvider)</code>&nbsp;</td>
 </tr>
 <tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setReleaseServiceInstanceOnTransactionComplete-boolean-">setReleaseServiceInstanceOnTransactionComplete</a></span>(boolean&nbsp;ReleaseServiceInstanceOnTransactionComplete)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setInstanceProvider-system.servicemodel.dispatcher.IInstanceProvider-">setInstanceProvider</a></span>(<a href="../../../system/servicemodel/dispatcher/IInstanceProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceProvider</a>&nbsp;InstanceProvider)</code>&nbsp;</td>
 </tr>
 <tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setRoleProvider-system.web.security.RoleProvider-">setRoleProvider</a></span>(<a href="../../../system/web/security/RoleProvider.html" title="class in system.web.security">RoleProvider</a>&nbsp;RoleProvider)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
 <tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSecurityAuditLogLocation-system.servicemodel.AuditLogLocation-">setSecurityAuditLogLocation</a></span>(<a href="../../../system/servicemodel/AuditLogLocation.html" title="class in system.servicemodel">AuditLogLocation</a>&nbsp;SecurityAuditLogLocation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setMessageAuthenticationAuditLevel-system.servicemodel.AuditLevel-">setMessageAuthenticationAuditLevel</a></span>(<a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a>&nbsp;MessageAuthenticationAuditLevel)</code>&nbsp;</td>
 </tr>
 <tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setServiceAuthenticationManager-system.servicemodel.ServiceAuthenticationManager-">setServiceAuthenticationManager</a></span>(<a href="../../../system/servicemodel/ServiceAuthenticationManager.html" title="class in system.servicemodel">ServiceAuthenticationManager</a>&nbsp;ServiceAuthenticationManager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setOperationSelector-system.servicemodel.dispatcher.IDispatchOperationSelector-">setOperationSelector</a></span>(<a href="../../../system/servicemodel/dispatcher/IDispatchOperationSelector.html" title="interface in system.servicemodel.dispatcher">IDispatchOperationSelector</a>&nbsp;OperationSelector)</code>&nbsp;</td>
 </tr>
 <tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setServiceAuthorizationAuditLevel-system.servicemodel.AuditLevel-">setServiceAuthorizationAuditLevel</a></span>(<a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a>&nbsp;ServiceAuthorizationAuditLevel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setPreserveMessage-boolean-">setPreserveMessage</a></span>(boolean&nbsp;PreserveMessage)</code>&nbsp;</td>
 </tr>
 <tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setServiceAuthorizationManager-system.servicemodel.ServiceAuthorizationManager-">setServiceAuthorizationManager</a></span>(<a href="../../../system/servicemodel/ServiceAuthorizationManager.html" title="class in system.servicemodel">ServiceAuthorizationManager</a>&nbsp;ServiceAuthorizationManager)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setPrincipalPermissionMode-system.servicemodel.description.PrincipalPermissionMode-">setPrincipalPermissionMode</a></span>(<a href="../../../system/servicemodel/description/PrincipalPermissionMode.html" title="class in system.servicemodel.description">PrincipalPermissionMode</a>&nbsp;PrincipalPermissionMode)</code>&nbsp;</td>
 </tr>
 <tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSingletonInstanceContext-system.servicemodel.InstanceContext-">setSingletonInstanceContext</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;SingletonInstanceContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setReleaseServiceInstanceOnTransactionComplete-boolean-">setReleaseServiceInstanceOnTransactionComplete</a></span>(boolean&nbsp;ReleaseServiceInstanceOnTransactionComplete)</code>&nbsp;</td>
 </tr>
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSuppressAuditFailure-boolean-">setSuppressAuditFailure</a></span>(boolean&nbsp;SuppressAuditFailure)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setRoleProvider-system.web.security.RoleProvider-">setRoleProvider</a></span>(<a href="../../../system/web/security/RoleProvider.html" title="class in system.web.security">RoleProvider</a>&nbsp;RoleProvider)</code>&nbsp;</td>
 </tr>
 <tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSynchronizationContext-system.threading.SynchronizationContext-">setSynchronizationContext</a></span>(<a href="../../../system/threading/SynchronizationContext.html" title="class in system.threading">SynchronizationContext</a>&nbsp;SynchronizationContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSecurityAuditLogLocation-system.servicemodel.AuditLogLocation-">setSecurityAuditLogLocation</a></span>(<a href="../../../system/servicemodel/AuditLogLocation.html" title="class in system.servicemodel">AuditLogLocation</a>&nbsp;SecurityAuditLogLocation)</code>&nbsp;</td>
 </tr>
 <tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setTransactionAutoCompleteOnSessionClose-boolean-">setTransactionAutoCompleteOnSessionClose</a></span>(boolean&nbsp;TransactionAutoCompleteOnSessionClose)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setServiceAuthenticationManager-system.servicemodel.ServiceAuthenticationManager-">setServiceAuthenticationManager</a></span>(<a href="../../../system/servicemodel/ServiceAuthenticationManager.html" title="class in system.servicemodel">ServiceAuthenticationManager</a>&nbsp;ServiceAuthenticationManager)</code>&nbsp;</td>
 </tr>
 <tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setType-org.mases.jcobridge.netreflection.NetType-">setType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;Type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setServiceAuthorizationAuditLevel-system.servicemodel.AuditLevel-">setServiceAuthorizationAuditLevel</a></span>(<a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a>&nbsp;ServiceAuthorizationAuditLevel)</code>&nbsp;</td>
 </tr>
 <tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setUnhandledDispatchOperation-system.servicemodel.dispatcher.DispatchOperation-">setUnhandledDispatchOperation</a></span>(<a href="../../../system/servicemodel/dispatcher/DispatchOperation.html" title="class in system.servicemodel.dispatcher">DispatchOperation</a>&nbsp;UnhandledDispatchOperation)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setServiceAuthorizationManager-system.servicemodel.ServiceAuthorizationManager-">setServiceAuthorizationManager</a></span>(<a href="../../../system/servicemodel/ServiceAuthorizationManager.html" title="class in system.servicemodel">ServiceAuthorizationManager</a>&nbsp;ServiceAuthorizationManager)</code>&nbsp;</td>
 </tr>
 <tr id="i59" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSingletonInstanceContext-system.servicemodel.InstanceContext-">setSingletonInstanceContext</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;SingletonInstanceContext)</code>&nbsp;</td>
+</tr>
+<tr id="i60" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSuppressAuditFailure-boolean-">setSuppressAuditFailure</a></span>(boolean&nbsp;SuppressAuditFailure)</code>&nbsp;</td>
+</tr>
+<tr id="i61" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setSynchronizationContext-system.threading.SynchronizationContext-">setSynchronizationContext</a></span>(<a href="../../../system/threading/SynchronizationContext.html" title="class in system.threading">SynchronizationContext</a>&nbsp;SynchronizationContext)</code>&nbsp;</td>
+</tr>
+<tr id="i62" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setTransactionAutoCompleteOnSessionClose-boolean-">setTransactionAutoCompleteOnSessionClose</a></span>(boolean&nbsp;TransactionAutoCompleteOnSessionClose)</code>&nbsp;</td>
+</tr>
+<tr id="i63" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setType-org.mases.jcobridge.netreflection.NetType-">setType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;Type)</code>&nbsp;</td>
+</tr>
+<tr id="i64" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setUnhandledDispatchOperation-system.servicemodel.dispatcher.DispatchOperation-">setUnhandledDispatchOperation</a></span>(<a href="../../../system/servicemodel/dispatcher/DispatchOperation.html" title="class in system.servicemodel.dispatcher">DispatchOperation</a>&nbsp;UnhandledDispatchOperation)</code>&nbsp;</td>
+</tr>
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/DispatchRuntime.html#setValidateMustUnderstand-boolean-">setValidateMustUnderstand</a></span>(boolean&nbsp;ValidateMustUnderstand)</code>&nbsp;</td>
 </tr>
@@ -766,6 +796,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </dl>
 </li>
 </ul>
+<a name="getExternalAuthorizationPolicies--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExternalAuthorizationPolicies</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getExternalAuthorizationPolicies()
+                                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getIgnoreTransactionMessageProperty--">
 <!--   -->
 </a>
@@ -802,6 +846,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getImpersonateOnSerializingReply</h4>
 <pre>public&nbsp;boolean&nbsp;getImpersonateOnSerializingReply()
                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getInputSessionShutdownHandlers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInputSessionShutdownHandlers</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getInputSessionShutdownHandlers()
+                                                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getInstanceContextInitializers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getInstanceContextInitializers</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getInstanceContextInitializers()
+                                                        throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -940,6 +1012,34 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getMessageAuthenticationAuditLevel</h4>
 <pre>public&nbsp;<a href="../../../system/servicemodel/AuditLevel.html" title="class in system.servicemodel">AuditLevel</a>&nbsp;getMessageAuthenticationAuditLevel()
                                               throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getMessageInspectors--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getMessageInspectors</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getMessageInspectors()
+                                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getOperations--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOperations</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedKeyedCollection_2.html" title="class in system.collections.generic">SynchronizedKeyedCollection_2</a>&nbsp;getOperations()
+                                            throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
@@ -1261,6 +1361,42 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                      <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
                                      <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setExternalAuthorizationPolicies-system.collections.objectmodel.ReadOnlyCollection_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExternalAuthorizationPolicies</h4>
+<pre>public&nbsp;void&nbsp;setExternalAuthorizationPolicies(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ExternalAuthorizationPolicies)
+                                      throws java.lang.Throwable,
+                                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                             <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                             <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                             <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                             <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                             <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                             <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

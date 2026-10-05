@@ -61,7 +61,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../system/servicemodel/CallbackBehaviorAttribute.html" title="class in system.servicemodel"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../system/servicemodel/ChannelTerminatedException.html" title="class in system.servicemodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?system/servicemodel/ChannelFactory.html" target="_top">Frames</a></li>
@@ -130,13 +130,17 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
+</dl>
+<dl>
+<dt>Direct Known Subclasses:</dt>
+<dd><a href="../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel">ChannelFactory_1</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">ChannelFactory</span>
 extends <a href="../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a>
-implements <a href="../../system/IDisposable.html" title="interface in system">IDisposable</a>, java.lang.AutoCloseable</pre>
+implements java.lang.AutoCloseable</pre>
 <div class="block">The base .NET class managing System.ServiceModel.ChannelFactory, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089.
  <p>
  
@@ -307,13 +311,6 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.IDisposable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.<a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></h3>
-<code><a href="../../system/IDisposable.html#Dispose--">Dispose</a>, <a href="../../system/IDisposable.html#ToIDisposable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIDisposable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -505,8 +502,6 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/channels/CommunicationObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -526,8 +521,6 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/channels/CommunicationObject.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -547,8 +540,6 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/channels/CommunicationObject.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -568,8 +559,6 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/channels/CommunicationObject.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -590,8 +579,6 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/channels/CommunicationObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/channels/CommunicationObject.html" title="class in system.servicemodel.channels">CommunicationObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -637,7 +624,7 @@ implements <a href="../../system/IDisposable.html" title="interface in system">I
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../system/servicemodel/CallbackBehaviorAttribute.html" title="class in system.servicemodel"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../system/servicemodel/ChannelTerminatedException.html" title="class in system.servicemodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../system/servicemodel/ChannelFactory_1.html" title="class in system.servicemodel"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../index.html?system/servicemodel/ChannelFactory.html" target="_top">Frames</a></li>

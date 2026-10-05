@@ -16,6 +16,8 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getAddedDefinitions()">
+<meta name="keywords" content="getRemovedDefinitions()">
 <meta name="keywords" content="getAtomicComposition()">
 <meta name="keywords" content="setAtomicComposition()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -31,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -212,6 +214,11 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#ComposablePartCatalogChangeEventArgs--">ComposablePartCatalogChangeEventArgs</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#ComposablePartCatalogChangeEventArgs-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.componentmodel.composition.hosting.AtomicComposition-">ComposablePartCatalogChangeEventArgs</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;addedDefinitions,
+                                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;removedDefinitions,
+                                    <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#ComposablePartCatalogChangeEventArgs-java.lang.Object-">ComposablePartCatalogChangeEventArgs</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -238,44 +245,52 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getAddedDefinitions--">getAddedDefinitions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getAtomicComposition--">getAtomicComposition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#getRemovedDefinitions--">getRemovedDefinitions</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#setAtomicComposition-system.componentmodel.composition.hosting.AtomicComposition-">setAtomicComposition</a></span>(<a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;AtomicComposition)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -382,6 +397,24 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </dl>
 </li>
 </ul>
+<a name="ComposablePartCatalogChangeEventArgs-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.componentmodel.composition.hosting.AtomicComposition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ComposablePartCatalogChangeEventArgs</h4>
+<pre>public&nbsp;ComposablePartCatalogChangeEventArgs(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;addedDefinitions,
+                                            <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;removedDefinitions,
+                                            <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)
+                                     throws java.lang.Throwable,
+                                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ComposablePartCatalogChangeEventArgs-java.lang.Object-">
 <!--   -->
 </a>
@@ -421,6 +454,20 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <dd><a href="../../../../system/componentmodel/composition/hosting/ComposablePartCatalogChangeEventArgs.html" title="class in system.componentmodel.composition.hosting"><code>ComposablePartCatalogChangeEventArgs</code></a> instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - in case of error during cast operation</dd>
+</dl>
+</li>
+</ul>
+<a name="getAddedDefinitions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAddedDefinitions</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getAddedDefinitions()
+                                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
@@ -531,6 +578,20 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <dd><code><a href="../../../../system/EventArgs.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/EventArgs.html" title="class in system">EventArgs</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getRemovedDefinitions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemovedDefinitions</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getRemovedDefinitions()
+                                    throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

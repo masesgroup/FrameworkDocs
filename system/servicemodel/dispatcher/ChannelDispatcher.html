@@ -36,6 +36,9 @@
 <meta name="keywords" content="setMaxPendingReceives()">
 <meta name="keywords" content="getMaxTransactedBatchSize()">
 <meta name="keywords" content="setMaxTransactedBatchSize()">
+<meta name="keywords" content="getEndpoints()">
+<meta name="keywords" content="getChannelInitializers()">
+<meta name="keywords" content="getErrorHandlers()">
 <meta name="keywords" content="getMessageVersion()">
 <meta name="keywords" content="setMessageVersion()">
 <meta name="keywords" content="getServiceThrottle()">
@@ -58,7 +61,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -294,140 +297,152 @@ extends <a href="../../../system/servicemodel/dispatcher/ChannelDispatcherBase.h
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getBindingName--">getBindingName</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getChannelInitializers--">getChannelInitializers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getEndpoints--">getEndpoints</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getErrorHandlers--">getErrorHandlers</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getIncludeExceptionDetailInFaults--">getIncludeExceptionDetailInFaults</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getIsTransactedAccept--">getIsTransactedAccept</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getIsTransactedReceive--">getIsTransactedReceive</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getManualAddressing--">getManualAddressing</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getMaxPendingReceives--">getMaxPendingReceives</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getMaxTransactedBatchSize--">getMaxTransactedBatchSize</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/MessageVersion.html" title="class in system.servicemodel.channels">MessageVersion</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getMessageVersion--">getMessageVersion</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getReceiveContextEnabled--">getReceiveContextEnabled</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getReceiveSynchronously--">getReceiveSynchronously</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getSendAsynchronously--">getSendAsynchronously</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/dispatcher/ServiceThrottle.html" title="class in system.servicemodel.dispatcher">ServiceThrottle</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getServiceThrottle--">getServiceThrottle</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/transactions/IsolationLevel.html" title="class in system.transactions">IsolationLevel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getTransactionIsolationLevel--">getTransactionIsolationLevel</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getTransactionTimeout--">getTransactionTimeout</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setAsynchronousTransactedAcceptEnabled-boolean-">setAsynchronousTransactedAcceptEnabled</a></span>(boolean&nbsp;AsynchronousTransactedAcceptEnabled)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setIncludeExceptionDetailInFaults-boolean-">setIncludeExceptionDetailInFaults</a></span>(boolean&nbsp;IncludeExceptionDetailInFaults)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setIsTransactedReceive-boolean-">setIsTransactedReceive</a></span>(boolean&nbsp;IsTransactedReceive)</code>&nbsp;</td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setManualAddressing-boolean-">setManualAddressing</a></span>(boolean&nbsp;ManualAddressing)</code>&nbsp;</td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setMaxPendingReceives-int-">setMaxPendingReceives</a></span>(int&nbsp;MaxPendingReceives)</code>&nbsp;</td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setMaxTransactedBatchSize-int-">setMaxTransactedBatchSize</a></span>(int&nbsp;MaxTransactedBatchSize)</code>&nbsp;</td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setMessageVersion-system.servicemodel.channels.MessageVersion-">setMessageVersion</a></span>(<a href="../../../system/servicemodel/channels/MessageVersion.html" title="class in system.servicemodel.channels">MessageVersion</a>&nbsp;MessageVersion)</code>&nbsp;</td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setReceiveContextEnabled-boolean-">setReceiveContextEnabled</a></span>(boolean&nbsp;ReceiveContextEnabled)</code>&nbsp;</td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setReceiveSynchronously-boolean-">setReceiveSynchronously</a></span>(boolean&nbsp;ReceiveSynchronously)</code>&nbsp;</td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setSendAsynchronously-boolean-">setSendAsynchronously</a></span>(boolean&nbsp;SendAsynchronously)</code>&nbsp;</td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setServiceThrottle-system.servicemodel.dispatcher.ServiceThrottle-">setServiceThrottle</a></span>(<a href="../../../system/servicemodel/dispatcher/ServiceThrottle.html" title="class in system.servicemodel.dispatcher">ServiceThrottle</a>&nbsp;ServiceThrottle)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setTransactionIsolationLevel-system.transactions.IsolationLevel-">setTransactionIsolationLevel</a></span>(<a href="../../../system/transactions/IsolationLevel.html" title="class in system.transactions">IsolationLevel</a>&nbsp;TransactionIsolationLevel)</code>&nbsp;</td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#setTransactionTimeout-system.TimeSpan-">setTransactionTimeout</a></span>(<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;TransactionTimeout)</code>&nbsp;</td>
 </tr>
@@ -745,6 +760,48 @@ extends <a href="../../../system/servicemodel/dispatcher/ChannelDispatcherBase.h
 <h4>getBindingName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getBindingName()
                                 throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getChannelInitializers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChannelInitializers</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getChannelInitializers()
+                                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getEndpoints--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getEndpoints</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getEndpoints()
+                                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getErrorHandlers--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getErrorHandlers</h4>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getErrorHandlers()
+                              throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

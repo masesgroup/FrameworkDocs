@@ -8,6 +8,7 @@ microsoft.build.tasks.hosting
 microsoft.build.tasks.xaml
 microsoft.build.utilities
 microsoft.csharp
+microsoft.csharp.activities
 microsoft.jscript
 microsoft.jscript.vsa
 microsoft.sqlserver.server
@@ -60,6 +61,7 @@ system.codedom.compiler
 system.collections
 system.collections.concurrent
 system.collections.generic
+system.collections.objectmodel
 system.collections.specialized
 system.componentmodel
 system.componentmodel.composition

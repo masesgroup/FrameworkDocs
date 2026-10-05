@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="Accept()">
+<meta name="keywords" content="getSortOrder()">
 <meta name="keywords" content="getCount()">
 <meta name="keywords" content="getInput()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -32,7 +33,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -281,6 +282,10 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </td>
 </tr>
 <tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbSkipExpression.html#getSortOrder--">getSortOrder</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbSkipExpression.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -290,7 +295,7 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.data.common.commandtrees.<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></h3>
-<code><a href="../../../../system/data/common/commandtrees/DbExpression.html#FromBinary-byte:A-">FromBinary</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromBinary-org.mases.jcobridge.netreflection.JCORefOut-">FromBinary</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromGeography-system.data.spatial.DbGeography-">FromGeography</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromGeometry-system.data.spatial.DbGeometry-">FromGeometry</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromString-java.lang.String-">FromString</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#getExpressionKind--">getExpressionKind</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#getResultType--">getResultType</a></code></li>
+<code><a href="../../../../system/data/common/commandtrees/DbExpression.html#FromBinary-byte:A-">FromBinary</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromBinary-org.mases.jcobridge.netreflection.JCORefOut-">FromBinary</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromBoolean-system.Nullable_1-">FromBoolean</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromByte-system.Nullable_1-">FromByte</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromDateTime-system.Nullable_1-">FromDateTime</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromDateTimeOffset-system.Nullable_1-">FromDateTimeOffset</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromDecimal-system.Nullable_1-">FromDecimal</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromDouble-system.Nullable_1-">FromDouble</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromGeography-system.data.spatial.DbGeography-">FromGeography</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromGeometry-system.data.spatial.DbGeometry-">FromGeometry</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromGuid-system.Nullable_1-">FromGuid</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromInt16-system.Nullable_1-">FromInt16</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromInt32-system.Nullable_1-">FromInt32</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromInt64-system.Nullable_1-">FromInt64</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromSingle-system.Nullable_1-">FromSingle</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#FromString-java.lang.String-">FromString</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#getExpressionKind--">getExpressionKind</a>, <a href="../../../../system/data/common/commandtrees/DbExpression.html#getResultType--">getResultType</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -575,6 +580,20 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <dd><code><a href="../../../../system/data/common/commandtrees/DbExpression.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getSortOrder--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSortOrder</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getSortOrder()
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

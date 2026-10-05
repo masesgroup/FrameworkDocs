@@ -133,7 +133,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <dl>
 <dt>Direct Known Subclasses:</dt>
@@ -324,7 +324,7 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.servicemodel.<a href="../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a></h3>
-<code><a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-system.servicemodel.description.ServiceEndpoint-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-java.lang.String-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-java.lang.String-system.Uri-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-system.Uri-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-system.Uri-system.Uri-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#close--">close</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getAuthentication--">getAuthentication</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getAuthorization--">getAuthorization</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getChannelDispatchers--">getChannelDispatchers</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getCloseTimeout--">getCloseTimeout</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getCredentials--">getCredentials</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getDescription--">getDescription</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getManualFlowControlLimit--">getManualFlowControlLimit</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getOpenTimeout--">getOpenTimeout</a>, <a href="../../system/servicemodel/ServiceHostBase.html#IncrementManualFlowControlLimit-int-">IncrementManualFlowControlLimit</a>, <a href="../../system/servicemodel/ServiceHostBase.html#setCloseTimeout-system.TimeSpan-">setCloseTimeout</a>, <a href="../../system/servicemodel/ServiceHostBase.html#SetEndpointAddress-system.servicemodel.description.ServiceEndpoint-java.lang.String-">SetEndpointAddress</a>, <a href="../../system/servicemodel/ServiceHostBase.html#setManualFlowControlLimit-int-">setManualFlowControlLimit</a>, <a href="../../system/servicemodel/ServiceHostBase.html#setOpenTimeout-system.TimeSpan-">setOpenTimeout</a></code></li>
+<code><a href="../../system/servicemodel/ServiceHostBase.html#AddDefaultEndpoints--">AddDefaultEndpoints</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-system.servicemodel.description.ServiceEndpoint-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-java.lang.String-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-java.lang.String-system.Uri-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-system.Uri-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#AddServiceEndpoint-java.lang.String-system.servicemodel.channels.Binding-system.Uri-system.Uri-">AddServiceEndpoint</a>, <a href="../../system/servicemodel/ServiceHostBase.html#close--">close</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getAuthentication--">getAuthentication</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getAuthorization--">getAuthorization</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getBaseAddresses--">getBaseAddresses</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getChannelDispatchers--">getChannelDispatchers</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getCloseTimeout--">getCloseTimeout</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getCredentials--">getCredentials</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getDescription--">getDescription</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getExtensions--">getExtensions</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getManualFlowControlLimit--">getManualFlowControlLimit</a>, <a href="../../system/servicemodel/ServiceHostBase.html#getOpenTimeout--">getOpenTimeout</a>, <a href="../../system/servicemodel/ServiceHostBase.html#IncrementManualFlowControlLimit-int-">IncrementManualFlowControlLimit</a>, <a href="../../system/servicemodel/ServiceHostBase.html#setCloseTimeout-system.TimeSpan-">setCloseTimeout</a>, <a href="../../system/servicemodel/ServiceHostBase.html#SetEndpointAddress-system.servicemodel.description.ServiceEndpoint-java.lang.String-">SetEndpointAddress</a>, <a href="../../system/servicemodel/ServiceHostBase.html#setManualFlowControlLimit-int-">setManualFlowControlLimit</a>, <a href="../../system/servicemodel/ServiceHostBase.html#setOpenTimeout-system.TimeSpan-">setOpenTimeout</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.servicemodel.channels.CommunicationObject">
@@ -346,13 +346,6 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.IDisposable">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.<a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></h3>
-<code><a href="../../system/IDisposable.html#Dispose--">Dispose</a>, <a href="../../system/IDisposable.html#ToIDisposable-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIDisposable</a></code></li>
 </ul>
 </li>
 </ul>
@@ -780,8 +773,6 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/ServiceHostBase.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -801,8 +792,6 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/ServiceHostBase.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -822,8 +811,6 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/ServiceHostBase.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -843,8 +830,6 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/ServiceHostBase.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -865,8 +850,6 @@ extends <a href="../../system/servicemodel/ServiceHostBase.html" title="class in
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/IDisposable.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/IDisposable.html" title="interface in system">IDisposable</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/servicemodel/ServiceHostBase.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

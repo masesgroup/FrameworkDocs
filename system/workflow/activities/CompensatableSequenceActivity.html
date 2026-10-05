@@ -142,13 +142,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></dd>
+<dd>java.lang.AutoCloseable, <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">CompensatableSequenceActivity</span>
-extends <a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a>
-implements <a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></pre>
+extends <a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a></pre>
 <div class="block">The base .NET class managing System.Workflow.Activities.CompensatableSequenceActivity, System.Workflow.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -295,14 +294,14 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.workflow.componentmodel.<a href="../../../system/workflow/componentmodel/CompositeActivity.html" title="class in system.workflow.componentmodel">CompositeActivity</a></h3>
-<code><a href="../../../system/workflow/componentmodel/CompositeActivity.html#getActivities--">getActivities</a></code></li>
+<code><a href="../../../system/workflow/componentmodel/CompositeActivity.html#getActivities--">getActivities</a>, <a href="../../../system/workflow/componentmodel/CompositeActivity.html#getEnabledActivities--">getEnabledActivities</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.workflow.componentmodel.Activity">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.workflow.componentmodel.<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></h3>
-<code><a href="../../../system/workflow/componentmodel/Activity.html#Clone--">Clone</a>, <a href="../../../system/workflow/componentmodel/Activity.html#GetActivityByName-java.lang.String-">GetActivityByName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#GetActivityByName-java.lang.String-boolean-">GetActivityByName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getDescription--">getDescription</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getEnabled--">getEnabled</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getExecutionResult--">getExecutionResult</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getExecutionStatus--">getExecutionStatus</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getIsDynamicActivity--">getIsDynamicActivity</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getName--">getName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getParent--">getParent</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getQualifiedName--">getQualifiedName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Load-system.io.Stream-system.workflow.componentmodel.Activity-">Load</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Load-system.io.Stream-system.workflow.componentmodel.Activity-system.runtime.serialization.IFormatter-">Load</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-">Save</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-system.runtime.serialization.IFormatter-">Save</a>, <a href="../../../system/workflow/componentmodel/Activity.html#setDescription-java.lang.String-">setDescription</a>, <a href="../../../system/workflow/componentmodel/Activity.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../system/workflow/componentmodel/Activity.html#setName-java.lang.String-">setName</a></code></li>
+<code><a href="../../../system/workflow/componentmodel/Activity.html#Clone--">Clone</a>, <a href="../../../system/workflow/componentmodel/Activity.html#GetActivityByName-java.lang.String-">GetActivityByName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#GetActivityByName-java.lang.String-boolean-">GetActivityByName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getDescription--">getDescription</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getEnabled--">getEnabled</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getExecutionResult--">getExecutionResult</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getExecutionStatus--">getExecutionStatus</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getIsDynamicActivity--">getIsDynamicActivity</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getName--">getName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getParent--">getParent</a>, <a href="../../../system/workflow/componentmodel/Activity.html#getQualifiedName--">getQualifiedName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Load-system.io.Stream-system.workflow.componentmodel.Activity-">Load</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Load-system.io.Stream-system.workflow.componentmodel.Activity-system.runtime.serialization.IFormatter-">Load</a>, <a href="../../../system/workflow/componentmodel/Activity.html#RegisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">RegisterForStatusChange</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-">Save</a>, <a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-system.runtime.serialization.IFormatter-">Save</a>, <a href="../../../system/workflow/componentmodel/Activity.html#setDescription-java.lang.String-">setDescription</a>, <a href="../../../system/workflow/componentmodel/Activity.html#setEnabled-boolean-">setEnabled</a>, <a href="../../../system/workflow/componentmodel/Activity.html#setName-java.lang.String-">setName</a>, <a href="../../../system/workflow/componentmodel/Activity.html#UnregisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">UnregisterForStatusChange</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.system.workflow.componentmodel.DependencyObject">
@@ -324,13 +323,6 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.workflow.componentmodel.ICompensatableActivity">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.workflow.componentmodel.<a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></h3>
-<code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#Compensate-system.workflow.componentmodel.ActivityExecutionContext-">Compensate</a>, <a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#ToICompensatableActivity-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToICompensatableActivity</a></code></li>
 </ul>
 </li>
 </ul>
@@ -524,8 +516,6 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/workflow/activities/SequenceActivity.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -545,8 +535,6 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/workflow/activities/SequenceActivity.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -566,8 +554,6 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/workflow/activities/SequenceActivity.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -587,8 +573,6 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/workflow/activities/SequenceActivity.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -609,8 +593,6 @@ implements <a href="../../../system/workflow/componentmodel/ICompensatableActivi
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/componentmodel/ICompensatableActivity.html" title="interface in system.workflow.componentmodel">ICompensatableActivity</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/workflow/activities/SequenceActivity.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/workflow/activities/SequenceActivity.html" title="class in system.workflow.activities">SequenceActivity</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

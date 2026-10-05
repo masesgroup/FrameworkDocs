@@ -19,7 +19,9 @@
 <meta name="keywords" content="Clone()">
 <meta name="keywords" content="GetActivityByName()">
 <meta name="keywords" content="Load()">
+<meta name="keywords" content="RegisterForStatusChange()">
 <meta name="keywords" content="Save()">
+<meta name="keywords" content="UnregisterForStatusChange()">
 <meta name="keywords" content="getEnabled()">
 <meta name="keywords" content="setEnabled()">
 <meta name="keywords" content="getIsDynamicActivity()">
@@ -44,7 +46,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -345,28 +347,38 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 </tr>
 <tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#RegisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">RegisterForStatusChange</a></span>(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
+                       <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)</code>&nbsp;</td>
 </tr>
 <tr id="i20" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>&nbsp;</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-system.runtime.serialization.IFormatter-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
     <a href="../../../system/runtime/serialization/IFormatter.html" title="interface in system.runtime.serialization">IFormatter</a>&nbsp;formatter)</code>&nbsp;</td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>&nbsp;</td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setEnabled-boolean-">setEnabled</a></span>(boolean&nbsp;Enabled)</code>&nbsp;</td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>&nbsp;</td>
+</tr>
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#UnregisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">UnregisterForStatusChange</a></span>(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
+                         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -1106,6 +1118,35 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 </dl>
 </li>
 </ul>
+<a name="RegisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RegisterForStatusChange</h4>
+<pre>public&nbsp;void&nbsp;RegisterForStatusChange(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
+                                    <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)
+                             throws java.lang.Throwable,
+                                    <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                    <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                    <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                    <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                    <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="Save-system.io.Stream-">
 <!--   -->
 </a>
@@ -1269,7 +1310,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <a name="setName-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setName</h4>
 <pre>public&nbsp;void&nbsp;setName(java.lang.String&nbsp;Name)
@@ -1299,6 +1340,35 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
 <dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="UnregisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>UnregisterForStatusChange</h4>
+<pre>public&nbsp;void&nbsp;UnregisterForStatusChange(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
+                                      <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)
+                               throws java.lang.Throwable,
+                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
 </dl>
 </li>
 </ul>

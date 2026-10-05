@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="RemoveViewState()">
+<meta name="keywords" content="RetrieveAllViewState()">
 <meta name="keywords" content="RetrieveViewState()">
 <meta name="keywords" content="StoreViewState()">
 <meta name="keywords" content="StoreViewStateWithUndo()">
@@ -37,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -294,21 +295,25 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/view/ViewStateService.html#removeViewStateChanged-system.activities.presentation.view.ViewStateChangedEventHandler-">removeViewStateChanged</a></span>(<a href="../../../../system/activities/presentation/view/ViewStateChangedEventHandler.html" title="class in system.activities.presentation.view">ViewStateChangedEventHandler</a>&nbsp;handler)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/view/ViewStateService.html#RetrieveAllViewState-system.activities.presentation.model.ModelItem-">RetrieveAllViewState</a></span>(<a href="../../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&nbsp;modelItem)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/view/ViewStateService.html#RetrieveViewState-system.activities.presentation.model.ModelItem-java.lang.String-">RetrieveViewState</a></span>(<a href="../../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&nbsp;modelItem,
                  java.lang.String&nbsp;key)</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/view/ViewStateService.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/view/ViewStateService.html#StoreViewState-system.activities.presentation.model.ModelItem-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">StoreViewState</a></span>(<a href="../../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&nbsp;modelItem,
               java.lang.String&nbsp;key,
               <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/view/ViewStateService.html#StoreViewStateWithUndo-system.activities.presentation.model.ModelItem-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">StoreViewStateWithUndo</a></span>(<a href="../../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&nbsp;modelItem,
                       java.lang.String&nbsp;key,
@@ -620,6 +625,20 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>removeViewStateChanged</h4>
 <pre>public&nbsp;void&nbsp;removeViewStateChanged(<a href="../../../../system/activities/presentation/view/ViewStateChangedEventHandler.html" title="class in system.activities.presentation.view">ViewStateChangedEventHandler</a>&nbsp;handler)
                             throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="RetrieveAllViewState-system.activities.presentation.model.ModelItem-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RetrieveAllViewState</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;RetrieveAllViewState(<a href="../../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&nbsp;modelItem)
+                                  throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>

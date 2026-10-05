@@ -18,6 +18,8 @@
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetCurrentTransaction()">
 <meta name="keywords" content="CompleteTransaction()">
+<meta name="keywords" content="RequestTransactionContext()">
+<meta name="keywords" content="RequireTransactionContext()">
 <meta name="keywords" content="CleanupWorkflowThread()">
 <meta name="keywords" content="SetupWorkflowThread()">
 <meta name="keywords" content="Register()">
@@ -39,7 +41,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -136,13 +138,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>, <a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a>, <a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></dd>
+<dd><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">RuntimeTransactionHandle</span>
-extends <a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a>
-implements <a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a>, <a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></pre>
+extends <a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></pre>
 <div class="block">The base .NET class managing System.Activities.RuntimeTransactionHandle, System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35.
  <p>
  
@@ -310,13 +311,25 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#setAbortInstanceOnTransactionFailure-boolean-">setAbortInstanceOnTransactionFailure</a></span>(boolean&nbsp;AbortInstanceOnTransactionFailure)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#RequestTransactionContext-system.activities.NativeActivityContext-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">RequestTransactionContext</a></span>(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
+                         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#RequireTransactionContext-system.activities.NativeActivityContext-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">RequireTransactionContext</a></span>(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
+                         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>&nbsp;</td>
 </tr>
 <tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#setAbortInstanceOnTransactionFailure-boolean-">setAbortInstanceOnTransactionFailure</a></span>(boolean&nbsp;AbortInstanceOnTransactionFailure)</code>&nbsp;</td>
+</tr>
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#setSuppressTransaction-boolean-">setSuppressTransaction</a></span>(boolean&nbsp;SuppressTransaction)</code>&nbsp;</td>
 </tr>
@@ -341,20 +354,6 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>equals, getClass, notify, notifyAll, wait, wait, wait</code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.activities.IExecutionProperty">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.activities.<a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a></h3>
-<code><a href="../../system/activities/IExecutionProperty.html#CleanupWorkflowThread--">CleanupWorkflowThread</a>, <a href="../../system/activities/IExecutionProperty.html#SetupWorkflowThread--">SetupWorkflowThread</a>, <a href="../../system/activities/IExecutionProperty.html#ToIExecutionProperty-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIExecutionProperty</a></code></li>
-</ul>
-<ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.system.activities.IPropertyRegistrationCallback">
-<!--   -->
-</a>
-<h3>Methods inherited from interface&nbsp;system.activities.<a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></h3>
-<code><a href="../../system/activities/IPropertyRegistrationCallback.html#Register-system.activities.RegistrationContext-">Register</a>, <a href="../../system/activities/IPropertyRegistrationCallback.html#ToIPropertyRegistrationCallback-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIPropertyRegistrationCallback</a>, <a href="../../system/activities/IPropertyRegistrationCallback.html#Unregister-system.activities.RegistrationContext-">Unregister</a></code></li>
 </ul>
 </li>
 </ul>
@@ -705,10 +704,6 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IExecutionProperty.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IPropertyRegistrationCallback.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/activities/Handle.html#getJCOAssemblyName--">getJCOAssemblyName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -728,10 +723,6 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IExecutionProperty.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IPropertyRegistrationCallback.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/activities/Handle.html#getJCOClassName--">getJCOClassName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -751,10 +742,6 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IExecutionProperty.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IPropertyRegistrationCallback.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/activities/Handle.html#getJCOInstance--">getJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -774,10 +761,6 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IExecutionProperty.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IPropertyRegistrationCallback.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/activities/Handle.html#getJCOObjectName--">getJCOObjectName</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -798,10 +781,6 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IExecutionProperty.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IExecutionProperty.html" title="interface in system.activities">IExecutionProperty</a></code></dd>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../system/activities/IPropertyRegistrationCallback.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/activities/IPropertyRegistrationCallback.html" title="interface in system.activities">IPropertyRegistrationCallback</a></code></dd>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/activities/Handle.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/Handle.html" title="class in system.activities">Handle</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -820,6 +799,74 @@ implements <a href="../../system/activities/IExecutionProperty.html" title="inte
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="RequestTransactionContext-system.activities.NativeActivityContext-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RequestTransactionContext</h4>
+<pre>public&nbsp;void&nbsp;RequestTransactionContext(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
+                                      <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                                      <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
+                               throws java.lang.Throwable,
+                                      <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                      <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                      <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                      <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="RequireTransactionContext-system.activities.NativeActivityContext-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>RequireTransactionContext</h4>
+<pre>public&nbsp;void&nbsp;RequireTransactionContext(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
+                                      <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                                      <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
+                               throws java.lang.Throwable,
+                                      <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                      <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                      <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                      <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                      <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                      <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                      <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                      <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 </dl>
 </li>
 </ul>

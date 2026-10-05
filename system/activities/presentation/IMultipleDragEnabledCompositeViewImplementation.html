@@ -15,7 +15,14 @@
 <meta name="keywords" content="getJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="ToIMultipleDragEnabledCompositeView()">
+<meta name="keywords" content="CanPasteItems()">
+<meta name="keywords" content="SortSelectedItems()">
+<meta name="keywords" content="OnItemsCopied()">
+<meta name="keywords" content="OnItemsCut()">
 <meta name="keywords" content="OnItemMoved()">
+<meta name="keywords" content="OnItemsDelete()">
+<meta name="keywords" content="OnItemsMoved()">
+<meta name="keywords" content="OnItemsPasted()">
 <meta name="keywords" content="getIsDefaultContainer()">
 <meta name="keywords" content="getDroppingTypeResolvingOptions()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -31,7 +38,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -225,48 +232,79 @@ implements <a href="../../../system/activities/presentation/IMultipleDragEnabled
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#CanPasteItems-system.collections.generic.List_1-">CanPasteItems</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/activities/presentation/view/TypeResolvingOptions.html" title="class in system.activities.presentation.view">TypeResolvingOptions</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getDroppingTypeResolvingOptions--">getDroppingTypeResolvingOptions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getIsDefaultContainer--">getIsDefaultContainer</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#OnItemMoved-system.activities.presentation.model.ModelItem-">OnItemMoved</a></span>(<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&nbsp;modelItem)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#OnItemsCopied-system.collections.generic.List_1-">OnItemsCopied</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCopy)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#OnItemsCut-system.collections.generic.List_1-">OnItemsCut</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCut)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#OnItemsDelete-system.collections.generic.List_1-">OnItemsDelete</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToDelete)</code>&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#OnItemsMoved-system.collections.generic.List_1-">OnItemsMoved</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;movedItems)</code>&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#OnItemsPasted-system.collections.generic.List_1-system.collections.generic.List_1-system.windows.Point-system.activities.presentation.WorkflowViewElement-">OnItemsPasted</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste,
+             <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;metadata,
+             <a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;pastePoint,
+             <a href="../../../system/activities/presentation/WorkflowViewElement.html" title="class in system.activities.presentation">WorkflowViewElement</a>&nbsp;pastePointReference)</code>&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#SortSelectedItems-system.collections.generic.List_1-">SortSelectedItems</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;selectedItems)</code>&nbsp;</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeView.html" title="interface in system.activities.presentation">IMultipleDragEnabledCompositeView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeViewImplementation.html#ToIMultipleDragEnabledCompositeView-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIMultipleDragEnabledCompositeView</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeView.html" title="interface in system.activities.presentation"><code>IMultipleDragEnabledCompositeView</code></a>, a cast assert is made to check if types are compatible.</div>
@@ -391,6 +429,22 @@ implements <a href="../../../system/activities/presentation/IMultipleDragEnabled
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="CanPasteItems-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CanPasteItems</h4>
+<pre>public&nbsp;boolean&nbsp;CanPasteItems(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste)
+                      throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/ICompositeView.html#CanPasteItems-system.collections.generic.List_1-">CanPasteItems</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getDroppingTypeResolvingOptions--">
 <!--   -->
 </a>
@@ -550,6 +604,105 @@ implements <a href="../../../system/activities/presentation/IMultipleDragEnabled
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemMoved-system.activities.presentation.model.ModelItem-">OnItemMoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="OnItemsCopied-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OnItemsCopied</h4>
+<pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;OnItemsCopied(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCopy)
+                        throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsCopied-system.collections.generic.List_1-">OnItemsCopied</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="OnItemsCut-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OnItemsCut</h4>
+<pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;OnItemsCut(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCut)
+                     throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsCut-system.collections.generic.List_1-">OnItemsCut</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="OnItemsDelete-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OnItemsDelete</h4>
+<pre>public&nbsp;void&nbsp;OnItemsDelete(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToDelete)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsDelete-system.collections.generic.List_1-">OnItemsDelete</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="OnItemsMoved-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OnItemsMoved</h4>
+<pre>public&nbsp;void&nbsp;OnItemsMoved(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;movedItems)
+                  throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeView.html#OnItemsMoved-system.collections.generic.List_1-">OnItemsMoved</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeView.html" title="interface in system.activities.presentation">IMultipleDragEnabledCompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="OnItemsPasted-system.collections.generic.List_1-system.collections.generic.List_1-system.windows.Point-system.activities.presentation.WorkflowViewElement-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>OnItemsPasted</h4>
+<pre>public&nbsp;void&nbsp;OnItemsPasted(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste,
+                          <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;metadata,
+                          <a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;pastePoint,
+                          <a href="../../../system/activities/presentation/WorkflowViewElement.html" title="class in system.activities.presentation">WorkflowViewElement</a>&nbsp;pastePointReference)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsPasted-system.collections.generic.List_1-system.collections.generic.List_1-system.windows.Point-system.activities.presentation.WorkflowViewElement-">OnItemsPasted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="SortSelectedItems-system.collections.generic.List_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SortSelectedItems</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;SortSelectedItems(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;selectedItems)
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeView.html#SortSelectedItems-system.collections.generic.List_1-">SortSelectedItems</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/IMultipleDragEnabledCompositeView.html" title="interface in system.activities.presentation">IMultipleDragEnabledCompositeView</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
 </dl>

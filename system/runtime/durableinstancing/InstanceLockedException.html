@@ -17,6 +17,8 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="GetObjectData()">
+<meta name="keywords" content="getSerializableInstanceOwnerMetadata()">
+<meta name="keywords" content="setSerializableInstanceOwnerMetadata()">
 <meta name="keywords" content="getInstanceOwnerId()">
 <meta name="keywords" content="setInstanceOwnerId()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
@@ -32,7 +34,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -237,11 +239,32 @@ extends <a href="../../../system/runtime/durableinstancing/InstancePersistenceCo
                        <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#InstanceLockedException-system.xml.linq.XName-system.Guid-system.Guid-system.collections.generic.IDictionary_2-">InstanceLockedException</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
+                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
+                       <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;serializableInstanceOwnerMetadata)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#InstanceLockedException-system.xml.linq.XName-system.Guid-system.Guid-system.collections.generic.IDictionary_2-org.mases.jcobridge.netreflection.NetException-">InstanceLockedException</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
+                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
+                       <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;serializableInstanceOwnerMetadata,
+                       <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#InstanceLockedException-system.xml.linq.XName-system.Guid-system.Guid-system.collections.generic.IDictionary_2-java.lang.String-org.mases.jcobridge.netreflection.NetException-">InstanceLockedException</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
+                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                       <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
+                       <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;serializableInstanceOwnerMetadata,
+                       java.lang.String&nbsp;message,
+                       <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#InstanceLockedException-system.xml.linq.XName-system.Guid-org.mases.jcobridge.netreflection.NetException-">InstanceLockedException</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
                        <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
                        <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#InstanceLockedException-system.xml.linq.XName-system.Guid-java.lang.String-org.mases.jcobridge.netreflection.NetException-">InstanceLockedException</a></span>(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
                        <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
                        java.lang.String&nbsp;message,
@@ -308,12 +331,20 @@ extends <a href="../../../system/runtime/durableinstancing/InstancePersistenceCo
              <a href="../../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;context)</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#setInstanceOwnerId-system.Guid-">setInstanceOwnerId</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;InstanceOwnerId)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#getSerializableInstanceOwnerMetadata--">getSerializableInstanceOwnerMetadata</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#setInstanceOwnerId-system.Guid-">setInstanceOwnerId</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;InstanceOwnerId)</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockedException.html#setSerializableInstanceOwnerMetadata-system.collections.generic.IDictionary_2-">setSerializableInstanceOwnerMetadata</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;SerializableInstanceOwnerMetadata)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -504,6 +535,110 @@ extends <a href="../../../system/runtime/durableinstancing/InstancePersistenceCo
 <dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
 <dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
 <dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="InstanceLockedException-system.xml.linq.XName-system.Guid-system.Guid-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InstanceLockedException</h4>
+<pre>public&nbsp;InstanceLockedException(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
+                               <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                               <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
+                               <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;serializableInstanceOwnerMetadata)
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                               <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="InstanceLockedException-system.xml.linq.XName-system.Guid-system.Guid-system.collections.generic.IDictionary_2-org.mases.jcobridge.netreflection.NetException-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InstanceLockedException</h4>
+<pre>public&nbsp;InstanceLockedException(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
+                               <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                               <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
+                               <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;serializableInstanceOwnerMetadata,
+                               <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                               <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                               <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                               <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="InstanceLockedException-system.xml.linq.XName-system.Guid-system.Guid-system.collections.generic.IDictionary_2-java.lang.String-org.mases.jcobridge.netreflection.NetException-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>InstanceLockedException</h4>
+<pre>public&nbsp;InstanceLockedException(<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&nbsp;commandName,
+                               <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId,
+                               <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
+                               <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;serializableInstanceOwnerMetadata,
+                               java.lang.String&nbsp;message,
+                               <a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException)
+                        throws java.lang.Throwable,
+                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -750,6 +885,20 @@ extends <a href="../../../system/runtime/durableinstancing/InstancePersistenceCo
 </dl>
 </li>
 </ul>
+<a name="getSerializableInstanceOwnerMetadata--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSerializableInstanceOwnerMetadata</h4>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getSerializableInstanceOwnerMetadata()
+                                                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="setInstanceOwnerId-system.Guid-">
 <!--   -->
 </a>
@@ -767,13 +916,27 @@ extends <a href="../../../system/runtime/durableinstancing/InstancePersistenceCo
 <a name="setJCOInstance-org.mases.jcobridge.JCObject-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>setJCOInstance</h4>
 <pre>public&nbsp;void&nbsp;setJCOInstance(org.mases.jcobridge.JCObject&nbsp;instance)</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/runtime/durableinstancing/InstancePersistenceCommandException.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/runtime/durableinstancing/InstancePersistenceCommandException.html" title="class in system.runtime.durableinstancing">InstancePersistenceCommandException</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="setSerializableInstanceOwnerMetadata-system.collections.generic.IDictionary_2-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setSerializableInstanceOwnerMetadata</h4>
+<pre>public&nbsp;void&nbsp;setSerializableInstanceOwnerMetadata(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;SerializableInstanceOwnerMetadata)
+                                          throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

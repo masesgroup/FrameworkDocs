@@ -17,6 +17,7 @@
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
 <meta name="keywords" content="getCompletionState()">
+<meta name="keywords" content="getOutputs()">
 <meta name="keywords" content="getTerminationException()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../script.js"></script>
@@ -31,7 +32,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -277,10 +278,14 @@ extends <a href="../../system/activities/WorkflowApplicationEventArgs.html" titl
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowApplicationCompletedEventArgs.html#getOutputs--">getOutputs</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowApplicationCompletedEventArgs.html#getTerminationException--">getTerminationException</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowApplicationCompletedEventArgs.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -290,7 +295,7 @@ extends <a href="../../system/activities/WorkflowApplicationEventArgs.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.activities.<a href="../../system/activities/WorkflowApplicationEventArgs.html" title="class in system.activities">WorkflowApplicationEventArgs</a></h3>
-<code><a href="../../system/activities/WorkflowApplicationEventArgs.html#getInstanceId--">getInstanceId</a></code></li>
+<code><a href="../../system/activities/WorkflowApplicationEventArgs.html#GetInstanceExtensions--">GetInstanceExtensions</a>, <a href="../../system/activities/WorkflowApplicationEventArgs.html#getInstanceId--">getInstanceId</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -543,6 +548,20 @@ extends <a href="../../system/activities/WorkflowApplicationEventArgs.html" titl
 <dd><code><a href="../../system/activities/WorkflowApplicationEventArgs.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../system/activities/WorkflowApplicationEventArgs.html" title="class in system.activities">WorkflowApplicationEventArgs</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getOutputs--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getOutputs</h4>
+<pre>public&nbsp;<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getOutputs()
+                         throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

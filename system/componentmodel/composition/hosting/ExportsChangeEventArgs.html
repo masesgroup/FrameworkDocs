@@ -16,6 +16,9 @@
 <meta name="keywords" content="setJCOInstance()">
 <meta name="keywords" content="getJCOType()">
 <meta name="keywords" content="cast()">
+<meta name="keywords" content="getAddedExports()">
+<meta name="keywords" content="getRemovedExports()">
+<meta name="keywords" content="getChangedContractNames()">
 <meta name="keywords" content="getAtomicComposition()">
 <meta name="keywords" content="setAtomicComposition()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
@@ -31,7 +34,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -212,6 +215,11 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#ExportsChangeEventArgs--">ExportsChangeEventArgs</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#ExportsChangeEventArgs-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.componentmodel.composition.hosting.AtomicComposition-">ExportsChangeEventArgs</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;addedExports,
+                      <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;removedExports,
+                      <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#ExportsChangeEventArgs-java.lang.Object-">ExportsChangeEventArgs</a></span>(java.lang.Object&nbsp;instance)</code>
 <div class="block">Internal constructor.</div>
 </td>
@@ -238,44 +246,56 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getAddedExports--">getAddedExports</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getAtomicComposition--">getAtomicComposition</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getChangedContractNames--">getChangedContractNames</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>org.mases.jcobridge.JCType</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#getRemovedExports--">getRemovedExports</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#setAtomicComposition-system.componentmodel.composition.hosting.AtomicComposition-">setAtomicComposition</a></span>(<a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;AtomicComposition)</code>&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(org.mases.jcobridge.JCObject&nbsp;instance)</code>&nbsp;</td>
 </tr>
@@ -382,6 +402,24 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </dl>
 </li>
 </ul>
+<a name="ExportsChangeEventArgs-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.componentmodel.composition.hosting.AtomicComposition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ExportsChangeEventArgs</h4>
+<pre>public&nbsp;ExportsChangeEventArgs(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;addedExports,
+                              <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;removedExports,
+                              <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)
+                       throws java.lang.Throwable,
+                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="ExportsChangeEventArgs-java.lang.Object-">
 <!--   -->
 </a>
@@ -424,6 +462,20 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </dl>
 </li>
 </ul>
+<a name="getAddedExports--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getAddedExports</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getAddedExports()
+                              throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getAtomicComposition--">
 <!--   -->
 </a>
@@ -435,6 +487,24 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="getChangedContractNames--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getChangedContractNames</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getChangedContractNames()
+                                      throws java.lang.Throwable,
+                                             <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                             <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
 </dl>
 </li>
 </ul>
@@ -531,6 +601,20 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <dd><code><a href="../../../../system/EventArgs.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/EventArgs.html" title="class in system">EventArgs</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <code>JCType</code> representing the CLR Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="getRemovedExports--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRemovedExports</h4>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getRemovedExports()
+                                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>
