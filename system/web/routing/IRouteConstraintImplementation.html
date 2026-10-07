@@ -258,7 +258,9 @@ implements <a href="../../../system/web/routing/IRouteConstraint.html" title="in
      <a href="../../../system/web/routing/Route.html" title="class in system.web.routing">Route</a>&nbsp;route,
      java.lang.String&nbsp;parameterName,
      <a href="../../../system/web/routing/RouteValueDictionary.html" title="class in system.web.routing">RouteValueDictionary</a>&nbsp;values,
-     <a href="../../../system/web/routing/RouteDirection.html" title="class in system.web.routing">RouteDirection</a>&nbsp;routeDirection)</code>&nbsp;</td>
+     <a href="../../../system/web/routing/RouteDirection.html" title="class in system.web.routing">RouteDirection</a>&nbsp;routeDirection)</code>
+<div class="block">Invokes the .NET member Match.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/web/routing/IRouteConstraint.html" title="interface in system.web.routing">IRouteConstraint</a></code></td>
@@ -365,8 +367,10 @@ implements <a href="../../../system/web/routing/IRouteConstraint.html" title="in
                                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -495,11 +499,22 @@ implements <a href="../../../system/web/routing/IRouteConstraint.html" title="in
                      <a href="../../../system/web/routing/RouteValueDictionary.html" title="class in system.web.routing">RouteValueDictionary</a>&nbsp;values,
                      <a href="../../../system/web/routing/RouteDirection.html" title="class in system.web.routing">RouteDirection</a>&nbsp;routeDirection)
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Match.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/routing/IRouteConstraint.html#Match-system.web.HttpContextBase-system.web.routing.Route-java.lang.String-system.web.routing.RouteValueDictionary-system.web.routing.RouteDirection-">Match</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/routing/IRouteConstraint.html" title="interface in system.web.routing">IRouteConstraint</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>httpContext</code> - the argument of type <code>HttpContextBase</code></dd>
+<dd><code>route</code> - the argument of type <code>Route</code></dd>
+<dd><code>parameterName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>values</code> - the argument of type <code>RouteValueDictionary</code></dd>
+<dd><code>routeDirection</code> - the argument of type <code>RouteDirection</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Routing.IRouteConstraint.Match" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

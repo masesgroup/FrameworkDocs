@@ -228,19 +228,27 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#CollectFromClientContext-system.runtime.remoting.activation.IConstructionCallMessage-">CollectFromClientContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#CollectFromClientContext-system.runtime.remoting.activation.IConstructionCallMessage-">CollectFromClientContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member CollectFromClientContext.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#CollectFromServerContext-system.runtime.remoting.activation.IConstructionReturnMessage-">CollectFromServerContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#CollectFromServerContext-system.runtime.remoting.activation.IConstructionReturnMessage-">CollectFromServerContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member CollectFromServerContext.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#DeliverClientContextToServerContext-system.runtime.remoting.activation.IConstructionCallMessage-">DeliverClientContextToServerContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#DeliverClientContextToServerContext-system.runtime.remoting.activation.IConstructionCallMessage-">DeliverClientContextToServerContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member DeliverClientContextToServerContext.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#DeliverServerContextToClientContext-system.runtime.remoting.activation.IConstructionReturnMessage-">DeliverServerContextToClientContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#DeliverServerContextToClientContext-system.runtime.remoting.activation.IConstructionReturnMessage-">DeliverServerContextToClientContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member DeliverServerContextToClientContext.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -274,7 +282,9 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#IsOKToActivate-system.runtime.remoting.activation.IConstructionCallMessage-">IsOKToActivate</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivatorImplementation.html#IsOKToActivate-system.runtime.remoting.activation.IConstructionCallMessage-">IsOKToActivate</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member IsOKToActivate.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html" title="interface in system.runtime.remoting.contexts">IContextPropertyActivator</a></code></td>
@@ -381,8 +391,10 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
                                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -402,11 +414,16 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 <h4>CollectFromClientContext</h4>
 <pre>public&nbsp;void&nbsp;CollectFromClientContext(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CollectFromClientContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html#CollectFromClientContext-system.runtime.remoting.activation.IConstructionCallMessage-">CollectFromClientContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html" title="interface in system.runtime.remoting.contexts">IContextPropertyActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.IContextPropertyActivator.CollectFromClientContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -418,11 +435,16 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 <h4>CollectFromServerContext</h4>
 <pre>public&nbsp;void&nbsp;CollectFromServerContext(<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;msg)
                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CollectFromServerContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html#CollectFromServerContext-system.runtime.remoting.activation.IConstructionReturnMessage-">CollectFromServerContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html" title="interface in system.runtime.remoting.contexts">IContextPropertyActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionReturnMessage</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.IContextPropertyActivator.CollectFromServerContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -434,11 +456,18 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 <h4>DeliverClientContextToServerContext</h4>
 <pre>public&nbsp;boolean&nbsp;DeliverClientContextToServerContext(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DeliverClientContextToServerContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html#DeliverClientContextToServerContext-system.runtime.remoting.activation.IConstructionCallMessage-">DeliverClientContextToServerContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html" title="interface in system.runtime.remoting.contexts">IContextPropertyActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverClientContextToServerContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -450,11 +479,18 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 <h4>DeliverServerContextToClientContext</h4>
 <pre>public&nbsp;boolean&nbsp;DeliverServerContextToClientContext(<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;msg)
                                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DeliverServerContextToClientContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html#DeliverServerContextToClientContext-system.runtime.remoting.activation.IConstructionReturnMessage-">DeliverServerContextToClientContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html" title="interface in system.runtime.remoting.contexts">IContextPropertyActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionReturnMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.IContextPropertyActivator.DeliverServerContextToClientContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -571,11 +607,18 @@ implements <a href="../../../../system/runtime/remoting/contexts/IContextPropert
 <h4>IsOKToActivate</h4>
 <pre>public&nbsp;boolean&nbsp;IsOKToActivate(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsOKToActivate.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html#IsOKToActivate-system.runtime.remoting.activation.IConstructionCallMessage-">IsOKToActivate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/IContextPropertyActivator.html" title="interface in system.runtime.remoting.contexts">IContextPropertyActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.IContextPropertyActivator.IsOKToActivate" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

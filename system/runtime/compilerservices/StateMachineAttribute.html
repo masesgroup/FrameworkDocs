@@ -216,7 +216,9 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#StateMachineAttribute--">StateMachineAttribute</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#StateMachineAttribute-org.mases.jcobridge.netreflection.NetType-">StateMachineAttribute</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;stateMachineType)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#StateMachineAttribute-org.mases.jcobridge.netreflection.NetType-">StateMachineAttribute</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;stateMachineType)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#StateMachineAttribute-java.lang.Object-">StateMachineAttribute</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -276,7 +278,9 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#getStateMachineType--">getStateMachineType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#getStateMachineType--">getStateMachineType</a></span>()</code>
+<div class="block">Gets the value of the .NET property StateMachineType.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -286,7 +290,9 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#setStateMachineType-org.mases.jcobridge.netreflection.NetType-">setStateMachineType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;StateMachineType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/StateMachineAttribute.html#setStateMachineType-org.mases.jcobridge.netreflection.NetType-">setStateMachineType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;StateMachineType)</code>
+<div class="block">Sets the value of the .NET property StateMachineType.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -406,9 +412,14 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <h4>StateMachineAttribute</h4>
 <pre>public&nbsp;StateMachineAttribute(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;stateMachineType)
                       throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>stateMachineType</code> - the argument of type <code>NetType</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.StateMachineAttribute.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -422,8 +433,10 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -557,9 +570,14 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <h4>getStateMachineType</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;getStateMachineType()
                             throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property StateMachineType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.StateMachineAttribute.StateMachineType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -588,9 +606,14 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <h4>setStateMachineType</h4>
 <pre>public&nbsp;void&nbsp;setStateMachineType(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;StateMachineType)
                          throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property StateMachineType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>StateMachineType</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.StateMachineAttribute.StateMachineType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

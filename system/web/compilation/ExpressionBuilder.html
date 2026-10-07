@@ -243,13 +243,17 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/ExpressionBuilder.html#EvaluateExpression-org.mases.jcobridge.netreflection.NetObject-system.web.ui.BoundPropertyEntry-org.mases.jcobridge.netreflection.NetObject-system.web.compilation.ExpressionBuilderContext-">EvaluateExpression</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;target,
                   <a href="../../../system/web/ui/BoundPropertyEntry.html" title="class in system.web.ui">BoundPropertyEntry</a>&nbsp;entry,
                   <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;parsedData,
-                  <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)</code>&nbsp;</td>
+                  <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member EvaluateExpression.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/codedom/CodeExpression.html" title="class in system.codedom">CodeExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/ExpressionBuilder.html#GetCodeExpression-system.web.ui.BoundPropertyEntry-org.mases.jcobridge.netreflection.NetObject-system.web.compilation.ExpressionBuilderContext-">GetCodeExpression</a></span>(<a href="../../../system/web/ui/BoundPropertyEntry.html" title="class in system.web.ui">BoundPropertyEntry</a>&nbsp;entry,
                  <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;parsedData,
-                 <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)</code>&nbsp;</td>
+                 <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member GetCodeExpression.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -283,13 +287,17 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/ExpressionBuilder.html#getSupportsEvaluate--">getSupportsEvaluate</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/ExpressionBuilder.html#getSupportsEvaluate--">getSupportsEvaluate</a></span>()</code>
+<div class="block">Gets the value of the .NET property SupportsEvaluate.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/ExpressionBuilder.html#ParseExpression-java.lang.String-org.mases.jcobridge.netreflection.NetType-system.web.compilation.ExpressionBuilderContext-">ParseExpression</a></span>(java.lang.String&nbsp;expression,
                <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;propertyType,
-               <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)</code>&nbsp;</td>
+               <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member ParseExpression.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -410,8 +418,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -453,9 +463,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                     <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;parsedData,
                                     <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EvaluateExpression.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>target</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>entry</code> - the argument of type <code>BoundPropertyEntry</code></dd>
+<dd><code>parsedData</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>context</code> - the argument of type <code>ExpressionBuilderContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.ExpressionBuilder.EvaluateExpression" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -469,9 +489,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                         <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;parsedData,
                                         <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetCodeExpression.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entry</code> - the argument of type <code>BoundPropertyEntry</code></dd>
+<dd><code>parsedData</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>context</code> - the argument of type <code>ExpressionBuilderContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.ExpressionBuilder.GetCodeExpression" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -578,9 +607,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getSupportsEvaluate</h4>
 <pre>public&nbsp;boolean&nbsp;getSupportsEvaluate()
                             throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property SupportsEvaluate.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.ExpressionBuilder.SupportsEvaluate" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -594,9 +628,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                  <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;propertyType,
                                  <a href="../../../system/web/compilation/ExpressionBuilderContext.html" title="class in system.web.compilation">ExpressionBuilderContext</a>&nbsp;context)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ParseExpression.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>expression</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>propertyType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>context</code> - the argument of type <code>ExpressionBuilderContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.ExpressionBuilder.ParseExpression" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -227,15 +227,21 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientResponse
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStackImplementation.html#AsyncProcessResponse-system.runtime.remoting.channels.ITransportHeaders-system.io.Stream-">AsyncProcessResponse</a></span>(<a href="../../../../system/runtime/remoting/channels/ITransportHeaders.html" title="interface in system.runtime.remoting.channels">ITransportHeaders</a>&nbsp;headers,
-                    <a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>&nbsp;</td>
+                    <a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>
+<div class="block">Invokes the .NET member AsyncProcessResponse.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStackImplementation.html#DispatchException-org.mases.jcobridge.netreflection.NetException-">DispatchException</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStackImplementation.html#DispatchException-org.mases.jcobridge.netreflection.NetException-">DispatchException</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e)</code>
+<div class="block">Invokes the .NET member DispatchException.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStackImplementation.html#DispatchReplyMessage-system.runtime.remoting.messaging.IMessage-">DispatchReplyMessage</a></span>(<a href="../../../../system/runtime/remoting/messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStackImplementation.html#DispatchReplyMessage-system.runtime.remoting.messaging.IMessage-">DispatchReplyMessage</a></span>(<a href="../../../../system/runtime/remoting/messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member DispatchReplyMessage.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -372,8 +378,10 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientResponse
                                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -394,11 +402,17 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientResponse
 <pre>public&nbsp;void&nbsp;AsyncProcessResponse(<a href="../../../../system/runtime/remoting/channels/ITransportHeaders.html" title="interface in system.runtime.remoting.channels">ITransportHeaders</a>&nbsp;headers,
                                  <a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member AsyncProcessResponse.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStack.html#AsyncProcessResponse-system.runtime.remoting.channels.ITransportHeaders-system.io.Stream-">AsyncProcessResponse</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStack.html" title="interface in system.runtime.remoting.channels">IClientResponseChannelSinkStack</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>headers</code> - the argument of type <code>ITransportHeaders</code></dd>
+<dd><code>stream</code> - the argument of type <code>Stream</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.AsyncProcessResponse" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -410,11 +424,16 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientResponse
 <h4>DispatchException</h4>
 <pre>public&nbsp;void&nbsp;DispatchException(<a href="../../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;e)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DispatchException.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStack.html#DispatchException-org.mases.jcobridge.netreflection.NetException-">DispatchException</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStack.html" title="interface in system.runtime.remoting.channels">IClientResponseChannelSinkStack</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>e</code> - the argument of type <code>NetException</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchException" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -426,11 +445,16 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientResponse
 <h4>DispatchReplyMessage</h4>
 <pre>public&nbsp;void&nbsp;DispatchReplyMessage(<a href="../../../../system/runtime/remoting/messaging/IMessage.html" title="interface in system.runtime.remoting.messaging">IMessage</a>&nbsp;msg)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DispatchReplyMessage.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStack.html#DispatchReplyMessage-system.runtime.remoting.messaging.IMessage-">DispatchReplyMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IClientResponseChannelSinkStack.html" title="interface in system.runtime.remoting.channels">IClientResponseChannelSinkStack</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IMessage</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IClientResponseChannelSinkStack.DispatchReplyMessage" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

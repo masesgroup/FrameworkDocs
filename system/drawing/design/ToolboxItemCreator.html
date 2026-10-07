@@ -234,11 +234,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/drawing/design/ToolboxItem.html" title="class in system.drawing.design">ToolboxItem</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/drawing/design/ToolboxItemCreator.html#Create-system.windows.forms.IDataObject-">Create</a></span>(<a href="../../../system/windows/forms/IDataObject.html" title="interface in system.windows.forms">IDataObject</a>&nbsp;data)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/drawing/design/ToolboxItemCreator.html#Create-system.windows.forms.IDataObject-">Create</a></span>(<a href="../../../system/windows/forms/IDataObject.html" title="interface in system.windows.forms">IDataObject</a>&nbsp;data)</code>
+<div class="block">Invokes the .NET member Create.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/drawing/design/ToolboxItemCreator.html#getFormat--">getFormat</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/drawing/design/ToolboxItemCreator.html#getFormat--">getFormat</a></span>()</code>
+<div class="block">Gets the value of the .NET property Format.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -389,8 +393,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -429,9 +435,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>Create</h4>
 <pre>public&nbsp;<a href="../../../system/drawing/design/ToolboxItem.html" title="class in system.drawing.design">ToolboxItem</a>&nbsp;Create(<a href="../../../system/windows/forms/IDataObject.html" title="interface in system.windows.forms">IDataObject</a>&nbsp;data)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Create.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>data</code> - the argument of type <code>IDataObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Drawing.Design.ToolboxItemCreator.Create" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -443,9 +456,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getFormat</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getFormat()
                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Format.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Drawing.Design.ToolboxItemCreator.Format" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

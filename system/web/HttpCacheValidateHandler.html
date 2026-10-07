@@ -231,7 +231,9 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpCacheValidateHandler.html#DynamicInvoke-system.web.HttpContext-org.mases.jcobridge.netreflection.NetObject-system.web.HttpValidationStatus-">DynamicInvoke</a></span>(<a href="../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;context,
              <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data,
-             <a href="../../system/web/HttpValidationStatus.html" title="class in system.web">HttpValidationStatus</a>&nbsp;validationStatus)</code>&nbsp;</td>
+             <a href="../../system/web/HttpValidationStatus.html" title="class in system.web">HttpValidationStatus</a>&nbsp;validationStatus)</code>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -392,8 +394,10 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -428,9 +432,16 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                           <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data,
                           <a href="../../system/web/HttpValidationStatus.html" title="class in system.web">HttpValidationStatus</a>&nbsp;validationStatus)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the argument of type <code>HttpContext</code></dd>
+<dd><code>data</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>validationStatus</code> - the argument of type <code>HttpValidationStatus</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Delegate.DynamicInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -543,6 +554,12 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                    <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;data,
                    <a href="../../system/web/HttpValidationStatus.html" title="class in system.web">HttpValidationStatus</a>&nbsp;validationStatus)</pre>
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the .NET argument of type <code>System.Web.HttpContext</code></dd>
+<dd><code>data</code> - the .NET argument of type <code>System.Object</code></dd>
+<dd><code>validationStatus</code> - the .NET argument of type <code>System.Web.HttpValidationStatus&amp;</code></dd>
+</dl>
 </li>
 </ul>
 </li>

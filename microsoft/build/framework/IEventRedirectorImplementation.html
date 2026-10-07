@@ -224,7 +224,9 @@ implements <a href="../../../microsoft/build/framework/IEventRedirector.html" ti
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IEventRedirectorImplementation.html#ForwardEvent-microsoft.build.framework.BuildEventArgs-">ForwardEvent</a></span>(<a href="../../../microsoft/build/framework/BuildEventArgs.html" title="class in microsoft.build.framework">BuildEventArgs</a>&nbsp;buildEvent)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/IEventRedirectorImplementation.html#ForwardEvent-microsoft.build.framework.BuildEventArgs-">ForwardEvent</a></span>(<a href="../../../microsoft/build/framework/BuildEventArgs.html" title="class in microsoft.build.framework">BuildEventArgs</a>&nbsp;buildEvent)</code>
+<div class="block">Invokes the .NET member ForwardEvent.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../microsoft/build/framework/IEventRedirector.html" ti
                                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -382,11 +386,16 @@ implements <a href="../../../microsoft/build/framework/IEventRedirector.html" ti
 <h4>ForwardEvent</h4>
 <pre>public&nbsp;void&nbsp;ForwardEvent(<a href="../../../microsoft/build/framework/BuildEventArgs.html" title="class in microsoft.build.framework">BuildEventArgs</a>&nbsp;buildEvent)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ForwardEvent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../microsoft/build/framework/IEventRedirector.html#ForwardEvent-microsoft.build.framework.BuildEventArgs-">ForwardEvent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../microsoft/build/framework/IEventRedirector.html" title="interface in microsoft.build.framework">IEventRedirector</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>buildEvent</code> - the argument of type <code>BuildEventArgs</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Framework.IEventRedirector.ForwardEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

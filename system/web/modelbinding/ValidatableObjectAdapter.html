@@ -212,7 +212,9 @@ extends <a href="../../../system/web/modelbinding/ModelValidator.html" title="cl
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ValidatableObjectAdapter.html#ValidatableObjectAdapter-system.web.modelbinding.ModelMetadata-system.web.modelbinding.ModelBindingExecutionContext-">ValidatableObjectAdapter</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;metadata,
-                        <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)</code>&nbsp;</td>
+                        <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ValidatableObjectAdapter.html#ValidatableObjectAdapter-java.lang.Object-">ValidatableObjectAdapter</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -278,7 +280,9 @@ extends <a href="../../../system/web/modelbinding/ModelValidator.html" title="cl
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ValidatableObjectAdapter.html#Validate-org.mases.jcobridge.netreflection.NetObject-">Validate</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;container)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ValidatableObjectAdapter.html#Validate-org.mases.jcobridge.netreflection.NetObject-">Validate</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;container)</code>
+<div class="block">Invokes the .NET member Validate.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -400,10 +404,16 @@ extends <a href="../../../system/web/modelbinding/ModelValidator.html" title="cl
                                 <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>metadata</code> - the argument of type <code>ModelMetadata</code></dd>
+<dd><code>context</code> - the argument of type <code>ModelBindingExecutionContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.ValidatableObjectAdapter.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -417,8 +427,10 @@ extends <a href="../../../system/web/modelbinding/ModelValidator.html" title="cl
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -581,23 +593,30 @@ extends <a href="../../../system/web/modelbinding/ModelValidator.html" title="cl
                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<div class="block">Invokes the .NET member Validate.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/ModelValidator.html#Validate-org.mases.jcobridge.netreflection.NetObject-">Validate</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelValidator.html" title="class in system.web.modelbinding">ModelValidator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>container</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.ValidatableObjectAdapter.Validate" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

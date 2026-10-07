@@ -228,7 +228,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/DynamicRoleClaimProvider.html#AddDynamicRoleClaims-system.security.claims.ClaimsIdentity-system.collections.generic.IEnumerable_1-">AddDynamicRoleClaims</a></span>(<a href="../../../system/security/claims/ClaimsIdentity.html" title="class in system.security.claims">ClaimsIdentity</a>&nbsp;claimsIdentity,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;claims)</code>&nbsp;</td>
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;claims)</code>
+<div class="block">Invokes the .NET member AddDynamicRoleClaims.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/security/claims/DynamicRoleClaimProvider.html" title="class in system.security.claims">DynamicRoleClaimProvider</a></code></td>
@@ -385,8 +387,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -408,10 +412,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                         <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;claims)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<div class="block">Invokes the .NET member AddDynamicRoleClaims.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>claimsIdentity</code> - the argument of type <code>ClaimsIdentity</code></dd>
+<dd><code>claims</code> - the argument of type <code>IEnumerable_1</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Security.Claims.DynamicRoleClaimProvider.AddDynamicRoleClaims" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

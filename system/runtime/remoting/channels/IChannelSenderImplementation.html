@@ -229,15 +229,21 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/messaging/IMessageSink.html" title="interface in system.runtime.remoting.messaging">IMessageSink</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IChannelSenderImplementation.html#CreateMessageSink-java.lang.String-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.JCORefOut-">CreateMessageSink</a></span>(java.lang.String&nbsp;url,
                  <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;remoteChannelData,
-                 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;objectURI)</code>&nbsp;</td>
+                 <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;objectURI)</code>
+<div class="block">Invokes the .NET member CreateMessageSink.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IChannelSenderImplementation.html#getChannelName--">getChannelName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IChannelSenderImplementation.html#getChannelName--">getChannelName</a></span>()</code>
+<div class="block">Gets the value of the .NET property ChannelName.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IChannelSenderImplementation.html#getChannelPriority--">getChannelPriority</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IChannelSenderImplementation.html#getChannelPriority--">getChannelPriority</a></span>()</code>
+<div class="block">Gets the value of the .NET property ChannelPriority.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -272,7 +278,9 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IChannelSenderImplementation.html#Parse-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">Parse</a></span>(java.lang.String&nbsp;url,
-     <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;objectURI)</code>&nbsp;</td>
+     <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;objectURI)</code>
+<div class="block">Invokes the .NET member Parse.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/channels/IChannelSender.html" title="interface in system.runtime.remoting.channels">IChannelSender</a></code></td>
@@ -386,8 +394,10 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
                              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -409,11 +419,20 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
                                       <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;remoteChannelData,
                                       <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;objectURI)
                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateMessageSink.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IChannelSender.html#CreateMessageSink-java.lang.String-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.JCORefOut-">CreateMessageSink</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IChannelSender.html" title="interface in system.runtime.remoting.channels">IChannelSender</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>remoteChannelData</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>objectURI</code> - the argument of type <code>JCORefOut</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IChannelSender.CreateMessageSink" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -425,11 +444,16 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
 <h4>getChannelName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getChannelName()
                                 throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ChannelName.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IChannel.html#getChannelName--">getChannelName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IChannel.html" title="interface in system.runtime.remoting.channels">IChannel</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IChannelSender.ChannelName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -441,11 +465,16 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
 <h4>getChannelPriority</h4>
 <pre>public&nbsp;int&nbsp;getChannelPriority()
                        throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ChannelPriority.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IChannel.html#getChannelPriority--">getChannelPriority</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IChannel.html" title="interface in system.runtime.remoting.channels">IChannel</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IChannelSender.ChannelPriority" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -573,11 +602,19 @@ implements <a href="../../../../system/runtime/remoting/channels/IChannelSender.
 <pre>public&nbsp;java.lang.String&nbsp;Parse(java.lang.String&nbsp;url,
                               <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&nbsp;objectURI)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Parse.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IChannel.html#Parse-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">Parse</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IChannel.html" title="interface in system.runtime.remoting.channels">IChannel</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>objectURI</code> - the argument of type <code>JCORefOut</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IChannelSender.Parse" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

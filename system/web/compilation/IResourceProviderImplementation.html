@@ -256,11 +256,15 @@ implements <a href="../../../system/web/compilation/IResourceProvider.html" titl
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/IResourceProviderImplementation.html#GetObject-java.lang.String-system.globalization.CultureInfo-">GetObject</a></span>(java.lang.String&nbsp;resourceKey,
-         <a href="../../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>&nbsp;</td>
+         <a href="../../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>
+<div class="block">Invokes the .NET member GetObject.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../system/resources/IResourceReader.html" title="interface in system.resources">IResourceReader</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/IResourceProviderImplementation.html#getResourceReader--">getResourceReader</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/compilation/IResourceProviderImplementation.html#getResourceReader--">getResourceReader</a></span>()</code>
+<div class="block">Gets the value of the .NET property ResourceReader.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a></code></td>
@@ -367,8 +371,10 @@ implements <a href="../../../system/web/compilation/IResourceProvider.html" titl
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -494,11 +500,19 @@ implements <a href="../../../system/web/compilation/IResourceProvider.html" titl
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetObject(java.lang.String&nbsp;resourceKey,
                            <a href="../../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/compilation/IResourceProvider.html#GetObject-java.lang.String-system.globalization.CultureInfo-">GetObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>resourceKey</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>culture</code> - the argument of type <code>CultureInfo</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.IResourceProvider.GetObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -510,11 +524,16 @@ implements <a href="../../../system/web/compilation/IResourceProvider.html" titl
 <h4>getResourceReader</h4>
 <pre>public&nbsp;<a href="../../../system/resources/IResourceReader.html" title="interface in system.resources">IResourceReader</a>&nbsp;getResourceReader()
                                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ResourceReader.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/compilation/IResourceProvider.html#getResourceReader--">getResourceReader</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.IResourceProvider.ResourceReader" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

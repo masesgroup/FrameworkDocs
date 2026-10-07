@@ -234,7 +234,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/ExecutionScope.html#CreateHoistedLocals--">CreateHoistedLocals</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/ExecutionScope.html#CreateHoistedLocals--">CreateHoistedLocals</a></span>()</code>
+<div class="block">Invokes the .NET member CreateHoistedLocals.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -269,7 +271,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/compilerservices/ExecutionScope.html#IsolateExpression-system.linq.expressions.Expression-org.mases.jcobridge.netreflection.NetObject:A-">IsolateExpression</a></span>(<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;expression,
-                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;locals)</code>&nbsp;</td>
+                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;locals)</code>
+<div class="block">Invokes the .NET member IsolateExpression.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -390,8 +394,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -431,10 +437,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;CreateHoistedLocals()
                                 throws java.lang.Throwable,
                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<div class="block">Invokes the .NET member CreateHoistedLocals.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.ExecutionScope.CreateHoistedLocals" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -543,10 +554,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                     <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;locals)
                              throws java.lang.Throwable,
                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<div class="block">Invokes the .NET member IsolateExpression.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>expression</code> - the argument of type <code>Expression</code></dd>
+<dd><code>locals</code> - the argument of type <code>NetObject[]</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.CompilerServices.ExecutionScope.IsolateExpression" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

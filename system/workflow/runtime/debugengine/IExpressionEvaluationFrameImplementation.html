@@ -225,7 +225,9 @@ implements <a href="../../../../system/workflow/runtime/debugengine/IExpressionE
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/debugengine/IExpressionEvaluationFrameImplementation.html#CreateEvaluationFrame-system.workflow.runtime.debugengine.IInstanceTable-system.workflow.runtime.debugengine.DebugEngineCallback-">CreateEvaluationFrame</a></span>(<a href="../../../../system/workflow/runtime/debugengine/IInstanceTable.html" title="interface in system.workflow.runtime.debugengine">IInstanceTable</a>&nbsp;instanceTable,
-                     <a href="../../../../system/workflow/runtime/debugengine/DebugEngineCallback.html" title="class in system.workflow.runtime.debugengine">DebugEngineCallback</a>&nbsp;callback)</code>&nbsp;</td>
+                     <a href="../../../../system/workflow/runtime/debugengine/DebugEngineCallback.html" title="class in system.workflow.runtime.debugengine">DebugEngineCallback</a>&nbsp;callback)</code>
+<div class="block">Invokes the .NET member CreateEvaluationFrame.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -362,8 +364,10 @@ implements <a href="../../../../system/workflow/runtime/debugengine/IExpressionE
                                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -384,11 +388,17 @@ implements <a href="../../../../system/workflow/runtime/debugengine/IExpressionE
 <pre>public&nbsp;void&nbsp;CreateEvaluationFrame(<a href="../../../../system/workflow/runtime/debugengine/IInstanceTable.html" title="interface in system.workflow.runtime.debugengine">IInstanceTable</a>&nbsp;instanceTable,
                                   <a href="../../../../system/workflow/runtime/debugengine/DebugEngineCallback.html" title="class in system.workflow.runtime.debugengine">DebugEngineCallback</a>&nbsp;callback)
                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateEvaluationFrame.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/workflow/runtime/debugengine/IExpressionEvaluationFrame.html#CreateEvaluationFrame-system.workflow.runtime.debugengine.IInstanceTable-system.workflow.runtime.debugengine.DebugEngineCallback-">CreateEvaluationFrame</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/runtime/debugengine/IExpressionEvaluationFrame.html" title="interface in system.workflow.runtime.debugengine">IExpressionEvaluationFrame</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instanceTable</code> - the argument of type <code>IInstanceTable</code></dd>
+<dd><code>callback</code> - the argument of type <code>DebugEngineCallback</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.Runtime.DebugEngine.IExpressionEvaluationFrame.CreateEvaluationFrame" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -257,11 +257,15 @@ implements <a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoa
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoaderImplementation.html#GetTargetAssemblyPath-system.reflection.AssemblyName-java.lang.String-system.runtime.versioning.FrameworkName-">GetTargetAssemblyPath</a></span>(<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;runtimeOrTargetAssemblyName,
                      java.lang.String&nbsp;suggestedAssemblyPath,
-                     <a href="../../../system/runtime/versioning/FrameworkName.html" title="class in system.runtime.versioning">FrameworkName</a>&nbsp;targetFramework)</code>&nbsp;</td>
+                     <a href="../../../system/runtime/versioning/FrameworkName.html" title="class in system.runtime.versioning">FrameworkName</a>&nbsp;targetFramework)</code>
+<div class="block">Invokes the .NET member GetTargetAssemblyPath.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoaderImplementation.html#LoadRuntimeAssembly-system.reflection.AssemblyName-">LoadRuntimeAssembly</a></span>(<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;targetAssemblyName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoaderImplementation.html#LoadRuntimeAssembly-system.reflection.AssemblyName-">LoadRuntimeAssembly</a></span>(<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;targetAssemblyName)</code>
+<div class="block">Invokes the .NET member LoadRuntimeAssembly.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoader.html" title="interface in system.componentmodel.design">IDesignTimeAssemblyLoader</a></code></td>
@@ -368,8 +372,10 @@ implements <a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoa
                                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -496,11 +502,20 @@ implements <a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoa
                                               java.lang.String&nbsp;suggestedAssemblyPath,
                                               <a href="../../../system/runtime/versioning/FrameworkName.html" title="class in system.runtime.versioning">FrameworkName</a>&nbsp;targetFramework)
                                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetTargetAssemblyPath.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoader.html#GetTargetAssemblyPath-system.reflection.AssemblyName-java.lang.String-system.runtime.versioning.FrameworkName-">GetTargetAssemblyPath</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoader.html" title="interface in system.componentmodel.design">IDesignTimeAssemblyLoader</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>runtimeOrTargetAssemblyName</code> - the argument of type <code>AssemblyName</code></dd>
+<dd><code>suggestedAssemblyPath</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>targetFramework</code> - the argument of type <code>FrameworkName</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IDesignTimeAssemblyLoader.GetTargetAssemblyPath" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -512,11 +527,18 @@ implements <a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoa
 <h4>LoadRuntimeAssembly</h4>
 <pre>public&nbsp;<a href="../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;LoadRuntimeAssembly(<a href="../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;targetAssemblyName)
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member LoadRuntimeAssembly.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoader.html#LoadRuntimeAssembly-system.reflection.AssemblyName-">LoadRuntimeAssembly</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/design/IDesignTimeAssemblyLoader.html" title="interface in system.componentmodel.design">IDesignTimeAssemblyLoader</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>targetAssemblyName</code> - the argument of type <code>AssemblyName</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.IDesignTimeAssemblyLoader.LoadRuntimeAssembly" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

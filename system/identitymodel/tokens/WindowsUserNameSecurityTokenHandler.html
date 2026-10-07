@@ -213,7 +213,9 @@ extends <a href="../../../system/identitymodel/tokens/UserNameSecurityTokenHandl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/WindowsUserNameSecurityTokenHandler.html#WindowsUserNameSecurityTokenHandler--">WindowsUserNameSecurityTokenHandler</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/WindowsUserNameSecurityTokenHandler.html#WindowsUserNameSecurityTokenHandler--">WindowsUserNameSecurityTokenHandler</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/WindowsUserNameSecurityTokenHandler.html#WindowsUserNameSecurityTokenHandler-java.lang.Object-">WindowsUserNameSecurityTokenHandler</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -279,7 +281,9 @@ extends <a href="../../../system/identitymodel/tokens/UserNameSecurityTokenHandl
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/WindowsUserNameSecurityTokenHandler.html#ValidateToken-system.identitymodel.tokens.SecurityToken-">ValidateToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/WindowsUserNameSecurityTokenHandler.html#ValidateToken-system.identitymodel.tokens.SecurityToken-">ValidateToken</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token)</code>
+<div class="block">Invokes the .NET member ValidateToken.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -392,9 +396,12 @@ extends <a href="../../../system/identitymodel/tokens/UserNameSecurityTokenHandl
 <h4>WindowsUserNameSecurityTokenHandler</h4>
 <pre>public&nbsp;WindowsUserNameSecurityTokenHandler()
                                     throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -408,8 +415,10 @@ extends <a href="../../../system/identitymodel/tokens/UserNameSecurityTokenHandl
                                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -573,24 +582,31 @@ extends <a href="../../../system/identitymodel/tokens/UserNameSecurityTokenHandl
                                           <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                                           <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
                                           <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></pre>
+<div class="block">Invokes the .NET member ValidateToken.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/identitymodel/tokens/SecurityTokenHandler.html#ValidateToken-system.identitymodel.tokens.SecurityToken-">ValidateToken</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/identitymodel/tokens/SecurityTokenHandler.html" title="class in system.identitymodel.tokens">SecurityTokenHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>token</code> - the argument of type <code>SecurityToken</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IdentityModel.Tokens.WindowsUserNameSecurityTokenHandler.ValidateToken" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

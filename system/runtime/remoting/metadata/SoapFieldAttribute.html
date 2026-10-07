@@ -217,7 +217,9 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#SoapFieldAttribute--">SoapFieldAttribute</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#SoapFieldAttribute--">SoapFieldAttribute</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#SoapFieldAttribute-java.lang.Object-">SoapFieldAttribute</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -277,15 +279,21 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#getOrder--">getOrder</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#getOrder--">getOrder</a></span>()</code>
+<div class="block">Gets the value of the .NET property Order.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#getXmlElementName--">getXmlElementName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#getXmlElementName--">getXmlElementName</a></span>()</code>
+<div class="block">Gets the value of the .NET property XmlElementName.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#IsInteropXmlElement--">IsInteropXmlElement</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#IsInteropXmlElement--">IsInteropXmlElement</a></span>()</code>
+<div class="block">Invokes the .NET member IsInteropXmlElement.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -295,11 +303,15 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#setOrder-int-">setOrder</a></span>(int&nbsp;Order)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#setOrder-int-">setOrder</a></span>(int&nbsp;Order)</code>
+<div class="block">Sets the value of the .NET property Order.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#setXmlElementName-java.lang.String-">setXmlElementName</a></span>(java.lang.String&nbsp;XmlElementName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/metadata/SoapFieldAttribute.html#setXmlElementName-java.lang.String-">setXmlElementName</a></span>(java.lang.String&nbsp;XmlElementName)</code>
+<div class="block">Sets the value of the .NET property XmlElementName.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -412,9 +424,12 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <h4>SoapFieldAttribute</h4>
 <pre>public&nbsp;SoapFieldAttribute()
                    throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Metadata.SoapFieldAttribute.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -428,8 +443,10 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -563,9 +580,14 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <h4>getOrder</h4>
 <pre>public&nbsp;int&nbsp;getOrder()
              throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Order.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -577,9 +599,14 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <h4>getXmlElementName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getXmlElementName()
                                    throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property XmlElementName.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -591,9 +618,14 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <h4>IsInteropXmlElement</h4>
 <pre>public&nbsp;boolean&nbsp;IsInteropXmlElement()
                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsInteropXmlElement.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Metadata.SoapFieldAttribute.IsInteropXmlElement" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -622,9 +654,14 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <h4>setOrder</h4>
 <pre>public&nbsp;void&nbsp;setOrder(int&nbsp;Order)
               throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property Order.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>Order</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Metadata.SoapFieldAttribute.Order" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -636,9 +673,14 @@ extends <a href="../../../../system/runtime/remoting/metadata/SoapAttribute.html
 <h4>setXmlElementName</h4>
 <pre>public&nbsp;void&nbsp;setXmlElementName(java.lang.String&nbsp;XmlElementName)
                        throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property XmlElementName.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>XmlElementName</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Metadata.SoapFieldAttribute.XmlElementName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

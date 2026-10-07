@@ -255,7 +255,9 @@ implements <a href="../../../../system/runtime/caching/hosting/IMemoryCacheManag
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManagerImplementation.html#ReleaseCache-system.runtime.caching.MemoryCache-">ReleaseCache</a></span>(<a href="../../../../system/runtime/caching/MemoryCache.html" title="class in system.runtime.caching">MemoryCache</a>&nbsp;cache)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManagerImplementation.html#ReleaseCache-system.runtime.caching.MemoryCache-">ReleaseCache</a></span>(<a href="../../../../system/runtime/caching/MemoryCache.html" title="class in system.runtime.caching">MemoryCache</a>&nbsp;cache)</code>
+<div class="block">Invokes the .NET member ReleaseCache.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/caching/hosting/IMemoryCacheManager.html" title="interface in system.runtime.caching.hosting">IMemoryCacheManager</a></code></td>
@@ -266,7 +268,9 @@ implements <a href="../../../../system/runtime/caching/hosting/IMemoryCacheManag
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManagerImplementation.html#UpdateCacheSize-long-system.runtime.caching.MemoryCache-">UpdateCacheSize</a></span>(long&nbsp;size,
-               <a href="../../../../system/runtime/caching/MemoryCache.html" title="class in system.runtime.caching">MemoryCache</a>&nbsp;cache)</code>&nbsp;</td>
+               <a href="../../../../system/runtime/caching/MemoryCache.html" title="class in system.runtime.caching">MemoryCache</a>&nbsp;cache)</code>
+<div class="block">Invokes the .NET member UpdateCacheSize.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -367,8 +371,10 @@ implements <a href="../../../../system/runtime/caching/hosting/IMemoryCacheManag
                                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -493,11 +499,16 @@ implements <a href="../../../../system/runtime/caching/hosting/IMemoryCacheManag
 <h4>ReleaseCache</h4>
 <pre>public&nbsp;void&nbsp;ReleaseCache(<a href="../../../../system/runtime/caching/MemoryCache.html" title="class in system.runtime.caching">MemoryCache</a>&nbsp;cache)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ReleaseCache.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManager.html#ReleaseCache-system.runtime.caching.MemoryCache-">ReleaseCache</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManager.html" title="interface in system.runtime.caching.hosting">IMemoryCacheManager</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>cache</code> - the argument of type <code>MemoryCache</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Caching.Hosting.IMemoryCacheManager.ReleaseCache" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -531,11 +542,17 @@ implements <a href="../../../../system/runtime/caching/hosting/IMemoryCacheManag
 <pre>public&nbsp;void&nbsp;UpdateCacheSize(long&nbsp;size,
                             <a href="../../../../system/runtime/caching/MemoryCache.html" title="class in system.runtime.caching">MemoryCache</a>&nbsp;cache)
                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member UpdateCacheSize.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManager.html#UpdateCacheSize-long-system.runtime.caching.MemoryCache-">UpdateCacheSize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/caching/hosting/IMemoryCacheManager.html" title="interface in system.runtime.caching.hosting">IMemoryCacheManager</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>size</code> - the argument of type <code>long</code></dd>
+<dd><code>cache</code> - the argument of type <code>MemoryCache</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Caching.Hosting.IMemoryCacheManager.UpdateCacheSize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

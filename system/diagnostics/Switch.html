@@ -239,15 +239,21 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/collections/specialized/StringDictionary.html" title="class in system.collections.specialized">StringDictionary</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/Switch.html#getAttributes--">getAttributes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/Switch.html#getAttributes--">getAttributes</a></span>()</code>
+<div class="block">Gets the value of the .NET property Attributes.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/Switch.html#getDescription--">getDescription</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/Switch.html#getDescription--">getDescription</a></span>()</code>
+<div class="block">Gets the value of the .NET property Description.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/Switch.html#getDisplayName--">getDisplayName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/diagnostics/Switch.html#getDisplayName--">getDisplayName</a></span>()</code>
+<div class="block">Gets the value of the .NET property DisplayName.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -398,8 +404,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -450,21 +458,26 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                                       <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
                                       <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
                                       <a href="../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<div class="block">Gets the value of the .NET property Attributes.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Switch.Attributes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -476,9 +489,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>getDescription</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getDescription()
                                 throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Description.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Switch.Description" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -490,9 +508,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>getDisplayName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getDisplayName()
                                 throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property DisplayName.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Switch.DisplayName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

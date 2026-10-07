@@ -270,18 +270,24 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadataProvider.html#GetMetadataForProperties-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetMetadataForProperties</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;container,
-                        <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType)</code>&nbsp;</td>
+                        <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType)</code>
+<div class="block">Invokes the .NET member GetMetadataForProperties.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadataProvider.html#GetMetadataForProperty-system.Func_1-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetMetadataForProperty</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
                       <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
-                      java.lang.String&nbsp;propertyName)</code>&nbsp;</td>
+                      java.lang.String&nbsp;propertyName)</code>
+<div class="block">Invokes the .NET member GetMetadataForProperty.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadataProvider.html#GetMetadataForType-system.Func_1-org.mases.jcobridge.netreflection.NetType-">GetMetadataForType</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
-                  <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType)</code>&nbsp;</td>
+                  <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType)</code>
+<div class="block">Invokes the .NET member GetMetadataForType.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -402,8 +408,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -538,9 +546,17 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetMetadataForProperties(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;container,
                                               <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType)
                                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetMetadataForProperties.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>container</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>containerType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForProperties" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -554,9 +570,18 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                             <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
                                             java.lang.String&nbsp;propertyName)
                                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetMetadataForProperty.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modelAccessor</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>containerType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>propertyName</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForProperty" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -569,9 +594,17 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <pre>public&nbsp;<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;GetMetadataForType(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
                                         <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetMetadataForType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modelAccessor</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>modelType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.ModelMetadataProvider.GetMetadataForType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

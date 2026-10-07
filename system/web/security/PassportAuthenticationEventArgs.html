@@ -220,7 +220,9 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#PassportAuthenticationEventArgs-system.web.security.PassportIdentity-system.web.HttpContext-">PassportAuthenticationEventArgs</a></span>(<a href="../../../system/web/security/PassportIdentity.html" title="class in system.web.security">PassportIdentity</a>&nbsp;identity,
-                               <a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;context)</code>&nbsp;</td>
+                               <a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;context)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -245,11 +247,15 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#getContext--">getContext</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#getContext--">getContext</a></span>()</code>
+<div class="block">Gets the value of the .NET property Context.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/security/PassportIdentity.html" title="class in system.web.security">PassportIdentity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#getIdentity--">getIdentity</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#getIdentity--">getIdentity</a></span>()</code>
+<div class="block">Gets the value of the .NET property Identity.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -283,7 +289,9 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#getUser--">getUser</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#getUser--">getUser</a></span>()</code>
+<div class="block">Gets the value of the .NET property User.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -293,7 +301,9 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#setUser-system.security.principal.IPrincipal-">setUser</a></span>(<a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;User)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportAuthenticationEventArgs.html#setUser-system.security.principal.IPrincipal-">setUser</a></span>(<a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;User)</code>
+<div class="block">Sets the value of the .NET property User.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -408,8 +418,10 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -422,9 +434,15 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <pre>public&nbsp;PassportAuthenticationEventArgs(<a href="../../../system/web/security/PassportIdentity.html" title="class in system.web.security">PassportIdentity</a>&nbsp;identity,
                                        <a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;context)
                                 throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>identity</code> - the argument of type <code>PassportIdentity</code></dd>
+<dd><code>context</code> - the argument of type <code>HttpContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Security.PassportAuthenticationEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -463,9 +481,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>getContext</h4>
 <pre>public&nbsp;<a href="../../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&nbsp;getContext()
                        throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Context.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Security.PassportAuthenticationEventArgs.Context" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -477,9 +500,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>getIdentity</h4>
 <pre>public&nbsp;<a href="../../../system/web/security/PassportIdentity.html" title="class in system.web.security">PassportIdentity</a>&nbsp;getIdentity()
                              throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Identity.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Security.PassportAuthenticationEventArgs.Identity" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -586,9 +614,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>getUser</h4>
 <pre>public&nbsp;<a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;getUser()
                    throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property User.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Security.PassportAuthenticationEventArgs.User" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -617,9 +650,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>setUser</h4>
 <pre>public&nbsp;void&nbsp;setUser(<a href="../../../system/security/principal/IPrincipal.html" title="interface in system.security.principal">IPrincipal</a>&nbsp;User)
              throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property User.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>User</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Security.PassportAuthenticationEventArgs.User" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

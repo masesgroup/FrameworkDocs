@@ -228,13 +228,17 @@ implements <a href="../../system/enterpriseservices/ITransaction.html" title="in
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ITransactionImplementation.html#Abort-org.mases.jcobridge.netreflection.JCORefOut-int-int-">Abort</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/enterpriseservices/BOID.html" title="class in system.enterpriseservices">BOID</a>&gt;&nbsp;pboidReason,
      int&nbsp;fRetaining,
-     int&nbsp;fAsync)</code>&nbsp;</td>
+     int&nbsp;fAsync)</code>
+<div class="block">Invokes the .NET member Abort.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ITransactionImplementation.html#Commit-int-int-int-">Commit</a></span>(int&nbsp;fRetaining,
       int&nbsp;grfTC,
-      int&nbsp;grfRM)</code>&nbsp;</td>
+      int&nbsp;grfRM)</code>
+<div class="block">Invokes the .NET member Commit.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -268,7 +272,9 @@ implements <a href="../../system/enterpriseservices/ITransaction.html" title="in
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ITransactionImplementation.html#GetTransactionInfo-org.mases.jcobridge.netreflection.JCORefOut-">GetTransactionInfo</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/enterpriseservices/XACTTRANSINFO.html" title="class in system.enterpriseservices">XACTTRANSINFO</a>&gt;&nbsp;pinfo)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ITransactionImplementation.html#GetTransactionInfo-org.mases.jcobridge.netreflection.JCORefOut-">GetTransactionInfo</a></span>(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/enterpriseservices/XACTTRANSINFO.html" title="class in system.enterpriseservices">XACTTRANSINFO</a>&gt;&nbsp;pinfo)</code>
+<div class="block">Invokes the .NET member GetTransactionInfo.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/enterpriseservices/ITransaction.html" title="interface in system.enterpriseservices">ITransaction</a></code></td>
@@ -375,8 +381,10 @@ implements <a href="../../system/enterpriseservices/ITransaction.html" title="in
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -398,11 +406,18 @@ implements <a href="../../system/enterpriseservices/ITransaction.html" title="in
                   int&nbsp;fRetaining,
                   int&nbsp;fAsync)
            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Abort.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/enterpriseservices/ITransaction.html#Abort-org.mases.jcobridge.netreflection.JCORefOut-int-int-">Abort</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/enterpriseservices/ITransaction.html" title="interface in system.enterpriseservices">ITransaction</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pboidReason</code> - the argument of type <code>JCORefOut&lt;BOID&gt;</code></dd>
+<dd><code>fRetaining</code> - the argument of type <code>int</code></dd>
+<dd><code>fAsync</code> - the argument of type <code>int</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.ITransaction.Abort" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -416,11 +431,18 @@ implements <a href="../../system/enterpriseservices/ITransaction.html" title="in
                    int&nbsp;grfTC,
                    int&nbsp;grfRM)
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Commit.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/enterpriseservices/ITransaction.html#Commit-int-int-int-">Commit</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/enterpriseservices/ITransaction.html" title="interface in system.enterpriseservices">ITransaction</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fRetaining</code> - the argument of type <code>int</code></dd>
+<dd><code>grfTC</code> - the argument of type <code>int</code></dd>
+<dd><code>grfRM</code> - the argument of type <code>int</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.ITransaction.Commit" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -537,11 +559,16 @@ implements <a href="../../system/enterpriseservices/ITransaction.html" title="in
 <h4>GetTransactionInfo</h4>
 <pre>public&nbsp;void&nbsp;GetTransactionInfo(<a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/enterpriseservices/XACTTRANSINFO.html" title="class in system.enterpriseservices">XACTTRANSINFO</a>&gt;&nbsp;pinfo)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetTransactionInfo.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/enterpriseservices/ITransaction.html#GetTransactionInfo-org.mases.jcobridge.netreflection.JCORefOut-">GetTransactionInfo</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/enterpriseservices/ITransaction.html" title="interface in system.enterpriseservices">ITransaction</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>pinfo</code> - the argument of type <code>JCORefOut&lt;XACTTRANSINFO&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.ITransaction.GetTransactionInfo" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

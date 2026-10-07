@@ -247,12 +247,16 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#GetCustomAttributes-boolean-">GetCustomAttributes</a></span>(boolean&nbsp;inherit)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#GetCustomAttributes-boolean-">GetCustomAttributes</a></span>(boolean&nbsp;inherit)</code>
+<div class="block">Invokes the .NET member GetCustomAttributes.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#GetCustomAttributes-org.mases.jcobridge.netreflection.NetType-boolean-">GetCustomAttributes</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;t,
-                   boolean&nbsp;inherit)</code>&nbsp;</td>
+                   boolean&nbsp;inherit)</code>
+<div class="block">Invokes the .NET member GetCustomAttributes.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -286,12 +290,16 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>
+<div class="block">Invokes the .NET member GetValue.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#IsDefined-org.mases.jcobridge.netreflection.NetType-boolean-">IsDefined</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-         boolean&nbsp;inherit)</code>&nbsp;</td>
+         boolean&nbsp;inherit)</code>
+<div class="block">Invokes the .NET member IsDefined.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -305,12 +313,16 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
         <a href="../../system/reflection/BindingFlags.html" title="class in system.reflection">BindingFlags</a>&nbsp;invokeAttr,
         <a href="../../system/reflection/Binder.html" title="class in system.reflection">Binder</a>&nbsp;binder,
-        <a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>&nbsp;</td>
+        <a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;culture)</code>
+<div class="block">Invokes the .NET member SetValue.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSFieldInfo.html#SetValueNewJSFieldInfo-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">SetValueNewJSFieldInfo</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
-                      <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>&nbsp;</td>
+                      <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>
+<div class="block">Invokes the .NET member SetValueNewJSFieldInfo.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -439,8 +451,10 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -479,11 +493,18 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
 <h4>GetCustomAttributes</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;GetCustomAttributes(boolean&nbsp;inherit)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetCustomAttributes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#GetCustomAttributes-boolean-">GetCustomAttributes</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>inherit</code> - the argument of type <code>boolean</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSFieldInfo.GetCustomAttributes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -496,11 +517,19 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;GetCustomAttributes(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;t,
                                        boolean&nbsp;inherit)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetCustomAttributes.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#GetCustomAttributes-org.mases.jcobridge.netreflection.NetType-boolean-">GetCustomAttributes</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>t</code> - the argument of type <code>NetType</code></dd>
+<dd><code>inherit</code> - the argument of type <code>boolean</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSFieldInfo.GetCustomAttributes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -617,21 +646,28 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
                           <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
                           <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
                           <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Invokes the .NET member GetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
-<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSFieldInfo.GetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -644,11 +680,19 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
 <pre>public&nbsp;boolean&nbsp;IsDefined(<a href="../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
                          boolean&nbsp;inherit)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsDefined.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#IsDefined-org.mases.jcobridge.netreflection.NetType-boolean-">IsDefined</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dd><code>inherit</code> - the argument of type <code>boolean</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSFieldInfo.IsDefined" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -691,21 +735,30 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
                      <a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
                      <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
                      <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Invokes the .NET member SetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#SetValue-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-system.reflection.BindingFlags-system.reflection.Binder-system.globalization.CultureInfo-">SetValue</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>invokeAttr</code> - the argument of type <code>BindingFlags</code></dd>
+<dd><code>binder</code> - the argument of type <code>Binder</code></dd>
+<dd><code>culture</code> - the argument of type <code>CultureInfo</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code></dd>
-<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/TypeLoadException.html" title="class in system">TypeLoadException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSFieldInfo.SetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -719,10 +772,16 @@ extends <a href="../../system/reflection/FieldInfo.html" title="class in system.
                                    <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)
                             throws java.lang.Throwable,
                                    <a href="../../microsoft/jscript/JScriptException.html" title="class in microsoft.jscript">JScriptException</a></pre>
+<div class="block">Invokes the .NET member SetValueNewJSFieldInfo.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../microsoft/jscript/JScriptException.html" title="class in microsoft.jscript">JScriptException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../microsoft/jscript/JScriptException.html" title="class in microsoft.jscript">JScriptException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSFieldInfo.SetValueNewJSFieldInfo" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -258,23 +258,33 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#HasEnumerableMember-java.lang.String-">HasEnumerableMember</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#HasEnumerableMember-java.lang.String-">HasEnumerableMember</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Invokes the .NET member HasEnumerableMember.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsCOMObject--">IsCOMObject</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsCOMObject--">IsCOMObject</a></span>()</code>
+<div class="block">Invokes the .NET member IsCOMObject.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsEqual-microsoft.jscript.IDebuggerObject-">IsEqual</a></span>(<a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a>&nbsp;o)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsEqual-microsoft.jscript.IDebuggerObject-">IsEqual</a></span>(<a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a>&nbsp;o)</code>
+<div class="block">Invokes the .NET member IsEqual.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsScriptFunction--">IsScriptFunction</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsScriptFunction--">IsScriptFunction</a></span>()</code>
+<div class="block">Invokes the .NET member IsScriptFunction.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsScriptObject--">IsScriptObject</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDebuggerObjectImplementation.html#IsScriptObject--">IsScriptObject</a></span>()</code>
+<div class="block">Invokes the .NET member IsScriptObject.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a></code></td>
@@ -381,8 +391,10 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -507,11 +519,18 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
 <h4>HasEnumerableMember</h4>
 <pre>public&nbsp;boolean&nbsp;HasEnumerableMember(java.lang.String&nbsp;name)
                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member HasEnumerableMember.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IDebuggerObject.html#HasEnumerableMember-java.lang.String-">HasEnumerableMember</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IDebuggerObject.HasEnumerableMember" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -523,11 +542,16 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
 <h4>IsCOMObject</h4>
 <pre>public&nbsp;boolean&nbsp;IsCOMObject()
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsCOMObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IDebuggerObject.html#IsCOMObject--">IsCOMObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IDebuggerObject.IsCOMObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -539,11 +563,18 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
 <h4>IsEqual</h4>
 <pre>public&nbsp;boolean&nbsp;IsEqual(<a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a>&nbsp;o)
                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsEqual.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IDebuggerObject.html#IsEqual-microsoft.jscript.IDebuggerObject-">IsEqual</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>o</code> - the argument of type <code>IDebuggerObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IDebuggerObject.IsEqual" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -555,11 +586,16 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
 <h4>IsScriptFunction</h4>
 <pre>public&nbsp;boolean&nbsp;IsScriptFunction()
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsScriptFunction.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IDebuggerObject.html#IsScriptFunction--">IsScriptFunction</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IDebuggerObject.IsScriptFunction" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -571,11 +607,16 @@ implements <a href="../../microsoft/jscript/IDebuggerObject.html" title="interfa
 <h4>IsScriptObject</h4>
 <pre>public&nbsp;boolean&nbsp;IsScriptObject()
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsScriptObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IDebuggerObject.html#IsScriptObject--">IsScriptObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IDebuggerObject.html" title="interface in microsoft.jscript">IDebuggerObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IDebuggerObject.IsScriptObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

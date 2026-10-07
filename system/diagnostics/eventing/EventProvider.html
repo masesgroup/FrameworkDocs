@@ -215,7 +215,9 @@ implements java.lang.AutoCloseable</pre>
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#EventProvider--">EventProvider</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#EventProvider-system.Guid-">EventProvider</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;providerGuid)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#EventProvider-system.Guid-">EventProvider</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;providerGuid)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#EventProvider-java.lang.Object-">EventProvider</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -249,15 +251,21 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#Close--">Close</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#Close--">Close</a></span>()</code>
+<div class="block">Invokes the .NET member Close.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/Guid.html" title="class in system">Guid</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#CreateActivityId--">CreateActivityId</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#CreateActivityId--">CreateActivityId</a></span>()</code>
+<div class="block">Invokes the .NET member CreateActivityId.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#Dispose--">Dispose</a></span>()</code>
+<div class="block">Invokes the .NET member Dispose.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -291,16 +299,22 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#IsEnabled--">IsEnabled</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#IsEnabled--">IsEnabled</a></span>()</code>
+<div class="block">Invokes the .NET member IsEnabled.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#IsEnabled-byte-long-">IsEnabled</a></span>(byte&nbsp;level,
-         long&nbsp;keywords)</code>&nbsp;</td>
+         long&nbsp;keywords)</code>
+<div class="block">Invokes the .NET member IsEnabled.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#SetActivityId-org.mases.jcobridge.netreflection.JCORefOut-">SetActivityId</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;id)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#SetActivityId-org.mases.jcobridge.netreflection.JCORefOut-">SetActivityId</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;id)</code>
+<div class="block">Invokes the .NET member SetActivityId.</div>
+</td>
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -311,28 +325,38 @@ implements java.lang.AutoCloseable</pre>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#WriteEvent-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.NetObject...-">WriteEvent</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/diagnostics/eventing/EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&gt;&nbsp;eventDescriptor,
-          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</code>&nbsp;</td>
+          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</code>
+<div class="block">Invokes the .NET member WriteEvent.</div>
+</td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#WriteEvent-org.mases.jcobridge.netreflection.JCORefOut-java.lang.String-">WriteEvent</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/diagnostics/eventing/EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&gt;&nbsp;eventDescriptor,
-          java.lang.String&nbsp;data)</code>&nbsp;</td>
+          java.lang.String&nbsp;data)</code>
+<div class="block">Invokes the .NET member WriteEvent.</div>
+</td>
 </tr>
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#WriteMessageEvent-java.lang.String-">WriteMessageEvent</a></span>(java.lang.String&nbsp;eventMessage)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#WriteMessageEvent-java.lang.String-">WriteMessageEvent</a></span>(java.lang.String&nbsp;eventMessage)</code>
+<div class="block">Invokes the .NET member WriteMessageEvent.</div>
+</td>
 </tr>
 <tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#WriteMessageEvent-java.lang.String-byte-long-">WriteMessageEvent</a></span>(java.lang.String&nbsp;eventMessage,
                  byte&nbsp;eventLevel,
-                 long&nbsp;eventKeywords)</code>&nbsp;</td>
+                 long&nbsp;eventKeywords)</code>
+<div class="block">Invokes the .NET member WriteMessageEvent.</div>
+</td>
 </tr>
 <tr id="i18" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/diagnostics/eventing/EventProvider.html#WriteTransferEvent-org.mases.jcobridge.netreflection.JCORefOut-system.Guid-org.mases.jcobridge.netreflection.NetObject...-">WriteTransferEvent</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/diagnostics/eventing/EventDescriptor.html" title="class in system.diagnostics.eventing">EventDescriptor</a>&gt;&nbsp;eventDescriptor,
                   <a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;relatedActivityId,
-                  <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</code>&nbsp;</td>
+                  <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;eventPayload)</code>
+<div class="block">Invokes the .NET member WriteTransferEvent.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -458,22 +482,27 @@ implements java.lang.AutoCloseable</pre>
                      <a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                      <a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>providerGuid</code> - the argument of type <code>Guid</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -487,8 +516,10 @@ implements java.lang.AutoCloseable</pre>
               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -544,10 +575,13 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;void&nbsp;Close()
            throws java.lang.Throwable,
                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Close.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.Close" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -559,9 +593,14 @@ implements java.lang.AutoCloseable</pre>
 <h4>CreateActivityId</h4>
 <pre>public static&nbsp;<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;CreateActivityId()
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateActivityId.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.CreateActivityId" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -574,10 +613,13 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;void&nbsp;Dispose()
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Dispose.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.Dispose" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -684,9 +726,14 @@ implements java.lang.AutoCloseable</pre>
 <h4>IsEnabled</h4>
 <pre>public&nbsp;boolean&nbsp;IsEnabled()
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsEnabled.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.IsEnabled" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -699,9 +746,17 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;boolean&nbsp;IsEnabled(byte&nbsp;level,
                          long&nbsp;keywords)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsEnabled.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>level</code> - the argument of type <code>byte</code></dd>
+<dd><code>keywords</code> - the argument of type <code>long</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.IsEnabled" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -719,15 +774,20 @@ implements java.lang.AutoCloseable</pre>
                                  <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<div class="block">Invokes the .NET member SetActivityId.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the argument of type <code>JCORefOut&lt;Guid&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.SetActivityId" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -769,21 +829,29 @@ implements java.lang.AutoCloseable</pre>
                           <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                           <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<div class="block">Invokes the .NET member WriteEvent.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventDescriptor</code> - the argument of type <code>JCORefOut&lt;EventDescriptor&gt;</code></dd>
+<dd><code>eventPayload</code> - the argument of type <code>NetObject...</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.WriteEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -801,14 +869,22 @@ implements java.lang.AutoCloseable</pre>
                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                           <a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></pre>
+<div class="block">Invokes the .NET member WriteEvent.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventDescriptor</code> - the argument of type <code>JCORefOut&lt;EventDescriptor&gt;</code></dd>
+<dd><code>data</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.WriteEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -821,10 +897,17 @@ implements java.lang.AutoCloseable</pre>
 <pre>public&nbsp;boolean&nbsp;WriteMessageEvent(java.lang.String&nbsp;eventMessage)
                           throws java.lang.Throwable,
                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member WriteMessageEvent.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventMessage</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.WriteMessageEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -839,10 +922,19 @@ implements java.lang.AutoCloseable</pre>
                                  long&nbsp;eventKeywords)
                           throws java.lang.Throwable,
                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member WriteMessageEvent.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventMessage</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>eventLevel</code> - the argument of type <code>byte</code></dd>
+<dd><code>eventKeywords</code> - the argument of type <code>long</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.WriteMessageEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -868,21 +960,30 @@ implements java.lang.AutoCloseable</pre>
                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></pre>
+<div class="block">Invokes the .NET member WriteTransferEvent.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventDescriptor</code> - the argument of type <code>JCORefOut&lt;EventDescriptor&gt;</code></dd>
+<dd><code>relatedActivityId</code> - the argument of type <code>Guid</code></dd>
+<dd><code>eventPayload</code> - the argument of type <code>NetObject...</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Diagnostics.Eventing.EventProvider.WriteTransferEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

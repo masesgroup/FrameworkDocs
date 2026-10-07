@@ -220,7 +220,9 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#SqlNotificationEventArgs-system.data.sqlclient.SqlNotificationType-system.data.sqlclient.SqlNotificationInfo-system.data.sqlclient.SqlNotificationSource-">SqlNotificationEventArgs</a></span>(<a href="../../../system/data/sqlclient/SqlNotificationType.html" title="class in system.data.sqlclient">SqlNotificationType</a>&nbsp;type,
                         <a href="../../../system/data/sqlclient/SqlNotificationInfo.html" title="class in system.data.sqlclient">SqlNotificationInfo</a>&nbsp;info,
-                        <a href="../../../system/data/sqlclient/SqlNotificationSource.html" title="class in system.data.sqlclient">SqlNotificationSource</a>&nbsp;source)</code>&nbsp;</td>
+                        <a href="../../../system/data/sqlclient/SqlNotificationSource.html" title="class in system.data.sqlclient">SqlNotificationSource</a>&nbsp;source)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -245,7 +247,9 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlNotificationInfo.html" title="class in system.data.sqlclient">SqlNotificationInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#getInfo--">getInfo</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#getInfo--">getInfo</a></span>()</code>
+<div class="block">Gets the value of the .NET property Info.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -279,11 +283,15 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlNotificationSource.html" title="class in system.data.sqlclient">SqlNotificationSource</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#getSource--">getSource</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#getSource--">getSource</a></span>()</code>
+<div class="block">Gets the value of the .NET property Source.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/sqlclient/SqlNotificationType.html" title="class in system.data.sqlclient">SqlNotificationType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#getType--">getType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/sqlclient/SqlNotificationEventArgs.html#getType--">getType</a></span>()</code>
+<div class="block">Gets the value of the .NET property Type.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -404,8 +412,10 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -419,9 +429,16 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
                                 <a href="../../../system/data/sqlclient/SqlNotificationInfo.html" title="class in system.data.sqlclient">SqlNotificationInfo</a>&nbsp;info,
                                 <a href="../../../system/data/sqlclient/SqlNotificationSource.html" title="class in system.data.sqlclient">SqlNotificationSource</a>&nbsp;source)
                          throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>SqlNotificationType</code></dd>
+<dd><code>info</code> - the argument of type <code>SqlNotificationInfo</code></dd>
+<dd><code>source</code> - the argument of type <code>SqlNotificationSource</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.SqlClient.SqlNotificationEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -460,9 +477,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>getInfo</h4>
 <pre>public&nbsp;<a href="../../../system/data/sqlclient/SqlNotificationInfo.html" title="class in system.data.sqlclient">SqlNotificationInfo</a>&nbsp;getInfo()
                             throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Info.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.SqlClient.SqlNotificationEventArgs.Info" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -569,9 +591,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>getSource</h4>
 <pre>public&nbsp;<a href="../../../system/data/sqlclient/SqlNotificationSource.html" title="class in system.data.sqlclient">SqlNotificationSource</a>&nbsp;getSource()
                                 throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Source.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.SqlClient.SqlNotificationEventArgs.Source" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -583,9 +610,14 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <h4>getType</h4>
 <pre>public&nbsp;<a href="../../../system/data/sqlclient/SqlNotificationType.html" title="class in system.data.sqlclient">SqlNotificationType</a>&nbsp;getType()
                             throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Type.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.SqlClient.SqlNotificationEventArgs.Type" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

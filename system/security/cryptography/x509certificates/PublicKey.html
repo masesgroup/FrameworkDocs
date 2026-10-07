@@ -216,7 +216,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#PublicKey-system.security.cryptography.Oid-system.security.cryptography.AsnEncodedData-system.security.cryptography.AsnEncodedData-">PublicKey</a></span>(<a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;oid,
          <a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a>&nbsp;parameters,
-         <a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a>&nbsp;keyValue)</code>&nbsp;</td>
+         <a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a>&nbsp;keyValue)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -241,11 +243,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getEncodedKeyValue--">getEncodedKeyValue</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getEncodedKeyValue--">getEncodedKeyValue</a></span>()</code>
+<div class="block">Gets the value of the .NET property EncodedKeyValue.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getEncodedParameters--">getEncodedParameters</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getEncodedParameters--">getEncodedParameters</a></span>()</code>
+<div class="block">Gets the value of the .NET property EncodedParameters.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -279,11 +285,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/AsymmetricAlgorithm.html" title="class in system.security.cryptography">AsymmetricAlgorithm</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getKey--">getKey</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getKey--">getKey</a></span>()</code>
+<div class="block">Gets the value of the .NET property Key.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getOid--">getOid</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/security/cryptography/x509certificates/PublicKey.html#getOid--">getOid</a></span>()</code>
+<div class="block">Gets the value of the .NET property Oid.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -404,8 +414,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -420,10 +432,17 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                  <a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a>&nbsp;keyValue)
           throws java.lang.Throwable,
                  <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>oid</code> - the argument of type <code>Oid</code></dd>
+<dd><code>parameters</code> - the argument of type <code>AsnEncodedData</code></dd>
+<dd><code>keyValue</code> - the argument of type <code>AsnEncodedData</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Security.Cryptography.X509Certificates.PublicKey.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -462,9 +481,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getEncodedKeyValue</h4>
 <pre>public&nbsp;<a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a>&nbsp;getEncodedKeyValue()
                                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property EncodedKeyValue.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Security.Cryptography.X509Certificates.PublicKey.EncodedKeyValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -476,9 +500,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getEncodedParameters</h4>
 <pre>public&nbsp;<a href="../../../../system/security/cryptography/AsnEncodedData.html" title="class in system.security.cryptography">AsnEncodedData</a>&nbsp;getEncodedParameters()
                                     throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property EncodedParameters.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Security.Cryptography.X509Certificates.PublicKey.EncodedParameters" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -602,26 +631,31 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                   <a href="../../../../system/RankException.html" title="class in system">RankException</a>,
                                   <a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a>,
                                   <a href="../../../../system/security/accesscontrol/PrivilegeNotHeldException.html" title="class in system.security.accesscontrol">PrivilegeNotHeldException</a></pre>
+<div class="block">Gets the value of the .NET property Key.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code></dd>
-<dd><code><a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
-<dd><code><a href="../../../../system/security/accesscontrol/PrivilegeNotHeldException.html" title="class in system.security.accesscontrol">PrivilegeNotHeldException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/security/cryptography/CryptographicException.html" title="class in system.security.cryptography">CryptographicException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/security/accesscontrol/PrivilegeNotHeldException.html" title="class in system.security.accesscontrol">PrivilegeNotHeldException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Security.Cryptography.X509Certificates.PublicKey.Key" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -634,10 +668,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public&nbsp;<a href="../../../../system/security/cryptography/Oid.html" title="class in system.security.cryptography">Oid</a>&nbsp;getOid()
            throws java.lang.Throwable,
                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Gets the value of the .NET property Oid.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Security.Cryptography.X509Certificates.PublicKey.Oid" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

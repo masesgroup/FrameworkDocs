@@ -216,7 +216,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#DataBinding-java.lang.String-org.mases.jcobridge.netreflection.NetType-java.lang.String-">DataBinding</a></span>(java.lang.String&nbsp;propertyName,
            <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;propertyType,
-           java.lang.String&nbsp;expression)</code>&nbsp;</td>
+           java.lang.String&nbsp;expression)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -241,7 +243,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#getExpression--">getExpression</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#getExpression--">getExpression</a></span>()</code>
+<div class="block">Gets the value of the .NET property Expression.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -275,15 +279,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#getPropertyName--">getPropertyName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#getPropertyName--">getPropertyName</a></span>()</code>
+<div class="block">Gets the value of the .NET property PropertyName.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#getPropertyType--">getPropertyType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#getPropertyType--">getPropertyType</a></span>()</code>
+<div class="block">Gets the value of the .NET property PropertyType.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#setExpression-java.lang.String-">setExpression</a></span>(java.lang.String&nbsp;Expression)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/DataBinding.html#setExpression-java.lang.String-">setExpression</a></span>(java.lang.String&nbsp;Expression)</code>
+<div class="block">Sets the value of the .NET property Expression.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -404,8 +414,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -419,9 +431,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                    <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;propertyType,
                    java.lang.String&nbsp;expression)
             throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>propertyName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>propertyType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>expression</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.DataBinding.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -460,9 +479,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getExpression</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getExpression()
                                throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Expression.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.DataBinding.Expression" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -569,9 +593,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getPropertyName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getPropertyName()
                                  throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property PropertyName.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.DataBinding.PropertyName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -583,9 +612,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getPropertyType</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;getPropertyType()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property PropertyType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.DataBinding.PropertyType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -597,9 +631,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>setExpression</h4>
 <pre>public&nbsp;void&nbsp;setExpression(java.lang.String&nbsp;Expression)
                    throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property Expression.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>Expression</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.DataBinding.Expression" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -228,7 +228,9 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientFormatte
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/channels/IClientChannelSink.html" title="interface in system.runtime.remoting.channels">IClientChannelSink</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientFormatterSinkProviderImplementation.html#CreateSink-system.runtime.remoting.channels.IChannelSender-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">CreateSink</a></span>(<a href="../../../../system/runtime/remoting/channels/IChannelSender.html" title="interface in system.runtime.remoting.channels">IChannelSender</a>&nbsp;channel,
           java.lang.String&nbsp;url,
-          <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;remoteChannelData)</code>&nbsp;</td>
+          <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;remoteChannelData)</code>
+<div class="block">Invokes the .NET member CreateSink.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -262,11 +264,15 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientFormatte
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientFormatterSinkProviderImplementation.html#getNext--">getNext</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientFormatterSinkProviderImplementation.html#getNext--">getNext</a></span>()</code>
+<div class="block">Gets the value of the .NET property Next.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientFormatterSinkProviderImplementation.html#setNext-system.runtime.remoting.channels.IClientChannelSinkProvider-">setNext</a></span>(<a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a>&nbsp;Next)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/channels/IClientFormatterSinkProviderImplementation.html#setNext-system.runtime.remoting.channels.IClientChannelSinkProvider-">setNext</a></span>(<a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a>&nbsp;Next)</code>
+<div class="block">Sets the value of the .NET property Next.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/channels/IClientFormatterSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientFormatterSinkProvider</a></code></td>
@@ -380,8 +386,10 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientFormatte
                                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -403,11 +411,20 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientFormatte
                                      java.lang.String&nbsp;url,
                                      <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;remoteChannelData)
                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateSink.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html#CreateSink-system.runtime.remoting.channels.IChannelSender-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">CreateSink</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channel</code> - the argument of type <code>IChannelSender</code></dd>
+<dd><code>url</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>remoteChannelData</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IClientFormatterSinkProvider.CreateSink" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -534,11 +551,16 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientFormatte
 <h4>getNext</h4>
 <pre>public&nbsp;<a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a>&nbsp;getNext()
                                    throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Next.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html#getNext--">getNext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IClientFormatterSinkProvider.Next" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -550,11 +572,16 @@ implements <a href="../../../../system/runtime/remoting/channels/IClientFormatte
 <h4>setNext</h4>
 <pre>public&nbsp;void&nbsp;setNext(<a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a>&nbsp;Next)
              throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property Next.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html#setNext-system.runtime.remoting.channels.IClientChannelSinkProvider-">setNext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/channels/IClientChannelSinkProvider.html" title="interface in system.runtime.remoting.channels">IClientChannelSinkProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>Next</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Channels.IClientFormatterSinkProvider.Next" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

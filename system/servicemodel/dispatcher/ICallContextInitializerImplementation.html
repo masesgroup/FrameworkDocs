@@ -225,13 +225,17 @@ implements <a href="../../../system/servicemodel/dispatcher/ICallContextInitiali
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ICallContextInitializerImplementation.html#AfterInvoke-org.mases.jcobridge.netreflection.NetObject-">AfterInvoke</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ICallContextInitializerImplementation.html#AfterInvoke-org.mases.jcobridge.netreflection.NetObject-">AfterInvoke</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)</code>
+<div class="block">Invokes the .NET member AfterInvoke.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ICallContextInitializerImplementation.html#BeforeInvoke-system.servicemodel.InstanceContext-system.servicemodel.IClientChannel-system.servicemodel.channels.Message-">BeforeInvoke</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext,
             <a href="../../../system/servicemodel/IClientChannel.html" title="interface in system.servicemodel">IClientChannel</a>&nbsp;channel,
-            <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)</code>&nbsp;</td>
+            <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)</code>
+<div class="block">Invokes the .NET member BeforeInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -368,8 +372,10 @@ implements <a href="../../../system/servicemodel/dispatcher/ICallContextInitiali
                                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -389,11 +395,16 @@ implements <a href="../../../system/servicemodel/dispatcher/ICallContextInitiali
 <h4>AfterInvoke</h4>
 <pre>public&nbsp;void&nbsp;AfterInvoke(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member AfterInvoke.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/ICallContextInitializer.html#AfterInvoke-org.mases.jcobridge.netreflection.NetObject-">AfterInvoke</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/ICallContextInitializer.html" title="interface in system.servicemodel.dispatcher">ICallContextInitializer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>correlationState</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.ICallContextInitializer.AfterInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -407,11 +418,20 @@ implements <a href="../../../system/servicemodel/dispatcher/ICallContextInitiali
                               <a href="../../../system/servicemodel/IClientChannel.html" title="interface in system.servicemodel">IClientChannel</a>&nbsp;channel,
                               <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member BeforeInvoke.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/ICallContextInitializer.html#BeforeInvoke-system.servicemodel.InstanceContext-system.servicemodel.IClientChannel-system.servicemodel.channels.Message-">BeforeInvoke</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/ICallContextInitializer.html" title="interface in system.servicemodel.dispatcher">ICallContextInitializer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instanceContext</code> - the argument of type <code>InstanceContext</code></dd>
+<dd><code>channel</code> - the argument of type <code>IClientChannel</code></dd>
+<dd><code>message</code> - the argument of type <code>Message</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.ICallContextInitializer.BeforeInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

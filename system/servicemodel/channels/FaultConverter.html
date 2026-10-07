@@ -235,7 +235,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/channels/FaultConverter.html" title="class in system.servicemodel.channels">FaultConverter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/FaultConverter.html#GetDefaultFaultConverter-system.servicemodel.channels.MessageVersion-">GetDefaultFaultConverter</a></span>(<a href="../../../system/servicemodel/channels/MessageVersion.html" title="class in system.servicemodel.channels">MessageVersion</a>&nbsp;version)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/FaultConverter.html#GetDefaultFaultConverter-system.servicemodel.channels.MessageVersion-">GetDefaultFaultConverter</a></span>(<a href="../../../system/servicemodel/channels/MessageVersion.html" title="class in system.servicemodel.channels">MessageVersion</a>&nbsp;version)</code>
+<div class="block">Invokes the .NET member GetDefaultFaultConverter.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -277,12 +279,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/FaultConverter.html#TryCreateException-system.servicemodel.channels.Message-system.servicemodel.channels.MessageFault-org.mases.jcobridge.netreflection.JCORefOut-">TryCreateException</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
                   <a href="../../../system/servicemodel/channels/MessageFault.html" title="class in system.servicemodel.channels">MessageFault</a>&nbsp;fault,
-                  <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&gt;&nbsp;exception)</code>&nbsp;</td>
+                  <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&gt;&nbsp;exception)</code>
+<div class="block">Invokes the .NET member TryCreateException.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/FaultConverter.html#TryCreateFaultMessage-org.mases.jcobridge.netreflection.NetException-org.mases.jcobridge.netreflection.JCORefOut-">TryCreateFaultMessage</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;exception,
-                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;message)</code>&nbsp;</td>
+                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;message)</code>
+<div class="block">Invokes the .NET member TryCreateFaultMessage.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -397,8 +403,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -437,9 +445,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetDefaultFaultConverter</h4>
 <pre>public static&nbsp;<a href="../../../system/servicemodel/channels/FaultConverter.html" title="class in system.servicemodel.channels">FaultConverter</a>&nbsp;GetDefaultFaultConverter(<a href="../../../system/servicemodel/channels/MessageVersion.html" title="class in system.servicemodel.channels">MessageVersion</a>&nbsp;version)
                                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetDefaultFaultConverter.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>version</code> - the argument of type <code>MessageVersion</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Channels.FaultConverter.GetDefaultFaultConverter" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -576,20 +591,29 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                   <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
                                   <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<div class="block">Invokes the .NET member TryCreateException.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>Message</code></dd>
+<dd><code>fault</code> - the argument of type <code>MessageFault</code></dd>
+<dd><code>exception</code> - the argument of type <code>JCORefOut&lt;NetException&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Channels.FaultConverter.TryCreateException" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -616,23 +640,31 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                      <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
                                      <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
                                      <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<div class="block">Invokes the .NET member TryCreateFaultMessage.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exception</code> - the argument of type <code>NetException</code></dd>
+<dd><code>message</code> - the argument of type <code>JCORefOut&lt;Message&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Channels.FaultConverter.TryCreateFaultMessage" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

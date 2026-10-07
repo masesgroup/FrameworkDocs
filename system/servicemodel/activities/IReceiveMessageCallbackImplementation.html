@@ -255,7 +255,9 @@ implements <a href="../../../system/servicemodel/activities/IReceiveMessageCallb
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/activities/IReceiveMessageCallbackImplementation.html#OnReceiveMessage-system.servicemodel.OperationContext-system.activities.ExecutionProperties-">OnReceiveMessage</a></span>(<a href="../../../system/servicemodel/OperationContext.html" title="class in system.servicemodel">OperationContext</a>&nbsp;operationContext,
-                <a href="../../../system/activities/ExecutionProperties.html" title="class in system.activities">ExecutionProperties</a>&nbsp;activityExecutionProperties)</code>&nbsp;</td>
+                <a href="../../../system/activities/ExecutionProperties.html" title="class in system.activities">ExecutionProperties</a>&nbsp;activityExecutionProperties)</code>
+<div class="block">Invokes the .NET member OnReceiveMessage.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/activities/IReceiveMessageCallback.html" title="interface in system.servicemodel.activities">IReceiveMessageCallback</a></code></td>
@@ -362,8 +364,10 @@ implements <a href="../../../system/servicemodel/activities/IReceiveMessageCallb
                                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -489,11 +493,17 @@ implements <a href="../../../system/servicemodel/activities/IReceiveMessageCallb
 <pre>public&nbsp;void&nbsp;OnReceiveMessage(<a href="../../../system/servicemodel/OperationContext.html" title="class in system.servicemodel">OperationContext</a>&nbsp;operationContext,
                              <a href="../../../system/activities/ExecutionProperties.html" title="class in system.activities">ExecutionProperties</a>&nbsp;activityExecutionProperties)
                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member OnReceiveMessage.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/activities/IReceiveMessageCallback.html#OnReceiveMessage-system.servicemodel.OperationContext-system.activities.ExecutionProperties-">OnReceiveMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/activities/IReceiveMessageCallback.html" title="interface in system.servicemodel.activities">IReceiveMessageCallback</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationContext</code> - the argument of type <code>OperationContext</code></dd>
+<dd><code>activityExecutionProperties</code> - the argument of type <code>ExecutionProperties</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Activities.IReceiveMessageCallback.OnReceiveMessage" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

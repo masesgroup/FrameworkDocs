@@ -210,7 +210,9 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/reflection/ParameterModifier.html#ParameterModifier--">ParameterModifier</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/reflection/ParameterModifier.html#ParameterModifier-int-">ParameterModifier</a></span>(int&nbsp;parameterCount)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/reflection/ParameterModifier.html#ParameterModifier-int-">ParameterModifier</a></span>(int&nbsp;parameterCount)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/reflection/ParameterModifier.html#ParameterModifier-java.lang.Object-">ParameterModifier</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -386,10 +388,15 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
 <pre>public&nbsp;ParameterModifier(int&nbsp;parameterCount)
                   throws java.lang.Throwable,
                          <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>parameterCount</code> - the argument of type <code>int</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Reflection.ParameterModifier.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -403,8 +410,10 @@ extends <a href="../../system/ValueType.html" title="class in system">ValueType<
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>

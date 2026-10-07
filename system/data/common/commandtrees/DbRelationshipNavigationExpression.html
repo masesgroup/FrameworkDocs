@@ -236,7 +236,9 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></span>(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></span>(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)</code>
+<div class="block">Invokes the .NET member Accept.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html" title="class in system.data.common.commandtrees">DbRelationshipNavigationExpression</a></code></td>
@@ -276,19 +278,27 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/metadata/edm/RelationshipEndMember.html" title="class in system.data.metadata.edm">RelationshipEndMember</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getNavigateFrom--">getNavigateFrom</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getNavigateFrom--">getNavigateFrom</a></span>()</code>
+<div class="block">Gets the value of the .NET property NavigateFrom.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/metadata/edm/RelationshipEndMember.html" title="class in system.data.metadata.edm">RelationshipEndMember</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getNavigateTo--">getNavigateTo</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getNavigateTo--">getNavigateTo</a></span>()</code>
+<div class="block">Gets the value of the .NET property NavigateTo.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getNavigationSource--">getNavigationSource</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getNavigationSource--">getNavigationSource</a></span>()</code>
+<div class="block">Gets the value of the .NET property NavigationSource.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/metadata/edm/RelationshipType.html" title="class in system.data.metadata.edm">RelationshipType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getRelationship--">getRelationship</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbRelationshipNavigationExpression.html#getRelationship--">getRelationship</a></span>()</code>
+<div class="block">Gets the value of the .NET property Relationship.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -416,8 +426,10 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
                                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -438,12 +450,17 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <pre>public&nbsp;void&nbsp;Accept(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)
             throws java.lang.Throwable,
                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Accept.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/data/common/commandtrees/DbExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>visitor</code> - the argument of type <code>DbExpressionVisitor</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbRelationshipNavigationExpression.Accept" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -569,9 +586,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getNavigateFrom</h4>
 <pre>public&nbsp;<a href="../../../../system/data/metadata/edm/RelationshipEndMember.html" title="class in system.data.metadata.edm">RelationshipEndMember</a>&nbsp;getNavigateFrom()
                                       throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property NavigateFrom.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbRelationshipNavigationExpression.NavigateFrom" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -583,9 +605,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getNavigateTo</h4>
 <pre>public&nbsp;<a href="../../../../system/data/metadata/edm/RelationshipEndMember.html" title="class in system.data.metadata.edm">RelationshipEndMember</a>&nbsp;getNavigateTo()
                                     throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property NavigateTo.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbRelationshipNavigationExpression.NavigateTo" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -597,9 +624,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getNavigationSource</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;getNavigationSource()
                                  throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property NavigationSource.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbRelationshipNavigationExpression.NavigationSource" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -611,9 +643,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getRelationship</h4>
 <pre>public&nbsp;<a href="../../../../system/data/metadata/edm/RelationshipType.html" title="class in system.data.metadata.edm">RelationshipType</a>&nbsp;getRelationship()
                                  throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Relationship.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbRelationshipNavigationExpression.Relationship" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

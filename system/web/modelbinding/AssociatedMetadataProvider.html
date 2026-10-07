@@ -275,18 +275,24 @@ extends <a href="../../../system/web/modelbinding/ModelMetadataProvider.html" ti
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/AssociatedMetadataProvider.html#GetMetadataForProperties-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetMetadataForProperties</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;container,
-                        <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType)</code>&nbsp;</td>
+                        <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType)</code>
+<div class="block">Invokes the .NET member GetMetadataForProperties.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/AssociatedMetadataProvider.html#GetMetadataForProperty-system.Func_1-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetMetadataForProperty</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
                       <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
-                      java.lang.String&nbsp;propertyName)</code>&nbsp;</td>
+                      java.lang.String&nbsp;propertyName)</code>
+<div class="block">Invokes the .NET member GetMetadataForProperty.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/AssociatedMetadataProvider.html#GetMetadataForType-system.Func_1-org.mases.jcobridge.netreflection.NetType-">GetMetadataForType</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
-                  <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType)</code>&nbsp;</td>
+                  <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType)</code>
+<div class="block">Invokes the .NET member GetMetadataForType.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -407,8 +413,10 @@ extends <a href="../../../system/web/modelbinding/ModelMetadataProvider.html" ti
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -544,12 +552,20 @@ extends <a href="../../../system/web/modelbinding/ModelMetadataProvider.html" ti
                                               <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType)
                                        throws java.lang.Throwable,
                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member GetMetadataForProperties.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/ModelMetadataProvider.html#GetMetadataForProperties-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetType-">GetMetadataForProperties</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>container</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>containerType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperties" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -577,25 +593,34 @@ extends <a href="../../../system/web/modelbinding/ModelMetadataProvider.html" ti
                                             <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
                                             <a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                             <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<div class="block">Invokes the .NET member GetMetadataForProperty.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/ModelMetadataProvider.html#GetMetadataForProperty-system.Func_1-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetMetadataForProperty</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modelAccessor</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>containerType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>propertyName</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForProperty" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -613,16 +638,24 @@ extends <a href="../../../system/web/modelbinding/ModelMetadataProvider.html" ti
                                         <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                         <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
                                         <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<div class="block">Invokes the .NET member GetMetadataForType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/ModelMetadataProvider.html#GetMetadataForType-system.Func_1-org.mases.jcobridge.netreflection.NetType-">GetMetadataForType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modelAccessor</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>modelType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.AssociatedMetadataProvider.GetMetadataForType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

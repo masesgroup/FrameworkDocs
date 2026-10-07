@@ -271,7 +271,9 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/ProcessProtocolHandler.html#InitializeLifetimeService--">InitializeLifetimeService</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/ProcessProtocolHandler.html#InitializeLifetimeService--">InitializeLifetimeService</a></span>()</code>
+<div class="block">Invokes the .NET member InitializeLifetimeService.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -282,16 +284,22 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/ProcessProtocolHandler.html#StartListenerChannel-system.web.hosting.IListenerChannelCallback-system.web.hosting.IAdphManager-">StartListenerChannel</a></span>(<a href="../../../system/web/hosting/IListenerChannelCallback.html" title="interface in system.web.hosting">IListenerChannelCallback</a>&nbsp;listenerChannelCallback,
-                    <a href="../../../system/web/hosting/IAdphManager.html" title="interface in system.web.hosting">IAdphManager</a>&nbsp;AdphManager)</code>&nbsp;</td>
+                    <a href="../../../system/web/hosting/IAdphManager.html" title="interface in system.web.hosting">IAdphManager</a>&nbsp;AdphManager)</code>
+<div class="block">Invokes the .NET member StartListenerChannel.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/ProcessProtocolHandler.html#StopListenerChannel-int-boolean-">StopListenerChannel</a></span>(int&nbsp;listenerChannelId,
-                   boolean&nbsp;immediate)</code>&nbsp;</td>
+                   boolean&nbsp;immediate)</code>
+<div class="block">Invokes the .NET member StopListenerChannel.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/ProcessProtocolHandler.html#StopProtocol-boolean-">StopProtocol</a></span>(boolean&nbsp;immediate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/ProcessProtocolHandler.html#StopProtocol-boolean-">StopProtocol</a></span>(boolean&nbsp;immediate)</code>
+<div class="block">Invokes the .NET member StopProtocol.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -413,8 +421,10 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -548,11 +558,16 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>InitializeLifetimeService</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;InitializeLifetimeService()
                                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member InitializeLifetimeService.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/MarshalByRefObject.html#InitializeLifetimeService--">InitializeLifetimeService</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.ProcessProtocolHandler.InitializeLifetimeService" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -582,9 +597,15 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <pre>public&nbsp;void&nbsp;StartListenerChannel(<a href="../../../system/web/hosting/IListenerChannelCallback.html" title="interface in system.web.hosting">IListenerChannelCallback</a>&nbsp;listenerChannelCallback,
                                  <a href="../../../system/web/hosting/IAdphManager.html" title="interface in system.web.hosting">IAdphManager</a>&nbsp;AdphManager)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StartListenerChannel.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listenerChannelCallback</code> - the argument of type <code>IListenerChannelCallback</code></dd>
+<dd><code>AdphManager</code> - the argument of type <code>IAdphManager</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.ProcessProtocolHandler.StartListenerChannel" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -597,9 +618,15 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <pre>public&nbsp;void&nbsp;StopListenerChannel(int&nbsp;listenerChannelId,
                                 boolean&nbsp;immediate)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StopListenerChannel.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listenerChannelId</code> - the argument of type <code>int</code></dd>
+<dd><code>immediate</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.ProcessProtocolHandler.StopListenerChannel" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -611,9 +638,14 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>StopProtocol</h4>
 <pre>public&nbsp;void&nbsp;StopProtocol(boolean&nbsp;immediate)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StopProtocol.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>immediate</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.ProcessProtocolHandler.StopProtocol" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

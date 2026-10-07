@@ -218,7 +218,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#ServerFault-java.lang.String-java.lang.String-java.lang.String-">ServerFault</a></span>(java.lang.String&nbsp;exceptionType,
            java.lang.String&nbsp;message,
-           java.lang.String&nbsp;stackTrace)</code>&nbsp;</td>
+           java.lang.String&nbsp;stackTrace)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -243,11 +245,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#getExceptionMessage--">getExceptionMessage</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#getExceptionMessage--">getExceptionMessage</a></span>()</code>
+<div class="block">Gets the value of the .NET property ExceptionMessage.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#getExceptionType--">getExceptionType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#getExceptionType--">getExceptionType</a></span>()</code>
+<div class="block">Gets the value of the .NET property ExceptionType.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -281,15 +287,21 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#getStackTrace--">getStackTrace</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#getStackTrace--">getStackTrace</a></span>()</code>
+<div class="block">Gets the value of the .NET property StackTrace.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#setExceptionMessage-java.lang.String-">setExceptionMessage</a></span>(java.lang.String&nbsp;ExceptionMessage)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#setExceptionMessage-java.lang.String-">setExceptionMessage</a></span>(java.lang.String&nbsp;ExceptionMessage)</code>
+<div class="block">Sets the value of the .NET property ExceptionMessage.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#setExceptionType-java.lang.String-">setExceptionType</a></span>(java.lang.String&nbsp;ExceptionType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#setExceptionType-java.lang.String-">setExceptionType</a></span>(java.lang.String&nbsp;ExceptionType)</code>
+<div class="block">Sets the value of the .NET property ExceptionType.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -299,7 +311,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#setStackTrace-java.lang.String-">setStackTrace</a></span>(java.lang.String&nbsp;StackTrace)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/serialization/formatters/ServerFault.html#setStackTrace-java.lang.String-">setStackTrace</a></span>(java.lang.String&nbsp;StackTrace)</code>
+<div class="block">Sets the value of the .NET property StackTrace.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -414,8 +428,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -429,9 +445,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                    java.lang.String&nbsp;message,
                    java.lang.String&nbsp;stackTrace)
             throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exceptionType</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>stackTrace</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -470,9 +493,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getExceptionMessage</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getExceptionMessage()
                                      throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ExceptionMessage.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.ExceptionMessage" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -484,9 +512,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getExceptionType</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getExceptionType()
                                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ExceptionType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.ExceptionType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -593,9 +626,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getStackTrace</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getStackTrace()
                                throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property StackTrace.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.StackTrace" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -607,9 +645,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setExceptionMessage</h4>
 <pre>public&nbsp;void&nbsp;setExceptionMessage(java.lang.String&nbsp;ExceptionMessage)
                          throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property ExceptionMessage.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ExceptionMessage</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.ExceptionMessage" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -621,9 +664,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setExceptionType</h4>
 <pre>public&nbsp;void&nbsp;setExceptionType(java.lang.String&nbsp;ExceptionType)
                       throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property ExceptionType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ExceptionType</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.ExceptionType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -652,9 +700,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>setStackTrace</h4>
 <pre>public&nbsp;void&nbsp;setStackTrace(java.lang.String&nbsp;StackTrace)
                    throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property StackTrace.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>StackTrace</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Serialization.Formatters.ServerFault.StackTrace" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

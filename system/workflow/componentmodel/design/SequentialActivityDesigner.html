@@ -223,7 +223,9 @@ extends <a href="../../../../system/workflow/componentmodel/design/StructuredCom
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/SequentialActivityDesigner.html#SequentialActivityDesigner--">SequentialActivityDesigner</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/SequentialActivityDesigner.html#SequentialActivityDesigner--">SequentialActivityDesigner</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/SequentialActivityDesigner.html#SequentialActivityDesigner-java.lang.Object-">SequentialActivityDesigner</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -284,11 +286,15 @@ extends <a href="../../../../system/workflow/componentmodel/design/StructuredCom
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/SequentialActivityDesigner.html#GetNextSelectableObject-org.mases.jcobridge.netreflection.NetObject-system.workflow.componentmodel.design.DesignerNavigationDirection-">GetNextSelectableObject</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
-                       <a href="../../../../system/workflow/componentmodel/design/DesignerNavigationDirection.html" title="class in system.workflow.componentmodel.design">DesignerNavigationDirection</a>&nbsp;direction)</code>&nbsp;</td>
+                       <a href="../../../../system/workflow/componentmodel/design/DesignerNavigationDirection.html" title="class in system.workflow.componentmodel.design">DesignerNavigationDirection</a>&nbsp;direction)</code>
+<div class="block">Invokes the .NET member GetNextSelectableObject.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/SequentialActivityDesigner.html#HitTest-system.drawing.Point-">HitTest</a></span>(<a href="../../../../system/drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;point)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/SequentialActivityDesigner.html#HitTest-system.drawing.Point-">HitTest</a></span>(<a href="../../../../system/drawing/Point.html" title="class in system.drawing">Point</a>&nbsp;point)</code>
+<div class="block">Invokes the .NET member HitTest.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -414,9 +420,12 @@ extends <a href="../../../../system/workflow/componentmodel/design/StructuredCom
 <h4>SequentialActivityDesigner</h4>
 <pre>public&nbsp;SequentialActivityDesigner()
                            throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.SequentialActivityDesigner.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -430,8 +439,10 @@ extends <a href="../../../../system/workflow/componentmodel/design/StructuredCom
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -579,24 +590,32 @@ extends <a href="../../../../system/workflow/componentmodel/design/StructuredCom
                                          <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
                                          <a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a>,
                                          <a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<div class="block">Invokes the .NET member GetNextSelectableObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/StructuredCompositeActivityDesigner.html#GetNextSelectableObject-org.mases.jcobridge.netreflection.NetObject-system.workflow.componentmodel.design.DesignerNavigationDirection-">GetNextSelectableObject</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/StructuredCompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">StructuredCompositeActivityDesigner</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>direction</code> - the argument of type <code>DesignerNavigationDirection</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.SequentialActivityDesigner.GetNextSelectableObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -619,22 +638,29 @@ extends <a href="../../../../system/workflow/componentmodel/design/StructuredCom
                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a>,
                            <a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></pre>
+<div class="block">Invokes the .NET member HitTest.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#HitTest-system.drawing.Point-">HitTest</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>point</code> - the argument of type <code>Point</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/workflow/componentmodel/serialization/WorkflowMarkupSerializationException.html" title="class in system.workflow.componentmodel.serialization">WorkflowMarkupSerializationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/interopservices/ExternalException.html" title="class in system.runtime.interopservices">ExternalException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.SequentialActivityDesigner.HitTest" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

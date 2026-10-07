@@ -215,7 +215,9 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#WebPageTraceListener--">WebPageTraceListener</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#WebPageTraceListener--">WebPageTraceListener</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#WebPageTraceListener-java.lang.Object-">WebPageTraceListener</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -285,7 +287,9 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
           java.lang.String&nbsp;source,
           <a href="../../system/diagnostics/TraceEventType.html" title="class in system.diagnostics">TraceEventType</a>&nbsp;severity,
           int&nbsp;id,
-          java.lang.String&nbsp;message)</code>&nbsp;</td>
+          java.lang.String&nbsp;message)</code>
+<div class="block">Invokes the .NET member TraceEvent.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -294,25 +298,35 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
           <a href="../../system/diagnostics/TraceEventType.html" title="class in system.diagnostics">TraceEventType</a>&nbsp;severity,
           int&nbsp;id,
           java.lang.String&nbsp;format,
-          <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;args)</code>&nbsp;</td>
+          <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;args)</code>
+<div class="block">Invokes the .NET member TraceEvent.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#Write-java.lang.String-">Write</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#Write-java.lang.String-">Write</a></span>(java.lang.String&nbsp;message)</code>
+<div class="block">Invokes the .NET member Write.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#Write-java.lang.String-java.lang.String-">Write</a></span>(java.lang.String&nbsp;message,
-     java.lang.String&nbsp;category)</code>&nbsp;</td>
+     java.lang.String&nbsp;category)</code>
+<div class="block">Invokes the .NET member Write.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#WriteLine-java.lang.String-">WriteLine</a></span>(java.lang.String&nbsp;message)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#WriteLine-java.lang.String-">WriteLine</a></span>(java.lang.String&nbsp;message)</code>
+<div class="block">Invokes the .NET member WriteLine.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/WebPageTraceListener.html#WriteLine-java.lang.String-java.lang.String-">WriteLine</a></span>(java.lang.String&nbsp;message,
-         java.lang.String&nbsp;category)</code>&nbsp;</td>
+         java.lang.String&nbsp;category)</code>
+<div class="block">Invokes the .NET member WriteLine.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -425,9 +439,12 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
 <h4>WebPageTraceListener</h4>
 <pre>public&nbsp;WebPageTraceListener()
                      throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -441,8 +458,10 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                      throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -619,33 +638,42 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                        <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
                        <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                        <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member TraceEvent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/diagnostics/TraceListener.html#TraceEvent-system.diagnostics.TraceEventCache-java.lang.String-system.diagnostics.TraceEventType-int-java.lang.String-">TraceEvent</a></code>&nbsp;in class&nbsp;<code><a href="../../system/diagnostics/TraceListener.html" title="class in system.diagnostics">TraceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventCache</code> - the argument of type <code>TraceEventCache</code></dd>
+<dd><code>source</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>severity</code> - the argument of type <code>TraceEventType</code></dd>
+<dd><code>id</code> - the argument of type <code>int</code></dd>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/TypeInitializationException.html" title="class in system">TypeInitializationException</a></code></dd>
-<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/TypeInitializationException.html" title="class in system">TypeInitializationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.TraceEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -674,23 +702,33 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                        <a href="../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a>,
                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                        <a href="../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<div class="block">Invokes the .NET member TraceEvent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/diagnostics/TraceListener.html#TraceEvent-system.diagnostics.TraceEventCache-java.lang.String-system.diagnostics.TraceEventType-int-java.lang.String-org.mases.jcobridge.netreflection.NetObject...-">TraceEvent</a></code>&nbsp;in class&nbsp;<code><a href="../../system/diagnostics/TraceListener.html" title="class in system.diagnostics">TraceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>eventCache</code> - the argument of type <code>TraceEventCache</code></dd>
+<dd><code>source</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>severity</code> - the argument of type <code>TraceEventType</code></dd>
+<dd><code>id</code> - the argument of type <code>int</code></dd>
+<dd><code>format</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>args</code> - the argument of type <code>NetObject...</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/componentmodel/Win32Exception.html" title="class in system.componentmodel">Win32Exception</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.TraceEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -716,25 +754,30 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                   <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
                   <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                   <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member Write.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/diagnostics/TraceListener.html#Write-java.lang.String-">Write</a></code>&nbsp;in class&nbsp;<code><a href="../../system/diagnostics/TraceListener.html" title="class in system.diagnostics">TraceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.Write" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -761,25 +804,31 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                   <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
                   <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                   <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member Write.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/diagnostics/TraceListener.html#Write-java.lang.String-java.lang.String-">Write</a></code>&nbsp;in class&nbsp;<code><a href="../../system/diagnostics/TraceListener.html" title="class in system.diagnostics">TraceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>category</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.Write" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -805,25 +854,30 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                       <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
                       <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                       <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member WriteLine.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/diagnostics/TraceListener.html#WriteLine-java.lang.String-">WriteLine</a></code>&nbsp;in class&nbsp;<code><a href="../../system/diagnostics/TraceListener.html" title="class in system.diagnostics">TraceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.WriteLine" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -850,25 +904,31 @@ extends <a href="../../system/diagnostics/TraceListener.html" title="class in sy
                       <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
                       <a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                       <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Invokes the .NET member WriteLine.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/diagnostics/TraceListener.html#WriteLine-java.lang.String-java.lang.String-">WriteLine</a></code>&nbsp;in class&nbsp;<code><a href="../../system/diagnostics/TraceListener.html" title="class in system.diagnostics">TraceListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>category</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/web/HttpRequestValidationException.html" title="class in system.web">HttpRequestValidationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.WebPageTraceListener.WriteLine" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

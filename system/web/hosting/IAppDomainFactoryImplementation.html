@@ -229,7 +229,9 @@ implements <a href="../../../system/web/hosting/IAppDomainFactory.html" title="i
       java.lang.String&nbsp;appId,
       java.lang.String&nbsp;appPath,
       java.lang.String&nbsp;strUrlOfAppOrigin,
-      int&nbsp;iZone)</code>&nbsp;</td>
+      int&nbsp;iZone)</code>
+<div class="block">Invokes the .NET member Create.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -366,8 +368,10 @@ implements <a href="../../../system/web/hosting/IAppDomainFactory.html" title="i
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -392,11 +396,23 @@ implements <a href="../../../system/web/hosting/IAppDomainFactory.html" title="i
                         java.lang.String&nbsp;strUrlOfAppOrigin,
                         int&nbsp;iZone)
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Create.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IAppDomainFactory.html#Create-java.lang.String-java.lang.String-java.lang.String-java.lang.String-java.lang.String-int-">Create</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IAppDomainFactory.html" title="interface in system.web.hosting">IAppDomainFactory</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>module</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>typeName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>appId</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>appPath</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>strUrlOfAppOrigin</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>iZone</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IAppDomainFactory.Create" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

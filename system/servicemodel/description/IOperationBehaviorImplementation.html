@@ -228,17 +228,23 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IOperationBehaviorImplementation.html#AddBindingParameters-system.servicemodel.description.OperationDescription-system.servicemodel.channels.BindingParameterCollection-">AddBindingParameters</a></span>(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription,
-                    <a href="../../../system/servicemodel/channels/BindingParameterCollection.html" title="class in system.servicemodel.channels">BindingParameterCollection</a>&nbsp;bindingParameters)</code>&nbsp;</td>
+                    <a href="../../../system/servicemodel/channels/BindingParameterCollection.html" title="class in system.servicemodel.channels">BindingParameterCollection</a>&nbsp;bindingParameters)</code>
+<div class="block">Invokes the .NET member AddBindingParameters.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IOperationBehaviorImplementation.html#ApplyClientBehavior-system.servicemodel.description.OperationDescription-system.servicemodel.dispatcher.ClientOperation-">ApplyClientBehavior</a></span>(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription,
-                   <a href="../../../system/servicemodel/dispatcher/ClientOperation.html" title="class in system.servicemodel.dispatcher">ClientOperation</a>&nbsp;clientOperation)</code>&nbsp;</td>
+                   <a href="../../../system/servicemodel/dispatcher/ClientOperation.html" title="class in system.servicemodel.dispatcher">ClientOperation</a>&nbsp;clientOperation)</code>
+<div class="block">Invokes the .NET member ApplyClientBehavior.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IOperationBehaviorImplementation.html#ApplyDispatchBehavior-system.servicemodel.description.OperationDescription-system.servicemodel.dispatcher.DispatchOperation-">ApplyDispatchBehavior</a></span>(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription,
-                     <a href="../../../system/servicemodel/dispatcher/DispatchOperation.html" title="class in system.servicemodel.dispatcher">DispatchOperation</a>&nbsp;dispatchOperation)</code>&nbsp;</td>
+                     <a href="../../../system/servicemodel/dispatcher/DispatchOperation.html" title="class in system.servicemodel.dispatcher">DispatchOperation</a>&nbsp;dispatchOperation)</code>
+<div class="block">Invokes the .NET member ApplyDispatchBehavior.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -278,7 +284,9 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IOperationBehaviorImplementation.html#Validate-system.servicemodel.description.OperationDescription-">Validate</a></span>(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IOperationBehaviorImplementation.html#Validate-system.servicemodel.description.OperationDescription-">Validate</a></span>(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription)</code>
+<div class="block">Invokes the .NET member Validate.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -379,8 +387,10 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
                                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -401,11 +411,17 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <pre>public&nbsp;void&nbsp;AddBindingParameters(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription,
                                  <a href="../../../system/servicemodel/channels/BindingParameterCollection.html" title="class in system.servicemodel.channels">BindingParameterCollection</a>&nbsp;bindingParameters)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member AddBindingParameters.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#AddBindingParameters-system.servicemodel.description.OperationDescription-system.servicemodel.channels.BindingParameterCollection-">AddBindingParameters</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationDescription</code> - the argument of type <code>OperationDescription</code></dd>
+<dd><code>bindingParameters</code> - the argument of type <code>BindingParameterCollection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IOperationBehavior.AddBindingParameters" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -418,11 +434,17 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <pre>public&nbsp;void&nbsp;ApplyClientBehavior(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription,
                                 <a href="../../../system/servicemodel/dispatcher/ClientOperation.html" title="class in system.servicemodel.dispatcher">ClientOperation</a>&nbsp;clientOperation)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ApplyClientBehavior.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#ApplyClientBehavior-system.servicemodel.description.OperationDescription-system.servicemodel.dispatcher.ClientOperation-">ApplyClientBehavior</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationDescription</code> - the argument of type <code>OperationDescription</code></dd>
+<dd><code>clientOperation</code> - the argument of type <code>ClientOperation</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IOperationBehavior.ApplyClientBehavior" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -435,11 +457,17 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <pre>public&nbsp;void&nbsp;ApplyDispatchBehavior(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription,
                                   <a href="../../../system/servicemodel/dispatcher/DispatchOperation.html" title="class in system.servicemodel.dispatcher">DispatchOperation</a>&nbsp;dispatchOperation)
                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ApplyDispatchBehavior.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#ApplyDispatchBehavior-system.servicemodel.description.OperationDescription-system.servicemodel.dispatcher.DispatchOperation-">ApplyDispatchBehavior</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationDescription</code> - the argument of type <code>OperationDescription</code></dd>
+<dd><code>dispatchOperation</code> - the argument of type <code>DispatchOperation</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IOperationBehavior.ApplyDispatchBehavior" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -577,11 +605,16 @@ implements <a href="../../../system/servicemodel/description/IOperationBehavior.
 <h4>Validate</h4>
 <pre>public&nbsp;void&nbsp;Validate(<a href="../../../system/servicemodel/description/OperationDescription.html" title="class in system.servicemodel.description">OperationDescription</a>&nbsp;operationDescription)
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Validate.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IOperationBehavior.html#Validate-system.servicemodel.description.OperationDescription-">Validate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IOperationBehavior.html" title="interface in system.servicemodel.description">IOperationBehavior</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationDescription</code> - the argument of type <code>OperationDescription</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IOperationBehavior.Validate" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

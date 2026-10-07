@@ -283,7 +283,9 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/ErrorObject.html#ToException-microsoft.jscript.ErrorObject-">ToException</a></span>(<a href="../../microsoft/jscript/ErrorObject.html" title="class in microsoft.jscript">ErrorObject</a>&nbsp;err)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/ErrorObject.html#ToException-microsoft.jscript.ErrorObject-">ToException</a></span>(<a href="../../microsoft/jscript/ErrorObject.html" title="class in microsoft.jscript">ErrorObject</a>&nbsp;err)</code>
+<div class="block">Invokes the .NET member ToException.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -412,8 +414,10 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -564,9 +568,16 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>ToException</h4>
 <pre>public static&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;ToException(<a href="../../microsoft/jscript/ErrorObject.html" title="class in microsoft.jscript">ErrorObject</a>&nbsp;err)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ToException.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>err</code> - the argument of type <code>ErrorObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.ErrorObject.ToException" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

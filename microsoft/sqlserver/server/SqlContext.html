@@ -236,7 +236,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getIsAvailable--">getIsAvailable</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getIsAvailable--">getIsAvailable</a></span>()</code>
+<div class="block">Gets the value of the .NET property IsAvailable.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -270,15 +272,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../microsoft/sqlserver/server/SqlPipe.html" title="class in microsoft.sqlserver.server">SqlPipe</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getPipe--">getPipe</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getPipe--">getPipe</a></span>()</code>
+<div class="block">Gets the value of the .NET property Pipe.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../microsoft/sqlserver/server/SqlTriggerContext.html" title="class in microsoft.sqlserver.server">SqlTriggerContext</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getTriggerContext--">getTriggerContext</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getTriggerContext--">getTriggerContext</a></span>()</code>
+<div class="block">Gets the value of the .NET property TriggerContext.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/security/principal/WindowsIdentity.html" title="class in system.security.principal">WindowsIdentity</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getWindowsIdentity--">getWindowsIdentity</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/sqlserver/server/SqlContext.html#getWindowsIdentity--">getWindowsIdentity</a></span>()</code>
+<div class="block">Gets the value of the .NET property WindowsIdentity.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -399,8 +407,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -439,9 +449,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getIsAvailable</h4>
 <pre>public static&nbsp;boolean&nbsp;getIsAvailable()
                               throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property IsAvailable.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.SqlServer.Server.SqlContext.IsAvailable" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -555,16 +570,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                               <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></pre>
+<div class="block">Gets the value of the .NET property Pipe.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.SqlServer.Server.SqlContext.Pipe" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -583,16 +603,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                   <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></pre>
+<div class="block">Gets the value of the .NET property TriggerContext.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.SqlServer.Server.SqlContext.TriggerContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -611,16 +636,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                                  <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                                                  <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                                  <a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></pre>
+<div class="block">Gets the value of the .NET property WindowsIdentity.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/data/sqlclient/SqlException.html" title="class in system.data.sqlclient">SqlException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.SqlServer.Server.SqlContext.WindowsIdentity" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

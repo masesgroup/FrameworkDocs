@@ -225,7 +225,9 @@ implements <a href="../../microsoft/jscript/IDefineEvent.html" title="interface 
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IDefineEventImplementation.html#AddEvent-java.lang.String-int-">AddEvent</a></span>(java.lang.String&nbsp;code,
-        int&nbsp;startLine)</code>&nbsp;</td>
+        int&nbsp;startLine)</code>
+<div class="block">Invokes the .NET member AddEvent.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -362,8 +364,10 @@ implements <a href="../../microsoft/jscript/IDefineEvent.html" title="interface 
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -384,11 +388,19 @@ implements <a href="../../microsoft/jscript/IDefineEvent.html" title="interface 
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;AddEvent(java.lang.String&nbsp;code,
                           int&nbsp;startLine)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member AddEvent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IDefineEvent.html#AddEvent-java.lang.String-int-">AddEvent</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IDefineEvent.html" title="interface in microsoft.jscript">IDefineEvent</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>code</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>startLine</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IDefineEvent.AddEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -248,11 +248,15 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getglobal--">getglobal</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getglobal--">getglobal</a></span>()</code>
+<div class="block">Gets the value of the .NET property global.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getignoreCase--">getignoreCase</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getignoreCase--">getignoreCase</a></span>()</code>
+<div class="block">Gets the value of the .NET property ignoreCase.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -286,15 +290,21 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getlastIndex--">getlastIndex</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getlastIndex--">getlastIndex</a></span>()</code>
+<div class="block">Gets the value of the .NET property lastIndex.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getmultiline--">getmultiline</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getmultiline--">getmultiline</a></span>()</code>
+<div class="block">Gets the value of the .NET property multiline.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getsource--">getsource</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#getsource--">getsource</a></span>()</code>
+<div class="block">Gets the value of the .NET property source.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -304,7 +314,9 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#setlastIndex-org.mases.jcobridge.netreflection.NetObject-">setlastIndex</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;lastIndex)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/RegExpObject.html#setlastIndex-org.mases.jcobridge.netreflection.NetObject-">setlastIndex</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;lastIndex)</code>
+<div class="block">Sets the value of the .NET property lastIndex.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -433,8 +445,10 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -473,9 +487,14 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>getglobal</h4>
 <pre>public&nbsp;boolean&nbsp;getglobal()
                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property global.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.RegExpObject.getglobal" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -487,9 +506,14 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>getignoreCase</h4>
 <pre>public&nbsp;boolean&nbsp;getignoreCase()
                       throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ignoreCase.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.RegExpObject.getignoreCase" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -596,9 +620,14 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>getlastIndex</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;getlastIndex()
                        throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property lastIndex.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.RegExpObject.getlastIndex" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -610,9 +639,14 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>getmultiline</h4>
 <pre>public&nbsp;boolean&nbsp;getmultiline()
                      throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property multiline.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.RegExpObject.getmultiline" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -624,9 +658,14 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>getsource</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getsource()
                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property source.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.RegExpObject.getsource" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -655,9 +694,14 @@ extends <a href="../../microsoft/jscript/JSObject.html" title="class in microsof
 <h4>setlastIndex</h4>
 <pre>public&nbsp;void&nbsp;setlastIndex(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;lastIndex)
                   throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property lastIndex.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>lastIndex</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.RegExpObject.setlastIndex" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

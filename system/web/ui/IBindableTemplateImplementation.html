@@ -225,7 +225,9 @@ implements <a href="../../../system/web/ui/IBindableTemplate.html" title="interf
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../system/collections/specialized/IOrderedDictionary.html" title="interface in system.collections.specialized">IOrderedDictionary</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IBindableTemplateImplementation.html#ExtractValues-system.web.ui.Control-">ExtractValues</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IBindableTemplateImplementation.html#ExtractValues-system.web.ui.Control-">ExtractValues</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)</code>
+<div class="block">Invokes the .NET member ExtractValues.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -259,7 +261,9 @@ implements <a href="../../../system/web/ui/IBindableTemplate.html" title="interf
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IBindableTemplateImplementation.html#InstantiateIn-system.web.ui.Control-">InstantiateIn</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IBindableTemplateImplementation.html#InstantiateIn-system.web.ui.Control-">InstantiateIn</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)</code>
+<div class="block">Invokes the .NET member InstantiateIn.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/web/ui/IBindableTemplate.html" title="interface in system.web.ui">IBindableTemplate</a></code></td>
@@ -373,8 +377,10 @@ implements <a href="../../../system/web/ui/IBindableTemplate.html" title="interf
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -394,11 +400,18 @@ implements <a href="../../../system/web/ui/IBindableTemplate.html" title="interf
 <h4>ExtractValues</h4>
 <pre>public&nbsp;<a href="../../../system/collections/specialized/IOrderedDictionary.html" title="interface in system.collections.specialized">IOrderedDictionary</a>&nbsp;ExtractValues(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ExtractValues.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/IBindableTemplate.html#ExtractValues-system.web.ui.Control-">ExtractValues</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IBindableTemplate.html" title="interface in system.web.ui">IBindableTemplate</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>container</code> - the argument of type <code>Control</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.IBindableTemplate.ExtractValues" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -525,11 +538,16 @@ implements <a href="../../../system/web/ui/IBindableTemplate.html" title="interf
 <h4>InstantiateIn</h4>
 <pre>public&nbsp;void&nbsp;InstantiateIn(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member InstantiateIn.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/ITemplate.html#InstantiateIn-system.web.ui.Control-">InstantiateIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/ITemplate.html" title="interface in system.web.ui">ITemplate</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>container</code> - the argument of type <code>Control</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.IBindableTemplate.InstantiateIn" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

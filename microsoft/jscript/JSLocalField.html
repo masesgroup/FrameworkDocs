@@ -234,7 +234,9 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSLocalField.html#JSLocalField-java.lang.String-system.RuntimeTypeHandle-int-">JSLocalField</a></span>(java.lang.String&nbsp;name,
             <a href="../../system/RuntimeTypeHandle.html" title="class in system">RuntimeTypeHandle</a>&nbsp;handle,
-            int&nbsp;slotNumber)</code>&nbsp;</td>
+            int&nbsp;slotNumber)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -289,7 +291,9 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSLocalField.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/JSLocalField.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>
+<div class="block">Invokes the .NET member GetValue.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -303,7 +307,9 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
         <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value,
         <a href="../../system/reflection/BindingFlags.html" title="class in system.reflection">BindingFlags</a>&nbsp;invokeAttr,
         <a href="../../system/reflection/Binder.html" title="class in system.reflection">Binder</a>&nbsp;binder,
-        <a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;locale)</code>&nbsp;</td>
+        <a href="../../system/globalization/CultureInfo.html" title="class in system.globalization">CultureInfo</a>&nbsp;locale)</code>
+<div class="block">Invokes the .NET member SetValue.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -446,8 +452,10 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -468,16 +476,23 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                     <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                     <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>handle</code> - the argument of type <code>RuntimeTypeHandle</code></dd>
+<dd><code>slotNumber</code> - the argument of type <code>int</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSLocalField.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -611,11 +626,18 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
 <h4>GetValue</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetValue(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#GetValue-org.mases.jcobridge.netreflection.NetObject-">GetValue</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSLocalField.GetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -660,23 +682,32 @@ extends <a href="../../microsoft/jscript/JSVariableField.html" title="class in m
                      <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                      <a href="../../microsoft/jscript/JScriptException.html" title="class in microsoft.jscript">JScriptException</a>,
                      <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></pre>
+<div class="block">Invokes the .NET member SetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../system/reflection/FieldInfo.html#SetValue-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-system.reflection.BindingFlags-system.reflection.Binder-system.globalization.CultureInfo-">SetValue</a></code>&nbsp;in class&nbsp;<code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>value</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>invokeAttr</code> - the argument of type <code>BindingFlags</code></dd>
+<dd><code>binder</code> - the argument of type <code>Binder</code></dd>
+<dd><code>locale</code> - the argument of type <code>CultureInfo</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../microsoft/jscript/vsa/JSVsaException.html" title="class in microsoft.jscript.vsa">JSVsaException</a></code></dd>
-<dd><code><a href="../../microsoft/jscript/EndOfFile.html" title="class in microsoft.jscript">EndOfFile</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../microsoft/jscript/JScriptException.html" title="class in microsoft.jscript">JScriptException</a></code></dd>
-<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../microsoft/jscript/vsa/JSVsaException.html" title="class in microsoft.jscript.vsa">JSVsaException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../microsoft/jscript/EndOfFile.html" title="class in microsoft.jscript">EndOfFile</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../microsoft/jscript/JScriptException.html" title="class in microsoft.jscript">JScriptException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.JSLocalField.SetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

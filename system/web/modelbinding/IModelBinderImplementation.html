@@ -225,7 +225,9 @@ implements <a href="../../../system/web/modelbinding/IModelBinder.html" title="i
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/IModelBinderImplementation.html#BindModel-system.web.modelbinding.ModelBindingExecutionContext-system.web.modelbinding.ModelBindingContext-">BindModel</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;modelBindingExecutionContext,
-         <a href="../../../system/web/modelbinding/ModelBindingContext.html" title="class in system.web.modelbinding">ModelBindingContext</a>&nbsp;bindingContext)</code>&nbsp;</td>
+         <a href="../../../system/web/modelbinding/ModelBindingContext.html" title="class in system.web.modelbinding">ModelBindingContext</a>&nbsp;bindingContext)</code>
+<div class="block">Invokes the .NET member BindModel.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -362,8 +364,10 @@ implements <a href="../../../system/web/modelbinding/IModelBinder.html" title="i
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -384,11 +388,19 @@ implements <a href="../../../system/web/modelbinding/IModelBinder.html" title="i
 <pre>public&nbsp;boolean&nbsp;BindModel(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;modelBindingExecutionContext,
                          <a href="../../../system/web/modelbinding/ModelBindingContext.html" title="class in system.web.modelbinding">ModelBindingContext</a>&nbsp;bindingContext)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member BindModel.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/IModelBinder.html#BindModel-system.web.modelbinding.ModelBindingExecutionContext-system.web.modelbinding.ModelBindingContext-">BindModel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/modelbinding/IModelBinder.html" title="interface in system.web.modelbinding">IModelBinder</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modelBindingExecutionContext</code> - the argument of type <code>ModelBindingExecutionContext</code></dd>
+<dd><code>bindingContext</code> - the argument of type <code>ModelBindingContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.IModelBinder.BindModel" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

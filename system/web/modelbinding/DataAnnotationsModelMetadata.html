@@ -215,7 +215,9 @@ extends <a href="../../../system/web/modelbinding/ModelMetadata.html" title="cla
                             <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
                             <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
                             java.lang.String&nbsp;propertyName,
-                            <a href="../../../system/componentmodel/dataannotations/DisplayColumnAttribute.html" title="class in system.componentmodel.dataannotations">DisplayColumnAttribute</a>&nbsp;displayColumnAttribute)</code>&nbsp;</td>
+                            <a href="../../../system/componentmodel/dataannotations/DisplayColumnAttribute.html" title="class in system.componentmodel.dataannotations">DisplayColumnAttribute</a>&nbsp;displayColumnAttribute)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/DataAnnotationsModelMetadata.html#DataAnnotationsModelMetadata-java.lang.Object-">DataAnnotationsModelMetadata</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -406,13 +408,23 @@ extends <a href="../../../system/web/modelbinding/ModelMetadata.html" title="cla
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>provider</code> - the argument of type <code>DataAnnotationsModelMetadataProvider</code></dd>
+<dd><code>containerType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>modelAccessor</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>modelType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>propertyName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>displayColumnAttribute</code> - the argument of type <code>DisplayColumnAttribute</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.DataAnnotationsModelMetadata.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -426,8 +438,10 @@ extends <a href="../../../system/web/modelbinding/ModelMetadata.html" title="cla
                              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>

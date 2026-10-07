@@ -236,7 +236,9 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
              <a href="../../../system/directoryservices/protocols/LdapConnection.html" title="class in system.directoryservices.protocols">LdapConnection</a>&nbsp;newConnection,
              <a href="../../../system/net/NetworkCredential.html" title="class in system.net">NetworkCredential</a>&nbsp;credential,
              long&nbsp;currentUserToken,
-             int&nbsp;errorCodeFromBind)</code>&nbsp;</td>
+             int&nbsp;errorCodeFromBind)</code>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
@@ -402,8 +404,10 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -443,9 +447,23 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                              long&nbsp;currentUserToken,
                              int&nbsp;errorCodeFromBind)
                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DynamicInvoke.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>primaryConnection</code> - the argument of type <code>LdapConnection</code></dd>
+<dd><code>referralFromConnection</code> - the argument of type <code>LdapConnection</code></dd>
+<dd><code>newDistinguishedName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>identifier</code> - the argument of type <code>LdapDirectoryIdentifier</code></dd>
+<dd><code>newConnection</code> - the argument of type <code>LdapConnection</code></dd>
+<dd><code>credential</code> - the argument of type <code>NetworkCredential</code></dd>
+<dd><code>currentUserToken</code> - the argument of type <code>long</code></dd>
+<dd><code>errorCodeFromBind</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Delegate.DynamicInvoke" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -563,6 +581,19 @@ implements <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridg
                       long&nbsp;currentUserToken,
                       int&nbsp;errorCodeFromBind)</pre>
 <div class="block">Methods invoked in JVM when an event is raised in CLR</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>primaryConnection</code> - the .NET argument of type <code>System.DirectoryServices.Protocols.LdapConnection</code></dd>
+<dd><code>referralFromConnection</code> - the .NET argument of type <code>System.DirectoryServices.Protocols.LdapConnection</code></dd>
+<dd><code>newDistinguishedName</code> - the .NET argument of type <code>System.String</code></dd>
+<dd><code>identifier</code> - the .NET argument of type <code>System.DirectoryServices.Protocols.LdapDirectoryIdentifier</code></dd>
+<dd><code>newConnection</code> - the .NET argument of type <code>System.DirectoryServices.Protocols.LdapConnection</code></dd>
+<dd><code>credential</code> - the .NET argument of type <code>System.Net.NetworkCredential</code></dd>
+<dd><code>currentUserToken</code> - the .NET argument of type <code>System.Int64</code></dd>
+<dd><code>errorCodeFromBind</code> - the .NET argument of type <code>System.Int32</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned to the CLR; this default implementation returns <code>null</code></dd>
+</dl>
 </li>
 </ul>
 </li>

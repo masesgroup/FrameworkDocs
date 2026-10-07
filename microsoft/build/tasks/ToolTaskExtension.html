@@ -277,7 +277,9 @@ extends <a href="../../../microsoft/build/utilities/ToolTask.html" title="class 
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../microsoft/build/utilities/TaskLoggingHelper.html" title="class in microsoft.build.utilities">TaskLoggingHelper</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/tasks/ToolTaskExtension.html#getLog--">getLog</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../microsoft/build/tasks/ToolTaskExtension.html#getLog--">getLog</a></span>()</code>
+<div class="block">Gets the value of the .NET property Log.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -412,8 +414,10 @@ extends <a href="../../../microsoft/build/utilities/ToolTask.html" title="class 
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -547,11 +551,16 @@ extends <a href="../../../microsoft/build/utilities/ToolTask.html" title="class 
 <h4>getLog</h4>
 <pre>public&nbsp;<a href="../../../microsoft/build/utilities/TaskLoggingHelper.html" title="class in microsoft.build.utilities">TaskLoggingHelper</a>&nbsp;getLog()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Log.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../microsoft/build/utilities/Task.html#getLog--">getLog</a></code>&nbsp;in class&nbsp;<code><a href="../../../microsoft/build/utilities/Task.html" title="class in microsoft.build.utilities">Task</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Tasks.ToolTaskExtension.Log" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

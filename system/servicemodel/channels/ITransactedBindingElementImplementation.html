@@ -254,7 +254,9 @@ implements <a href="../../../system/servicemodel/channels/ITransactedBindingElem
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/ITransactedBindingElementImplementation.html#getTransactedReceiveEnabled--">getTransactedReceiveEnabled</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/channels/ITransactedBindingElementImplementation.html#getTransactedReceiveEnabled--">getTransactedReceiveEnabled</a></span>()</code>
+<div class="block">Gets the value of the .NET property TransactedReceiveEnabled.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/channels/ITransactedBindingElement.html" title="interface in system.servicemodel.channels">ITransactedBindingElement</a></code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../system/servicemodel/channels/ITransactedBindingElem
                                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -487,11 +491,16 @@ implements <a href="../../../system/servicemodel/channels/ITransactedBindingElem
 <h4>getTransactedReceiveEnabled</h4>
 <pre>public&nbsp;boolean&nbsp;getTransactedReceiveEnabled()
                                     throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property TransactedReceiveEnabled.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/channels/ITransactedBindingElement.html#getTransactedReceiveEnabled--">getTransactedReceiveEnabled</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/channels/ITransactedBindingElement.html" title="interface in system.servicemodel.channels">ITransactedBindingElement</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Channels.ITransactedBindingElement.TransactedReceiveEnabled" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -272,7 +272,9 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#InitializeLifetimeService--">InitializeLifetimeService</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#InitializeLifetimeService--">InitializeLifetimeService</a></span>()</code>
+<div class="block">Invokes the .NET member InitializeLifetimeService.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -282,20 +284,28 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#StartListenerChannel-system.web.hosting.IListenerChannelCallback-">StartListenerChannel</a></span>(<a href="../../../system/web/hosting/IListenerChannelCallback.html" title="interface in system.web.hosting">IListenerChannelCallback</a>&nbsp;listenerChannelCallback)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#StartListenerChannel-system.web.hosting.IListenerChannelCallback-">StartListenerChannel</a></span>(<a href="../../../system/web/hosting/IListenerChannelCallback.html" title="interface in system.web.hosting">IListenerChannelCallback</a>&nbsp;listenerChannelCallback)</code>
+<div class="block">Invokes the .NET member StartListenerChannel.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#Stop-boolean-">Stop</a></span>(boolean&nbsp;immediate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#Stop-boolean-">Stop</a></span>(boolean&nbsp;immediate)</code>
+<div class="block">Invokes the .NET member Stop.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#StopListenerChannel-int-boolean-">StopListenerChannel</a></span>(int&nbsp;listenerChannelId,
-                   boolean&nbsp;immediate)</code>&nbsp;</td>
+                   boolean&nbsp;immediate)</code>
+<div class="block">Invokes the .NET member StopListenerChannel.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#StopProtocol-boolean-">StopProtocol</a></span>(boolean&nbsp;immediate)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AppDomainProtocolHandler.html#StopProtocol-boolean-">StopProtocol</a></span>(boolean&nbsp;immediate)</code>
+<div class="block">Invokes the .NET member StopProtocol.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -417,8 +427,10 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -552,11 +564,16 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>InitializeLifetimeService</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;InitializeLifetimeService()
                                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member InitializeLifetimeService.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/MarshalByRefObject.html#InitializeLifetimeService--">InitializeLifetimeService</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.AppDomainProtocolHandler.InitializeLifetimeService" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -585,9 +602,14 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>StartListenerChannel</h4>
 <pre>public&nbsp;void&nbsp;StartListenerChannel(<a href="../../../system/web/hosting/IListenerChannelCallback.html" title="interface in system.web.hosting">IListenerChannelCallback</a>&nbsp;listenerChannelCallback)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StartListenerChannel.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listenerChannelCallback</code> - the argument of type <code>IListenerChannelCallback</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.AppDomainProtocolHandler.StartListenerChannel" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -612,22 +634,27 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
                  <a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a>,
                  <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
                  <a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></pre>
+<div class="block">Invokes the .NET member Stop.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>immediate</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.AppDomainProtocolHandler.Stop" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -640,9 +667,15 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <pre>public&nbsp;void&nbsp;StopListenerChannel(int&nbsp;listenerChannelId,
                                 boolean&nbsp;immediate)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StopListenerChannel.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>listenerChannelId</code> - the argument of type <code>int</code></dd>
+<dd><code>immediate</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.AppDomainProtocolHandler.StopListenerChannel" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -654,9 +687,14 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <h4>StopProtocol</h4>
 <pre>public&nbsp;void&nbsp;StopProtocol(boolean&nbsp;immediate)
                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StopProtocol.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>immediate</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.AppDomainProtocolHandler.StopProtocol" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -220,7 +220,9 @@ extends <a href="../../system/componentmodel/ProgressChangedEventArgs.html" titl
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/net/NetworkProgressChangedEventArgs.html#NetworkProgressChangedEventArgs-int-int-int-org.mases.jcobridge.netreflection.NetObject-">NetworkProgressChangedEventArgs</a></span>(int&nbsp;percentage,
                                int&nbsp;processedBytes,
                                int&nbsp;totalBytes,
-                               <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>&nbsp;</td>
+                               <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/net/NetworkProgressChangedEventArgs.html#NetworkProgressChangedEventArgs-java.lang.Object-">NetworkProgressChangedEventArgs</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -280,11 +282,15 @@ extends <a href="../../system/componentmodel/ProgressChangedEventArgs.html" titl
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/NetworkProgressChangedEventArgs.html#getProcessedBytes--">getProcessedBytes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/NetworkProgressChangedEventArgs.html#getProcessedBytes--">getProcessedBytes</a></span>()</code>
+<div class="block">Gets the value of the .NET property ProcessedBytes.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/NetworkProgressChangedEventArgs.html#getTotalBytes--">getTotalBytes</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/net/NetworkProgressChangedEventArgs.html#getTotalBytes--">getTotalBytes</a></span>()</code>
+<div class="block">Gets the value of the .NET property TotalBytes.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -413,9 +419,17 @@ extends <a href="../../system/componentmodel/ProgressChangedEventArgs.html" titl
                                        int&nbsp;totalBytes,
                                        <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)
                                 throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>percentage</code> - the argument of type <code>int</code></dd>
+<dd><code>processedBytes</code> - the argument of type <code>int</code></dd>
+<dd><code>totalBytes</code> - the argument of type <code>int</code></dd>
+<dd><code>userState</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Net.NetworkProgressChangedEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -429,8 +443,10 @@ extends <a href="../../system/componentmodel/ProgressChangedEventArgs.html" titl
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -565,10 +581,15 @@ extends <a href="../../system/componentmodel/ProgressChangedEventArgs.html" titl
 <pre>public&nbsp;int&nbsp;getProcessedBytes()
                       throws java.lang.Throwable,
                              <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Gets the value of the .NET property ProcessedBytes.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Net.NetworkProgressChangedEventArgs.ProcessedBytes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -581,10 +602,15 @@ extends <a href="../../system/componentmodel/ProgressChangedEventArgs.html" titl
 <pre>public&nbsp;int&nbsp;getTotalBytes()
                   throws java.lang.Throwable,
                          <a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></pre>
+<div class="block">Gets the value of the .NET property TotalBytes.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Net.NetworkProgressChangedEventArgs.TotalBytes" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

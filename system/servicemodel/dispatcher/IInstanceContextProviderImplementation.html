@@ -228,7 +228,9 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInstanceContextProviderImplementation.html#GetExistingInstanceContext-system.servicemodel.channels.Message-system.servicemodel.IContextChannel-">GetExistingInstanceContext</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
-                          <a href="../../../system/servicemodel/IContextChannel.html" title="interface in system.servicemodel">IContextChannel</a>&nbsp;channel)</code>&nbsp;</td>
+                          <a href="../../../system/servicemodel/IContextChannel.html" title="interface in system.servicemodel">IContextChannel</a>&nbsp;channel)</code>
+<div class="block">Invokes the .NET member GetExistingInstanceContext.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -264,16 +266,22 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInstanceContextProviderImplementation.html#InitializeInstanceContext-system.servicemodel.InstanceContext-system.servicemodel.channels.Message-system.servicemodel.IContextChannel-">InitializeInstanceContext</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext,
                          <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
-                         <a href="../../../system/servicemodel/IContextChannel.html" title="interface in system.servicemodel">IContextChannel</a>&nbsp;channel)</code>&nbsp;</td>
+                         <a href="../../../system/servicemodel/IContextChannel.html" title="interface in system.servicemodel">IContextChannel</a>&nbsp;channel)</code>
+<div class="block">Invokes the .NET member InitializeInstanceContext.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInstanceContextProviderImplementation.html#IsIdle-system.servicemodel.InstanceContext-">IsIdle</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInstanceContextProviderImplementation.html#IsIdle-system.servicemodel.InstanceContext-">IsIdle</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext)</code>
+<div class="block">Invokes the .NET member IsIdle.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInstanceContextProviderImplementation.html#NotifyIdle-system.servicemodel.dispatcher.InstanceContextIdleCallback-system.servicemodel.InstanceContext-">NotifyIdle</a></span>(<a href="../../../system/servicemodel/dispatcher/InstanceContextIdleCallback.html" title="class in system.servicemodel.dispatcher">InstanceContextIdleCallback</a>&nbsp;callback,
-          <a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext)</code>&nbsp;</td>
+          <a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext)</code>
+<div class="block">Invokes the .NET member NotifyIdle.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a></code></td>
@@ -380,8 +388,10 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
                                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -402,11 +412,19 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
 <pre>public&nbsp;<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;GetExistingInstanceContext(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
                                                   <a href="../../../system/servicemodel/IContextChannel.html" title="interface in system.servicemodel">IContextChannel</a>&nbsp;channel)
                                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetExistingInstanceContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html#GetExistingInstanceContext-system.servicemodel.channels.Message-system.servicemodel.IContextChannel-">GetExistingInstanceContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>Message</code></dd>
+<dd><code>channel</code> - the argument of type <code>IContextChannel</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInstanceContextProvider.GetExistingInstanceContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -525,11 +543,18 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
                                       <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message,
                                       <a href="../../../system/servicemodel/IContextChannel.html" title="interface in system.servicemodel">IContextChannel</a>&nbsp;channel)
                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member InitializeInstanceContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html#InitializeInstanceContext-system.servicemodel.InstanceContext-system.servicemodel.channels.Message-system.servicemodel.IContextChannel-">InitializeInstanceContext</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instanceContext</code> - the argument of type <code>InstanceContext</code></dd>
+<dd><code>message</code> - the argument of type <code>Message</code></dd>
+<dd><code>channel</code> - the argument of type <code>IContextChannel</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInstanceContextProvider.InitializeInstanceContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -541,11 +566,18 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
 <h4>IsIdle</h4>
 <pre>public&nbsp;boolean&nbsp;IsIdle(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsIdle.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html#IsIdle-system.servicemodel.InstanceContext-">IsIdle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instanceContext</code> - the argument of type <code>InstanceContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInstanceContextProvider.IsIdle" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -558,11 +590,17 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextProv
 <pre>public&nbsp;void&nbsp;NotifyIdle(<a href="../../../system/servicemodel/dispatcher/InstanceContextIdleCallback.html" title="class in system.servicemodel.dispatcher">InstanceContextIdleCallback</a>&nbsp;callback,
                        <a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext)
                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member NotifyIdle.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html#NotifyIdle-system.servicemodel.dispatcher.InstanceContextIdleCallback-system.servicemodel.InstanceContext-">NotifyIdle</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInstanceContextProvider.html" title="interface in system.servicemodel.dispatcher">IInstanceContextProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>callback</code> - the argument of type <code>InstanceContextIdleCallback</code></dd>
+<dd><code>instanceContext</code> - the argument of type <code>InstanceContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInstanceContextProvider.NotifyIdle" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

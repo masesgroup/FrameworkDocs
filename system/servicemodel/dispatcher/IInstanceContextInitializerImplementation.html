@@ -255,7 +255,9 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextInit
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInstanceContextInitializerImplementation.html#Initialize-system.servicemodel.InstanceContext-system.servicemodel.channels.Message-">Initialize</a></span>(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext,
-          <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)</code>&nbsp;</td>
+          <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)</code>
+<div class="block">Invokes the .NET member Initialize.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/dispatcher/IInstanceContextInitializer.html" title="interface in system.servicemodel.dispatcher">IInstanceContextInitializer</a></code></td>
@@ -362,8 +364,10 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextInit
                                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -489,11 +493,17 @@ implements <a href="../../../system/servicemodel/dispatcher/IInstanceContextInit
 <pre>public&nbsp;void&nbsp;Initialize(<a href="../../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&nbsp;instanceContext,
                        <a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;message)
                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Initialize.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInstanceContextInitializer.html#Initialize-system.servicemodel.InstanceContext-system.servicemodel.channels.Message-">Initialize</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInstanceContextInitializer.html" title="interface in system.servicemodel.dispatcher">IInstanceContextInitializer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instanceContext</code> - the argument of type <code>InstanceContext</code></dd>
+<dd><code>message</code> - the argument of type <code>Message</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInstanceContextInitializer.Initialize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

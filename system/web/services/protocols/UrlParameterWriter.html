@@ -218,7 +218,9 @@ extends <a href="../../../../system/web/services/protocols/UrlEncodedParameterWr
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/web/services/protocols/UrlParameterWriter.html#UrlParameterWriter--">UrlParameterWriter</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/web/services/protocols/UrlParameterWriter.html#UrlParameterWriter--">UrlParameterWriter</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/web/services/protocols/UrlParameterWriter.html#UrlParameterWriter-java.lang.Object-">UrlParameterWriter</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -279,7 +281,9 @@ extends <a href="../../../../system/web/services/protocols/UrlEncodedParameterWr
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/services/protocols/UrlParameterWriter.html#GetRequestUrl-java.lang.String-org.mases.jcobridge.netreflection.NetObject:A-">GetRequestUrl</a></span>(java.lang.String&nbsp;url,
-             <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;parameters)</code>&nbsp;</td>
+             <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;parameters)</code>
+<div class="block">Invokes the .NET member GetRequestUrl.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -405,9 +409,12 @@ extends <a href="../../../../system/web/services/protocols/UrlEncodedParameterWr
 <h4>UrlParameterWriter</h4>
 <pre>public&nbsp;UrlParameterWriter()
                    throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Services.Protocols.UrlParameterWriter.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -421,8 +428,10 @@ extends <a href="../../../../system/web/services/protocols/UrlEncodedParameterWr
                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -562,16 +571,24 @@ extends <a href="../../../../system/web/services/protocols/UrlEncodedParameterWr
                                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                       <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
                                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Invokes the .NET member GetRequestUrl.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/web/services/protocols/MimeParameterWriter.html#GetRequestUrl-java.lang.String-org.mases.jcobridge.netreflection.NetObject:A-">GetRequestUrl</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/web/services/protocols/MimeParameterWriter.html" title="class in system.web.services.protocols">MimeParameterWriter</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>parameters</code> - the argument of type <code>NetObject[]</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Services.Protocols.UrlParameterWriter.GetRequestUrl" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

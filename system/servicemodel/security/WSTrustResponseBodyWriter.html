@@ -217,7 +217,9 @@ extends <a href="../../../system/servicemodel/channels/BodyWriter.html" title="c
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/WSTrustResponseBodyWriter.html#WSTrustResponseBodyWriter-system.identitymodel.protocols.wstrust.RequestSecurityTokenResponse-system.identitymodel.protocols.wstrust.WSTrustResponseSerializer-system.identitymodel.protocols.wstrust.WSTrustSerializationContext-">WSTrustResponseBodyWriter</a></span>(<a href="../../../system/identitymodel/protocols/wstrust/RequestSecurityTokenResponse.html" title="class in system.identitymodel.protocols.wstrust">RequestSecurityTokenResponse</a>&nbsp;requestSecurityTokenResponse,
                          <a href="../../../system/identitymodel/protocols/wstrust/WSTrustResponseSerializer.html" title="class in system.identitymodel.protocols.wstrust">WSTrustResponseSerializer</a>&nbsp;serializer,
-                         <a href="../../../system/identitymodel/protocols/wstrust/WSTrustSerializationContext.html" title="class in system.identitymodel.protocols.wstrust">WSTrustSerializationContext</a>&nbsp;context)</code>&nbsp;</td>
+                         <a href="../../../system/identitymodel/protocols/wstrust/WSTrustSerializationContext.html" title="class in system.identitymodel.protocols.wstrust">WSTrustSerializationContext</a>&nbsp;context)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -396,8 +398,10 @@ extends <a href="../../../system/servicemodel/channels/BodyWriter.html" title="c
                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -422,20 +426,27 @@ extends <a href="../../../system/servicemodel/channels/BodyWriter.html" title="c
                                  <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                  <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
                                  <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>requestSecurityTokenResponse</code> - the argument of type <code>RequestSecurityTokenResponse</code></dd>
+<dd><code>serializer</code> - the argument of type <code>WSTrustResponseSerializer</code></dd>
+<dd><code>context</code> - the argument of type <code>WSTrustSerializationContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Security.WSTrustResponseBodyWriter.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

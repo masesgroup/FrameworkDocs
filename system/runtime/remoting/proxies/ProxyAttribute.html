@@ -211,7 +211,9 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#ProxyAttribute--">ProxyAttribute</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#ProxyAttribute--">ProxyAttribute</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#ProxyAttribute-java.lang.Object-">ProxyAttribute</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -241,14 +243,18 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#CreateInstance-org.mases.jcobridge.netreflection.NetType-">CreateInstance</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serverType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#CreateInstance-org.mases.jcobridge.netreflection.NetType-">CreateInstance</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serverType)</code>
+<div class="block">Invokes the .NET member CreateInstance.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/proxies/RealProxy.html" title="class in system.runtime.remoting.proxies">RealProxy</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#CreateProxy-system.runtime.remoting.ObjRef-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetObject-system.runtime.remoting.contexts.Context-">CreateProxy</a></span>(<a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;objRef,
            <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serverType,
            <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;serverObject,
-           <a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;serverContext)</code>&nbsp;</td>
+           <a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;serverContext)</code>
+<div class="block">Invokes the .NET member CreateProxy.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -282,12 +288,16 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member GetPropertiesForNewContext.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/proxies/ProxyAttribute.html#IsContextOK-system.runtime.remoting.contexts.Context-system.runtime.remoting.activation.IConstructionCallMessage-">IsContextOK</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;ctx,
-           <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+           <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member IsContextOK.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -399,9 +409,12 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <h4>ProxyAttribute</h4>
 <pre>public&nbsp;ProxyAttribute()
                throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Proxies.ProxyAttribute.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -415,8 +428,10 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -464,18 +479,25 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
                                          <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                          <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></pre>
+<div class="block">Invokes the .NET member CreateInstance.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>serverType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code></dd>
-<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -496,15 +518,25 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                              <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
                              <a href="../../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></pre>
+<div class="block">Invokes the .NET member CreateProxy.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>objRef</code> - the argument of type <code>ObjRef</code></dd>
+<dd><code>serverType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>serverObject</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>serverContext</code> - the argument of type <code>Context</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Proxies.ProxyAttribute.CreateProxy" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -611,9 +643,14 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <h4>GetPropertiesForNewContext</h4>
 <pre>public&nbsp;void&nbsp;GetPropertiesForNewContext(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetPropertiesForNewContext.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Proxies.ProxyAttribute.GetPropertiesForNewContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -626,9 +663,17 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <pre>public&nbsp;boolean&nbsp;IsContextOK(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;ctx,
                            <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsContextOK.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the argument of type <code>Context</code></dd>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Proxies.ProxyAttribute.IsContextOK" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -208,7 +208,9 @@ extends <a href="../../../../system/workflow/componentmodel/compiler/ActivityCod
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/CompositeActivityCodeGenerator.html#CompositeActivityCodeGenerator--">CompositeActivityCodeGenerator</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/CompositeActivityCodeGenerator.html#CompositeActivityCodeGenerator--">CompositeActivityCodeGenerator</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/CompositeActivityCodeGenerator.html#CompositeActivityCodeGenerator-java.lang.Object-">CompositeActivityCodeGenerator</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -239,7 +241,9 @@ extends <a href="../../../../system/workflow/componentmodel/compiler/ActivityCod
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/compiler/CompositeActivityCodeGenerator.html#GenerateCode-system.workflow.componentmodel.compiler.CodeGenerationManager-org.mases.jcobridge.netreflection.NetObject-">GenerateCode</a></span>(<a href="../../../../system/workflow/componentmodel/compiler/CodeGenerationManager.html" title="class in system.workflow.componentmodel.compiler">CodeGenerationManager</a>&nbsp;manager,
-            <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>&nbsp;</td>
+            <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>
+<div class="block">Invokes the .NET member GenerateCode.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -374,9 +378,12 @@ extends <a href="../../../../system/workflow/componentmodel/compiler/ActivityCod
 <h4>CompositeActivityCodeGenerator</h4>
 <pre>public&nbsp;CompositeActivityCodeGenerator()
                                throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -390,8 +397,10 @@ extends <a href="../../../../system/workflow/componentmodel/compiler/ActivityCod
                                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -443,23 +452,29 @@ extends <a href="../../../../system/workflow/componentmodel/compiler/ActivityCod
                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                          <a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<div class="block">Invokes the .NET member GenerateCode.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/compiler/ActivityCodeGenerator.html#GenerateCode-system.workflow.componentmodel.compiler.CodeGenerationManager-org.mases.jcobridge.netreflection.NetObject-">GenerateCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/workflow/componentmodel/compiler/ActivityCodeGenerator.html" title="class in system.workflow.componentmodel.compiler">ActivityCodeGenerator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>manager</code> - the argument of type <code>CodeGenerationManager</code></dd>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
-<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Compiler.CompositeActivityCodeGenerator.GenerateCode" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

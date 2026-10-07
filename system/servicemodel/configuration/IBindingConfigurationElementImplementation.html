@@ -229,11 +229,15 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#ApplyConfiguration-system.servicemodel.channels.Binding-">ApplyConfiguration</a></span>(<a href="../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a>&nbsp;binding)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#ApplyConfiguration-system.servicemodel.channels.Binding-">ApplyConfiguration</a></span>(<a href="../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a>&nbsp;binding)</code>
+<div class="block">Invokes the .NET member ApplyConfiguration.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getCloseTimeout--">getCloseTimeout</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getCloseTimeout--">getCloseTimeout</a></span>()</code>
+<div class="block">Gets the value of the .NET property CloseTimeout.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -267,19 +271,27 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getName--">getName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getName--">getName</a></span>()</code>
+<div class="block">Gets the value of the .NET property Name.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getOpenTimeout--">getOpenTimeout</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getOpenTimeout--">getOpenTimeout</a></span>()</code>
+<div class="block">Gets the value of the .NET property OpenTimeout.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getReceiveTimeout--">getReceiveTimeout</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getReceiveTimeout--">getReceiveTimeout</a></span>()</code>
+<div class="block">Gets the value of the .NET property ReceiveTimeout.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getSendTimeout--">getSendTimeout</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/configuration/IBindingConfigurationElementImplementation.html#getSendTimeout--">getSendTimeout</a></span>()</code>
+<div class="block">Gets the value of the .NET property SendTimeout.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></td>
@@ -386,8 +398,10 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
                                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -407,11 +421,16 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 <h4>ApplyConfiguration</h4>
 <pre>public&nbsp;void&nbsp;ApplyConfiguration(<a href="../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a>&nbsp;binding)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ApplyConfiguration.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html#ApplyConfiguration-system.servicemodel.channels.Binding-">ApplyConfiguration</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>binding</code> - the argument of type <code>system.servicemodel.channels.Binding</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Configuration.IBindingConfigurationElement.ApplyConfiguration" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -423,11 +442,16 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 <h4>getCloseTimeout</h4>
 <pre>public&nbsp;<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;getCloseTimeout()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property CloseTimeout.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html#getCloseTimeout--">getCloseTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Configuration.IBindingConfigurationElement.CloseTimeout" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -544,11 +568,16 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Name.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html#getName--">getName</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Configuration.IBindingConfigurationElement.Name" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -560,11 +589,16 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 <h4>getOpenTimeout</h4>
 <pre>public&nbsp;<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;getOpenTimeout()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property OpenTimeout.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html#getOpenTimeout--">getOpenTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Configuration.IBindingConfigurationElement.OpenTimeout" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -576,11 +610,16 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 <h4>getReceiveTimeout</h4>
 <pre>public&nbsp;<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;getReceiveTimeout()
                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ReceiveTimeout.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html#getReceiveTimeout--">getReceiveTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Configuration.IBindingConfigurationElement.ReceiveTimeout" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -592,11 +631,16 @@ implements <a href="../../../system/servicemodel/configuration/IBindingConfigura
 <h4>getSendTimeout</h4>
 <pre>public&nbsp;<a href="../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;getSendTimeout()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property SendTimeout.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html#getSendTimeout--">getSendTimeout</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/configuration/IBindingConfigurationElement.html" title="interface in system.servicemodel.configuration">IBindingConfigurationElement</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Configuration.IBindingConfigurationElement.SendTimeout" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

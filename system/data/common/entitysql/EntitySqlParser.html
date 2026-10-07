@@ -265,12 +265,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/entitysql/ParseResult.html" title="class in system.data.common.entitysql">ParseResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/entitysql/EntitySqlParser.html#Parse-java.lang.String-system.data.common.commandtrees.DbParameterReferenceExpression...-">Parse</a></span>(java.lang.String&nbsp;query,
-     <a href="../../../../system/data/common/commandtrees/DbParameterReferenceExpression.html" title="class in system.data.common.commandtrees">DbParameterReferenceExpression</a>...&nbsp;parameters)</code>&nbsp;</td>
+     <a href="../../../../system/data/common/commandtrees/DbParameterReferenceExpression.html" title="class in system.data.common.commandtrees">DbParameterReferenceExpression</a>...&nbsp;parameters)</code>
+<div class="block">Invokes the .NET member Parse.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbLambda.html" title="class in system.data.common.commandtrees">DbLambda</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/entitysql/EntitySqlParser.html#ParseLambda-java.lang.String-system.data.common.commandtrees.DbVariableReferenceExpression...-">ParseLambda</a></span>(java.lang.String&nbsp;query,
-           <a href="../../../../system/data/common/commandtrees/DbVariableReferenceExpression.html" title="class in system.data.common.commandtrees">DbVariableReferenceExpression</a>...&nbsp;variables)</code>&nbsp;</td>
+           <a href="../../../../system/data/common/commandtrees/DbVariableReferenceExpression.html" title="class in system.data.common.commandtrees">DbVariableReferenceExpression</a>...&nbsp;variables)</code>
+<div class="block">Invokes the .NET member ParseLambda.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -391,8 +395,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -537,19 +543,27 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                          <a href="../../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></pre>
+<div class="block">Invokes the .NET member Parse.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>query</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>parameters</code> - the argument of type <code>DbParameterReferenceExpression...</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.EntitySql.EntitySqlParser.Parse" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -572,19 +586,27 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                             <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                             <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                             <a href="../../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></pre>
+<div class="block">Invokes the .NET member ParseLambda.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>query</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>variables</code> - the argument of type <code>DbVariableReferenceExpression...</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/data/EntitySqlException.html" title="class in system.data">EntitySqlException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.EntitySql.EntitySqlParser.ParseLambda" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -273,7 +273,9 @@ extends <a href="../../../../system/web/services/protocols/MimeFormatter.html" t
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/services/protocols/MimeReturnReader.html#Read-system.net.WebResponse-system.io.Stream-">Read</a></span>(<a href="../../../../system/net/WebResponse.html" title="class in system.net">WebResponse</a>&nbsp;response,
-    <a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;responseStream)</code>&nbsp;</td>
+    <a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;responseStream)</code>
+<div class="block">Invokes the .NET member Read.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -401,8 +403,10 @@ extends <a href="../../../../system/web/services/protocols/MimeFormatter.html" t
                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -537,9 +541,17 @@ extends <a href="../../../../system/web/services/protocols/MimeFormatter.html" t
 <pre>public&nbsp;<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;Read(<a href="../../../../system/net/WebResponse.html" title="class in system.net">WebResponse</a>&nbsp;response,
                       <a href="../../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;responseStream)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Read.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>response</code> - the argument of type <code>WebResponse</code></dd>
+<dd><code>responseStream</code> - the argument of type <code>Stream</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Services.Protocols.MimeReturnReader.Read" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

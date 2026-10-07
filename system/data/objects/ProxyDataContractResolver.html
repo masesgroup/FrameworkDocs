@@ -209,7 +209,9 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/data/objects/ProxyDataContractResolver.html#ProxyDataContractResolver--">ProxyDataContractResolver</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/data/objects/ProxyDataContractResolver.html#ProxyDataContractResolver--">ProxyDataContractResolver</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/data/objects/ProxyDataContractResolver.html#ProxyDataContractResolver-java.lang.Object-">ProxyDataContractResolver</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -272,7 +274,9 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/objects/ProxyDataContractResolver.html#ResolveName-java.lang.String-java.lang.String-org.mases.jcobridge.netreflection.NetType-system.runtime.serialization.DataContractResolver-">ResolveName</a></span>(java.lang.String&nbsp;typeName,
            java.lang.String&nbsp;typeNamespace,
            <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;declaredType,
-           <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver)</code>&nbsp;</td>
+           <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver)</code>
+<div class="block">Invokes the .NET member ResolveName.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -286,7 +290,9 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
               <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;declaredType,
               <a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a>&nbsp;knownTypeResolver,
               <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeName,
-              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeNamespace)</code>&nbsp;</td>
+              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/xml/XmlDictionaryString.html" title="class in system.xml">XmlDictionaryString</a>&gt;&nbsp;typeNamespace)</code>
+<div class="block">Invokes the .NET member TryResolveType.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -385,9 +391,12 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
 <h4>ProxyDataContractResolver</h4>
 <pre>public&nbsp;ProxyDataContractResolver()
                           throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.ProxyDataContractResolver.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -401,8 +410,10 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -547,19 +558,29 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<div class="block">Invokes the .NET member ResolveName.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/runtime/serialization/DataContractResolver.html#ResolveName-java.lang.String-java.lang.String-org.mases.jcobridge.netreflection.NetType-system.runtime.serialization.DataContractResolver-">ResolveName</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>typeName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>typeNamespace</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>declaredType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>knownTypeResolver</code> - the argument of type <code>DataContractResolver</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.ProxyDataContractResolver.ResolveName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -608,27 +629,38 @@ extends <a href="../../../system/runtime/serialization/DataContractResolver.html
                               <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                               <a href="../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></pre>
+<div class="block">Invokes the .NET member TryResolveType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/runtime/serialization/DataContractResolver.html#TryResolveType-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetType-system.runtime.serialization.DataContractResolver-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.JCORefOut-">TryResolveType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/runtime/serialization/DataContractResolver.html" title="class in system.runtime.serialization">DataContractResolver</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dataContractType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>declaredType</code> - the argument of type <code>NetType</code></dd>
+<dd><code>knownTypeResolver</code> - the argument of type <code>DataContractResolver</code></dd>
+<dd><code>typeName</code> - the argument of type <code>JCORefOut&lt;XmlDictionaryString&gt;</code></dd>
+<dd><code>typeNamespace</code> - the argument of type <code>JCORefOut&lt;XmlDictionaryString&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.ProxyDataContractResolver.TryResolveType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

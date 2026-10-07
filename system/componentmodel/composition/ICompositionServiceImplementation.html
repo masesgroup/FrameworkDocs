@@ -254,7 +254,9 @@ implements <a href="../../../system/componentmodel/composition/ICompositionServi
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/ICompositionServiceImplementation.html#SatisfyImportsOnce-system.componentmodel.composition.primitives.ComposablePart-">SatisfyImportsOnce</a></span>(<a href="../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&nbsp;part)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/ICompositionServiceImplementation.html#SatisfyImportsOnce-system.componentmodel.composition.primitives.ComposablePart-">SatisfyImportsOnce</a></span>(<a href="../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&nbsp;part)</code>
+<div class="block">Invokes the .NET member SatisfyImportsOnce.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/componentmodel/composition/ICompositionService.html" title="interface in system.componentmodel.composition">ICompositionService</a></code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../system/componentmodel/composition/ICompositionServi
                                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -487,11 +491,16 @@ implements <a href="../../../system/componentmodel/composition/ICompositionServi
 <h4>SatisfyImportsOnce</h4>
 <pre>public&nbsp;void&nbsp;SatisfyImportsOnce(<a href="../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&nbsp;part)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member SatisfyImportsOnce.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/componentmodel/composition/ICompositionService.html#SatisfyImportsOnce-system.componentmodel.composition.primitives.ComposablePart-">SatisfyImportsOnce</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/componentmodel/composition/ICompositionService.html" title="interface in system.componentmodel.composition">ICompositionService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>part</code> - the argument of type <code>ComposablePart</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.ICompositionService.SatisfyImportsOnce" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

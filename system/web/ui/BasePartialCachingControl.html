@@ -245,15 +245,21 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#Dispose--">Dispose</a></span>()</code>
+<div class="block">Invokes the .NET member Dispose.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/ui/ControlCachePolicy.html" title="class in system.web.ui">ControlCachePolicy</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#getCachePolicy--">getCachePolicy</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#getCachePolicy--">getCachePolicy</a></span>()</code>
+<div class="block">Gets the value of the .NET property CachePolicy.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/caching/CacheDependency.html" title="class in system.web.caching">CacheDependency</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#getDependency--">getDependency</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#getDependency--">getDependency</a></span>()</code>
+<div class="block">Gets the value of the .NET property Dependency.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -287,7 +293,9 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#setDependency-system.web.caching.CacheDependency-">setDependency</a></span>(<a href="../../../system/web/caching/CacheDependency.html" title="class in system.web.caching">CacheDependency</a>&nbsp;Dependency)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/BasePartialCachingControl.html#setDependency-system.web.caching.CacheDependency-">setDependency</a></span>(<a href="../../../system/web/caching/CacheDependency.html" title="class in system.web.caching">CacheDependency</a>&nbsp;Dependency)</code>
+<div class="block">Sets the value of the .NET property Dependency.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -415,8 +423,10 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -466,22 +476,25 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
                     <a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a>,
                     <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<div class="block">Invokes the .NET member Dispose.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/ui/Control.html#Dispose--">Dispose</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.BasePartialCachingControl.Dispose" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -493,9 +506,14 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
 <h4>getCachePolicy</h4>
 <pre>public&nbsp;<a href="../../../system/web/ui/ControlCachePolicy.html" title="class in system.web.ui">ControlCachePolicy</a>&nbsp;getCachePolicy()
                                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property CachePolicy.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.BasePartialCachingControl.CachePolicy" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -507,9 +525,14 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
 <h4>getDependency</h4>
 <pre>public&nbsp;<a href="../../../system/web/caching/CacheDependency.html" title="class in system.web.caching">CacheDependency</a>&nbsp;getDependency()
                               throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Dependency.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.BasePartialCachingControl.Dependency" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -616,9 +639,14 @@ extends <a href="../../../system/web/ui/Control.html" title="class in system.web
 <h4>setDependency</h4>
 <pre>public&nbsp;void&nbsp;setDependency(<a href="../../../system/web/caching/CacheDependency.html" title="class in system.web.caching">CacheDependency</a>&nbsp;Dependency)
                    throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property Dependency.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>Dependency</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.BasePartialCachingControl.Dependency" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

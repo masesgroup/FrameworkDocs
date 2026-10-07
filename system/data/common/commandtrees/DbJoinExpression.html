@@ -235,7 +235,9 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></span>(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></span>(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)</code>
+<div class="block">Invokes the .NET member Accept.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a></code></td>
@@ -275,15 +277,21 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#getJoinCondition--">getJoinCondition</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#getJoinCondition--">getJoinCondition</a></span>()</code>
+<div class="block">Gets the value of the .NET property JoinCondition.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#getLeft--">getLeft</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#getLeft--">getLeft</a></span>()</code>
+<div class="block">Gets the value of the .NET property Left.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#getRight--">getRight</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbJoinExpression.html#getRight--">getRight</a></span>()</code>
+<div class="block">Gets the value of the .NET property Right.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -411,8 +419,10 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -433,12 +443,17 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <pre>public&nbsp;void&nbsp;Accept(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)
             throws java.lang.Throwable,
                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Accept.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/data/common/commandtrees/DbExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>visitor</code> - the argument of type <code>DbExpressionVisitor</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbJoinExpression.Accept" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -564,9 +579,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getJoinCondition</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;getJoinCondition()
                               throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property JoinCondition.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbJoinExpression.JoinCondition" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -578,9 +598,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getLeft</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&nbsp;getLeft()
                             throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Left.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbJoinExpression.Left" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -592,9 +617,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getRight</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&nbsp;getRight()
                              throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Right.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbJoinExpression.Right" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

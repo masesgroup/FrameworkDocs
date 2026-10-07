@@ -256,15 +256,21 @@ implements <a href="../../../../system/activities/presentation/hosting/IMultiTar
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportServiceImplementation.html#GetReflectionAssembly-system.reflection.AssemblyName-">GetReflectionAssembly</a></span>(<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;targetAssemblyName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportServiceImplementation.html#GetReflectionAssembly-system.reflection.AssemblyName-">GetReflectionAssembly</a></span>(<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;targetAssemblyName)</code>
+<div class="block">Invokes the .NET member GetReflectionAssembly.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportServiceImplementation.html#GetRuntimeType-org.mases.jcobridge.netreflection.NetType-">GetRuntimeType</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;reflectionType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportServiceImplementation.html#GetRuntimeType-org.mases.jcobridge.netreflection.NetType-">GetRuntimeType</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;reflectionType)</code>
+<div class="block">Invokes the .NET member GetRuntimeType.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportServiceImplementation.html#IsSupportedType-org.mases.jcobridge.netreflection.NetType-">IsSupportedType</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportServiceImplementation.html#IsSupportedType-org.mases.jcobridge.netreflection.NetType-">IsSupportedType</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)</code>
+<div class="block">Invokes the .NET member IsSupportedType.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a></code></td>
@@ -371,8 +377,10 @@ implements <a href="../../../../system/activities/presentation/hosting/IMultiTar
                                             throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -497,11 +505,18 @@ implements <a href="../../../../system/activities/presentation/hosting/IMultiTar
 <h4>GetReflectionAssembly</h4>
 <pre>public&nbsp;<a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;GetReflectionAssembly(<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&nbsp;targetAssemblyName)
                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetReflectionAssembly.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html#GetReflectionAssembly-system.reflection.AssemblyName-">GetReflectionAssembly</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>targetAssemblyName</code> - the argument of type <code>AssemblyName</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetReflectionAssembly" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -513,11 +528,18 @@ implements <a href="../../../../system/activities/presentation/hosting/IMultiTar
 <h4>GetRuntimeType</h4>
 <pre>public&nbsp;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;GetRuntimeType(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;reflectionType)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetRuntimeType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html#GetRuntimeType-org.mases.jcobridge.netreflection.NetType-">GetRuntimeType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reflectionType</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.Presentation.Hosting.IMultiTargetingSupportService.GetRuntimeType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -529,11 +551,18 @@ implements <a href="../../../../system/activities/presentation/hosting/IMultiTar
 <h4>IsSupportedType</h4>
 <pre>public&nbsp;boolean&nbsp;IsSupportedType(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsSupportedType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html#IsSupportedType-org.mases.jcobridge.netreflection.NetType-">IsSupportedType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.Presentation.Hosting.IMultiTargetingSupportService.IsSupportedType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

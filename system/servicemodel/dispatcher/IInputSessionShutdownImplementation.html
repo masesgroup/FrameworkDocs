@@ -225,11 +225,15 @@ implements <a href="../../../system/servicemodel/dispatcher/IInputSessionShutdow
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdownImplementation.html#ChannelFaulted-system.servicemodel.IDuplexContextChannel-">ChannelFaulted</a></span>(<a href="../../../system/servicemodel/IDuplexContextChannel.html" title="interface in system.servicemodel">IDuplexContextChannel</a>&nbsp;channel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdownImplementation.html#ChannelFaulted-system.servicemodel.IDuplexContextChannel-">ChannelFaulted</a></span>(<a href="../../../system/servicemodel/IDuplexContextChannel.html" title="interface in system.servicemodel">IDuplexContextChannel</a>&nbsp;channel)</code>
+<div class="block">Invokes the .NET member ChannelFaulted.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdownImplementation.html#DoneReceiving-system.servicemodel.IDuplexContextChannel-">DoneReceiving</a></span>(<a href="../../../system/servicemodel/IDuplexContextChannel.html" title="interface in system.servicemodel">IDuplexContextChannel</a>&nbsp;channel)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdownImplementation.html#DoneReceiving-system.servicemodel.IDuplexContextChannel-">DoneReceiving</a></span>(<a href="../../../system/servicemodel/IDuplexContextChannel.html" title="interface in system.servicemodel">IDuplexContextChannel</a>&nbsp;channel)</code>
+<div class="block">Invokes the .NET member DoneReceiving.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -366,8 +370,10 @@ implements <a href="../../../system/servicemodel/dispatcher/IInputSessionShutdow
                                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -387,11 +393,16 @@ implements <a href="../../../system/servicemodel/dispatcher/IInputSessionShutdow
 <h4>ChannelFaulted</h4>
 <pre>public&nbsp;void&nbsp;ChannelFaulted(<a href="../../../system/servicemodel/IDuplexContextChannel.html" title="interface in system.servicemodel">IDuplexContextChannel</a>&nbsp;channel)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ChannelFaulted.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdown.html#ChannelFaulted-system.servicemodel.IDuplexContextChannel-">ChannelFaulted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdown.html" title="interface in system.servicemodel.dispatcher">IInputSessionShutdown</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channel</code> - the argument of type <code>IDuplexContextChannel</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInputSessionShutdown.ChannelFaulted" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -403,11 +414,16 @@ implements <a href="../../../system/servicemodel/dispatcher/IInputSessionShutdow
 <h4>DoneReceiving</h4>
 <pre>public&nbsp;void&nbsp;DoneReceiving(<a href="../../../system/servicemodel/IDuplexContextChannel.html" title="interface in system.servicemodel">IDuplexContextChannel</a>&nbsp;channel)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DoneReceiving.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdown.html#DoneReceiving-system.servicemodel.IDuplexContextChannel-">DoneReceiving</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IInputSessionShutdown.html" title="interface in system.servicemodel.dispatcher">IInputSessionShutdown</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>channel</code> - the argument of type <code>IDuplexContextChannel</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IInputSessionShutdown.DoneReceiving" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

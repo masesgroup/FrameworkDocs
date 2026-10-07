@@ -261,7 +261,9 @@ implements <a href="../../system/xml/IXmlMtomWriterInitializer.html" title="inte
          java.lang.String&nbsp;boundary,
          java.lang.String&nbsp;startUri,
          boolean&nbsp;writeMessageHeaders,
-         boolean&nbsp;ownsStream)</code>&nbsp;</td>
+         boolean&nbsp;ownsStream)</code>
+<div class="block">Invokes the .NET member SetOutput.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/xml/IXmlMtomWriterInitializer.html" title="interface in system.xml">IXmlMtomWriterInitializer</a></code></td>
@@ -368,8 +370,10 @@ implements <a href="../../system/xml/IXmlMtomWriterInitializer.html" title="inte
                                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -501,11 +505,23 @@ implements <a href="../../system/xml/IXmlMtomWriterInitializer.html" title="inte
                       boolean&nbsp;writeMessageHeaders,
                       boolean&nbsp;ownsStream)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member SetOutput.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/xml/IXmlMtomWriterInitializer.html#SetOutput-system.io.Stream-system.text.Encoding-int-java.lang.String-java.lang.String-java.lang.String-boolean-boolean-">SetOutput</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/xml/IXmlMtomWriterInitializer.html" title="interface in system.xml">IXmlMtomWriterInitializer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>stream</code> - the argument of type <code>Stream</code></dd>
+<dd><code>encoding</code> - the argument of type <code>Encoding</code></dd>
+<dd><code>maxSizeInBytes</code> - the argument of type <code>int</code></dd>
+<dd><code>startInfo</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>boundary</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>startUri</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>writeMessageHeaders</code> - the argument of type <code>boolean</code></dd>
+<dd><code>ownsStream</code> - the argument of type <code>boolean</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xml.IXmlMtomWriterInitializer.SetOutput" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

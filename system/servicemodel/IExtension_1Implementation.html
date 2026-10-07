@@ -225,7 +225,9 @@ implements <a href="../../system/servicemodel/IExtension_1.html" title="interfac
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/IExtension_1Implementation.html#Attach-T-">Attach</a></span>(<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a>&nbsp;owner)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/IExtension_1Implementation.html#Attach-T-">Attach</a></span>(<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a>&nbsp;owner)</code>
+<div class="block">Invokes the .NET member Attach.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/servicemodel/IExtension_1Implementation.html" title="class in system.servicemodel">IExtension_1Implementation</a></code></td>
@@ -235,7 +237,9 @@ implements <a href="../../system/servicemodel/IExtension_1.html" title="interfac
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/IExtension_1Implementation.html#Detach-T-">Detach</a></span>(<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a>&nbsp;owner)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/IExtension_1Implementation.html#Detach-T-">Detach</a></span>(<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a>&nbsp;owner)</code>
+<div class="block">Invokes the .NET member Detach.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -373,8 +377,10 @@ implements <a href="../../system/servicemodel/IExtension_1.html" title="interfac
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -396,11 +402,16 @@ implements <a href="../../system/servicemodel/IExtension_1.html" title="interfac
 <h4>Attach</h4>
 <pre>public&nbsp;void&nbsp;Attach(<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a>&nbsp;owner)
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Attach.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/servicemodel/IExtension_1.html#Attach-T-">Attach</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/servicemodel/IExtension_1.html" title="interface in system.servicemodel">IExtension_1</a>&lt;<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a> extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>owner</code> - the argument of type <code>T</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.IExtension-1.Attach" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -433,11 +444,16 @@ implements <a href="../../system/servicemodel/IExtension_1.html" title="interfac
 <h4>Detach</h4>
 <pre>public&nbsp;void&nbsp;Detach(<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a>&nbsp;owner)
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Detach.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../system/servicemodel/IExtension_1.html#Detach-T-">Detach</a></code>&nbsp;in interface&nbsp;<code><a href="../../system/servicemodel/IExtension_1.html" title="interface in system.servicemodel">IExtension_1</a>&lt;<a href="../../system/servicemodel/IExtension_1Implementation.html" title="type parameter in IExtension_1Implementation">T</a> extends <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>owner</code> - the argument of type <code>T</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.IExtension-1.Detach" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -226,7 +226,9 @@ implements <a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IAppManagerAppDomainFactoryImplementation.html#Create-java.lang.String-java.lang.String-">Create</a></span>(java.lang.String&nbsp;appId,
-      java.lang.String&nbsp;appPath)</code>&nbsp;</td>
+      java.lang.String&nbsp;appPath)</code>
+<div class="block">Invokes the .NET member Create.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -260,7 +262,9 @@ implements <a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IAppManagerAppDomainFactoryImplementation.html#Stop--">Stop</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IAppManagerAppDomainFactoryImplementation.html#Stop--">Stop</a></span>()</code>
+<div class="block">Invokes the .NET member Stop.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html" title="interface in system.web.hosting">IAppManagerAppDomainFactory</a></code></td>
@@ -367,8 +371,10 @@ implements <a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html
                                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -389,11 +395,19 @@ implements <a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;Create(java.lang.String&nbsp;appId,
                         java.lang.String&nbsp;appPath)
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Create.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html#Create-java.lang.String-java.lang.String-">Create</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html" title="interface in system.web.hosting">IAppManagerAppDomainFactory</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>appId</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>appPath</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IAppManagerAppDomainFactory.Create" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -510,11 +524,14 @@ implements <a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html
 <h4>Stop</h4>
 <pre>public&nbsp;void&nbsp;Stop()
           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Stop.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html#Stop--">Stop</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IAppManagerAppDomainFactory.html" title="interface in system.web.hosting">IAppManagerAppDomainFactory</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IAppManagerAppDomainFactory.Stop" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -219,7 +219,9 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#NamespaceResolveEventArgs-java.lang.String-system.reflection.Assembly-">NamespaceResolveEventArgs</a></span>(java.lang.String&nbsp;namespaceName,
-                         <a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;requestingAssembly)</code>&nbsp;</td>
+                         <a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;requestingAssembly)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -274,15 +276,21 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#getNamespaceName--">getNamespaceName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#getNamespaceName--">getNamespaceName</a></span>()</code>
+<div class="block">Gets the value of the .NET property NamespaceName.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#getRequestingAssembly--">getRequestingAssembly</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#getRequestingAssembly--">getRequestingAssembly</a></span>()</code>
+<div class="block">Gets the value of the .NET property RequestingAssembly.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#getResolvedAssemblies--">getResolvedAssemblies</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/NamespaceResolveEventArgs.html#getResolvedAssemblies--">getResolvedAssemblies</a></span>()</code>
+<div class="block">Gets the value of the .NET property ResolvedAssemblies.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -403,8 +411,10 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -417,9 +427,15 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <pre>public&nbsp;NamespaceResolveEventArgs(java.lang.String&nbsp;namespaceName,
                                  <a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;requestingAssembly)
                           throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>namespaceName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>requestingAssembly</code> - the argument of type <code>Assembly</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -553,9 +569,14 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <h4>getNamespaceName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getNamespaceName()
                                   throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property NamespaceName.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.NamespaceName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -567,9 +588,14 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <h4>getRequestingAssembly</h4>
 <pre>public&nbsp;<a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&nbsp;getRequestingAssembly()
                                throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property RequestingAssembly.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.RequestingAssembly" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -581,9 +607,14 @@ extends <a href="../../../../system/EventArgs.html" title="class in system">Even
 <h4>getResolvedAssemblies</h4>
 <pre>public&nbsp;<a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getResolvedAssemblies()
                                    throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ResolvedAssemblies.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.InteropServices.WindowsRuntime.NamespaceResolveEventArgs.ResolvedAssemblies" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

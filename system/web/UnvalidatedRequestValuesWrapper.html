@@ -215,7 +215,9 @@ extends <a href="../../system/web/UnvalidatedRequestValuesBase.html" title="clas
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/web/UnvalidatedRequestValuesWrapper.html#UnvalidatedRequestValuesWrapper-system.web.UnvalidatedRequestValues-">UnvalidatedRequestValuesWrapper</a></span>(<a href="../../system/web/UnvalidatedRequestValues.html" title="class in system.web">UnvalidatedRequestValues</a>&nbsp;requestValues)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/web/UnvalidatedRequestValuesWrapper.html#UnvalidatedRequestValuesWrapper-system.web.UnvalidatedRequestValues-">UnvalidatedRequestValuesWrapper</a></span>(<a href="../../system/web/UnvalidatedRequestValues.html" title="class in system.web">UnvalidatedRequestValues</a>&nbsp;requestValues)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -394,8 +396,10 @@ extends <a href="../../system/web/UnvalidatedRequestValuesBase.html" title="clas
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -408,10 +412,15 @@ extends <a href="../../system/web/UnvalidatedRequestValuesBase.html" title="clas
 <pre>public&nbsp;UnvalidatedRequestValuesWrapper(<a href="../../system/web/UnvalidatedRequestValues.html" title="class in system.web">UnvalidatedRequestValues</a>&nbsp;requestValues)
                                 throws java.lang.Throwable,
                                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>requestValues</code> - the argument of type <code>UnvalidatedRequestValues</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UnvalidatedRequestValuesWrapper.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

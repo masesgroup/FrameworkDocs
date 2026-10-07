@@ -254,7 +254,9 @@ implements <a href="../../../../system/runtime/remoting/lifetime/ISponsor.html" 
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/TimeSpan.html" title="class in system">TimeSpan</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/lifetime/ISponsorImplementation.html#Renewal-system.runtime.remoting.lifetime.ILease-">Renewal</a></span>(<a href="../../../../system/runtime/remoting/lifetime/ILease.html" title="interface in system.runtime.remoting.lifetime">ILease</a>&nbsp;lease)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/lifetime/ISponsorImplementation.html#Renewal-system.runtime.remoting.lifetime.ILease-">Renewal</a></span>(<a href="../../../../system/runtime/remoting/lifetime/ILease.html" title="interface in system.runtime.remoting.lifetime">ILease</a>&nbsp;lease)</code>
+<div class="block">Invokes the .NET member Renewal.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/lifetime/ISponsor.html" title="interface in system.runtime.remoting.lifetime">ISponsor</a></code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../../system/runtime/remoting/lifetime/ISponsor.html" 
                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -487,11 +491,18 @@ implements <a href="../../../../system/runtime/remoting/lifetime/ISponsor.html" 
 <h4>Renewal</h4>
 <pre>public&nbsp;<a href="../../../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;Renewal(<a href="../../../../system/runtime/remoting/lifetime/ILease.html" title="interface in system.runtime.remoting.lifetime">ILease</a>&nbsp;lease)
                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Renewal.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/lifetime/ISponsor.html#Renewal-system.runtime.remoting.lifetime.ILease-">Renewal</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/lifetime/ISponsor.html" title="interface in system.runtime.remoting.lifetime">ISponsor</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>lease</code> - the argument of type <code>ILease</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Lifetime.ISponsor.Renewal" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -237,7 +237,9 @@ extends <a href="../../system/data/DataException.html" title="class in system.da
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/data/UpdateException.html#UpdateException-java.lang.String-org.mases.jcobridge.netreflection.NetException-system.collections.generic.IEnumerable_1-">UpdateException</a></span>(java.lang.String&nbsp;message,
                <a href="../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;innerException,
-               <a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;stateEntries)</code>&nbsp;</td>
+               <a href="../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;stateEntries)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -292,7 +294,9 @@ extends <a href="../../system/data/DataException.html" title="class in system.da
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/data/UpdateException.html#getStateEntries--">getStateEntries</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/data/UpdateException.html#getStateEntries--">getStateEntries</a></span>()</code>
+<div class="block">Gets the value of the .NET property StateEntries.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -420,6 +424,10 @@ extends <a href="../../system/data/DataException.html" title="class in system.da
 <h4>UpdateException</h4>
 <pre>public&nbsp;UpdateException(java.lang.Object&nbsp;instance)</pre>
 <div class="block">Internal constructor. Use with caution</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
+</dl>
 </li>
 </ul>
 <a name="UpdateException-java.lang.String-">
@@ -453,11 +461,18 @@ extends <a href="../../system/data/DataException.html" title="class in system.da
                 throws java.lang.Throwable,
                        <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                        <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>innerException</code> - the argument of type <code>NetException</code></dd>
+<dd><code>stateEntries</code> - the argument of type <code>IEnumerable_1</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.UpdateException.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -592,9 +607,14 @@ extends <a href="../../system/data/DataException.html" title="class in system.da
 <h4>getStateEntries</h4>
 <pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getStateEntries()
                                      throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property StateEntries.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.UpdateException.StateEntries" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

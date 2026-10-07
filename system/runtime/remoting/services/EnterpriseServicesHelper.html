@@ -204,7 +204,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/EnterpriseServicesHelper.html#EnterpriseServicesHelper--">EnterpriseServicesHelper</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/EnterpriseServicesHelper.html#EnterpriseServicesHelper--">EnterpriseServicesHelper</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/EnterpriseServicesHelper.html#EnterpriseServicesHelper-java.lang.Object-">EnterpriseServicesHelper</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -235,7 +237,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/EnterpriseServicesHelper.html#CreateConstructionReturnMessage-system.runtime.remoting.activation.IConstructionCallMessage-system.MarshalByRefObject-">CreateConstructionReturnMessage</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg,
-                               <a href="../../../../system/MarshalByRefObject.html" title="class in system">MarshalByRefObject</a>&nbsp;retObj)</code>&nbsp;</td>
+                               <a href="../../../../system/MarshalByRefObject.html" title="class in system">MarshalByRefObject</a>&nbsp;retObj)</code>
+<div class="block">Invokes the .NET member CreateConstructionReturnMessage.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -276,7 +280,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/EnterpriseServicesHelper.html#SwitchWrappers-system.runtime.remoting.proxies.RealProxy-system.runtime.remoting.proxies.RealProxy-">SwitchWrappers</a></span>(<a href="../../../../system/runtime/remoting/proxies/RealProxy.html" title="class in system.runtime.remoting.proxies">RealProxy</a>&nbsp;oldcp,
-              <a href="../../../../system/runtime/remoting/proxies/RealProxy.html" title="class in system.runtime.remoting.proxies">RealProxy</a>&nbsp;newcp)</code>&nbsp;</td>
+              <a href="../../../../system/runtime/remoting/proxies/RealProxy.html" title="class in system.runtime.remoting.proxies">RealProxy</a>&nbsp;newcp)</code>
+<div class="block">Invokes the .NET member SwitchWrappers.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -375,9 +381,12 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>EnterpriseServicesHelper</h4>
 <pre>public&nbsp;EnterpriseServicesHelper()
                          throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Services.EnterpriseServicesHelper.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -391,8 +400,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -438,15 +449,23 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                                                          <a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
                                                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                                                          <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<div class="block">Invokes the .NET member CreateConstructionReturnMessage.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctorMsg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dd><code>retObj</code> - the argument of type <code>MarshalByRefObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Services.EnterpriseServicesHelper.CreateConstructionReturnMessage" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -574,12 +593,18 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                   <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
                                   <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                   <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Invokes the .NET member SwitchWrappers.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>oldcp</code> - the argument of type <code>RealProxy</code></dd>
+<dd><code>newcp</code> - the argument of type <code>RealProxy</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Services.EnterpriseServicesHelper.SwitchWrappers" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

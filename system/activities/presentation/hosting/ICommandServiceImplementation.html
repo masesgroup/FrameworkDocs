@@ -226,12 +226,16 @@ implements <a href="../../../../system/activities/presentation/hosting/ICommandS
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/ICommandServiceImplementation.html#CanExecuteCommand-int-">CanExecuteCommand</a></span>(int&nbsp;commandId)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/ICommandServiceImplementation.html#CanExecuteCommand-int-">CanExecuteCommand</a></span>(int&nbsp;commandId)</code>
+<div class="block">Invokes the .NET member CanExecuteCommand.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/ICommandServiceImplementation.html#ExecuteCommand-int-system.collections.generic.Dictionary_2-">ExecuteCommand</a></span>(int&nbsp;commandId,
-              <a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;parameters)</code>&nbsp;</td>
+              <a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;parameters)</code>
+<div class="block">Invokes the .NET member ExecuteCommand.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -265,7 +269,9 @@ implements <a href="../../../../system/activities/presentation/hosting/ICommandS
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/ICommandServiceImplementation.html#IsCommandSupported-int-">IsCommandSupported</a></span>(int&nbsp;commandId)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/ICommandServiceImplementation.html#IsCommandSupported-int-">IsCommandSupported</a></span>(int&nbsp;commandId)</code>
+<div class="block">Invokes the .NET member IsCommandSupported.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/activities/presentation/hosting/ICommandService.html" title="interface in system.activities.presentation.hosting">ICommandService</a></code></td>
@@ -372,8 +378,10 @@ implements <a href="../../../../system/activities/presentation/hosting/ICommandS
                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -393,11 +401,18 @@ implements <a href="../../../../system/activities/presentation/hosting/ICommandS
 <h4>CanExecuteCommand</h4>
 <pre>public&nbsp;boolean&nbsp;CanExecuteCommand(int&nbsp;commandId)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CanExecuteCommand.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/activities/presentation/hosting/ICommandService.html#CanExecuteCommand-int-">CanExecuteCommand</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/activities/presentation/hosting/ICommandService.html" title="interface in system.activities.presentation.hosting">ICommandService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>commandId</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.Presentation.Hosting.ICommandService.CanExecuteCommand" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -410,11 +425,17 @@ implements <a href="../../../../system/activities/presentation/hosting/ICommandS
 <pre>public&nbsp;void&nbsp;ExecuteCommand(int&nbsp;commandId,
                            <a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;parameters)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ExecuteCommand.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/activities/presentation/hosting/ICommandService.html#ExecuteCommand-int-system.collections.generic.Dictionary_2-">ExecuteCommand</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/activities/presentation/hosting/ICommandService.html" title="interface in system.activities.presentation.hosting">ICommandService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>commandId</code> - the argument of type <code>int</code></dd>
+<dd><code>parameters</code> - the argument of type <code>Dictionary_2</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.Presentation.Hosting.ICommandService.ExecuteCommand" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -531,11 +552,18 @@ implements <a href="../../../../system/activities/presentation/hosting/ICommandS
 <h4>IsCommandSupported</h4>
 <pre>public&nbsp;boolean&nbsp;IsCommandSupported(int&nbsp;commandId)
                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsCommandSupported.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/activities/presentation/hosting/ICommandService.html#IsCommandSupported-int-">IsCommandSupported</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/activities/presentation/hosting/ICommandService.html" title="interface in system.activities.presentation.hosting">ICommandService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>commandId</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.Presentation.Hosting.ICommandService.IsCommandSupported" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

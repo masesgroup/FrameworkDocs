@@ -256,11 +256,15 @@ implements <a href="../../../system/web/ui/IPostBackDataHandler.html" title="int
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IPostBackDataHandlerImplementation.html#LoadPostData-java.lang.String-system.collections.specialized.NameValueCollection-">LoadPostData</a></span>(java.lang.String&nbsp;postDataKey,
-            <a href="../../../system/collections/specialized/NameValueCollection.html" title="class in system.collections.specialized">NameValueCollection</a>&nbsp;postCollection)</code>&nbsp;</td>
+            <a href="../../../system/collections/specialized/NameValueCollection.html" title="class in system.collections.specialized">NameValueCollection</a>&nbsp;postCollection)</code>
+<div class="block">Invokes the .NET member LoadPostData.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IPostBackDataHandlerImplementation.html#RaisePostDataChangedEvent--">RaisePostDataChangedEvent</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/IPostBackDataHandlerImplementation.html#RaisePostDataChangedEvent--">RaisePostDataChangedEvent</a></span>()</code>
+<div class="block">Invokes the .NET member RaisePostDataChangedEvent.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/web/ui/IPostBackDataHandler.html" title="interface in system.web.ui">IPostBackDataHandler</a></code></td>
@@ -367,8 +371,10 @@ implements <a href="../../../system/web/ui/IPostBackDataHandler.html" title="int
                                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -494,11 +500,19 @@ implements <a href="../../../system/web/ui/IPostBackDataHandler.html" title="int
 <pre>public&nbsp;boolean&nbsp;LoadPostData(java.lang.String&nbsp;postDataKey,
                             <a href="../../../system/collections/specialized/NameValueCollection.html" title="class in system.collections.specialized">NameValueCollection</a>&nbsp;postCollection)
                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member LoadPostData.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/IPostBackDataHandler.html#LoadPostData-java.lang.String-system.collections.specialized.NameValueCollection-">LoadPostData</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IPostBackDataHandler.html" title="interface in system.web.ui">IPostBackDataHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>postDataKey</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>postCollection</code> - the argument of type <code>NameValueCollection</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.IPostBackDataHandler.LoadPostData" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -510,11 +524,14 @@ implements <a href="../../../system/web/ui/IPostBackDataHandler.html" title="int
 <h4>RaisePostDataChangedEvent</h4>
 <pre>public&nbsp;void&nbsp;RaisePostDataChangedEvent()
                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member RaisePostDataChangedEvent.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/IPostBackDataHandler.html#RaisePostDataChangedEvent--">RaisePostDataChangedEvent</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/IPostBackDataHandler.html" title="interface in system.web.ui">IPostBackDataHandler</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.IPostBackDataHandler.RaisePostDataChangedEvent" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

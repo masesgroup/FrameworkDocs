@@ -226,7 +226,9 @@ implements <a href="../../../../system/workflow/componentmodel/design/IIdentifie
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/IIdentifierCreationServiceImplementation.html#EnsureUniqueIdentifiers-system.workflow.componentmodel.CompositeActivity-system.collections.ICollection-">EnsureUniqueIdentifiers</a></span>(<a href="../../../../system/workflow/componentmodel/CompositeActivity.html" title="class in system.workflow.componentmodel">CompositeActivity</a>&nbsp;parentActivity,
-                       <a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;childActivities)</code>&nbsp;</td>
+                       <a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;childActivities)</code>
+<div class="block">Invokes the .NET member EnsureUniqueIdentifiers.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -267,7 +269,9 @@ implements <a href="../../../../system/workflow/componentmodel/design/IIdentifie
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/IIdentifierCreationServiceImplementation.html#ValidateIdentifier-system.workflow.componentmodel.Activity-java.lang.String-">ValidateIdentifier</a></span>(<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-                  java.lang.String&nbsp;identifier)</code>&nbsp;</td>
+                  java.lang.String&nbsp;identifier)</code>
+<div class="block">Invokes the .NET member ValidateIdentifier.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -368,8 +372,10 @@ implements <a href="../../../../system/workflow/componentmodel/design/IIdentifie
                                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -390,11 +396,17 @@ implements <a href="../../../../system/workflow/componentmodel/design/IIdentifie
 <pre>public&nbsp;void&nbsp;EnsureUniqueIdentifiers(<a href="../../../../system/workflow/componentmodel/CompositeActivity.html" title="class in system.workflow.componentmodel">CompositeActivity</a>&nbsp;parentActivity,
                                     <a href="../../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;childActivities)
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EnsureUniqueIdentifiers.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/IIdentifierCreationService.html#EnsureUniqueIdentifiers-system.workflow.componentmodel.CompositeActivity-system.collections.ICollection-">EnsureUniqueIdentifiers</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IIdentifierCreationService.html" title="interface in system.workflow.componentmodel.design">IIdentifierCreationService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>parentActivity</code> - the argument of type <code>CompositeActivity</code></dd>
+<dd><code>childActivities</code> - the argument of type <code>ICollection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.IIdentifierCreationService.EnsureUniqueIdentifiers" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -533,11 +545,17 @@ implements <a href="../../../../system/workflow/componentmodel/design/IIdentifie
 <pre>public&nbsp;void&nbsp;ValidateIdentifier(<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
                                java.lang.String&nbsp;identifier)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ValidateIdentifier.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/IIdentifierCreationService.html#ValidateIdentifier-system.workflow.componentmodel.Activity-java.lang.String-">ValidateIdentifier</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IIdentifierCreationService.html" title="interface in system.workflow.componentmodel.design">IIdentifierCreationService</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>activity</code> - the argument of type <code>Activity</code></dd>
+<dd><code>identifier</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.IIdentifierCreationService.ValidateIdentifier" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

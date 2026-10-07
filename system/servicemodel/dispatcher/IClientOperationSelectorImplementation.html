@@ -225,7 +225,9 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientOperationSele
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IClientOperationSelectorImplementation.html#getAreParametersRequiredForSelection--">getAreParametersRequiredForSelection</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IClientOperationSelectorImplementation.html#getAreParametersRequiredForSelection--">getAreParametersRequiredForSelection</a></span>()</code>
+<div class="block">Gets the value of the .NET property AreParametersRequiredForSelection.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -260,7 +262,9 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientOperationSele
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IClientOperationSelectorImplementation.html#SelectOperation-system.reflection.MethodBase-org.mases.jcobridge.netreflection.NetObject:A-">SelectOperation</a></span>(<a href="../../../system/reflection/MethodBase.html" title="class in system.reflection">MethodBase</a>&nbsp;method,
-               <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;parameters)</code>&nbsp;</td>
+               <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;parameters)</code>
+<div class="block">Invokes the .NET member SelectOperation.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/servicemodel/dispatcher/IClientOperationSelector.html" title="interface in system.servicemodel.dispatcher">IClientOperationSelector</a></code></td>
@@ -367,8 +371,10 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientOperationSele
                                        throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -388,11 +394,16 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientOperationSele
 <h4>getAreParametersRequiredForSelection</h4>
 <pre>public&nbsp;boolean&nbsp;getAreParametersRequiredForSelection()
                                              throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property AreParametersRequiredForSelection.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IClientOperationSelector.html#getAreParametersRequiredForSelection--">getAreParametersRequiredForSelection</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IClientOperationSelector.html" title="interface in system.servicemodel.dispatcher">IClientOperationSelector</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IClientOperationSelector.AreParametersRequiredForSelection" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -510,11 +521,19 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientOperationSele
 <pre>public&nbsp;java.lang.String&nbsp;SelectOperation(<a href="../../../system/reflection/MethodBase.html" title="class in system.reflection">MethodBase</a>&nbsp;method,
                                         <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;parameters)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member SelectOperation.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IClientOperationSelector.html#SelectOperation-system.reflection.MethodBase-org.mases.jcobridge.netreflection.NetObject:A-">SelectOperation</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IClientOperationSelector.html" title="interface in system.servicemodel.dispatcher">IClientOperationSelector</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>method</code> - the argument of type <code>MethodBase</code></dd>
+<dd><code>parameters</code> - the argument of type <code>NetObject[]</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IClientOperationSelector.SelectOperation" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

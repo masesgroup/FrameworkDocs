@@ -228,12 +228,16 @@ implements <a href="../../../system/servicemodel/dispatcher/IParameterInspector.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IParameterInspectorImplementation.html#AfterCall-java.lang.String-org.mases.jcobridge.netreflection.NetObject:A-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">AfterCall</a></span>(java.lang.String&nbsp;operationName,
          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;outputs,
          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;returnValue,
-         <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)</code>&nbsp;</td>
+         <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)</code>
+<div class="block">Invokes the .NET member AfterCall.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IParameterInspectorImplementation.html#BeforeCall-java.lang.String-org.mases.jcobridge.netreflection.NetObject:A-">BeforeCall</a></span>(java.lang.String&nbsp;operationName,
-          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;inputs)</code>&nbsp;</td>
+          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;inputs)</code>
+<div class="block">Invokes the .NET member BeforeCall.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -370,8 +374,10 @@ implements <a href="../../../system/servicemodel/dispatcher/IParameterInspector.
                                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -394,11 +400,19 @@ implements <a href="../../../system/servicemodel/dispatcher/IParameterInspector.
                       <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;returnValue,
                       <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member AfterCall.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IParameterInspector.html#AfterCall-java.lang.String-org.mases.jcobridge.netreflection.NetObject:A-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">AfterCall</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IParameterInspector.html" title="interface in system.servicemodel.dispatcher">IParameterInspector</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>outputs</code> - the argument of type <code>NetObject[]</code></dd>
+<dd><code>returnValue</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>correlationState</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IParameterInspector.AfterCall" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -411,11 +425,19 @@ implements <a href="../../../system/servicemodel/dispatcher/IParameterInspector.
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;BeforeCall(java.lang.String&nbsp;operationName,
                             <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>[]&nbsp;inputs)
                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member BeforeCall.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IParameterInspector.html#BeforeCall-java.lang.String-org.mases.jcobridge.netreflection.NetObject:A-">BeforeCall</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IParameterInspector.html" title="interface in system.servicemodel.dispatcher">IParameterInspector</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>operationName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>inputs</code> - the argument of type <code>NetObject[]</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IParameterInspector.BeforeCall" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

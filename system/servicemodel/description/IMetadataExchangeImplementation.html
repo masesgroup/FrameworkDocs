@@ -228,15 +228,21 @@ implements <a href="../../../system/servicemodel/description/IMetadataExchange.h
 <td class="colFirst"><code><a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IMetadataExchangeImplementation.html#BeginGet-system.servicemodel.channels.Message-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginGet</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;request,
         <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;callback,
-        <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>&nbsp;</td>
+        <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>
+<div class="block">Invokes the .NET member BeginGet.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IMetadataExchangeImplementation.html#EndGet-system.IAsyncResult-">EndGet</a></span>(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IMetadataExchangeImplementation.html#EndGet-system.IAsyncResult-">EndGet</a></span>(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)</code>
+<div class="block">Invokes the .NET member EndGet.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IMetadataExchangeImplementation.html#Get-system.servicemodel.channels.Message-">Get</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;request)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IMetadataExchangeImplementation.html#Get-system.servicemodel.channels.Message-">Get</a></span>(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;request)</code>
+<div class="block">Invokes the .NET member Get.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -373,8 +379,10 @@ implements <a href="../../../system/servicemodel/description/IMetadataExchange.h
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -396,11 +404,20 @@ implements <a href="../../../system/servicemodel/description/IMetadataExchange.h
                              <a href="../../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;callback,
                              <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member BeginGet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IMetadataExchange.html#BeginGet-system.servicemodel.channels.Message-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginGet</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IMetadataExchange.html" title="interface in system.servicemodel.description">IMetadataExchange</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the argument of type <code>Message</code></dd>
+<dd><code>callback</code> - the argument of type <code>AsyncCallback</code></dd>
+<dd><code>state</code> - the argument of type <code>NetObject</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IMetadataExchange.BeginGet" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -412,11 +429,18 @@ implements <a href="../../../system/servicemodel/description/IMetadataExchange.h
 <h4>EndGet</h4>
 <pre>public&nbsp;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;EndGet(<a href="../../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)
                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EndGet.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IMetadataExchange.html#EndGet-system.IAsyncResult-">EndGet</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IMetadataExchange.html" title="interface in system.servicemodel.description">IMetadataExchange</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>result</code> - the argument of type <code>IAsyncResult</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IMetadataExchange.EndGet" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -428,11 +452,18 @@ implements <a href="../../../system/servicemodel/description/IMetadataExchange.h
 <h4>Get</h4>
 <pre>public&nbsp;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;Get(<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&nbsp;request)
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Get.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IMetadataExchange.html#Get-system.servicemodel.channels.Message-">Get</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IMetadataExchange.html" title="interface in system.servicemodel.description">IMetadataExchange</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the argument of type <code>Message</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IMetadataExchange.Get" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

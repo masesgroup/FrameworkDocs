@@ -230,25 +230,35 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#EntityComplexMemberChanged-java.lang.String-org.mases.jcobridge.netreflection.NetObject-java.lang.String-">EntityComplexMemberChanged</a></span>(java.lang.String&nbsp;entityMemberName,
                           <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;complexObject,
-                          java.lang.String&nbsp;complexObjectMemberName)</code>&nbsp;</td>
+                          java.lang.String&nbsp;complexObjectMemberName)</code>
+<div class="block">Invokes the .NET member EntityComplexMemberChanged.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#EntityComplexMemberChanging-java.lang.String-org.mases.jcobridge.netreflection.NetObject-java.lang.String-">EntityComplexMemberChanging</a></span>(java.lang.String&nbsp;entityMemberName,
                            <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;complexObject,
-                           java.lang.String&nbsp;complexObjectMemberName)</code>&nbsp;</td>
+                           java.lang.String&nbsp;complexObjectMemberName)</code>
+<div class="block">Invokes the .NET member EntityComplexMemberChanging.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#EntityMemberChanged-java.lang.String-">EntityMemberChanged</a></span>(java.lang.String&nbsp;entityMemberName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#EntityMemberChanged-java.lang.String-">EntityMemberChanged</a></span>(java.lang.String&nbsp;entityMemberName)</code>
+<div class="block">Invokes the .NET member EntityMemberChanged.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#EntityMemberChanging-java.lang.String-">EntityMemberChanging</a></span>(java.lang.String&nbsp;entityMemberName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#EntityMemberChanging-java.lang.String-">EntityMemberChanging</a></span>(java.lang.String&nbsp;entityMemberName)</code>
+<div class="block">Invokes the .NET member EntityMemberChanging.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/EntityState.html" title="class in system.data">EntityState</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#getEntityState--">getEntityState</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/IEntityChangeTrackerImplementation.html#getEntityState--">getEntityState</a></span>()</code>
+<div class="block">Gets the value of the .NET property EntityState.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -385,8 +395,10 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
                                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -408,11 +420,18 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
                                        <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;complexObject,
                                        java.lang.String&nbsp;complexObjectMemberName)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EntityComplexMemberChanged.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html#EntityComplexMemberChanged-java.lang.String-org.mases.jcobridge.netreflection.NetObject-java.lang.String-">EntityComplexMemberChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html" title="interface in system.data.objects.dataclasses">IEntityChangeTracker</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityMemberName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>complexObject</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>complexObjectMemberName</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.DataClasses.IEntityChangeTracker.EntityComplexMemberChanged" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -426,11 +445,18 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
                                         <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;complexObject,
                                         java.lang.String&nbsp;complexObjectMemberName)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EntityComplexMemberChanging.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html#EntityComplexMemberChanging-java.lang.String-org.mases.jcobridge.netreflection.NetObject-java.lang.String-">EntityComplexMemberChanging</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html" title="interface in system.data.objects.dataclasses">IEntityChangeTracker</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityMemberName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>complexObject</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>complexObjectMemberName</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.DataClasses.IEntityChangeTracker.EntityComplexMemberChanging" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -442,11 +468,16 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
 <h4>EntityMemberChanged</h4>
 <pre>public&nbsp;void&nbsp;EntityMemberChanged(java.lang.String&nbsp;entityMemberName)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EntityMemberChanged.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html#EntityMemberChanged-java.lang.String-">EntityMemberChanged</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html" title="interface in system.data.objects.dataclasses">IEntityChangeTracker</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityMemberName</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.DataClasses.IEntityChangeTracker.EntityMemberChanged" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -458,11 +489,16 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
 <h4>EntityMemberChanging</h4>
 <pre>public&nbsp;void&nbsp;EntityMemberChanging(java.lang.String&nbsp;entityMemberName)
                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EntityMemberChanging.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html#EntityMemberChanging-java.lang.String-">EntityMemberChanging</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html" title="interface in system.data.objects.dataclasses">IEntityChangeTracker</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>entityMemberName</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.DataClasses.IEntityChangeTracker.EntityMemberChanging" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -474,11 +510,16 @@ implements <a href="../../../../system/data/objects/dataclasses/IEntityChangeTra
 <h4>getEntityState</h4>
 <pre>public&nbsp;<a href="../../../../system/data/EntityState.html" title="class in system.data">EntityState</a>&nbsp;getEntityState()
                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property EntityState.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html#getEntityState--">getEntityState</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/data/objects/dataclasses/IEntityChangeTracker.html" title="interface in system.data.objects.dataclasses">IEntityChangeTracker</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Objects.DataClasses.IEntityChangeTracker.EntityState" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

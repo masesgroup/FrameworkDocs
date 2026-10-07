@@ -270,7 +270,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                       <a href="../../../system/codedom/CodeTypeDeclaration.html" title="class in system.codedom">CodeTypeDeclaration</a>&nbsp;derivedType,
                       <a href="../../../system/codedom/CodeMemberMethod.html" title="class in system.codedom">CodeMemberMethod</a>&nbsp;buildMethod,
                       <a href="../../../system/codedom/CodeMemberMethod.html" title="class in system.codedom">CodeMemberMethod</a>&nbsp;dataBindingMethod,
-                      <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;additionalState)</code>&nbsp;</td>
+                      <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;additionalState)</code>
+<div class="block">Invokes the .NET member OnProcessGeneratedCode.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -281,7 +283,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                      java.lang.String&nbsp;tagName,
                      java.lang.String&nbsp;id,
                      <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;attributes,
-                     <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;additionalState)</code>&nbsp;</td>
+                     <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;additionalState)</code>
+<div class="block">Invokes the .NET member PreControlBuilderInit.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -402,8 +406,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -543,9 +549,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                    <a href="../../../system/codedom/CodeMemberMethod.html" title="class in system.codedom">CodeMemberMethod</a>&nbsp;dataBindingMethod,
                                    <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;additionalState)
                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member OnProcessGeneratedCode.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>controlBuilder</code> - the argument of type <code>ControlBuilder</code></dd>
+<dd><code>codeCompileUnit</code> - the argument of type <code>CodeCompileUnit</code></dd>
+<dd><code>baseType</code> - the argument of type <code>CodeTypeDeclaration</code></dd>
+<dd><code>derivedType</code> - the argument of type <code>CodeTypeDeclaration</code></dd>
+<dd><code>buildMethod</code> - the argument of type <code>CodeMemberMethod</code></dd>
+<dd><code>dataBindingMethod</code> - the argument of type <code>CodeMemberMethod</code></dd>
+<dd><code>additionalState</code> - the argument of type <code>IDictionary</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.ControlBuilderInterceptor.OnProcessGeneratedCode" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -564,9 +581,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                                   <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;attributes,
                                   <a href="../../../system/collections/IDictionary.html" title="interface in system.collections">IDictionary</a>&nbsp;additionalState)
                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member PreControlBuilderInit.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>controlBuilder</code> - the argument of type <code>ControlBuilder</code></dd>
+<dd><code>parser</code> - the argument of type <code>TemplateParser</code></dd>
+<dd><code>parentBuilder</code> - the argument of type <code>ControlBuilder</code></dd>
+<dd><code>type</code> - the argument of type <code>NetType</code></dd>
+<dd><code>tagName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>id</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>attributes</code> - the argument of type <code>IDictionary</code></dd>
+<dd><code>additionalState</code> - the argument of type <code>IDictionary</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Compilation.ControlBuilderInterceptor.PreControlBuilderInit" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

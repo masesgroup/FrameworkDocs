@@ -237,7 +237,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/servicemodel/EndpointAddress10.html" title="class in system.servicemodel">EndpointAddress10</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/EndpointAddress10.html#FromEndpointAddress-system.servicemodel.EndpointAddress-">FromEndpointAddress</a></span>(<a href="../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;address)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/EndpointAddress10.html#FromEndpointAddress-system.servicemodel.EndpointAddress-">FromEndpointAddress</a></span>(<a href="../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;address)</code>
+<div class="block">Invokes the .NET member FromEndpointAddress.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -271,7 +273,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/EndpointAddress10.html#GetSchema-system.xml.schema.XmlSchemaSet-">GetSchema</a></span>(<a href="../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;xmlSchemaSet)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/EndpointAddress10.html#GetSchema-system.xml.schema.XmlSchemaSet-">GetSchema</a></span>(<a href="../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;xmlSchemaSet)</code>
+<div class="block">Invokes the .NET member GetSchema.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -281,7 +285,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/EndpointAddress10.html#ToEndpointAddress--">ToEndpointAddress</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/EndpointAddress10.html#ToEndpointAddress--">ToEndpointAddress</a></span>()</code>
+<div class="block">Invokes the .NET member ToEndpointAddress.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -396,8 +402,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -447,20 +455,27 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                                                     <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                                     <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
                                                     <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<div class="block">Invokes the .NET member FromEndpointAddress.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>address</code> - the argument of type <code>EndpointAddress</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.EndpointAddress10.FromEndpointAddress" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -587,29 +602,36 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                                          <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
                                          <a href="../../system/RankException.html" title="class in system">RankException</a>,
                                          <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<div class="block">Invokes the .NET member GetSchema.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>xmlSchemaSet</code> - the argument of type <code>XmlSchemaSet</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
-<dd><code><a href="../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code></dd>
-<dd><code><a href="../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a></code></dd>
-<dd><code><a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
-<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/io/IOException.html" title="class in system.io">IOException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/RankException.html" title="class in system">RankException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.EndpointAddress10.GetSchema" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -638,9 +660,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>ToEndpointAddress</h4>
 <pre>public&nbsp;<a href="../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;ToEndpointAddress()
                                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ToEndpointAddress.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.EndpointAddress10.ToEndpointAddress" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

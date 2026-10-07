@@ -257,11 +257,15 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ServicedComponent.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ServicedComponent.html#Dispose--">Dispose</a></span>()</code>
+<div class="block">Invokes the .NET member Dispose.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ServicedComponent.html#DisposeObject-system.enterpriseservices.ServicedComponent-">DisposeObject</a></span>(<a href="../../system/enterpriseservices/ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a>&nbsp;sc)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/ServicedComponent.html#DisposeObject-system.enterpriseservices.ServicedComponent-">DisposeObject</a></span>(<a href="../../system/enterpriseservices/ServicedComponent.html" title="class in system.enterpriseservices">ServicedComponent</a>&nbsp;sc)</code>
+<div class="block">Invokes the .NET member DisposeObject.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -419,8 +423,10 @@ implements java.lang.AutoCloseable</pre>
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -483,17 +489,20 @@ implements java.lang.AutoCloseable</pre>
                     <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                     <a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
                     <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Invokes the .NET member Dispose.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.ServicedComponent.Dispose" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -511,15 +520,20 @@ implements java.lang.AutoCloseable</pre>
                                  <a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
                                  <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Invokes the .NET member DisposeObject.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sc</code> - the argument of type <code>ServicedComponent</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.ServicedComponent.DisposeObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

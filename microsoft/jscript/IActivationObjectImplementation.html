@@ -228,16 +228,22 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetDefaultThisObject--">GetDefaultThisObject</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetDefaultThisObject--">GetDefaultThisObject</a></span>()</code>
+<div class="block">Invokes the .NET member GetDefaultThisObject.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetField-java.lang.String-int-">GetField</a></span>(java.lang.String&nbsp;name,
-        int&nbsp;lexLevel)</code>&nbsp;</td>
+        int&nbsp;lexLevel)</code>
+<div class="block">Invokes the .NET member GetField.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../microsoft/jscript/GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetGlobalScope--">GetGlobalScope</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetGlobalScope--">GetGlobalScope</a></span>()</code>
+<div class="block">Invokes the .NET member GetGlobalScope.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -271,12 +277,16 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetLocalField-java.lang.String-">GetLocalField</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetLocalField-java.lang.String-">GetLocalField</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Invokes the .NET member GetLocalField.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/IActivationObjectImplementation.html#GetMemberValue-java.lang.String-int-">GetMemberValue</a></span>(java.lang.String&nbsp;name,
-              int&nbsp;lexlevel)</code>&nbsp;</td>
+              int&nbsp;lexlevel)</code>
+<div class="block">Invokes the .NET member GetMemberValue.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>static <a href="../../microsoft/jscript/IActivationObject.html" title="interface in microsoft.jscript">IActivationObject</a></code></td>
@@ -383,8 +393,10 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
                                 throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -404,11 +416,16 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 <h4>GetDefaultThisObject</h4>
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetDefaultThisObject()
                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetDefaultThisObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IActivationObject.html#GetDefaultThisObject--">GetDefaultThisObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IActivationObject.html" title="interface in microsoft.jscript">IActivationObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IActivationObject.GetDefaultThisObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -421,11 +438,19 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 <pre>public&nbsp;<a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a>&nbsp;GetField(java.lang.String&nbsp;name,
                           int&nbsp;lexLevel)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetField.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IActivationObject.html#GetField-java.lang.String-int-">GetField</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IActivationObject.html" title="interface in microsoft.jscript">IActivationObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>lexLevel</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IActivationObject.GetField" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -437,11 +462,16 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 <h4>GetGlobalScope</h4>
 <pre>public&nbsp;<a href="../../microsoft/jscript/GlobalScope.html" title="class in microsoft.jscript">GlobalScope</a>&nbsp;GetGlobalScope()
                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetGlobalScope.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IActivationObject.html#GetGlobalScope--">GetGlobalScope</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IActivationObject.html" title="interface in microsoft.jscript">IActivationObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IActivationObject.GetGlobalScope" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -558,11 +588,18 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 <h4>GetLocalField</h4>
 <pre>public&nbsp;<a href="../../system/reflection/FieldInfo.html" title="class in system.reflection">FieldInfo</a>&nbsp;GetLocalField(java.lang.String&nbsp;name)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetLocalField.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IActivationObject.html#GetLocalField-java.lang.String-">GetLocalField</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IActivationObject.html" title="interface in microsoft.jscript">IActivationObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IActivationObject.GetLocalField" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -575,11 +612,19 @@ implements <a href="../../microsoft/jscript/IActivationObject.html" title="inter
 <pre>public&nbsp;<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;GetMemberValue(java.lang.String&nbsp;name,
                                 int&nbsp;lexlevel)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetMemberValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../microsoft/jscript/IActivationObject.html#GetMemberValue-java.lang.String-int-">GetMemberValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../microsoft/jscript/IActivationObject.html" title="interface in microsoft.jscript">IActivationObject</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>lexlevel</code> - the argument of type <code>int</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.IActivationObject.GetMemberValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

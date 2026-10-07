@@ -227,7 +227,9 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#EnumerateAppDomains-org.mases.jcobridge.netreflection.JCORefOut-">EnumerateAppDomains</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/web/hosting/IAppDomainInfoEnum.html" title="interface in system.web.hosting">IAppDomainInfoEnum</a>&gt;&nbsp;appDomainInfoEnum)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#EnumerateAppDomains-org.mases.jcobridge.netreflection.JCORefOut-">EnumerateAppDomains</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/web/hosting/IAppDomainInfoEnum.html" title="interface in system.web.hosting">IAppDomainInfoEnum</a>&gt;&nbsp;appDomainInfoEnum)</code>
+<div class="block">Invokes the .NET member EnumerateAppDomains.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -261,17 +263,23 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#Shutdown--">Shutdown</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#Shutdown--">Shutdown</a></span>()</code>
+<div class="block">Invokes the .NET member Shutdown.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#ShutdownApplication-java.lang.String-">ShutdownApplication</a></span>(java.lang.String&nbsp;appId)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#ShutdownApplication-java.lang.String-">ShutdownApplication</a></span>(java.lang.String&nbsp;appId)</code>
+<div class="block">Invokes the .NET member ShutdownApplication.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/IProcessHostImplementation.html#StartApplication-java.lang.String-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">StartApplication</a></span>(java.lang.String&nbsp;appId,
                 java.lang.String&nbsp;appPath,
-                <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;runtimeInterface)</code>&nbsp;</td>
+                <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;runtimeInterface)</code>
+<div class="block">Invokes the .NET member StartApplication.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/web/hosting/IProcessHost.html" title="interface in system.web.hosting">IProcessHost</a></code></td>
@@ -378,8 +386,10 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -399,11 +409,16 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
 <h4>EnumerateAppDomains</h4>
 <pre>public&nbsp;void&nbsp;EnumerateAppDomains(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/web/hosting/IAppDomainInfoEnum.html" title="interface in system.web.hosting">IAppDomainInfoEnum</a>&gt;&nbsp;appDomainInfoEnum)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member EnumerateAppDomains.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IProcessHost.html#EnumerateAppDomains-org.mases.jcobridge.netreflection.JCORefOut-">EnumerateAppDomains</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IProcessHost.html" title="interface in system.web.hosting">IProcessHost</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>appDomainInfoEnum</code> - the argument of type <code>JCORefOut&lt;IAppDomainInfoEnum&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IProcessHost.EnumerateAppDomains" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -520,11 +535,14 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
 <h4>Shutdown</h4>
 <pre>public&nbsp;void&nbsp;Shutdown()
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Shutdown.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IProcessHost.html#Shutdown--">Shutdown</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IProcessHost.html" title="interface in system.web.hosting">IProcessHost</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IProcessHost.Shutdown" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -536,11 +554,16 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
 <h4>ShutdownApplication</h4>
 <pre>public&nbsp;void&nbsp;ShutdownApplication(java.lang.String&nbsp;appId)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ShutdownApplication.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IProcessHost.html#ShutdownApplication-java.lang.String-">ShutdownApplication</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IProcessHost.html" title="interface in system.web.hosting">IProcessHost</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>appId</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IProcessHost.ShutdownApplication" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -554,11 +577,18 @@ implements <a href="../../../system/web/hosting/IProcessHost.html" title="interf
                              java.lang.String&nbsp;appPath,
                              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&gt;&nbsp;runtimeInterface)
                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member StartApplication.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/hosting/IProcessHost.html#StartApplication-java.lang.String-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">StartApplication</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/hosting/IProcessHost.html" title="interface in system.web.hosting">IProcessHost</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>appId</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>appPath</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>runtimeInterface</code> - the argument of type <code>JCORefOut&lt;NetObject&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Hosting.IProcessHost.StartApplication" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

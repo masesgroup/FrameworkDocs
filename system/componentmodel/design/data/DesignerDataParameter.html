@@ -215,7 +215,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#DesignerDataParameter-java.lang.String-system.data.DbType-system.data.ParameterDirection-">DesignerDataParameter</a></span>(java.lang.String&nbsp;name,
                      <a href="../../../../system/data/DbType.html" title="class in system.data">DbType</a>&nbsp;dataType,
-                     <a href="../../../../system/data/ParameterDirection.html" title="class in system.data">ParameterDirection</a>&nbsp;direction)</code>&nbsp;</td>
+                     <a href="../../../../system/data/ParameterDirection.html" title="class in system.data">ParameterDirection</a>&nbsp;direction)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -240,11 +242,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/DbType.html" title="class in system.data">DbType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#getDataType--">getDataType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#getDataType--">getDataType</a></span>()</code>
+<div class="block">Gets the value of the .NET property DataType.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/ParameterDirection.html" title="class in system.data">ParameterDirection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#getDirection--">getDirection</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#getDirection--">getDirection</a></span>()</code>
+<div class="block">Gets the value of the .NET property Direction.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -278,7 +284,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#getName--">getName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/design/data/DesignerDataParameter.html#getName--">getName</a></span>()</code>
+<div class="block">Gets the value of the .NET property Name.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -399,8 +407,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -414,9 +424,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                              <a href="../../../../system/data/DbType.html" title="class in system.data">DbType</a>&nbsp;dataType,
                              <a href="../../../../system/data/ParameterDirection.html" title="class in system.data">ParameterDirection</a>&nbsp;direction)
                       throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>dataType</code> - the argument of type <code>DbType</code></dd>
+<dd><code>direction</code> - the argument of type <code>ParameterDirection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Data.DesignerDataParameter.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -455,9 +472,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getDataType</h4>
 <pre>public&nbsp;<a href="../../../../system/data/DbType.html" title="class in system.data">DbType</a>&nbsp;getDataType()
                    throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property DataType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Data.DesignerDataParameter.DataType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -469,9 +491,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getDirection</h4>
 <pre>public&nbsp;<a href="../../../../system/data/ParameterDirection.html" title="class in system.data">ParameterDirection</a>&nbsp;getDirection()
                                 throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Direction.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Data.DesignerDataParameter.Direction" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -578,9 +605,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Name.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Design.Data.DesignerDataParameter.Name" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

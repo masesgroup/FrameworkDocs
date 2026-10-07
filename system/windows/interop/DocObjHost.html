@@ -209,7 +209,9 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/interop/DocObjHost.html#DocObjHost--">DocObjHost</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/interop/DocObjHost.html#DocObjHost--">DocObjHost</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/windows/interop/DocObjHost.html#DocObjHost-java.lang.Object-">DocObjHost</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -269,7 +271,9 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/interop/DocObjHost.html#InitializeLifetimeService--">InitializeLifetimeService</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/windows/interop/DocObjHost.html#InitializeLifetimeService--">InitializeLifetimeService</a></span>()</code>
+<div class="block">Invokes the .NET member InitializeLifetimeService.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -386,14 +390,17 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
                   <a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                   <a href="../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.Interop.DocObjHost.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -407,8 +414,10 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -559,28 +568,33 @@ extends <a href="../../../system/MarshalByRefObject.html" title="class in system
                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                                            <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Invokes the .NET member InitializeLifetimeService.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/MarshalByRefObject.html#InitializeLifetimeService--">InitializeLifetimeService</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/MarshalByRefObject.html" title="class in system">MarshalByRefObject</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/threading/WaitHandleCannotBeOpenedException.html" title="class in system.threading">WaitHandleCannotBeOpenedException</a></code></dd>
-<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
-<dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
-<dd><code><a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
-<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/runtime/remoting/RemotingException.html" title="class in system.runtime.remoting">RemotingException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/threading/WaitHandleCannotBeOpenedException.html" title="class in system.threading">WaitHandleCannotBeOpenedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/io/IOException.html" title="class in system.io">IOException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Windows.Interop.DocObjHost.InitializeLifetimeService" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

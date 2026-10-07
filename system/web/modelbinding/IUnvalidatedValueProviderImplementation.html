@@ -225,7 +225,9 @@ implements <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.h
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/IUnvalidatedValueProviderImplementation.html#ContainsPrefix-java.lang.String-">ContainsPrefix</a></span>(java.lang.String&nbsp;prefix)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/IUnvalidatedValueProviderImplementation.html#ContainsPrefix-java.lang.String-">ContainsPrefix</a></span>(java.lang.String&nbsp;prefix)</code>
+<div class="block">Invokes the .NET member ContainsPrefix.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -259,12 +261,16 @@ implements <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.h
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ValueProviderResult.html" title="class in system.web.modelbinding">ValueProviderResult</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/IUnvalidatedValueProviderImplementation.html#GetValue-java.lang.String-">GetValue</a></span>(java.lang.String&nbsp;key)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/IUnvalidatedValueProviderImplementation.html#GetValue-java.lang.String-">GetValue</a></span>(java.lang.String&nbsp;key)</code>
+<div class="block">Invokes the .NET member GetValue.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/ValueProviderResult.html" title="class in system.web.modelbinding">ValueProviderResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/IUnvalidatedValueProviderImplementation.html#GetValue-java.lang.String-boolean-">GetValue</a></span>(java.lang.String&nbsp;key,
-        boolean&nbsp;skipValidation)</code>&nbsp;</td>
+        boolean&nbsp;skipValidation)</code>
+<div class="block">Invokes the .NET member GetValue.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.html" title="interface in system.web.modelbinding">IUnvalidatedValueProvider</a></code></td>
@@ -378,8 +384,10 @@ implements <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.h
                                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -399,11 +407,18 @@ implements <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.h
 <h4>ContainsPrefix</h4>
 <pre>public&nbsp;boolean&nbsp;ContainsPrefix(java.lang.String&nbsp;prefix)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ContainsPrefix.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/IValueProvider.html#ContainsPrefix-java.lang.String-">ContainsPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/modelbinding/IValueProvider.html" title="interface in system.web.modelbinding">IValueProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>prefix</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.IUnvalidatedValueProvider.ContainsPrefix" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -530,11 +545,18 @@ implements <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.h
 <h4>GetValue</h4>
 <pre>public&nbsp;<a href="../../../system/web/modelbinding/ValueProviderResult.html" title="class in system.web.modelbinding">ValueProviderResult</a>&nbsp;GetValue(java.lang.String&nbsp;key)
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/IValueProvider.html#GetValue-java.lang.String-">GetValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/modelbinding/IValueProvider.html" title="interface in system.web.modelbinding">IValueProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.IUnvalidatedValueProvider.GetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -547,11 +569,19 @@ implements <a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.h
 <pre>public&nbsp;<a href="../../../system/web/modelbinding/ValueProviderResult.html" title="class in system.web.modelbinding">ValueProviderResult</a>&nbsp;GetValue(java.lang.String&nbsp;key,
                                     boolean&nbsp;skipValidation)
                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetValue.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.html#GetValue-java.lang.String-boolean-">GetValue</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/modelbinding/IUnvalidatedValueProvider.html" title="interface in system.web.modelbinding">IUnvalidatedValueProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>skipValidation</code> - the argument of type <code>boolean</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.IUnvalidatedValueProvider.GetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

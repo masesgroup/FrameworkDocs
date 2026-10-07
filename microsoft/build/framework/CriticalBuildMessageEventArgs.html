@@ -239,7 +239,9 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                              int&nbsp;endColumnNumber,
                              java.lang.String&nbsp;message,
                              java.lang.String&nbsp;helpKeyword,
-                             java.lang.String&nbsp;senderName)</code>&nbsp;</td>
+                             java.lang.String&nbsp;senderName)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/CriticalBuildMessageEventArgs.html#CriticalBuildMessageEventArgs-java.lang.String-java.lang.String-java.lang.String-int-int-int-int-java.lang.String-java.lang.String-java.lang.String-system.DateTime-">CriticalBuildMessageEventArgs</a></span>(java.lang.String&nbsp;subcategory,
@@ -252,7 +254,9 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                              java.lang.String&nbsp;message,
                              java.lang.String&nbsp;helpKeyword,
                              java.lang.String&nbsp;senderName,
-                             <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;eventTimestamp)</code>&nbsp;</td>
+                             <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;eventTimestamp)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../microsoft/build/framework/CriticalBuildMessageEventArgs.html#CriticalBuildMessageEventArgs-java.lang.String-java.lang.String-java.lang.String-int-int-int-int-java.lang.String-java.lang.String-java.lang.String-system.DateTime-org.mases.jcobridge.netreflection.NetObject...-">CriticalBuildMessageEventArgs</a></span>(java.lang.String&nbsp;subcategory,
@@ -266,7 +270,9 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                              java.lang.String&nbsp;helpKeyword,
                              java.lang.String&nbsp;senderName,
                              <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;eventTimestamp,
-                             <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;messageArgs)</code>&nbsp;</td>
+                             <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>...&nbsp;messageArgs)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -452,8 +458,10 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -477,12 +485,26 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>subcategory</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>code</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>file</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>lineNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>columnNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>endLineNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>endColumnNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>helpKeyword</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>senderName</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Framework.CriticalBuildMessageEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -509,14 +531,29 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                                      <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
                                      <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>subcategory</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>code</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>file</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>lineNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>columnNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>endLineNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>endColumnNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>helpKeyword</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>senderName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>eventTimestamp</code> - the argument of type <code>DateTime</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Framework.CriticalBuildMessageEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -545,15 +582,31 @@ extends <a href="../../../microsoft/build/framework/BuildMessageEventArgs.html" 
                                      <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
                                      <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
                                      <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>subcategory</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>code</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>file</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>lineNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>columnNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>endLineNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>endColumnNumber</code> - the argument of type <code>int</code></dd>
+<dd><code>message</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>helpKeyword</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>senderName</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>eventTimestamp</code> - the argument of type <code>DateTime</code></dd>
+<dd><code>messageArgs</code> - the argument of type <code>NetObject...</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Framework.CriticalBuildMessageEventArgs.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -212,7 +212,9 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#MetadataViewImplementationAttribute--">MetadataViewImplementationAttribute</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#MetadataViewImplementationAttribute-org.mases.jcobridge.netreflection.NetType-">MetadataViewImplementationAttribute</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;implementationType)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#MetadataViewImplementationAttribute-org.mases.jcobridge.netreflection.NetType-">MetadataViewImplementationAttribute</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;implementationType)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#MetadataViewImplementationAttribute-java.lang.Object-">MetadataViewImplementationAttribute</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -242,7 +244,9 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#getImplementationType--">getImplementationType</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#getImplementationType--">getImplementationType</a></span>()</code>
+<div class="block">Gets the value of the .NET property ImplementationType.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -276,7 +280,9 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#setImplementationType-org.mases.jcobridge.netreflection.NetType-">setImplementationType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ImplementationType)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/MetadataViewImplementationAttribute.html#setImplementationType-org.mases.jcobridge.netreflection.NetType-">setImplementationType</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ImplementationType)</code>
+<div class="block">Sets the value of the .NET property ImplementationType.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -402,9 +408,14 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <h4>MetadataViewImplementationAttribute</h4>
 <pre>public&nbsp;MetadataViewImplementationAttribute(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;implementationType)
                                     throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>implementationType</code> - the argument of type <code>NetType</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.MetadataViewImplementationAttribute.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -418,8 +429,10 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
                                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -458,9 +471,14 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <h4>getImplementationType</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;getImplementationType()
                               throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ImplementationType.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.MetadataViewImplementationAttribute.ImplementationType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -567,9 +585,14 @@ extends <a href="../../../system/Attribute.html" title="class in system">Attribu
 <h4>setImplementationType</h4>
 <pre>public&nbsp;void&nbsp;setImplementationType(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;ImplementationType)
                            throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property ImplementationType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ImplementationType</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.MetadataViewImplementationAttribute.ImplementationType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

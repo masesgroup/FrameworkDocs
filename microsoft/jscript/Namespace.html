@@ -264,7 +264,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../microsoft/jscript/Namespace.html" title="class in microsoft.jscript">Namespace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../microsoft/jscript/Namespace.html#GetNamespace-java.lang.String-microsoft.jscript.vsa.VsaEngine-">GetNamespace</a></span>(java.lang.String&nbsp;name,
-            <a href="../../microsoft/jscript/vsa/VsaEngine.html" title="class in microsoft.jscript.vsa">VsaEngine</a>&nbsp;engine)</code>&nbsp;</td>
+            <a href="../../microsoft/jscript/vsa/VsaEngine.html" title="class in microsoft.jscript.vsa">VsaEngine</a>&nbsp;engine)</code>
+<div class="block">Invokes the .NET member GetNamespace.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -385,8 +387,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -521,9 +525,17 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <pre>public static&nbsp;<a href="../../microsoft/jscript/Namespace.html" title="class in microsoft.jscript">Namespace</a>&nbsp;GetNamespace(java.lang.String&nbsp;name,
                                      <a href="../../microsoft/jscript/vsa/VsaEngine.html" title="class in microsoft.jscript.vsa">VsaEngine</a>&nbsp;engine)
                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetNamespace.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>engine</code> - the argument of type <code>VsaEngine</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.JScript.Namespace.GetNamespace" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

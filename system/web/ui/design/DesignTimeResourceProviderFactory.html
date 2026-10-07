@@ -236,15 +236,21 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/design/DesignTimeResourceProviderFactory.html#CreateDesignTimeGlobalResourceProvider-system.IServiceProvider-java.lang.String-">CreateDesignTimeGlobalResourceProvider</a></span>(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider,
-                                      java.lang.String&nbsp;classKey)</code>&nbsp;</td>
+                                      java.lang.String&nbsp;classKey)</code>
+<div class="block">Invokes the .NET member CreateDesignTimeGlobalResourceProvider.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/design/DesignTimeResourceProviderFactory.html#CreateDesignTimeLocalResourceProvider-system.IServiceProvider-">CreateDesignTimeLocalResourceProvider</a></span>(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/design/DesignTimeResourceProviderFactory.html#CreateDesignTimeLocalResourceProvider-system.IServiceProvider-">CreateDesignTimeLocalResourceProvider</a></span>(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)</code>
+<div class="block">Invokes the .NET member CreateDesignTimeLocalResourceProvider.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/web/ui/design/IDesignTimeResourceWriter.html" title="interface in system.web.ui.design">IDesignTimeResourceWriter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/design/DesignTimeResourceProviderFactory.html#CreateDesignTimeLocalResourceWriter-system.IServiceProvider-">CreateDesignTimeLocalResourceWriter</a></span>(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/web/ui/design/DesignTimeResourceProviderFactory.html#CreateDesignTimeLocalResourceWriter-system.IServiceProvider-">CreateDesignTimeLocalResourceWriter</a></span>(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)</code>
+<div class="block">Invokes the .NET member CreateDesignTimeLocalResourceWriter.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -395,8 +401,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -436,9 +444,17 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public&nbsp;<a href="../../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a>&nbsp;CreateDesignTimeGlobalResourceProvider(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider,
                                                                 java.lang.String&nbsp;classKey)
                                                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateDesignTimeGlobalResourceProvider.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>serviceProvider</code> - the argument of type <code>IServiceProvider</code></dd>
+<dd><code>classKey</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeGlobalResourceProvider" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -450,9 +466,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>CreateDesignTimeLocalResourceProvider</h4>
 <pre>public&nbsp;<a href="../../../../system/web/compilation/IResourceProvider.html" title="interface in system.web.compilation">IResourceProvider</a>&nbsp;CreateDesignTimeLocalResourceProvider(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)
                                                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateDesignTimeLocalResourceProvider.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>serviceProvider</code> - the argument of type <code>IServiceProvider</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceProvider" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -464,9 +487,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>CreateDesignTimeLocalResourceWriter</h4>
 <pre>public&nbsp;<a href="../../../../system/web/ui/design/IDesignTimeResourceWriter.html" title="interface in system.web.ui.design">IDesignTimeResourceWriter</a>&nbsp;CreateDesignTimeLocalResourceWriter(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider)
                                                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CreateDesignTimeLocalResourceWriter.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>serviceProvider</code> - the argument of type <code>IServiceProvider</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.Design.DesignTimeResourceProviderFactory.CreateDesignTimeLocalResourceWriter" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

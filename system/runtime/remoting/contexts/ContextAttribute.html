@@ -224,7 +224,9 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#ContextAttribute-java.lang.String-">ContextAttribute</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#ContextAttribute-java.lang.String-">ContextAttribute</a></span>(java.lang.String&nbsp;name)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -249,7 +251,9 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#Freeze-system.runtime.remoting.contexts.Context-">Freeze</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;newContext)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#Freeze-system.runtime.remoting.contexts.Context-">Freeze</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;newContext)</code>
+<div class="block">Invokes the .NET member Freeze.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -283,20 +287,28 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#getName--">getName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#getName--">getName</a></span>()</code>
+<div class="block">Gets the value of the .NET property Name.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)</code>
+<div class="block">Invokes the .NET member GetPropertiesForNewContext.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#IsContextOK-system.runtime.remoting.contexts.Context-system.runtime.remoting.activation.IConstructionCallMessage-">IsContextOK</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;ctx,
-           <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)</code>&nbsp;</td>
+           <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)</code>
+<div class="block">Invokes the .NET member IsContextOK.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#IsNewContextOK-system.runtime.remoting.contexts.Context-">IsNewContextOK</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;newCtx)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#IsNewContextOK-system.runtime.remoting.contexts.Context-">IsNewContextOK</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;newCtx)</code>
+<div class="block">Invokes the .NET member IsNewContextOK.</div>
+</td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -424,8 +436,10 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -437,9 +451,14 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <h4>ContextAttribute</h4>
 <pre>public&nbsp;ContextAttribute(java.lang.String&nbsp;name)
                  throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.ContextAttribute.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -478,9 +497,14 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <h4>Freeze</h4>
 <pre>public&nbsp;void&nbsp;Freeze(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;newContext)
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Freeze.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newContext</code> - the argument of type <code>Context</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.ContextAttribute.Freeze" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -587,9 +611,14 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <h4>getName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getName()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Name.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.ContextAttribute.Name" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -602,10 +631,15 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <pre>public&nbsp;void&nbsp;GetPropertiesForNewContext(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)
                                 throws java.lang.Throwable,
                                        <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member GetPropertiesForNewContext.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctorMsg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.ContextAttribute.GetPropertiesForNewContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -621,12 +655,20 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                            <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></pre>
+<div class="block">Invokes the .NET member IsContextOK.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the argument of type <code>Context</code></dd>
+<dd><code>ctorMsg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.ContextAttribute.IsContextOK" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -638,9 +680,16 @@ extends <a href="../../../../system/Attribute.html" title="class in system">Attr
 <h4>IsNewContextOK</h4>
 <pre>public&nbsp;boolean&nbsp;IsNewContextOK(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;newCtx)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsNewContextOK.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newCtx</code> - the argument of type <code>Context</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Contexts.ContextAttribute.IsNewContextOK" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

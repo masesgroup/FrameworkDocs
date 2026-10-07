@@ -210,7 +210,9 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#XamlBuildProvider--">XamlBuildProvider</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#XamlBuildProvider--">XamlBuildProvider</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#XamlBuildProvider-java.lang.Object-">XamlBuildProvider</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -240,11 +242,15 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#GenerateCode-system.web.compilation.AssemblyBuilder-">GenerateCode</a></span>(<a href="../../../system/web/compilation/AssemblyBuilder.html" title="class in system.web.compilation">AssemblyBuilder</a>&nbsp;assemblyBuilder)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#GenerateCode-system.web.compilation.AssemblyBuilder-">GenerateCode</a></span>(<a href="../../../system/web/compilation/AssemblyBuilder.html" title="class in system.web.compilation">AssemblyBuilder</a>&nbsp;assemblyBuilder)</code>
+<div class="block">Invokes the .NET member GenerateCode.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#GetGeneratedType-system.codedom.compiler.CompilerResults-">GetGeneratedType</a></span>(<a href="../../../system/codedom/compiler/CompilerResults.html" title="class in system.codedom.compiler">CompilerResults</a>&nbsp;results)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#GetGeneratedType-system.codedom.compiler.CompilerResults-">GetGeneratedType</a></span>(<a href="../../../system/codedom/compiler/CompilerResults.html" title="class in system.codedom.compiler">CompilerResults</a>&nbsp;results)</code>
+<div class="block">Invokes the .NET member GetGeneratedType.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -278,7 +284,9 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/web/compilation/BuildProviderResultFlags.html" title="class in system.web.compilation">BuildProviderResultFlags</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#GetResultFlags-system.codedom.compiler.CompilerResults-">GetResultFlags</a></span>(<a href="../../../system/codedom/compiler/CompilerResults.html" title="class in system.codedom.compiler">CompilerResults</a>&nbsp;results)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/xaml/hosting/XamlBuildProvider.html#GetResultFlags-system.codedom.compiler.CompilerResults-">GetResultFlags</a></span>(<a href="../../../system/codedom/compiler/CompilerResults.html" title="class in system.codedom.compiler">CompilerResults</a>&nbsp;results)</code>
+<div class="block">Invokes the .NET member GetResultFlags.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -390,9 +398,12 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
 <h4>XamlBuildProvider</h4>
 <pre>public&nbsp;XamlBuildProvider()
                   throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xaml.Hosting.XamlBuildProvider.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -406,8 +417,10 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -462,27 +475,32 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
                          <a href="../../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a>,
                          <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
                          <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<div class="block">Invokes the .NET member GenerateCode.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/compilation/BuildProvider.html#GenerateCode-system.web.compilation.AssemblyBuilder-">GenerateCode</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/compilation/BuildProvider.html" title="class in system.web.compilation">BuildProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>assemblyBuilder</code> - the argument of type <code>AssemblyBuilder</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xaml.Hosting.XamlBuildProvider.GenerateCode" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -510,27 +528,34 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
                                 <a href="../../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a>,
                                 <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
                                 <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<div class="block">Invokes the .NET member GetGeneratedType.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/compilation/BuildProvider.html#GetGeneratedType-system.codedom.compiler.CompilerResults-">GetGeneratedType</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/compilation/BuildProvider.html" title="class in system.web.compilation">BuildProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>results</code> - the argument of type <code>CompilerResults</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
-<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code></dd>
-<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/web/HttpException.html" title="class in system.web">HttpException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/xaml/XamlSchemaException.html" title="class in system.xaml">XamlSchemaException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xaml.Hosting.XamlBuildProvider.GetGeneratedType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -637,11 +662,18 @@ extends <a href="../../../system/web/compilation/BuildProvider.html" title="clas
 <h4>GetResultFlags</h4>
 <pre>public&nbsp;<a href="../../../system/web/compilation/BuildProviderResultFlags.html" title="class in system.web.compilation">BuildProviderResultFlags</a>&nbsp;GetResultFlags(<a href="../../../system/codedom/compiler/CompilerResults.html" title="class in system.codedom.compiler">CompilerResults</a>&nbsp;results)
                                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetResultFlags.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/compilation/BuildProvider.html#GetResultFlags-system.codedom.compiler.CompilerResults-">GetResultFlags</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/compilation/BuildProvider.html" title="class in system.web.compilation">BuildProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>results</code> - the argument of type <code>CompilerResults</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xaml.Hosting.XamlBuildProvider.GetResultFlags" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

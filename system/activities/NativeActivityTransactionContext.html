@@ -279,7 +279,9 @@ extends <a href="../../system/activities/NativeActivityContext.html" title="clas
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityTransactionContext.html#SetRuntimeTransaction-system.transactions.Transaction-">SetRuntimeTransaction</a></span>(<a href="../../system/transactions/Transaction.html" title="class in system.transactions">Transaction</a>&nbsp;transaction)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/NativeActivityTransactionContext.html#SetRuntimeTransaction-system.transactions.Transaction-">SetRuntimeTransaction</a></span>(<a href="../../system/transactions/Transaction.html" title="class in system.transactions">Transaction</a>&nbsp;transaction)</code>
+<div class="block">Invokes the .NET member SetRuntimeTransaction.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -408,8 +410,10 @@ extends <a href="../../system/activities/NativeActivityContext.html" title="clas
                                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -575,24 +579,29 @@ extends <a href="../../system/activities/NativeActivityContext.html" title="clas
                                   <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
                                   <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
                                   <a href="../../system/transactions/TransactionException.html" title="class in system.transactions">TransactionException</a></pre>
+<div class="block">Invokes the .NET member SetRuntimeTransaction.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>transaction</code> - the argument of type <code>Transaction</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
-<dd><code><a href="../../system/transactions/TransactionException.html" title="class in system.transactions">TransactionException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/transactions/TransactionException.html" title="class in system.transactions">TransactionException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.NativeActivityTransactionContext.SetRuntimeTransaction" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

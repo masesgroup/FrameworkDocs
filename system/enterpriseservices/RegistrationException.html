@@ -249,7 +249,9 @@ extends <a href="../../system/SystemException.html" title="class in system">Syst
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/enterpriseservices/RegistrationErrorInfo.html" title="class in system.enterpriseservices">RegistrationErrorInfo</a>[]</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/RegistrationException.html#getErrorInfo--">getErrorInfo</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/RegistrationException.html#getErrorInfo--">getErrorInfo</a></span>()</code>
+<div class="block">Gets the value of the .NET property ErrorInfo.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -284,7 +286,9 @@ extends <a href="../../system/SystemException.html" title="class in system">Syst
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/enterpriseservices/RegistrationException.html#GetObjectData-system.runtime.serialization.SerializationInfo-system.runtime.serialization.StreamingContext-">GetObjectData</a></span>(<a href="../../system/runtime/serialization/SerializationInfo.html" title="class in system.runtime.serialization">SerializationInfo</a>&nbsp;info,
-             <a href="../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;ctx)</code>&nbsp;</td>
+             <a href="../../system/runtime/serialization/StreamingContext.html" title="class in system.runtime.serialization">StreamingContext</a>&nbsp;ctx)</code>
+<div class="block">Invokes the .NET member GetObjectData.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -412,6 +416,10 @@ extends <a href="../../system/SystemException.html" title="class in system">Syst
 <h4>RegistrationException</h4>
 <pre>public&nbsp;RegistrationException(java.lang.Object&nbsp;instance)</pre>
 <div class="block">Internal constructor. Use with caution</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
+</dl>
 </li>
 </ul>
 <a name="RegistrationException-java.lang.String-">
@@ -468,9 +476,14 @@ extends <a href="../../system/SystemException.html" title="class in system">Syst
 <h4>getErrorInfo</h4>
 <pre>public final&nbsp;<a href="../../system/enterpriseservices/RegistrationErrorInfo.html" title="class in system.enterpriseservices">RegistrationErrorInfo</a>[]&nbsp;getErrorInfo()
                                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property ErrorInfo.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.RegistrationException.ErrorInfo" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -594,24 +607,30 @@ extends <a href="../../system/SystemException.html" title="class in system">Syst
                           <a href="../../system/FormatException.html" title="class in system">FormatException</a>,
                           <a href="../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a>,
                           <a href="../../system/OverflowException.html" title="class in system">OverflowException</a></pre>
+<div class="block">Invokes the .NET member GetObjectData.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>info</code> - the argument of type <code>SerializationInfo</code></dd>
+<dd><code>ctx</code> - the argument of type <code>StreamingContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code></dd>
-<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/runtime/serialization/SerializationException.html" title="class in system.runtime.serialization">SerializationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.EnterpriseServices.RegistrationException.GetObjectData" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

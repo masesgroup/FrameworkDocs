@@ -276,12 +276,16 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                 <a href="../../../../system/codedom/CodeCompileUnit.html" title="class in system.codedom">CodeCompileUnit</a>&nbsp;compileUnit,
                 <a href="../../../../system/codedom/CodeNamespace.html" title="class in system.codedom">CodeNamespace</a>&nbsp;mainNamespace,
                 <a href="../../../../system/xml/serialization/CodeGenerationOptions.html" title="class in system.xml.serialization">CodeGenerationOptions</a>&nbsp;options,
-                <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)</code>&nbsp;</td>
+                <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)</code>
+<div class="block">Invokes the .NET member ImportAnyElement.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/codedom/CodeExpression.html" title="class in system.codedom">CodeExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/xml/serialization/advanced/SchemaImporterExtension.html#ImportDefaultValue-java.lang.String-java.lang.String-">ImportDefaultValue</a></span>(java.lang.String&nbsp;value,
-                  java.lang.String&nbsp;type)</code>&nbsp;</td>
+                  java.lang.String&nbsp;type)</code>
+<div class="block">Invokes the .NET member ImportDefaultValue.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -293,7 +297,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                 <a href="../../../../system/codedom/CodeCompileUnit.html" title="class in system.codedom">CodeCompileUnit</a>&nbsp;compileUnit,
                 <a href="../../../../system/codedom/CodeNamespace.html" title="class in system.codedom">CodeNamespace</a>&nbsp;mainNamespace,
                 <a href="../../../../system/xml/serialization/CodeGenerationOptions.html" title="class in system.xml.serialization">CodeGenerationOptions</a>&nbsp;options,
-                <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)</code>&nbsp;</td>
+                <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)</code>
+<div class="block">Invokes the .NET member ImportSchemaType.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -304,7 +310,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                 <a href="../../../../system/codedom/CodeCompileUnit.html" title="class in system.codedom">CodeCompileUnit</a>&nbsp;compileUnit,
                 <a href="../../../../system/codedom/CodeNamespace.html" title="class in system.codedom">CodeNamespace</a>&nbsp;mainNamespace,
                 <a href="../../../../system/xml/serialization/CodeGenerationOptions.html" title="class in system.xml.serialization">CodeGenerationOptions</a>&nbsp;options,
-                <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)</code>&nbsp;</td>
+                <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)</code>
+<div class="block">Invokes the .NET member ImportSchemaType.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -425,8 +433,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -567,9 +577,23 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                          <a href="../../../../system/xml/serialization/CodeGenerationOptions.html" title="class in system.xml.serialization">CodeGenerationOptions</a>&nbsp;options,
                                          <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)
                                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ImportAnyElement.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>any</code> - the argument of type <code>XmlSchemaAny</code></dd>
+<dd><code>mixed</code> - the argument of type <code>boolean</code></dd>
+<dd><code>schemas</code> - the argument of type <code>XmlSchemas</code></dd>
+<dd><code>importer</code> - the argument of type <code>XmlSchemaImporter</code></dd>
+<dd><code>compileUnit</code> - the argument of type <code>CodeCompileUnit</code></dd>
+<dd><code>mainNamespace</code> - the argument of type <code>CodeNamespace</code></dd>
+<dd><code>options</code> - the argument of type <code>CodeGenerationOptions</code></dd>
+<dd><code>codeProvider</code> - the argument of type <code>CodeDomProvider</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportAnyElement" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -582,9 +606,17 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <pre>public&nbsp;<a href="../../../../system/codedom/CodeExpression.html" title="class in system.codedom">CodeExpression</a>&nbsp;ImportDefaultValue(java.lang.String&nbsp;value,
                                          java.lang.String&nbsp;type)
                                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ImportDefaultValue.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>type</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportDefaultValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -604,9 +636,24 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                          <a href="../../../../system/xml/serialization/CodeGenerationOptions.html" title="class in system.xml.serialization">CodeGenerationOptions</a>&nbsp;options,
                                          <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)
                                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ImportSchemaType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>ns</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>context</code> - the argument of type <code>XmlSchemaObject</code></dd>
+<dd><code>schemas</code> - the argument of type <code>XmlSchemas</code></dd>
+<dd><code>importer</code> - the argument of type <code>XmlSchemaImporter</code></dd>
+<dd><code>compileUnit</code> - the argument of type <code>CodeCompileUnit</code></dd>
+<dd><code>mainNamespace</code> - the argument of type <code>CodeNamespace</code></dd>
+<dd><code>options</code> - the argument of type <code>CodeGenerationOptions</code></dd>
+<dd><code>codeProvider</code> - the argument of type <code>CodeDomProvider</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportSchemaType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -625,9 +672,23 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
                                          <a href="../../../../system/xml/serialization/CodeGenerationOptions.html" title="class in system.xml.serialization">CodeGenerationOptions</a>&nbsp;options,
                                          <a href="../../../../system/codedom/compiler/CodeDomProvider.html" title="class in system.codedom.compiler">CodeDomProvider</a>&nbsp;codeProvider)
                                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ImportSchemaType.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>type</code> - the argument of type <code>XmlSchemaType</code></dd>
+<dd><code>context</code> - the argument of type <code>XmlSchemaObject</code></dd>
+<dd><code>schemas</code> - the argument of type <code>XmlSchemas</code></dd>
+<dd><code>importer</code> - the argument of type <code>XmlSchemaImporter</code></dd>
+<dd><code>compileUnit</code> - the argument of type <code>CodeCompileUnit</code></dd>
+<dd><code>mainNamespace</code> - the argument of type <code>CodeNamespace</code></dd>
+<dd><code>options</code> - the argument of type <code>CodeGenerationOptions</code></dd>
+<dd><code>codeProvider</code> - the argument of type <code>CodeDomProvider</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Xml.Serialization.Advanced.SchemaImporterExtension.ImportSchemaType" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

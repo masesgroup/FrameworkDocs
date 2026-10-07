@@ -226,12 +226,16 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientMessageInspec
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IClientMessageInspectorImplementation.html#AfterReceiveReply-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.NetObject-">AfterReceiveReply</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;reply,
-                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)</code>&nbsp;</td>
+                 <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)</code>
+<div class="block">Invokes the .NET member AfterReceiveReply.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/IClientMessageInspectorImplementation.html#BeforeSendRequest-org.mases.jcobridge.netreflection.JCORefOut-system.servicemodel.IClientChannel-">BeforeSendRequest</a></span>(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;request,
-                 <a href="../../../system/servicemodel/IClientChannel.html" title="interface in system.servicemodel">IClientChannel</a>&nbsp;channel)</code>&nbsp;</td>
+                 <a href="../../../system/servicemodel/IClientChannel.html" title="interface in system.servicemodel">IClientChannel</a>&nbsp;channel)</code>
+<div class="block">Invokes the .NET member BeforeSendRequest.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -368,8 +372,10 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientMessageInspec
                                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -390,11 +396,17 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientMessageInspec
 <pre>public&nbsp;void&nbsp;AfterReceiveReply(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;reply,
                               <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;correlationState)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member AfterReceiveReply.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IClientMessageInspector.html#AfterReceiveReply-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.NetObject-">AfterReceiveReply</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IClientMessageInspector.html" title="interface in system.servicemodel.dispatcher">IClientMessageInspector</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reply</code> - the argument of type <code>JCORefOut&lt;Message&gt;</code></dd>
+<dd><code>correlationState</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IClientMessageInspector.AfterReceiveReply" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -407,11 +419,19 @@ implements <a href="../../../system/servicemodel/dispatcher/IClientMessageInspec
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;BeforeSendRequest(<a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;request,
                                    <a href="../../../system/servicemodel/IClientChannel.html" title="interface in system.servicemodel">IClientChannel</a>&nbsp;channel)
                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member BeforeSendRequest.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/dispatcher/IClientMessageInspector.html#BeforeSendRequest-org.mases.jcobridge.netreflection.JCORefOut-system.servicemodel.IClientChannel-">BeforeSendRequest</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/dispatcher/IClientMessageInspector.html" title="interface in system.servicemodel.dispatcher">IClientMessageInspector</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>request</code> - the argument of type <code>JCORefOut&lt;Message&gt;</code></dd>
+<dd><code>channel</code> - the argument of type <code>IClientChannel</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Dispatcher.IClientMessageInspector.BeforeSendRequest" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

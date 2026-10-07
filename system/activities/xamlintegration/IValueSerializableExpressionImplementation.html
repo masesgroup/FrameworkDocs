@@ -225,11 +225,15 @@ implements <a href="../../../system/activities/xamlintegration/IValueSerializabl
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/IValueSerializableExpressionImplementation.html#CanConvertToString-system.windows.markup.IValueSerializerContext-">CanConvertToString</a></span>(<a href="../../../system/windows/markup/IValueSerializerContext.html" title="interface in system.windows.markup">IValueSerializerContext</a>&nbsp;context)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/IValueSerializableExpressionImplementation.html#CanConvertToString-system.windows.markup.IValueSerializerContext-">CanConvertToString</a></span>(<a href="../../../system/windows/markup/IValueSerializerContext.html" title="interface in system.windows.markup">IValueSerializerContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member CanConvertToString.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/IValueSerializableExpressionImplementation.html#ConvertToString-system.windows.markup.IValueSerializerContext-">ConvertToString</a></span>(<a href="../../../system/windows/markup/IValueSerializerContext.html" title="interface in system.windows.markup">IValueSerializerContext</a>&nbsp;context)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/IValueSerializableExpressionImplementation.html#ConvertToString-system.windows.markup.IValueSerializerContext-">ConvertToString</a></span>(<a href="../../../system/windows/markup/IValueSerializerContext.html" title="interface in system.windows.markup">IValueSerializerContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member ConvertToString.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -366,8 +370,10 @@ implements <a href="../../../system/activities/xamlintegration/IValueSerializabl
                                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -387,11 +393,18 @@ implements <a href="../../../system/activities/xamlintegration/IValueSerializabl
 <h4>CanConvertToString</h4>
 <pre>public&nbsp;boolean&nbsp;CanConvertToString(<a href="../../../system/windows/markup/IValueSerializerContext.html" title="interface in system.windows.markup">IValueSerializerContext</a>&nbsp;context)
                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member CanConvertToString.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/xamlintegration/IValueSerializableExpression.html#CanConvertToString-system.windows.markup.IValueSerializerContext-">CanConvertToString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/xamlintegration/IValueSerializableExpression.html" title="interface in system.activities.xamlintegration">IValueSerializableExpression</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the argument of type <code>IValueSerializerContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.XamlIntegration.IValueSerializableExpression.CanConvertToString" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -403,11 +416,18 @@ implements <a href="../../../system/activities/xamlintegration/IValueSerializabl
 <h4>ConvertToString</h4>
 <pre>public&nbsp;java.lang.String&nbsp;ConvertToString(<a href="../../../system/windows/markup/IValueSerializerContext.html" title="interface in system.windows.markup">IValueSerializerContext</a>&nbsp;context)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ConvertToString.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/xamlintegration/IValueSerializableExpression.html#ConvertToString-system.windows.markup.IValueSerializerContext-">ConvertToString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/xamlintegration/IValueSerializableExpression.html" title="interface in system.activities.xamlintegration">IValueSerializableExpression</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>context</code> - the argument of type <code>IValueSerializerContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.XamlIntegration.IValueSerializableExpression.ConvertToString" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

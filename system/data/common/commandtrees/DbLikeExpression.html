@@ -235,7 +235,9 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></span>(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></span>(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)</code>
+<div class="block">Invokes the .NET member Accept.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/data/common/commandtrees/DbLikeExpression.html" title="class in system.data.common.commandtrees">DbLikeExpression</a></code></td>
@@ -245,11 +247,15 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#getArgument--">getArgument</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#getArgument--">getArgument</a></span>()</code>
+<div class="block">Gets the value of the .NET property Argument.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#getEscape--">getEscape</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#getEscape--">getEscape</a></span>()</code>
+<div class="block">Gets the value of the .NET property Escape.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -283,7 +289,9 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#getPattern--">getPattern</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/common/commandtrees/DbLikeExpression.html#getPattern--">getPattern</a></span>()</code>
+<div class="block">Gets the value of the .NET property Pattern.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -411,8 +419,10 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -433,12 +443,17 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <pre>public&nbsp;void&nbsp;Accept(<a href="../../../../system/data/common/commandtrees/DbExpressionVisitor.html" title="class in system.data.common.commandtrees">DbExpressionVisitor</a>&nbsp;visitor)
             throws java.lang.Throwable,
                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Invokes the .NET member Accept.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/data/common/commandtrees/DbExpression.html#Accept-system.data.common.commandtrees.DbExpressionVisitor-">Accept</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>visitor</code> - the argument of type <code>DbExpressionVisitor</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbLikeExpression.Accept" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -469,9 +484,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getArgument</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;getArgument()
                          throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Argument.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbLikeExpression.Argument" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -483,9 +503,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getEscape</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;getEscape()
                        throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Escape.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbLikeExpression.Escape" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -592,9 +617,14 @@ extends <a href="../../../../system/data/common/commandtrees/DbExpression.html" 
 <h4>getPattern</h4>
 <pre>public&nbsp;<a href="../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;getPattern()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Pattern.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.CommandTrees.DbLikeExpression.Pattern" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -227,12 +227,16 @@ implements <a href="../../../system/workflow/runtime/IPendingWork.html" title="i
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/IPendingWorkImplementation.html#Commit-system.transactions.Transaction-system.collections.ICollection-">Commit</a></span>(<a href="../../../system/transactions/Transaction.html" title="class in system.transactions">Transaction</a>&nbsp;transaction,
-      <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)</code>&nbsp;</td>
+      <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)</code>
+<div class="block">Invokes the .NET member Commit.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/IPendingWorkImplementation.html#Complete-boolean-system.collections.ICollection-">Complete</a></span>(boolean&nbsp;succeeded,
-        <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)</code>&nbsp;</td>
+        <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)</code>
+<div class="block">Invokes the .NET member Complete.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -266,7 +270,9 @@ implements <a href="../../../system/workflow/runtime/IPendingWork.html" title="i
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/IPendingWorkImplementation.html#MustCommit-system.collections.ICollection-">MustCommit</a></span>(<a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/IPendingWorkImplementation.html#MustCommit-system.collections.ICollection-">MustCommit</a></span>(<a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)</code>
+<div class="block">Invokes the .NET member MustCommit.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/workflow/runtime/IPendingWork.html" title="interface in system.workflow.runtime">IPendingWork</a></code></td>
@@ -373,8 +379,10 @@ implements <a href="../../../system/workflow/runtime/IPendingWork.html" title="i
                            throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -395,11 +403,17 @@ implements <a href="../../../system/workflow/runtime/IPendingWork.html" title="i
 <pre>public&nbsp;void&nbsp;Commit(<a href="../../../system/transactions/Transaction.html" title="class in system.transactions">Transaction</a>&nbsp;transaction,
                    <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Commit.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/workflow/runtime/IPendingWork.html#Commit-system.transactions.Transaction-system.collections.ICollection-">Commit</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/runtime/IPendingWork.html" title="interface in system.workflow.runtime">IPendingWork</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>transaction</code> - the argument of type <code>Transaction</code></dd>
+<dd><code>items</code> - the argument of type <code>ICollection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.Runtime.IPendingWork.Commit" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -412,11 +426,17 @@ implements <a href="../../../system/workflow/runtime/IPendingWork.html" title="i
 <pre>public&nbsp;void&nbsp;Complete(boolean&nbsp;succeeded,
                      <a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Complete.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/workflow/runtime/IPendingWork.html#Complete-boolean-system.collections.ICollection-">Complete</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/runtime/IPendingWork.html" title="interface in system.workflow.runtime">IPendingWork</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>succeeded</code> - the argument of type <code>boolean</code></dd>
+<dd><code>items</code> - the argument of type <code>ICollection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.Runtime.IPendingWork.Complete" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -533,11 +553,18 @@ implements <a href="../../../system/workflow/runtime/IPendingWork.html" title="i
 <h4>MustCommit</h4>
 <pre>public&nbsp;boolean&nbsp;MustCommit(<a href="../../../system/collections/ICollection.html" title="interface in system.collections">ICollection</a>&nbsp;items)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member MustCommit.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/workflow/runtime/IPendingWork.html#MustCommit-system.collections.ICollection-">MustCommit</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/runtime/IPendingWork.html" title="interface in system.workflow.runtime">IPendingWork</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>items</code> - the argument of type <code>ICollection</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.Runtime.IPendingWork.MustCommit" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

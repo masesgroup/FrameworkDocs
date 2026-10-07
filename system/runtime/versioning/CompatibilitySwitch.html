@@ -264,11 +264,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/versioning/CompatibilitySwitch.html#GetValue-java.lang.String-">GetValue</a></span>(java.lang.String&nbsp;compatibilitySwitchName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/versioning/CompatibilitySwitch.html#GetValue-java.lang.String-">GetValue</a></span>(java.lang.String&nbsp;compatibilitySwitchName)</code>
+<div class="block">Invokes the .NET member GetValue.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/versioning/CompatibilitySwitch.html#IsEnabled-java.lang.String-">IsEnabled</a></span>(java.lang.String&nbsp;compatibilitySwitchName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/versioning/CompatibilitySwitch.html#IsEnabled-java.lang.String-">IsEnabled</a></span>(java.lang.String&nbsp;compatibilitySwitchName)</code>
+<div class="block">Invokes the .NET member IsEnabled.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -389,8 +393,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -524,9 +530,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>GetValue</h4>
 <pre>public static&nbsp;java.lang.String&nbsp;GetValue(java.lang.String&nbsp;compatibilitySwitchName)
                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetValue.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>compatibilitySwitchName</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Versioning.CompatibilitySwitch.GetValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -538,9 +551,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>IsEnabled</h4>
 <pre>public static&nbsp;boolean&nbsp;IsEnabled(java.lang.String&nbsp;compatibilitySwitchName)
                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsEnabled.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>compatibilitySwitchName</code> - the argument of type <code>java.lang.String</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Versioning.CompatibilitySwitch.IsEnabled" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

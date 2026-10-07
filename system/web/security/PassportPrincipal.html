@@ -221,7 +221,9 @@ extends <a href="../../../system/security/principal/GenericPrincipal.html" title
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/security/PassportPrincipal.html#PassportPrincipal-system.web.security.PassportIdentity-java.lang.String:A-">PassportPrincipal</a></span>(<a href="../../../system/web/security/PassportIdentity.html" title="class in system.web.security">PassportIdentity</a>&nbsp;identity,
-                 java.lang.String[]&nbsp;roles)</code>&nbsp;</td>
+                 java.lang.String[]&nbsp;roles)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -407,8 +409,10 @@ extends <a href="../../../system/security/principal/GenericPrincipal.html" title
                   throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -425,13 +429,19 @@ extends <a href="../../../system/security/principal/GenericPrincipal.html" title
                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>identity</code> - the argument of type <code>PassportIdentity</code></dd>
+<dd><code>roles</code> - the argument of type <code>java.lang.String[]</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.Security.PassportPrincipal.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

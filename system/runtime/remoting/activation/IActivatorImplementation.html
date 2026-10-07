@@ -227,7 +227,9 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#Activate-system.runtime.remoting.activation.IConstructionCallMessage-">Activate</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#Activate-system.runtime.remoting.activation.IConstructionCallMessage-">Activate</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member Activate.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -261,15 +263,21 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/activation/ActivatorLevel.html" title="class in system.runtime.remoting.activation">ActivatorLevel</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#getLevel--">getLevel</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#getLevel--">getLevel</a></span>()</code>
+<div class="block">Gets the value of the .NET property Level.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#getNextActivator--">getNextActivator</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#getNextActivator--">getNextActivator</a></span>()</code>
+<div class="block">Gets the value of the .NET property NextActivator.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#setNextActivator-system.runtime.remoting.activation.IActivator-">setNextActivator</a></span>(<a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a>&nbsp;NextActivator)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/IActivatorImplementation.html#setNextActivator-system.runtime.remoting.activation.IActivator-">setNextActivator</a></span>(<a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a>&nbsp;NextActivator)</code>
+<div class="block">Sets the value of the .NET property NextActivator.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a></code></td>
@@ -376,8 +384,10 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
                          throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -397,11 +407,18 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
 <h4>Activate</h4>
 <pre>public&nbsp;<a href="../../../../system/runtime/remoting/activation/IConstructionReturnMessage.html" title="interface in system.runtime.remoting.activation">IConstructionReturnMessage</a>&nbsp;Activate(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Activate.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/activation/IActivator.html#Activate-system.runtime.remoting.activation.IConstructionCallMessage-">Activate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.IActivator.Activate" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -518,11 +535,16 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
 <h4>getLevel</h4>
 <pre>public&nbsp;<a href="../../../../system/runtime/remoting/activation/ActivatorLevel.html" title="class in system.runtime.remoting.activation">ActivatorLevel</a>&nbsp;getLevel()
                         throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Level.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/activation/IActivator.html#getLevel--">getLevel</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.IActivator.Level" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -534,11 +556,16 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
 <h4>getNextActivator</h4>
 <pre>public&nbsp;<a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a>&nbsp;getNextActivator()
                             throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property NextActivator.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/activation/IActivator.html#getNextActivator--">getNextActivator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.IActivator.NextActivator" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -550,11 +577,16 @@ implements <a href="../../../../system/runtime/remoting/activation/IActivator.ht
 <h4>setNextActivator</h4>
 <pre>public&nbsp;void&nbsp;setNextActivator(<a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a>&nbsp;NextActivator)
                       throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property NextActivator.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/activation/IActivator.html#setNextActivator-system.runtime.remoting.activation.IActivator-">setNextActivator</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/activation/IActivator.html" title="interface in system.runtime.remoting.activation">IActivator</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>NextActivator</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.IActivator.NextActivator" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

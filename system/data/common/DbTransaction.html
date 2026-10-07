@@ -252,19 +252,27 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#Commit--">Commit</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#Commit--">Commit</a></span>()</code>
+<div class="block">Invokes the .NET member Commit.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#Dispose--">Dispose</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#Dispose--">Dispose</a></span>()</code>
+<div class="block">Invokes the .NET member Dispose.</div>
+</td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../system/data/common/DbConnection.html" title="class in system.data.common">DbConnection</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#getConnection--">getConnection</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#getConnection--">getConnection</a></span>()</code>
+<div class="block">Gets the value of the .NET property Connection.</div>
+</td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/data/IsolationLevel.html" title="class in system.data">IsolationLevel</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#getIsolationLevel--">getIsolationLevel</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#getIsolationLevel--">getIsolationLevel</a></span>()</code>
+<div class="block">Gets the value of the .NET property IsolationLevel.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -298,7 +306,9 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#Rollback--">Rollback</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DbTransaction.html#Rollback--">Rollback</a></span>()</code>
+<div class="block">Invokes the .NET member Rollback.</div>
+</td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -426,8 +436,10 @@ implements java.lang.AutoCloseable</pre>
               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -482,9 +494,12 @@ implements java.lang.AutoCloseable</pre>
 <h4>Commit</h4>
 <pre>public&nbsp;void&nbsp;Commit()
             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Commit.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.DbTransaction.Commit" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -496,9 +511,12 @@ implements java.lang.AutoCloseable</pre>
 <h4>Dispose</h4>
 <pre>public&nbsp;void&nbsp;Dispose()
              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Dispose.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.DbTransaction.Dispose" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -510,9 +528,14 @@ implements java.lang.AutoCloseable</pre>
 <h4>getConnection</h4>
 <pre>public&nbsp;<a href="../../../system/data/common/DbConnection.html" title="class in system.data.common">DbConnection</a>&nbsp;getConnection()
                            throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Connection.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.DbTransaction.Connection" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -524,9 +547,14 @@ implements java.lang.AutoCloseable</pre>
 <h4>getIsolationLevel</h4>
 <pre>public&nbsp;<a href="../../../system/data/IsolationLevel.html" title="class in system.data">IsolationLevel</a>&nbsp;getIsolationLevel()
                                  throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property IsolationLevel.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.DbTransaction.IsolationLevel" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -633,9 +661,12 @@ implements java.lang.AutoCloseable</pre>
 <h4>Rollback</h4>
 <pre>public&nbsp;void&nbsp;Rollback()
               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member Rollback.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.Common.DbTransaction.Rollback" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

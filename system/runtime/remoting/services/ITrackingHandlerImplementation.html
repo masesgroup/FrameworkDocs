@@ -226,7 +226,9 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/ITrackingHandlerImplementation.html#DisconnectedObject-org.mases.jcobridge.netreflection.NetObject-">DisconnectedObject</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/ITrackingHandlerImplementation.html#DisconnectedObject-org.mases.jcobridge.netreflection.NetObject-">DisconnectedObject</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)</code>
+<div class="block">Invokes the .NET member DisconnectedObject.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -261,7 +263,9 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/ITrackingHandlerImplementation.html#MarshaledObject-org.mases.jcobridge.netreflection.NetObject-system.runtime.remoting.ObjRef-">MarshaledObject</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
-               <a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;or)</code>&nbsp;</td>
+               <a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;or)</code>
+<div class="block">Invokes the .NET member MarshaledObject.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/runtime/remoting/services/ITrackingHandler.html" title="interface in system.runtime.remoting.services">ITrackingHandler</a></code></td>
@@ -272,7 +276,9 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/services/ITrackingHandlerImplementation.html#UnmarshaledObject-org.mases.jcobridge.netreflection.NetObject-system.runtime.remoting.ObjRef-">UnmarshaledObject</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
-                 <a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;or)</code>&nbsp;</td>
+                 <a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;or)</code>
+<div class="block">Invokes the .NET member UnmarshaledObject.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -373,8 +379,10 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
                                throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -394,11 +402,16 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
 <h4>DisconnectedObject</h4>
 <pre>public&nbsp;void&nbsp;DisconnectedObject(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj)
                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member DisconnectedObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/services/ITrackingHandler.html#DisconnectedObject-org.mases.jcobridge.netreflection.NetObject-">DisconnectedObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/services/ITrackingHandler.html" title="interface in system.runtime.remoting.services">ITrackingHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Services.ITrackingHandler.DisconnectedObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -516,11 +529,17 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
 <pre>public&nbsp;void&nbsp;MarshaledObject(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
                             <a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;or)
                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member MarshaledObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/services/ITrackingHandler.html#MarshaledObject-org.mases.jcobridge.netreflection.NetObject-system.runtime.remoting.ObjRef-">MarshaledObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/services/ITrackingHandler.html" title="interface in system.runtime.remoting.services">ITrackingHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>or</code> - the argument of type <code>ObjRef</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Services.ITrackingHandler.MarshaledObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -554,11 +573,17 @@ implements <a href="../../../../system/runtime/remoting/services/ITrackingHandle
 <pre>public&nbsp;void&nbsp;UnmarshaledObject(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;obj,
                               <a href="../../../../system/runtime/remoting/ObjRef.html" title="class in system.runtime.remoting">ObjRef</a>&nbsp;or)
                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member UnmarshaledObject.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/services/ITrackingHandler.html#UnmarshaledObject-org.mases.jcobridge.netreflection.NetObject-system.runtime.remoting.ObjRef-">UnmarshaledObject</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/runtime/remoting/services/ITrackingHandler.html" title="interface in system.runtime.remoting.services">ITrackingHandler</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj</code> - the argument of type <code>NetObject</code></dd>
+<dd><code>or</code> - the argument of type <code>ObjRef</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Services.ITrackingHandler.UnmarshaledObject" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

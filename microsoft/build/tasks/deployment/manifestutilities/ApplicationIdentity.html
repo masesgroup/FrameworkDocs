@@ -212,12 +212,16 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../microsoft/build/tasks/deployment/manifestutilities/ApplicationIdentity.html#ApplicationIdentity-java.lang.String-microsoft.build.tasks.deployment.manifestutilities.AssemblyIdentity-microsoft.build.tasks.deployment.manifestutilities.AssemblyIdentity-">ApplicationIdentity</a></span>(java.lang.String&nbsp;url,
                    <a href="../../../../../microsoft/build/tasks/deployment/manifestutilities/AssemblyIdentity.html" title="class in microsoft.build.tasks.deployment.manifestutilities">AssemblyIdentity</a>&nbsp;deployManifestIdentity,
-                   <a href="../../../../../microsoft/build/tasks/deployment/manifestutilities/AssemblyIdentity.html" title="class in microsoft.build.tasks.deployment.manifestutilities">AssemblyIdentity</a>&nbsp;applicationManifestIdentity)</code>&nbsp;</td>
+                   <a href="../../../../../microsoft/build/tasks/deployment/manifestutilities/AssemblyIdentity.html" title="class in microsoft.build.tasks.deployment.manifestutilities">AssemblyIdentity</a>&nbsp;applicationManifestIdentity)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../microsoft/build/tasks/deployment/manifestutilities/ApplicationIdentity.html#ApplicationIdentity-java.lang.String-java.lang.String-java.lang.String-">ApplicationIdentity</a></span>(java.lang.String&nbsp;url,
                    java.lang.String&nbsp;deployManifestPath,
-                   java.lang.String&nbsp;applicationManifestPath)</code>&nbsp;</td>
+                   java.lang.String&nbsp;applicationManifestPath)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -389,8 +393,10 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
                     throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -405,10 +411,17 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
                            <a href="../../../../../microsoft/build/tasks/deployment/manifestutilities/AssemblyIdentity.html" title="class in microsoft.build.tasks.deployment.manifestutilities">AssemblyIdentity</a>&nbsp;applicationManifestIdentity)
                     throws java.lang.Throwable,
                            <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>deployManifestIdentity</code> - the argument of type <code>AssemblyIdentity</code></dd>
+<dd><code>applicationManifestIdentity</code> - the argument of type <code>AssemblyIdentity</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -442,29 +455,36 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
                            <a href="../../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a>,
                            <a href="../../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a>,
                            <a href="../../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>url</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>deployManifestPath</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>applicationManifestPath</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code></dd>
-<dd><code><a href="../../../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code></dd>
-<dd><code><a href="../../../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code></dd>
-<dd><code><a href="../../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code></dd>
-<dd><code><a href="../../../../../system/io/IOException.html" title="class in system.io">IOException</a></code></dd>
-<dd><code><a href="../../../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code></dd>
-<dd><code><a href="../../../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code></dd>
-<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code></dd>
-<dd><code><a href="../../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code></dd>
-<dd><code><a href="../../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a></code></dd>
-<dd><code><a href="../../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/io/PathTooLongException.html" title="class in system.io">PathTooLongException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/io/FileNotFoundException.html" title="class in system.io">FileNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/io/DirectoryNotFoundException.html" title="class in system.io">DirectoryNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/UnauthorizedAccessException.html" title="class in system">UnauthorizedAccessException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/io/IOException.html" title="class in system.io">IOException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/io/DriveNotFoundException.html" title="class in system.io">DriveNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/OperationCanceledException.html" title="class in system">OperationCanceledException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/xml/schema/XmlSchemaException.html" title="class in system.xml.schema">XmlSchemaException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../../../system/xml/xpath/XPathException.html" title="class in system.xml.xpath">XPathException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/Microsoft.Build.Tasks.Deployment.ManifestUtilities.ApplicationIdentity.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

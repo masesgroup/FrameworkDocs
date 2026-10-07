@@ -254,7 +254,9 @@ implements <a href="../../../system/web/ui/ITemplate.html" title="interface in s
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/ITemplateImplementation.html#InstantiateIn-system.web.ui.Control-">InstantiateIn</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/ui/ITemplateImplementation.html#InstantiateIn-system.web.ui.Control-">InstantiateIn</a></span>(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)</code>
+<div class="block">Invokes the .NET member InstantiateIn.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/web/ui/ITemplate.html" title="interface in system.web.ui">ITemplate</a></code></td>
@@ -361,8 +363,10 @@ implements <a href="../../../system/web/ui/ITemplate.html" title="interface in s
                         throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -487,11 +491,16 @@ implements <a href="../../../system/web/ui/ITemplate.html" title="interface in s
 <h4>InstantiateIn</h4>
 <pre>public&nbsp;void&nbsp;InstantiateIn(<a href="../../../system/web/ui/Control.html" title="class in system.web.ui">Control</a>&nbsp;container)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member InstantiateIn.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/web/ui/ITemplate.html#InstantiateIn-system.web.ui.Control-">InstantiateIn</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/web/ui/ITemplate.html" title="interface in system.web.ui">ITemplate</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>container</code> - the argument of type <code>Control</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.UI.ITemplate.InstantiateIn" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -211,7 +211,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#CompositionException--">CompositionException</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#CompositionException-system.collections.generic.IEnumerable_1-">CompositionException</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;errors)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#CompositionException-system.collections.generic.IEnumerable_1-">CompositionException</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;errors)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#CompositionException-org.mases.jcobridge.netreflection.NetException-">CompositionException</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetException.html" title="class in org.mases.jcobridge.netreflection">NetException</a>&nbsp;cause)</code>&nbsp;</td>
@@ -251,7 +253,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#getErrors--">getErrors</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#getErrors--">getErrors</a></span>()</code>
+<div class="block">Gets the value of the .NET property Errors.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -285,7 +289,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#getRootCauses--">getRootCauses</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/componentmodel/composition/CompositionException.html#getRootCauses--">getRootCauses</a></span>()</code>
+<div class="block">Gets the value of the .NET property RootCauses.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -409,14 +415,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
                             <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                             <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>errors</code> - the argument of type <code>IEnumerable_1</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.CompositionException.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -437,6 +448,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <h4>CompositionException</h4>
 <pre>public&nbsp;CompositionException(java.lang.Object&nbsp;instance)</pre>
 <div class="block">Internal constructor. Use with caution</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
+</dl>
 </li>
 </ul>
 <a name="CompositionException-java.lang.String-">
@@ -493,9 +508,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
 <h4>getErrors</h4>
 <pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getErrors()
                                throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Errors.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.CompositionException.Errors" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -608,14 +628,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetException.html" t
                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
                                           <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Gets the value of the .NET property RootCauses.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ComponentModel.Composition.CompositionException.RootCauses" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -223,7 +223,9 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#UrlAttribute-java.lang.String-">UrlAttribute</a></span>(java.lang.String&nbsp;callsiteURL)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#UrlAttribute-java.lang.String-">UrlAttribute</a></span>(java.lang.String&nbsp;callsiteURL)</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -278,16 +280,22 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></span>(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)</code>
+<div class="block">Invokes the .NET member GetPropertiesForNewContext.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#getUrlValue--">getUrlValue</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#getUrlValue--">getUrlValue</a></span>()</code>
+<div class="block">Gets the value of the .NET property UrlValue.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/remoting/activation/UrlAttribute.html#IsContextOK-system.runtime.remoting.contexts.Context-system.runtime.remoting.activation.IConstructionCallMessage-">IsContextOK</a></span>(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;ctx,
-           <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>&nbsp;</td>
+           <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)</code>
+<div class="block">Invokes the .NET member IsContextOK.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -422,8 +430,10 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -436,10 +446,15 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
 <pre>public&nbsp;UrlAttribute(java.lang.String&nbsp;callsiteURL)
              throws java.lang.Throwable,
                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>callsiteURL</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.UrlAttribute.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -573,11 +588,16 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
 <h4>GetPropertiesForNewContext</h4>
 <pre>public&nbsp;void&nbsp;GetPropertiesForNewContext(<a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;ctorMsg)
                                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member GetPropertiesForNewContext.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#GetPropertiesForNewContext-system.runtime.remoting.activation.IConstructionCallMessage-">GetPropertiesForNewContext</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html" title="class in system.runtime.remoting.contexts">ContextAttribute</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctorMsg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.UrlAttribute.GetPropertiesForNewContext" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -589,9 +609,14 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
 <h4>getUrlValue</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getUrlValue()
                              throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property UrlValue.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.UrlAttribute.UrlValue" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -604,11 +629,19 @@ extends <a href="../../../../system/runtime/remoting/contexts/ContextAttribute.h
 <pre>public&nbsp;boolean&nbsp;IsContextOK(<a href="../../../../system/runtime/remoting/contexts/Context.html" title="class in system.runtime.remoting.contexts">Context</a>&nbsp;ctx,
                            <a href="../../../../system/runtime/remoting/activation/IConstructionCallMessage.html" title="interface in system.runtime.remoting.activation">IConstructionCallMessage</a>&nbsp;msg)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member IsContextOK.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html#IsContextOK-system.runtime.remoting.contexts.Context-system.runtime.remoting.activation.IConstructionCallMessage-">IsContextOK</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/runtime/remoting/contexts/ContextAttribute.html" title="class in system.runtime.remoting.contexts">ContextAttribute</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the argument of type <code>Context</code></dd>
+<dd><code>msg</code> - the argument of type <code>IConstructionCallMessage</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.Activation.UrlAttribute.IsContextOK" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

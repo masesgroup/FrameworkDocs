@@ -226,12 +226,16 @@ implements <a href="../../../system/servicemodel/description/IWsdlExportExtensio
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IWsdlExportExtensionImplementation.html#ExportContract-system.servicemodel.description.WsdlExporter-system.servicemodel.description.WsdlContractConversionContext-">ExportContract</a></span>(<a href="../../../system/servicemodel/description/WsdlExporter.html" title="class in system.servicemodel.description">WsdlExporter</a>&nbsp;exporter,
-              <a href="../../../system/servicemodel/description/WsdlContractConversionContext.html" title="class in system.servicemodel.description">WsdlContractConversionContext</a>&nbsp;context)</code>&nbsp;</td>
+              <a href="../../../system/servicemodel/description/WsdlContractConversionContext.html" title="class in system.servicemodel.description">WsdlContractConversionContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member ExportContract.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/IWsdlExportExtensionImplementation.html#ExportEndpoint-system.servicemodel.description.WsdlExporter-system.servicemodel.description.WsdlEndpointConversionContext-">ExportEndpoint</a></span>(<a href="../../../system/servicemodel/description/WsdlExporter.html" title="class in system.servicemodel.description">WsdlExporter</a>&nbsp;exporter,
-              <a href="../../../system/servicemodel/description/WsdlEndpointConversionContext.html" title="class in system.servicemodel.description">WsdlEndpointConversionContext</a>&nbsp;context)</code>&nbsp;</td>
+              <a href="../../../system/servicemodel/description/WsdlEndpointConversionContext.html" title="class in system.servicemodel.description">WsdlEndpointConversionContext</a>&nbsp;context)</code>
+<div class="block">Invokes the .NET member ExportEndpoint.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -368,8 +372,10 @@ implements <a href="../../../system/servicemodel/description/IWsdlExportExtensio
                                    throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -390,11 +396,17 @@ implements <a href="../../../system/servicemodel/description/IWsdlExportExtensio
 <pre>public&nbsp;void&nbsp;ExportContract(<a href="../../../system/servicemodel/description/WsdlExporter.html" title="class in system.servicemodel.description">WsdlExporter</a>&nbsp;exporter,
                            <a href="../../../system/servicemodel/description/WsdlContractConversionContext.html" title="class in system.servicemodel.description">WsdlContractConversionContext</a>&nbsp;context)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ExportContract.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#ExportContract-system.servicemodel.description.WsdlExporter-system.servicemodel.description.WsdlContractConversionContext-">ExportContract</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exporter</code> - the argument of type <code>WsdlExporter</code></dd>
+<dd><code>context</code> - the argument of type <code>WsdlContractConversionContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IWsdlExportExtension.ExportContract" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -407,11 +419,17 @@ implements <a href="../../../system/servicemodel/description/IWsdlExportExtensio
 <pre>public&nbsp;void&nbsp;ExportEndpoint(<a href="../../../system/servicemodel/description/WsdlExporter.html" title="class in system.servicemodel.description">WsdlExporter</a>&nbsp;exporter,
                            <a href="../../../system/servicemodel/description/WsdlEndpointConversionContext.html" title="class in system.servicemodel.description">WsdlEndpointConversionContext</a>&nbsp;context)
                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member ExportEndpoint.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html#ExportEndpoint-system.servicemodel.description.WsdlExporter-system.servicemodel.description.WsdlEndpointConversionContext-">ExportEndpoint</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/servicemodel/description/IWsdlExportExtension.html" title="interface in system.servicemodel.description">IWsdlExportExtension</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>exporter</code> - the argument of type <code>WsdlExporter</code></dd>
+<dd><code>context</code> - the argument of type <code>WsdlEndpointConversionContext</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.ServiceModel.Description.IWsdlExportExtension.ExportEndpoint" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

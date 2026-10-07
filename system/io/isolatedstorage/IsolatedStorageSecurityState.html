@@ -242,7 +242,9 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#EnsureState--">EnsureState</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#EnsureState--">EnsureState</a></span>()</code>
+<div class="block">Invokes the .NET member EnsureState.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -276,15 +278,21 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityOptions.html" title="class in system.io.isolatedstorage">IsolatedStorageSecurityOptions</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#getOptions--">getOptions</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#getOptions--">getOptions</a></span>()</code>
+<div class="block">Gets the value of the .NET property Options.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#getQuota--">getQuota</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#getQuota--">getQuota</a></span>()</code>
+<div class="block">Gets the value of the .NET property Quota.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>long</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#getUsedSize--">getUsedSize</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#getUsedSize--">getUsedSize</a></span>()</code>
+<div class="block">Gets the value of the .NET property UsedSize.</div>
+</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
@@ -294,7 +302,9 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#setQuota-long-">setQuota</a></span>(long&nbsp;Quota)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityState.html#setQuota-long-">setQuota</a></span>(long&nbsp;Quota)</code>
+<div class="block">Sets the value of the .NET property Quota.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -416,8 +426,10 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
                              throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -457,12 +469,15 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 <pre>public&nbsp;void&nbsp;EnsureState()
                  throws java.lang.Throwable,
                         <a href="../../../system/io/isolatedstorage/IsolatedStorageException.html" title="class in system.io.isolatedstorage">IsolatedStorageException</a></pre>
+<div class="block">Invokes the .NET member EnsureState.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/security/SecurityState.html#EnsureState--">EnsureState</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/security/SecurityState.html" title="class in system.security">SecurityState</a></code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/io/isolatedstorage/IsolatedStorageException.html" title="class in system.io.isolatedstorage">IsolatedStorageException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/io/isolatedstorage/IsolatedStorageException.html" title="class in system.io.isolatedstorage">IsolatedStorageException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IO.IsolatedStorage.IsolatedStorageSecurityState.EnsureState" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -569,9 +584,14 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 <h4>getOptions</h4>
 <pre>public&nbsp;<a href="../../../system/io/isolatedstorage/IsolatedStorageSecurityOptions.html" title="class in system.io.isolatedstorage">IsolatedStorageSecurityOptions</a>&nbsp;getOptions()
                                           throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Options.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IO.IsolatedStorage.IsolatedStorageSecurityState.Options" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -583,9 +603,14 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 <h4>getQuota</h4>
 <pre>public&nbsp;long&nbsp;getQuota()
               throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property Quota.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IO.IsolatedStorage.IsolatedStorageSecurityState.Quota" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -597,9 +622,14 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 <h4>getUsedSize</h4>
 <pre>public&nbsp;long&nbsp;getUsedSize()
                  throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property UsedSize.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IO.IsolatedStorage.IsolatedStorageSecurityState.UsedSize" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -628,9 +658,14 @@ extends <a href="../../../system/security/SecurityState.html" title="class in sy
 <h4>setQuota</h4>
 <pre>public&nbsp;void&nbsp;setQuota(long&nbsp;Quota)
               throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property Quota.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>Quota</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.IO.IsolatedStorage.IsolatedStorageSecurityState.Quota" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

@@ -204,7 +204,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/data/TypedDataSetGenerator.html#TypedDataSetGenerator--">TypedDataSetGenerator</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/data/TypedDataSetGenerator.html#TypedDataSetGenerator--">TypedDataSetGenerator</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/data/TypedDataSetGenerator.html#TypedDataSetGenerator-java.lang.Object-">TypedDataSetGenerator</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -236,12 +238,16 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/data/TypedDataSetGenerator.html#Generate-system.data.DataSet-system.codedom.CodeNamespace-system.codedom.compiler.ICodeGenerator-">Generate</a></span>(<a href="../../system/data/DataSet.html" title="class in system.data">DataSet</a>&nbsp;dataSet,
         <a href="../../system/codedom/CodeNamespace.html" title="class in system.codedom">CodeNamespace</a>&nbsp;codeNamespace,
-        <a href="../../system/codedom/compiler/ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a>&nbsp;codeGen)</code>&nbsp;</td>
+        <a href="../../system/codedom/compiler/ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a>&nbsp;codeGen)</code>
+<div class="block">Invokes the .NET member Generate.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/data/TypedDataSetGenerator.html#GenerateIdName-java.lang.String-system.codedom.compiler.ICodeGenerator-">GenerateIdName</a></span>(java.lang.String&nbsp;name,
-              <a href="../../system/codedom/compiler/ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a>&nbsp;codeGen)</code>&nbsp;</td>
+              <a href="../../system/codedom/compiler/ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a>&nbsp;codeGen)</code>
+<div class="block">Invokes the .NET member GenerateIdName.</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -376,9 +382,12 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <h4>TypedDataSetGenerator</h4>
 <pre>public&nbsp;TypedDataSetGenerator()
                       throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.TypedDataSetGenerator.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -392,8 +401,10 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                       throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -452,27 +463,34 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                             <a href="../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a>,
                             <a href="../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
                             <a href="../../system/data/TypedDataSetGeneratorException.html" title="class in system.data">TypedDataSetGeneratorException</a></pre>
+<div class="block">Invokes the .NET member Generate.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>dataSet</code> - the argument of type <code>DataSet</code></dd>
+<dd><code>codeNamespace</code> - the argument of type <code>CodeNamespace</code></dd>
+<dd><code>codeGen</code> - the argument of type <code>ICodeGenerator</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
-<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code></dd>
-<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code></dd>
-<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code></dd>
-<dd><code><a href="../../system/data/DataException.html" title="class in system.data">DataException</a></code></dd>
-<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code></dd>
-<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code></dd>
-<dd><code><a href="../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code></dd>
-<dd><code><a href="../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code></dd>
-<dd><code><a href="../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code></dd>
-<dd><code><a href="../../system/data/TypedDataSetGeneratorException.html" title="class in system.data">TypedDataSetGeneratorException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/data/DataException.html" title="class in system.data">DataException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/OverflowException.html" title="class in system">OverflowException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/data/sqltypes/SqlNullValueException.html" title="class in system.data.sqltypes">SqlNullValueException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/data/sqltypes/SqlTruncateException.html" title="class in system.data.sqltypes">SqlTruncateException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/InvalidCastException.html" title="class in system">InvalidCastException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../system/data/TypedDataSetGeneratorException.html" title="class in system.data">TypedDataSetGeneratorException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.TypedDataSetGenerator.Generate" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -486,10 +504,18 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
                                               <a href="../../system/codedom/compiler/ICodeGenerator.html" title="interface in system.codedom.compiler">ICodeGenerator</a>&nbsp;codeGen)
                                        throws java.lang.Throwable,
                                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></pre>
+<div class="block">Invokes the .NET member GenerateIdName.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
+<dd><code>codeGen</code> - the argument of type <code>ICodeGenerator</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Data.TypedDataSetGenerator.GenerateIdName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

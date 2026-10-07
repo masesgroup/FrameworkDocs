@@ -255,11 +255,15 @@ implements <a href="../../../../system/workflow/componentmodel/design/IPersistUI
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/IPersistUIStateImplementation.html#LoadViewState-system.io.BinaryReader-">LoadViewState</a></span>(<a href="../../../../system/io/BinaryReader.html" title="class in system.io">BinaryReader</a>&nbsp;reader)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/IPersistUIStateImplementation.html#LoadViewState-system.io.BinaryReader-">LoadViewState</a></span>(<a href="../../../../system/io/BinaryReader.html" title="class in system.io">BinaryReader</a>&nbsp;reader)</code>
+<div class="block">Invokes the .NET member LoadViewState.</div>
+</td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/IPersistUIStateImplementation.html#SaveViewState-system.io.BinaryWriter-">SaveViewState</a></span>(<a href="../../../../system/io/BinaryWriter.html" title="class in system.io">BinaryWriter</a>&nbsp;writer)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/IPersistUIStateImplementation.html#SaveViewState-system.io.BinaryWriter-">SaveViewState</a></span>(<a href="../../../../system/io/BinaryWriter.html" title="class in system.io">BinaryWriter</a>&nbsp;writer)</code>
+<div class="block">Invokes the .NET member SaveViewState.</div>
+</td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></td>
@@ -366,8 +370,10 @@ implements <a href="../../../../system/workflow/componentmodel/design/IPersistUI
                               throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -492,11 +498,16 @@ implements <a href="../../../../system/workflow/componentmodel/design/IPersistUI
 <h4>LoadViewState</h4>
 <pre>public&nbsp;void&nbsp;LoadViewState(<a href="../../../../system/io/BinaryReader.html" title="class in system.io">BinaryReader</a>&nbsp;reader)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member LoadViewState.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#LoadViewState-system.io.BinaryReader-">LoadViewState</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>reader</code> - the argument of type <code>BinaryReader</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.IPersistUIState.LoadViewState" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -508,11 +519,16 @@ implements <a href="../../../../system/workflow/componentmodel/design/IPersistUI
 <h4>SaveViewState</h4>
 <pre>public&nbsp;void&nbsp;SaveViewState(<a href="../../../../system/io/BinaryWriter.html" title="class in system.io">BinaryWriter</a>&nbsp;writer)
                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member SaveViewState.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html#SaveViewState-system.io.BinaryWriter-">SaveViewState</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../system/workflow/componentmodel/design/IPersistUIState.html" title="interface in system.workflow.componentmodel.design">IPersistUIState</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>writer</code> - the argument of type <code>BinaryWriter</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Design.IPersistUIState.SaveViewState" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

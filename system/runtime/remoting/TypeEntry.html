@@ -240,7 +240,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#getAssemblyName--">getAssemblyName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#getAssemblyName--">getAssemblyName</a></span>()</code>
+<div class="block">Gets the value of the .NET property AssemblyName.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -274,11 +276,15 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#getTypeName--">getTypeName</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#getTypeName--">getTypeName</a></span>()</code>
+<div class="block">Gets the value of the .NET property TypeName.</div>
+</td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#setAssemblyName-java.lang.String-">setAssemblyName</a></span>(java.lang.String&nbsp;AssemblyName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#setAssemblyName-java.lang.String-">setAssemblyName</a></span>(java.lang.String&nbsp;AssemblyName)</code>
+<div class="block">Sets the value of the .NET property AssemblyName.</div>
+</td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -288,7 +294,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#setTypeName-java.lang.String-">setTypeName</a></span>(java.lang.String&nbsp;TypeName)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/remoting/TypeEntry.html#setTypeName-java.lang.String-">setTypeName</a></span>(java.lang.String&nbsp;TypeName)</code>
+<div class="block">Sets the value of the .NET property TypeName.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -403,8 +411,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
           throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -443,9 +453,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getAssemblyName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getAssemblyName()
                                  throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property AssemblyName.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.TypeEntry.AssemblyName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -552,9 +567,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>getTypeName</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getTypeName()
                              throws java.lang.Throwable</pre>
+<div class="block">Gets the value of the .NET property TypeName.</div>
 <dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.TypeEntry.TypeName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -566,9 +586,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>setAssemblyName</h4>
 <pre>public&nbsp;void&nbsp;setAssemblyName(java.lang.String&nbsp;AssemblyName)
                      throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property AssemblyName.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>AssemblyName</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.TypeEntry.AssemblyName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -597,9 +622,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>setTypeName</h4>
 <pre>public&nbsp;void&nbsp;setTypeName(java.lang.String&nbsp;TypeName)
                  throws java.lang.Throwable</pre>
+<div class="block">Sets the value of the .NET property TypeName.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>TypeName</code> - the new value of the property</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Runtime.Remoting.TypeEntry.TypeName" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

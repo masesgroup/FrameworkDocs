@@ -208,7 +208,9 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/MutableObjectModelBinderProvider.html#MutableObjectModelBinderProvider--">MutableObjectModelBinderProvider</a></span>()</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/MutableObjectModelBinderProvider.html#MutableObjectModelBinderProvider--">MutableObjectModelBinderProvider</a></span>()</code>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/MutableObjectModelBinderProvider.html#MutableObjectModelBinderProvider-java.lang.Object-">MutableObjectModelBinderProvider</a></span>(java.lang.Object&nbsp;instance)</code>
@@ -239,7 +241,9 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/web/modelbinding/IModelBinder.html" title="interface in system.web.modelbinding">IModelBinder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/MutableObjectModelBinderProvider.html#GetBinder-system.web.modelbinding.ModelBindingExecutionContext-system.web.modelbinding.ModelBindingContext-">GetBinder</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;modelBindingExecutionContext,
-         <a href="../../../system/web/modelbinding/ModelBindingContext.html" title="class in system.web.modelbinding">ModelBindingContext</a>&nbsp;bindingContext)</code>&nbsp;</td>
+         <a href="../../../system/web/modelbinding/ModelBindingContext.html" title="class in system.web.modelbinding">ModelBindingContext</a>&nbsp;bindingContext)</code>
+<div class="block">Invokes the .NET member GetBinder.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -374,9 +378,12 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
 <h4>MutableObjectModelBinderProvider</h4>
 <pre>public&nbsp;MutableObjectModelBinderProvider()
                                  throws java.lang.Throwable</pre>
+<div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.MutableObjectModelBinderProvider.-ctor" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -390,8 +397,10 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
                                  throws java.lang.Throwable</pre>
 <div class="block">Internal constructor. Use with caution</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>instance</code> - the underlying bridge object: it must be a <code>JCObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
+<dd><code>java.lang.Throwable</code> - if <code>instance</code> is not a <code>JCObject</code></dd>
 </dl>
 </li>
 </ul>
@@ -440,20 +449,28 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<div class="block">Invokes the .NET member GetBinder.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code><a href="../../../system/web/modelbinding/ModelBinderProvider.html#GetBinder-system.web.modelbinding.ModelBindingExecutionContext-system.web.modelbinding.ModelBindingContext-">GetBinder</a></code>&nbsp;in class&nbsp;<code><a href="../../../system/web/modelbinding/ModelBinderProvider.html" title="class in system.web.modelbinding">ModelBinderProvider</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>modelBindingExecutionContext</code> - the argument of type <code>ModelBindingExecutionContext</code></dd>
+<dd><code>bindingContext</code> - the argument of type <code>ModelBindingContext</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.Throwable</code></dd>
-<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code></dd>
-<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code></dd>
-<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code></dd>
-<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code></dd>
-<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code></dd>
-<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code></dd>
-<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code></dd>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
+<dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/System.Web.ModelBinding.MutableObjectModelBinderProvider.GetBinder" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
