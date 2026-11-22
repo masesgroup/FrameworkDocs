@@ -231,7 +231,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/WindowsRuntimeMarshal.html#AddEventHandler-system.Func_2-system.Action_1-T-">AddEventHandler</a></span>(<a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;addMethod,
-               <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;removeMethod,
+               <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/runtime/interopservices/windowsruntime/EventRegistrationToken.html" title="class in system.runtime.interopservices.windowsruntime">EventRegistrationToken</a>&gt;&nbsp;removeMethod,
                T&nbsp;handler)</code>
 <div class="block">Invokes the .NET member AddEventHandler.</div>
 </td>
@@ -280,13 +280,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>static void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/WindowsRuntimeMarshal.html#RemoveAllEventHandlers-system.Action_1-">RemoveAllEventHandlers</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;removeMethod)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/WindowsRuntimeMarshal.html#RemoveAllEventHandlers-system.Action_1-">RemoveAllEventHandlers</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/runtime/interopservices/windowsruntime/EventRegistrationToken.html" title="class in system.runtime.interopservices.windowsruntime">EventRegistrationToken</a>&gt;&nbsp;removeMethod)</code>
 <div class="block">Invokes the .NET member RemoveAllEventHandlers.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>static &lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/WindowsRuntimeMarshal.html#RemoveEventHandler-system.Action_1-T-">RemoveEventHandler</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;removeMethod,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/runtime/interopservices/windowsruntime/WindowsRuntimeMarshal.html#RemoveEventHandler-system.Action_1-T-">RemoveEventHandler</a></span>(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/runtime/interopservices/windowsruntime/EventRegistrationToken.html" title="class in system.runtime.interopservices.windowsruntime">EventRegistrationToken</a>&gt;&nbsp;removeMethod,
                   T&nbsp;handler)</code>
 <div class="block">Invokes the .NET member RemoveEventHandler.</div>
 </td>
@@ -434,7 +434,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>AddEventHandler</h4>
 <pre>public static&nbsp;&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;AddEventHandler(<a href="../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;addMethod,
-                                                                   <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;removeMethod,
+                                                                   <a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/runtime/interopservices/windowsruntime/EventRegistrationToken.html" title="class in system.runtime.interopservices.windowsruntime">EventRegistrationToken</a>&gt;&nbsp;removeMethod,
                                                                    T&nbsp;handler)
                                                             throws java.lang.Throwable,
                                                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -459,7 +459,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code>T</code> - the type of the generic argument T</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>addMethod</code> - the argument of type <code>Func_2</code></dd>
-<dd><code>removeMethod</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>removeMethod</code> - the argument of type <code>Action_1&lt;EventRegistrationToken&gt;</code></dd>
 <dd><code>handler</code> - the argument of type <code>T</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -641,7 +641,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>RemoveAllEventHandlers</h4>
-<pre>public static&nbsp;void&nbsp;RemoveAllEventHandlers(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;removeMethod)
+<pre>public static&nbsp;void&nbsp;RemoveAllEventHandlers(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/runtime/interopservices/windowsruntime/EventRegistrationToken.html" title="class in system.runtime.interopservices.windowsruntime">EventRegistrationToken</a>&gt;&nbsp;removeMethod)
                                    throws java.lang.Throwable,
                                           <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                           <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -663,7 +663,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <div class="block">Invokes the .NET member RemoveAllEventHandlers.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>removeMethod</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>removeMethod</code> - the argument of type <code>Action_1&lt;EventRegistrationToken&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -696,7 +696,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>RemoveEventHandler</h4>
-<pre>public static&nbsp;&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;RemoveEventHandler(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;removeMethod,
+<pre>public static&nbsp;&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;void&nbsp;RemoveEventHandler(<a href="../../../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../../../system/runtime/interopservices/windowsruntime/EventRegistrationToken.html" title="class in system.runtime.interopservices.windowsruntime">EventRegistrationToken</a>&gt;&nbsp;removeMethod,
                                                                       T&nbsp;handler)
                                                                throws java.lang.Throwable,
                                                                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -720,7 +720,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Type Parameters:</span></dt>
 <dd><code>T</code> - the type of the generic argument T</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>removeMethod</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>removeMethod</code> - the argument of type <code>Action_1&lt;EventRegistrationToken&gt;</code></dd>
 <dd><code>handler</code> - the argument of type <code>T</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>

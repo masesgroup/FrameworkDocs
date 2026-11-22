@@ -252,13 +252,13 @@ implements <a href="../../../system/IObservable_1.html" title="interface in syst
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/LowPhysicalMemoryInfo.html" title="class in system.web.hosting">LowPhysicalMemoryInfo</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AspNetMemoryMonitor.html#getDefaultLowPhysicalMemoryObserver--">getDefaultLowPhysicalMemoryObserver</a></span>()</code>
 <div class="block">Gets the value of the .NET property DefaultLowPhysicalMemoryObserver.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/RecycleLimitInfo.html" title="class in system.web.hosting">RecycleLimitInfo</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AspNetMemoryMonitor.html#getDefaultRecycleLimitObserver--">getDefaultRecycleLimitObserver</a></span>()</code>
 <div class="block">Gets the value of the .NET property DefaultRecycleLimitObserver.</div>
 </td>
@@ -295,13 +295,13 @@ implements <a href="../../../system/IObservable_1.html" title="interface in syst
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AspNetMemoryMonitor.html#setDefaultLowPhysicalMemoryObserver-system.IObserver_1-">setDefaultLowPhysicalMemoryObserver</a></span>(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;DefaultLowPhysicalMemoryObserver)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AspNetMemoryMonitor.html#setDefaultLowPhysicalMemoryObserver-system.IObserver_1-">setDefaultLowPhysicalMemoryObserver</a></span>(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/LowPhysicalMemoryInfo.html" title="class in system.web.hosting">LowPhysicalMemoryInfo</a>&gt;&nbsp;DefaultLowPhysicalMemoryObserver)</code>
 <div class="block">Sets the value of the .NET property DefaultLowPhysicalMemoryObserver.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AspNetMemoryMonitor.html#setDefaultRecycleLimitObserver-system.IObserver_1-">setDefaultRecycleLimitObserver</a></span>(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;DefaultRecycleLimitObserver)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/hosting/AspNetMemoryMonitor.html#setDefaultRecycleLimitObserver-system.IObserver_1-">setDefaultRecycleLimitObserver</a></span>(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/RecycleLimitInfo.html" title="class in system.web.hosting">RecycleLimitInfo</a>&gt;&nbsp;DefaultRecycleLimitObserver)</code>
 <div class="block">Sets the value of the .NET property DefaultRecycleLimitObserver.</div>
 </td>
 </tr>
@@ -532,8 +532,8 @@ implements <a href="../../../system/IObservable_1.html" title="interface in syst
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultLowPhysicalMemoryObserver</h4>
-<pre>public&nbsp;<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;getDefaultLowPhysicalMemoryObserver()
-                                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/LowPhysicalMemoryInfo.html" title="class in system.web.hosting">LowPhysicalMemoryInfo</a>&gt;&nbsp;getDefaultLowPhysicalMemoryObserver()
+                                                                       throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property DefaultLowPhysicalMemoryObserver.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -551,8 +551,8 @@ implements <a href="../../../system/IObservable_1.html" title="interface in syst
 <ul class="blockList">
 <li class="blockList">
 <h4>getDefaultRecycleLimitObserver</h4>
-<pre>public&nbsp;<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;getDefaultRecycleLimitObserver()
-                                           throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/RecycleLimitInfo.html" title="class in system.web.hosting">RecycleLimitInfo</a>&gt;&nbsp;getDefaultRecycleLimitObserver()
+                                                             throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property DefaultRecycleLimitObserver.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -675,7 +675,7 @@ implements <a href="../../../system/IObservable_1.html" title="interface in syst
 <ul class="blockList">
 <li class="blockList">
 <h4>setDefaultLowPhysicalMemoryObserver</h4>
-<pre>public&nbsp;void&nbsp;setDefaultLowPhysicalMemoryObserver(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;DefaultLowPhysicalMemoryObserver)
+<pre>public&nbsp;void&nbsp;setDefaultLowPhysicalMemoryObserver(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/LowPhysicalMemoryInfo.html" title="class in system.web.hosting">LowPhysicalMemoryInfo</a>&gt;&nbsp;DefaultLowPhysicalMemoryObserver)
                                          throws java.lang.Throwable,
                                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -700,7 +700,7 @@ implements <a href="../../../system/IObservable_1.html" title="interface in syst
 <ul class="blockList">
 <li class="blockList">
 <h4>setDefaultRecycleLimitObserver</h4>
-<pre>public&nbsp;void&nbsp;setDefaultRecycleLimitObserver(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&nbsp;DefaultRecycleLimitObserver)
+<pre>public&nbsp;void&nbsp;setDefaultRecycleLimitObserver(<a href="../../../system/IObserver_1.html" title="interface in system">IObserver_1</a>&lt;<a href="../../../system/web/hosting/RecycleLimitInfo.html" title="class in system.web.hosting">RecycleLimitInfo</a>&gt;&nbsp;DefaultRecycleLimitObserver)
                                     throws java.lang.Throwable,
                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,

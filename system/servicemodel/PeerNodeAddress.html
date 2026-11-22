@@ -208,7 +208,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/PeerNodeAddress.html#PeerNodeAddress-system.servicemodel.EndpointAddress-system.collections.objectmodel.ReadOnlyCollection_1-">PeerNodeAddress</a></span>(<a href="../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;endpointAddress,
-               <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ipAddresses)</code>
+               <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/net/IPAddress.html" title="class in system.net">IPAddress</a>&gt;&nbsp;ipAddresses)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -245,7 +245,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/net/IPAddress.html" title="class in system.net">IPAddress</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/PeerNodeAddress.html#getIPAddresses--">getIPAddresses</a></span>()</code>
 <div class="block">Gets the value of the .NET property IPAddresses.</div>
 </td>
@@ -396,7 +396,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <li class="blockList">
 <h4>PeerNodeAddress</h4>
 <pre>public&nbsp;PeerNodeAddress(<a href="../../system/servicemodel/EndpointAddress.html" title="class in system.servicemodel">EndpointAddress</a>&nbsp;endpointAddress,
-                       <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ipAddresses)
+                       <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/net/IPAddress.html" title="class in system.net">IPAddress</a>&gt;&nbsp;ipAddresses)
                 throws java.lang.Throwable,
                        <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -414,7 +414,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>endpointAddress</code> - the argument of type <code>EndpointAddress</code></dd>
-<dd><code>ipAddresses</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>ipAddresses</code> - the argument of type <code>ReadOnlyCollection_1&lt;IPAddress&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -503,9 +503,9 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>getIPAddresses</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getIPAddresses()
-                                    throws java.lang.Throwable,
-                                           <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/net/IPAddress.html" title="class in system.net">IPAddress</a>&gt;&nbsp;getIPAddresses()
+                                               throws java.lang.Throwable,
+                                                      <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Gets the value of the .NET property IPAddresses.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

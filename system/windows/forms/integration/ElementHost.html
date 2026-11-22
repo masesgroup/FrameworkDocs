@@ -67,6 +67,8 @@
 <meta name="keywords" content="removeSizeChanged()">
 <meta name="keywords" content="addTextChanged()">
 <meta name="keywords" content="removeTextChanged()">
+<meta name="keywords" content="addChildChanged()">
+<meta name="keywords" content="removeChildChanged()">
 <meta name="keywords" content="addControlAdded()">
 <meta name="keywords" content="removeControlAdded()">
 <meta name="keywords" content="addControlRemoved()">
@@ -120,7 +122,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":9,"i42":9,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":9,"i43":9,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10,"i61":10,"i62":10,"i63":10,"i64":10,"i65":10,"i66":10,"i67":10,"i68":10,"i69":10,"i70":10,"i71":10,"i72":10,"i73":10,"i74":10,"i75":10,"i76":10,"i77":10,"i78":10,"i79":10,"i80":10,"i81":10,"i82":10,"i83":10,"i84":10,"i85":10,"i86":10,"i87":10,"i88":10,"i89":10,"i90":10,"i91":10,"i92":10,"i93":10,"i94":10,"i95":10,"i96":10,"i97":10,"i98":10,"i99":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -340,582 +342,594 @@ extends <a href="../../../../system/windows/forms/Control.html" title="class in 
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addChildChanged-system.EventHandler_1-">addChildChanged</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/forms/integration/ChildChangedEventArgs.html" title="class in system.windows.forms.integration">ChildChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addChildChanged.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addClick-system.EventHandler-">addClick</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addClick.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addClientSizeChanged-system.EventHandler-">addClientSizeChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addClientSizeChanged.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addControlAdded-system.windows.forms.ControlEventHandler-">addControlAdded</a></span>(<a href="../../../../system/windows/forms/ControlEventHandler.html" title="class in system.windows.forms">ControlEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addControlAdded.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addControlRemoved-system.windows.forms.ControlEventHandler-">addControlRemoved</a></span>(<a href="../../../../system/windows/forms/ControlEventHandler.html" title="class in system.windows.forms">ControlEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addControlRemoved.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addCursorChanged-system.EventHandler-">addCursorChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addCursorChanged.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addDoubleClick-system.EventHandler-">addDoubleClick</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addDoubleClick.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addDragDrop-system.windows.forms.DragEventHandler-">addDragDrop</a></span>(<a href="../../../../system/windows/forms/DragEventHandler.html" title="class in system.windows.forms">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addDragDrop.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addDragEnter-system.windows.forms.DragEventHandler-">addDragEnter</a></span>(<a href="../../../../system/windows/forms/DragEventHandler.html" title="class in system.windows.forms">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addDragEnter.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addDragLeave-system.EventHandler-">addDragLeave</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addDragLeave.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addDragOver-system.windows.forms.DragEventHandler-">addDragOver</a></span>(<a href="../../../../system/windows/forms/DragEventHandler.html" title="class in system.windows.forms">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addDragOver.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addEnter-system.EventHandler-">addEnter</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addEnter.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addFontChanged-system.EventHandler-">addFontChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addFontChanged.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addForeColorChanged-system.EventHandler-">addForeColorChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addForeColorChanged.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addGiveFeedback-system.windows.forms.GiveFeedbackEventHandler-">addGiveFeedback</a></span>(<a href="../../../../system/windows/forms/GiveFeedbackEventHandler.html" title="class in system.windows.forms">GiveFeedbackEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addGiveFeedback.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addGotFocus-system.EventHandler-">addGotFocus</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addGotFocus.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addInvalidated-system.windows.forms.InvalidateEventHandler-">addInvalidated</a></span>(<a href="../../../../system/windows/forms/InvalidateEventHandler.html" title="class in system.windows.forms">InvalidateEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addInvalidated.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addKeyDown-system.windows.forms.KeyEventHandler-">addKeyDown</a></span>(<a href="../../../../system/windows/forms/KeyEventHandler.html" title="class in system.windows.forms">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addKeyDown.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addKeyPress-system.windows.forms.KeyPressEventHandler-">addKeyPress</a></span>(<a href="../../../../system/windows/forms/KeyPressEventHandler.html" title="class in system.windows.forms">KeyPressEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addKeyPress.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addKeyUp-system.windows.forms.KeyEventHandler-">addKeyUp</a></span>(<a href="../../../../system/windows/forms/KeyEventHandler.html" title="class in system.windows.forms">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addKeyUp.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addLayout-system.windows.forms.LayoutEventHandler-">addLayout</a></span>(<a href="../../../../system/windows/forms/LayoutEventHandler.html" title="class in system.windows.forms">LayoutEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLayout.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addLeave-system.EventHandler-">addLeave</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLeave.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addLostFocus-system.EventHandler-">addLostFocus</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addLostFocus.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseCaptureChanged-system.EventHandler-">addMouseCaptureChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseCaptureChanged.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseClick-system.windows.forms.MouseEventHandler-">addMouseClick</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseClick.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseDoubleClick-system.windows.forms.MouseEventHandler-">addMouseDoubleClick</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseDoubleClick.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseDown-system.windows.forms.MouseEventHandler-">addMouseDown</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseDown.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseEnter-system.EventHandler-">addMouseEnter</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseEnter.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseHover-system.EventHandler-">addMouseHover</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseHover.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseLeave-system.EventHandler-">addMouseLeave</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseLeave.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseMove-system.windows.forms.MouseEventHandler-">addMouseMove</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseMove.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseUp-system.windows.forms.MouseEventHandler-">addMouseUp</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseUp.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addMouseWheel-system.windows.forms.MouseEventHandler-">addMouseWheel</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addMouseWheel.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addPaddingChanged-system.EventHandler-">addPaddingChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPaddingChanged.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addPaint-system.windows.forms.PaintEventHandler-">addPaint</a></span>(<a href="../../../../system/windows/forms/PaintEventHandler.html" title="class in system.windows.forms">PaintEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPaint.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addPreviewKeyDown-system.windows.forms.PreviewKeyDownEventHandler-">addPreviewKeyDown</a></span>(<a href="../../../../system/windows/forms/PreviewKeyDownEventHandler.html" title="class in system.windows.forms">PreviewKeyDownEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addPreviewKeyDown.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addQueryContinueDrag-system.windows.forms.QueryContinueDragEventHandler-">addQueryContinueDrag</a></span>(<a href="../../../../system/windows/forms/QueryContinueDragEventHandler.html" title="class in system.windows.forms">QueryContinueDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addQueryContinueDrag.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addResize-system.EventHandler-">addResize</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addResize.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addRightToLeftChanged-system.EventHandler-">addRightToLeftChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addRightToLeftChanged.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addSizeChanged-system.EventHandler-">addSizeChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addSizeChanged.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#addTextChanged-system.EventHandler-">addTextChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member addTextChanged.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/windows/forms/integration/ElementHost.html" title="class in system.windows.forms.integration">ElementHost</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/windows/forms/integration/ElementHost.html" title="class in system.windows.forms.integration"><code>ElementHost</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#EnableModelessKeyboardInterop-system.windows.Window-">EnableModelessKeyboardInterop</a></span>(<a href="../../../../system/windows/Window.html" title="class in system.windows">Window</a>&nbsp;window)</code>
 <div class="block">Invokes the .NET member EnableModelessKeyboardInterop.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getBackColorTransparent--">getBackColorTransparent</a></span>()</code>
 <div class="block">Gets the value of the .NET property BackColorTransparent.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getChild--">getChild</a></span>()</code>
 <div class="block">Gets the value of the .NET property Child.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/windows/controls/Panel.html" title="class in system.windows.controls">Panel</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getHostContainer--">getHostContainer</a></span>()</code>
 <div class="block">Gets the value of the .NET property HostContainer.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/drawing/Size.html" title="class in system.drawing">Size</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#GetPreferredSize-system.drawing.Size-">GetPreferredSize</a></span>(<a href="../../../../system/drawing/Size.html" title="class in system.drawing">Size</a>&nbsp;proposedSize)</code>
 <div class="block">Invokes the .NET member GetPreferredSize.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/windows/forms/integration/PropertyMap.html" title="class in system.windows.forms.integration">PropertyMap</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#getPropertyMap--">getPropertyMap</a></span>()</code>
 <div class="block">Gets the value of the .NET property PropertyMap.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#OnPropertyChanged-java.lang.String-org.mases.jcobridge.netreflection.NetObject-">OnPropertyChanged</a></span>(java.lang.String&nbsp;propertyName,
                  <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;value)</code>
 <div class="block">Invokes the .NET member OnPropertyChanged.</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeBindingContextChanged-system.EventHandler-">removeBindingContextChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeBindingContextChanged.</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i56" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeChildChanged-system.EventHandler_1-">removeChildChanged</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/forms/integration/ChildChangedEventArgs.html" title="class in system.windows.forms.integration">ChildChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeChildChanged.</div>
+</td>
+</tr>
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeClick-system.EventHandler-">removeClick</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeClick.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeClientSizeChanged-system.EventHandler-">removeClientSizeChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeClientSizeChanged.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeControlAdded-system.windows.forms.ControlEventHandler-">removeControlAdded</a></span>(<a href="../../../../system/windows/forms/ControlEventHandler.html" title="class in system.windows.forms">ControlEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeControlAdded.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeControlRemoved-system.windows.forms.ControlEventHandler-">removeControlRemoved</a></span>(<a href="../../../../system/windows/forms/ControlEventHandler.html" title="class in system.windows.forms">ControlEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeControlRemoved.</div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeCursorChanged-system.EventHandler-">removeCursorChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeCursorChanged.</div>
 </td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeDoubleClick-system.EventHandler-">removeDoubleClick</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDoubleClick.</div>
 </td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeDragDrop-system.windows.forms.DragEventHandler-">removeDragDrop</a></span>(<a href="../../../../system/windows/forms/DragEventHandler.html" title="class in system.windows.forms">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragDrop.</div>
 </td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeDragEnter-system.windows.forms.DragEventHandler-">removeDragEnter</a></span>(<a href="../../../../system/windows/forms/DragEventHandler.html" title="class in system.windows.forms">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragEnter.</div>
 </td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeDragLeave-system.EventHandler-">removeDragLeave</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragLeave.</div>
 </td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeDragOver-system.windows.forms.DragEventHandler-">removeDragOver</a></span>(<a href="../../../../system/windows/forms/DragEventHandler.html" title="class in system.windows.forms">DragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeDragOver.</div>
 </td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeEnter-system.EventHandler-">removeEnter</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeEnter.</div>
 </td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeFontChanged-system.EventHandler-">removeFontChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeFontChanged.</div>
 </td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeForeColorChanged-system.EventHandler-">removeForeColorChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeForeColorChanged.</div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeGiveFeedback-system.windows.forms.GiveFeedbackEventHandler-">removeGiveFeedback</a></span>(<a href="../../../../system/windows/forms/GiveFeedbackEventHandler.html" title="class in system.windows.forms">GiveFeedbackEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGiveFeedback.</div>
 </td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeGotFocus-system.EventHandler-">removeGotFocus</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeGotFocus.</div>
 </td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeInvalidated-system.windows.forms.InvalidateEventHandler-">removeInvalidated</a></span>(<a href="../../../../system/windows/forms/InvalidateEventHandler.html" title="class in system.windows.forms">InvalidateEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeInvalidated.</div>
 </td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeKeyDown-system.windows.forms.KeyEventHandler-">removeKeyDown</a></span>(<a href="../../../../system/windows/forms/KeyEventHandler.html" title="class in system.windows.forms">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeKeyDown.</div>
 </td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeKeyPress-system.windows.forms.KeyPressEventHandler-">removeKeyPress</a></span>(<a href="../../../../system/windows/forms/KeyPressEventHandler.html" title="class in system.windows.forms">KeyPressEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeKeyPress.</div>
 </td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeKeyUp-system.windows.forms.KeyEventHandler-">removeKeyUp</a></span>(<a href="../../../../system/windows/forms/KeyEventHandler.html" title="class in system.windows.forms">KeyEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeKeyUp.</div>
 </td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeLayout-system.windows.forms.LayoutEventHandler-">removeLayout</a></span>(<a href="../../../../system/windows/forms/LayoutEventHandler.html" title="class in system.windows.forms">LayoutEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLayout.</div>
 </td>
 </tr>
-<tr id="i75" class="rowColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeLeave-system.EventHandler-">removeLeave</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLeave.</div>
 </td>
 </tr>
-<tr id="i76" class="altColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeLostFocus-system.EventHandler-">removeLostFocus</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeLostFocus.</div>
 </td>
 </tr>
-<tr id="i77" class="rowColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseCaptureChanged-system.EventHandler-">removeMouseCaptureChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseCaptureChanged.</div>
 </td>
 </tr>
-<tr id="i78" class="altColor">
+<tr id="i80" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseClick-system.windows.forms.MouseEventHandler-">removeMouseClick</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseClick.</div>
 </td>
 </tr>
-<tr id="i79" class="rowColor">
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseDoubleClick-system.windows.forms.MouseEventHandler-">removeMouseDoubleClick</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseDoubleClick.</div>
 </td>
 </tr>
-<tr id="i80" class="altColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseDown-system.windows.forms.MouseEventHandler-">removeMouseDown</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseDown.</div>
 </td>
 </tr>
-<tr id="i81" class="rowColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseEnter-system.EventHandler-">removeMouseEnter</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseEnter.</div>
 </td>
 </tr>
-<tr id="i82" class="altColor">
+<tr id="i84" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseHover-system.EventHandler-">removeMouseHover</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseHover.</div>
 </td>
 </tr>
-<tr id="i83" class="rowColor">
+<tr id="i85" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseLeave-system.EventHandler-">removeMouseLeave</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseLeave.</div>
 </td>
 </tr>
-<tr id="i84" class="altColor">
+<tr id="i86" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseMove-system.windows.forms.MouseEventHandler-">removeMouseMove</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseMove.</div>
 </td>
 </tr>
-<tr id="i85" class="rowColor">
+<tr id="i87" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseUp-system.windows.forms.MouseEventHandler-">removeMouseUp</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseUp.</div>
 </td>
 </tr>
-<tr id="i86" class="altColor">
+<tr id="i88" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeMouseWheel-system.windows.forms.MouseEventHandler-">removeMouseWheel</a></span>(<a href="../../../../system/windows/forms/MouseEventHandler.html" title="class in system.windows.forms">MouseEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeMouseWheel.</div>
 </td>
 </tr>
-<tr id="i87" class="rowColor">
+<tr id="i89" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removePaddingChanged-system.EventHandler-">removePaddingChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePaddingChanged.</div>
 </td>
 </tr>
-<tr id="i88" class="altColor">
+<tr id="i90" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removePaint-system.windows.forms.PaintEventHandler-">removePaint</a></span>(<a href="../../../../system/windows/forms/PaintEventHandler.html" title="class in system.windows.forms">PaintEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePaint.</div>
 </td>
 </tr>
-<tr id="i89" class="rowColor">
+<tr id="i91" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removePreviewKeyDown-system.windows.forms.PreviewKeyDownEventHandler-">removePreviewKeyDown</a></span>(<a href="../../../../system/windows/forms/PreviewKeyDownEventHandler.html" title="class in system.windows.forms">PreviewKeyDownEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removePreviewKeyDown.</div>
 </td>
 </tr>
-<tr id="i90" class="altColor">
+<tr id="i92" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeQueryContinueDrag-system.windows.forms.QueryContinueDragEventHandler-">removeQueryContinueDrag</a></span>(<a href="../../../../system/windows/forms/QueryContinueDragEventHandler.html" title="class in system.windows.forms">QueryContinueDragEventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeQueryContinueDrag.</div>
 </td>
 </tr>
-<tr id="i91" class="rowColor">
+<tr id="i93" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeResize-system.EventHandler-">removeResize</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeResize.</div>
 </td>
 </tr>
-<tr id="i92" class="altColor">
+<tr id="i94" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeRightToLeftChanged-system.EventHandler-">removeRightToLeftChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeRightToLeftChanged.</div>
 </td>
 </tr>
-<tr id="i93" class="rowColor">
+<tr id="i95" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeSizeChanged-system.EventHandler-">removeSizeChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeSizeChanged.</div>
 </td>
 </tr>
-<tr id="i94" class="altColor">
+<tr id="i96" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#removeTextChanged-system.EventHandler-">removeTextChanged</a></span>(<a href="../../../../system/EventHandler.html" title="class in system">EventHandler</a>&nbsp;handler)</code>
 <div class="block">Invokes the .NET member removeTextChanged.</div>
 </td>
 </tr>
-<tr id="i95" class="rowColor">
+<tr id="i97" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#setBackColorTransparent-boolean-">setBackColorTransparent</a></span>(boolean&nbsp;BackColorTransparent)</code>
 <div class="block">Sets the value of the .NET property BackColorTransparent.</div>
 </td>
 </tr>
-<tr id="i96" class="altColor">
+<tr id="i98" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#setChild-system.windows.UIElement-">setChild</a></span>(<a href="../../../../system/windows/UIElement.html" title="class in system.windows">UIElement</a>&nbsp;Child)</code>
 <div class="block">Sets the value of the .NET property Child.</div>
 </td>
 </tr>
-<tr id="i97" class="rowColor">
+<tr id="i99" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/windows/forms/integration/ElementHost.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
@@ -1117,6 +1131,25 @@ extends <a href="../../../../system/windows/forms/Control.html" title="class in 
 <dd><code><a href="../../../../system/windows/forms/Control.html#addBindingContextChanged-system.EventHandler-">addBindingContextChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/forms/Control.html" title="class in system.windows.forms">Control</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>EventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addChildChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addChildChanged</h4>
+<pre>public&nbsp;void&nbsp;addChildChanged(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/forms/integration/ChildChangedEventArgs.html" title="class in system.windows.forms.integration">ChildChangedEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addChildChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ChildChangedEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -2287,6 +2320,25 @@ extends <a href="../../../../system/windows/forms/Control.html" title="class in 
 <dd><code><a href="../../../../system/windows/forms/Control.html#removeBindingContextChanged-system.EventHandler-">removeBindingContextChanged</a></code>&nbsp;in class&nbsp;<code><a href="../../../../system/windows/forms/Control.html" title="class in system.windows.forms">Control</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>handler</code> - the argument of type <code>EventHandler</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeChildChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeChildChanged</h4>
+<pre>public&nbsp;void&nbsp;removeChildChanged(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/windows/forms/integration/ChildChangedEventArgs.html" title="class in system.windows.forms.integration">ChildChangedEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeChildChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ChildChangedEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>

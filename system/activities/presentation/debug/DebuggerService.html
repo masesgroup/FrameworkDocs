@@ -265,7 +265,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>,<a href="../../../../system/activities/presentation/debug/BreakpointTypes.html" title="class in system.activities.presentation.debug">BreakpointTypes</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/debug/DebuggerService.html#GetBreakpointLocations--">GetBreakpointLocations</a></span>()</code>
 <div class="block">Invokes the .NET member GetBreakpointLocations.</div>
 </td>
@@ -388,7 +388,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/debug/DebuggerService.html#UpdateSourceLocations-system.collections.generic.Dictionary_2-">UpdateSourceLocations</a></span>(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;newSourceLocationMapping)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/debug/DebuggerService.html#UpdateSourceLocations-system.collections.generic.Dictionary_2-">UpdateSourceLocations</a></span>(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;newSourceLocationMapping)</code>
 <div class="block">Invokes the .NET member UpdateSourceLocations.</div>
 </td>
 </tr>
@@ -640,14 +640,14 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>GetBreakpointLocations</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;GetBreakpointLocations()
-                                     throws java.lang.Throwable,
-                                            <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                            <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>,<a href="../../../../system/activities/presentation/debug/BreakpointTypes.html" title="class in system.activities.presentation.debug">BreakpointTypes</a>&gt;&nbsp;GetBreakpointLocations()
+                                                                     throws java.lang.Throwable,
+                                                                            <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                            <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                            <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                            <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
 <div class="block">Invokes the .NET member GetBreakpointLocations.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1154,7 +1154,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockListLast">
 <li class="blockList">
 <h4>UpdateSourceLocations</h4>
-<pre>public&nbsp;void&nbsp;UpdateSourceLocations(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;newSourceLocationMapping)
+<pre>public&nbsp;void&nbsp;UpdateSourceLocations(<a href="../../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;newSourceLocationMapping)
                            throws java.lang.Throwable,
                                   <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                                   <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1169,7 +1169,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <div class="block">Invokes the .NET member UpdateSourceLocations.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>newSourceLocationMapping</code> - the argument of type <code>Dictionary_2</code></dd>
+<dd><code>newSourceLocationMapping</code> - the argument of type <code>Dictionary_2&lt;Object, SourceLocation&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>

@@ -20,6 +20,10 @@
 <meta name="keywords" content="GetExports()">
 <meta name="keywords" content="GetExportedValues()">
 <meta name="keywords" content="GetExport()">
+<meta name="keywords" content="addExportsChanged()">
+<meta name="keywords" content="removeExportsChanged()">
+<meta name="keywords" content="addExportsChanging()">
+<meta name="keywords" content="removeExportsChanging()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -33,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -233,105 +237,129 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#addExportsChanged-system.EventHandler_1-">addExportsChanged</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addExportsChanged.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#addExportsChanging-system.EventHandler_1-">addExportsChanging</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addExportsChanging.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting">ExportProvider</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting"><code>ExportProvider</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExport--">GetExport</a></span>()</code>
 <div class="block">Invokes the .NET member GetExport.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExport-java.lang.String-">GetExport</a></span>(java.lang.String&nbsp;contractName)</code>
 <div class="block">Invokes the .NET member GetExport.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExportedValues--">GetExportedValues</a></span>()</code>
 <div class="block">Invokes the .NET member GetExportedValues.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExportedValues-java.lang.String-">GetExportedValues</a></span>(java.lang.String&nbsp;contractName)</code>
 <div class="block">Invokes the .NET member GetExportedValues.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports--">GetExports</a></span>()</code>
 <div class="block">Invokes the .NET member GetExports.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/Export.html" title="class in system.componentmodel.composition.primitives">Export</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-">GetExports</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition)</code>
 <div class="block">Invokes the .NET member GetExports.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/Export.html" title="class in system.componentmodel.composition.primitives">Export</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-system.componentmodel.composition.hosting.AtomicComposition-">GetExports</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition,
           <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)</code>
 <div class="block">Invokes the .NET member GetExports.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/Lazy_2.html" title="class in system">Lazy_2</a>&lt;<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetExports</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
           <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;metadataViewType,
           java.lang.String&nbsp;contractName)</code>
 <div class="block">Invokes the .NET member GetExports.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-java.lang.String-">GetExports</a></span>(java.lang.String&nbsp;contractName)</code>
 <div class="block">Invokes the .NET member GetExports.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#removeExportsChanged-system.EventHandler_1-">removeExportsChanged</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeExportsChanged.</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#removeExportsChanging-system.EventHandler_1-">removeExportsChanging</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeExportsChanging.</div>
+</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#TryGetExports-system.componentmodel.composition.primitives.ImportDefinition-system.componentmodel.composition.hosting.AtomicComposition-org.mases.jcobridge.netreflection.JCORefOut-">TryGetExports</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition,
              <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition,
@@ -467,6 +495,44 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addExportsChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addExportsChanged</h4>
+<pre>public&nbsp;void&nbsp;addExportsChanged(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)
+                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addExportsChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExportsChangeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addExportsChanging-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addExportsChanging</h4>
+<pre>public&nbsp;void&nbsp;addExportsChanging(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addExportsChanging.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExportsChangeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -725,13 +791,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>GetExports</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetExports(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition)
-                         throws java.lang.Throwable,
-                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                <a href="../../../../system/componentmodel/composition/ImportCardinalityMismatchException.html" title="class in system.componentmodel.composition">ImportCardinalityMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/Export.html" title="class in system.componentmodel.composition.primitives">Export</a>&gt;&nbsp;GetExports(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition)
+                                 throws java.lang.Throwable,
+                                        <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                        <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                        <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="../../../../system/componentmodel/composition/ImportCardinalityMismatchException.html" title="class in system.componentmodel.composition">ImportCardinalityMismatchException</a></pre>
 <div class="block">Invokes the .NET member GetExports.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -756,15 +822,15 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>GetExports</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetExports(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition,
-                                <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)
-                         throws java.lang.Throwable,
-                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                <a href="../../../../system/componentmodel/composition/ImportCardinalityMismatchException.html" title="class in system.componentmodel.composition">ImportCardinalityMismatchException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/Export.html" title="class in system.componentmodel.composition.primitives">Export</a>&gt;&nbsp;GetExports(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition,
+                                        <a href="../../../../system/componentmodel/composition/hosting/AtomicComposition.html" title="class in system.componentmodel.composition.hosting">AtomicComposition</a>&nbsp;atomicComposition)
+                                 throws java.lang.Throwable,
+                                        <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                        <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                        <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                        <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="../../../../system/componentmodel/composition/ImportCardinalityMismatchException.html" title="class in system.componentmodel.composition">ImportCardinalityMismatchException</a></pre>
 <div class="block">Invokes the .NET member GetExports.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -791,23 +857,23 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>GetExports</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetExports(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
-                                <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;metadataViewType,
-                                java.lang.String&nbsp;contractName)
-                         throws java.lang.Throwable,
-                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
-                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                <a href="../../../../system/componentmodel/composition/ImportCardinalityMismatchException.html" title="class in system.componentmodel.composition">ImportCardinalityMismatchException</a>,
-                                <a href="../../../../system/FormatException.html" title="class in system">FormatException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/Lazy_2.html" title="class in system">Lazy_2</a>&lt;<a href="../../../../system/Object.html" title="class in system">Object</a>,<a href="../../../../system/Object.html" title="class in system">Object</a>&gt;&gt;&nbsp;GetExports(<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;type,
+                                                       <a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;metadataViewType,
+                                                       java.lang.String&nbsp;contractName)
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                       <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                       <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                       <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                       <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                       <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                       <a href="../../../../system/componentmodel/composition/ImportCardinalityMismatchException.html" title="class in system.componentmodel.composition">ImportCardinalityMismatchException</a>,
+                                                       <a href="../../../../system/FormatException.html" title="class in system">FormatException</a></pre>
 <div class="block">Invokes the .NET member GetExports.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -977,6 +1043,44 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the type of the .NET class</dd>
+</dl>
+</li>
+</ul>
+<a name="removeExportsChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeExportsChanged</h4>
+<pre>public&nbsp;void&nbsp;removeExportsChanged(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeExportsChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExportsChangeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeExportsChanging-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeExportsChanging</h4>
+<pre>public&nbsp;void&nbsp;removeExportsChanging(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportsChangeEventArgs.html" title="class in system.componentmodel.composition.hosting">ExportsChangeEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeExportsChanging.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ExportsChangeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

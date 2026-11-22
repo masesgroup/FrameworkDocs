@@ -274,19 +274,19 @@ extends <a href="../../../system/servicemodel/dispatcher/ClientRuntimeCompatBase
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IChannelInitializer.html" title="interface in system.servicemodel.dispatcher">IChannelInitializer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ClientRuntime.html#getChannelInitializers--">getChannelInitializers</a></span>()</code>
 <div class="block">Gets the value of the .NET property ChannelInitializers.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IClientMessageInspector.html" title="interface in system.servicemodel.dispatcher">IClientMessageInspector</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ClientRuntime.html#getClientMessageInspectors--">getClientMessageInspectors</a></span>()</code>
 <div class="block">Gets the value of the .NET property ClientMessageInspectors.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/ClientOperation.html" title="class in system.servicemodel.dispatcher">ClientOperation</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ClientRuntime.html#getClientOperations--">getClientOperations</a></span>()</code>
 <div class="block">Gets the value of the .NET property ClientOperations.</div>
 </td>
@@ -310,7 +310,7 @@ extends <a href="../../../system/servicemodel/dispatcher/ClientRuntimeCompatBase
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IInteractiveChannelInitializer.html" title="interface in system.servicemodel.dispatcher">IInteractiveChannelInitializer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ClientRuntime.html#getInteractiveChannelInitializers--">getInteractiveChannelInitializers</a></span>()</code>
 <div class="block">Gets the value of the .NET property InteractiveChannelInitializers.</div>
 </td>
@@ -673,8 +673,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ClientRuntimeCompatBase
 <ul class="blockList">
 <li class="blockList">
 <h4>getChannelInitializers</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getChannelInitializers()
-                                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IChannelInitializer.html" title="interface in system.servicemodel.dispatcher">IChannelInitializer</a>&gt;&nbsp;getChannelInitializers()
+                                                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ChannelInitializers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -692,8 +692,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ClientRuntimeCompatBase
 <ul class="blockList">
 <li class="blockList">
 <h4>getClientMessageInspectors</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getClientMessageInspectors()
-                                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IClientMessageInspector.html" title="interface in system.servicemodel.dispatcher">IClientMessageInspector</a>&gt;&nbsp;getClientMessageInspectors()
+                                                                  throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ClientMessageInspectors.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -711,8 +711,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ClientRuntimeCompatBase
 <ul class="blockList">
 <li class="blockList">
 <h4>getClientOperations</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getClientOperations()
-                                  throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/ClientOperation.html" title="class in system.servicemodel.dispatcher">ClientOperation</a>&gt;&nbsp;getClientOperations()
+                                                   throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ClientOperations.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -787,8 +787,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ClientRuntimeCompatBase
 <ul class="blockList">
 <li class="blockList">
 <h4>getInteractiveChannelInitializers</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getInteractiveChannelInitializers()
-                                                           throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IInteractiveChannelInitializer.html" title="interface in system.servicemodel.dispatcher">IInteractiveChannelInitializer</a>&gt;&nbsp;getInteractiveChannelInitializers()
+                                                                                           throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property InteractiveChannelInitializers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

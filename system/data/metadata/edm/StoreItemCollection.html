@@ -228,7 +228,7 @@ extends <a href="../../../../system/data/metadata/edm/ItemCollection.html" title
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/StoreItemCollection.html#StoreItemCollection--">StoreItemCollection</a></span>()</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/StoreItemCollection.html#StoreItemCollection-system.collections.generic.IEnumerable_1-">StoreItemCollection</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;xmlReaders)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/StoreItemCollection.html#StoreItemCollection-system.collections.generic.IEnumerable_1-">StoreItemCollection</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&gt;&nbsp;xmlReaders)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -294,7 +294,7 @@ extends <a href="../../../../system/data/metadata/edm/ItemCollection.html" title
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/data/metadata/edm/PrimitiveType.html" title="class in system.data.metadata.edm">PrimitiveType</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/metadata/edm/StoreItemCollection.html#GetPrimitiveTypes--">GetPrimitiveTypes</a></span>()</code>
 <div class="block">Invokes the .NET member GetPrimitiveTypes.</div>
 </td>
@@ -468,7 +468,7 @@ extends <a href="../../../../system/data/metadata/edm/ItemCollection.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>StoreItemCollection</h4>
-<pre>public&nbsp;StoreItemCollection(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;xmlReaders)
+<pre>public&nbsp;StoreItemCollection(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&gt;&nbsp;xmlReaders)
                     throws java.lang.Throwable,
                            <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                            <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
@@ -492,7 +492,7 @@ extends <a href="../../../../system/data/metadata/edm/ItemCollection.html" title
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>xmlReaders</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>xmlReaders</code> - the argument of type <code>IEnumerable_1&lt;XmlReader&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -729,11 +729,11 @@ extends <a href="../../../../system/data/metadata/edm/ItemCollection.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>GetPrimitiveTypes</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetPrimitiveTypes()
-                                       throws java.lang.Throwable,
-                                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/data/metadata/edm/PrimitiveType.html" title="class in system.data.metadata.edm">PrimitiveType</a>&gt;&nbsp;GetPrimitiveTypes()
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                             <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
 <div class="block">Invokes the .NET member GetPrimitiveTypes.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

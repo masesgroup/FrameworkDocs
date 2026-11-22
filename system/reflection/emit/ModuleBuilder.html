@@ -498,7 +498,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/emit/MethodToken.html" title="class in system.reflection.emit">MethodToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/ModuleBuilder.html#GetConstructorToken-system.reflection.ConstructorInfo-system.collections.generic.IEnumerable_1-">GetConstructorToken</a></span>(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-                   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;optionalParameterTypes)</code>
+                   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;optionalParameterTypes)</code>
 <div class="block">Invokes the .NET member GetConstructorToken.</div>
 </td>
 </tr>
@@ -516,7 +516,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 </td>
 </tr>
 <tr id="i30" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/reflection/CustomAttributeData.html" title="class in system.reflection">CustomAttributeData</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/ModuleBuilder.html#GetCustomAttributesData--">GetCustomAttributesData</a></span>()</code>
 <div class="block">Invokes the .NET member GetCustomAttributesData.</div>
 </td>
@@ -585,7 +585,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <tr id="i41" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/reflection/emit/MethodToken.html" title="class in system.reflection.emit">MethodToken</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/reflection/emit/ModuleBuilder.html#GetMethodToken-system.reflection.MethodInfo-system.collections.generic.IEnumerable_1-">GetMethodToken</a></span>(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;method,
-              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;optionalParameterTypes)</code>
+              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;optionalParameterTypes)</code>
 <div class="block">Invokes the .NET member GetMethodToken.</div>
 </td>
 </tr>
@@ -1933,7 +1933,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <li class="blockList">
 <h4>GetConstructorToken</h4>
 <pre>public&nbsp;<a href="../../../system/reflection/emit/MethodToken.html" title="class in system.reflection.emit">MethodToken</a>&nbsp;GetConstructorToken(<a href="../../../system/reflection/ConstructorInfo.html" title="class in system.reflection">ConstructorInfo</a>&nbsp;constructor,
-                                       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;optionalParameterTypes)
+                                       <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;optionalParameterTypes)
                                 throws java.lang.Throwable,
                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1945,7 +1945,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>constructor</code> - the argument of type <code>ConstructorInfo</code></dd>
-<dd><code>optionalParameterTypes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>optionalParameterTypes</code> - the argument of type <code>IEnumerable_1&lt;NetType&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -2019,9 +2019,9 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <ul class="blockList">
 <li class="blockList">
 <h4>GetCustomAttributesData</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetCustomAttributesData()
-                                throws java.lang.Throwable,
-                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/reflection/CustomAttributeData.html" title="class in system.reflection">CustomAttributeData</a>&gt;&nbsp;GetCustomAttributesData()
+                                                     throws java.lang.Throwable,
+                                                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a></pre>
 <div class="block">Invokes the .NET member GetCustomAttributesData.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
@@ -2295,7 +2295,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <li class="blockList">
 <h4>GetMethodToken</h4>
 <pre>public&nbsp;<a href="../../../system/reflection/emit/MethodToken.html" title="class in system.reflection.emit">MethodToken</a>&nbsp;GetMethodToken(<a href="../../../system/reflection/MethodInfo.html" title="class in system.reflection">MethodInfo</a>&nbsp;method,
-                                  <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;optionalParameterTypes)
+                                  <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;optionalParameterTypes)
                            throws java.lang.Throwable,
                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -2307,7 +2307,7 @@ extends <a href="../../../system/reflection/Module.html" title="class in system.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>method</code> - the argument of type <code>MethodInfo</code></dd>
-<dd><code>optionalParameterTypes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>optionalParameterTypes</code> - the argument of type <code>IEnumerable_1&lt;NetType&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

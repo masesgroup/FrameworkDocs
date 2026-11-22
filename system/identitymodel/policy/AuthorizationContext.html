@@ -237,12 +237,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/identitymodel/policy/AuthorizationContext.html" title="class in system.identitymodel.policy">AuthorizationContext</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/policy/AuthorizationContext.html#CreateDefaultAuthorizationContext-system.collections.generic.IList_1-">CreateDefaultAuthorizationContext</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;authorizationPolicies)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/policy/AuthorizationContext.html#CreateDefaultAuthorizationContext-system.collections.generic.IList_1-">CreateDefaultAuthorizationContext</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)</code>
 <div class="block">Invokes the .NET member CreateDefaultAuthorizationContext.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/policy/AuthorizationContext.html#getClaimSets--">getClaimSets</a></span>()</code>
 <div class="block">Gets the value of the .NET property ClaimSets.</div>
 </td>
@@ -454,7 +454,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateDefaultAuthorizationContext</h4>
-<pre>public static&nbsp;<a href="../../../system/identitymodel/policy/AuthorizationContext.html" title="class in system.identitymodel.policy">AuthorizationContext</a>&nbsp;CreateDefaultAuthorizationContext(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;authorizationPolicies)
+<pre>public static&nbsp;<a href="../../../system/identitymodel/policy/AuthorizationContext.html" title="class in system.identitymodel.policy">AuthorizationContext</a>&nbsp;CreateDefaultAuthorizationContext(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)
                                                               throws java.lang.Throwable,
                                                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -470,7 +470,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member CreateDefaultAuthorizationContext.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>authorizationPolicies</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>authorizationPolicies</code> - the argument of type <code>IList_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -497,8 +497,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getClaimSets</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getClaimSets()
-                                  throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a>&gt;&nbsp;getClaimSets()
+                                            throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ClaimSets.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

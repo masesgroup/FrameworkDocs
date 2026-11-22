@@ -215,7 +215,7 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/SimpleModelBinderProvider.html#SimpleModelBinderProvider-org.mases.jcobridge.netreflection.NetType-system.Func_1-">SimpleModelBinderProvider</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
-                         <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelBinderFactory)</code>
+                         <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/web/modelbinding/IModelBinder.html" title="interface in system.web.modelbinding">IModelBinder</a>&gt;&nbsp;modelBinderFactory)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -422,14 +422,14 @@ extends <a href="../../../system/web/modelbinding/ModelBinderProvider.html" titl
 <li class="blockList">
 <h4>SimpleModelBinderProvider</h4>
 <pre>public&nbsp;SimpleModelBinderProvider(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
-                                 <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelBinderFactory)
+                                 <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/web/modelbinding/IModelBinder.html" title="interface in system.web.modelbinding">IModelBinder</a>&gt;&nbsp;modelBinderFactory)
                           throws java.lang.Throwable,
                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>modelType</code> - the argument of type <code>NetType</code></dd>
-<dd><code>modelBinderFactory</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>modelBinderFactory</code> - the argument of type <code>Func_1&lt;IModelBinder&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>

@@ -30,6 +30,34 @@
 <meta name="keywords" content="getIsStarted()">
 <meta name="keywords" content="getName()">
 <meta name="keywords" content="setName()">
+<meta name="keywords" content="addServicesExceptionNotHandled()">
+<meta name="keywords" content="removeServicesExceptionNotHandled()">
+<meta name="keywords" content="addWorkflowCompleted()">
+<meta name="keywords" content="removeWorkflowCompleted()">
+<meta name="keywords" content="addWorkflowAborted()">
+<meta name="keywords" content="removeWorkflowAborted()">
+<meta name="keywords" content="addWorkflowCreated()">
+<meta name="keywords" content="removeWorkflowCreated()">
+<meta name="keywords" content="addWorkflowIdled()">
+<meta name="keywords" content="removeWorkflowIdled()">
+<meta name="keywords" content="addWorkflowLoaded()">
+<meta name="keywords" content="removeWorkflowLoaded()">
+<meta name="keywords" content="addWorkflowPersisted()">
+<meta name="keywords" content="removeWorkflowPersisted()">
+<meta name="keywords" content="addWorkflowResumed()">
+<meta name="keywords" content="removeWorkflowResumed()">
+<meta name="keywords" content="addWorkflowStarted()">
+<meta name="keywords" content="removeWorkflowStarted()">
+<meta name="keywords" content="addWorkflowUnloaded()">
+<meta name="keywords" content="removeWorkflowUnloaded()">
+<meta name="keywords" content="addStarted()">
+<meta name="keywords" content="removeStarted()">
+<meta name="keywords" content="addStopped()">
+<meta name="keywords" content="removeStopped()">
+<meta name="keywords" content="addWorkflowSuspended()">
+<meta name="keywords" content="removeWorkflowSuspended()">
+<meta name="keywords" content="addWorkflowTerminated()">
+<meta name="keywords" content="removeWorkflowTerminated()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -43,7 +71,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -258,29 +286,113 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addServicesExceptionNotHandled-system.EventHandler_1-">addServicesExceptionNotHandled</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/ServicesExceptionNotHandledEventArgs.html" title="class in system.workflow.runtime">ServicesExceptionNotHandledEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addServicesExceptionNotHandled.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addStarted-system.EventHandler_1-">addStarted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addStarted.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addStopped-system.EventHandler_1-">addStopped</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addStopped.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowAborted-system.EventHandler_1-">addWorkflowAborted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowAborted.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowCompleted-system.EventHandler_1-">addWorkflowCompleted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowCompletedEventArgs.html" title="class in system.workflow.runtime">WorkflowCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowCompleted.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowCreated-system.EventHandler_1-">addWorkflowCreated</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowCreated.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowIdled-system.EventHandler_1-">addWorkflowIdled</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowIdled.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowLoaded-system.EventHandler_1-">addWorkflowLoaded</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowLoaded.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowPersisted-system.EventHandler_1-">addWorkflowPersisted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowPersisted.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowResumed-system.EventHandler_1-">addWorkflowResumed</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowResumed.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowStarted-system.EventHandler_1-">addWorkflowStarted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowStarted.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowSuspended-system.EventHandler_1-">addWorkflowSuspended</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowSuspendedEventArgs.html" title="class in system.workflow.runtime">WorkflowSuspendedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowSuspended.</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowTerminated-system.EventHandler_1-">addWorkflowTerminated</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowTerminatedEventArgs.html" title="class in system.workflow.runtime">WorkflowTerminatedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowTerminated.</div>
+</td>
+</tr>
+<tr id="i14" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#addWorkflowUnloaded-system.EventHandler_1-">addWorkflowUnloaded</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addWorkflowUnloaded.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/workflow/runtime/WorkflowRuntime.html" title="class in system.workflow.runtime">WorkflowRuntime</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/workflow/runtime/WorkflowRuntime.html" title="class in system.workflow.runtime"><code>WorkflowRuntime</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-org.mases.jcobridge.netreflection.NetType-">CreateWorkflow</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType)</code>
 <div class="block">Invokes the .NET member CreateWorkflow.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-org.mases.jcobridge.netreflection.NetType-system.collections.generic.Dictionary_2-">CreateWorkflow</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
               <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues)</code>
 <div class="block">Invokes the .NET member CreateWorkflow.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-org.mases.jcobridge.netreflection.NetType-system.collections.generic.Dictionary_2-system.Guid-">CreateWorkflow</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;workflowType,
               <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;namedArgumentValues,
@@ -288,13 +400,13 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Invokes the .NET member CreateWorkflow.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader)</code>
 <div class="block">Invokes the .NET member CreateWorkflow.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-system.xml.XmlReader-system.collections.generic.Dictionary_2-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader,
               <a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;rulesReader,
@@ -302,7 +414,7 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Invokes the .NET member CreateWorkflow.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#CreateWorkflow-system.xml.XmlReader-system.xml.XmlReader-system.collections.generic.Dictionary_2-system.Guid-">CreateWorkflow</a></span>(<a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;workflowDefinitionReader,
               <a href="../../../system/xml/XmlReader.html" title="class in system.xml">XmlReader</a>&nbsp;rulesReader,
@@ -311,109 +423,193 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Invokes the .NET member CreateWorkflow.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#Dispose--">Dispose</a></span>()</code>
 <div class="block">Invokes the .NET member Dispose.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetAllServices--">GetAllServices</a></span>()</code>
 <div class="block">Invokes the .NET member GetAllServices.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<tr id="i25" class="rowColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetAllServices-org.mases.jcobridge.netreflection.NetType-">GetAllServices</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)</code>
 <div class="block">Invokes the .NET member GetAllServices.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getIsStarted--">getIsStarted</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsStarted.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetLoadedWorkflows--">GetLoadedWorkflows</a></span>()</code>
 <div class="block">Invokes the .NET member GetLoadedWorkflows.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the value of the .NET property Name.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetService-org.mases.jcobridge.netreflection.NetType-">GetService</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)</code>
 <div class="block">Invokes the .NET member GetService.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#GetWorkflow-system.Guid-">GetWorkflow</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceId)</code>
 <div class="block">Invokes the .NET member GetWorkflow.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#RemoveService-org.mases.jcobridge.netreflection.NetObject-">RemoveService</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;service)</code>
 <div class="block">Invokes the .NET member RemoveService.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i37" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeServicesExceptionNotHandled-system.EventHandler_1-">removeServicesExceptionNotHandled</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/ServicesExceptionNotHandledEventArgs.html" title="class in system.workflow.runtime">ServicesExceptionNotHandledEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeServicesExceptionNotHandled.</div>
+</td>
+</tr>
+<tr id="i38" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeStarted-system.EventHandler_1-">removeStarted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeStarted.</div>
+</td>
+</tr>
+<tr id="i39" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeStopped-system.EventHandler_1-">removeStopped</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeStopped.</div>
+</td>
+</tr>
+<tr id="i40" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowAborted-system.EventHandler_1-">removeWorkflowAborted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowAborted.</div>
+</td>
+</tr>
+<tr id="i41" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowCompleted-system.EventHandler_1-">removeWorkflowCompleted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowCompletedEventArgs.html" title="class in system.workflow.runtime">WorkflowCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowCompleted.</div>
+</td>
+</tr>
+<tr id="i42" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowCreated-system.EventHandler_1-">removeWorkflowCreated</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowCreated.</div>
+</td>
+</tr>
+<tr id="i43" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowIdled-system.EventHandler_1-">removeWorkflowIdled</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowIdled.</div>
+</td>
+</tr>
+<tr id="i44" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowLoaded-system.EventHandler_1-">removeWorkflowLoaded</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowLoaded.</div>
+</td>
+</tr>
+<tr id="i45" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowPersisted-system.EventHandler_1-">removeWorkflowPersisted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowPersisted.</div>
+</td>
+</tr>
+<tr id="i46" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowResumed-system.EventHandler_1-">removeWorkflowResumed</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowResumed.</div>
+</td>
+</tr>
+<tr id="i47" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowStarted-system.EventHandler_1-">removeWorkflowStarted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowStarted.</div>
+</td>
+</tr>
+<tr id="i48" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowSuspended-system.EventHandler_1-">removeWorkflowSuspended</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowSuspendedEventArgs.html" title="class in system.workflow.runtime">WorkflowSuspendedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowSuspended.</div>
+</td>
+</tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowTerminated-system.EventHandler_1-">removeWorkflowTerminated</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowTerminatedEventArgs.html" title="class in system.workflow.runtime">WorkflowTerminatedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowTerminated.</div>
+</td>
+</tr>
+<tr id="i50" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#removeWorkflowUnloaded-system.EventHandler_1-">removeWorkflowUnloaded</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeWorkflowUnloaded.</div>
+</td>
+</tr>
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>
 <div class="block">Sets the value of the .NET property Name.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#StartRuntime--">StartRuntime</a></span>()</code>
 <div class="block">Invokes the .NET member StartRuntime.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/WorkflowRuntime.html#StopRuntime--">StopRuntime</a></span>()</code>
 <div class="block">Invokes the .NET member StopRuntime.</div>
@@ -828,6 +1024,272 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/FormatException.html" title="class in system">FormatException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.Runtime.WorkflowRuntime.AddService" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addServicesExceptionNotHandled-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addServicesExceptionNotHandled</h4>
+<pre>public&nbsp;void&nbsp;addServicesExceptionNotHandled(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/ServicesExceptionNotHandledEventArgs.html" title="class in system.workflow.runtime">ServicesExceptionNotHandledEventArgs</a>&gt;&nbsp;handler)
+                                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addServicesExceptionNotHandled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ServicesExceptionNotHandledEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addStarted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStarted</h4>
+<pre>public&nbsp;void&nbsp;addStarted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)
+                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addStarted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowRuntimeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addStopped-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStopped</h4>
+<pre>public&nbsp;void&nbsp;addStopped(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)
+                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addStopped.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowRuntimeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowAborted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowAborted</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowAborted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowAborted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowCompleted</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowCompleted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowCompletedEventArgs.html" title="class in system.workflow.runtime">WorkflowCompletedEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowCreated-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowCreated</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowCreated(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowCreated.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowIdled-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowIdled</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowIdled(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowIdled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowLoaded-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowLoaded</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowLoaded(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowLoaded.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowPersisted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowPersisted</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowPersisted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowPersisted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowResumed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowResumed</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowResumed(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowResumed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowStarted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowStarted</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowStarted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowStarted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowSuspended-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowSuspended</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowSuspended(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowSuspendedEventArgs.html" title="class in system.workflow.runtime">WorkflowSuspendedEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowSuspended.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowSuspendedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowTerminated-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowTerminated</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowTerminated(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowTerminatedEventArgs.html" title="class in system.workflow.runtime">WorkflowTerminatedEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowTerminated.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowTerminatedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addWorkflowUnloaded-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWorkflowUnloaded</h4>
+<pre>public&nbsp;void&nbsp;addWorkflowUnloaded(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addWorkflowUnloaded.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -1428,13 +1890,13 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>GetAllServices</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetAllServices(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)
-                                    throws java.lang.Throwable,
-                                           <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                           <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                           <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
-                                           <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;GetAllServices(<a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;serviceType)
+                                            throws java.lang.Throwable,
+                                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                   <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member GetAllServices.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1573,13 +2035,13 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>GetLoadedWorkflows</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;GetLoadedWorkflows()
-                                        throws java.lang.Throwable,
-                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowInstance.html" title="class in system.workflow.runtime">WorkflowInstance</a>&gt;&nbsp;GetLoadedWorkflows()
+                                                          throws java.lang.Throwable,
+                                                                 <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                 <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                 <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <div class="block">Invokes the .NET member GetLoadedWorkflows.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1777,6 +2239,272 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.Runtime.WorkflowRuntime.RemoveService" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeServicesExceptionNotHandled-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeServicesExceptionNotHandled</h4>
+<pre>public&nbsp;void&nbsp;removeServicesExceptionNotHandled(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/ServicesExceptionNotHandledEventArgs.html" title="class in system.workflow.runtime">ServicesExceptionNotHandledEventArgs</a>&gt;&nbsp;handler)
+                                       throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeServicesExceptionNotHandled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ServicesExceptionNotHandledEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeStarted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeStarted</h4>
+<pre>public&nbsp;void&nbsp;removeStarted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeStarted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowRuntimeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeStopped-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeStopped</h4>
+<pre>public&nbsp;void&nbsp;removeStopped(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowRuntimeEventArgs.html" title="class in system.workflow.runtime">WorkflowRuntimeEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeStopped.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowRuntimeEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowAborted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowAborted</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowAborted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowAborted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowCompleted</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowCompleted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowCompletedEventArgs.html" title="class in system.workflow.runtime">WorkflowCompletedEventArgs</a>&gt;&nbsp;handler)
+                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowCreated-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowCreated</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowCreated(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowCreated.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowIdled-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowIdled</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowIdled(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowIdled.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowLoaded-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowLoaded</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowLoaded(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                          throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowLoaded.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowPersisted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowPersisted</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowPersisted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowPersisted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowResumed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowResumed</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowResumed(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowResumed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowStarted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowStarted</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowStarted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowStarted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowSuspended-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowSuspended</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowSuspended(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowSuspendedEventArgs.html" title="class in system.workflow.runtime">WorkflowSuspendedEventArgs</a>&gt;&nbsp;handler)
+                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowSuspended.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowSuspendedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowTerminated-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowTerminated</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowTerminated(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowTerminatedEventArgs.html" title="class in system.workflow.runtime">WorkflowTerminatedEventArgs</a>&gt;&nbsp;handler)
+                              throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowTerminated.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowTerminatedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeWorkflowUnloaded-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeWorkflowUnloaded</h4>
+<pre>public&nbsp;void&nbsp;removeWorkflowUnloaded(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/runtime/WorkflowEventArgs.html" title="class in system.workflow.runtime">WorkflowEventArgs</a>&gt;&nbsp;handler)
+                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeWorkflowUnloaded.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;WorkflowEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

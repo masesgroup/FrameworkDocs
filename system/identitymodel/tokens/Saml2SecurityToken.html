@@ -225,7 +225,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2SecurityToken.html#Saml2SecurityToken-system.identitymodel.tokens.Saml2Assertion-system.collections.objectmodel.ReadOnlyCollection_1-system.identitymodel.tokens.SecurityToken-">Saml2SecurityToken</a></span>(<a href="../../../system/identitymodel/tokens/Saml2Assertion.html" title="class in system.identitymodel.tokens">Saml2Assertion</a>&nbsp;assertion,
-                  <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;keys,
+                  <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/tokens/SecurityKey.html" title="class in system.identitymodel.tokens">SecurityKey</a>&gt;&nbsp;keys,
                   <a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;issuerToken)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -488,7 +488,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <li class="blockList">
 <h4>Saml2SecurityToken</h4>
 <pre>public&nbsp;Saml2SecurityToken(<a href="../../../system/identitymodel/tokens/Saml2Assertion.html" title="class in system.identitymodel.tokens">Saml2Assertion</a>&nbsp;assertion,
-                          <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;keys,
+                          <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/tokens/SecurityKey.html" title="class in system.identitymodel.tokens">SecurityKey</a>&gt;&nbsp;keys,
                           <a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;issuerToken)
                    throws java.lang.Throwable,
                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -506,7 +506,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>assertion</code> - the argument of type <code>Saml2Assertion</code></dd>
-<dd><code>keys</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>keys</code> - the argument of type <code>ReadOnlyCollection_1&lt;SecurityKey&gt;</code></dd>
 <dd><code>issuerToken</code> - the argument of type <code>SecurityToken</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>

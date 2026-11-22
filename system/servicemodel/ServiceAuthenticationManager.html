@@ -228,8 +228,8 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceAuthenticationManager.html#Authenticate-system.collections.objectmodel.ReadOnlyCollection_1-system.Uri-org.mases.jcobridge.netreflection.JCORefOut-">Authenticate</a></span>(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authPolicy,
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceAuthenticationManager.html#Authenticate-system.collections.objectmodel.ReadOnlyCollection_1-system.Uri-org.mases.jcobridge.netreflection.JCORefOut-">Authenticate</a></span>(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authPolicy,
             <a href="../../system/Uri.html" title="class in system">Uri</a>&nbsp;listenUri,
             <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;message)</code>
 <div class="block">Invokes the .NET member Authenticate.</div>
@@ -414,14 +414,14 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>Authenticate</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;Authenticate(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authPolicy,
-                                         <a href="../../system/Uri.html" title="class in system">Uri</a>&nbsp;listenUri,
-                                         <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;message)
-                                  throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;Authenticate(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authPolicy,
+                                                               <a href="../../system/Uri.html" title="class in system">Uri</a>&nbsp;listenUri,
+                                                               <a href="../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../system/servicemodel/channels/Message.html" title="class in system.servicemodel.channels">Message</a>&gt;&nbsp;message)
+                                                        throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Authenticate.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>authPolicy</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>authPolicy</code> - the argument of type <code>ReadOnlyCollection_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dd><code>listenUri</code> - the argument of type <code>Uri</code></dd>
 <dd><code>message</code> - the argument of type <code>JCORefOut&lt;Message&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>

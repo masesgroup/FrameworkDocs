@@ -19,6 +19,10 @@
 <meta name="keywords" content="Resolve()">
 <meta name="keywords" content="ResolveAsync()">
 <meta name="keywords" content="ResolveAsyncCancel()">
+<meta name="keywords" content="addResolveCompleted()">
+<meta name="keywords" content="removeResolveCompleted()">
+<meta name="keywords" content="addResolveProgressChanged()">
+<meta name="keywords" content="removeResolveProgressChanged()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -32,7 +36,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -230,55 +234,79 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#addResolveCompleted-system.EventHandler_1-">addResolveCompleted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveCompletedEventArgs.html" title="class in system.net.peertopeer">ResolveCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addResolveCompleted.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#addResolveProgressChanged-system.EventHandler_1-">addResolveProgressChanged</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveProgressChangedEventArgs.html" title="class in system.net.peertopeer">ResolveProgressChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addResolveProgressChanged.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/net/peertopeer/PeerNameResolver.html" title="class in system.net.peertopeer">PeerNameResolver</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/net/peertopeer/PeerNameResolver.html" title="class in system.net.peertopeer"><code>PeerNameResolver</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#removeResolveCompleted-system.EventHandler_1-">removeResolveCompleted</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveCompletedEventArgs.html" title="class in system.net.peertopeer">ResolveCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeResolveCompleted.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#removeResolveProgressChanged-system.EventHandler_1-">removeResolveProgressChanged</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveProgressChangedEventArgs.html" title="class in system.net.peertopeer">ResolveProgressChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeResolveProgressChanged.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/peertopeer/PeerNameRecordCollection.html" title="class in system.net.peertopeer">PeerNameRecordCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#Resolve-system.net.peertopeer.PeerName-">Resolve</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName)</code>
 <div class="block">Invokes the .NET member Resolve.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/peertopeer/PeerNameRecordCollection.html" title="class in system.net.peertopeer">PeerNameRecordCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#Resolve-system.net.peertopeer.PeerName-system.net.peertopeer.Cloud-">Resolve</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
        <a href="../../../system/net/peertopeer/Cloud.html" title="class in system.net.peertopeer">Cloud</a>&nbsp;cloud)</code>
 <div class="block">Invokes the .NET member Resolve.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/net/peertopeer/PeerNameRecordCollection.html" title="class in system.net.peertopeer">PeerNameRecordCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#Resolve-system.net.peertopeer.PeerName-system.net.peertopeer.Cloud-int-">Resolve</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
        <a href="../../../system/net/peertopeer/Cloud.html" title="class in system.net.peertopeer">Cloud</a>&nbsp;cloud,
@@ -286,14 +314,14 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member Resolve.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/net/peertopeer/PeerNameRecordCollection.html" title="class in system.net.peertopeer">PeerNameRecordCollection</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#Resolve-system.net.peertopeer.PeerName-int-">Resolve</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
        int&nbsp;maxRecords)</code>
 <div class="block">Invokes the .NET member Resolve.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#ResolveAsync-system.net.peertopeer.PeerName-system.net.peertopeer.Cloud-int-org.mases.jcobridge.netreflection.NetObject-">ResolveAsync</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
             <a href="../../../system/net/peertopeer/Cloud.html" title="class in system.net.peertopeer">Cloud</a>&nbsp;cloud,
@@ -302,7 +330,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member ResolveAsync.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#ResolveAsync-system.net.peertopeer.PeerName-system.net.peertopeer.Cloud-org.mases.jcobridge.netreflection.NetObject-">ResolveAsync</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
             <a href="../../../system/net/peertopeer/Cloud.html" title="class in system.net.peertopeer">Cloud</a>&nbsp;cloud,
@@ -310,7 +338,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member ResolveAsync.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#ResolveAsync-system.net.peertopeer.PeerName-int-org.mases.jcobridge.netreflection.NetObject-">ResolveAsync</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
             int&nbsp;maxRecords,
@@ -318,20 +346,20 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Invokes the .NET member ResolveAsync.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#ResolveAsync-system.net.peertopeer.PeerName-org.mases.jcobridge.netreflection.NetObject-">ResolveAsync</a></span>(<a href="../../../system/net/peertopeer/PeerName.html" title="class in system.net.peertopeer">PeerName</a>&nbsp;peerName,
             <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
 <div class="block">Invokes the .NET member ResolveAsync.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#ResolveAsyncCancel-org.mases.jcobridge.netreflection.NetObject-">ResolveAsyncCancel</a></span>(<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
 <div class="block">Invokes the .NET member ResolveAsyncCancel.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/peertopeer/PeerNameResolver.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
@@ -472,6 +500,44 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addResolveCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addResolveCompleted</h4>
+<pre>public&nbsp;void&nbsp;addResolveCompleted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveCompletedEventArgs.html" title="class in system.net.peertopeer">ResolveCompletedEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addResolveCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ResolveCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addResolveProgressChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addResolveProgressChanged</h4>
+<pre>public&nbsp;void&nbsp;addResolveProgressChanged(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveProgressChangedEventArgs.html" title="class in system.net.peertopeer">ResolveProgressChangedEventArgs</a>&gt;&nbsp;handler)
+                               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addResolveProgressChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ResolveProgressChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -583,6 +649,44 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dd><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html#getJCOType--">getJCOType</a></code>&nbsp;in class&nbsp;<code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the type of the .NET class</dd>
+</dl>
+</li>
+</ul>
+<a name="removeResolveCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeResolveCompleted</h4>
+<pre>public&nbsp;void&nbsp;removeResolveCompleted(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveCompletedEventArgs.html" title="class in system.net.peertopeer">ResolveCompletedEventArgs</a>&gt;&nbsp;handler)
+                            throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeResolveCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ResolveCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeResolveProgressChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeResolveProgressChanged</h4>
+<pre>public&nbsp;void&nbsp;removeResolveProgressChanged(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/net/peertopeer/ResolveProgressChangedEventArgs.html" title="class in system.net.peertopeer">ResolveProgressChangedEventArgs</a>&gt;&nbsp;handler)
+                                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeResolveProgressChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ResolveProgressChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

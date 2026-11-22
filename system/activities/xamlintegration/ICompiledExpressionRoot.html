@@ -187,13 +187,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#CanExecuteExpression-java.lang.String-boolean-system.collections.generic.IList_1-org.mases.jcobridge.netreflection.JCORefOut-">CanExecuteExpression</a></span>(java.lang.String&nbsp;expressionText,
                     boolean&nbsp;isReference,
-                    <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                    <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;expressionId)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#GetExpressionTreeForExpression-int-system.collections.generic.IList_1-">GetExpressionTreeForExpression</a></span>(int&nbsp;expressionId,
-                              <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locationReferences)</code>&nbsp;</td>
+                              <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locationReferences)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
@@ -236,12 +236,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#InvokeExpression-int-system.collections.generic.IList_1-">InvokeExpression</a></span>(int&nbsp;expressionId,
-                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations)</code>&nbsp;</td>
+                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/Location.html" title="class in system.activities">Location</a>&gt;&nbsp;locations)</code>&nbsp;</td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#InvokeExpression-int-system.collections.generic.IList_1-system.activities.ActivityContext-">InvokeExpression</a></span>(int&nbsp;expressionId,
-                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                 <a href="../../../system/activities/ActivityContext.html" title="class in system.activities">ActivityContext</a>&nbsp;activityContext)</code>&nbsp;</td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -323,7 +323,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <h4>CanExecuteExpression</h4>
 <pre>boolean&nbsp;CanExecuteExpression(java.lang.String&nbsp;expressionText,
                              boolean&nbsp;isReference,
-                             <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                             <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                              <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;expressionId)
                       throws java.lang.Throwable</pre>
 <dl>
@@ -339,7 +339,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <li class="blockList">
 <h4>GetExpressionTreeForExpression</h4>
 <pre><a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;GetExpressionTreeForExpression(int&nbsp;expressionId,
-                                          <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locationReferences)
+                                          <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locationReferences)
                                    throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -463,7 +463,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <li class="blockList">
 <h4>InvokeExpression</h4>
 <pre><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;InvokeExpression(int&nbsp;expressionId,
-                           <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations)
+                           <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/Location.html" title="class in system.activities">Location</a>&gt;&nbsp;locations)
                     throws java.lang.Throwable</pre>
 <dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -478,7 +478,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.
 <li class="blockList">
 <h4>InvokeExpression</h4>
 <pre><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;InvokeExpression(int&nbsp;expressionId,
-                           <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                           <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                            <a href="../../../system/activities/ActivityContext.html" title="class in system.activities">ActivityContext</a>&nbsp;activityContext)
                     throws java.lang.Throwable</pre>
 <dl>

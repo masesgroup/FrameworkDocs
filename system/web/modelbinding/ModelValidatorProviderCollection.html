@@ -218,7 +218,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidatorProviderCollection.html#ModelValidatorProviderCollection-system.collections.generic.IList_1-">ModelValidatorProviderCollection</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;list)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidatorProviderCollection.html#ModelValidatorProviderCollection-system.collections.generic.IList_1-">ModelValidatorProviderCollection</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/web/modelbinding/ModelValidatorProvider.html" title="class in system.web.modelbinding">ModelValidatorProvider</a>&gt;&nbsp;list)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -279,7 +279,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/web/modelbinding/ModelValidator.html" title="class in system.web.modelbinding">ModelValidator</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelValidatorProviderCollection.html#GetValidators-system.web.modelbinding.ModelMetadata-system.web.modelbinding.ModelBindingExecutionContext-">GetValidators</a></span>(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;metadata,
              <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)</code>
 <div class="block">Invokes the .NET member GetValidators.</div>
@@ -431,13 +431,13 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>ModelValidatorProviderCollection</h4>
-<pre>public&nbsp;ModelValidatorProviderCollection(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;list)
+<pre>public&nbsp;ModelValidatorProviderCollection(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/web/modelbinding/ModelValidatorProvider.html" title="class in system.web.modelbinding">ModelValidatorProvider</a>&gt;&nbsp;list)
                                  throws java.lang.Throwable,
                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>list</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>list</code> - the argument of type <code>IList_1&lt;ModelValidatorProvider&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -591,9 +591,9 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetValidators</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetValidators(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;metadata,
-                                   <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
-                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/web/modelbinding/ModelValidator.html" title="class in system.web.modelbinding">ModelValidator</a>&gt;&nbsp;GetValidators(<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&nbsp;metadata,
+                                                   <a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
+                                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetValidators.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

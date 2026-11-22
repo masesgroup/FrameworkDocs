@@ -263,7 +263,7 @@ implements <a href="../../../system/workflow/activities/IEventActivity.html" tit
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/activities/IEventActivityImplementation.html#Subscribe-system.workflow.componentmodel.ActivityExecutionContext-system.workflow.componentmodel.IActivityEventListener_1-">Subscribe</a></span>(<a href="../../../system/workflow/componentmodel/ActivityExecutionContext.html" title="class in system.workflow.componentmodel">ActivityExecutionContext</a>&nbsp;parentContext,
-         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;parentEventHandler)</code>
+         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/QueueEventArgs.html" title="class in system.workflow.componentmodel">QueueEventArgs</a>&gt;&nbsp;parentEventHandler)</code>
 <div class="block">Invokes the .NET member Subscribe.</div>
 </td>
 </tr>
@@ -276,7 +276,7 @@ implements <a href="../../../system/workflow/activities/IEventActivity.html" tit
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/activities/IEventActivityImplementation.html#Unsubscribe-system.workflow.componentmodel.ActivityExecutionContext-system.workflow.componentmodel.IActivityEventListener_1-">Unsubscribe</a></span>(<a href="../../../system/workflow/componentmodel/ActivityExecutionContext.html" title="class in system.workflow.componentmodel">ActivityExecutionContext</a>&nbsp;parentContext,
-           <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;parentEventHandler)</code>
+           <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/QueueEventArgs.html" title="class in system.workflow.componentmodel">QueueEventArgs</a>&gt;&nbsp;parentEventHandler)</code>
 <div class="block">Invokes the .NET member Unsubscribe.</div>
 </td>
 </tr>
@@ -527,7 +527,7 @@ implements <a href="../../../system/workflow/activities/IEventActivity.html" tit
 <li class="blockList">
 <h4>Subscribe</h4>
 <pre>public&nbsp;void&nbsp;Subscribe(<a href="../../../system/workflow/componentmodel/ActivityExecutionContext.html" title="class in system.workflow.componentmodel">ActivityExecutionContext</a>&nbsp;parentContext,
-                      <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;parentEventHandler)
+                      <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/QueueEventArgs.html" title="class in system.workflow.componentmodel">QueueEventArgs</a>&gt;&nbsp;parentEventHandler)
                throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Subscribe.</div>
 <dl>
@@ -535,7 +535,7 @@ implements <a href="../../../system/workflow/activities/IEventActivity.html" tit
 <dd><code><a href="../../../system/workflow/activities/IEventActivity.html#Subscribe-system.workflow.componentmodel.ActivityExecutionContext-system.workflow.componentmodel.IActivityEventListener_1-">Subscribe</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/activities/IEventActivity.html" title="interface in system.workflow.activities">IEventActivity</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>parentContext</code> - the argument of type <code>ActivityExecutionContext</code></dd>
-<dd><code>parentEventHandler</code> - the argument of type <code>IActivityEventListener_1</code></dd>
+<dd><code>parentEventHandler</code> - the argument of type <code>IActivityEventListener_1&lt;QueueEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -571,7 +571,7 @@ implements <a href="../../../system/workflow/activities/IEventActivity.html" tit
 <li class="blockList">
 <h4>Unsubscribe</h4>
 <pre>public&nbsp;void&nbsp;Unsubscribe(<a href="../../../system/workflow/componentmodel/ActivityExecutionContext.html" title="class in system.workflow.componentmodel">ActivityExecutionContext</a>&nbsp;parentContext,
-                        <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;parentEventHandler)
+                        <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/QueueEventArgs.html" title="class in system.workflow.componentmodel">QueueEventArgs</a>&gt;&nbsp;parentEventHandler)
                  throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member Unsubscribe.</div>
 <dl>
@@ -579,7 +579,7 @@ implements <a href="../../../system/workflow/activities/IEventActivity.html" tit
 <dd><code><a href="../../../system/workflow/activities/IEventActivity.html#Unsubscribe-system.workflow.componentmodel.ActivityExecutionContext-system.workflow.componentmodel.IActivityEventListener_1-">Unsubscribe</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/workflow/activities/IEventActivity.html" title="interface in system.workflow.activities">IEventActivity</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>parentContext</code> - the argument of type <code>ActivityExecutionContext</code></dd>
-<dd><code>parentEventHandler</code> - the argument of type <code>IActivityEventListener_1</code></dd>
+<dd><code>parentEventHandler</code> - the argument of type <code>IActivityEventListener_1&lt;QueueEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>

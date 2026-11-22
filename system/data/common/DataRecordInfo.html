@@ -217,7 +217,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/data/common/DataRecordInfo.html#DataRecordInfo-system.data.metadata.edm.TypeUsage-system.collections.generic.IEnumerable_1-">DataRecordInfo</a></span>(<a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;metadata,
-              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;memberInfo)</code>
+              <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/data/metadata/edm/EdmMember.html" title="class in system.data.metadata.edm">EdmMember</a>&gt;&nbsp;memberInfo)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -243,7 +243,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/data/common/FieldMetadata.html" title="class in system.data.common">FieldMetadata</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/data/common/DataRecordInfo.html#getFieldMetadata--">getFieldMetadata</a></span>()</code>
 <div class="block">Gets the value of the .NET property FieldMetadata.</div>
 </td>
@@ -417,7 +417,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>DataRecordInfo</h4>
 <pre>public&nbsp;DataRecordInfo(<a href="../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;metadata,
-                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;memberInfo)
+                      <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/data/metadata/edm/EdmMember.html" title="class in system.data.metadata.edm">EdmMember</a>&gt;&nbsp;memberInfo)
                throws java.lang.Throwable,
                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -433,7 +433,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>metadata</code> - the argument of type <code>TypeUsage</code></dd>
-<dd><code>memberInfo</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>memberInfo</code> - the argument of type <code>IEnumerable_1&lt;EdmMember&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -484,8 +484,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getFieldMetadata</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getFieldMetadata()
-                                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/data/common/FieldMetadata.html" title="class in system.data.common">FieldMetadata</a>&gt;&nbsp;getFieldMetadata()
+                                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property FieldMetadata.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

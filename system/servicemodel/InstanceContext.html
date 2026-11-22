@@ -263,7 +263,7 @@ extends <a href="../../system/servicemodel/channels/CommunicationObject.html" ti
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../system/servicemodel/IExtensionCollection_1.html" title="interface in system.servicemodel">IExtensionCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/servicemodel/IExtensionCollection_1.html" title="interface in system.servicemodel">IExtensionCollection_1</a>&lt;<a href="../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/InstanceContext.html#getExtensions--">getExtensions</a></span>()</code>
 <div class="block">Gets the value of the .NET property Extensions.</div>
 </td>
@@ -275,7 +275,7 @@ extends <a href="../../system/servicemodel/channels/CommunicationObject.html" ti
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/InstanceContext.html#getIncomingChannels--">getIncomingChannels</a></span>()</code>
 <div class="block">Gets the value of the .NET property IncomingChannels.</div>
 </td>
@@ -317,7 +317,7 @@ extends <a href="../../system/servicemodel/channels/CommunicationObject.html" ti
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/InstanceContext.html#getOutgoingChannels--">getOutgoingChannels</a></span>()</code>
 <div class="block">Gets the value of the .NET property OutgoingChannels.</div>
 </td>
@@ -617,21 +617,21 @@ extends <a href="../../system/servicemodel/channels/CommunicationObject.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getExtensions</h4>
-<pre>public&nbsp;<a href="../../system/servicemodel/IExtensionCollection_1.html" title="interface in system.servicemodel">IExtensionCollection_1</a>&nbsp;getExtensions()
-                                     throws java.lang.Throwable,
-                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                            <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
-                                            <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                                            <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                            <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                                            <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                            <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                                            <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<pre>public&nbsp;<a href="../../system/servicemodel/IExtensionCollection_1.html" title="interface in system.servicemodel">IExtensionCollection_1</a>&lt;<a href="../../system/servicemodel/InstanceContext.html" title="class in system.servicemodel">InstanceContext</a>&gt;&nbsp;getExtensions()
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                             <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                             <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                             <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                             <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                             <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                             <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                             <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                             <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                             <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                             <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                             <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                             <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
 <div class="block">Gets the value of the .NET property Extensions.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -707,21 +707,21 @@ extends <a href="../../system/servicemodel/channels/CommunicationObject.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getIncomingChannels</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getIncomingChannels()
-                                  throws java.lang.Throwable,
-                                         <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                         <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                         <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                         <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                         <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                         <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                         <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
-                                         <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                                         <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                         <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                                         <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                         <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                                         <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>&gt;&nbsp;getIncomingChannels()
+                                            throws java.lang.Throwable,
+                                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                   <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                   <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                   <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                   <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                   <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                   <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                   <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                   <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                   <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
 <div class="block">Gets the value of the .NET property IncomingChannels.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -868,21 +868,21 @@ extends <a href="../../system/servicemodel/channels/CommunicationObject.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getOutgoingChannels</h4>
-<pre>public&nbsp;<a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getOutgoingChannels()
-                                  throws java.lang.Throwable,
-                                         <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                         <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                         <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                         <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                         <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                         <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                         <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
-                                         <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                                         <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                         <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                                         <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                         <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                                         <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
+<pre>public&nbsp;<a href="../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../system/servicemodel/channels/IChannel.html" title="interface in system.servicemodel.channels">IChannel</a>&gt;&nbsp;getOutgoingChannels()
+                                            throws java.lang.Throwable,
+                                                   <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                   <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                   <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                   <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                   <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                   <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                   <a href="../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a>,
+                                                   <a href="../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                   <a href="../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                   <a href="../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                   <a href="../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                   <a href="../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                   <a href="../../system/xml/XmlException.html" title="class in system.xml">XmlException</a></pre>
 <div class="block">Gets the value of the .NET property OutgoingChannels.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

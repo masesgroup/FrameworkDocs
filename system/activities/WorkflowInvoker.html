@@ -22,6 +22,8 @@
 <meta name="keywords" content="CancelAsync()">
 <meta name="keywords" content="InvokeAsync()">
 <meta name="keywords" content="getExtensions()">
+<meta name="keywords" content="addInvokeCompleted()">
+<meta name="keywords" content="removeInvokeCompleted()">
 <link rel="stylesheet" type="text/css" href="../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../script.js"></script>
 </head>
@@ -35,7 +37,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":9,"i15":9,"i16":9,"i17":9,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":9,"i16":9,"i17":9,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -236,13 +238,19 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#addInvokeCompleted-system.EventHandler_1-">addInvokeCompleted</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/activities/InvokeCompletedEventArgs.html" title="class in system.activities">InvokeCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addInvokeCompleted.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#BeginInvoke-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginInvoke</a></span>(<a href="../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;callback,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>
 <div class="block">Invokes the .NET member BeginInvoke.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#BeginInvoke-system.collections.generic.IDictionary_2-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginInvoke</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
            <a href="../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;callback,
@@ -250,7 +258,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member BeginInvoke.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#BeginInvoke-system.collections.generic.IDictionary_2-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginInvoke</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
            <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
@@ -259,7 +267,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member BeginInvoke.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#BeginInvoke-system.TimeSpan-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">BeginInvoke</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
            <a href="../../system/AsyncCallback.html" title="class in system">AsyncCallback</a>&nbsp;callback,
@@ -267,80 +275,80 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member BeginInvoke.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#CancelAsync-org.mases.jcobridge.netreflection.NetObject-">CancelAsync</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
 <div class="block">Invokes the .NET member CancelAsync.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/activities/WorkflowInvoker.html" title="class in system.activities">WorkflowInvoker</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../system/activities/WorkflowInvoker.html" title="class in system.activities"><code>WorkflowInvoker</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#EndInvoke-system.IAsyncResult-">EndInvoke</a></span>(<a href="../../system/IAsyncResult.html" title="interface in system">IAsyncResult</a>&nbsp;result)</code>
 <div class="block">Invokes the .NET member EndInvoke.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../system/activities/hosting/WorkflowInstanceExtensionManager.html" title="class in system.activities.hosting">WorkflowInstanceExtensionManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#getExtensions--">getExtensions</a></span>()</code>
 <div class="block">Gets the value of the .NET property Extensions.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke--">Invoke</a></span>()</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.activities.Activity-">Invoke</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;workflow)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.activities.Activity-system.collections.generic.IDictionary_2-">Invoke</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;workflow,
       <a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.activities.Activity-system.collections.generic.IDictionary_2-system.TimeSpan-">Invoke</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;workflow,
       <a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
@@ -348,59 +356,59 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.activities.Activity-system.TimeSpan-">Invoke</a></span>(<a href="../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;workflow,
       <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.collections.generic.IDictionary_2-">Invoke</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.collections.generic.IDictionary_2-system.TimeSpan-">Invoke</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
       <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#Invoke-system.TimeSpan-">Invoke</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync--">InvokeAsync</a></span>()</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-system.collections.generic.IDictionary_2-">InvokeAsync</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-system.collections.generic.IDictionary_2-org.mases.jcobridge.netreflection.NetObject-">InvokeAsync</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-system.collections.generic.IDictionary_2-system.TimeSpan-">InvokeAsync</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
            <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-system.collections.generic.IDictionary_2-system.TimeSpan-org.mases.jcobridge.netreflection.NetObject-">InvokeAsync</a></span>(<a href="../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;inputs,
            <a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
@@ -408,26 +416,32 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-org.mases.jcobridge.netreflection.NetObject-">InvokeAsync</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-system.TimeSpan-">InvokeAsync</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#InvokeAsync-system.TimeSpan-org.mases.jcobridge.netreflection.NetObject-">InvokeAsync</a></span>(<a href="../../system/TimeSpan.html" title="class in system">TimeSpan</a>&nbsp;timeout,
            <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userState)</code>
 <div class="block">Invokes the .NET member InvokeAsync.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#removeInvokeCompleted-system.EventHandler_1-">removeInvokeCompleted</a></span>(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/activities/InvokeCompletedEventArgs.html" title="class in system.activities">InvokeCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeInvokeCompleted.</div>
+</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/WorkflowInvoker.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
@@ -594,6 +608,25 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addInvokeCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addInvokeCompleted</h4>
+<pre>public&nbsp;void&nbsp;addInvokeCompleted(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/activities/InvokeCompletedEventArgs.html" title="class in system.activities">InvokeCompletedEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addInvokeCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;InvokeCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="BeginInvoke-system.AsyncCallback-org.mases.jcobridge.netreflection.NetObject-">
 <!--   -->
 </a>
@@ -1752,6 +1785,25 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dd><code><a href="../../system/activities/ValidationException.html" title="class in system.activities">ValidationException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Activities.WorkflowInvoker.InvokeAsync" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeInvokeCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeInvokeCompleted</h4>
+<pre>public&nbsp;void&nbsp;removeInvokeCompleted(<a href="../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../system/activities/InvokeCompletedEventArgs.html" title="class in system.activities">InvokeCompletedEventArgs</a>&gt;&nbsp;handler)
+                           throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeInvokeCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;InvokeCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

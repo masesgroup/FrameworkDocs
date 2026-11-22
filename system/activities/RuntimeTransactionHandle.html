@@ -330,7 +330,7 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#RequestTransactionContext-system.activities.NativeActivityContext-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">RequestTransactionContext</a></span>(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
-                         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/activities/NativeActivityTransactionContext.html" title="class in system.activities">NativeActivityTransactionContext</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;callback,
                          <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>
 <div class="block">Invokes the .NET member RequestTransactionContext.</div>
 </td>
@@ -338,7 +338,7 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/RuntimeTransactionHandle.html#RequireTransactionContext-system.activities.NativeActivityContext-system.Action_2-org.mases.jcobridge.netreflection.NetObject-">RequireTransactionContext</a></span>(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
-                         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                         <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/activities/NativeActivityTransactionContext.html" title="class in system.activities">NativeActivityTransactionContext</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;callback,
                          <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)</code>
 <div class="block">Invokes the .NET member RequireTransactionContext.</div>
 </td>
@@ -888,7 +888,7 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <li class="blockList">
 <h4>RequestTransactionContext</h4>
 <pre>public&nbsp;void&nbsp;RequestTransactionContext(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
-                                      <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                                      <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/activities/NativeActivityTransactionContext.html" title="class in system.activities">NativeActivityTransactionContext</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;callback,
                                       <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
                                throws java.lang.Throwable,
                                       <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -904,7 +904,7 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - the argument of type <code>NativeActivityContext</code></dd>
-<dd><code>callback</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>callback</code> - the argument of type <code>Action_2&lt;NativeActivityTransactionContext, Object&gt;</code></dd>
 <dd><code>state</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -929,7 +929,7 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <li class="blockList">
 <h4>RequireTransactionContext</h4>
 <pre>public&nbsp;void&nbsp;RequireTransactionContext(<a href="../../system/activities/NativeActivityContext.html" title="class in system.activities">NativeActivityContext</a>&nbsp;context,
-                                      <a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback,
+                                      <a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/activities/NativeActivityTransactionContext.html" title="class in system.activities">NativeActivityTransactionContext</a>,<a href="../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;callback,
                                       <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;state)
                                throws java.lang.Throwable,
                                       <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -945,7 +945,7 @@ extends <a href="../../system/activities/Handle.html" title="class in system.act
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>context</code> - the argument of type <code>NativeActivityContext</code></dd>
-<dd><code>callback</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>callback</code> - the argument of type <code>Action_2&lt;NativeActivityTransactionContext, Object&gt;</code></dd>
 <dd><code>state</code> - the argument of type <code>NetObject</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>

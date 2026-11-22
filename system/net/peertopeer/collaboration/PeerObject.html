@@ -28,6 +28,8 @@
 <meta name="keywords" content="setId()">
 <meta name="keywords" content="getPeerScope()">
 <meta name="keywords" content="setPeerScope()">
+<meta name="keywords" content="addObjectChanged()">
+<meta name="keywords" content="removeObjectChanged()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -41,7 +43,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -247,113 +249,125 @@ implements java.lang.AutoCloseable</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#addObjectChanged-system.EventHandler_1-">addObjectChanged</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/ObjectChangedEventArgs.html" title="class in system.net.peertopeer.collaboration">ObjectChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addObjectChanged.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/net/peertopeer/collaboration/PeerObject.html" title="class in system.net.peertopeer.collaboration">PeerObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/net/peertopeer/collaboration/PeerObject.html" title="class in system.net.peertopeer.collaboration"><code>PeerObject</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#Dispose--">Dispose</a></span>()</code>
 <div class="block">Invokes the .NET member Dispose.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#Equals-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">Equals</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;objA,
       <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;objB)</code>
 <div class="block">Invokes the .NET member Equals.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#Equals-system.net.peertopeer.collaboration.PeerObject-">Equals</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerObject.html" title="class in system.net.peertopeer.collaboration">PeerObject</a>&nbsp;other)</code>
 <div class="block">Invokes the .NET member Equals.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>byte[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getData--">getData</a></span>()</code>
 <div class="block">Gets the value of the .NET property Data.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/Guid.html" title="class in system">Guid</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getId--">getId</a></span>()</code>
 <div class="block">Gets the value of the .NET property Id.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/net/peertopeer/collaboration/PeerScope.html" title="class in system.net.peertopeer.collaboration">PeerScope</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getPeerScope--">getPeerScope</a></span>()</code>
 <div class="block">Gets the value of the .NET property PeerScope.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/componentmodel/ISynchronizeInvoke.html" title="interface in system.componentmodel">ISynchronizeInvoke</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#getSynchronizingObject--">getSynchronizingObject</a></span>()</code>
 <div class="block">Gets the value of the .NET property SynchronizingObject.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#removeObjectChanged-system.EventHandler_1-">removeObjectChanged</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/ObjectChangedEventArgs.html" title="class in system.net.peertopeer.collaboration">ObjectChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeObjectChanged.</div>
+</td>
+</tr>
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#setData-byte:A-">setData</a></span>(byte[]&nbsp;Data)</code>
 <div class="block">Sets the value of the .NET property Data.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#setId-system.Guid-">setId</a></span>(<a href="../../../../system/Guid.html" title="class in system">Guid</a>&nbsp;Id)</code>
 <div class="block">Sets the value of the .NET property Id.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#setPeerScope-system.net.peertopeer.collaboration.PeerScope-">setPeerScope</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerScope.html" title="class in system.net.peertopeer.collaboration">PeerScope</a>&nbsp;PeerScope)</code>
 <div class="block">Sets the value of the .NET property PeerScope.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerObject.html#setSynchronizingObject-system.componentmodel.ISynchronizeInvoke-">setSynchronizingObject</a></span>(<a href="../../../../system/componentmodel/ISynchronizeInvoke.html" title="interface in system.componentmodel">ISynchronizeInvoke</a>&nbsp;SynchronizingObject)</code>
 <div class="block">Sets the value of the .NET property SynchronizingObject.</div>
@@ -535,6 +549,25 @@ implements java.lang.AutoCloseable</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addObjectChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addObjectChanged</h4>
+<pre>public&nbsp;void&nbsp;addObjectChanged(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/ObjectChangedEventArgs.html" title="class in system.net.peertopeer.collaboration">ObjectChangedEventArgs</a>&gt;&nbsp;handler)
+                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addObjectChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ObjectChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -845,6 +878,25 @@ implements java.lang.AutoCloseable</pre>
 <dd><code><a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Net.PeerToPeer.Collaboration.PeerObject.SynchronizingObject" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeObjectChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeObjectChanged</h4>
+<pre>public&nbsp;void&nbsp;removeObjectChanged(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/ObjectChangedEventArgs.html" title="class in system.net.peertopeer.collaboration">ObjectChangedEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeObjectChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ObjectChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

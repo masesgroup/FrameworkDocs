@@ -309,19 +309,19 @@ extends <a href="../../../system/servicemodel/dispatcher/ChannelDispatcherBase.h
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IChannelInitializer.html" title="interface in system.servicemodel.dispatcher">IChannelInitializer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getChannelInitializers--">getChannelInitializers</a></span>()</code>
 <div class="block">Gets the value of the .NET property ChannelInitializers.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/EndpointDispatcher.html" title="class in system.servicemodel.dispatcher">EndpointDispatcher</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getEndpoints--">getEndpoints</a></span>()</code>
 <div class="block">Gets the value of the .NET property Endpoints.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IErrorHandler.html" title="interface in system.servicemodel.dispatcher">IErrorHandler</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/dispatcher/ChannelDispatcher.html#getErrorHandlers--">getErrorHandlers</a></span>()</code>
 <div class="block">Gets the value of the .NET property ErrorHandlers.</div>
 </td>
@@ -877,8 +877,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ChannelDispatcherBase.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getChannelInitializers</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getChannelInitializers()
-                                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IChannelInitializer.html" title="interface in system.servicemodel.dispatcher">IChannelInitializer</a>&gt;&nbsp;getChannelInitializers()
+                                                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ChannelInitializers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -896,8 +896,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ChannelDispatcherBase.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getEndpoints</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&nbsp;getEndpoints()
-                                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/SynchronizedCollection_1.html" title="class in system.collections.generic">SynchronizedCollection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/EndpointDispatcher.html" title="class in system.servicemodel.dispatcher">EndpointDispatcher</a>&gt;&nbsp;getEndpoints()
+                                                          throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Endpoints.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -915,8 +915,8 @@ extends <a href="../../../system/servicemodel/dispatcher/ChannelDispatcherBase.h
 <ul class="blockList">
 <li class="blockList">
 <h4>getErrorHandlers</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getErrorHandlers()
-                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/dispatcher/IErrorHandler.html" title="interface in system.servicemodel.dispatcher">IErrorHandler</a>&gt;&nbsp;getErrorHandlers()
+                                             throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ErrorHandlers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

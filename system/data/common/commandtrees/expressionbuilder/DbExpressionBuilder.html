@@ -333,7 +333,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbQuantifierExpression.html" title="class in system.data.common.commandtrees">DbQuantifierExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#All-system.data.common.commandtrees.DbExpression-system.Func_2-">All</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-   <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;predicate)</code>
+   <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;predicate)</code>
 <div class="block">Invokes the .NET member All.</div>
 </td>
 </tr>
@@ -360,7 +360,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbQuantifierExpression.html" title="class in system.data.common.commandtrees">DbQuantifierExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Any-system.data.common.commandtrees.DbExpression-system.Func_2-">Any</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-   <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;predicate)</code>
+   <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;predicate)</code>
 <div class="block">Invokes the .NET member Any.</div>
 </td>
 </tr>
@@ -393,8 +393,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbCaseExpression.html" title="class in system.data.common.commandtrees">DbCaseExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Case-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.data.common.commandtrees.DbExpression-">Case</a></span>(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;whenExpressions,
-    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;thenExpressions,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Case-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.data.common.commandtrees.DbExpression-">Case</a></span>(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;whenExpressions,
+    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;thenExpressions,
     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;elseExpression)</code>
 <div class="block">Invokes the .NET member Case.</div>
 </td>
@@ -444,14 +444,14 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbRefExpression.html" title="class in system.data.common.commandtrees">DbRefExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#CreateRef-system.data.metadata.edm.EntitySet-system.data.metadata.edm.EntityType-system.collections.generic.IEnumerable_1-">CreateRef</a></span>(<a href="../../../../../system/data/metadata/edm/EntitySet.html" title="class in system.data.metadata.edm">EntitySet</a>&nbsp;entitySet,
          <a href="../../../../../system/data/metadata/edm/EntityType.html" title="class in system.data.metadata.edm">EntityType</a>&nbsp;entityType,
-         <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValues)</code>
+         <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;keyValues)</code>
 <div class="block">Invokes the .NET member CreateRef.</div>
 </td>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbRefExpression.html" title="class in system.data.common.commandtrees">DbRefExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#CreateRef-system.data.metadata.edm.EntitySet-system.collections.generic.IEnumerable_1-">CreateRef</a></span>(<a href="../../../../../system/data/metadata/edm/EntitySet.html" title="class in system.data.metadata.edm">EntitySet</a>&nbsp;entitySet,
-         <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValues)</code>
+         <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;keyValues)</code>
 <div class="block">Invokes the .NET member CreateRef.</div>
 </td>
 </tr>
@@ -471,7 +471,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </tr>
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbCrossJoinExpression.html" title="class in system.data.common.commandtrees">DbCrossJoinExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#CrossJoin-system.collections.generic.IEnumerable_1-">CrossJoin</a></span>(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;inputs)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#CrossJoin-system.collections.generic.IEnumerable_1-">CrossJoin</a></span>(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&gt;&nbsp;inputs)</code>
 <div class="block">Invokes the .NET member CrossJoin.</div>
 </td>
 </tr>
@@ -539,7 +539,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#FullOuterJoin-system.data.common.commandtrees.DbExpression-system.data.common.commandtrees.DbExpression-system.Func_3-">FullOuterJoin</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;left,
              <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;right,
-             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;joinCondition)</code>
+             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;joinCondition)</code>
 <div class="block">Invokes the .NET member FullOuterJoin.</div>
 </td>
 </tr>
@@ -645,7 +645,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#InnerJoin-system.data.common.commandtrees.DbExpression-system.data.common.commandtrees.DbExpression-system.Func_3-">InnerJoin</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;left,
          <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;right,
-         <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;joinCondition)</code>
+         <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;joinCondition)</code>
 <div class="block">Invokes the .NET member InnerJoin.</div>
 </td>
 </tr>
@@ -666,7 +666,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i52" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbLambdaExpression.html" title="class in system.data.common.commandtrees">DbLambdaExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Invoke-system.data.common.commandtrees.DbLambda-system.collections.generic.IEnumerable_1-">Invoke</a></span>(<a href="../../../../../system/data/common/commandtrees/DbLambda.html" title="class in system.data.common.commandtrees">DbLambda</a>&nbsp;lambda,
-      <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+      <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
@@ -680,7 +680,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i54" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbFunctionExpression.html" title="class in system.data.common.commandtrees">DbFunctionExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Invoke-system.data.metadata.edm.EdmFunction-system.collections.generic.IEnumerable_1-">Invoke</a></span>(<a href="../../../../../system/data/metadata/edm/EdmFunction.html" title="class in system.data.metadata.edm">EdmFunction</a>&nbsp;function,
-      <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+      <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member Invoke.</div>
 </td>
 </tr>
@@ -714,8 +714,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Join-system.data.common.commandtrees.DbExpression-system.data.common.commandtrees.DbExpression-system.Func_2-system.Func_2-">Join</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;outer,
     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;inner,
-    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;outerKey,
-    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;innerKey)</code>
+    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;outerKey,
+    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;innerKey)</code>
 <div class="block">Invokes the .NET member Join.</div>
 </td>
 </tr>
@@ -723,8 +723,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <td class="colFirst"><code>static &lt;TSelector extends <a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../../system/data/common/commandtrees/DbProjectExpression.html" title="class in system.data.common.commandtrees">DbProjectExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Join-system.data.common.commandtrees.DbExpression-system.data.common.commandtrees.DbExpression-system.Func_2-system.Func_2-system.Func_3-">Join</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;outer,
     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;inner,
-    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;outerKey,
-    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;innerKey,
+    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;outerKey,
+    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;innerKey,
     <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;selector)</code>
 <div class="block">Invokes the .NET member Join.</div>
 </td>
@@ -739,7 +739,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i62" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbLambda.html" title="class in system.data.common.commandtrees">DbLambda</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Lambda-system.data.common.commandtrees.DbExpression-system.collections.generic.IEnumerable_1-">Lambda</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;body,
-      <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables)</code>
+      <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbVariableReferenceExpression.html" title="class in system.data.common.commandtrees">DbVariableReferenceExpression</a>&gt;&nbsp;variables)</code>
 <div class="block">Invokes the .NET member Lambda.</div>
 </td>
 </tr>
@@ -755,7 +755,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#LeftOuterJoin-system.data.common.commandtrees.DbExpression-system.data.common.commandtrees.DbExpression-system.Func_3-">LeftOuterJoin</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;left,
              <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;right,
-             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;joinCondition)</code>
+             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;joinCondition)</code>
 <div class="block">Invokes the .NET member LeftOuterJoin.</div>
 </td>
 </tr>
@@ -849,7 +849,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i77" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbNewInstanceExpression.html" title="class in system.data.common.commandtrees">DbNewInstanceExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#New-system.data.metadata.edm.TypeUsage-system.collections.generic.IEnumerable_1-">New</a></span>(<a href="../../../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;instanceType,
-   <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)</code>
+   <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;arguments)</code>
 <div class="block">Invokes the .NET member New.</div>
 </td>
 </tr>
@@ -861,7 +861,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 </tr>
 <tr id="i79" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbNewInstanceExpression.html" title="class in system.data.common.commandtrees">DbNewInstanceExpression</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#NewCollection-system.collections.generic.IEnumerable_1-">NewCollection</a></span>(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#NewCollection-system.collections.generic.IEnumerable_1-">NewCollection</a></span>(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;elements)</code>
 <div class="block">Invokes the .NET member NewCollection.</div>
 </td>
 </tr>
@@ -920,14 +920,14 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i88" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#OrderBy-system.data.common.commandtrees.DbExpression-system.Func_2-">OrderBy</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)</code>
+       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)</code>
 <div class="block">Invokes the .NET member OrderBy.</div>
 </td>
 </tr>
 <tr id="i89" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#OrderBy-system.data.common.commandtrees.DbExpression-system.Func_2-java.lang.String-">OrderBy</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
        java.lang.String&nbsp;collation)</code>
 <div class="block">Invokes the .NET member OrderBy.</div>
 </td>
@@ -935,14 +935,14 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i90" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#OrderByDescending-system.data.common.commandtrees.DbExpression-system.Func_2-">OrderByDescending</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)</code>
+                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)</code>
 <div class="block">Invokes the .NET member OrderByDescending.</div>
 </td>
 </tr>
 <tr id="i91" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#OrderByDescending-system.data.common.commandtrees.DbExpression-system.Func_2-java.lang.String-">OrderByDescending</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
                  java.lang.String&nbsp;collation)</code>
 <div class="block">Invokes the .NET member OrderByDescending.</div>
 </td>
@@ -1041,14 +1041,14 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i105" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbProjectExpression.html" title="class in system.data.common.commandtrees">DbProjectExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#SelectMany-system.data.common.commandtrees.DbExpression-system.Func_2-">SelectMany</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-          <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;apply)</code>
+          <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;apply)</code>
 <div class="block">Invokes the .NET member SelectMany.</div>
 </td>
 </tr>
 <tr id="i106" class="altColor">
 <td class="colFirst"><code>static &lt;TSelector extends <a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;<br><a href="../../../../../system/data/common/commandtrees/DbProjectExpression.html" title="class in system.data.common.commandtrees">DbProjectExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#SelectMany-system.data.common.commandtrees.DbExpression-system.Func_2-system.Func_3-">SelectMany</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-          <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;apply,
+          <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;apply,
           <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;selector)</code>
 <div class="block">Invokes the .NET member SelectMany.</div>
 </td>
@@ -1062,7 +1062,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i108" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSkipExpression.html" title="class in system.data.common.commandtrees">DbSkipExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Skip-system.data.common.commandtrees.DbExpressionBinding-system.collections.generic.IEnumerable_1-system.data.common.commandtrees.DbExpression-">Skip</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&nbsp;input,
-    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;sortOrder,
+    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbSortClause.html" title="class in system.data.common.commandtrees">DbSortClause</a>&gt;&nbsp;sortOrder,
     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;count)</code>
 <div class="block">Invokes the .NET member Skip.</div>
 </td>
@@ -1077,7 +1077,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i110" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Sort-system.data.common.commandtrees.DbExpressionBinding-system.collections.generic.IEnumerable_1-">Sort</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&nbsp;input,
-    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;sortOrder)</code>
+    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbSortClause.html" title="class in system.data.common.commandtrees">DbSortClause</a>&gt;&nbsp;sortOrder)</code>
 <div class="block">Invokes the .NET member Sort.</div>
 </td>
 </tr>
@@ -1091,14 +1091,14 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i112" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#ThenBy-system.data.common.commandtrees.DbSortExpression-system.Func_2-">ThenBy</a></span>(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)</code>
+      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)</code>
 <div class="block">Invokes the .NET member ThenBy.</div>
 </td>
 </tr>
 <tr id="i113" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#ThenBy-system.data.common.commandtrees.DbSortExpression-system.Func_2-java.lang.String-">ThenBy</a></span>(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
       java.lang.String&nbsp;collation)</code>
 <div class="block">Invokes the .NET member ThenBy.</div>
 </td>
@@ -1106,14 +1106,14 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i114" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#ThenByDescending-system.data.common.commandtrees.DbSortExpression-system.Func_2-">ThenByDescending</a></span>(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)</code>
+                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)</code>
 <div class="block">Invokes the .NET member ThenByDescending.</div>
 </td>
 </tr>
 <tr id="i115" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#ThenByDescending-system.data.common.commandtrees.DbSortExpression-system.Func_2-java.lang.String-">ThenByDescending</a></span>(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
                 java.lang.String&nbsp;collation)</code>
 <div class="block">Invokes the .NET member ThenByDescending.</div>
 </td>
@@ -1181,7 +1181,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <tr id="i125" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../system/data/common/commandtrees/DbFilterExpression.html" title="class in system.data.common.commandtrees">DbFilterExpression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../system/data/common/commandtrees/expressionbuilder/DbExpressionBuilder.html#Where-system.data.common.commandtrees.DbExpression-system.Func_2-">Where</a></span>(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-     <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;predicate)</code>
+     <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;predicate)</code>
 <div class="block">Invokes the .NET member Where.</div>
 </td>
 </tr>
@@ -1441,7 +1441,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>All</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbQuantifierExpression.html" title="class in system.data.common.commandtrees">DbQuantifierExpression</a>&nbsp;All(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                         <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;predicate)
+                                         <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;predicate)
                                   throws java.lang.Throwable,
                                          <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                          <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -1456,7 +1456,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>predicate</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>predicate</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1601,7 +1601,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Any</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbQuantifierExpression.html" title="class in system.data.common.commandtrees">DbQuantifierExpression</a>&nbsp;Any(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                         <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;predicate)
+                                         <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;predicate)
                                   throws java.lang.Throwable,
                                          <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                          <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -1616,7 +1616,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>predicate</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>predicate</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1765,8 +1765,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>Case</h4>
-<pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbCaseExpression.html" title="class in system.data.common.commandtrees">DbCaseExpression</a>&nbsp;Case(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;whenExpressions,
-                                    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;thenExpressions,
+<pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbCaseExpression.html" title="class in system.data.common.commandtrees">DbCaseExpression</a>&nbsp;Case(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;whenExpressions,
+                                    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;thenExpressions,
                                     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;elseExpression)
                              throws java.lang.Throwable,
                                     <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1782,8 +1782,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <div class="block">Invokes the .NET member Case.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>whenExpressions</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>thenExpressions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>whenExpressions</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
+<dd><code>thenExpressions</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dd><code>elseExpression</code> - the argument of type <code>DbExpression</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -2030,7 +2030,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>CreateRef</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbRefExpression.html" title="class in system.data.common.commandtrees">DbRefExpression</a>&nbsp;CreateRef(<a href="../../../../../system/data/metadata/edm/EntitySet.html" title="class in system.data.metadata.edm">EntitySet</a>&nbsp;entitySet,
                                         <a href="../../../../../system/data/metadata/edm/EntityType.html" title="class in system.data.metadata.edm">EntityType</a>&nbsp;entityType,
-                                        <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValues)
+                                        <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;keyValues)
                                  throws java.lang.Throwable,
                                         <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                         <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -2045,7 +2045,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>entitySet</code> - the argument of type <code>EntitySet</code></dd>
 <dd><code>entityType</code> - the argument of type <code>EntityType</code></dd>
-<dd><code>keyValues</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>keyValues</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -2070,7 +2070,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>CreateRef</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbRefExpression.html" title="class in system.data.common.commandtrees">DbRefExpression</a>&nbsp;CreateRef(<a href="../../../../../system/data/metadata/edm/EntitySet.html" title="class in system.data.metadata.edm">EntitySet</a>&nbsp;entitySet,
-                                        <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;keyValues)
+                                        <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;keyValues)
                                  throws java.lang.Throwable,
                                         <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                         <a href="../../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
@@ -2082,7 +2082,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>entitySet</code> - the argument of type <code>EntitySet</code></dd>
-<dd><code>keyValues</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>keyValues</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -2194,7 +2194,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>CrossJoin</h4>
-<pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbCrossJoinExpression.html" title="class in system.data.common.commandtrees">DbCrossJoinExpression</a>&nbsp;CrossJoin(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;inputs)
+<pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbCrossJoinExpression.html" title="class in system.data.common.commandtrees">DbCrossJoinExpression</a>&nbsp;CrossJoin(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&gt;&nbsp;inputs)
                                        throws java.lang.Throwable,
                                               <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                               <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -2209,7 +2209,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <div class="block">Invokes the .NET member CrossJoin.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>inputs</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>inputs</code> - the argument of type <code>IEnumerable_1&lt;DbExpressionBinding&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -2594,7 +2594,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>FullOuterJoin</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a>&nbsp;FullOuterJoin(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;left,
                                              <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;right,
-                                             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;joinCondition)
+                                             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;joinCondition)
                                       throws java.lang.Throwable,
                                              <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                              <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -2612,7 +2612,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>left</code> - the argument of type <code>DbExpression</code></dd>
 <dd><code>right</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>joinCondition</code> - the argument of type <code>Func_3</code></dd>
+<dd><code>joinCondition</code> - the argument of type <code>Func_3&lt;DbExpression, DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3104,7 +3104,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>InnerJoin</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a>&nbsp;InnerJoin(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;left,
                                          <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;right,
-                                         <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;joinCondition)
+                                         <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;joinCondition)
                                   throws java.lang.Throwable,
                                          <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                          <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -3122,7 +3122,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>left</code> - the argument of type <code>DbExpression</code></dd>
 <dd><code>right</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>joinCondition</code> - the argument of type <code>Func_3</code></dd>
+<dd><code>joinCondition</code> - the argument of type <code>Func_3&lt;DbExpression, DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3228,7 +3228,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Invoke</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbLambdaExpression.html" title="class in system.data.common.commandtrees">DbLambdaExpression</a>&nbsp;Invoke(<a href="../../../../../system/data/common/commandtrees/DbLambda.html" title="class in system.data.common.commandtrees">DbLambda</a>&nbsp;lambda,
-                                        <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                        <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;arguments)
                                  throws java.lang.Throwable,
                                         <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                         <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -3242,7 +3242,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>lambda</code> - the argument of type <code>DbLambda</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3306,7 +3306,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Invoke</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbFunctionExpression.html" title="class in system.data.common.commandtrees">DbFunctionExpression</a>&nbsp;Invoke(<a href="../../../../../system/data/metadata/edm/EdmFunction.html" title="class in system.data.metadata.edm">EdmFunction</a>&nbsp;function,
-                                          <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                          <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;arguments)
                                    throws java.lang.Throwable,
                                           <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                           <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -3320,7 +3320,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>function</code> - the argument of type <code>EdmFunction</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3492,8 +3492,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>Join</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a>&nbsp;Join(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;outer,
                                     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;inner,
-                                    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;outerKey,
-                                    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;innerKey)
+                                    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;outerKey,
+                                    <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;innerKey)
                              throws java.lang.Throwable,
                                     <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -3511,8 +3511,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>outer</code> - the argument of type <code>DbExpression</code></dd>
 <dd><code>inner</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>outerKey</code> - the argument of type <code>Func_2</code></dd>
-<dd><code>innerKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>outerKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
+<dd><code>innerKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3541,8 +3541,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>Join</h4>
 <pre>public static&nbsp;&lt;TSelector extends <a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../../../system/data/common/commandtrees/DbProjectExpression.html" title="class in system.data.common.commandtrees">DbProjectExpression</a>&nbsp;Join(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;outer,
                                                                                <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;inner,
-                                                                               <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;outerKey,
-                                                                               <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;innerKey,
+                                                                               <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;outerKey,
+                                                                               <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;innerKey,
                                                                                <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;selector)
                                                                         throws java.lang.Throwable,
                                                                                <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -3565,8 +3565,8 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>outer</code> - the argument of type <code>DbExpression</code></dd>
 <dd><code>inner</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>outerKey</code> - the argument of type <code>Func_2</code></dd>
-<dd><code>innerKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>outerKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
+<dd><code>innerKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dd><code>selector</code> - the argument of type <code>Func_3</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -3636,7 +3636,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Lambda</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbLambda.html" title="class in system.data.common.commandtrees">DbLambda</a>&nbsp;Lambda(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;body,
-                              <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;variables)
+                              <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbVariableReferenceExpression.html" title="class in system.data.common.commandtrees">DbVariableReferenceExpression</a>&gt;&nbsp;variables)
                        throws java.lang.Throwable,
                               <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                               <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -3650,7 +3650,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>body</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>variables</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>variables</code> - the argument of type <code>IEnumerable_1&lt;DbVariableReferenceExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -3727,7 +3727,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <h4>LeftOuterJoin</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbJoinExpression.html" title="class in system.data.common.commandtrees">DbJoinExpression</a>&nbsp;LeftOuterJoin(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;left,
                                              <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;right,
-                                             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;joinCondition)
+                                             <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;joinCondition)
                                       throws java.lang.Throwable,
                                              <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                              <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -3745,7 +3745,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>left</code> - the argument of type <code>DbExpression</code></dd>
 <dd><code>right</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>joinCondition</code> - the argument of type <code>Func_3</code></dd>
+<dd><code>joinCondition</code> - the argument of type <code>Func_3&lt;DbExpression, DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4245,7 +4245,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>New</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbNewInstanceExpression.html" title="class in system.data.common.commandtrees">DbNewInstanceExpression</a>&nbsp;New(<a href="../../../../../system/data/metadata/edm/TypeUsage.html" title="class in system.data.metadata.edm">TypeUsage</a>&nbsp;instanceType,
-                                          <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;arguments)
+                                          <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;arguments)
                                    throws java.lang.Throwable,
                                           <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                           <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -4260,7 +4260,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instanceType</code> - the argument of type <code>TypeUsage</code></dd>
-<dd><code>arguments</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>arguments</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4320,7 +4320,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <ul class="blockList">
 <li class="blockList">
 <h4>NewCollection</h4>
-<pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbNewInstanceExpression.html" title="class in system.data.common.commandtrees">DbNewInstanceExpression</a>&nbsp;NewCollection(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements)
+<pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbNewInstanceExpression.html" title="class in system.data.common.commandtrees">DbNewInstanceExpression</a>&nbsp;NewCollection(<a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;elements)
                                              throws java.lang.Throwable,
                                                     <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                                     <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -4332,7 +4332,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <div class="block">Invokes the .NET member NewCollection.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>elements</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>elements</code> - the argument of type <code>IEnumerable_1&lt;DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4664,7 +4664,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>OrderBy</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;OrderBy(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)
+                                       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)
                                 throws java.lang.Throwable,
                                        <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                        <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -4679,7 +4679,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4705,7 +4705,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>OrderBy</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;OrderBy(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+                                       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
                                        java.lang.String&nbsp;collation)
                                 throws java.lang.Throwable,
                                        <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -4721,7 +4721,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dd><code>collation</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -4748,7 +4748,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>OrderByDescending</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;OrderByDescending(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)
+                                                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)
                                           throws java.lang.Throwable,
                                                  <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                  <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -4763,7 +4763,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -4789,7 +4789,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>OrderByDescending</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;OrderByDescending(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+                                                 <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
                                                  java.lang.String&nbsp;collation)
                                           throws java.lang.Throwable,
                                                  <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -4805,7 +4805,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dd><code>collation</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -5365,7 +5365,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>SelectMany</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbProjectExpression.html" title="class in system.data.common.commandtrees">DbProjectExpression</a>&nbsp;SelectMany(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                             <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;apply)
+                                             <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;apply)
                                       throws java.lang.Throwable,
                                              <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                              <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -5382,7 +5382,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>apply</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>apply</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -5410,7 +5410,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>SelectMany</h4>
 <pre>public static&nbsp;&lt;TSelector extends <a href="../../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&gt;&nbsp;<a href="../../../../../system/data/common/commandtrees/DbProjectExpression.html" title="class in system.data.common.commandtrees">DbProjectExpression</a>&nbsp;SelectMany(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                                                                     <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;apply,
+                                                                                     <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;apply,
                                                                                      <a href="../../../../../system/Func_3.html" title="class in system">Func_3</a>&nbsp;selector)
                                                                               throws java.lang.Throwable,
                                                                                      <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -5432,7 +5432,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dd><code>TSelector</code> - the type of the generic argument TSelector</dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>apply</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>apply</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dd><code>selector</code> - the argument of type <code>Func_3</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -5480,7 +5480,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Skip</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSkipExpression.html" title="class in system.data.common.commandtrees">DbSkipExpression</a>&nbsp;Skip(<a href="../../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&nbsp;input,
-                                    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;sortOrder,
+                                    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbSortClause.html" title="class in system.data.common.commandtrees">DbSortClause</a>&gt;&nbsp;sortOrder,
                                     <a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;count)
                              throws java.lang.Throwable,
                                     <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -5495,7 +5495,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - the argument of type <code>DbExpressionBinding</code></dd>
-<dd><code>sortOrder</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>sortOrder</code> - the argument of type <code>IEnumerable_1&lt;DbSortClause&gt;</code></dd>
 <dd><code>count</code> - the argument of type <code>DbExpression</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -5556,7 +5556,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Sort</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;Sort(<a href="../../../../../system/data/common/commandtrees/DbExpressionBinding.html" title="class in system.data.common.commandtrees">DbExpressionBinding</a>&nbsp;input,
-                                    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;sortOrder)
+                                    <a href="../../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbSortClause.html" title="class in system.data.common.commandtrees">DbSortClause</a>&gt;&nbsp;sortOrder)
                              throws java.lang.Throwable,
                                     <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -5570,7 +5570,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - the argument of type <code>DbExpressionBinding</code></dd>
-<dd><code>sortOrder</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>sortOrder</code> - the argument of type <code>IEnumerable_1&lt;DbSortClause&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -5634,7 +5634,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>ThenBy</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;ThenBy(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-                                      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)
+                                      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)
                                throws java.lang.Throwable,
                                       <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                       <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -5646,7 +5646,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbSortExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -5669,7 +5669,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>ThenBy</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;ThenBy(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-                                      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+                                      <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
                                       java.lang.String&nbsp;collation)
                                throws java.lang.Throwable,
                                       <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -5682,7 +5682,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbSortExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dd><code>collation</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -5706,7 +5706,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>ThenByDescending</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;ThenByDescending(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-                                                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey)
+                                                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey)
                                          throws java.lang.Throwable,
                                                 <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                 <a href="../../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -5718,7 +5718,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbSortExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -5741,7 +5741,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>ThenByDescending</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;ThenByDescending(<a href="../../../../../system/data/common/commandtrees/DbSortExpression.html" title="class in system.data.common.commandtrees">DbSortExpression</a>&nbsp;source,
-                                                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;sortKey,
+                                                <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;sortKey,
                                                 java.lang.String&nbsp;collation)
                                          throws java.lang.Throwable,
                                                 <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -5754,7 +5754,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbSortExpression</code></dd>
-<dd><code>sortKey</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>sortKey</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dd><code>collation</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -6121,7 +6121,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <li class="blockList">
 <h4>Where</h4>
 <pre>public static&nbsp;<a href="../../../../../system/data/common/commandtrees/DbFilterExpression.html" title="class in system.data.common.commandtrees">DbFilterExpression</a>&nbsp;Where(<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&nbsp;source,
-                                       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;predicate)
+                                       <a href="../../../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>,<a href="../../../../../system/data/common/commandtrees/DbExpression.html" title="class in system.data.common.commandtrees">DbExpression</a>&gt;&nbsp;predicate)
                                 throws java.lang.Throwable,
                                        <a href="../../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                        <a href="../../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
@@ -6136,7 +6136,7 @@ extends <a href="../../../../../org/mases/jcobridge/netreflection/NetObject.html
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - the argument of type <code>DbExpression</code></dd>
-<dd><code>predicate</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>predicate</code> - the argument of type <code>Func_2&lt;DbExpression, DbExpression&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

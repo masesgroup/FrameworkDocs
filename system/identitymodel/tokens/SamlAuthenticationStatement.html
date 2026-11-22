@@ -240,7 +240,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
                            <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;authenticationInstant,
                            java.lang.String&nbsp;dnsAddress,
                            java.lang.String&nbsp;ipAddress,
-                           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;authorityBindings)</code>
+                           <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAuthorityBinding.html" title="class in system.identitymodel.tokens">SamlAuthorityBinding</a>&gt;&nbsp;authorityBindings)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -278,7 +278,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAuthorityBinding.html" title="class in system.identitymodel.tokens">SamlAuthorityBinding</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAuthenticationStatement.html#getAuthorityBindings--">getAuthorityBindings</a></span>()</code>
 <div class="block">Gets the value of the .NET property AuthorityBindings.</div>
 </td>
@@ -554,7 +554,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
                                    <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;authenticationInstant,
                                    java.lang.String&nbsp;dnsAddress,
                                    java.lang.String&nbsp;ipAddress,
-                                   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;authorityBindings)
+                                   <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAuthorityBinding.html" title="class in system.identitymodel.tokens">SamlAuthorityBinding</a>&gt;&nbsp;authorityBindings)
                             throws java.lang.Throwable,
                                    <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -576,7 +576,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <dd><code>authenticationInstant</code> - the argument of type <code>DateTime</code></dd>
 <dd><code>dnsAddress</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>ipAddress</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>authorityBindings</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>authorityBindings</code> - the argument of type <code>IEnumerable_1&lt;SamlAuthorityBinding&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
@@ -667,8 +667,8 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>getAuthorityBindings</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAuthorityBindings()
-                             throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAuthorityBinding.html" title="class in system.identitymodel.tokens">SamlAuthorityBinding</a>&gt;&nbsp;getAuthorityBindings()
+                                                   throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property AuthorityBindings.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

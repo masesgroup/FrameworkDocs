@@ -219,7 +219,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceSecurityContext.html#ServiceSecurityContext-system.identitymodel.policy.AuthorizationContext-system.collections.objectmodel.ReadOnlyCollection_1-">ServiceSecurityContext</a></span>(<a href="../../system/identitymodel/policy/AuthorizationContext.html" title="class in system.identitymodel.policy">AuthorizationContext</a>&nbsp;authorizationContext,
-                      <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authorizationPolicies)</code>
+                      <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -229,7 +229,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceSecurityContext.html#ServiceSecurityContext-system.collections.objectmodel.ReadOnlyCollection_1-">ServiceSecurityContext</a></span>(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authorizationPolicies)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceSecurityContext.html#ServiceSecurityContext-system.collections.objectmodel.ReadOnlyCollection_1-">ServiceSecurityContext</a></span>(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -267,7 +267,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceSecurityContext.html#getAuthorizationPolicies--">getAuthorizationPolicies</a></span>()</code>
 <div class="block">Gets the value of the .NET property AuthorizationPolicies.</div>
 </td>
@@ -328,7 +328,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceSecurityContext.html#setAuthorizationPolicies-system.collections.objectmodel.ReadOnlyCollection_1-">setAuthorizationPolicies</a></span>(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;AuthorizationPolicies)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/servicemodel/ServiceSecurityContext.html#setAuthorizationPolicies-system.collections.objectmodel.ReadOnlyCollection_1-">setAuthorizationPolicies</a></span>(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;AuthorizationPolicies)</code>
 <div class="block">Sets the value of the .NET property AuthorizationPolicies.</div>
 </td>
 </tr>
@@ -491,7 +491,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <li class="blockList">
 <h4>ServiceSecurityContext</h4>
 <pre>public&nbsp;ServiceSecurityContext(<a href="../../system/identitymodel/policy/AuthorizationContext.html" title="class in system.identitymodel.policy">AuthorizationContext</a>&nbsp;authorizationContext,
-                              <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authorizationPolicies)
+                              <a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)
                        throws java.lang.Throwable,
                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -508,7 +508,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>authorizationContext</code> - the argument of type <code>AuthorizationContext</code></dd>
-<dd><code>authorizationPolicies</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>authorizationPolicies</code> - the argument of type <code>ReadOnlyCollection_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -550,7 +550,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ServiceSecurityContext</h4>
-<pre>public&nbsp;ServiceSecurityContext(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authorizationPolicies)
+<pre>public&nbsp;ServiceSecurityContext(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)
                        throws java.lang.Throwable,
                               <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                               <a href="../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -566,7 +566,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>authorizationPolicies</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>authorizationPolicies</code> - the argument of type <code>ReadOnlyCollection_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -696,8 +696,8 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>getAuthorizationPolicies</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getAuthorizationPolicies()
-                                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;getAuthorizationPolicies()
+                                                                    throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property AuthorizationPolicies.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -960,7 +960,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>setAuthorizationPolicies</h4>
-<pre>public&nbsp;void&nbsp;setAuthorizationPolicies(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;AuthorizationPolicies)
+<pre>public&nbsp;void&nbsp;setAuthorizationPolicies(<a href="../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;AuthorizationPolicies)
                               throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property AuthorizationPolicies.</div>
 <dl>

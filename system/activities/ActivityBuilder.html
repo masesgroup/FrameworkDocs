@@ -248,13 +248,13 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../system/Attribute.html" title="class in system">Attribute</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityBuilder.html#getAttributes--">getAttributes</a></span>()</code>
 <div class="block">Gets the value of the .NET property Attributes.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../system/activities/validation/Constraint.html" title="class in system.activities.validation">Constraint</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityBuilder.html#getConstraints--">getConstraints</a></span>()</code>
 <div class="block">Gets the value of the .NET property Constraints.</div>
 </td>
@@ -320,7 +320,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code>static <a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../system/activities/ActivityPropertyReference.html" title="class in system.activities">ActivityPropertyReference</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../system/activities/ActivityBuilder.html#GetPropertyReferences-org.mases.jcobridge.netreflection.NetObject-">GetPropertyReferences</a></span>(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;target)</code>
 <div class="block">Invokes the .NET member GetPropertyReferences.</div>
 </td>
@@ -524,8 +524,8 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>getAttributes</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getAttributes()
-                           throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../system/Attribute.html" title="class in system">Attribute</a>&gt;&nbsp;getAttributes()
+                                      throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Attributes.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -543,8 +543,8 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>getConstraints</h4>
-<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getConstraints()
-                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../system/activities/validation/Constraint.html" title="class in system.activities.validation">Constraint</a>&gt;&nbsp;getConstraints()
+                                        throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Constraints.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -776,18 +776,18 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>GetPropertyReferences</h4>
-<pre>public static&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;GetPropertyReferences(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;target)
-                                     throws java.lang.Throwable,
-                                            <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../system/threading/ThreadAbortException.html" title="class in system.threading">ThreadAbortException</a>,
-                                            <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                            <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
-                                            <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                            <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                            <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<pre>public static&nbsp;<a href="../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../system/activities/ActivityPropertyReference.html" title="class in system.activities">ActivityPropertyReference</a>&gt;&nbsp;GetPropertyReferences(<a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;target)
+                                                                throws java.lang.Throwable,
+                                                                       <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                       <a href="../../system/threading/ThreadAbortException.html" title="class in system.threading">ThreadAbortException</a>,
+                                                                       <a href="../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                       <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                       <a href="../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                       <a href="../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                       <a href="../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                       <a href="../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                       <a href="../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                       <a href="../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <div class="block">Invokes the .NET member GetPropertyReferences.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

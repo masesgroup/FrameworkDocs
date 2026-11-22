@@ -14,6 +14,10 @@
 <meta name="keywords" content="getJCOObjectName()">
 <meta name="keywords" content="getJCOInstance()">
 <meta name="keywords" content="getJCOType()">
+<meta name="keywords" content="addProfileRemoved()">
+<meta name="keywords" content="removeProfileRemoved()">
+<meta name="keywords" content="addProfileUpdated()">
+<meta name="keywords" content="removeProfileUpdated()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -27,7 +31,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":17};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":17};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,36 +183,52 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#addProfileRemoved-system.EventHandler_1-">addProfileRemoved</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileRemovedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileRemovedEventArgs</a>&gt;&nbsp;handler)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#addProfileUpdated-system.EventHandler_1-">addProfileUpdated</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileUpdatedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileUpdatedEventArgs</a>&gt;&nbsp;handler)</code>&nbsp;</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the reflected Assembly name</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the reflected Class name</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the instantiated class</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the reflected Class name used to build the object</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the instantiated class Type</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#removeProfileRemoved-system.EventHandler_1-">removeProfileRemoved</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileRemovedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileRemovedEventArgs</a>&gt;&nbsp;handler)</code>&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#removeProfileUpdated-system.EventHandler_1-">removeProfileUpdated</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileUpdatedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileUpdatedEventArgs</a>&gt;&nbsp;handler)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html" title="interface in system.workflow.runtime.tracking">IProfileNotification</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html#ToIProfileNotification-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">ToIProfileNotification</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/workflow/runtime/tracking/IProfileNotification.html" title="interface in system.workflow.runtime.tracking"><code>IProfileNotification</code></a>, a cast assert is made to check if types are compatible.</div>
@@ -279,6 +299,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addProfileRemoved-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addProfileRemoved</h4>
+<pre>void&nbsp;addProfileRemoved(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileRemovedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileRemovedEventArgs</a>&gt;&nbsp;handler)
+                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="addProfileUpdated-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addProfileUpdated</h4>
+<pre>void&nbsp;addProfileUpdated(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileUpdatedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileUpdatedEventArgs</a>&gt;&nbsp;handler)
+                throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
 <a name="getJCOAssemblyName--">
 <!--   -->
 </a>
@@ -357,6 +405,34 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflect
 <dd><code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html#getJCOType--">getJCOType</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a></code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> representing the Type of the instantiated Class</dd>
+</dl>
+</li>
+</ul>
+<a name="removeProfileRemoved-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeProfileRemoved</h4>
+<pre>void&nbsp;removeProfileRemoved(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileRemovedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileRemovedEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
+</dl>
+</li>
+</ul>
+<a name="removeProfileUpdated-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeProfileUpdated</h4>
+<pre>void&nbsp;removeProfileUpdated(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/workflow/runtime/tracking/ProfileUpdatedEventArgs.html" title="class in system.workflow.runtime.tracking">ProfileUpdatedEventArgs</a>&gt;&nbsp;handler)
+                   throws java.lang.Throwable</pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code></dd>
 </dl>
 </li>
 </ul>

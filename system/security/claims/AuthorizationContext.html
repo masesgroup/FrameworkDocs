@@ -209,8 +209,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/security/claims/AuthorizationContext.html#AuthorizationContext-system.security.claims.ClaimsPrincipal-system.collections.objectmodel.Collection_1-system.collections.objectmodel.Collection_1-">AuthorizationContext</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;principal,
-                    <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;resource,
-                    <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;action)</code>
+                    <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;&nbsp;resource,
+                    <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;&nbsp;action)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -248,7 +248,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/AuthorizationContext.html#getAction--">getAction</a></span>()</code>
 <div class="block">Gets the value of the .NET property Action.</div>
 </td>
@@ -290,7 +290,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/security/claims/AuthorizationContext.html#getResource--">getResource</a></span>()</code>
 <div class="block">Gets the value of the .NET property Resource.</div>
 </td>
@@ -411,8 +411,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>AuthorizationContext</h4>
 <pre>public&nbsp;AuthorizationContext(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;principal,
-                            <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;resource,
-                            <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;action)
+                            <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;&nbsp;resource,
+                            <a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;&nbsp;action)
                      throws java.lang.Throwable,
                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                             <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -429,8 +429,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>principal</code> - the argument of type <code>ClaimsPrincipal</code></dd>
-<dd><code>resource</code> - the argument of type <code>Collection_1</code></dd>
-<dd><code>action</code> - the argument of type <code>Collection_1</code></dd>
+<dd><code>resource</code> - the argument of type <code>Collection_1&lt;Claim&gt;</code></dd>
+<dd><code>action</code> - the argument of type <code>Collection_1&lt;Claim&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -546,8 +546,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getAction</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getAction()
-                       throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;&nbsp;getAction()
+                              throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Action.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -679,8 +679,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getResource</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getResource()
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/security/claims/Claim.html" title="class in system.security.claims">Claim</a>&gt;&nbsp;getResource()
+                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Resource.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

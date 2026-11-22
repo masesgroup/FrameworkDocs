@@ -25,6 +25,8 @@
 <meta name="keywords" content="RefreshDataAsync()">
 <meta name="keywords" content="getNickname()">
 <meta name="keywords" content="setNickname()">
+<meta name="keywords" content="addRefreshDataCompleted()">
+<meta name="keywords" content="removeRefreshDataCompleted()">
 <link rel="stylesheet" type="text/css" href="../../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../../script.js"></script>
 </head>
@@ -38,7 +40,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -241,12 +243,18 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#addRefreshDataCompleted-system.EventHandler_1-">addRefreshDataCompleted</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/RefreshDataCompletedEventArgs.html" title="class in system.net.peertopeer.collaboration">RefreshDataCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addRefreshDataCompleted.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/net/peertopeer/collaboration/PeerContact.html" title="class in system.net.peertopeer.collaboration">PeerContact</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#AddToContactManager--">AddToContactManager</a></span>()</code>
 <div class="block">Invokes the .NET member AddToContactManager.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/net/peertopeer/collaboration/PeerContact.html" title="class in system.net.peertopeer.collaboration">PeerContact</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#AddToContactManager-java.lang.String-java.lang.String-system.net.mail.MailAddress-">AddToContactManager</a></span>(java.lang.String&nbsp;displayName,
                    java.lang.String&nbsp;nickname,
@@ -254,74 +262,74 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <div class="block">Invokes the .NET member AddToContactManager.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html" title="class in system.net.peertopeer.collaboration">PeerNearMe</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html" title="class in system.net.peertopeer.collaboration"><code>PeerNearMe</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html" title="class in system.net.peertopeer.collaboration">PeerNearMe</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#CreateFromPeerEndPoint-system.net.peertopeer.collaboration.PeerEndPoint-">CreateFromPeerEndPoint</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerEndPoint.html" title="class in system.net.peertopeer.collaboration">PeerEndPoint</a>&nbsp;peerEndPoint)</code>
 <div class="block">Invokes the .NET member CreateFromPeerEndPoint.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#Equals-org.mases.jcobridge.netreflection.NetObject-org.mases.jcobridge.netreflection.NetObject-">Equals</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;objA,
       <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;objB)</code>
 <div class="block">Invokes the .NET member Equals.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#Equals-system.net.peertopeer.collaboration.PeerNearMe-">Equals</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html" title="class in system.net.peertopeer.collaboration">PeerNearMe</a>&nbsp;other)</code>
 <div class="block">Invokes the .NET member Equals.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#getNickname--">getNickname</a></span>()</code>
 <div class="block">Gets the value of the .NET property Nickname.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/net/peertopeer/collaboration/PeerInvitationResponse.html" title="class in system.net.peertopeer.collaboration">PeerInvitationResponse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#Invite--">Invite</a></span>()</code>
 <div class="block">Invokes the .NET member Invite.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../system/net/peertopeer/collaboration/PeerInvitationResponse.html" title="class in system.net.peertopeer.collaboration">PeerInvitationResponse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#Invite-system.net.peertopeer.collaboration.PeerApplication-java.lang.String-byte:A-">Invite</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerApplication.html" title="class in system.net.peertopeer.collaboration">PeerApplication</a>&nbsp;applicationToInvite,
       java.lang.String&nbsp;message,
@@ -329,7 +337,7 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <div class="block">Invokes the .NET member Invite.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../system/net/peertopeer/collaboration/PeerInvitationResponse.html" title="class in system.net.peertopeer.collaboration">PeerInvitationResponse</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#Invite-system.net.peertopeer.collaboration.PeerApplication-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-">Invite</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerApplication.html" title="class in system.net.peertopeer.collaboration">PeerApplication</a>&nbsp;dupParam0,
       java.lang.String&nbsp;dupParam1,
@@ -337,13 +345,13 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <div class="block">Invokes the .NET member Invite.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#InviteAsync-org.mases.jcobridge.netreflection.NetObject-">InviteAsync</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userToken)</code>
 <div class="block">Invokes the .NET member InviteAsync.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#InviteAsync-system.net.peertopeer.collaboration.PeerApplication-java.lang.String-byte:A-org.mases.jcobridge.netreflection.NetObject-">InviteAsync</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerApplication.html" title="class in system.net.peertopeer.collaboration">PeerApplication</a>&nbsp;applicationToInvite,
            java.lang.String&nbsp;message,
@@ -352,7 +360,7 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <div class="block">Invokes the .NET member InviteAsync.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#InviteAsync-system.net.peertopeer.collaboration.PeerApplication-java.lang.String-org.mases.jcobridge.netreflection.JCORefOut-org.mases.jcobridge.netreflection.NetObject-">InviteAsync</a></span>(<a href="../../../../system/net/peertopeer/collaboration/PeerApplication.html" title="class in system.net.peertopeer.collaboration">PeerApplication</a>&nbsp;dupParam0,
            java.lang.String&nbsp;dupParam1,
@@ -361,25 +369,31 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <div class="block">Invokes the .NET member InviteAsync.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#RefreshData--">RefreshData</a></span>()</code>
 <div class="block">Invokes the .NET member RefreshData.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#RefreshDataAsync-org.mases.jcobridge.netreflection.NetObject-">RefreshDataAsync</a></span>(<a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;userToken)</code>
 <div class="block">Invokes the .NET member RefreshDataAsync.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#removeRefreshDataCompleted-system.EventHandler_1-">removeRefreshDataCompleted</a></span>(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/RefreshDataCompletedEventArgs.html" title="class in system.net.peertopeer.collaboration">RefreshDataCompletedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeRefreshDataCompleted.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/net/peertopeer/collaboration/PeerNearMe.html#setNickname-java.lang.String-">setNickname</a></span>(java.lang.String&nbsp;Nickname)</code>
 <div class="block">Sets the value of the .NET property Nickname.</div>
@@ -391,7 +405,7 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.net.peertopeer.collaboration.<a href="../../../../system/net/peertopeer/collaboration/Peer.html" title="class in system.net.peertopeer.collaboration">Peer</a></h3>
-<code><a href="../../../../system/net/peertopeer/collaboration/Peer.html#close--">close</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#Dispose--">Dispose</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#Equals-system.net.peertopeer.collaboration.Peer-">Equals</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#getIsOnline--">getIsOnline</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#GetObjects--">GetObjects</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#GetObjects-system.Guid-">GetObjects</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#getPeerEndPoints--">getPeerEndPoints</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#GetPresenceInfo-system.net.peertopeer.collaboration.PeerEndPoint-">GetPresenceInfo</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#getSynchronizingObject--">getSynchronizingObject</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#InviteAsyncCancel-org.mases.jcobridge.netreflection.NetObject-">InviteAsyncCancel</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#setSynchronizingObject-system.componentmodel.ISynchronizeInvoke-">setSynchronizingObject</a></code></li>
+<code><a href="../../../../system/net/peertopeer/collaboration/Peer.html#addInviteCompleted-system.EventHandler_1-">addInviteCompleted</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#close--">close</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#Dispose--">Dispose</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#Equals-system.net.peertopeer.collaboration.Peer-">Equals</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#getIsOnline--">getIsOnline</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#GetObjects--">GetObjects</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#GetObjects-system.Guid-">GetObjects</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#getPeerEndPoints--">getPeerEndPoints</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#GetPresenceInfo-system.net.peertopeer.collaboration.PeerEndPoint-">GetPresenceInfo</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#getSynchronizingObject--">getSynchronizingObject</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#InviteAsyncCancel-org.mases.jcobridge.netreflection.NetObject-">InviteAsyncCancel</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#removeInviteCompleted-system.EventHandler_1-">removeInviteCompleted</a>, <a href="../../../../system/net/peertopeer/collaboration/Peer.html#setSynchronizingObject-system.componentmodel.ISynchronizeInvoke-">setSynchronizingObject</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -537,6 +551,25 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addRefreshDataCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addRefreshDataCompleted</h4>
+<pre>public&nbsp;void&nbsp;addRefreshDataCompleted(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/RefreshDataCompletedEventArgs.html" title="class in system.net.peertopeer.collaboration">RefreshDataCompletedEventArgs</a>&gt;&nbsp;handler)
+                             throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addRefreshDataCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;RefreshDataCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="AddToContactManager--">
 <!--   -->
 </a>
@@ -1586,6 +1619,25 @@ extends <a href="../../../../system/net/peertopeer/collaboration/Peer.html" titl
 <dd><code><a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Net.PeerToPeer.Collaboration.PeerNearMe.RefreshDataAsync" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeRefreshDataCompleted-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeRefreshDataCompleted</h4>
+<pre>public&nbsp;void&nbsp;removeRefreshDataCompleted(<a href="../../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../../system/net/peertopeer/collaboration/RefreshDataCompletedEventArgs.html" title="class in system.net.peertopeer.collaboration">RefreshDataCompletedEventArgs</a>&gt;&nbsp;handler)
+                                throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeRefreshDataCompleted.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;RefreshDataCompletedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>

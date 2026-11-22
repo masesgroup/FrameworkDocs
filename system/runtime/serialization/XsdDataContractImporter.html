@@ -247,7 +247,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/XsdDataContractImporter.html#CanImport-system.xml.schema.XmlSchemaSet-system.collections.generic.ICollection_1-">CanImport</a></span>(<a href="../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemas,
-         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;typeNames)</code>
+         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&gt;&nbsp;typeNames)</code>
 <div class="block">Invokes the .NET member CanImport.</div>
 </td>
 </tr>
@@ -321,7 +321,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i13" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/codedom/CodeTypeReference.html" title="class in system.codedom">CodeTypeReference</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/XsdDataContractImporter.html#GetKnownTypeReferences-system.xml.XmlQualifiedName-">GetKnownTypeReferences</a></span>(<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;typeName)</code>
 <div class="block">Invokes the .NET member GetKnownTypeReferences.</div>
 </td>
@@ -341,7 +341,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/serialization/XsdDataContractImporter.html#Import-system.xml.schema.XmlSchemaSet-system.collections.generic.ICollection_1-">Import</a></span>(<a href="../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemas,
-      <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;typeNames)</code>
+      <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&gt;&nbsp;typeNames)</code>
 <div class="block">Invokes the .NET member Import.</div>
 </td>
 </tr>
@@ -581,7 +581,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>CanImport</h4>
 <pre>public&nbsp;boolean&nbsp;CanImport(<a href="../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemas,
-                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;typeNames)
+                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&gt;&nbsp;typeNames)
                   throws java.lang.Throwable,
                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -603,7 +603,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>schemas</code> - the argument of type <code>XmlSchemaSet</code></dd>
-<dd><code>typeNames</code> - the argument of type <code>ICollection_1</code></dd>
+<dd><code>typeNames</code> - the argument of type <code>ICollection_1&lt;XmlQualifiedName&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -984,21 +984,21 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetKnownTypeReferences</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;GetKnownTypeReferences(<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;typeName)
-                                     throws java.lang.Throwable,
-                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                            <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                            <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                            <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                            <a href="../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/codedom/CodeTypeReference.html" title="class in system.codedom">CodeTypeReference</a>&gt;&nbsp;GetKnownTypeReferences(<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&nbsp;typeName)
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                               <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                               <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                               <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                               <a href="../../../system/runtime/serialization/InvalidDataContractException.html" title="class in system.runtime.serialization">InvalidDataContractException</a></pre>
 <div class="block">Invokes the .NET member GetKnownTypeReferences.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1102,7 +1102,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>Import</h4>
 <pre>public&nbsp;void&nbsp;Import(<a href="../../../system/xml/schema/XmlSchemaSet.html" title="class in system.xml.schema">XmlSchemaSet</a>&nbsp;schemas,
-                   <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;typeNames)
+                   <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/xml/XmlQualifiedName.html" title="class in system.xml">XmlQualifiedName</a>&gt;&nbsp;typeNames)
             throws java.lang.Throwable,
                    <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                    <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -1124,7 +1124,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>schemas</code> - the argument of type <code>XmlSchemaSet</code></dd>
-<dd><code>typeNames</code> - the argument of type <code>ICollection_1</code></dd>
+<dd><code>typeNames</code> - the argument of type <code>ICollection_1&lt;XmlQualifiedName&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

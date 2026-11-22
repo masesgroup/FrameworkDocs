@@ -213,7 +213,7 @@ extends <a href="../../../system/identitymodel/tokens/Saml2Statement.html" title
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2AttributeStatement.html#Saml2AttributeStatement-system.collections.generic.IEnumerable_1-">Saml2AttributeStatement</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;attributes)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2AttributeStatement.html#Saml2AttributeStatement-system.collections.generic.IEnumerable_1-">Saml2AttributeStatement</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/Saml2Attribute.html" title="class in system.identitymodel.tokens">Saml2Attribute</a>&gt;&nbsp;attributes)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -249,7 +249,7 @@ extends <a href="../../../system/identitymodel/tokens/Saml2Statement.html" title
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/identitymodel/tokens/Saml2Attribute.html" title="class in system.identitymodel.tokens">Saml2Attribute</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/Saml2AttributeStatement.html#getAttributes--">getAttributes</a></span>()</code>
 <div class="block">Gets the value of the .NET property Attributes.</div>
 </td>
@@ -402,7 +402,7 @@ extends <a href="../../../system/identitymodel/tokens/Saml2Statement.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>Saml2AttributeStatement</h4>
-<pre>public&nbsp;Saml2AttributeStatement(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;attributes)
+<pre>public&nbsp;Saml2AttributeStatement(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/Saml2Attribute.html" title="class in system.identitymodel.tokens">Saml2Attribute</a>&gt;&nbsp;attributes)
                         throws java.lang.Throwable,
                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -419,7 +419,7 @@ extends <a href="../../../system/identitymodel/tokens/Saml2Statement.html" title
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>attributes</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>attributes</code> - the argument of type <code>IEnumerable_1&lt;Saml2Attribute&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -534,8 +534,8 @@ extends <a href="../../../system/identitymodel/tokens/Saml2Statement.html" title
 <ul class="blockList">
 <li class="blockList">
 <h4>getAttributes</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getAttributes()
-                           throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/identitymodel/tokens/Saml2Attribute.html" title="class in system.identitymodel.tokens">Saml2Attribute</a>&gt;&nbsp;getAttributes()
+                                           throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Attributes.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

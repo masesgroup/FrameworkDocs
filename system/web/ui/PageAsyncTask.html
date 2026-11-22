@@ -232,12 +232,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/ui/PageAsyncTask.html#PageAsyncTask-system.Func_1-">PageAsyncTask</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;handler)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/ui/PageAsyncTask.html#PageAsyncTask-system.Func_1-">PageAsyncTask</a></span>(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;handler)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/ui/PageAsyncTask.html#PageAsyncTask-system.Func_2-">PageAsyncTask</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;handler)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/ui/PageAsyncTask.html#PageAsyncTask-system.Func_2-">PageAsyncTask</a></span>(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>,<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;handler)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -572,7 +572,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>PageAsyncTask</h4>
-<pre>public&nbsp;PageAsyncTask(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;handler)
+<pre>public&nbsp;PageAsyncTask(<a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;handler)
               throws java.lang.Throwable,
                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                      <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
@@ -589,7 +589,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>handler</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>handler</code> - the argument of type <code>Func_1&lt;Task&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -615,7 +615,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>PageAsyncTask</h4>
-<pre>public&nbsp;PageAsyncTask(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;handler)
+<pre>public&nbsp;PageAsyncTask(<a href="../../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>,<a href="../../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;handler)
               throws java.lang.Throwable,
                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                      <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
@@ -632,7 +632,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>handler</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>handler</code> - the argument of type <code>Func_2&lt;CancellationToken, Task&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>

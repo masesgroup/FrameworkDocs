@@ -220,7 +220,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockQueryResult.html#InstanceLockQueryResult-system.collections.generic.IDictionary_2-">InstanceLockQueryResult</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceOwnerIds)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockQueryResult.html#InstanceLockQueryResult-system.collections.generic.IDictionary_2-">InstanceLockQueryResult</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;instanceOwnerIds)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -251,7 +251,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockQueryResult.html#getInstanceOwnerIds--">getInstanceOwnerIds</a></span>()</code>
 <div class="block">Gets the value of the .NET property InstanceOwnerIds.</div>
 </td>
@@ -288,7 +288,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockQueryResult.html#setInstanceOwnerIds-system.collections.generic.IDictionary_2-">setInstanceOwnerIds</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;InstanceOwnerIds)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceLockQueryResult.html#setInstanceOwnerIds-system.collections.generic.IDictionary_2-">setInstanceOwnerIds</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;InstanceOwnerIds)</code>
 <div class="block">Sets the value of the .NET property InstanceOwnerIds.</div>
 </td>
 </tr>
@@ -437,7 +437,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <ul class="blockList">
 <li class="blockList">
 <h4>InstanceLockQueryResult</h4>
-<pre>public&nbsp;InstanceLockQueryResult(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceOwnerIds)
+<pre>public&nbsp;InstanceLockQueryResult(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;instanceOwnerIds)
                         throws java.lang.Throwable,
                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -445,7 +445,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>instanceOwnerIds</code> - the argument of type <code>IDictionary_2</code></dd>
+<dd><code>instanceOwnerIds</code> - the argument of type <code>IDictionary_2&lt;Guid, Guid&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
@@ -506,8 +506,8 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstanceOwnerIds</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getInstanceOwnerIds()
-                                  throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;getInstanceOwnerIds()
+                                             throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property InstanceOwnerIds.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -620,7 +620,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <ul class="blockList">
 <li class="blockList">
 <h4>setInstanceOwnerIds</h4>
-<pre>public&nbsp;void&nbsp;setInstanceOwnerIds(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;InstanceOwnerIds)
+<pre>public&nbsp;void&nbsp;setInstanceOwnerIds(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;InstanceOwnerIds)
                          throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property InstanceOwnerIds.</div>
 <dl>

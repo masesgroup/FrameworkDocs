@@ -257,20 +257,20 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanInsertActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">CanInsertActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
-                   <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert)</code>
+                   <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToInsert)</code>
 <div class="block">Invokes the .NET member CanInsertActivities.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanMoveActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">CanMoveActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;moveLocation,
-                 <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToMove)</code>
+                 <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToMove)</code>
 <div class="block">Invokes the .NET member CanMoveActivities.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanRemoveActivities-system.collections.objectmodel.ReadOnlyCollection_1-">CanRemoveActivities</a></span>(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToRemove)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#CanRemoveActivities-system.collections.objectmodel.ReadOnlyCollection_1-">CanRemoveActivities</a></span>(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToRemove)</code>
 <div class="block">Invokes the .NET member CanRemoveActivities.</div>
 </td>
 </tr>
@@ -300,7 +300,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html" title="class in system.workflow.componentmodel.design">ActivityDesigner</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#getContainedDesigners--">getContainedDesigners</a></span>()</code>
 <div class="block">Gets the value of the .NET property ContainedDesigners.</div>
 </td>
@@ -383,7 +383,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#InsertActivities-system.workflow.componentmodel.design.CompositeActivityDesigner-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-java.lang.String-">InsertActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a>&nbsp;compositeActivityDesigner,
                 <a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
-                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert,
+                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToInsert,
                 java.lang.String&nbsp;undoTransactionDescription)</code>
 <div class="block">Invokes the .NET member InsertActivities.</div>
 </td>
@@ -391,7 +391,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#InsertActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">InsertActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
-                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert)</code>
+                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToInsert)</code>
 <div class="block">Invokes the .NET member InsertActivities.</div>
 </td>
 </tr>
@@ -404,7 +404,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#MoveActivities-system.workflow.componentmodel.design.HitTestInfo-system.collections.objectmodel.ReadOnlyCollection_1-">MoveActivities</a></span>(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;moveLocation,
-              <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToMove)</code>
+              <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToMove)</code>
 <div class="block">Invokes the .NET member MoveActivities.</div>
 </td>
 </tr>
@@ -418,14 +418,14 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <tr id="i25" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#RemoveActivities-system.IServiceProvider-system.collections.objectmodel.ReadOnlyCollection_1-java.lang.String-">RemoveActivities</a></span>(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider,
-                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToRemove,
+                <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToRemove,
                 java.lang.String&nbsp;transactionDescription)</code>
 <div class="block">Invokes the .NET member RemoveActivities.</div>
 </td>
 </tr>
 <tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#RemoveActivities-system.collections.objectmodel.ReadOnlyCollection_1-">RemoveActivities</a></span>(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToRemove)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html#RemoveActivities-system.collections.objectmodel.ReadOnlyCollection_1-">RemoveActivities</a></span>(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToRemove)</code>
 <div class="block">Invokes the .NET member RemoveActivities.</div>
 </td>
 </tr>
@@ -590,7 +590,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <li class="blockList">
 <h4>CanInsertActivities</h4>
 <pre>public&nbsp;boolean&nbsp;CanInsertActivities(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
-                                   <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert)
+                                   <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToInsert)
                             throws java.lang.Throwable,
                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
@@ -605,7 +605,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>insertLocation</code> - the argument of type <code>HitTestInfo</code></dd>
-<dd><code>activitiesToInsert</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToInsert</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -631,7 +631,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <li class="blockList">
 <h4>CanMoveActivities</h4>
 <pre>public&nbsp;boolean&nbsp;CanMoveActivities(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;moveLocation,
-                                 <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToMove)
+                                 <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToMove)
                           throws java.lang.Throwable,
                                  <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                  <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
@@ -644,7 +644,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>moveLocation</code> - the argument of type <code>HitTestInfo</code></dd>
-<dd><code>activitiesToMove</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToMove</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -667,7 +667,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <ul class="blockList">
 <li class="blockList">
 <h4>CanRemoveActivities</h4>
-<pre>public&nbsp;boolean&nbsp;CanRemoveActivities(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToRemove)
+<pre>public&nbsp;boolean&nbsp;CanRemoveActivities(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToRemove)
                             throws java.lang.Throwable,
                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
@@ -679,7 +679,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <div class="block">Invokes the .NET member CanRemoveActivities.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>activitiesToRemove</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToRemove</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -832,16 +832,16 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <ul class="blockList">
 <li class="blockList">
 <h4>getContainedDesigners</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getContainedDesigners()
-                                           throws java.lang.Throwable,
-                                                  <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                  <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                  <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                                  <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                                  <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                  <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                  <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                  <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/design/ActivityDesigner.html" title="class in system.workflow.componentmodel.design">ActivityDesigner</a>&gt;&nbsp;getContainedDesigners()
+                                                             throws java.lang.Throwable,
+                                                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                    <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                    <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                    <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                    <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                    <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                    <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Gets the value of the .NET property ContainedDesigners.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1183,7 +1183,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <h4>InsertActivities</h4>
 <pre>public static&nbsp;void&nbsp;InsertActivities(<a href="../../../../system/workflow/componentmodel/design/CompositeActivityDesigner.html" title="class in system.workflow.componentmodel.design">CompositeActivityDesigner</a>&nbsp;compositeActivityDesigner,
                                     <a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
-                                    <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert,
+                                    <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToInsert,
                                     java.lang.String&nbsp;undoTransactionDescription)
                              throws java.lang.Throwable,
                                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1199,7 +1199,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>compositeActivityDesigner</code> - the argument of type <code>CompositeActivityDesigner</code></dd>
 <dd><code>insertLocation</code> - the argument of type <code>HitTestInfo</code></dd>
-<dd><code>activitiesToInsert</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToInsert</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dd><code>undoTransactionDescription</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -1223,7 +1223,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <li class="blockList">
 <h4>InsertActivities</h4>
 <pre>public&nbsp;void&nbsp;InsertActivities(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;insertLocation,
-                             <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToInsert)
+                             <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToInsert)
                       throws java.lang.Throwable,
                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
@@ -1241,7 +1241,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>insertLocation</code> - the argument of type <code>HitTestInfo</code></dd>
-<dd><code>activitiesToInsert</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToInsert</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -1291,7 +1291,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <li class="blockList">
 <h4>MoveActivities</h4>
 <pre>public&nbsp;void&nbsp;MoveActivities(<a href="../../../../system/workflow/componentmodel/design/HitTestInfo.html" title="class in system.workflow.componentmodel.design">HitTestInfo</a>&nbsp;moveLocation,
-                           <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToMove)
+                           <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToMove)
                     throws java.lang.Throwable,
                            <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                            <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
@@ -1310,7 +1310,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>moveLocation</code> - the argument of type <code>HitTestInfo</code></dd>
-<dd><code>activitiesToMove</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToMove</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -1377,7 +1377,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <li class="blockList">
 <h4>RemoveActivities</h4>
 <pre>public static&nbsp;void&nbsp;RemoveActivities(<a href="../../../../system/IServiceProvider.html" title="interface in system">IServiceProvider</a>&nbsp;serviceProvider,
-                                    <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToRemove,
+                                    <a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToRemove,
                                     java.lang.String&nbsp;transactionDescription)
                              throws java.lang.Throwable,
                                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1392,7 +1392,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>serviceProvider</code> - the argument of type <code>IServiceProvider</code></dd>
-<dd><code>activitiesToRemove</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToRemove</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dd><code>transactionDescription</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -1415,7 +1415,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <ul class="blockList">
 <li class="blockList">
 <h4>RemoveActivities</h4>
-<pre>public&nbsp;void&nbsp;RemoveActivities(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;activitiesToRemove)
+<pre>public&nbsp;void&nbsp;RemoveActivities(<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;activitiesToRemove)
                       throws java.lang.Throwable,
                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
@@ -1431,7 +1431,7 @@ extends <a href="../../../../system/workflow/componentmodel/design/ActivityDesig
 <div class="block">Invokes the .NET member RemoveActivities.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>activitiesToRemove</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>activitiesToRemove</code> - the argument of type <code>ReadOnlyCollection_1&lt;Activity&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>

@@ -254,12 +254,12 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/ClaimSet.html#ContainsClaim-system.identitymodel.claims.Claim-system.collections.generic.IEqualityComparer_1-">ContainsClaim</a></span>(<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&nbsp;claim,
-             <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&nbsp;comparer)</code>
+             <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;comparer)</code>
 <div class="block">Invokes the .NET member ContainsClaim.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/ClaimSet.html#FindClaims-java.lang.String-java.lang.String-">FindClaims</a></span>(java.lang.String&nbsp;claimType,
           java.lang.String&nbsp;right)</code>
 <div class="block">Invokes the .NET member FindClaims.</div>
@@ -543,7 +543,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <li class="blockList">
 <h4>ContainsClaim</h4>
 <pre>public&nbsp;boolean&nbsp;ContainsClaim(<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&nbsp;claim,
-                             <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&nbsp;comparer)
+                             <a href="../../../system/collections/generic/IEqualityComparer_1.html" title="interface in system.collections.generic">IEqualityComparer_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;comparer)
                       throws java.lang.Throwable,
                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -560,7 +560,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>claim</code> - the argument of type <code>Claim</code></dd>
-<dd><code>comparer</code> - the argument of type <code>IEqualityComparer_1</code></dd>
+<dd><code>comparer</code> - the argument of type <code>IEqualityComparer_1&lt;Claim&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -587,9 +587,9 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObjectEnumerable.
 <ul class="blockList">
 <li class="blockList">
 <h4>FindClaims</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;FindClaims(java.lang.String&nbsp;claimType,
-                                java.lang.String&nbsp;right)
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;FindClaims(java.lang.String&nbsp;claimType,
+                                       java.lang.String&nbsp;right)
+                                throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member FindClaims.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

@@ -253,7 +253,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/activities/description/SqlWorkflowInstanceStoreBehavior.html#AddBindingParameters-system.servicemodel.description.ServiceDescription-system.servicemodel.ServiceHostBase-system.collections.objectmodel.Collection_1-system.servicemodel.channels.BindingParameterCollection-">AddBindingParameters</a></span>(<a href="../../../../system/servicemodel/description/ServiceDescription.html" title="class in system.servicemodel.description">ServiceDescription</a>&nbsp;serviceDescription,
                     <a href="../../../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a>&nbsp;serviceHostBase,
-                    <a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;endpoints,
+                    <a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../../system/servicemodel/description/ServiceEndpoint.html" title="class in system.servicemodel.description">ServiceEndpoint</a>&gt;&nbsp;endpoints,
                     <a href="../../../../system/servicemodel/channels/BindingParameterCollection.html" title="class in system.servicemodel.channels">BindingParameterCollection</a>&nbsp;bindingParameters)</code>
 <div class="block">Invokes the .NET member AddBindingParameters.</div>
 </td>
@@ -346,8 +346,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/servicemodel/activities/description/SqlWorkflowInstanceStoreBehavior.html#Promote-java.lang.String-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">Promote</a></span>(java.lang.String&nbsp;name,
-       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsSqlVariant,
-       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsBinary)</code>
+       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&gt;&nbsp;promoteAsSqlVariant,
+       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&gt;&nbsp;promoteAsBinary)</code>
 <div class="block">Invokes the .NET member Promote.</div>
 </td>
 </tr>
@@ -612,7 +612,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <h4>AddBindingParameters</h4>
 <pre>public&nbsp;void&nbsp;AddBindingParameters(<a href="../../../../system/servicemodel/description/ServiceDescription.html" title="class in system.servicemodel.description">ServiceDescription</a>&nbsp;serviceDescription,
                                  <a href="../../../../system/servicemodel/ServiceHostBase.html" title="class in system.servicemodel">ServiceHostBase</a>&nbsp;serviceHostBase,
-                                 <a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;endpoints,
+                                 <a href="../../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../../system/servicemodel/description/ServiceEndpoint.html" title="class in system.servicemodel.description">ServiceEndpoint</a>&gt;&nbsp;endpoints,
                                  <a href="../../../../system/servicemodel/channels/BindingParameterCollection.html" title="class in system.servicemodel.channels">BindingParameterCollection</a>&nbsp;bindingParameters)
                           throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member AddBindingParameters.</div>
@@ -620,7 +620,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>serviceDescription</code> - the argument of type <code>ServiceDescription</code></dd>
 <dd><code>serviceHostBase</code> - the argument of type <code>ServiceHostBase</code></dd>
-<dd><code>endpoints</code> - the argument of type <code>Collection_1</code></dd>
+<dd><code>endpoints</code> - the argument of type <code>Collection_1&lt;ServiceEndpoint&gt;</code></dd>
 <dd><code>bindingParameters</code> - the argument of type <code>BindingParameterCollection</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -918,8 +918,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>Promote</h4>
 <pre>public&nbsp;void&nbsp;Promote(java.lang.String&nbsp;name,
-                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsSqlVariant,
-                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;promoteAsBinary)
+                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&gt;&nbsp;promoteAsSqlVariant,
+                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>&gt;&nbsp;promoteAsBinary)
              throws java.lang.Throwable,
                     <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -936,8 +936,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>name</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>promoteAsSqlVariant</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>promoteAsBinary</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>promoteAsSqlVariant</code> - the argument of type <code>IEnumerable_1&lt;XName&gt;</code></dd>
+<dd><code>promoteAsBinary</code> - the argument of type <code>IEnumerable_1&lt;XName&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a></code> - if the .NET member raises it</dd>

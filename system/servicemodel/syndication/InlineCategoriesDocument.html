@@ -217,12 +217,12 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-system.collections.generic.IEnumerable_1-">InlineCategoriesDocument</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-system.collections.generic.IEnumerable_1-">InlineCategoriesDocument</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/syndication/SyndicationCategory.html" title="class in system.servicemodel.syndication">SyndicationCategory</a>&gt;&nbsp;categories)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-system.collections.generic.IEnumerable_1-boolean-java.lang.String-">InlineCategoriesDocument</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#InlineCategoriesDocument-system.collections.generic.IEnumerable_1-boolean-java.lang.String-">InlineCategoriesDocument</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/syndication/SyndicationCategory.html" title="class in system.servicemodel.syndication">SyndicationCategory</a>&gt;&nbsp;categories,
                         boolean&nbsp;isFixed,
                         java.lang.String&nbsp;scheme)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
@@ -255,7 +255,7 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/syndication/SyndicationCategory.html" title="class in system.servicemodel.syndication">SyndicationCategory</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/syndication/InlineCategoriesDocument.html#getCategories--">getCategories</a></span>()</code>
 <div class="block">Gets the value of the .NET property Categories.</div>
 </td>
@@ -439,13 +439,13 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>InlineCategoriesDocument</h4>
-<pre>public&nbsp;InlineCategoriesDocument(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories)
+<pre>public&nbsp;InlineCategoriesDocument(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/syndication/SyndicationCategory.html" title="class in system.servicemodel.syndication">SyndicationCategory</a>&gt;&nbsp;categories)
                          throws java.lang.Throwable,
                                 <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>categories</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>categories</code> - the argument of type <code>IEnumerable_1&lt;SyndicationCategory&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></code> - if the .NET member raises it</dd>
@@ -460,7 +460,7 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>InlineCategoriesDocument</h4>
-<pre>public&nbsp;InlineCategoriesDocument(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;categories,
+<pre>public&nbsp;InlineCategoriesDocument(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/syndication/SyndicationCategory.html" title="class in system.servicemodel.syndication">SyndicationCategory</a>&gt;&nbsp;categories,
                                 boolean&nbsp;isFixed,
                                 java.lang.String&nbsp;scheme)
                          throws java.lang.Throwable,
@@ -468,7 +468,7 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>categories</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>categories</code> - the argument of type <code>IEnumerable_1&lt;SyndicationCategory&gt;</code></dd>
 <dd><code>isFixed</code> - the argument of type <code>boolean</code></dd>
 <dd><code>scheme</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -529,8 +529,8 @@ extends <a href="../../../system/servicemodel/syndication/CategoriesDocument.htm
 <ul class="blockList">
 <li class="blockList">
 <h4>getCategories</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getCategories()
-                           throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/syndication/SyndicationCategory.html" title="class in system.servicemodel.syndication">SyndicationCategory</a>&gt;&nbsp;getCategories()
+                                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Categories.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

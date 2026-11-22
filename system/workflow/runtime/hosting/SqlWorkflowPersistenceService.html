@@ -268,7 +268,7 @@ extends <a href="../../../../system/workflow/runtime/hosting/WorkflowPersistence
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/workflow/runtime/hosting/SqlPersistenceWorkflowInstanceDescription.html" title="class in system.workflow.runtime.hosting">SqlPersistenceWorkflowInstanceDescription</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/hosting/SqlWorkflowPersistenceService.html#GetAllWorkflows--">GetAllWorkflows</a></span>()</code>
 <div class="block">Invokes the .NET member GetAllWorkflows.</div>
 </td>
@@ -322,7 +322,7 @@ extends <a href="../../../../system/workflow/runtime/hosting/WorkflowPersistence
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/workflow/runtime/hosting/SqlWorkflowPersistenceService.html#LoadExpiredTimerWorkflowIds--">LoadExpiredTimerWorkflowIds</a></span>()</code>
 <div class="block">Invokes the .NET member LoadExpiredTimerWorkflowIds.</div>
 </td>
@@ -643,31 +643,31 @@ extends <a href="../../../../system/workflow/runtime/hosting/WorkflowPersistence
 <ul class="blockList">
 <li class="blockList">
 <h4>GetAllWorkflows</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetAllWorkflows()
-                              throws java.lang.Throwable,
-                                     <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                     <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                     <a href="../../../../system/TypeInitializationException.html" title="class in system">TypeInitializationException</a>,
-                                     <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                     <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                     <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                     <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                     <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                     <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                     <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                                     <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                     <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                     <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
-                                     <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                     <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                     <a href="../../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
-                                     <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                                     <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                     <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
-                                     <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
-                                     <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                     <a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
-                                     <a href="../../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/workflow/runtime/hosting/SqlPersistenceWorkflowInstanceDescription.html" title="class in system.workflow.runtime.hosting">SqlPersistenceWorkflowInstanceDescription</a>&gt;&nbsp;GetAllWorkflows()
+                                                                         throws java.lang.Throwable,
+                                                                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                                <a href="../../../../system/TypeInitializationException.html" title="class in system">TypeInitializationException</a>,
+                                                                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                                <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                                <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                                                <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                                <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                                                <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                                <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                                <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                                                <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                                <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                                <a href="../../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                                                                <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                                                <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                                <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                                                                <a href="../../../../system/PlatformNotSupportedException.html" title="class in system">PlatformNotSupportedException</a>,
+                                                                                <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                                <a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                                                                                <a href="../../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></pre>
 <div class="block">Invokes the .NET member GetAllWorkflows.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -860,21 +860,21 @@ extends <a href="../../../../system/workflow/runtime/hosting/WorkflowPersistence
 <ul class="blockList">
 <li class="blockList">
 <h4>LoadExpiredTimerWorkflowIds</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;LoadExpiredTimerWorkflowIds()
-                                    throws java.lang.Throwable,
-                                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                           <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                           <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                           <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                           <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                           <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                           <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                           <a href="../../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
-                                           <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                                           <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                           <a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
-                                           <a href="../../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/Guid.html" title="class in system">Guid</a>&gt;&nbsp;LoadExpiredTimerWorkflowIds()
+                                          throws java.lang.Throwable,
+                                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                 <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                 <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                 <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                 <a href="../../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                 <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                 <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                 <a href="../../../../system/configuration/ConfigurationException.html" title="class in system.configuration">ConfigurationException</a>,
+                                                 <a href="../../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                 <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                 <a href="../../../../system/threading/AbandonedMutexException.html" title="class in system.threading">AbandonedMutexException</a>,
+                                                 <a href="../../../../system/data/sqltypes/SqlTypeException.html" title="class in system.data.sqltypes">SqlTypeException</a></pre>
 <div class="block">Invokes the .NET member LoadExpiredTimerWorkflowIds.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

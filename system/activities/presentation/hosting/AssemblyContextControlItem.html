@@ -259,13 +259,13 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/AssemblyContextControlItem.html#GetEnvironmentAssemblies-system.activities.presentation.hosting.IMultiTargetingSupportService-">GetEnvironmentAssemblies</a></span>(<a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a>&nbsp;multiTargetingService)</code>
 <div class="block">Invokes the .NET member GetEnvironmentAssemblies.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/AssemblyContextControlItem.html#GetEnvironmentAssemblyNames--">GetEnvironmentAssemblyNames</a></span>()</code>
 <div class="block">Invokes the .NET member GetEnvironmentAssemblyNames.</div>
 </td>
@@ -307,7 +307,7 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/AssemblyContextControlItem.html#getReferencedAssemblyNames--">getReferencedAssemblyNames</a></span>()</code>
 <div class="block">Gets the value of the .NET property ReferencedAssemblyNames.</div>
 </td>
@@ -326,7 +326,7 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/AssemblyContextControlItem.html#setReferencedAssemblyNames-system.collections.generic.IList_1-">setReferencedAssemblyNames</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;ReferencedAssemblyNames)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/activities/presentation/hosting/AssemblyContextControlItem.html#setReferencedAssemblyNames-system.collections.generic.IList_1-">setReferencedAssemblyNames</a></span>(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&gt;&nbsp;ReferencedAssemblyNames)</code>
 <div class="block">Sets the value of the .NET property ReferencedAssemblyNames.</div>
 </td>
 </tr>
@@ -563,21 +563,21 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>GetEnvironmentAssemblies</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetEnvironmentAssemblies(<a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a>&nbsp;multiTargetingService)
-                                       throws java.lang.Throwable,
-                                              <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                              <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                              <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                              <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                              <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
-                                              <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                                              <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                              <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/Assembly.html" title="class in system.reflection">Assembly</a>&gt;&nbsp;GetEnvironmentAssemblies(<a href="../../../../system/activities/presentation/hosting/IMultiTargetingSupportService.html" title="interface in system.activities.presentation.hosting">IMultiTargetingSupportService</a>&nbsp;multiTargetingService)
+                                                 throws java.lang.Throwable,
+                                                        <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                        <a href="../../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                        <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                        <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                        <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                        <a href="../../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                        <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                        <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                        <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                        <a href="../../../../system/InvalidCastException.html" title="class in system">InvalidCastException</a>,
+                                                        <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                        <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                        <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a></pre>
 <div class="block">Invokes the .NET member GetEnvironmentAssemblies.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -610,10 +610,10 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>GetEnvironmentAssemblyNames</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetEnvironmentAssemblyNames()
-                                          throws java.lang.Throwable,
-                                                 <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                                 <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&gt;&nbsp;GetEnvironmentAssemblyNames()
+                                                        throws java.lang.Throwable,
+                                                               <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                               <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Invokes the .NET member GetEnvironmentAssemblyNames.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -747,8 +747,8 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>getReferencedAssemblyNames</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getReferencedAssemblyNames()
-                                   throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&gt;&nbsp;getReferencedAssemblyNames()
+                                                 throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ReferencedAssemblyNames.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -802,7 +802,7 @@ extends <a href="../../../../system/activities/presentation/ContextItem.html" ti
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setReferencedAssemblyNames</h4>
-<pre>public&nbsp;void&nbsp;setReferencedAssemblyNames(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;ReferencedAssemblyNames)
+<pre>public&nbsp;void&nbsp;setReferencedAssemblyNames(<a href="../../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../../system/reflection/AssemblyName.html" title="class in system.reflection">AssemblyName</a>&gt;&nbsp;ReferencedAssemblyNames)
                                 throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property ReferencedAssemblyNames.</div>
 <dl>

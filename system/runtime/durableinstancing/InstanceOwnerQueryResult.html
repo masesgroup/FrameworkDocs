@@ -215,12 +215,12 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceOwnerQueryResult.html#InstanceOwnerQueryResult-system.Guid-system.collections.generic.IDictionary_2-">InstanceOwnerQueryResult</a></span>(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
-                        <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata)</code>
+                        <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&nbsp;metadata)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceOwnerQueryResult.html#InstanceOwnerQueryResult-system.collections.generic.IDictionary_2-">InstanceOwnerQueryResult</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceOwners)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceOwnerQueryResult.html#InstanceOwnerQueryResult-system.collections.generic.IDictionary_2-">InstanceOwnerQueryResult</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&gt;&nbsp;instanceOwners)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -251,7 +251,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceOwnerQueryResult.html#getInstanceOwners--">getInstanceOwners</a></span>()</code>
 <div class="block">Gets the value of the .NET property InstanceOwners.</div>
 </td>
@@ -288,7 +288,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceOwnerQueryResult.html#setInstanceOwners-system.collections.generic.IDictionary_2-">setInstanceOwners</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;InstanceOwners)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/runtime/durableinstancing/InstanceOwnerQueryResult.html#setInstanceOwners-system.collections.generic.IDictionary_2-">setInstanceOwners</a></span>(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&gt;&nbsp;InstanceOwners)</code>
 <div class="block">Sets the value of the .NET property InstanceOwners.</div>
 </td>
 </tr>
@@ -411,7 +411,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <li class="blockList">
 <h4>InstanceOwnerQueryResult</h4>
 <pre>public&nbsp;InstanceOwnerQueryResult(<a href="../../../system/Guid.html" title="class in system">Guid</a>&nbsp;instanceOwnerId,
-                                <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;metadata)
+                                <a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&nbsp;metadata)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -420,7 +420,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>instanceOwnerId</code> - the argument of type <code>Guid</code></dd>
-<dd><code>metadata</code> - the argument of type <code>IDictionary_2</code></dd>
+<dd><code>metadata</code> - the argument of type <code>IDictionary_2&lt;XName, InstanceValue&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
@@ -437,7 +437,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <ul class="blockList">
 <li class="blockList">
 <h4>InstanceOwnerQueryResult</h4>
-<pre>public&nbsp;InstanceOwnerQueryResult(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;instanceOwners)
+<pre>public&nbsp;InstanceOwnerQueryResult(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&gt;&nbsp;instanceOwners)
                          throws java.lang.Throwable,
                                 <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                                 <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -445,7 +445,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>instanceOwners</code> - the argument of type <code>IDictionary_2</code></dd>
+<dd><code>instanceOwners</code> - the argument of type <code>IDictionary_2&lt;Guid, IDictionary_2&lt;XName, InstanceValue&gt;&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
@@ -506,8 +506,8 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <ul class="blockList">
 <li class="blockList">
 <h4>getInstanceOwners</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;getInstanceOwners()
-                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&gt;&nbsp;getInstanceOwners()
+                                                                         throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property InstanceOwners.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -620,7 +620,7 @@ extends <a href="../../../system/runtime/durableinstancing/InstanceStoreQueryRes
 <ul class="blockList">
 <li class="blockList">
 <h4>setInstanceOwners</h4>
-<pre>public&nbsp;void&nbsp;setInstanceOwners(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&nbsp;InstanceOwners)
+<pre>public&nbsp;void&nbsp;setInstanceOwners(<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/Guid.html" title="class in system">Guid</a>,<a href="../../../system/collections/generic/IDictionary_2.html" title="interface in system.collections.generic">IDictionary_2</a>&lt;<a href="../../../system/xml/linq/XName.html" title="class in system.xml.linq">XName</a>,<a href="../../../system/runtime/durableinstancing/InstanceValue.html" title="class in system.runtime.durableinstancing">InstanceValue</a>&gt;&gt;&nbsp;InstanceOwners)
                        throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property InstanceOwners.</div>
 <dl>

@@ -230,7 +230,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRootImplementation.html#CanExecuteExpression-java.lang.String-boolean-system.collections.generic.IList_1-org.mases.jcobridge.netreflection.JCORefOut-">CanExecuteExpression</a></span>(java.lang.String&nbsp;expressionText,
                     boolean&nbsp;isReference,
-                    <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                    <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;expressionId)</code>
 <div class="block">Invokes the .NET member CanExecuteExpression.</div>
 </td>
@@ -238,7 +238,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRootImplementation.html#GetExpressionTreeForExpression-int-system.collections.generic.IList_1-">GetExpressionTreeForExpression</a></span>(int&nbsp;expressionId,
-                              <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locationReferences)</code>
+                              <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locationReferences)</code>
 <div class="block">Invokes the .NET member GetExpressionTreeForExpression.</div>
 </td>
 </tr>
@@ -287,14 +287,14 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRootImplementation.html#InvokeExpression-int-system.collections.generic.IList_1-">InvokeExpression</a></span>(int&nbsp;expressionId,
-                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations)</code>
+                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/Location.html" title="class in system.activities">Location</a>&gt;&nbsp;locations)</code>
 <div class="block">Invokes the .NET member InvokeExpression.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/xamlintegration/ICompiledExpressionRootImplementation.html#InvokeExpression-int-system.collections.generic.IList_1-system.activities.ActivityContext-">InvokeExpression</a></span>(int&nbsp;expressionId,
-                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                 <a href="../../../system/activities/ActivityContext.html" title="class in system.activities">ActivityContext</a>&nbsp;activityContext)</code>
 <div class="block">Invokes the .NET member InvokeExpression.</div>
 </td>
@@ -427,7 +427,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <h4>CanExecuteExpression</h4>
 <pre>public&nbsp;boolean&nbsp;CanExecuteExpression(java.lang.String&nbsp;expressionText,
                                     boolean&nbsp;isReference,
-                                    <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                                    <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                                     <a href="../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;java.util.concurrent.atomic.AtomicInteger&gt;&nbsp;expressionId)
                              throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member CanExecuteExpression.</div>
@@ -437,7 +437,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expressionText</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>isReference</code> - the argument of type <code>boolean</code></dd>
-<dd><code>locations</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>locations</code> - the argument of type <code>IList_1&lt;LocationReference&gt;</code></dd>
 <dd><code>expressionId</code> - the argument of type <code>JCORefOut&lt;java.util.concurrent.atomic.AtomicInteger&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
@@ -455,7 +455,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <li class="blockList">
 <h4>GetExpressionTreeForExpression</h4>
 <pre>public&nbsp;<a href="../../../system/linq/expressions/Expression.html" title="class in system.linq.expressions">Expression</a>&nbsp;GetExpressionTreeForExpression(int&nbsp;expressionId,
-                                                 <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locationReferences)
+                                                 <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locationReferences)
                                           throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetExpressionTreeForExpression.</div>
 <dl>
@@ -463,7 +463,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <dd><code><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#GetExpressionTreeForExpression-int-system.collections.generic.IList_1-">GetExpressionTreeForExpression</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html" title="interface in system.activities.xamlintegration">ICompiledExpressionRoot</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expressionId</code> - the argument of type <code>int</code></dd>
-<dd><code>locationReferences</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>locationReferences</code> - the argument of type <code>IList_1&lt;LocationReference&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -629,7 +629,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <li class="blockList">
 <h4>InvokeExpression</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;InvokeExpression(int&nbsp;expressionId,
-                                  <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations)
+                                  <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/Location.html" title="class in system.activities">Location</a>&gt;&nbsp;locations)
                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member InvokeExpression.</div>
 <dl>
@@ -637,7 +637,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <dd><code><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#InvokeExpression-int-system.collections.generic.IList_1-">InvokeExpression</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html" title="interface in system.activities.xamlintegration">ICompiledExpressionRoot</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expressionId</code> - the argument of type <code>int</code></dd>
-<dd><code>locations</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>locations</code> - the argument of type <code>IList_1&lt;Location&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -654,7 +654,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <li class="blockList">
 <h4>InvokeExpression</h4>
 <pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;InvokeExpression(int&nbsp;expressionId,
-                                  <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;locations,
+                                  <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/activities/LocationReference.html" title="class in system.activities">LocationReference</a>&gt;&nbsp;locations,
                                   <a href="../../../system/activities/ActivityContext.html" title="class in system.activities">ActivityContext</a>&nbsp;activityContext)
                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member InvokeExpression.</div>
@@ -663,7 +663,7 @@ implements <a href="../../../system/activities/xamlintegration/ICompiledExpressi
 <dd><code><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html#InvokeExpression-int-system.collections.generic.IList_1-system.activities.ActivityContext-">InvokeExpression</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/xamlintegration/ICompiledExpressionRoot.html" title="interface in system.activities.xamlintegration">ICompiledExpressionRoot</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>expressionId</code> - the argument of type <code>int</code></dd>
-<dd><code>locations</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>locations</code> - the argument of type <code>IList_1&lt;LocationReference&gt;</code></dd>
 <dd><code>activityContext</code> - the argument of type <code>ActivityContext</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

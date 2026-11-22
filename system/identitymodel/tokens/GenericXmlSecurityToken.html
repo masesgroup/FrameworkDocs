@@ -228,7 +228,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                        <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;expirationTime,
                        <a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;internalTokenReference,
                        <a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;externalTokenReference,
-                       <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authorizationPolicies)</code>
+                       <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -260,7 +260,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/GenericXmlSecurityToken.html#getAuthorizationPolicies--">getAuthorizationPolicies</a></span>()</code>
 <div class="block">Gets the value of the .NET property AuthorizationPolicies.</div>
 </td>
@@ -470,7 +470,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                                <a href="../../../system/DateTime.html" title="class in system">DateTime</a>&nbsp;expirationTime,
                                <a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;internalTokenReference,
                                <a href="../../../system/identitymodel/tokens/SecurityKeyIdentifierClause.html" title="class in system.identitymodel.tokens">SecurityKeyIdentifierClause</a>&nbsp;externalTokenReference,
-                               <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;authorizationPolicies)
+                               <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;authorizationPolicies)
                         throws java.lang.Throwable,
                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -496,7 +496,7 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <dd><code>expirationTime</code> - the argument of type <code>DateTime</code></dd>
 <dd><code>internalTokenReference</code> - the argument of type <code>SecurityKeyIdentifierClause</code></dd>
 <dd><code>externalTokenReference</code> - the argument of type <code>SecurityKeyIdentifierClause</code></dd>
-<dd><code>authorizationPolicies</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>authorizationPolicies</code> - the argument of type <code>ReadOnlyCollection_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -575,8 +575,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <ul class="blockList">
 <li class="blockList">
 <h4>getAuthorizationPolicies</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getAuthorizationPolicies()
-                                              throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;getAuthorizationPolicies()
+                                                                    throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property AuthorizationPolicies.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

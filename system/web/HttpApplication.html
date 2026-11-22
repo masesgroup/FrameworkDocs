@@ -895,7 +895,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i86" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpApplication.html#OnExecuteRequestStep-system.Action_2-">OnExecuteRequestStep</a></span>(<a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpApplication.html#OnExecuteRequestStep-system.Action_2-">OnExecuteRequestStep</a></span>(<a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/web/HttpContextBase.html" title="class in system.web">HttpContextBase</a>,<a href="../../system/Action.html" title="class in system">Action</a>&gt;&nbsp;callback)</code>
 <div class="block">Invokes the .NET member OnExecuteRequestStep.</div>
 </td>
 </tr>
@@ -3823,7 +3823,7 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>OnExecuteRequestStep</h4>
-<pre>public&nbsp;void&nbsp;OnExecuteRequestStep(<a href="../../system/Action_2.html" title="class in system">Action_2</a>&nbsp;callback)
+<pre>public&nbsp;void&nbsp;OnExecuteRequestStep(<a href="../../system/Action_2.html" title="class in system">Action_2</a>&lt;<a href="../../system/web/HttpContextBase.html" title="class in system.web">HttpContextBase</a>,<a href="../../system/Action.html" title="class in system">Action</a>&gt;&nbsp;callback)
                           throws java.lang.Throwable,
                                  <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                  <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -3840,7 +3840,7 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Invokes the .NET member OnExecuteRequestStep.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - the argument of type <code>Action_2</code></dd>
+<dd><code>callback</code> - the argument of type <code>Action_2&lt;HttpContextBase, Action&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>

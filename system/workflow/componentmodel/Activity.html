@@ -33,6 +33,18 @@
 <meta name="keywords" content="getExecutionResult()">
 <meta name="keywords" content="getExecutionStatus()">
 <meta name="keywords" content="getParent()">
+<meta name="keywords" content="addCanceling()">
+<meta name="keywords" content="removeCanceling()">
+<meta name="keywords" content="addClosed()">
+<meta name="keywords" content="removeClosed()">
+<meta name="keywords" content="addCompensating()">
+<meta name="keywords" content="removeCompensating()">
+<meta name="keywords" content="addExecuting()">
+<meta name="keywords" content="removeExecuting()">
+<meta name="keywords" content="addFaulting()">
+<meta name="keywords" content="removeFaulting()">
+<meta name="keywords" content="addStatusChanged()">
+<meta name="keywords" content="removeStatusChanged()">
 <link rel="stylesheet" type="text/css" href="../../../stylesheet.css" title="Style">
 <script type="text/javascript" src="../../../script.js"></script>
 </head>
@@ -46,7 +58,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":9,"i18":9,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":9,"i24":9,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -258,116 +270,152 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#addCanceling-system.EventHandler_1-">addCanceling</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addCanceling.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#addClosed-system.EventHandler_1-">addClosed</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addClosed.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#addCompensating-system.EventHandler_1-">addCompensating</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addCompensating.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#addExecuting-system.EventHandler_1-">addExecuting</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addExecuting.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#addFaulting-system.EventHandler_1-">addFaulting</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addFaulting.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#addStatusChanged-system.EventHandler_1-">addStatusChanged</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member addStatusChanged.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">cast</a></span>(<a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection">IJCOBridgeReflected</a>&nbsp;from)</code>
 <div class="block">Try to cast the <a href="../../../org/mases/jcobridge/netreflection/IJCOBridgeReflected.html" title="interface in org.mases.jcobridge.netreflection"><code>IJCOBridgeReflected</code></a> instance into <a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel"><code>Activity</code></a>, a cast assert is made to check if types are compatible.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Clone--">Clone</a></span>()</code>
 <div class="block">Invokes the .NET member Clone.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#GetActivityByName-java.lang.String-">GetActivityByName</a></span>(java.lang.String&nbsp;activityQualifiedName)</code>
 <div class="block">Invokes the .NET member GetActivityByName.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#GetActivityByName-java.lang.String-boolean-">GetActivityByName</a></span>(java.lang.String&nbsp;activityQualifiedName,
                  boolean&nbsp;withinThisActivityOnly)</code>
 <div class="block">Invokes the .NET member GetActivityByName.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getDescription--">getDescription</a></span>()</code>
 <div class="block">Gets the value of the .NET property Description.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getEnabled--">getEnabled</a></span>()</code>
 <div class="block">Gets the value of the .NET property Enabled.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../system/workflow/componentmodel/ActivityExecutionResult.html" title="class in system.workflow.componentmodel">ActivityExecutionResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getExecutionResult--">getExecutionResult</a></span>()</code>
 <div class="block">Gets the value of the .NET property ExecutionResult.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/componentmodel/ActivityExecutionStatus.html" title="class in system.workflow.componentmodel">ActivityExecutionStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getExecutionStatus--">getExecutionStatus</a></span>()</code>
 <div class="block">Gets the value of the .NET property ExecutionStatus.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getIsDynamicActivity--">getIsDynamicActivity</a></span>()</code>
 <div class="block">Gets the value of the .NET property IsDynamicActivity.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getJCOAssemblyName--">getJCOAssemblyName</a></span>()</code>
 <div class="block">Returns the full name of the assembly of the .NET type.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getJCOClassName--">getJCOClassName</a></span>()</code>
 <div class="block">Returns the full name of the .NET type.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getJCOInstance--">getJCOInstance</a></span>()</code>
 <div class="block">Returns the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getJCOObjectName--">getJCOObjectName</a></span>()</code>
 <div class="block">Returns the name of the .NET type qualified with its assembly.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge">JCType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getJCOType--">getJCOType</a></span>()</code>
 <div class="block">Returns the <a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCType.html?is-external=true" title="class or interface in org.mases.jcobridge"><code>JCType</code></a> of the .NET type.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the value of the .NET property Name.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../system/workflow/componentmodel/CompositeActivity.html" title="class in system.workflow.componentmodel">CompositeActivity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getParent--">getParent</a></span>()</code>
 <div class="block">Gets the value of the .NET property Parent.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#getQualifiedName--">getQualifiedName</a></span>()</code>
 <div class="block">Gets the value of the .NET property QualifiedName.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Load-system.io.Stream-system.workflow.componentmodel.Activity-">Load</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
     <a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;outerActivity)</code>
 <div class="block">Invokes the .NET member Load.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Load-system.io.Stream-system.workflow.componentmodel.Activity-system.runtime.serialization.IFormatter-">Load</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
     <a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;outerActivity,
@@ -375,54 +423,90 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <div class="block">Invokes the .NET member Load.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#RegisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">RegisterForStatusChange</a></span>(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
-                       <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)</code>
+                       <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;activityStatusChangeListener)</code>
 <div class="block">Invokes the .NET member RegisterForStatusChange.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#removeCanceling-system.EventHandler_1-">removeCanceling</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeCanceling.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#removeClosed-system.EventHandler_1-">removeClosed</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeClosed.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#removeCompensating-system.EventHandler_1-">removeCompensating</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeCompensating.</div>
+</td>
+</tr>
+<tr id="i29" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#removeExecuting-system.EventHandler_1-">removeExecuting</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeExecuting.</div>
+</td>
+</tr>
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#removeFaulting-system.EventHandler_1-">removeFaulting</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeFaulting.</div>
+</td>
+</tr>
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#removeStatusChanged-system.EventHandler_1-">removeStatusChanged</a></span>(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)</code>
+<div class="block">Invokes the .NET member removeStatusChanged.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream)</code>
 <div class="block">Invokes the .NET member Save.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#Save-system.io.Stream-system.runtime.serialization.IFormatter-">Save</a></span>(<a href="../../../system/io/Stream.html" title="class in system.io">Stream</a>&nbsp;stream,
     <a href="../../../system/runtime/serialization/IFormatter.html" title="interface in system.runtime.serialization">IFormatter</a>&nbsp;formatter)</code>
 <div class="block">Invokes the .NET member Save.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setDescription-java.lang.String-">setDescription</a></span>(java.lang.String&nbsp;Description)</code>
 <div class="block">Sets the value of the .NET property Description.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setEnabled-boolean-">setEnabled</a></span>(boolean&nbsp;Enabled)</code>
 <div class="block">Sets the value of the .NET property Enabled.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setJCOInstance-org.mases.jcobridge.JCObject-">setJCOInstance</a></span>(<a href="https://www.jcobridge.com/api-java_2.6.10/org/mases/jcobridge/JCObject.html?is-external=true" title="class or interface in org.mases.jcobridge">JCObject</a>&nbsp;instance)</code>
 <div class="block">Sets the underlying object managed by the bridge.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;Name)</code>
 <div class="block">Sets the value of the .NET property Name.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/Activity.html#UnregisterForStatusChange-system.workflow.componentmodel.DependencyProperty-system.workflow.componentmodel.IActivityEventListener_1-">UnregisterForStatusChange</a></span>(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
-                         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)</code>
+                         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;activityStatusChangeListener)</code>
 <div class="block">Invokes the .NET member UnregisterForStatusChange.</div>
 </td>
 </tr>
@@ -627,6 +711,120 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addCanceling-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addCanceling</h4>
+<pre>public&nbsp;void&nbsp;addCanceling(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addCanceling.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addClosed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addClosed</h4>
+<pre>public&nbsp;void&nbsp;addClosed(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+               throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addClosed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addCompensating-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addCompensating</h4>
+<pre>public&nbsp;void&nbsp;addCompensating(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addCompensating.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addExecuting-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addExecuting</h4>
+<pre>public&nbsp;void&nbsp;addExecuting(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addExecuting.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addFaulting-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addFaulting</h4>
+<pre>public&nbsp;void&nbsp;addFaulting(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                 throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addFaulting.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="addStatusChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addStatusChanged</h4>
+<pre>public&nbsp;void&nbsp;addStatusChanged(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                      throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member addStatusChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
 <a name="cast-org.mases.jcobridge.netreflection.IJCOBridgeReflected-">
 <!--   -->
 </a>
@@ -1257,7 +1455,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <li class="blockList">
 <h4>RegisterForStatusChange</h4>
 <pre>public&nbsp;void&nbsp;RegisterForStatusChange(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
-                                    <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)
+                                    <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;activityStatusChangeListener)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1270,7 +1468,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dependencyProp</code> - the argument of type <code>DependencyProperty</code></dd>
-<dd><code>activityStatusChangeListener</code> - the argument of type <code>IActivityEventListener_1</code></dd>
+<dd><code>activityStatusChangeListener</code> - the argument of type <code>IActivityEventListener_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -1282,6 +1480,120 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dd><code><a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></code> - if the .NET member raises it</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="https://learn.microsoft.com/dotnet/api/System.Workflow.ComponentModel.Activity.RegisterForStatusChange" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeCanceling-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeCanceling</h4>
+<pre>public&nbsp;void&nbsp;removeCanceling(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeCanceling.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeClosed-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeClosed</h4>
+<pre>public&nbsp;void&nbsp;removeClosed(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                  throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeClosed.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeCompensating-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeCompensating</h4>
+<pre>public&nbsp;void&nbsp;removeCompensating(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                        throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeCompensating.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeExecuting-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeExecuting</h4>
+<pre>public&nbsp;void&nbsp;removeExecuting(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                     throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeExecuting.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeFaulting-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeFaulting</h4>
+<pre>public&nbsp;void&nbsp;removeFaulting(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                    throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeFaulting.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
+</dl>
+</li>
+</ul>
+<a name="removeStatusChanged-system.EventHandler_1-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>removeStatusChanged</h4>
+<pre>public&nbsp;void&nbsp;removeStatusChanged(<a href="../../../system/EventHandler_1.html" title="class in system">EventHandler_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;handler)
+                         throws java.lang.Throwable</pre>
+<div class="block">Invokes the .NET member removeStatusChanged.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>handler</code> - the argument of type <code>EventHandler_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="https://learn.microsoft.com/dotnet/api/DOCUMENTATION_MEMBER_NAME" target="_top">.NET documentation</a></dd>
 </dl>
 </li>
 </ul>
@@ -1518,7 +1830,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <li class="blockList">
 <h4>UnregisterForStatusChange</h4>
 <pre>public&nbsp;void&nbsp;UnregisterForStatusChange(<a href="../../../system/workflow/componentmodel/DependencyProperty.html" title="class in system.workflow.componentmodel">DependencyProperty</a>&nbsp;dependencyProp,
-                                      <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;activityStatusChangeListener)
+                                      <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/componentmodel/ActivityExecutionStatusChangedEventArgs.html" title="class in system.workflow.componentmodel">ActivityExecutionStatusChangedEventArgs</a>&gt;&nbsp;activityStatusChangeListener)
                                throws java.lang.Throwable,
                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1531,7 +1843,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>dependencyProp</code> - the argument of type <code>DependencyProperty</code></dd>
-<dd><code>activityStatusChangeListener</code> - the argument of type <code>IActivityEventListener_1</code></dd>
+<dd><code>activityStatusChangeListener</code> - the argument of type <code>IActivityEventListener_1&lt;ActivityExecutionStatusChangedEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>

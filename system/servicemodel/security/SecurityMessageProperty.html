@@ -271,7 +271,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SecurityMessageProperty.html#getExternalAuthorizationPolicies--">getExternalAuthorizationPolicies</a></span>()</code>
 <div class="block">Gets the value of the .NET property ExternalAuthorizationPolicies.</div>
 </td>
@@ -283,7 +283,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i6" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/security/SupportingTokenSpecification.html" title="class in system.servicemodel.security">SupportingTokenSpecification</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SecurityMessageProperty.html#getIncomingSupportingTokens--">getIncomingSupportingTokens</a></span>()</code>
 <div class="block">Gets the value of the .NET property IncomingSupportingTokens.</div>
 </td>
@@ -331,7 +331,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i14" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/security/SupportingTokenSpecification.html" title="class in system.servicemodel.security">SupportingTokenSpecification</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SecurityMessageProperty.html#getOutgoingSupportingTokens--">getOutgoingSupportingTokens</a></span>()</code>
 <div class="block">Gets the value of the .NET property OutgoingSupportingTokens.</div>
 </td>
@@ -368,7 +368,7 @@ implements java.lang.AutoCloseable</pre>
 </tr>
 <tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SecurityMessageProperty.html#setExternalAuthorizationPolicies-system.collections.objectmodel.ReadOnlyCollection_1-">setExternalAuthorizationPolicies</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ExternalAuthorizationPolicies)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SecurityMessageProperty.html#setExternalAuthorizationPolicies-system.collections.objectmodel.ReadOnlyCollection_1-">setExternalAuthorizationPolicies</a></span>(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;ExternalAuthorizationPolicies)</code>
 <div class="block">Sets the value of the .NET property ExternalAuthorizationPolicies.</div>
 </td>
 </tr>
@@ -664,8 +664,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getExternalAuthorizationPolicies</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getExternalAuthorizationPolicies()
-                                                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;getExternalAuthorizationPolicies()
+                                                                            throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property ExternalAuthorizationPolicies.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -730,22 +730,22 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getIncomingSupportingTokens</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getIncomingSupportingTokens()
-                                         throws java.lang.Throwable,
-                                                <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                                <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                                <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                                                <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                                <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                                <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                                <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                                <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                                <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                                <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                                                <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                                <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                                <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
-                                                <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/security/SupportingTokenSpecification.html" title="class in system.servicemodel.security">SupportingTokenSpecification</a>&gt;&nbsp;getIncomingSupportingTokens()
+                                                                       throws java.lang.Throwable,
+                                                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                                              <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                              <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                              <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                                              <a href="../../../system/security/SecurityException.html" title="class in system.security">SecurityException</a>,
+                                                                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a></pre>
 <div class="block">Gets the value of the .NET property IncomingSupportingTokens.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -962,8 +962,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getOutgoingSupportingTokens</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;getOutgoingSupportingTokens()
-                                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/security/SupportingTokenSpecification.html" title="class in system.servicemodel.security">SupportingTokenSpecification</a>&gt;&nbsp;getOutgoingSupportingTokens()
+                                                                       throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property OutgoingSupportingTokens.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1188,7 +1188,7 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setExternalAuthorizationPolicies</h4>
-<pre>public&nbsp;void&nbsp;setExternalAuthorizationPolicies(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;ExternalAuthorizationPolicies)
+<pre>public&nbsp;void&nbsp;setExternalAuthorizationPolicies(<a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;ExternalAuthorizationPolicies)
                                       throws java.lang.Throwable</pre>
 <div class="block">Sets the value of the .NET property ExternalAuthorizationPolicies.</div>
 <dl>

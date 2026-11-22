@@ -236,7 +236,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAuthorizationDecisionStatement.html#SamlAuthorizationDecisionStatement-system.identitymodel.tokens.SamlSubject-java.lang.String-system.identitymodel.tokens.SamlAccessDecision-system.collections.generic.IEnumerable_1-">SamlAuthorizationDecisionStatement</a></span>(<a href="../../../system/identitymodel/tokens/SamlSubject.html" title="class in system.identitymodel.tokens">SamlSubject</a>&nbsp;samlSubject,
                                   java.lang.String&nbsp;resource,
                                   <a href="../../../system/identitymodel/tokens/SamlAccessDecision.html" title="class in system.identitymodel.tokens">SamlAccessDecision</a>&nbsp;accessDecision,
-                                  <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;samlActions)</code>
+                                  <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAction.html" title="class in system.identitymodel.tokens">SamlAction</a>&gt;&nbsp;samlActions)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -244,7 +244,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAuthorizationDecisionStatement.html#SamlAuthorizationDecisionStatement-system.identitymodel.tokens.SamlSubject-java.lang.String-system.identitymodel.tokens.SamlAccessDecision-system.collections.generic.IEnumerable_1-system.identitymodel.tokens.SamlEvidence-">SamlAuthorizationDecisionStatement</a></span>(<a href="../../../system/identitymodel/tokens/SamlSubject.html" title="class in system.identitymodel.tokens">SamlSubject</a>&nbsp;samlSubject,
                                   java.lang.String&nbsp;resource,
                                   <a href="../../../system/identitymodel/tokens/SamlAccessDecision.html" title="class in system.identitymodel.tokens">SamlAccessDecision</a>&nbsp;accessDecision,
-                                  <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;samlActions,
+                                  <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAction.html" title="class in system.identitymodel.tokens">SamlAction</a>&gt;&nbsp;samlActions,
                                   <a href="../../../system/identitymodel/tokens/SamlEvidence.html" title="class in system.identitymodel.tokens">SamlEvidence</a>&nbsp;samlEvidence)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -325,7 +325,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAction.html" title="class in system.identitymodel.tokens">SamlAction</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlAuthorizationDecisionStatement.html#getSamlActions--">getSamlActions</a></span>()</code>
 <div class="block">Gets the value of the .NET property SamlActions.</div>
 </td>
@@ -523,7 +523,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <pre>public&nbsp;SamlAuthorizationDecisionStatement(<a href="../../../system/identitymodel/tokens/SamlSubject.html" title="class in system.identitymodel.tokens">SamlSubject</a>&nbsp;samlSubject,
                                           java.lang.String&nbsp;resource,
                                           <a href="../../../system/identitymodel/tokens/SamlAccessDecision.html" title="class in system.identitymodel.tokens">SamlAccessDecision</a>&nbsp;accessDecision,
-                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;samlActions)
+                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAction.html" title="class in system.identitymodel.tokens">SamlAction</a>&gt;&nbsp;samlActions)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                           <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -542,7 +542,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <dd><code>samlSubject</code> - the argument of type <code>SamlSubject</code></dd>
 <dd><code>resource</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>accessDecision</code> - the argument of type <code>SamlAccessDecision</code></dd>
-<dd><code>samlActions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>samlActions</code> - the argument of type <code>IEnumerable_1&lt;SamlAction&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -570,7 +570,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <pre>public&nbsp;SamlAuthorizationDecisionStatement(<a href="../../../system/identitymodel/tokens/SamlSubject.html" title="class in system.identitymodel.tokens">SamlSubject</a>&nbsp;samlSubject,
                                           java.lang.String&nbsp;resource,
                                           <a href="../../../system/identitymodel/tokens/SamlAccessDecision.html" title="class in system.identitymodel.tokens">SamlAccessDecision</a>&nbsp;accessDecision,
-                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;samlActions,
+                                          <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAction.html" title="class in system.identitymodel.tokens">SamlAction</a>&gt;&nbsp;samlActions,
                                           <a href="../../../system/identitymodel/tokens/SamlEvidence.html" title="class in system.identitymodel.tokens">SamlEvidence</a>&nbsp;samlEvidence)
                                    throws java.lang.Throwable,
                                           <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -594,7 +594,7 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <dd><code>samlSubject</code> - the argument of type <code>SamlSubject</code></dd>
 <dd><code>resource</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>accessDecision</code> - the argument of type <code>SamlAccessDecision</code></dd>
-<dd><code>samlActions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>samlActions</code> - the argument of type <code>IEnumerable_1&lt;SamlAction&gt;</code></dd>
 <dd><code>samlEvidence</code> - the argument of type <code>SamlEvidence</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
@@ -822,8 +822,8 @@ extends <a href="../../../system/identitymodel/tokens/SamlSubjectStatement.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>getSamlActions</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getSamlActions()
-                       throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAction.html" title="class in system.identitymodel.tokens">SamlAction</a>&gt;&nbsp;getSamlActions()
+                                   throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property SamlActions.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

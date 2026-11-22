@@ -236,8 +236,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-java.lang.String-system.Nullable_1-system.Nullable_1-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
                     java.lang.String&nbsp;context,
-                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
-                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)</code>
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validFrom,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validTo)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -245,8 +245,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SessionSecurityToken.html#SessionSecurityToken-system.security.claims.ClaimsPrincipal-java.lang.String-java.lang.String-system.Nullable_1-system.Nullable_1-">SessionSecurityToken</a></span>(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
                     java.lang.String&nbsp;context,
                     java.lang.String&nbsp;endpointId,
-                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
-                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)</code>
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validFrom,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validTo)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -272,8 +272,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                     <a href="../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
                     java.lang.String&nbsp;context,
                     java.lang.String&nbsp;endpointId,
-                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
-                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validFrom,
+                    <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validTo,
                     <a href="../../../system/identitymodel/tokens/SymmetricSecurityKey.html" title="class in system.identitymodel.tokens">SymmetricSecurityKey</a>&nbsp;key)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -645,8 +645,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <h4>SessionSecurityToken</h4>
 <pre>public&nbsp;SessionSecurityToken(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
                             java.lang.String&nbsp;context,
-                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
-                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validFrom,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validTo)
                      throws java.lang.Throwable,
                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -663,8 +663,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>claimsPrincipal</code> - the argument of type <code>ClaimsPrincipal</code></dd>
 <dd><code>context</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>validFrom</code> - the argument of type <code>Nullable_1</code></dd>
-<dd><code>validTo</code> - the argument of type <code>Nullable_1</code></dd>
+<dd><code>validFrom</code> - the argument of type <code>Nullable_1&lt;DateTime&gt;</code></dd>
+<dd><code>validTo</code> - the argument of type <code>Nullable_1&lt;DateTime&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -691,8 +691,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <pre>public&nbsp;SessionSecurityToken(<a href="../../../system/security/claims/ClaimsPrincipal.html" title="class in system.security.claims">ClaimsPrincipal</a>&nbsp;claimsPrincipal,
                             java.lang.String&nbsp;context,
                             java.lang.String&nbsp;endpointId,
-                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
-                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo)
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validFrom,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validTo)
                      throws java.lang.Throwable,
                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -710,8 +710,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <dd><code>claimsPrincipal</code> - the argument of type <code>ClaimsPrincipal</code></dd>
 <dd><code>context</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>endpointId</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>validFrom</code> - the argument of type <code>Nullable_1</code></dd>
-<dd><code>validTo</code> - the argument of type <code>Nullable_1</code></dd>
+<dd><code>validFrom</code> - the argument of type <code>Nullable_1&lt;DateTime&gt;</code></dd>
+<dd><code>validTo</code> - the argument of type <code>Nullable_1&lt;DateTime&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -861,8 +861,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
                             <a href="../../../system/xml/UniqueId.html" title="class in system.xml">UniqueId</a>&nbsp;contextId,
                             java.lang.String&nbsp;context,
                             java.lang.String&nbsp;endpointId,
-                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validFrom,
-                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;validTo,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validFrom,
+                            <a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/DateTime.html" title="class in system">DateTime</a>&gt;&nbsp;validTo,
                             <a href="../../../system/identitymodel/tokens/SymmetricSecurityKey.html" title="class in system.identitymodel.tokens">SymmetricSecurityKey</a>&nbsp;key)
                      throws java.lang.Throwable,
                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -885,8 +885,8 @@ extends <a href="../../../system/identitymodel/tokens/SecurityToken.html" title=
 <dd><code>contextId</code> - the argument of type <code>UniqueId</code></dd>
 <dd><code>context</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>endpointId</code> - the argument of type <code>java.lang.String</code></dd>
-<dd><code>validFrom</code> - the argument of type <code>Nullable_1</code></dd>
-<dd><code>validTo</code> - the argument of type <code>Nullable_1</code></dd>
+<dd><code>validFrom</code> - the argument of type <code>Nullable_1&lt;DateTime&gt;</code></dd>
+<dd><code>validTo</code> - the argument of type <code>Nullable_1&lt;DateTime&gt;</code></dd>
 <dd><code>key</code> - the argument of type <code>SymmetricSecurityKey</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>

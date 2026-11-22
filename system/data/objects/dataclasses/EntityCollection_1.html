@@ -252,7 +252,7 @@ extends <a href="../../../../system/data/objects/dataclasses/RelatedEnd.html" ti
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html#Attach-system.collections.generic.IEnumerable_1-">Attach</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;entities)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html#Attach-system.collections.generic.IEnumerable_1-">Attach</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html" title="type parameter in EntityCollection_1">TEntity</a>&gt;&nbsp;entities)</code>
 <div class="block">Invokes the .NET member Attach.</div>
 </td>
 </tr>
@@ -288,7 +288,7 @@ extends <a href="../../../../system/data/objects/dataclasses/RelatedEnd.html" ti
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/data/objects/ObjectQuery_1.html" title="class in system.data.objects">ObjectQuery_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/data/objects/ObjectQuery_1.html" title="class in system.data.objects">ObjectQuery_1</a>&lt;<a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html" title="type parameter in EntityCollection_1">TEntity</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html#CreateSourceQuery--">CreateSourceQuery</a></span>()</code>
 <div class="block">Invokes the .NET member CreateSourceQuery.</div>
 </td>
@@ -552,7 +552,7 @@ extends <a href="../../../../system/data/objects/dataclasses/RelatedEnd.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>Attach</h4>
-<pre>public&nbsp;void&nbsp;Attach(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;entities)
+<pre>public&nbsp;void&nbsp;Attach(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html" title="type parameter in EntityCollection_1">TEntity</a>&gt;&nbsp;entities)
             throws java.lang.Throwable,
                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -571,7 +571,7 @@ extends <a href="../../../../system/data/objects/dataclasses/RelatedEnd.html" ti
 <div class="block">Invokes the .NET member Attach.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>entities</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>entities</code> - the argument of type <code>IEnumerable_1&lt;TEntity&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -768,21 +768,21 @@ extends <a href="../../../../system/data/objects/dataclasses/RelatedEnd.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateSourceQuery</h4>
-<pre>public&nbsp;<a href="../../../../system/data/objects/ObjectQuery_1.html" title="class in system.data.objects">ObjectQuery_1</a>&nbsp;CreateSourceQuery()
-                                throws java.lang.Throwable,
-                                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                       <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                       <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                       <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                       <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="../../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
-                                       <a href="../../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
-                                       <a href="../../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
-                                       <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
-                                       <a href="../../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/data/objects/ObjectQuery_1.html" title="class in system.data.objects">ObjectQuery_1</a>&lt;<a href="../../../../system/data/objects/dataclasses/EntityCollection_1.html" title="type parameter in EntityCollection_1">TEntity</a>&gt;&nbsp;CreateSourceQuery()
+                                         throws java.lang.Throwable,
+                                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                <a href="../../../../system/data/MappingException.html" title="class in system.data">MappingException</a>,
+                                                <a href="../../../../system/data/MetadataException.html" title="class in system.data">MetadataException</a>,
+                                                <a href="../../../../system/threading/SynchronizationLockException.html" title="class in system.threading">SynchronizationLockException</a>,
+                                                <a href="../../../../system/NullReferenceException.html" title="class in system">NullReferenceException</a>,
+                                                <a href="../../../../system/data/ProviderIncompatibleException.html" title="class in system.data">ProviderIncompatibleException</a></pre>
 <div class="block">Invokes the .NET member CreateSourceQuery.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

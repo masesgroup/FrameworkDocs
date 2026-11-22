@@ -217,14 +217,14 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SupportingTokenSpecification.html#SupportingTokenSpecification-system.identitymodel.tokens.SecurityToken-system.collections.objectmodel.ReadOnlyCollection_1-system.servicemodel.security.SecurityTokenAttachmentMode-">SupportingTokenSpecification</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
-                            <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                            <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;tokenPolicies,
                             <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/security/SupportingTokenSpecification.html#SupportingTokenSpecification-system.identitymodel.tokens.SecurityToken-system.collections.objectmodel.ReadOnlyCollection_1-system.servicemodel.security.SecurityTokenAttachmentMode-system.servicemodel.security.tokens.SecurityTokenParameters-">SupportingTokenSpecification</a></span>(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
-                            <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                            <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;tokenPolicies,
                             <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode,
                             <a href="../../../system/servicemodel/security/tokens/SecurityTokenParameters.html" title="class in system.servicemodel.security.tokens">SecurityTokenParameters</a>&nbsp;tokenParameters)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
@@ -427,7 +427,7 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <li class="blockList">
 <h4>SupportingTokenSpecification</h4>
 <pre>public&nbsp;SupportingTokenSpecification(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
-                                    <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                                    <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;tokenPolicies,
                                     <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode)
                              throws java.lang.Throwable,
                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -440,7 +440,7 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>token</code> - the argument of type <code>SecurityToken</code></dd>
-<dd><code>tokenPolicies</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>tokenPolicies</code> - the argument of type <code>ReadOnlyCollection_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dd><code>attachmentMode</code> - the argument of type <code>SecurityTokenAttachmentMode</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
@@ -462,7 +462,7 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <li class="blockList">
 <h4>SupportingTokenSpecification</h4>
 <pre>public&nbsp;SupportingTokenSpecification(<a href="../../../system/identitymodel/tokens/SecurityToken.html" title="class in system.identitymodel.tokens">SecurityToken</a>&nbsp;token,
-                                    <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;tokenPolicies,
+                                    <a href="../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../system/identitymodel/policy/IAuthorizationPolicy.html" title="interface in system.identitymodel.policy">IAuthorizationPolicy</a>&gt;&nbsp;tokenPolicies,
                                     <a href="../../../system/servicemodel/security/SecurityTokenAttachmentMode.html" title="class in system.servicemodel.security">SecurityTokenAttachmentMode</a>&nbsp;attachmentMode,
                                     <a href="../../../system/servicemodel/security/tokens/SecurityTokenParameters.html" title="class in system.servicemodel.security.tokens">SecurityTokenParameters</a>&nbsp;tokenParameters)
                              throws java.lang.Throwable,
@@ -482,7 +482,7 @@ extends <a href="../../../system/servicemodel/security/SecurityTokenSpecificatio
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>token</code> - the argument of type <code>SecurityToken</code></dd>
-<dd><code>tokenPolicies</code> - the argument of type <code>ReadOnlyCollection_1</code></dd>
+<dd><code>tokenPolicies</code> - the argument of type <code>ReadOnlyCollection_1&lt;IAuthorizationPolicy&gt;</code></dd>
 <dd><code>attachmentMode</code> - the argument of type <code>SecurityTokenAttachmentMode</code></dd>
 <dd><code>tokenParameters</code> - the argument of type <code>SecurityTokenParameters</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

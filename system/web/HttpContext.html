@@ -292,13 +292,13 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AcceptWebSocketRequest-system.Func_2-">AcceptWebSocketRequest</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AcceptWebSocketRequest-system.Func_2-">AcceptWebSocketRequest</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../system/web/websockets/AspNetWebSocketContext.html" title="class in system.web.websockets">AspNetWebSocketContext</a>,<a href="../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;userFunc)</code>
 <div class="block">Invokes the .NET member AcceptWebSocketRequest.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AcceptWebSocketRequest-system.Func_2-system.web.websockets.AspNetWebSocketOptions-">AcceptWebSocketRequest</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AcceptWebSocketRequest-system.Func_2-system.web.websockets.AspNetWebSocketOptions-">AcceptWebSocketRequest</a></span>(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../system/web/websockets/AspNetWebSocketContext.html" title="class in system.web.websockets">AspNetWebSocketContext</a>,<a href="../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;userFunc,
                       <a href="../../system/web/websockets/AspNetWebSocketOptions.html" title="class in system.web.websockets">AspNetWebSocketOptions</a>&nbsp;options)</code>
 <div class="block">Invokes the .NET member AcceptWebSocketRequest.</div>
 </td>
@@ -311,7 +311,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../system/web/ISubscriptionToken.html" title="interface in system.web">ISubscriptionToken</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AddOnRequestCompleted-system.Action_1-">AddOnRequestCompleted</a></span>(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../system/web/HttpContext.html#AddOnRequestCompleted-system.Action_1-">AddOnRequestCompleted</a></span>(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&gt;&nbsp;callback)</code>
 <div class="block">Invokes the .NET member AddOnRequestCompleted.</div>
 </td>
 </tr>
@@ -931,7 +931,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>AcceptWebSocketRequest</h4>
-<pre>public&nbsp;void&nbsp;AcceptWebSocketRequest(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc)
+<pre>public&nbsp;void&nbsp;AcceptWebSocketRequest(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../system/web/websockets/AspNetWebSocketContext.html" title="class in system.web.websockets">AspNetWebSocketContext</a>,<a href="../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;userFunc)
                             throws java.lang.Throwable,
                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                    <a href="../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -956,7 +956,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member AcceptWebSocketRequest.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>userFunc</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>userFunc</code> - the argument of type <code>Func_2&lt;AspNetWebSocketContext, Task&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -990,7 +990,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>AcceptWebSocketRequest</h4>
-<pre>public&nbsp;void&nbsp;AcceptWebSocketRequest(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&nbsp;userFunc,
+<pre>public&nbsp;void&nbsp;AcceptWebSocketRequest(<a href="../../system/Func_2.html" title="class in system">Func_2</a>&lt;<a href="../../system/web/websockets/AspNetWebSocketContext.html" title="class in system.web.websockets">AspNetWebSocketContext</a>,<a href="../../system/threading/tasks/Task.html" title="class in system.threading.tasks">Task</a>&gt;&nbsp;userFunc,
                                    <a href="../../system/web/websockets/AspNetWebSocketOptions.html" title="class in system.web.websockets">AspNetWebSocketOptions</a>&nbsp;options)
                             throws java.lang.Throwable,
                                    <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1016,7 +1016,7 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <div class="block">Invokes the .NET member AcceptWebSocketRequest.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>userFunc</code> - the argument of type <code>Func_2</code></dd>
+<dd><code>userFunc</code> - the argument of type <code>Func_2&lt;AspNetWebSocketContext, Task&gt;</code></dd>
 <dd><code>options</code> - the argument of type <code>AspNetWebSocketOptions</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -1072,13 +1072,13 @@ extends <a href="../../org/mases/jcobridge/netreflection/NetObject.html" title="
 <ul class="blockList">
 <li class="blockList">
 <h4>AddOnRequestCompleted</h4>
-<pre>public&nbsp;<a href="../../system/web/ISubscriptionToken.html" title="interface in system.web">ISubscriptionToken</a>&nbsp;AddOnRequestCompleted(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&nbsp;callback)
+<pre>public&nbsp;<a href="../../system/web/ISubscriptionToken.html" title="interface in system.web">ISubscriptionToken</a>&nbsp;AddOnRequestCompleted(<a href="../../system/Action_1.html" title="class in system">Action_1</a>&lt;<a href="../../system/web/HttpContext.html" title="class in system.web">HttpContext</a>&gt;&nbsp;callback)
                                          throws java.lang.Throwable,
                                                 <a href="../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></pre>
 <div class="block">Invokes the .NET member AddOnRequestCompleted.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>callback</code> - the argument of type <code>Action_1</code></dd>
+<dd><code>callback</code> - the argument of type <code>Action_1&lt;HttpContext&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

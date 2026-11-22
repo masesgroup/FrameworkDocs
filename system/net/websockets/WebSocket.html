@@ -310,7 +310,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocket.html#getCloseStatus--">getCloseStatus</a></span>()</code>
 <div class="block">Gets the value of the .NET property CloseStatus.</div>
 </td>
@@ -376,7 +376,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i20" class="altColor">
-<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/net/websockets/WebSocketReceiveResult.html" title="class in system.net.websockets">WebSocketReceiveResult</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/net/websockets/WebSocket.html#ReceiveAsync-system.ArraySegment_1-system.threading.CancellationToken-">ReceiveAsync</a></span>(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
             <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)</code>
 <div class="block">Invokes the .NET member ReceiveAsync.</div>
@@ -813,8 +813,8 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getCloseStatus</h4>
-<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&nbsp;getCloseStatus()
-                          throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/Nullable_1.html" title="class in system">Nullable_1</a>&lt;<a href="../../../system/net/websockets/WebSocketCloseStatus.html" title="class in system.net.websockets">WebSocketCloseStatus</a>&gt;&nbsp;getCloseStatus()
+                                                throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property CloseStatus.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1028,9 +1028,9 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>ReceiveAsync</h4>
-<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&nbsp;ReceiveAsync(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
-                           <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
-                    throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/threading/tasks/Task_1.html" title="class in system.threading.tasks">Task_1</a>&lt;<a href="../../../system/net/websockets/WebSocketReceiveResult.html" title="class in system.net.websockets">WebSocketReceiveResult</a>&gt;&nbsp;ReceiveAsync(<a href="../../../system/ArraySegment_1.html" title="class in system">ArraySegment_1</a>&nbsp;buffer,
+                                                   <a href="../../../system/threading/CancellationToken.html" title="class in system.threading">CancellationToken</a>&nbsp;cancellationToken)
+                                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member ReceiveAsync.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

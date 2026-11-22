@@ -219,7 +219,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/AggregateExportProvider.html#AggregateExportProvider-system.collections.generic.IEnumerable_1-">AggregateExportProvider</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;providers)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/AggregateExportProvider.html#AggregateExportProvider-system.collections.generic.IEnumerable_1-">AggregateExportProvider</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting">ExportProvider</a>&gt;&nbsp;providers)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -290,7 +290,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting">ExportProvider</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/AggregateExportProvider.html#getProviders--">getProviders</a></span>()</code>
 <div class="block">Gets the value of the .NET property Providers.</div>
 </td>
@@ -307,7 +307,7 @@ implements java.lang.AutoCloseable</pre>
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;system.componentmodel.composition.hosting.<a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting">ExportProvider</a></h3>
-<code><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExport--">GetExport</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExport-java.lang.String-">GetExport</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExportedValues--">GetExportedValues</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExportedValues-java.lang.String-">GetExportedValues</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports--">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-system.componentmodel.composition.hosting.AtomicComposition-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-java.lang.String-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#TryGetExports-system.componentmodel.composition.primitives.ImportDefinition-system.componentmodel.composition.hosting.AtomicComposition-org.mases.jcobridge.netreflection.JCORefOut-">TryGetExports</a></code></li>
+<code><a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#addExportsChanged-system.EventHandler_1-">addExportsChanged</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#addExportsChanging-system.EventHandler_1-">addExportsChanging</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExport--">GetExport</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExport-java.lang.String-">GetExport</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExportedValues--">GetExportedValues</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExportedValues-java.lang.String-">GetExportedValues</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports--">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-system.componentmodel.composition.hosting.AtomicComposition-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-org.mases.jcobridge.netreflection.NetType-org.mases.jcobridge.netreflection.NetType-java.lang.String-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#GetExports-java.lang.String-">GetExports</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#removeExportsChanged-system.EventHandler_1-">removeExportsChanged</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#removeExportsChanging-system.EventHandler_1-">removeExportsChanging</a>, <a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html#TryGetExports-system.componentmodel.composition.primitives.ImportDefinition-system.componentmodel.composition.hosting.AtomicComposition-org.mases.jcobridge.netreflection.JCORefOut-">TryGetExports</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.mases.jcobridge.netreflection.NetObject">
@@ -452,7 +452,7 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>AggregateExportProvider</h4>
-<pre>public&nbsp;AggregateExportProvider(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;providers)
+<pre>public&nbsp;AggregateExportProvider(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting">ExportProvider</a>&gt;&nbsp;providers)
                         throws java.lang.Throwable,
                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -464,7 +464,7 @@ implements java.lang.AutoCloseable</pre>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>providers</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>providers</code> - the argument of type <code>IEnumerable_1&lt;ExportProvider&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -667,13 +667,13 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getProviders</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getProviders()
-                                  throws java.lang.Throwable,
-                                         <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                         <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                         <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                         <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/componentmodel/composition/hosting/ExportProvider.html" title="class in system.componentmodel.composition.hosting">ExportProvider</a>&gt;&nbsp;getProviders()
+                                                  throws java.lang.Throwable,
+                                                         <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                         <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                         <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                         <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <div class="block">Gets the value of the .NET property Providers.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

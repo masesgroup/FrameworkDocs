@@ -226,15 +226,15 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/WsdlImporter.html#WsdlImporter-system.servicemodel.description.MetadataSet-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">WsdlImporter</a></span>(<a href="../../../system/servicemodel/description/MetadataSet.html" title="class in system.servicemodel.description">MetadataSet</a>&nbsp;metadata,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;policyImportExtensions,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;wsdlImportExtensions)</code>
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IPolicyImportExtension.html" title="interface in system.servicemodel.description">IPolicyImportExtension</a>&gt;&nbsp;policyImportExtensions,
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IWsdlImportExtension.html" title="interface in system.servicemodel.description">IWsdlImportExtension</a>&gt;&nbsp;wsdlImportExtensions)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/WsdlImporter.html#WsdlImporter-system.servicemodel.description.MetadataSet-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-system.servicemodel.description.MetadataImporterQuotas-">WsdlImporter</a></span>(<a href="../../../system/servicemodel/description/MetadataSet.html" title="class in system.servicemodel.description">MetadataSet</a>&nbsp;metadata,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;policyImportExtensions,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;wsdlImportExtensions,
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IPolicyImportExtension.html" title="interface in system.servicemodel.description">IPolicyImportExtension</a>&gt;&nbsp;policyImportExtensions,
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IWsdlImportExtension.html" title="interface in system.servicemodel.description">IWsdlImportExtension</a>&gt;&nbsp;wsdlImportExtensions,
             <a href="../../../system/servicemodel/description/MetadataImporterQuotas.html" title="class in system.servicemodel.description">MetadataImporterQuotas</a>&nbsp;quotas)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
@@ -302,7 +302,7 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/KeyedByTypeCollection_1.html" title="class in system.collections.generic">KeyedByTypeCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/KeyedByTypeCollection_1.html" title="class in system.collections.generic">KeyedByTypeCollection_1</a>&lt;<a href="../../../system/servicemodel/description/IWsdlImportExtension.html" title="interface in system.servicemodel.description">IWsdlImportExtension</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/WsdlImporter.html#getWsdlImportExtensions--">getWsdlImportExtensions</a></span>()</code>
 <div class="block">Gets the value of the .NET property WsdlImportExtensions.</div>
 </td>
@@ -314,13 +314,13 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/WsdlImporter.html#ImportAllBindings--">ImportAllBindings</a></span>()</code>
 <div class="block">Invokes the .NET member ImportAllBindings.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/description/ContractDescription.html" title="class in system.servicemodel.description">ContractDescription</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/WsdlImporter.html#ImportAllContracts--">ImportAllContracts</a></span>()</code>
 <div class="block">Invokes the .NET member ImportAllContracts.</div>
 </td>
@@ -539,8 +539,8 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <li class="blockList">
 <h4>WsdlImporter</h4>
 <pre>public&nbsp;WsdlImporter(<a href="../../../system/servicemodel/description/MetadataSet.html" title="class in system.servicemodel.description">MetadataSet</a>&nbsp;metadata,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;policyImportExtensions,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;wsdlImportExtensions)
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IPolicyImportExtension.html" title="interface in system.servicemodel.description">IPolicyImportExtension</a>&gt;&nbsp;policyImportExtensions,
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IWsdlImportExtension.html" title="interface in system.servicemodel.description">IWsdlImportExtension</a>&gt;&nbsp;wsdlImportExtensions)
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -561,8 +561,8 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>metadata</code> - the argument of type <code>MetadataSet</code></dd>
-<dd><code>policyImportExtensions</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>wsdlImportExtensions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>policyImportExtensions</code> - the argument of type <code>IEnumerable_1&lt;IPolicyImportExtension&gt;</code></dd>
+<dd><code>wsdlImportExtensions</code> - the argument of type <code>IEnumerable_1&lt;IWsdlImportExtension&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></code> - if the .NET member raises it</dd>
@@ -592,8 +592,8 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <li class="blockList">
 <h4>WsdlImporter</h4>
 <pre>public&nbsp;WsdlImporter(<a href="../../../system/servicemodel/description/MetadataSet.html" title="class in system.servicemodel.description">MetadataSet</a>&nbsp;metadata,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;policyImportExtensions,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;wsdlImportExtensions,
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IPolicyImportExtension.html" title="interface in system.servicemodel.description">IPolicyImportExtension</a>&gt;&nbsp;policyImportExtensions,
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/servicemodel/description/IWsdlImportExtension.html" title="interface in system.servicemodel.description">IWsdlImportExtension</a>&gt;&nbsp;wsdlImportExtensions,
                     <a href="../../../system/servicemodel/description/MetadataImporterQuotas.html" title="class in system.servicemodel.description">MetadataImporterQuotas</a>&nbsp;quotas)
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
@@ -618,8 +618,8 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>metadata</code> - the argument of type <code>MetadataSet</code></dd>
-<dd><code>policyImportExtensions</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>wsdlImportExtensions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>policyImportExtensions</code> - the argument of type <code>IEnumerable_1&lt;IPolicyImportExtension&gt;</code></dd>
+<dd><code>wsdlImportExtensions</code> - the argument of type <code>IEnumerable_1&lt;IWsdlImportExtension&gt;</code></dd>
 <dd><code>quotas</code> - the argument of type <code>MetadataImporterQuotas</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
@@ -810,8 +810,8 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>getWsdlImportExtensions</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/KeyedByTypeCollection_1.html" title="class in system.collections.generic">KeyedByTypeCollection_1</a>&nbsp;getWsdlImportExtensions()
-                                                throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/KeyedByTypeCollection_1.html" title="class in system.collections.generic">KeyedByTypeCollection_1</a>&lt;<a href="../../../system/servicemodel/description/IWsdlImportExtension.html" title="interface in system.servicemodel.description">IWsdlImportExtension</a>&gt;&nbsp;getWsdlImportExtensions()
+                                                                      throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property WsdlImportExtensions.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -848,24 +848,24 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>ImportAllBindings</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;ImportAllBindings()
-                               throws java.lang.Throwable,
-                                      <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                      <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                      <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                      <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                      <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                      <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
-                                      <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                      <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                      <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                      <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                      <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                      <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                      <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                      <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                      <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                      <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/channels/Binding.html" title="class in system.servicemodel.channels">Binding</a>&gt;&nbsp;ImportAllBindings()
+                                        throws java.lang.Throwable,
+                                               <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                               <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                               <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                               <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                               <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                               <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                               <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                               <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                               <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                               <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                               <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                               <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                               <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                               <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <div class="block">Invokes the .NET member ImportAllBindings.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -899,24 +899,24 @@ extends <a href="../../../system/servicemodel/description/MetadataImporter.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>ImportAllContracts</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;ImportAllContracts()
-                                throws java.lang.Throwable,
-                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                       <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                       <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
-                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                       <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                       <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/servicemodel/description/ContractDescription.html" title="class in system.servicemodel.description">ContractDescription</a>&gt;&nbsp;ImportAllContracts()
+                                                     throws java.lang.Throwable,
+                                                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                            <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                            <a href="../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                            <a href="../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                            <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                            <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                            <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                                            <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                            <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <div class="block">Invokes the .NET member ImportAllContracts.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

@@ -237,7 +237,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/debugger/SourceLocationProvider.html#CollectMapping-system.activities.Activity-system.activities.Activity-system.collections.generic.Dictionary_2-java.lang.String-">CollectMapping</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity1,
               <a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity2,
-              <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;mapping,
+              <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;mapping,
               java.lang.String&nbsp;path)</code>
 <div class="block">Invokes the .NET member CollectMapping.</div>
 </td>
@@ -273,16 +273,16 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/debugger/SourceLocationProvider.html#GetSourceLocations-system.activities.Activity-system.activities.debugger.symbol.WorkflowSymbol-">GetSourceLocations</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity,
                   <a href="../../../system/activities/debugger/symbol/WorkflowSymbol.html" title="class in system.activities.debugger.symbol">WorkflowSymbol</a>&nbsp;symbol)</code>
 <div class="block">Invokes the .NET member GetSourceLocations.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code>static <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/activities/debugger/symbol/ActivitySymbol.html" title="class in system.activities.debugger.symbol">ActivitySymbol</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/debugger/SourceLocationProvider.html#GetSymbols-system.activities.Activity-system.collections.generic.Dictionary_2-">GetSymbols</a></span>(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity,
-          <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;sourceLocations)</code>
+          <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;sourceLocations)</code>
 <div class="block">Invokes the .NET member GetSymbols.</div>
 </td>
 </tr>
@@ -447,7 +447,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>CollectMapping</h4>
 <pre>public static&nbsp;void&nbsp;CollectMapping(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity1,
                                   <a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity2,
-                                  <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;mapping,
+                                  <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;mapping,
                                   java.lang.String&nbsp;path)
                            throws java.lang.Throwable,
                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -468,7 +468,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>rootActivity1</code> - the argument of type <code>Activity</code></dd>
 <dd><code>rootActivity2</code> - the argument of type <code>Activity</code></dd>
-<dd><code>mapping</code> - the argument of type <code>Dictionary_2</code></dd>
+<dd><code>mapping</code> - the argument of type <code>Dictionary_2&lt;Object, SourceLocation&gt;</code></dd>
 <dd><code>path</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
@@ -591,19 +591,19 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetSourceLocations</h4>
-<pre>public static&nbsp;<a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;GetSourceLocations(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity,
-                                              <a href="../../../system/activities/debugger/symbol/WorkflowSymbol.html" title="class in system.activities.debugger.symbol">WorkflowSymbol</a>&nbsp;symbol)
-                                       throws java.lang.Throwable,
-                                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                              <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                              <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;GetSourceLocations(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity,
+                                                                     <a href="../../../system/activities/debugger/symbol/WorkflowSymbol.html" title="class in system.activities.debugger.symbol">WorkflowSymbol</a>&nbsp;symbol)
+                                                              throws java.lang.Throwable,
+                                                                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                     <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                                                     <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                     <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                     <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                     <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                     <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                                     <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                                     <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                     <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <div class="block">Invokes the .NET member GetSourceLocations.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -634,25 +634,25 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetSymbols</h4>
-<pre>public static&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;GetSymbols(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity,
-                                       <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&nbsp;sourceLocations)
-                                throws java.lang.Throwable,
-                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<pre>public static&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/activities/debugger/symbol/ActivitySymbol.html" title="class in system.activities.debugger.symbol">ActivitySymbol</a>&gt;&nbsp;GetSymbols(<a href="../../../system/activities/Activity.html" title="class in system.activities">Activity</a>&nbsp;rootActivity,
+                                                       <a href="../../../system/collections/generic/Dictionary_2.html" title="class in system.collections.generic">Dictionary_2</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>,<a href="../../../system/activities/debugger/SourceLocation.html" title="class in system.activities.debugger">SourceLocation</a>&gt;&nbsp;sourceLocations)
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                       <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                       <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                       <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                       <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                                       <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                       <a href="../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <div class="block">Invokes the .NET member GetSymbols.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>rootActivity</code> - the argument of type <code>Activity</code></dd>
-<dd><code>sourceLocations</code> - the argument of type <code>Dictionary_2</code></dd>
+<dd><code>sourceLocations</code> - the argument of type <code>Dictionary_2&lt;Object, SourceLocation&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

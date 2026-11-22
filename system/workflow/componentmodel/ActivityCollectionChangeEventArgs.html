@@ -225,8 +225,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#ActivityCollectionChangeEventArgs-int-system.collections.generic.ICollection_1-system.collections.generic.ICollection_1-org.mases.jcobridge.netreflection.NetObject-system.workflow.componentmodel.ActivityCollectionChangeAction-">ActivityCollectionChangeEventArgs</a></span>(int&nbsp;index,
-                                 <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;removedItems,
-                                 <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;addedItems,
+                                 <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;removedItems,
+                                 <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;addedItems,
                                  <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;owner,
                                  <a href="../../../system/workflow/componentmodel/ActivityCollectionChangeAction.html" title="class in system.workflow.componentmodel">ActivityCollectionChangeAction</a>&nbsp;action)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
@@ -265,7 +265,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getAddedItems--">getAddedItems</a></span>()</code>
 <div class="block">Gets the value of the .NET property AddedItems.</div>
 </td>
@@ -313,7 +313,7 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/componentmodel/ActivityCollectionChangeEventArgs.html#getRemovedItems--">getRemovedItems</a></span>()</code>
 <div class="block">Gets the value of the .NET property RemovedItems.</div>
 </td>
@@ -463,8 +463,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <li class="blockList">
 <h4>ActivityCollectionChangeEventArgs</h4>
 <pre>public&nbsp;ActivityCollectionChangeEventArgs(int&nbsp;index,
-                                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;removedItems,
-                                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;addedItems,
+                                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;removedItems,
+                                         <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;addedItems,
                                          <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;owner,
                                          <a href="../../../system/workflow/componentmodel/ActivityCollectionChangeAction.html" title="class in system.workflow.componentmodel">ActivityCollectionChangeAction</a>&nbsp;action)
                                   throws java.lang.Throwable</pre>
@@ -472,8 +472,8 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>index</code> - the argument of type <code>int</code></dd>
-<dd><code>removedItems</code> - the argument of type <code>ICollection_1</code></dd>
-<dd><code>addedItems</code> - the argument of type <code>ICollection_1</code></dd>
+<dd><code>removedItems</code> - the argument of type <code>ICollection_1&lt;Activity&gt;</code></dd>
+<dd><code>addedItems</code> - the argument of type <code>ICollection_1&lt;Activity&gt;</code></dd>
 <dd><code>owner</code> - the argument of type <code>NetObject</code></dd>
 <dd><code>action</code> - the argument of type <code>ActivityCollectionChangeAction</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -552,10 +552,10 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>getAddedItems</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAddedItems()
-                      throws java.lang.Throwable,
-                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;getAddedItems()
+                                throws java.lang.Throwable,
+                                       <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                       <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Gets the value of the .NET property AddedItems.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -708,10 +708,10 @@ extends <a href="../../../system/EventArgs.html" title="class in system">EventAr
 <ul class="blockList">
 <li class="blockList">
 <h4>getRemovedItems</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getRemovedItems()
-                        throws java.lang.Throwable,
-                               <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                               <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&gt;&nbsp;getRemovedItems()
+                                  throws java.lang.Throwable,
+                                         <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                         <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a></pre>
 <div class="block">Gets the value of the .NET property RemovedItems.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

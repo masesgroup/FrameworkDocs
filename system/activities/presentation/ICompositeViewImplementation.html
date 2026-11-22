@@ -231,7 +231,7 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#CanPasteItems-system.collections.generic.List_1-">CanPasteItems</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#CanPasteItems-system.collections.generic.List_1-">CanPasteItems</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;itemsToPaste)</code>
 <div class="block">Invokes the .NET member CanPasteItems.</div>
 </td>
 </tr>
@@ -285,26 +285,26 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsCopied-system.collections.generic.List_1-">OnItemsCopied</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCopy)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsCopied-system.collections.generic.List_1-">OnItemsCopied</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&gt;&nbsp;itemsToCopy)</code>
 <div class="block">Invokes the .NET member OnItemsCopied.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsCut-system.collections.generic.List_1-">OnItemsCut</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCut)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsCut-system.collections.generic.List_1-">OnItemsCut</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&gt;&nbsp;itemsToCut)</code>
 <div class="block">Invokes the .NET member OnItemsCut.</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsDelete-system.collections.generic.List_1-">OnItemsDelete</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToDelete)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsDelete-system.collections.generic.List_1-">OnItemsDelete</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&gt;&nbsp;itemsToDelete)</code>
 <div class="block">Invokes the .NET member OnItemsDelete.</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsPasted-system.collections.generic.List_1-system.collections.generic.List_1-system.windows.Point-system.activities.presentation.WorkflowViewElement-">OnItemsPasted</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste,
-             <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;metadata,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../system/activities/presentation/ICompositeViewImplementation.html#OnItemsPasted-system.collections.generic.List_1-system.collections.generic.List_1-system.windows.Point-system.activities.presentation.WorkflowViewElement-">OnItemsPasted</a></span>(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;itemsToPaste,
+             <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;metadata,
              <a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;pastePoint,
              <a href="../../../system/activities/presentation/WorkflowViewElement.html" title="class in system.activities.presentation">WorkflowViewElement</a>&nbsp;pastePointReference)</code>
 <div class="block">Invokes the .NET member OnItemsPasted.</div>
@@ -436,14 +436,14 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>CanPasteItems</h4>
-<pre>public&nbsp;boolean&nbsp;CanPasteItems(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste)
+<pre>public&nbsp;boolean&nbsp;CanPasteItems(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;itemsToPaste)
                       throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member CanPasteItems.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/presentation/ICompositeView.html#CanPasteItems-system.collections.generic.List_1-">CanPasteItems</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>itemsToPaste</code> - the argument of type <code>List_1</code></dd>
+<dd><code>itemsToPaste</code> - the argument of type <code>List_1&lt;Object&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -627,14 +627,14 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>OnItemsCopied</h4>
-<pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;OnItemsCopied(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCopy)
+<pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;OnItemsCopied(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&gt;&nbsp;itemsToCopy)
                         throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member OnItemsCopied.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsCopied-system.collections.generic.List_1-">OnItemsCopied</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>itemsToCopy</code> - the argument of type <code>List_1</code></dd>
+<dd><code>itemsToCopy</code> - the argument of type <code>List_1&lt;ModelItem&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -650,14 +650,14 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>OnItemsCut</h4>
-<pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;OnItemsCut(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToCut)
+<pre>public&nbsp;<a href="../../../org/mases/jcobridge/netreflection/NetObject.html" title="class in org.mases.jcobridge.netreflection">NetObject</a>&nbsp;OnItemsCut(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&gt;&nbsp;itemsToCut)
                      throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member OnItemsCut.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsCut-system.collections.generic.List_1-">OnItemsCut</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>itemsToCut</code> - the argument of type <code>List_1</code></dd>
+<dd><code>itemsToCut</code> - the argument of type <code>List_1&lt;ModelItem&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -673,14 +673,14 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>OnItemsDelete</h4>
-<pre>public&nbsp;void&nbsp;OnItemsDelete(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToDelete)
+<pre>public&nbsp;void&nbsp;OnItemsDelete(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/activities/presentation/model/ModelItem.html" title="class in system.activities.presentation.model">ModelItem</a>&gt;&nbsp;itemsToDelete)
                    throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member OnItemsDelete.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsDelete-system.collections.generic.List_1-">OnItemsDelete</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>itemsToDelete</code> - the argument of type <code>List_1</code></dd>
+<dd><code>itemsToDelete</code> - the argument of type <code>List_1&lt;ModelItem&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
@@ -694,8 +694,8 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 <ul class="blockList">
 <li class="blockList">
 <h4>OnItemsPasted</h4>
-<pre>public&nbsp;void&nbsp;OnItemsPasted(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;itemsToPaste,
-                          <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&nbsp;metadata,
+<pre>public&nbsp;void&nbsp;OnItemsPasted(<a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;itemsToPaste,
+                          <a href="../../../system/collections/generic/List_1.html" title="class in system.collections.generic">List_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;metadata,
                           <a href="../../../system/windows/Point.html" title="class in system.windows">Point</a>&nbsp;pastePoint,
                           <a href="../../../system/activities/presentation/WorkflowViewElement.html" title="class in system.activities.presentation">WorkflowViewElement</a>&nbsp;pastePointReference)
                    throws java.lang.Throwable</pre>
@@ -704,8 +704,8 @@ implements <a href="../../../system/activities/presentation/ICompositeView.html"
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../system/activities/presentation/ICompositeView.html#OnItemsPasted-system.collections.generic.List_1-system.collections.generic.List_1-system.windows.Point-system.activities.presentation.WorkflowViewElement-">OnItemsPasted</a></code>&nbsp;in interface&nbsp;<code><a href="../../../system/activities/presentation/ICompositeView.html" title="interface in system.activities.presentation">ICompositeView</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>itemsToPaste</code> - the argument of type <code>List_1</code></dd>
-<dd><code>metadata</code> - the argument of type <code>List_1</code></dd>
+<dd><code>itemsToPaste</code> - the argument of type <code>List_1&lt;Object&gt;</code></dd>
+<dd><code>metadata</code> - the argument of type <code>List_1&lt;Object&gt;</code></dd>
 <dd><code>pastePoint</code> - the argument of type <code>Point</code></dd>
 <dd><code>pastePointReference</code> - the argument of type <code>WorkflowViewElement</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>

@@ -253,7 +253,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../system/componentmodel/composition/primitives/ContractBasedImportDefinition.html" title="class in system.componentmodel.composition.primitives">ContractBasedImportDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#CreateImportDefinition-system.Lazy_1-java.lang.String-java.lang.String-system.collections.generic.IEnumerable_1-system.componentmodel.composition.primitives.ImportCardinality-system.componentmodel.composition.CreationPolicy-system.componentmodel.composition.primitives.ICompositionElement-">CreateImportDefinition</a></span>(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;parameter,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#CreateImportDefinition-system.Lazy_1-java.lang.String-java.lang.String-system.collections.generic.IEnumerable_1-system.componentmodel.composition.primitives.ImportCardinality-system.componentmodel.composition.CreationPolicy-system.componentmodel.composition.primitives.ICompositionElement-">CreateImportDefinition</a></span>(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a>&gt;&nbsp;parameter,
                       java.lang.String&nbsp;contractName,
                       java.lang.String&nbsp;requiredTypeIdentity,
                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;requiredMetadata,
@@ -265,7 +265,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/componentmodel/composition/primitives/ContractBasedImportDefinition.html" title="class in system.componentmodel.composition.primitives">ContractBasedImportDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#CreateImportDefinition-system.Lazy_1-java.lang.String-java.lang.String-system.collections.generic.IEnumerable_1-system.componentmodel.composition.primitives.ImportCardinality-system.componentmodel.composition.CreationPolicy-system.collections.generic.IDictionary_2-boolean-system.componentmodel.composition.primitives.ICompositionElement-">CreateImportDefinition</a></span>(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;parameter,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#CreateImportDefinition-system.Lazy_1-java.lang.String-java.lang.String-system.collections.generic.IEnumerable_1-system.componentmodel.composition.primitives.ImportCardinality-system.componentmodel.composition.CreationPolicy-system.collections.generic.IDictionary_2-boolean-system.componentmodel.composition.primitives.ICompositionElement-">CreateImportDefinition</a></span>(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a>&gt;&nbsp;parameter,
                       java.lang.String&nbsp;contractName,
                       java.lang.String&nbsp;requiredTypeIdentity,
                       <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;requiredMetadata,
@@ -323,10 +323,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#CreatePartDefinition-system.Lazy_1-boolean-system.Lazy_1-system.Lazy_1-system.Lazy_1-system.componentmodel.composition.primitives.ICompositionElement-">CreatePartDefinition</a></span>(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;partType,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#CreatePartDefinition-system.Lazy_1-boolean-system.Lazy_1-system.Lazy_1-system.Lazy_1-system.componentmodel.composition.primitives.ICompositionElement-">CreatePartDefinition</a></span>(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;partType,
                     boolean&nbsp;isDisposalRequired,
-                    <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;imports,
-                    <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;exports,
+                    <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&gt;&gt;&nbsp;imports,
+                    <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ExportDefinition.html" title="class in system.componentmodel.composition.primitives">ExportDefinition</a>&gt;&gt;&nbsp;exports,
                     <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;metadata,
                     <a href="../../../../system/componentmodel/composition/primitives/ICompositionElement.html" title="interface in system.componentmodel.composition.primitives">ICompositionElement</a>&nbsp;origin)</code>
 <div class="block">Invokes the .NET member CreatePartDefinition.</div>
@@ -351,7 +351,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i11" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#GetImportingParameter-system.componentmodel.composition.primitives.ImportDefinition-">GetImportingParameter</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;importDefinition)</code>
 <div class="block">Invokes the .NET member GetImportingParameter.</div>
 </td>
@@ -387,7 +387,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i17" class="rowColor">
-<td class="colFirst"><code>static <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a></code></td>
+<td class="colFirst"><code>static <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#GetPartType-system.componentmodel.composition.primitives.ComposablePartDefinition-">GetPartType</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;partDefinition)</code>
 <div class="block">Invokes the .NET member GetPartType.</div>
 </td>
@@ -419,7 +419,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <tr id="i22" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/reflectionmodel/ReflectionModelServices.html#TryMakeGenericPartDefinition-system.componentmodel.composition.primitives.ComposablePartDefinition-system.collections.generic.IEnumerable_1-org.mases.jcobridge.netreflection.JCORefOut-">TryMakeGenericPartDefinition</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;partDefinition,
-                            <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;genericParameters,
+                            <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;genericParameters,
                             <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&gt;&nbsp;specialization)</code>
 <div class="block">Invokes the .NET member TryMakeGenericPartDefinition.</div>
 </td>
@@ -630,7 +630,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateImportDefinition</h4>
-<pre>public static&nbsp;<a href="../../../../system/componentmodel/composition/primitives/ContractBasedImportDefinition.html" title="class in system.componentmodel.composition.primitives">ContractBasedImportDefinition</a>&nbsp;CreateImportDefinition(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;parameter,
+<pre>public static&nbsp;<a href="../../../../system/componentmodel/composition/primitives/ContractBasedImportDefinition.html" title="class in system.componentmodel.composition.primitives">ContractBasedImportDefinition</a>&nbsp;CreateImportDefinition(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a>&gt;&nbsp;parameter,
                                                                    java.lang.String&nbsp;contractName,
                                                                    java.lang.String&nbsp;requiredTypeIdentity,
                                                                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;requiredMetadata,
@@ -653,7 +653,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <div class="block">Invokes the .NET member CreateImportDefinition.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>parameter</code> - the argument of type <code>Lazy_1</code></dd>
+<dd><code>parameter</code> - the argument of type <code>Lazy_1&lt;ParameterInfo&gt;</code></dd>
 <dd><code>contractName</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>requiredTypeIdentity</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>requiredMetadata</code> - the argument of type <code>IEnumerable_1</code></dd>
@@ -687,7 +687,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>CreateImportDefinition</h4>
-<pre>public static&nbsp;<a href="../../../../system/componentmodel/composition/primitives/ContractBasedImportDefinition.html" title="class in system.componentmodel.composition.primitives">ContractBasedImportDefinition</a>&nbsp;CreateImportDefinition(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;parameter,
+<pre>public static&nbsp;<a href="../../../../system/componentmodel/composition/primitives/ContractBasedImportDefinition.html" title="class in system.componentmodel.composition.primitives">ContractBasedImportDefinition</a>&nbsp;CreateImportDefinition(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a>&gt;&nbsp;parameter,
                                                                    java.lang.String&nbsp;contractName,
                                                                    java.lang.String&nbsp;requiredTypeIdentity,
                                                                    <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;requiredMetadata,
@@ -713,7 +713,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <div class="block">Invokes the .NET member CreateImportDefinition.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>parameter</code> - the argument of type <code>Lazy_1</code></dd>
+<dd><code>parameter</code> - the argument of type <code>Lazy_1&lt;ParameterInfo&gt;</code></dd>
 <dd><code>contractName</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>requiredTypeIdentity</code> - the argument of type <code>java.lang.String</code></dd>
 <dd><code>requiredMetadata</code> - the argument of type <code>IEnumerable_1</code></dd>
@@ -935,10 +935,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>CreatePartDefinition</h4>
-<pre>public static&nbsp;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;CreatePartDefinition(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;partType,
+<pre>public static&nbsp;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;CreatePartDefinition(<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;partType,
                                                             boolean&nbsp;isDisposalRequired,
-                                                            <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;imports,
-                                                            <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;exports,
+                                                            <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&gt;&gt;&nbsp;imports,
+                                                            <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ExportDefinition.html" title="class in system.componentmodel.composition.primitives">ExportDefinition</a>&gt;&gt;&nbsp;exports,
                                                             <a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;metadata,
                                                             <a href="../../../../system/componentmodel/composition/primitives/ICompositionElement.html" title="interface in system.componentmodel.composition.primitives">ICompositionElement</a>&nbsp;origin)
                                                      throws java.lang.Throwable,
@@ -950,10 +950,10 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <div class="block">Invokes the .NET member CreatePartDefinition.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>partType</code> - the argument of type <code>Lazy_1</code></dd>
+<dd><code>partType</code> - the argument of type <code>Lazy_1&lt;NetType&gt;</code></dd>
 <dd><code>isDisposalRequired</code> - the argument of type <code>boolean</code></dd>
-<dd><code>imports</code> - the argument of type <code>Lazy_1</code></dd>
-<dd><code>exports</code> - the argument of type <code>Lazy_1</code></dd>
+<dd><code>imports</code> - the argument of type <code>Lazy_1&lt;IEnumerable_1&lt;ImportDefinition&gt;&gt;</code></dd>
+<dd><code>exports</code> - the argument of type <code>Lazy_1&lt;IEnumerable_1&lt;ExportDefinition&gt;&gt;</code></dd>
 <dd><code>metadata</code> - the argument of type <code>Lazy_1</code></dd>
 <dd><code>origin</code> - the argument of type <code>ICompositionElement</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1117,21 +1117,21 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>GetImportingParameter</h4>
-<pre>public static&nbsp;<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;GetImportingParameter(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;importDefinition)
-                                    throws java.lang.Throwable,
-                                           <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                           <a href="../../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
-                                           <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                           <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                           <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
-                                           <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
-                                           <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                           <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                           <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                           <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                           <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                                           <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                           <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<pre>public static&nbsp;<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../system/reflection/ParameterInfo.html" title="class in system.reflection">ParameterInfo</a>&gt;&nbsp;GetImportingParameter(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;importDefinition)
+                                                   throws java.lang.Throwable,
+                                                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                          <a href="../../../../system/TypeLoadException.html" title="class in system">TypeLoadException</a>,
+                                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                          <a href="../../../../system/MissingMethodException.html" title="class in system">MissingMethodException</a>,
+                                                          <a href="../../../../system/reflection/TargetInvocationException.html" title="class in system.reflection">TargetInvocationException</a>,
+                                                          <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                          <a href="../../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                          <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                          <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                          <a href="../../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                                          <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                          <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <div class="block">Invokes the .NET member GetImportingParameter.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1259,12 +1259,12 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>GetPartType</h4>
-<pre>public static&nbsp;<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&nbsp;GetPartType(<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;partDefinition)
-                          throws java.lang.Throwable,
-                                 <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                 <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                 <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                 <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
+<pre>public static&nbsp;<a href="../../../../system/Lazy_1.html" title="class in system">Lazy_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;GetPartType(<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;partDefinition)
+                                   throws java.lang.Throwable,
+                                          <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                          <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a></pre>
 <div class="block">Invokes the .NET member GetPartType.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1405,7 +1405,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <li class="blockList">
 <h4>TryMakeGenericPartDefinition</h4>
 <pre>public static&nbsp;boolean&nbsp;TryMakeGenericPartDefinition(<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&nbsp;partDefinition,
-                                                   <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;genericParameters,
+                                                   <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&gt;&nbsp;genericParameters,
                                                    <a href="../../../../org/mases/jcobridge/netreflection/JCORefOut.html" title="class in org.mases.jcobridge.netreflection">JCORefOut</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&gt;&nbsp;specialization)
                                             throws java.lang.Throwable,
                                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
@@ -1419,7 +1419,7 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>partDefinition</code> - the argument of type <code>ComposablePartDefinition</code></dd>
-<dd><code>genericParameters</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>genericParameters</code> - the argument of type <code>IEnumerable_1&lt;NetType&gt;</code></dd>
 <dd><code>specialization</code> - the argument of type <code>JCORefOut&lt;ComposablePartDefinition&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the value returned by the .NET member</dd>

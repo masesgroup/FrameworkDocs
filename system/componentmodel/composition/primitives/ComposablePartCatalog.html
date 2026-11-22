@@ -255,7 +255,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/Tuple_2.html" title="class in system">Tuple_2</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>,<a href="../../../../system/componentmodel/composition/primitives/ExportDefinition.html" title="class in system.componentmodel.composition.primitives">ExportDefinition</a>&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#GetExports-system.componentmodel.composition.primitives.ImportDefinition-">GetExports</a></span>(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition)</code>
 <div class="block">Invokes the .NET member GetExports.</div>
 </td>
@@ -291,7 +291,7 @@ implements java.lang.AutoCloseable</pre>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/linq/IQueryable_1.html" title="interface in system.linq">IQueryable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/linq/IQueryable_1.html" title="interface in system.linq">IQueryable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/primitives/ComposablePartCatalog.html#getParts--">getParts</a></span>()</code>
 <div class="block">Gets the value of the .NET property Parts.</div>
 </td>
@@ -511,17 +511,17 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>GetExports</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetExports(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition)
-                         throws java.lang.Throwable,
-                                <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/Tuple_2.html" title="class in system">Tuple_2</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>,<a href="../../../../system/componentmodel/composition/primitives/ExportDefinition.html" title="class in system.componentmodel.composition.primitives">ExportDefinition</a>&gt;&gt;&nbsp;GetExports(<a href="../../../../system/componentmodel/composition/primitives/ImportDefinition.html" title="class in system.componentmodel.composition.primitives">ImportDefinition</a>&nbsp;definition)
+                                                                             throws java.lang.Throwable,
+                                                                                    <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                                                    <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                                                    <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                                                    <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                                                    <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                                                    <a href="../../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                                                    <a href="../../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                                                    <a href="../../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                                                    <a href="../../../../system/collections/generic/KeyNotFoundException.html" title="class in system.collections.generic">KeyNotFoundException</a></pre>
 <div class="block">Invokes the .NET member GetExports.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -645,13 +645,13 @@ implements java.lang.AutoCloseable</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>getParts</h4>
-<pre>public&nbsp;<a href="../../../../system/linq/IQueryable_1.html" title="interface in system.linq">IQueryable_1</a>&nbsp;getParts()
-                      throws java.lang.Throwable,
-                             <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                             <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                             <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                             <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/linq/IQueryable_1.html" title="interface in system.linq">IQueryable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePartDefinition.html" title="class in system.componentmodel.composition.primitives">ComposablePartDefinition</a>&gt;&nbsp;getParts()
+                                                throws java.lang.Throwable,
+                                                       <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                       <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                       <a href="../../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                       <a href="../../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                       <a href="../../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a></pre>
 <div class="block">Gets the value of the .NET property Parts.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

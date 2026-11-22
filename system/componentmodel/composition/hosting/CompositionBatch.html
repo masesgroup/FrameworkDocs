@@ -212,8 +212,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/CompositionBatch.html#CompositionBatch-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">CompositionBatch</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;partsToAdd,
-                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;partsToRemove)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/CompositionBatch.html#CompositionBatch-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">CompositionBatch</a></span>(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;&nbsp;partsToAdd,
+                <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;&nbsp;partsToRemove)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -286,13 +286,13 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 </td>
 </tr>
 <tr id="i8" class="altColor">
-<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/CompositionBatch.html#getPartsToAdd--">getPartsToAdd</a></span>()</code>
 <div class="block">Gets the value of the .NET property PartsToAdd.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../system/componentmodel/composition/hosting/CompositionBatch.html#getPartsToRemove--">getPartsToRemove</a></span>()</code>
 <div class="block">Gets the value of the .NET property PartsToRemove.</div>
 </td>
@@ -431,8 +431,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>CompositionBatch</h4>
-<pre>public&nbsp;CompositionBatch(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;partsToAdd,
-                        <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;partsToRemove)
+<pre>public&nbsp;CompositionBatch(<a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;&nbsp;partsToAdd,
+                        <a href="../../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;&nbsp;partsToRemove)
                  throws java.lang.Throwable,
                         <a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                         <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -443,8 +443,8 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>partsToAdd</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>partsToRemove</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>partsToAdd</code> - the argument of type <code>IEnumerable_1&lt;ComposablePart&gt;</code></dd>
+<dd><code>partsToRemove</code> - the argument of type <code>IEnumerable_1&lt;ComposablePart&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -661,9 +661,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getPartsToAdd</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getPartsToAdd()
-                                   throws java.lang.Throwable,
-                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;&nbsp;getPartsToAdd()
+                                                   throws java.lang.Throwable,
+                                                          <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
 <div class="block">Gets the value of the .NET property PartsToAdd.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -682,9 +682,9 @@ extends <a href="../../../../org/mases/jcobridge/netreflection/NetObject.html" t
 <ul class="blockList">
 <li class="blockList">
 <h4>getPartsToRemove</h4>
-<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&nbsp;getPartsToRemove()
-                                      throws java.lang.Throwable,
-                                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
+<pre>public&nbsp;<a href="../../../../system/collections/objectmodel/ReadOnlyCollection_1.html" title="class in system.collections.objectmodel">ReadOnlyCollection_1</a>&lt;<a href="../../../../system/componentmodel/composition/primitives/ComposablePart.html" title="class in system.componentmodel.composition.primitives">ComposablePart</a>&gt;&nbsp;getPartsToRemove()
+                                                      throws java.lang.Throwable,
+                                                             <a href="../../../../system/ArgumentException.html" title="class in system">ArgumentException</a></pre>
 <div class="block">Gets the value of the .NET property PartsToRemove.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

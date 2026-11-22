@@ -213,13 +213,13 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlEvidence.html#SamlEvidence-system.collections.generic.IEnumerable_1-">SamlEvidence</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;assertions)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlEvidence.html#SamlEvidence-system.collections.generic.IEnumerable_1-">SamlEvidence</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAssertion.html" title="class in system.identitymodel.tokens">SamlAssertion</a>&gt;&nbsp;assertions)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlEvidence.html#SamlEvidence-system.collections.generic.IEnumerable_1-system.collections.generic.IEnumerable_1-">SamlEvidence</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;assertionIdReferences,
-            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;assertions)</code>
+            <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAssertion.html" title="class in system.identitymodel.tokens">SamlAssertion</a>&gt;&nbsp;assertions)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -256,7 +256,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAssertion.html" title="class in system.identitymodel.tokens">SamlAssertion</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/tokens/SamlEvidence.html#getAssertions--">getAssertions</a></span>()</code>
 <div class="block">Gets the value of the .NET property Assertions.</div>
 </td>
@@ -438,7 +438,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>SamlEvidence</h4>
-<pre>public&nbsp;SamlEvidence(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;assertions)
+<pre>public&nbsp;SamlEvidence(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAssertion.html" title="class in system.identitymodel.tokens">SamlAssertion</a>&gt;&nbsp;assertions)
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                     <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -459,7 +459,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>assertions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>assertions</code> - the argument of type <code>IEnumerable_1&lt;SamlAssertion&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -490,7 +490,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <li class="blockList">
 <h4>SamlEvidence</h4>
 <pre>public&nbsp;SamlEvidence(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;assertionIdReferences,
-                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;assertions)
+                    <a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAssertion.html" title="class in system.identitymodel.tokens">SamlAssertion</a>&gt;&nbsp;assertions)
              throws java.lang.Throwable,
                     <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                     <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -511,7 +511,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>assertionIdReferences</code> - the argument of type <code>IEnumerable_1</code></dd>
-<dd><code>assertions</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>assertions</code> - the argument of type <code>IEnumerable_1&lt;SamlAssertion&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -603,8 +603,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getAssertions</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;getAssertions()
-                      throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/tokens/SamlAssertion.html" title="class in system.identitymodel.tokens">SamlAssertion</a>&gt;&nbsp;getAssertions()
+                                     throws java.lang.Throwable</pre>
 <div class="block">Gets the value of the .NET property Assertions.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

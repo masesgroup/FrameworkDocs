@@ -300,7 +300,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 </td>
 </tr>
 <tr id="i9" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationProperty.html" title="class in system.workflow.runtime">CorrelationProperty</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#getProperties--">getProperties</a></span>()</code>
 <div class="block">Gets the value of the .NET property Properties.</div>
 </td>
@@ -308,7 +308,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#Initialize-system.workflow.componentmodel.Activity-system.collections.generic.ICollection_1-">Initialize</a></span>(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-          <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;propertyValues)</code>
+          <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationProperty.html" title="class in system.workflow.runtime">CorrelationProperty</a>&gt;&nbsp;propertyValues)</code>
 <div class="block">Invokes the .NET member Initialize.</div>
 </td>
 </tr>
@@ -333,14 +333,14 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#SubscribeForCorrelationTokenInitializedEvent-system.workflow.componentmodel.Activity-system.workflow.componentmodel.IActivityEventListener_1-">SubscribeForCorrelationTokenInitializedEvent</a></span>(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-                                            <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)</code>
+                                            <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationTokenEventArgs.html" title="class in system.workflow.runtime">CorrelationTokenEventArgs</a>&gt;&nbsp;dataChangeListener)</code>
 <div class="block">Invokes the .NET member SubscribeForCorrelationTokenInitializedEvent.</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/workflow/runtime/CorrelationToken.html#UnsubscribeFromCorrelationTokenInitializedEvent-system.workflow.componentmodel.Activity-system.workflow.componentmodel.IActivityEventListener_1-">UnsubscribeFromCorrelationTokenInitializedEvent</a></span>(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-                                               <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)</code>
+                                               <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationTokenEventArgs.html" title="class in system.workflow.runtime">CorrelationTokenEventArgs</a>&gt;&nbsp;dataChangeListener)</code>
 <div class="block">Invokes the .NET member UnsubscribeFromCorrelationTokenInitializedEvent.</div>
 </td>
 </tr>
@@ -780,19 +780,19 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <ul class="blockList">
 <li class="blockList">
 <h4>getProperties</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;getProperties()
-                            throws java.lang.Throwable,
-                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                   <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                                   <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                                   <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
-                                   <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
-                                   <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                                   <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                                   <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                                   <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
-                                   <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationProperty.html" title="class in system.workflow.runtime">CorrelationProperty</a>&gt;&nbsp;getProperties()
+                                                 throws java.lang.Throwable,
+                                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                                        <a href="../../../system/NotImplementedException.html" title="class in system">NotImplementedException</a>,
+                                                        <a href="../../../system/globalization/CultureNotFoundException.html" title="class in system.globalization">CultureNotFoundException</a>,
+                                                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                                        <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a>,
+                                                        <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a></pre>
 <div class="block">Gets the value of the .NET property Properties.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -822,7 +822,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <li class="blockList">
 <h4>Initialize</h4>
 <pre>public&nbsp;void&nbsp;Initialize(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-                       <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&nbsp;propertyValues)
+                       <a href="../../../system/collections/generic/ICollection_1.html" title="interface in system.collections.generic">ICollection_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationProperty.html" title="class in system.workflow.runtime">CorrelationProperty</a>&gt;&nbsp;propertyValues)
                 throws java.lang.Throwable,
                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -848,7 +848,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>activity</code> - the argument of type <code>Activity</code></dd>
-<dd><code>propertyValues</code> - the argument of type <code>ICollection_1</code></dd>
+<dd><code>propertyValues</code> - the argument of type <code>ICollection_1&lt;CorrelationProperty&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -982,7 +982,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <li class="blockList">
 <h4>SubscribeForCorrelationTokenInitializedEvent</h4>
 <pre>public&nbsp;void&nbsp;SubscribeForCorrelationTokenInitializedEvent(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-                                                         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)
+                                                         <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationTokenEventArgs.html" title="class in system.workflow.runtime">CorrelationTokenEventArgs</a>&gt;&nbsp;dataChangeListener)
                                                   throws java.lang.Throwable,
                                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -995,7 +995,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>activity</code> - the argument of type <code>Activity</code></dd>
-<dd><code>dataChangeListener</code> - the argument of type <code>IActivityEventListener_1</code></dd>
+<dd><code>dataChangeListener</code> - the argument of type <code>IActivityEventListener_1&lt;CorrelationTokenEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>
@@ -1017,7 +1017,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <li class="blockList">
 <h4>UnsubscribeFromCorrelationTokenInitializedEvent</h4>
 <pre>public&nbsp;void&nbsp;UnsubscribeFromCorrelationTokenInitializedEvent(<a href="../../../system/workflow/componentmodel/Activity.html" title="class in system.workflow.componentmodel">Activity</a>&nbsp;activity,
-                                                            <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&nbsp;dataChangeListener)
+                                                            <a href="../../../system/workflow/componentmodel/IActivityEventListener_1.html" title="interface in system.workflow.componentmodel">IActivityEventListener_1</a>&lt;<a href="../../../system/workflow/runtime/CorrelationTokenEventArgs.html" title="class in system.workflow.runtime">CorrelationTokenEventArgs</a>&gt;&nbsp;dataChangeListener)
                                                      throws java.lang.Throwable,
                                                             <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
                                                             <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
@@ -1030,7 +1030,7 @@ extends <a href="../../../system/workflow/componentmodel/DependencyObject.html" 
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>activity</code> - the argument of type <code>Activity</code></dd>
-<dd><code>dataChangeListener</code> - the argument of type <code>IActivityEventListener_1</code></dd>
+<dd><code>dataChangeListener</code> - the argument of type <code>IActivityEventListener_1&lt;CorrelationTokenEventArgs&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the call fails in the bridge or in the CLR</dd>
 <dd><code><a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a></code> - if the .NET member raises it</dd>

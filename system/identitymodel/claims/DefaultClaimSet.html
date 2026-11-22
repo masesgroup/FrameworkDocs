@@ -229,12 +229,12 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#DefaultClaimSet-system.identitymodel.claims.ClaimSet-system.collections.generic.IList_1-">DefaultClaimSet</a></span>(<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a>&nbsp;issuer,
-               <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)</code>
+               <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;claims)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#DefaultClaimSet-system.collections.generic.IList_1-">DefaultClaimSet</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#DefaultClaimSet-system.collections.generic.IList_1-">DefaultClaimSet</a></span>(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;claims)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -271,7 +271,7 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/identitymodel/claims/DefaultClaimSet.html#FindClaims-java.lang.String-java.lang.String-">FindClaims</a></span>(java.lang.String&nbsp;claimType,
           java.lang.String&nbsp;right)</code>
 <div class="block">Invokes the .NET member FindClaims.</div>
@@ -539,7 +539,7 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <li class="blockList">
 <h4>DefaultClaimSet</h4>
 <pre>public&nbsp;DefaultClaimSet(<a href="../../../system/identitymodel/claims/ClaimSet.html" title="class in system.identitymodel.claims">ClaimSet</a>&nbsp;issuer,
-                       <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)
+                       <a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;claims)
                 throws java.lang.Throwable,
                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -557,7 +557,7 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>issuer</code> - the argument of type <code>ClaimSet</code></dd>
-<dd><code>claims</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>claims</code> - the argument of type <code>IList_1&lt;Claim&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -583,7 +583,7 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>DefaultClaimSet</h4>
-<pre>public&nbsp;DefaultClaimSet(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&nbsp;claims)
+<pre>public&nbsp;DefaultClaimSet(<a href="../../../system/collections/generic/IList_1.html" title="interface in system.collections.generic">IList_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;claims)
                 throws java.lang.Throwable,
                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -600,7 +600,7 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>claims</code> - the argument of type <code>IList_1</code></dd>
+<dd><code>claims</code> - the argument of type <code>IList_1&lt;Claim&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -715,9 +715,9 @@ extends <a href="../../../system/identitymodel/claims/ClaimSet.html" title="clas
 <ul class="blockList">
 <li class="blockList">
 <h4>FindClaims</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;FindClaims(java.lang.String&nbsp;claimType,
-                                java.lang.String&nbsp;right)
-                         throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/identitymodel/claims/Claim.html" title="class in system.identitymodel.claims">Claim</a>&gt;&nbsp;FindClaims(java.lang.String&nbsp;claimType,
+                                       java.lang.String&nbsp;right)
+                                throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member FindClaims.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>

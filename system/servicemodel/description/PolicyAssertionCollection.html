@@ -222,7 +222,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/PolicyAssertionCollection.html#PolicyAssertionCollection-system.collections.generic.IEnumerable_1-">PolicyAssertionCollection</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/PolicyAssertionCollection.html#PolicyAssertionCollection-system.collections.generic.IEnumerable_1-">PolicyAssertionCollection</a></span>(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&gt;&nbsp;elements)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 </td>
 </tr>
@@ -267,7 +267,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </td>
 </tr>
 <tr id="i3" class="rowColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/PolicyAssertionCollection.html#FindAll-java.lang.String-java.lang.String-">FindAll</a></span>(java.lang.String&nbsp;localName,
        java.lang.String&nbsp;namespaceUri)</code>
 <div class="block">Invokes the .NET member FindAll.</div>
@@ -311,7 +311,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 </td>
 </tr>
 <tr id="i10" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/servicemodel/description/PolicyAssertionCollection.html#RemoveAll-java.lang.String-java.lang.String-">RemoveAll</a></span>(java.lang.String&nbsp;localName,
          java.lang.String&nbsp;namespaceUri)</code>
 <div class="block">Invokes the .NET member RemoveAll.</div>
@@ -463,7 +463,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>PolicyAssertionCollection</h4>
-<pre>public&nbsp;PolicyAssertionCollection(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;elements)
+<pre>public&nbsp;PolicyAssertionCollection(<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&gt;&nbsp;elements)
                           throws java.lang.Throwable,
                                  <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
                                  <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
@@ -480,7 +480,7 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>elements</code> - the argument of type <code>IEnumerable_1</code></dd>
+<dd><code>elements</code> - the argument of type <code>IEnumerable_1&lt;XmlElement&gt;</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.Throwable</code> - if the .NET constructor fails</dd>
 <dd><code><a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a></code> - if the .NET member raises it</dd>
@@ -644,22 +644,22 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>FindAll</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;FindAll(java.lang.String&nbsp;localName,
-                            java.lang.String&nbsp;namespaceUri)
-                     throws java.lang.Throwable,
-                            <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                            <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                            <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                            <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                            <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                            <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                            <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                            <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                            <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                            <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                            <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                            <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                            <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&gt;&nbsp;FindAll(java.lang.String&nbsp;localName,
+                                        java.lang.String&nbsp;namespaceUri)
+                                 throws java.lang.Throwable,
+                                        <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                        <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                        <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                        <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                        <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                        <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                        <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                        <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                        <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                        <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                        <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                        <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                        <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Invokes the .NET member FindAll.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -837,22 +837,22 @@ extends <a href="../../../system/collections/objectmodel/Collection_1.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>RemoveAll</h4>
-<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&nbsp;RemoveAll(java.lang.String&nbsp;localName,
-                              java.lang.String&nbsp;namespaceUri)
-                       throws java.lang.Throwable,
-                              <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
-                              <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
-                              <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
-                              <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                              <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
-                              <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
-                              <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
-                              <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
-                              <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
-                              <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
-                              <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
-                              <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
-                              <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/objectmodel/Collection_1.html" title="class in system.collections.objectmodel">Collection_1</a>&lt;<a href="../../../system/xml/XmlElement.html" title="class in system.xml">XmlElement</a>&gt;&nbsp;RemoveAll(java.lang.String&nbsp;localName,
+                                          java.lang.String&nbsp;namespaceUri)
+                                   throws java.lang.Throwable,
+                                          <a href="../../../system/ArgumentException.html" title="class in system">ArgumentException</a>,
+                                          <a href="../../../system/IndexOutOfRangeException.html" title="class in system">IndexOutOfRangeException</a>,
+                                          <a href="../../../system/MulticastNotSupportedException.html" title="class in system">MulticastNotSupportedException</a>,
+                                          <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                          <a href="../../../system/FormatException.html" title="class in system">FormatException</a>,
+                                          <a href="../../../system/resources/MissingManifestResourceException.html" title="class in system.resources">MissingManifestResourceException</a>,
+                                          <a href="../../../system/ObjectDisposedException.html" title="class in system">ObjectDisposedException</a>,
+                                          <a href="../../../system/InvalidOperationException.html" title="class in system">InvalidOperationException</a>,
+                                          <a href="../../../system/configuration/ConfigurationErrorsException.html" title="class in system.configuration">ConfigurationErrorsException</a>,
+                                          <a href="../../../system/ArgumentOutOfRangeException.html" title="class in system">ArgumentOutOfRangeException</a>,
+                                          <a href="../../../system/OverflowException.html" title="class in system">OverflowException</a>,
+                                          <a href="../../../system/OutOfMemoryException.html" title="class in system">OutOfMemoryException</a>,
+                                          <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Invokes the .NET member RemoveAll.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

@@ -258,7 +258,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#ModelMetadata-system.web.modelbinding.ModelMetadataProvider-org.mases.jcobridge.netreflection.NetType-system.Func_1-org.mases.jcobridge.netreflection.NetType-java.lang.String-">ModelMetadata</a></span>(<a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a>&nbsp;provider,
              <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
-             <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
+             <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;modelAccessor,
              <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
              java.lang.String&nbsp;propertyName)</code>
 <div class="block">Initializes a new instance by invoking the .NET constructor.</div>
@@ -429,7 +429,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i24" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#getProperties--">getProperties</a></span>()</code>
 <div class="block">Gets the value of the .NET property Properties.</div>
 </td>
@@ -477,7 +477,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 </td>
 </tr>
 <tr id="i32" class="altColor">
-<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a></code></td>
+<td class="colFirst"><code><a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/web/modelbinding/ModelValidator.html" title="class in system.web.modelbinding">ModelValidator</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../system/web/modelbinding/ModelMetadata.html#GetValidators-system.web.modelbinding.ModelBindingExecutionContext-">GetValidators</a></span>(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)</code>
 <div class="block">Invokes the .NET member GetValidators.</div>
 </td>
@@ -719,7 +719,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <h4>ModelMetadata</h4>
 <pre>public&nbsp;ModelMetadata(<a href="../../../system/web/modelbinding/ModelMetadataProvider.html" title="class in system.web.modelbinding">ModelMetadataProvider</a>&nbsp;provider,
                      <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;containerType,
-                     <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&nbsp;modelAccessor,
+                     <a href="../../../system/Func_1.html" title="class in system">Func_1</a>&lt;<a href="../../../system/Object.html" title="class in system">Object</a>&gt;&nbsp;modelAccessor,
                      <a href="../../../org/mases/jcobridge/netreflection/NetType.html" title="class in org.mases.jcobridge.netreflection">NetType</a>&nbsp;modelType,
                      java.lang.String&nbsp;propertyName)
               throws java.lang.Throwable,
@@ -732,7 +732,7 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>provider</code> - the argument of type <code>ModelMetadataProvider</code></dd>
 <dd><code>containerType</code> - the argument of type <code>NetType</code></dd>
-<dd><code>modelAccessor</code> - the argument of type <code>Func_1</code></dd>
+<dd><code>modelAccessor</code> - the argument of type <code>Func_1&lt;Object&gt;</code></dd>
 <dd><code>modelType</code> - the argument of type <code>NetType</code></dd>
 <dd><code>propertyName</code> - the argument of type <code>java.lang.String</code></dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -1253,10 +1253,10 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>getProperties</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;getProperties()
-                            throws java.lang.Throwable,
-                                   <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
-                                   <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/web/modelbinding/ModelMetadata.html" title="class in system.web.modelbinding">ModelMetadata</a>&gt;&nbsp;getProperties()
+                                           throws java.lang.Throwable,
+                                                  <a href="../../../system/ArgumentNullException.html" title="class in system">ArgumentNullException</a>,
+                                                  <a href="../../../system/NotSupportedException.html" title="class in system">NotSupportedException</a></pre>
 <div class="block">Gets the value of the .NET property Properties.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -1425,8 +1425,8 @@ extends <a href="../../../org/mases/jcobridge/netreflection/NetObject.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>GetValidators</h4>
-<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&nbsp;GetValidators(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
-                            throws java.lang.Throwable</pre>
+<pre>public&nbsp;<a href="../../../system/collections/generic/IEnumerable_1.html" title="interface in system.collections.generic">IEnumerable_1</a>&lt;<a href="../../../system/web/modelbinding/ModelValidator.html" title="class in system.web.modelbinding">ModelValidator</a>&gt;&nbsp;GetValidators(<a href="../../../system/web/modelbinding/ModelBindingExecutionContext.html" title="class in system.web.modelbinding">ModelBindingExecutionContext</a>&nbsp;context)
+                                            throws java.lang.Throwable</pre>
 <div class="block">Invokes the .NET member GetValidators.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
